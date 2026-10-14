@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+# 私人素材永不入库 / private source material never committed
+private/
+*.private.*
