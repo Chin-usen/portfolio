@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>N1 桌面首页 单屏（占位）</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFBFD;--card:#FFFFFF;--ink:#1D1D1F;--mute:#6E6E73;--acc:#BF4800;--link:#0066CC;--pill:#E8E8ED}
+*{box-sizing:border-box}body{margin:0;background:#E5E5EA;font-family:'Geist','Noto Sans SC','Noto Sans CJK SC',sans-serif;color:var(--ink)}
+a{color:var(--link);text-decoration:none}
+.nav{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(251,251,253,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);position:relative;z-index:2}
+.brand{font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--ink)}
+.seg{display:flex;align-items:center;gap:4px;font-size:13px}
+.seg a{color:var(--mute);padding:6px 14px;border-radius:999px;font-weight:500}
+.seg a[aria-current=page]{background:var(--pill);color:var(--ink);font-weight:600}
+.seg .div{width:1px;height:14px;background:rgba(0,0,0,.12);margin:0 8px}
+.seg .lang{color:var(--mute);padding:6px 10px}
+.note{position:absolute;font:500 12px/1.5 'Geist Mono',monospace;color:#0066CC;background:#EAF2FC;border:1px dashed #0066CC;border-radius:8px;padding:6px 10px;max-width:260px}
+</style></head><body>
+
+<div style="width:1440px;height:900px;background:var(--bg);display:flex;flex-direction:column;position:relative;overflow:hidden">
+<header class="nav"><a class="brand" href="#">示例工程师</a>
+<nav class="seg" aria-label="主导航"><a href="#" >作品</a><a href="#" >实验台</a><a href="#" >关于</a><span class="div"></span><a class="lang" href="#">EN</a></nav></header>
+<section style="display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:64px;gap:12px">
+ <p style="margin:0;font-size:19px;font-weight:600;color:var(--acc)">示例工程师 · SAMPLE ENGINEER</p>
+ <h1 style="margin:0;font-size:72px;line-height:1.08;font-weight:700;letter-spacing:-.015em">[职位标题第一行]<br>[职位标题第二行]</h1>
+ <p style="margin:6px 0 0;font-size:20px;color:var(--mute)">[专业方向 1] · [专业方向 2] · [专业方向 3] · [专业方向 4]</p>
+ <div style="display:flex;gap:32px;margin-top:10px;font-size:18px"><a href="#">查看作品 ›</a><a href="#">进入实验台 ›</a></div>
+</section>
+<figure style="margin:8px 0 0;display:flex;justify-content:center;flex:1;min-height:0"><svg viewBox="0 0 900 540" height="100%" role="img" aria-label="功率模块产品渲染示意">
+      <defs>
+        <filter id="sh" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="22"></feGaussianBlur></filter>
+        <linearGradient id="alT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F2F4"></stop><stop offset="1" stop-color="#C9CDD2"></stop></linearGradient>
+        <linearGradient id="alL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C3C7CC"></stop><stop offset="1" stop-color="#A9AEB4"></stop></linearGradient>
+        <linearGradient id="alR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8F959C"></stop><stop offset="1" stop-color="#B6BABF"></stop></linearGradient>
+        <linearGradient id="gT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A4D53"></stop><stop offset="1" stop-color="#26282C"></stop></linearGradient>
+        <linearGradient id="gL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#222428"></stop><stop offset="1" stop-color="#1A1B1E"></stop></linearGradient>
+        <linearGradient id="gR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#101113"></stop><stop offset="1" stop-color="#2A2C30"></stop></linearGradient>
+        <linearGradient id="cuT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAD3B0"></stop><stop offset="1" stop-color="#E2A06E"></stop></linearGradient>
+        <linearGradient id="cuL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D99662"></stop><stop offset="1" stop-color="#B87443"></stop></linearGradient>
+        <linearGradient id="cuR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9663A"></stop><stop offset="1" stop-color="#8A522D"></stop></linearGradient>
+      </defs>
+      <ellipse cx="450" cy="500" rx="330" ry="42" fill="#000000" opacity=".16" filter="url(#sh)"></ellipse>
+      <polygon points="380.7,146 727.1,346 519.3,466 172.9,266" fill="url(#alT)"></polygon>
+      <polygon points="172.9,266 519.3,466 519.3,490 172.9,290" fill="url(#alL)"></polygon>
+      <polygon points="519.3,466 727.1,346 727.1,370 519.3,490" fill="url(#alR)"></polygon>
+      <polygon points="385,113.5 679.5,283.5 515,378.5 220.5,208.5" fill="url(#gT)"></polygon>
+      <polygon points="220.5,208.5 515,378.5 515,438.5 220.5,268.5" fill="url(#gL)"></polygon>
+      <polygon points="515,378.5 679.5,283.5 679.5,343.5 515,438.5" fill="url(#gR)"></polygon>
+      <line x1="220.5" y1="208.5" x2="515" y2="378.5" stroke="#6B6F76" stroke-width=".8" opacity=".6"></line>
+      <line x1="515" y1="378.5" x2="679.5" y2="283.5" stroke="#6B6F76" stroke-width=".8" opacity=".6"></line>
+      <g>
+        <polygon points="405,94 443.1,116 417.1,131 379,109" fill="url(#cuT)"></polygon>
+        <polygon points="379,109 417.1,131 417.1,177 379,155" fill="url(#cuL)"></polygon>
+        <polygon points="417.1,131 443.1,116 443.1,162 417.1,177" fill="url(#cuR)"></polygon>
+      </g>
+      <g transform="translate(95.3,55)">
+        <polygon points="405,94 443.1,116 417.1,131 379,109" fill="url(#cuT)"></polygon>
+        <polygon points="379,109 417.1,131 417.1,177 379,155" fill="url(#cuL)"></polygon>
+        <polygon points="417.1,131 443.1,116 443.1,162 417.1,177" fill="url(#cuR)"></polygon>
+      </g>
+      <g transform="translate(190.5,110)">
+        <polygon points="405,94 443.1,116 417.1,131 379,109" fill="url(#cuT)"></polygon>
+        <polygon points="379,109 417.1,131 417.1,177 379,155" fill="url(#cuL)"></polygon>
+        <polygon points="417.1,131 443.1,116 443.1,162 417.1,177" fill="url(#cuR)"></polygon>
+      </g>
+      <g fill="#D7DADE"><circle cx="300" cy="270" r="3"></circle><circle cx="318" cy="280.5" r="3"></circle><circle cx="336" cy="291" r="3"></circle><circle cx="354" cy="301.5" r="3"></circle></g>
+    </svg></figure>
+<footer style="height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font-size:12px;color:var(--mute);border-top:1px solid rgba(0,0,0,.06)"><span>© 2026 示例工程师</span><span>邮箱 · LinkedIn · 简历 PDF</span></footer>
+<div class="note" style="right:40px;top:64px">右上角分段按钮切换页面；当前页高亮。首页无当前项。</div>
+<div class="note" style="left:40px;bottom:64px">首页 = 100svh，不滚动。主视觉随剩余高度缩放。</div>
+</div></body></html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>N1 作品页 桌面（占位）</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFBFD;--card:#FFFFFF;--ink:#1D1D1F;--mute:#6E6E73;--acc:#BF4800;--link:#0066CC;--pill:#E8E8ED}
+*{box-sizing:border-box}body{margin:0;background:#E5E5EA;font-family:'Geist','Noto Sans SC','Noto Sans CJK SC',sans-serif;color:var(--ink)}
+a{color:var(--link);text-decoration:none}
+.nav{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(251,251,253,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);position:relative;z-index:2}
+.brand{font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--ink)}
+.seg{display:flex;align-items:center;gap:4px;font-size:13px}
+.seg a{color:var(--mute);padding:6px 14px;border-radius:999px;font-weight:500}
+.seg a[aria-current=page]{background:var(--pill);color:var(--ink);font-weight:600}
+.seg .div{width:1px;height:14px;background:rgba(0,0,0,.12);margin:0 8px}
+.seg .lang{color:var(--mute);padding:6px 10px}
+.note{position:absolute;font:500 12px/1.5 'Geist Mono',monospace;color:#0066CC;background:#EAF2FC;border:1px dashed #0066CC;border-radius:8px;padding:6px 10px;max-width:260px}
+</style></head><body>
+
+<div style="width:1440px;background:var(--bg);display:flex;flex-direction:column;position:relative">
+<header class="nav"><a class="brand" href="#">示例工程师</a>
+<nav class="seg" aria-label="主导航"><a href="#" aria-current="page">作品</a><a href="#" >实验台</a><a href="#" >关于</a><span class="div"></span><a class="lang" href="#">EN</a></nav></header>
+<section style="padding:96px 120px 56px"><h1 style="margin:0;font-size:64px;font-weight:700;letter-spacing:-.015em">作品 <span style="font-size:26px;font-weight:500;color:var(--mute)">Work</span></h1>
+<p style="margin:14px 0 0;font-size:20px;color:var(--mute)">3 个职业案例 · 对象、方法、前后值</p></section>
+<section style="background:#000;color:#F5F5F7;padding:96px 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px">
+ <p style="margin:0;font-size:20px;font-weight:600;color:#86868B">[职业案例 A 名称] · [优化目标]</p>
+ <p style="margin:0;font-size:144px;line-height:1;font-weight:700;letter-spacing:-.04em;background:linear-gradient(180deg,#FFF 10%,#F5A66B 60%,#E0592A 100%);-webkit-background-clip:text;background-clip:text;color:transparent">00 → 00 单位</p>
+ <p style="margin:0;font-size:20px;color:#A1A1A6;line-height:1.5">[主指标说明]，降低约 [x]%<br>[次指标] 00 → 00 · 方法：[方法概述]</p>
+ <div style="display:flex;gap:80px;margin-top:44px">
+  <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:44px;font-weight:600">0 → 0 单位</span><span style="font-size:14px;color:#86868B">[职业案例 B] · [指标]</span></div>
+  <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:44px;font-weight:600">&lt; 0.00 单位</span><span style="font-size:14px;color:#86868B">[职业案例 B] · [指标]</span></div>
+  <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:44px;font-weight:600">00 → 00%</span><span style="font-size:14px;color:#86868B">[职业案例 C] · [指标]</span></div>
+ </div></section>
+<section style="padding:80px 120px 120px"><a href="#" style="display:grid;grid-template-columns:80px 1fr auto 24px;align-items:center;gap:32px;padding:36px 0;border-top:1px solid rgba(0,0,0,.08);color:var(--ink)">
+<span style="font:500 14px 'Geist Mono',monospace;color:var(--acc)">W1</span>
+<span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:30px;font-weight:700">[职业案例 A 名称]</span><span style="font-size:17px;color:var(--mute)">[对象] · [方法]</span></span>
+<span style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span style="font-size:34px;font-weight:600;letter-spacing:-.01em">00 → 00 单位</span><span style="font-size:13px;color:var(--mute)">[主指标]</span></span>
+<span style="font-size:22px;color:var(--link)">›</span></a><a href="#" style="display:grid;grid-template-columns:80px 1fr auto 24px;align-items:center;gap:32px;padding:36px 0;border-top:1px solid rgba(0,0,0,.08);color:var(--ink)">
+<span style="font:500 14px 'Geist Mono',monospace;color:var(--acc)">W2</span>
+<span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:30px;font-weight:700">[职业案例 B 名称]</span><span style="font-size:17px;color:var(--mute)">[对象] · [方法]</span></span>
+<span style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span style="font-size:34px;font-weight:600;letter-spacing:-.01em">&lt; 0.00 单位</span><span style="font-size:13px;color:var(--mute)">[主指标]</span></span>
+<span style="font-size:22px;color:var(--link)">›</span></a><a href="#" style="display:grid;grid-template-columns:80px 1fr auto 24px;align-items:center;gap:32px;padding:36px 0;border-top:1px solid rgba(0,0,0,.08);color:var(--ink)">
+<span style="font:500 14px 'Geist Mono',monospace;color:var(--acc)">W3</span>
+<span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:30px;font-weight:700">[职业案例 C 名称]</span><span style="font-size:17px;color:var(--mute)">[对象] · [方法]</span></span>
+<span style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span style="font-size:34px;font-weight:600;letter-spacing:-.01em">00 → 00%</span><span style="font-size:13px;color:var(--mute)">[主指标]</span></span>
+<span style="font-size:22px;color:var(--link)">›</span></a><div style="border-top:1px solid rgba(0,0,0,.08)"></div></section>
+<footer style="height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font-size:12px;color:var(--mute);border-top:1px solid rgba(0,0,0,.06)"><span>© 2026 示例工程师</span><span>邮箱 · LinkedIn · 简历 PDF</span></footer>
+<div class="note" style="right:40px;top:64px">“作品”高亮。黑色数据区块从首页移到这里。</div>
+<div class="note" style="right:120px;top:960px">案例列表 → 各案例详情页（/work/[slug]）</div>
+</div></body></html>
