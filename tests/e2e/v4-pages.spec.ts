@@ -152,28 +152,52 @@ for (const prefix of locales) {
     }
   });
 
-  test(`${prefix || 'zh'} Lab retains every available experiment and distinguishes the two remaining planned previews`, async ({
+  test(`${prefix || 'zh'} Lab retains every available experiment and distinguishes remaining planned previews`, async ({
     page,
     request,
   }) => {
+    const { existsSync, readFileSync, readdirSync } = await import('node:fs');
+    const labDirectory = new URL('../../src/components/lab/', import.meta.url);
+    const descriptors = readdirSync(labDirectory, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => new URL(`${entry.name}/page.json`, labDirectory))
+      .filter((file) => existsSync(file))
+      .map((file) => JSON.parse(readFileSync(file, 'utf8')) as { slug: string; code: string });
+    // Keep the three baseline experiments; independent page registrations extend this oracle.
+    const expectedSlugs = [
+      ...new Set([
+        'chip-junction-temperature',
+        'half-bridge-module',
+        'sample-simulation',
+        ...descriptors.map(({ slug }) => slug),
+      ]),
+    ].sort();
+    const contentDirectory = new URL(
+      `../../src/content/lab/${prefix ? 'en' : 'zh'}/`,
+      import.meta.url,
+    );
+    expect(
+      readdirSync(contentDirectory)
+        .filter((file) => file.endsWith('.md'))
+        .map((file) => file.slice(0, -3))
+        .sort(),
+    ).toEqual(expectedSlugs);
+    const installedCodes = new Set(descriptors.map(({ code }) => code));
+    const expectedPlannedCodes = ['L3', 'S3'].filter((code) => !installedCodes.has(code));
+
     await page.goto(`${prefix}/lab/`);
     const available = page.locator('.lab-available .content-card');
-    await expect(available).toHaveCount(3);
+    await expect(available).toHaveCount(expectedSlugs.length);
     const hrefs = await available
       .locator('h2 a')
       .evaluateAll((links) => links.map((link) => link.getAttribute('href')!).sort());
-    expect(hrefs).toEqual([
-      `${prefix}/lab/chip-junction-temperature/`,
-      `${prefix}/lab/half-bridge-module/`,
-      `${prefix}/lab/sample-simulation/`,
-    ]);
+    expect(hrefs).toEqual(expectedSlugs.map((slug) => `${prefix}/lab/${slug}/`));
     for (const href of hrefs) expect((await request.get(href)).status()).toBe(200);
     const planned = page.locator('.lab-planned .lab-planned-card');
-    await expect(planned).toHaveCount(2);
-    expect(await planned.locator('.lab-card-label').allTextContents()).toEqual([
-      expect.stringMatching(/^L3/),
-      expect.stringMatching(/^S3/),
-    ]);
+    await expect(planned).toHaveCount(expectedPlannedCodes.length);
+    expect(await planned.locator('.lab-card-label').allTextContents()).toEqual(
+      expectedPlannedCodes.map((code) => expect.stringMatching(new RegExp(`^${code}`))),
+    );
     await expect(planned.locator('a, button')).toHaveCount(0);
     for (const card of await planned.all()) {
       await expect(card.locator('h3')).not.toBeEmpty();
@@ -182,7 +206,9 @@ for (const prefix of locales) {
         /Not implemented|\u5c1a\u672a\u5b9e\u73b0/,
       );
     }
-    expect(new Set(await planned.locator('h3').allTextContents()).size).toBe(2);
+    expect(new Set(await planned.locator('h3').allTextContents()).size).toBe(
+      expectedPlannedCodes.length,
+    );
   });
 
   test(`${prefix || 'zh'} legacy Contact resolves to the accessible About contact section`, async ({
