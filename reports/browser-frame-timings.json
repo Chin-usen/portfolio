@@ -1,0 +1,13 @@
+{
+  "mode": "FEM",
+  "frames": 120,
+  "meanFrameMs": 16.665833333333335,
+  "meanFps": 60.003000150007495,
+  "medianFrameMs": 16.699999999999818,
+  "p95FrameMs": 16.799999999999955,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "devicePixelRatio": 1
+}

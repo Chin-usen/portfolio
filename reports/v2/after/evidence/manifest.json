@@ -1,0 +1,462 @@
+{
+  "method": "Byte-for-byte archive; no image recompression, encoding normalization or path redaction in copied files.",
+  "scope": "Three complete raw reports; all A/B JSON; exact detector stderr; all after capture scripts; four B contact sheets and selected original/follow-up screenshots. Complete matrix geometry is retained, not every original full-resolution screenshot.",
+  "files": [
+    {
+      "source": ".dev-tools/reviews/after-assessment-a.md",
+      "archive": "assessment-a.md",
+      "bytes": 29640,
+      "sha256": "c9a51d2634c1dd6f11de9f7a177657d1d72195da88879d37da330acec8f52187"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-b.md",
+      "archive": "assessment-b.md",
+      "bytes": 14456,
+      "sha256": "08ded5b7ac51a602a0da5fca4ba71f3896222f81ee78142b5c3075e73803fa50"
+    },
+    {
+      "source": ".dev-tools/reviews/after-audit.md",
+      "archive": "audit.md",
+      "bytes": 15689,
+      "sha256": "ed49f1792a6a32f6661efe5d2a11e6c6dd29e85449a111690fb3d10e2cda152c"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/desktop-feedback.json",
+      "archive": "evidence/assessment-a-evidence/desktop-feedback.json",
+      "bytes": 1311,
+      "sha256": "462ced337912d7f326ae4184adcd92dd9efa99088658ec416717a3ff2c33ca50"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/followup/confirmation.json",
+      "archive": "evidence/assessment-a-evidence/followup/confirmation.json",
+      "bytes": 13440,
+      "sha256": "f0f741c52c3da4944fc1eb0307ea4e761db4c8350b7f788a03eae9cedd1c7709"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/interaction-notes.json",
+      "archive": "evidence/assessment-a-evidence/interaction-notes.json",
+      "bytes": 1697,
+      "sha256": "d4e80fde5ab5db368238954358d6d45216bbf0c1134cece1c971233031d8dc7a"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/matrix.json",
+      "archive": "evidence/assessment-a-evidence/matrix.json",
+      "bytes": 120580,
+      "sha256": "df34f133faa9a50666cb548babda8b7160b4f0a57a4c496b3a3ee2ea6f153622"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/confirmation.json",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/confirmation.json",
+      "bytes": 35465,
+      "sha256": "85ba6e2df731642f7e584e91ec79fde55e03c425c5d81657bf838579749355ea"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/desktop-selected-stage-collision.json",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/desktop-selected-stage-collision.json",
+      "bytes": 1197,
+      "sha256": "ef270abd64f6d136ee47ccaea191c6c153d6c88177a4dac059e31ebefa77ac30"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/desktop-stage-collision.json",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/desktop-stage-collision.json",
+      "bytes": 1154,
+      "sha256": "2afbec1e289a819c8834d167257105ae0530030b1e892d944e5194d3afcb3d08"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/confirmation.json",
+      "archive": "evidence/assessment-a-evidence/stage-followup/confirmation.json",
+      "bytes": 40532,
+      "sha256": "0d659808e226f062381e451cd99c6fd5f5229ec9a53323413460ebca5cb3fd34"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/initial-hint-overlap.json",
+      "archive": "evidence/assessment-a-evidence/stage-followup/initial-hint-overlap.json",
+      "bytes": 15395,
+      "sha256": "b4d821d3037248df2142c0e5945b72981f804731cfda3eff236705cdc7833c54"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-browser-matrix.json",
+      "archive": "evidence/assessment-b-evidence/after-browser-matrix.json",
+      "bytes": 267617,
+      "sha256": "1d0ae18a4e6b15fa03e33fc35341e0ca3d05aa7eee154a64d79777c66c925f48"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-detector-metadata.json",
+      "archive": "evidence/assessment-b-evidence/after-detector-metadata.json",
+      "bytes": 2645,
+      "sha256": "b047a3c88a123ce265ab6ef1395699cdf1be3cc9dd424e80016e9626f5ecb282"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-detector-raw.json",
+      "archive": "evidence/assessment-b-evidence/after-detector-raw.json",
+      "bytes": 10,
+      "sha256": "2708be578e03e792e308e41c26495572a8aa7654cb654bca2c5ccccc7c8ef761"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-final-targets.json",
+      "archive": "evidence/assessment-b-evidence/after-final-targets.json",
+      "bytes": 9688,
+      "sha256": "a5db5f389b8a4c498fc27de31478cdd8610cfedc0defc20c67410e524969af19"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-final-verification.json",
+      "archive": "evidence/assessment-b-evidence/after-final-verification.json",
+      "bytes": 4563,
+      "sha256": "2dea63d4f0cc4c4d1edc9eca73785e83c38f723a18c9cb554ea59bc9b339bb33"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-interactions.json",
+      "archive": "evidence/assessment-b-evidence/after-interactions.json",
+      "bytes": 4436,
+      "sha256": "f2d0cafc34dea151852adcca99930e8100f690e3dad3ed794375f49d9df9b666"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-rebuilt-verification.json",
+      "archive": "evidence/assessment-b-evidence/after-rebuilt-verification.json",
+      "bytes": 4533,
+      "sha256": "af5bcb578f2fa13cbedddafc9d68aaeb1dfab4b47a0bafe3d366f839a1923f1a"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-targeted-verification.json",
+      "archive": "evidence/assessment-b-evidence/after-targeted-verification.json",
+      "bytes": 12532,
+      "sha256": "2a6e15326015b24ed217a315613669d34a75e4760f63cb5325aa42a5e98cc560"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/after-detector-stderr.txt",
+      "archive": "evidence/assessment-b-evidence/after-detector-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-capture.cjs",
+      "archive": "evidence/scripts/after-assessment-a-capture.cjs",
+      "bytes": 2189,
+      "sha256": "8ce5b36151d15b02230e2e51682764471baefbf918f13d2cda8dac1a331a21e8"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-desktop.cjs",
+      "archive": "evidence/scripts/after-assessment-a-desktop.cjs",
+      "bytes": 1495,
+      "sha256": "bcde2913b6ddb52def0e6ec1e0fe85d5c0b2077cc6dbf240c884a185227dbb21"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-followup.cjs",
+      "archive": "evidence/scripts/after-assessment-a-followup.cjs",
+      "bytes": 2703,
+      "sha256": "58bc7b98a4db346b4c95e3a8178553b23348d0e63ddcbe3a31c266c2d39f13cc"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-interactions.cjs",
+      "archive": "evidence/scripts/after-assessment-a-interactions.cjs",
+      "bytes": 3623,
+      "sha256": "7e2a97eaabcefe17fcddd9a7e41a84301676f3972271e8dcd77a7b813fc43035"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-metric-crop.cjs",
+      "archive": "evidence/scripts/after-assessment-a-metric-crop.cjs",
+      "bytes": 743,
+      "sha256": "6fbbc84696c809b3df345ad8417a925acf708c0f9c1880a69b3fd0d43fd0422b"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-numeric-followup.cjs",
+      "archive": "evidence/scripts/after-assessment-a-numeric-followup.cjs",
+      "bytes": 3393,
+      "sha256": "cff4ce156f340bfa801fc51c9729441cdfb79333d6c5ced79437bac14d923c95"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-selected-stage.cjs",
+      "archive": "evidence/scripts/after-assessment-a-selected-stage.cjs",
+      "bytes": 1191,
+      "sha256": "b0a8fbcb50fb9afe494103ad95d9c3931a35c41c2b5884056dcaf4cca3d5503e"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-stage-crop.cjs",
+      "archive": "evidence/scripts/after-assessment-a-stage-crop.cjs",
+      "bytes": 1119,
+      "sha256": "7d439fe6f4a38d7e927bb3cd476839b06a10ba5c6864f8dc84db3b880f5b7c67"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-stage-followup.cjs",
+      "archive": "evidence/scripts/after-assessment-a-stage-followup.cjs",
+      "bytes": 3106,
+      "sha256": "7607693338d1b6ab74ae2ed5e3771288eda4e4bcad402991b730bb662443dc35"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-browser-matrix.cjs",
+      "archive": "evidence/scripts/after-b-browser-matrix.cjs",
+      "bytes": 4411,
+      "sha256": "6aac001036e9e86414181b8f096d8126d8285f7c715980b75194f5c4e1b3bda7"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-final-targets.cjs",
+      "archive": "evidence/scripts/after-b-final-targets.cjs",
+      "bytes": 1838,
+      "sha256": "f606de4cc7aeedf79142f9507bc6143d5e1b01214243972a74917e76c7849338"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-final-verification.cjs",
+      "archive": "evidence/scripts/after-b-final-verification.cjs",
+      "bytes": 2624,
+      "sha256": "22de6b2c057868f66c185ee87370dffb78607d9c9d895ff21497a9a69897e5d1"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-interactions.cjs",
+      "archive": "evidence/scripts/after-b-interactions.cjs",
+      "bytes": 7272,
+      "sha256": "48c5da6eb68ceedf963d46b646b59447a8d602491070a1e6c2c8e69995be3718"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-rebuilt-verification.cjs",
+      "archive": "evidence/scripts/after-b-rebuilt-verification.cjs",
+      "bytes": 2592,
+      "sha256": "edf9e614b3750bff0f7f0a93aa84cf31bc07dd3e7aee87ec685f105b91c31a48"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-targeted-verification.cjs",
+      "archive": "evidence/scripts/after-b-targeted-verification.cjs",
+      "bytes": 4908,
+      "sha256": "9b2a549fe69948215df26e51caea39026b329d29798552f738ac6e29c77fd64e"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-contact-sheets.py",
+      "archive": "evidence/scripts/after-b-contact-sheets.py",
+      "bytes": 873,
+      "sha256": "36585f62a535b52f5553cf5e8ccb3b652624afab31a8f83c8c5b51de4724ed62"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/en-s1-1440-power-max-viewport.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-1440-power-max-viewport.png",
+      "bytes": 119168,
+      "sha256": "3e5c08e9c844b2363d36114b85cebcaa2342d7b5d2dd562f26ca4c571390255a"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/en-s1-390-fem-load-failure.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-390-fem-load-failure.png",
+      "bytes": 53915,
+      "sha256": "368ab82cbb888d1924054254779685a4c7773d91302bc72b7a1b59c60ac7dace"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/en-s1-390-cooler-keyboard.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-390-cooler-keyboard.png",
+      "bytes": 54329,
+      "sha256": "3a13061c62c2d510ce6243b9b37d7bdeb79d5e18144024c5a25f1eebfaf1d8d5"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/followup/en-390-844-light-text200.png",
+      "archive": "evidence/assessment-a-evidence/followup/en-390-844-light-text200.png",
+      "bytes": 45998,
+      "sha256": "d2e908d15a366bef6ef8790e37baf85d44fef10a7af93203261030a3c7d27e61"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/followup/en-1440-1000-light-normal.png",
+      "archive": "evidence/assessment-a-evidence/followup/en-1440-1000-light-normal.png",
+      "bytes": 119138,
+      "sha256": "cade9aa09cd3d5573f70170a9be1f08846b2c4bfee55a6867290965935ad0257"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/followup/en-1440-688-light-normal.png",
+      "archive": "evidence/assessment-a-evidence/followup/en-1440-688-light-normal.png",
+      "bytes": 94513,
+      "sha256": "585d49db175beddb54d126412b5f2ec0132f6e46e966e1a1101169cda3ab0cd6"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/en-1440-light-primary-metric-text200.png",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/en-1440-light-primary-metric-text200.png",
+      "bytes": 29929,
+      "sha256": "041934aa9f21be3ef45cf25c15762d04c952032fef9ee4eeb6d9ceeb303e8a86"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/en-1440-light-full-stage-text200.png",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/en-1440-light-full-stage-text200.png",
+      "bytes": 102175,
+      "sha256": "e4ec853d03f73e8a13d04c319fa62d21dbff5dff062072951ecf064606aaf7bc"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/en-1440-light-selected-stage-text200.png",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/en-1440-light-selected-stage-text200.png",
+      "bytes": 116938,
+      "sha256": "e6143ca09ce792a62efe30b41e7b3aa9620362f9af1e33b677948efb6ca155b1"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/en-390-light-operating-text200.png",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/en-390-light-operating-text200.png",
+      "bytes": 37222,
+      "sha256": "2f6facafc00f5762aa73f8afd63cf2d9e0611d9b9041ddd2a0f461383374fc2e"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/numeric-followup/en-390-light-cooler-text200.png",
+      "archive": "evidence/assessment-a-evidence/numeric-followup/en-390-light-cooler-text200.png",
+      "bytes": 40956,
+      "sha256": "16c94eb973aae0e3d428553367d90373010ec7e6f240408000f9d4f3b656c352"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-1440-dark-100-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-1440-dark-100-selected.png",
+      "bytes": 92810,
+      "sha256": "63ed46326491b0dd237f53acbbdcb52ece7c812af7cd42b8e13e0dd69de13540"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-1440-dark-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-1440-dark-200-selected.png",
+      "bytes": 171900,
+      "sha256": "7ba0a0be23b5e0f4e54b665bcdb651208a84937ebcef4c23ce9d4ab1f9910be3"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-1440-light-100-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-1440-light-100-selected.png",
+      "bytes": 90328,
+      "sha256": "fd7bf16797b0ce3dd1f8fb3f6d6ad901d02798de75121af5f0581762d6e248f4"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-1440-light-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-1440-light-200-selected.png",
+      "bytes": 169331,
+      "sha256": "98a5185de39323c9593141e6a706c071bcce015b35390ccb83e9edfae7e16eee"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-390-dark-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-390-dark-200-selected.png",
+      "bytes": 85850,
+      "sha256": "e3e0c0dc084fcebc95f0f792bf94f7e6ae3fe8c26e96b846890d38334bff96fb"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/en-390-light-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/en-390-light-200-selected.png",
+      "bytes": 85388,
+      "sha256": "83c45f8004bdfad5bfef89e719e68e722ce7464fe3d54c4d3f1a26a7a4790bac"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/zh-1440-dark-100-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/zh-1440-dark-100-selected.png",
+      "bytes": 82359,
+      "sha256": "f102b191cb8080ba73ed1edfa5692b4716644dc9c2258c115792dc4b0c93704c"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/zh-1440-dark-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/zh-1440-dark-200-selected.png",
+      "bytes": 162799,
+      "sha256": "3b8786ba5ffe52a5b128e5766aa81d2de3a4dfc911583c962366d420fcae4853"
+    },
+    {
+      "source": ".dev-tools/reviews/after-assessment-a-evidence/stage-followup/zh-390-dark-200-selected.png",
+      "archive": "evidence/assessment-a-evidence/stage-followup/zh-390-dark-200-selected.png",
+      "bytes": 77428,
+      "sha256": "7d2fbc73e6a640359e3b3889b395be05f98faa92d699addf8afb3e40fdd110e3"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-sheet-en-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-sheet-en-1440.png",
+      "bytes": 325517,
+      "sha256": "8ecb9156b48493d3bd1f003f37e17734468ca121653bc8ba40cd1fdde85ab0cc"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-sheet-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-sheet-en-390.png",
+      "bytes": 906302,
+      "sha256": "28ef05c03c5a7b2732bfcebcd59e586f482cb15d908bd938f516a219d310fa8a"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-sheet-zh-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-sheet-zh-1440.png",
+      "bytes": 258776,
+      "sha256": "edea68e3f4a02089e48a537932f1d7687c13f3f74eaf4899183c7ce48f595a87"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-sheet-zh-390.png",
+      "archive": "evidence/assessment-b-evidence/b-sheet-zh-390.png",
+      "bytes": 681115,
+      "sha256": "174ce40b737fe6559a29dbbea5d1ca8ed70f11be94d0bd31e4a6a03507551665"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-en-s1-390-light.png",
+      "archive": "evidence/assessment-b-evidence/b-en-s1-390-light.png",
+      "bytes": 163061,
+      "sha256": "9e6fd8cb7569557b1f4e8fd5c77c05041dc0d090fa163a0e3b61bca4f966f1c3"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-zh-s1-1440-dark.png",
+      "archive": "evidence/assessment-b-evidence/b-zh-s1-1440-dark.png",
+      "bytes": 197237,
+      "sha256": "4073b0c84d7c9d6709202df5826de3848edd41d63318568f7022b5e049c6562f"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-en-dark-skip.png",
+      "archive": "evidence/assessment-b-evidence/b-en-dark-skip.png",
+      "bytes": 48650,
+      "sha256": "b5dec1984b10b5e0646a90fdd6ac456e57eaabf762a6fefe3216cdf0f2bbd426"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-zh-dark-skip.png",
+      "archive": "evidence/assessment-b-evidence/b-zh-dark-skip.png",
+      "bytes": 45661,
+      "sha256": "58402e0b3ed587e7e0e38501be7df0ab0fd8dcdfad50ec99aac35367e90efccd"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-numeric-text200-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-numeric-text200-en-390.png",
+      "bytes": 39362,
+      "sha256": "2a28f382dc4538288df7213e155b6f0186e078ccd2dc631dbc4b3b9649b0c698"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-targets-home-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-targets-home-en-390.png",
+      "bytes": 117037,
+      "sha256": "b209e3d8a183288d4e062bc574133ba563904e60d4a1796c25cad86135706d6d"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-targets-contact-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-targets-contact-en-390.png",
+      "bytes": 28286,
+      "sha256": "4a16c22b97462e798f53b8ed0e5ed1cd6c63643962889029c332bad2d787d456"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-numeric-text200-en-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-final-numeric-text200-en-1440.png",
+      "bytes": 134530,
+      "sha256": "935ca0b33dc1dcb92904eac67ac6073655d2db470057f4e18bc5ca63cb307b10"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-numeric-text200-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-numeric-text200-en-390.png",
+      "bytes": 37198,
+      "sha256": "443d7b61195181d049b3689dc39e08332fa545511206d818522a40862fb83934"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-numeric-text200-zh-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-final-numeric-text200-zh-1440.png",
+      "bytes": 183778,
+      "sha256": "d384e7a67314ca33946e2d52b2b6982c642890fbc7b4bb9d25b6aa684501eded"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-numeric-text200-zh-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-numeric-text200-zh-390.png",
+      "bytes": 47611,
+      "sha256": "55dafcfde506774d27d969110654b6d079de0eb1b77d0c72bb0239e6ac0e2954"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-summary-en-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-final-summary-en-1440.png",
+      "bytes": 119138,
+      "sha256": "cade9aa09cd3d5573f70170a9be1f08846b2c4bfee55a6867290965935ad0257"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-summary-en-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-summary-en-390.png",
+      "bytes": 50756,
+      "sha256": "b6469128c02fdf53d599ca4b1d7197476ed2414f21ab66b01053e069d226bd13"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-summary-zh-1440.png",
+      "archive": "evidence/assessment-b-evidence/b-final-summary-zh-1440.png",
+      "bytes": 131215,
+      "sha256": "95f1c26c966d7f6485829550cff6f629349ba2dfb18a9375393e3ccac987bd2e"
+    },
+    {
+      "source": ".dev-tools/reviews/after-b-evidence/b-final-summary-zh-390.png",
+      "archive": "evidence/assessment-b-evidence/b-final-summary-zh-390.png",
+      "bytes": 60153,
+      "sha256": "8fc0a78ba5474a0931bcee56c8c5181ba6a602e3c6dbf8d60d22b1ff1358f18f"
+    }
+  ]
+}

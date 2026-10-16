@@ -1,12 +1,31 @@
 node_modules/
 dist/
 .astro/
-.wrangler/
 .env
 .env.*
 !.env.example
+playwright-report/
+test-results/
+.lighthouseci/
+coverage/
 .DS_Store
-*.log
+
+# Development-only impeccable installation and generated context.
+**/.impeccable/
+**/.agents/
+**/.agent/
+**/.codex/
+**/.claude/
+**/.dev-tools/
+/PRODUCT.md
+/DESIGN.md
+# Authoritative docs/DESIGN.md and docs/PRD are intentionally not ignored.
+
+**/__pycache__/
+**/.venv/
+
 # 私人素材永不入库 / private source material never committed
 private/
 *.private.*
+.wrangler/
+*.log

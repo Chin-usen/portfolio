@@ -1,0 +1,30 @@
+{
+  "scalar": {
+    "Rjmax": {
+      "mean_relative_error": 0.005490011330695124,
+      "max_relative_error": 0.02680148774574409,
+      "rmse_K_per_W": 0.008302579759306076,
+      "mean_target_pass": true,
+      "max_target_pass": true
+    },
+    "Rjavg": {
+      "mean_relative_error": 0.004565511726071052,
+      "max_relative_error": 0.024177129503373807,
+      "rmse_K_per_W": 0.006819091348510539,
+      "mean_target_pass": true,
+      "max_target_pass": true
+    }
+  },
+  "centreline_mean_abs_error_normalized_by_Rmax": 0.004585539112755329,
+  "centreline_max_abs_error_normalized_by_Rmax": 0.02752152905142032,
+  "pod_rank": 8,
+  "pod_training_centered_normalized_energy": 0.9992882079501088,
+  "pod_field_holdout_mean_nrmse": 0.006229129585387876,
+  "pod_field_holdout_max_nrmse": 0.029456351255596966,
+  "pod_projection_only_holdout_mean_nrmse": 0.002431935286505832,
+  "scalar_json_bytes": 216323,
+  "total_model_bytes": 509168,
+  "scalar_size_pass": true,
+  "total_size_pass": true,
+  "elapsed_seconds": 2.3010118999518454
+}

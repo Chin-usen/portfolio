@@ -1,0 +1,54 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LabCard from './LabCard.astro';
+import { getLocalizedLab } from '../lib/content';
+import { getUi } from '../i18n/dictionaries';
+import '../styles/lab-index.css';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const ui = getUi(locale);
+const lab = await getLocalizedLab(locale);
+const homeEntry = await getEntry('home', locale);
+if (!homeEntry) throw new Error(`Missing home content: ${locale}`);
+const content = homeEntry.data.lab;
+---
+
+<BaseLayout
+  locale={locale}
+  title={content.title}
+  description={ui.lab.description}
+  bodyClass="lab-index-page"
+>
+  <header class="page-heading lab-heading">
+    <h1>
+      {content.title}
+      <span>{content.kicker}</span>
+    </h1>
+    <p>{ui.lab.description}</p>
+  </header>
+  <section class="lab-available" aria-label={content.allLabel}>
+    <div class="card-grid">
+      {lab.map((entry) => (
+        <LabCard entry={entry} locale={locale} headingLevel="h2" />
+      ))}
+    </div>
+    {!lab.length && <p>{ui.common.noItems}</p>}
+  </section>
+  <section class="lab-planned" aria-labelledby="lab-planned-title">
+    <h2 id="lab-planned-title">{locale === 'zh' ? '概念预览' : 'Concept previews'}</h2>
+    <div class="card-grid">
+      {content.planned.map((card) => (
+        <article class="content-card lab-planned-card">
+          <p class="lab-card-label">{card.label}</p>
+          <h3>{card.title}</h3>
+          <p class="lab-card-subtitle">{card.subtitle}</p>
+          <p>{card.description}</p>
+          <p class="lab-card-status">{card.status}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

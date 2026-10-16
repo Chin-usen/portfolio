@@ -1,0 +1,65 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocalizedWork } from '../lib/content';
+import { localePath } from '../i18n/utils';
+import '../styles/work.css';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const work = await getLocalizedWork(locale);
+const homeEntry = await getEntry('home', locale);
+if (!homeEntry) throw new Error(`Missing home content: ${locale}`);
+const metrics = homeEntry.data.metrics;
+const title = locale === 'zh' ? '作品' : 'Work';
+const subtitle =
+  locale === 'zh'
+    ? '3 个职业案例 · 对象、方法、前后值'
+    : '3 career cases · Object, method, before and after';
+---
+
+<BaseLayout locale={locale} title={title} description={subtitle} bodyClass="work-page">
+  <header class="work-heading">
+    <h1>
+      {title}
+      {locale === 'zh' && <span lang="en">Work</span>}
+    </h1>
+    <p>{subtitle}</p>
+  </header>
+  <section class="work-metrics" aria-labelledby="work-metrics-title">
+    <h2 id="work-metrics-title">{metrics.label}</h2>
+    <p class="work-main-metric">{metrics.value}</p>
+    <p class="work-metric-description">
+      {metrics.description.map((line) => (
+        <span>{line}</span>
+      ))}
+    </p>
+    <dl class="work-secondary-metrics">
+      {metrics.secondary.map((metric) => (
+        <div>
+          <dt>{metric.label}</dt>
+          <dd>{metric.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+  <section class="work-list" aria-label={locale === 'zh' ? '职业案例列表' : 'Career cases'}>
+    {work.map((entry, index) => (
+      <a class="work-row" href={localePath(locale, `/work/${entry.data.translationKey}/`)}>
+        <span class="work-row-code">W{index + 1}</span>
+        <div class="work-row-copy">
+          <h2>{entry.data.title}</h2>
+          <p>{entry.data.summary}</p>
+        </div>
+        <div class="work-row-metric">
+          <span>{entry.data.metrics[0]!.value}</span>
+          <small>{entry.data.metrics[0]!.label}</small>
+        </div>
+        <span class="work-row-arrow" aria-hidden="true">
+          ›
+        </span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

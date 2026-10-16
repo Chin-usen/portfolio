@@ -1,0 +1,593 @@
+[
+  {
+    "id": "zh-1440-1000-light-normal",
+    "width": 1440,
+    "height": 1000,
+    "locale": "zh",
+    "colorScheme": "light",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scrollY": 601,
+    "pageWidth": 1440,
+    "summary": {
+      "text": "芯片结温 367.8 °C · 0.606 K/W\n\n解析参考\n\n超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 169,
+        "y": 255.6875,
+        "width": 1102,
+        "height": 85.515625,
+        "top": 255.6875,
+        "right": 1271,
+        "bottom": 341.203125,
+        "left": 169
+      }
+    },
+    "warning": {
+      "text": "超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 169,
+        "y": 310.3125,
+        "width": 1102,
+        "height": 19.5,
+        "top": 310.3125,
+        "right": 1271,
+        "bottom": 329.8125,
+        "left": 169
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 169,
+        "y": 561.828125,
+        "width": 245.5,
+        "height": 44,
+        "top": 561.828125,
+        "right": 414.5,
+        "bottom": 605.828125,
+        "left": 169
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "zh-1440-1000-dark-normal",
+    "width": 1440,
+    "height": 1000,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scrollY": 601,
+    "pageWidth": 1440,
+    "summary": {
+      "text": "芯片结温 367.8 °C · 0.606 K/W\n\n解析参考\n\n超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 169,
+        "y": 255.6875,
+        "width": 1102,
+        "height": 85.515625,
+        "top": 255.6875,
+        "right": 1271,
+        "bottom": 341.203125,
+        "left": 169
+      }
+    },
+    "warning": {
+      "text": "超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 169,
+        "y": 310.3125,
+        "width": 1102,
+        "height": 19.5,
+        "top": 310.3125,
+        "right": 1271,
+        "bottom": 329.8125,
+        "left": 169
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 169,
+        "y": 561.828125,
+        "width": 245.5,
+        "height": 44,
+        "top": 561.828125,
+        "right": 414.5,
+        "bottom": 605.828125,
+        "left": 169
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-1440-1000-light-normal",
+    "width": 1440,
+    "height": 1000,
+    "locale": "en",
+    "colorScheme": "light",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scrollY": 650,
+    "pageWidth": 1440,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 169,
+        "y": 206.6875,
+        "width": 1102,
+        "height": 85.515625,
+        "top": 206.6875,
+        "right": 1271,
+        "bottom": 292.203125,
+        "left": 169
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 169,
+        "y": 261.3125,
+        "width": 1102,
+        "height": 19.5,
+        "top": 261.3125,
+        "right": 1271,
+        "bottom": 280.8125,
+        "left": 169
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 169,
+        "y": 512.828125,
+        "width": 245.5,
+        "height": 44,
+        "top": 512.828125,
+        "right": 414.5,
+        "bottom": 556.828125,
+        "left": 169
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-1440-1000-dark-normal",
+    "width": 1440,
+    "height": 1000,
+    "locale": "en",
+    "colorScheme": "dark",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scrollY": 650,
+    "pageWidth": 1440,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 169,
+        "y": 206.6875,
+        "width": 1102,
+        "height": 85.515625,
+        "top": 206.6875,
+        "right": 1271,
+        "bottom": 292.203125,
+        "left": 169
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 169,
+        "y": 261.3125,
+        "width": 1102,
+        "height": 19.5,
+        "top": 261.3125,
+        "right": 1271,
+        "bottom": 280.8125,
+        "left": 169
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 169,
+        "y": 512.828125,
+        "width": 245.5,
+        "height": 44,
+        "top": 512.828125,
+        "right": 414.5,
+        "bottom": 556.828125,
+        "left": 169
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "zh-390-844-light-normal",
+    "width": 390,
+    "height": 844,
+    "locale": "zh",
+    "colorScheme": "light",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollY": 1050,
+    "pageWidth": 390,
+    "summary": {
+      "text": "芯片结温 367.8 °C · 0.606 K/W\n\n解析参考\n\n超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 33,
+        "y": 119.84375,
+        "width": 324,
+        "height": 85.515625,
+        "top": 119.84375,
+        "right": 357,
+        "bottom": 205.359375,
+        "left": 33
+      }
+    },
+    "warning": {
+      "text": "超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 33,
+        "y": 174.46875,
+        "width": 324,
+        "height": 19.5,
+        "top": 174.46875,
+        "right": 357,
+        "bottom": 193.96875,
+        "left": 33
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 33,
+        "y": 423.90625,
+        "width": 324,
+        "height": 44,
+        "top": 423.90625,
+        "right": 357,
+        "bottom": 467.90625,
+        "left": 33
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "zh-390-844-dark-normal",
+    "width": 390,
+    "height": 844,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollY": 1050,
+    "pageWidth": 390,
+    "summary": {
+      "text": "芯片结温 367.8 °C · 0.606 K/W\n\n解析参考\n\n超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 33,
+        "y": 119.84375,
+        "width": 324,
+        "height": 85.515625,
+        "top": 119.84375,
+        "right": 357,
+        "bottom": 205.359375,
+        "left": 33
+      }
+    },
+    "warning": {
+      "text": "超过 SiC 器件常见最高结温 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 33,
+        "y": 174.46875,
+        "width": 324,
+        "height": 19.5,
+        "top": 174.46875,
+        "right": 357,
+        "bottom": 193.96875,
+        "left": 33
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 33,
+        "y": 423.90625,
+        "width": 324,
+        "height": 44,
+        "top": 423.90625,
+        "right": 357,
+        "bottom": 467.90625,
+        "left": 33
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-390-844-light-normal",
+    "width": 390,
+    "height": 844,
+    "locale": "en",
+    "colorScheme": "light",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollY": 1151,
+    "pageWidth": 390,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 33,
+        "y": 85.640625,
+        "width": 324,
+        "height": 105.015625,
+        "top": 85.640625,
+        "right": 357,
+        "bottom": 190.65625,
+        "left": 33
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 33,
+        "y": 140.265625,
+        "width": 324,
+        "height": 39,
+        "top": 140.265625,
+        "right": 357,
+        "bottom": 179.265625,
+        "left": 33
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 33,
+        "y": 442.703125,
+        "width": 324,
+        "height": 44,
+        "top": 442.703125,
+        "right": 357,
+        "bottom": 486.703125,
+        "left": 33
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-390-844-dark-normal",
+    "width": 390,
+    "height": 844,
+    "locale": "en",
+    "colorScheme": "dark",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollY": 1151,
+    "pageWidth": 390,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 33,
+        "y": 85.640625,
+        "width": 324,
+        "height": 105.015625,
+        "top": 85.640625,
+        "right": 357,
+        "bottom": 190.65625,
+        "left": 33
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 33,
+        "y": 140.265625,
+        "width": 324,
+        "height": 39,
+        "top": 140.265625,
+        "right": 357,
+        "bottom": 179.265625,
+        "left": 33
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 33,
+        "y": 442.703125,
+        "width": 324,
+        "height": 44,
+        "top": 442.703125,
+        "right": 357,
+        "bottom": 486.703125,
+        "left": 33
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-1440-688-light-normal",
+    "width": 1440,
+    "height": 688,
+    "locale": "en",
+    "colorScheme": "light",
+    "viewport": {
+      "width": 1440,
+      "height": 688
+    },
+    "scrollY": 717,
+    "pageWidth": 1440,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 169,
+        "y": 39.6875,
+        "width": 1102,
+        "height": 85.515625,
+        "top": 39.6875,
+        "right": 1271,
+        "bottom": 125.203125,
+        "left": 169
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 169,
+        "y": 94.3125,
+        "width": 1102,
+        "height": 19.5,
+        "top": 94.3125,
+        "right": 1271,
+        "bottom": 113.8125,
+        "left": 169
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 169,
+        "y": 345.828125,
+        "width": 245.5,
+        "height": 44,
+        "top": 345.828125,
+        "right": 414.5,
+        "bottom": 389.828125,
+        "left": 169
+      }
+    },
+    "feedbackAndInputVisible": true
+  },
+  {
+    "id": "en-390-844-light-text200",
+    "width": 390,
+    "height": 844,
+    "locale": "en",
+    "colorScheme": "light",
+    "text200": true,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollY": 3671,
+    "pageWidth": 390,
+    "summary": {
+      "text": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "grid",
+      "rect": {
+        "x": 49,
+        "y": 0,
+        "width": 292,
+        "height": 285.765625,
+        "top": 0,
+        "right": 341,
+        "bottom": 285.765625,
+        "left": 49
+      }
+    },
+    "warning": {
+      "text": "Above the common SiC junction-temperature limit of 175 °C",
+      "hidden": false,
+      "display": "flex",
+      "rect": {
+        "x": 49,
+        "y": 146.96875,
+        "width": 292,
+        "height": 117,
+        "top": 146.96875,
+        "right": 341,
+        "bottom": 263.96875,
+        "left": 49
+      }
+    },
+    "input": {
+      "text": "500",
+      "hidden": false,
+      "display": "block",
+      "rect": {
+        "x": 49,
+        "y": 400.734375,
+        "width": 292,
+        "height": 44,
+        "top": 400.734375,
+        "right": 341,
+        "bottom": 444.734375,
+        "left": 49
+      }
+    },
+    "feedbackAndInputVisible": true
+  }
+]

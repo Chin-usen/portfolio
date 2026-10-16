@@ -1,0 +1,140 @@
+{
+  "status": "failed",
+  "runs": [
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T04:29:54.069Z",
+      "performance": 80,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3761.228,
+      "fcp_ms": 3761.228,
+      "cls": 0.002255634745023092,
+      "raw_sha256": "85ac87f459acab9ea3264aef55fc46ebcc253a6b09ab1b36933156a844d97373"
+    },
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T04:30:05.669Z",
+      "performance": 80,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3761.746,
+      "fcp_ms": 3761.746,
+      "cls": 0.002255634745023092,
+      "raw_sha256": "f65df4a8de4aa0634af04739b4683340724ac8b2b3403a5786ea0e692402859e"
+    },
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T04:30:16.622Z",
+      "performance": 87,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3759.3420000000006,
+      "fcp_ms": 2107.0065,
+      "cls": 0.002255634745023092,
+      "raw_sha256": "dfbb4fd41bb7466f18d85abd80f6508e5ddf21575796713ad39c428cab5ad462"
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T04:30:27.559Z",
+      "performance": 99,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1806.204,
+      "fcp_ms": 1731.204,
+      "cls": 0.003814441306040249,
+      "raw_sha256": "1a035560065b7a3c6d252f4d7fc56c8eeb64d9eb0553682598b2e7b270ecb7da"
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T04:30:38.391Z",
+      "performance": 99,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1804.989,
+      "fcp_ms": 1279.989,
+      "cls": 0,
+      "raw_sha256": "d181971fff31cba1203047c6661410123dae7bc58909b0b1277806273930c197"
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T04:30:49.370Z",
+      "performance": 99,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1804.9740000000002,
+      "fcp_ms": 1729.9740000000002,
+      "cls": 0.003814441306040249,
+      "raw_sha256": "6378805d04deddc44eba555d385c4d5042040ece18761e4f01ce225096865b36"
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:00.259Z",
+      "performance": 85,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3306.081,
+      "fcp_ms": 3306.081,
+      "cls": 0.0005588659291581789,
+      "raw_sha256": "3f1356349d9594e02b3e93e834e32a78ef0a12fc9ba73ed939b84b27b51e422e"
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:11.274Z",
+      "performance": 92,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3307.107,
+      "fcp_ms": 1207.107,
+      "cls": 0.0005402575636482985,
+      "raw_sha256": "ffdda7aa3c81cbb0e8add82c187f003c6eb2468383988bdd43098e9697c46491"
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:22.359Z",
+      "performance": 92,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3306.8385,
+      "fcp_ms": 1206.8384999999998,
+      "cls": 0.0005588659291581789,
+      "raw_sha256": "65e61de8335290e1fe4b5c850414fb70a461aad746e681dc31e5d4dda84cc974"
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:33.376Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1504.4955,
+      "fcp_ms": 1429.4955,
+      "cls": 0.001093496860311959,
+      "raw_sha256": "826b90d051093825d26da953bd21f24574a4ab231466fd16b15853fd1cfa262f"
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:44.349Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1505.865,
+      "fcp_ms": 1430.865,
+      "cls": 0.001093496860311959,
+      "raw_sha256": "8efd2cc82174d4fc2dedee1a6fdfa663dc5b61462812a76ae064b5c447f89a69"
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T04:31:55.425Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1504.935,
+      "fcp_ms": 1279.935,
+      "cls": 1.608163682048057e-05,
+      "raw_sha256": "62dd61a591bb078735366a10706d5912b960de68e3caac3194279aa0da4977c5"
+    }
+  ],
+  "count": 12,
+  "scope": "Four-route 12-run pilot after all-site font subsets; three Chinese Home raw LHRs included. Other raw LHRs retained locally.",
+  "finding": "Chinese Home median performance80; LCP about3.76s. EnglishHome andbothS1routes pass. Original thresholds unchanged."
+}

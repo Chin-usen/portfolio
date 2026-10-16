@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "started_utc": "2026-10-15T05:51:12.068899+00:00",
+  "finished_utc": "2026-10-15T06:15:55.745554+00:00",
+  "exit_code": 0,
+  "pass": true,
+  "completed_runs": 54,
+  "completed_routes": 18,
+  "resumable": true,
+  "collection": {
+    "initial_interrupted_started_utc": "2026-10-15T05:51:12.068899+00:00",
+    "initial_import": {
+      "imported_utc": "2026-10-15T06:08:27.325194+00:00",
+      "samples": 18,
+      "source_snapshot_match": true,
+      "initial_started_utc": "2026-10-15T05:51:12.068899+00:00"
+    },
+    "runtime_source_hashes_match": true,
+    "built_output_unchanged_during_resume": true,
+    "batch_count": 12,
+    "no_score_based_reruns": true,
+    "final_assertion_command": "pnpm exec lhci assert --config=lighthouserc.cjs"
+  }
+}

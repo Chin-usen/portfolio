@@ -1,0 +1,14 @@
+lang: en
+name: Sample Engineer
+role: '[Role and specialty]'
+email:
+  user: hello
+  domain: example.com
+linkedin: https://www.linkedin.com/
+languages:
+  - '[Language 1]'
+  - '[Language 2]'
+skills:
+  - '[Focus area 1]'
+  - '[Focus area 2]'
+  - '[Focus area 3]'

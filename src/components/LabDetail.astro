@@ -1,0 +1,48 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DemoPanel from './DemoPanel.astro';
+import ThermalStack from './lab/thermal-stack/ThermalStack.astro';
+import { getUi } from '../i18n/dictionaries';
+import { localePath } from '../i18n/utils';
+interface Props {
+  locale: 'zh' | 'en';
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const ui = getUi(locale);
+const { title, summary, basis, status, kind } = entry.data;
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={summary}
+  bodyClass={entry.data.translationKey === 'chip-junction-temperature' ? 'thermal-page' : undefined}
+>
+  {entry.data.translationKey === 'chip-junction-temperature' ? (
+    <ThermalStack locale={locale} />
+  ) : (
+    <>
+      <a href={localePath(locale, '/lab/')}>{ui.lab.back}</a>
+      <article>
+        <header class="page-heading">
+          <p>{kind === 'teardown' ? ui.lab.teardown : ui.lab.simulation}</p>
+          <h1>{title}</h1>
+          <p>{summary}</p>
+        </header>
+        <dl class="meta-list">
+          <dt>{ui.lab.basis}</dt>
+          <dd>{basis}</dd>
+          <dt>{ui.lab.status}</dt>
+          <dd>{status}</dd>
+        </dl>
+        <div class="prose">
+          <Content />
+        </div>
+        {kind === 'simulation' && <DemoPanel locale={locale} />}
+      </article>
+    </>
+  )}
+</BaseLayout>

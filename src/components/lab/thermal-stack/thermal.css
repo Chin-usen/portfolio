@@ -1,0 +1,881 @@
+/* D1 surface treatment; independent model and parameter columns follow the v3 brief. */
+.thermal-lab {
+  --thermal-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --thermal-link: #0066cc;
+  color: var(--thermal-text);
+  font-family: var(--thermal-font);
+  -webkit-font-smoothing: antialiased;
+}
+.thermal-lab *,
+.thermal-lab *::before,
+.thermal-lab *::after {
+  box-sizing: border-box;
+}
+.thermal-lab [hidden] {
+  display: none !important;
+}
+.thermal-lab :is(button, input) {
+  font: inherit;
+}
+.thermal-lab button {
+  color: inherit;
+  cursor: pointer;
+  min-height: 44px;
+}
+.thermal-lab :is(button, input, a):focus-visible,
+.thermal-tab-panel:focus-visible {
+  outline: 3px solid var(--thermal-link);
+  outline-offset: 4px;
+}
+.thermal-lab :is(p, h1, h2, dl, dd) {
+  margin: 0;
+}
+.thermal-lab p {
+  max-width: none;
+}
+.thermal-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.thermal-eyebrow {
+  color: var(--thermal-accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem !important;
+}
+.thermal-heading h1 {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.thermal-subtitle {
+  color: var(--thermal-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  margin-top: 0.7rem !important;
+}
+.thermal-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 44px;
+  flex-shrink: 0;
+  color: var(--thermal-link) !important;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+.thermal-back-link:hover {
+  text-decoration: underline;
+}
+
+/* The measurements remain in document flow above both working columns. */
+.thermal-metrics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 0.4rem 2rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.25rem;
+  border-radius: 24px;
+  background: var(--thermal-card);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 4%);
+}
+.thermal-metric-label {
+  grid-column: 1;
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.thermal-metric-label > span {
+  margin-left: 0.35rem;
+}
+.thermal-temperature {
+  grid-column: 1;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.thermal-temperature output {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+.thermal-temperature > span {
+  font-size: 1.625rem;
+  font-weight: 500;
+  color: var(--thermal-secondary);
+}
+.thermal-node-label {
+  grid-column: 1;
+  font-size: 0.8125rem;
+  color: var(--thermal-secondary);
+  line-height: 1.5;
+}
+.thermal-secondary-metrics {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-self: center;
+  gap: 1.25rem;
+}
+.thermal-secondary-metrics > div {
+  min-width: 0;
+}
+.thermal-secondary-metrics dt {
+  font-size: 0.8125rem;
+  color: var(--thermal-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.45rem;
+}
+.thermal-secondary-metrics abbr {
+  text-decoration: none;
+}
+.thermal-secondary-metrics dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-family: var(--thermal-mono);
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+.thermal-secondary-metrics dd > span {
+  color: var(--thermal-secondary);
+  font-size: 0.875rem;
+  letter-spacing: 0;
+}
+.thermal-warning {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--thermal-accent);
+  margin-top: 0.5rem !important;
+}
+.thermal-warning > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 1.125rem;
+  height: 1.125rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-family: var(--thermal-mono);
+  font-weight: 600;
+}
+.thermal-lab output,
+.thermal-control-summary strong {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  flex-shrink: 0;
+}
+
+.thermal-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+.thermal-visual-column {
+  min-width: 0;
+}
+.thermal-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: var(--thermal-card);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 4%);
+}
+.thermal-view-actions {
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-self: end;
+  gap: 0.125rem;
+  padding: 0.25rem;
+  border-radius: 28px;
+  background: var(--thermal-soft);
+  z-index: 2;
+  max-width: 100%;
+}
+.thermal-view-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.7rem;
+  border: 0;
+  border-radius: 24px;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  background: transparent;
+  transition:
+    background 150ms,
+    box-shadow 150ms;
+}
+.thermal-view-actions button:hover {
+  background: var(--thermal-overlay);
+}
+.thermal-view-actions button[aria-pressed='true'] {
+  background: var(--thermal-card);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+}
+.thermal-view-actions svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.thermal-canvas {
+  grid-row: 2;
+  position: relative;
+  width: 100%;
+  height: 390px;
+  min-width: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+.thermal-canvas canvas,
+.thermal-canvas > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.thermal-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  color: var(--thermal-secondary);
+  font-size: 0.875rem;
+}
+.thermal-layer-card {
+  grid-row: 3;
+  justify-self: end;
+  width: min(100%, 17rem);
+  padding: 1rem;
+  margin-block: 0 1rem;
+  border: 1px solid var(--thermal-line);
+  background: var(--thermal-overlay);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 6%);
+  pointer-events: none;
+}
+.thermal-card-overline {
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.thermal-layer-card h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.thermal-layer-card dl {
+  display: grid;
+  gap: 0.35rem;
+}
+.thermal-layer-card dl > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+}
+.thermal-layer-card dt {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+}
+.thermal-layer-card dd {
+  font-family: var(--thermal-mono);
+  font-size: 0.8125rem;
+}
+.thermal-layer-card dd small {
+  color: var(--thermal-secondary);
+  font-family: var(--thermal-font);
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+.thermal-scale {
+  grid-row: 4;
+  width: min(100%, 18rem);
+  pointer-events: none;
+}
+.thermal-scale-title,
+.thermal-scale-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.thermal-scale-title {
+  margin-bottom: 0.35rem;
+}
+.thermal-palette {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--thermal-cold),
+    var(--thermal-cool),
+    var(--thermal-neutral),
+    var(--thermal-warm),
+    var(--thermal-hot)
+  );
+}
+.thermal-palette i {
+  display: none;
+}
+.thermal-scale-values {
+  margin-top: 0.35rem;
+  font-family: var(--thermal-mono);
+}
+.thermal-scale p {
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 0.5rem !important;
+}
+.thermal-interaction-hint {
+  grid-row: 5;
+  margin-top: 0.75rem !important;
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.thermal-fallback-note,
+.thermal-notice,
+.thermal-input-error {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  margin-block: 0.75rem !important;
+}
+.thermal-input-error {
+  color: var(--thermal-accent);
+}
+
+.thermal-breakdown {
+  padding: 1.125rem 0.125rem 0;
+}
+.thermal-section-caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.thermal-section-caption h2 {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.thermal-section-caption p {
+  color: var(--thermal-secondary);
+  font-family: var(--thermal-mono);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+.thermal-resistance-bar {
+  display: flex;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+}
+.thermal-resistance-bar > span {
+  min-width: 1px;
+  background: var(--segment-color);
+  transition: flex-grow 150ms var(--thermal-ease);
+}
+.thermal-resistance-legend {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0.15rem 0.75rem;
+  margin-top: 0.35rem;
+}
+.thermal-resistance-legend button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 44px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0.25rem 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+}
+.thermal-resistance-legend button[aria-pressed='true'] {
+  color: var(--thermal-text);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+.thermal-resistance-legend i {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 2px;
+  background: var(--segment-color);
+}
+.thermal-legend-value {
+  font-family: var(--thermal-mono);
+  font-size: 0.75rem;
+}
+
+.thermal-parameters {
+  min-width: 0;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: var(--thermal-card);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 4%);
+}
+.thermal-parameter-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.thermal-parameter-heading h2 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.thermal-text-button {
+  border: 0;
+  padding: 0.25rem 0;
+  background: transparent;
+  color: var(--thermal-link) !important;
+  font-size: 0.8125rem !important;
+}
+.thermal-text-button:hover {
+  text-decoration: underline;
+}
+.thermal-model-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem;
+  order: 3;
+  flex-basis: 100%;
+  padding: 0.25rem;
+  border-radius: 28px;
+  background: var(--thermal-soft);
+}
+.thermal-model-switch button {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: 24px;
+  font-size: 0.8125rem;
+  background: transparent;
+}
+.thermal-model-switch button[aria-pressed='true'] {
+  background: var(--thermal-card);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+  font-weight: 600;
+}
+.thermal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem;
+  padding: 0.25rem;
+  border-radius: 24px;
+  background: var(--thermal-soft);
+  scroll-margin-top: 8rem;
+}
+.thermal-tabs > button {
+  flex: 1 1 auto;
+  padding: 0.5rem 0.65rem;
+  border: 0;
+  border-radius: 22px;
+  background: transparent;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.thermal-tabs > button[aria-selected='true'] {
+  background: var(--thermal-card);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+  font-weight: 600;
+}
+.thermal-tab-panel {
+  padding-top: 1.25rem;
+  scroll-margin-top: 8rem;
+}
+.thermal-panel-intro {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.thermal-panel-intro > p {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.thermal-material-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.thermal-material-pills > button {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--thermal-line);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  background: transparent;
+}
+.thermal-material-pills > button[aria-pressed='true'] {
+  background: var(--thermal-text);
+  border-color: var(--thermal-text);
+  color: var(--thermal-card);
+}
+.thermal-control-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+}
+.thermal-control {
+  min-width: 0;
+  scroll-margin-top: 8rem;
+}
+.thermal-control-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+}
+.thermal-control-top label {
+  min-width: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.thermal-control-top output {
+  font-family: var(--thermal-mono);
+  font-size: 0.875rem;
+}
+.thermal-control input[type='range'] {
+  display: block;
+  appearance: none;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  cursor: pointer;
+  background: transparent;
+  accent-color: var(--thermal-text);
+}
+.thermal-control input[type='range']::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    var(--thermal-text) 0 var(--range-fill, 0%),
+    var(--thermal-line) var(--range-fill, 0%) 100%
+  );
+}
+.thermal-control input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--thermal-text);
+  border: 2px solid var(--thermal-text);
+  margin-top: -8px;
+}
+.thermal-control input[type='range']::-moz-range-track {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--thermal-line);
+}
+.thermal-control input[type='range']::-moz-range-progress {
+  background: var(--thermal-text);
+  height: 4px;
+}
+.thermal-control input[type='range']::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--thermal-text);
+  border-radius: 50%;
+  background: var(--thermal-text);
+}
+.thermal-range-labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--thermal-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.thermal-model-status {
+  color: var(--thermal-secondary);
+  font-size: 0.875rem;
+  margin-top: 1rem !important;
+  line-height: 1.5;
+}
+.thermal-control-summary {
+  display: grid;
+  position: sticky;
+  top: 3.25rem;
+  z-index: 4;
+  gap: 0.25rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--thermal-line);
+  background: var(--thermal-card);
+  color: var(--thermal-text);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.thermal-control-summary strong {
+  font-family: var(--thermal-mono);
+  font-weight: 600;
+}
+.thermal-control-summary small {
+  font-size: 0.75rem;
+  color: var(--thermal-secondary);
+}
+.thermal-control-summary .thermal-warning {
+  margin-top: 0 !important;
+}
+.thermal-model-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-top: 1.75rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--thermal-line);
+  color: var(--thermal-secondary);
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+.thermal-model-notes p + p {
+  margin-top: 0.55rem;
+}
+.thermal-note-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--thermal-text);
+  font-weight: 600;
+  margin-bottom: 0.65rem !important;
+}
+.thermal-model-dot {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  border-radius: 50%;
+  background: var(--thermal-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .thermal-lab {
+    --thermal-link: #2997ff;
+  }
+}
+:root[data-theme='dark'] .thermal-lab {
+  --thermal-link: #2997ff;
+}
+@media (max-width: 70rem) {
+  .thermal-workspace {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  }
+  .thermal-stage {
+    padding: 1rem;
+  }
+  .thermal-parameters {
+    padding: 1.25rem;
+  }
+  .thermal-control-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 56rem) {
+  .thermal-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .thermal-canvas {
+    height: 420px;
+  }
+  .thermal-control-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .thermal-control-summary {
+    display: grid;
+    position: sticky;
+    top: 3.25rem;
+    z-index: 4;
+    gap: 0.25rem;
+    margin: 0 0 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--thermal-line);
+    background: var(--thermal-card);
+    color: var(--thermal-text);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+  .thermal-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+}
+@media (max-width: 37.5rem) {
+  .thermal-resistance-legend {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .thermal-heading {
+    margin-bottom: 1rem;
+  }
+  .thermal-heading h1 {
+    font-size: 2rem;
+  }
+  .thermal-subtitle {
+    font-size: 0.9375rem;
+  }
+  .thermal-back-link {
+    font-size: 0.875rem;
+  }
+  .thermal-metrics {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.4rem;
+    padding: 20px;
+  }
+  .thermal-temperature output {
+    font-size: clamp(2.65rem, 14vw, 3.5rem);
+  }
+  .thermal-secondary-metrics {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 0.75rem !important;
+    gap: 0.75rem;
+  }
+  .thermal-secondary-metrics dd {
+    font-size: 1.375rem;
+  }
+  .thermal-node-label {
+    font-size: 0.75rem;
+  }
+  .thermal-stage {
+    padding: 1rem;
+  }
+  .thermal-view-actions {
+    justify-self: stretch;
+    justify-content: center;
+    border-radius: 24px;
+  }
+  .thermal-view-actions button {
+    flex: 1 1 auto;
+    padding-inline: 0.45rem;
+    font-size: 0.75rem;
+  }
+  .thermal-canvas {
+    height: 360px;
+  }
+  .thermal-layer-card {
+    justify-self: stretch;
+    width: auto;
+  }
+  .thermal-scale {
+    width: 100%;
+  }
+  .thermal-interaction-hint {
+    font-size: 0.75rem;
+  }
+  .thermal-parameters {
+    padding: 1.25rem;
+  }
+  .thermal-control-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .thermal-control-top output {
+    font-size: 1rem;
+  }
+  .thermal-model-notes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .thermal-lab *,
+  .thermal-lab *::before,
+  .thermal-lab *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  .thermal-view-actions,
+  .thermal-parameters,
+  .thermal-interaction-hint {
+    display: none;
+  }
+  .thermal-workspace {
+    display: block;
+  }
+  .thermal-stage,
+  .thermal-metrics {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .thermal-model-notes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* An enlarged warning must not cover the controls it explains. */
+.thermal-control-summary[data-static='true'] {
+  position: static;
+}
+
+.thermal-parameters {
+  scroll-margin-top: 64px;
+}
+.thermal-parameter-jump {
+  display: none;
+}
+@media (max-width: 56rem) {
+  .thermal-parameter-jump {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--thermal-link);
+  }
+}

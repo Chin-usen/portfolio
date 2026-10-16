@@ -1,0 +1,408 @@
+---
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
+import './thermal.css';
+import './thermal-fonts.css';
+import '../../../styles/thermal-tokens.css';
+import { thermalCopy, type ThermalLocale, type ThermalTab } from './copy';
+import { DEFAULT_PARAMS, MATERIAL_PRESETS, PARAMETER_DEFINITIONS } from './parameters';
+import { evaluate } from './evaluator';
+import type { ParameterKey } from './types';
+
+interface Props {
+  locale: ThermalLocale;
+}
+const { locale } = Astro.props;
+const text = thermalCopy[locale];
+const result = evaluate({ ...DEFAULT_PARAMS });
+const selectedLayer = result.layers.find((layer) => layer.id === 'chip')!;
+const tabs: ThermalTab[] = ['operating', 'top-solder', 'amb', 'bottom-solder', 'cooler'];
+const groupKeys: Record<ThermalTab, readonly ParameterKey[]> = {
+  operating: ['P', 'T_cool', 'h'],
+  'top-solder': ['t_st', 'k_st'],
+  amb: ['t_cut', 't_cer', 't_cub', 'k_cer', 'k_cu'],
+  'bottom-solder': ['t_sb', 'k_sb'],
+  cooler: ['t_cooler', 'k_cooler'],
+};
+const materialSets: Partial<
+  Record<
+    ThermalTab,
+    {
+      key: ParameterKey;
+      entries: readonly { id: string; conductivity: number }[];
+      labels: Record<string, string>;
+    }
+  >
+> = {
+  'top-solder': { key: 'k_st', entries: MATERIAL_PRESETS.solder, labels: text.solderPresets },
+  amb: { key: 'k_cer', entries: MATERIAL_PRESETS.ceramic, labels: text.ceramicPresets },
+  'bottom-solder': { key: 'k_sb', entries: MATERIAL_PRESETS.solder, labels: text.solderPresets },
+  cooler: { key: 'k_cooler', entries: MATERIAL_PRESETS.cooler, labels: text.coolerPresets },
+};
+const colorStops = [
+  '#2b2b30',
+  '#8e8e93',
+  '#d9864e',
+  '#e8c26a',
+  '#b86e3c',
+  '#aeaeb2',
+  '#5e8bb8',
+  '#3a7bd5',
+];
+const breakdown = [
+  ...result.layers.map((layer, index) => ({
+    id: layer.id,
+    name: text.layerNames[layer.id],
+    rth: layer.rth,
+    color: colorStops[index],
+  })),
+  { id: 'convection', name: text.convection, rth: result.rConv, color: colorStops[7] },
+];
+---
+
+<section class="thermal-lab" data-thermal-lab data-locale={locale} aria-labelledby="thermal-title">
+  <header class="thermal-heading">
+    <div>
+      <p class="thermal-eyebrow">{text.eyebrow}</p>
+      <h1 id="thermal-title">{text.title}</h1>
+      <p class="thermal-subtitle">{text.subtitle}</p>
+    </div>
+    <a class="thermal-back-link" href={locale === 'zh' ? '/lab/' : '/en/lab/'}>
+      <span aria-hidden="true">‹</span> {locale === 'zh' ? '返回实验台' : 'Back to Lab'}
+    </a>
+  </header>
+
+  <div class="thermal-metrics">
+    <p class="thermal-metric-label">
+      {text.junction}{' '}
+      <span>
+        T<sub>j</sub>
+      </span>
+    </p>
+    <p class="thermal-temperature">
+      <output data-value="tj">{result.tjMax.toFixed(1)}</output>
+      <span>°C</span>
+    </p>
+    <p class="thermal-node-label" data-source-node>
+      {text.sourceNode}
+    </p>
+    <dl class="thermal-secondary-metrics">
+      <div>
+        <dt>
+          <abbr title={text.thermalResistance}>
+            R<sub>th,j-f</sub>
+          </abbr>
+        </dt>
+        <dd>
+          <output data-value="rth">{result.rthTotal.toFixed(3)}</output>
+          <span>K/W</span>
+        </dd>
+      </div>
+      <div>
+        <dt>
+          <abbr title={text.temperatureRise}>ΔT</abbr>
+        </dt>
+        <dd>
+          <output data-value="rise">{(result.tjMax - DEFAULT_PARAMS.T_cool).toFixed(1)}</output>
+          <span>K</span>
+        </dd>
+      </div>
+    </dl>
+    <p class="thermal-warning" data-warning hidden={result.tjMax <= 175}>
+      <span aria-hidden="true">!</span>
+      {text.warning}
+    </p>
+  </div>
+
+  <a class="thermal-parameter-jump" href="#thermal-parameters" data-astro-reload>
+    {text.parameterTitle}
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M8 2v11M3 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
+    </svg>
+  </a>
+
+  <div class="thermal-workspace">
+    <div class="thermal-visual-column">
+      <div class="thermal-stage" data-stage>
+        <div class="thermal-canvas" data-thermal-canvas role="img" aria-label={text.stageLabel}>
+          <span class="thermal-loading" data-loading>
+            {text.loading}
+          </span>
+        </div>
+
+        <div class="thermal-view-actions" role="group" aria-label={text.stageLabel}>
+          <button type="button" data-cutaway aria-pressed="false">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="m3 6 7-4 7 4v8l-7 4-7-4V6Zm0 0 7 4m0 8v-8m0 0 7-4M10 2v8" />
+            </svg>
+            <span>{text.cutaway}</span>
+          </button>
+          <button type="button" data-explode aria-pressed="false">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="m3 7 7-4 7 4-7 4-7-4Zm0 4 7 4 7-4M3 15l7 4 7-4M10 1v2" />
+            </svg>
+            <span>{text.explode}</span>
+          </button>
+          <button type="button" data-reset-view>
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M4 6a7 7 0 1 1-1 7M4 2v4h4" />
+            </svg>
+            <span>{text.resetView}</span>
+          </button>
+        </div>
+
+        <aside
+          id="thermal-layer-details"
+          class="thermal-layer-card"
+          data-layer-card
+          aria-labelledby="thermal-layer-name"
+        >
+          <p class="thermal-card-overline">{text.layer}</p>
+          <h2 id="thermal-layer-name" data-layer-name>
+            {text.layerNames.chip}
+          </h2>
+          <dl>
+            <div>
+              <dt>{text.thickness}</dt>
+              <dd>
+                <span data-layer-thickness>{Number(selectedLayer.thickness.toFixed(3))}</span>
+                <small>mm</small>
+              </dd>
+            </div>
+            <div>
+              <dt>{text.conductivity}</dt>
+              <dd>
+                <span data-layer-k>{Number(selectedLayer.k.toFixed(1))}</span>
+                <small>W/(m·K)</small>
+              </dd>
+            </div>
+            <div>
+              <dt>{text.layerDrop}</dt>
+              <dd>
+                <span data-layer-drop>
+                  {(selectedLayer.tTop - selectedLayer.tBottom).toFixed(2)}
+                </span>
+                <small>°C</small>
+              </dd>
+            </div>
+            <div>
+              <dt>{text.fraction}</dt>
+              <dd>
+                <span data-layer-fraction>
+                  {((100 * selectedLayer.rth) / result.rthTotal).toFixed(1)}
+                </span>
+                <small>%</small>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="thermal-scale">
+          <div class="thermal-scale-title">
+            <span>{text.temperature}</span>
+            <span>°C</span>
+          </div>
+          <div class="thermal-palette" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="thermal-scale-values">
+            <span data-value="min">{result.tMin.toFixed(1)}</span>
+            <span data-value="max">{result.tMax.toFixed(1)}</span>
+          </div>
+          <p data-field-caption>{text.fieldCaption}</p>
+          <p>{text.thicknessScale}</p>
+        </div>
+        <p class="thermal-interaction-hint">{text.interaction}</p>
+      </div>
+
+      <p class="thermal-fallback-note" data-fallback-note hidden role="status">
+        {text.fallback}
+      </p>
+      <noscript>
+        <p class="thermal-notice">{text.noScript}</p>
+      </noscript>
+
+      <section class="thermal-breakdown" aria-labelledby="thermal-resistance-title">
+        <div class="thermal-section-caption">
+          <h2 id="thermal-resistance-title">{text.resistanceTitle}</h2>
+          <p>
+            <span data-value="rth-total">{result.rthTotal.toFixed(3)}</span> K/W
+          </p>
+        </div>
+        <div class="thermal-resistance-bar" role="img" aria-label={text.resistanceDescription}>
+          {breakdown.map((item) => (
+            <span
+              data-resistance-segment={item.id}
+              style={`--segment-color:${item.color};flex-grow:${item.rth / result.rthTotal}`}
+              title={`${item.name}: ${((item.rth / result.rthTotal) * 100).toFixed(1)}%`}
+            ></span>
+          ))}
+        </div>
+        <div class="thermal-resistance-legend" role="group" aria-label={text.resistanceTitle}>
+          {breakdown.map((item) => (
+            <button
+              type="button"
+              data-select-layer={item.id}
+              aria-pressed={item.id === 'chip'}
+              aria-controls="thermal-layer-details"
+            >
+              <i aria-hidden="true" style={`--segment-color:${item.color}`}></i>
+              <span>{item.name}</span>
+              <span class="thermal-legend-value" data-fraction={item.id}>
+                {((item.rth / result.rthTotal) * 100).toFixed(1)}%
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
+    </div>
+    <section
+      id="thermal-parameters"
+      class="thermal-parameters"
+      aria-label={text.parameterTitle}
+      tabindex="-1"
+    >
+      <div class="thermal-parameter-heading">
+        <h2>{text.parameterTitle}</h2>
+        <div class="thermal-model-switch" role="group" aria-label={text.modelChoice}>
+          <button type="button" data-model="analytic" aria-pressed="true">
+            {text.modelAnalytic}
+          </button>
+          <button type="button" data-model="fem" aria-pressed="false">
+            {text.modelFem}
+          </button>
+        </div>
+        <button type="button" class="thermal-text-button" data-reset-params>
+          {text.resetParameters}
+        </button>
+      </div>
+      <div class="thermal-tabs" role="tablist" aria-label={text.parameterTabs}>
+        {tabs.map((tab, index) => (
+          <button
+            type="button"
+            role="tab"
+            id={`thermal-tab-${tab}`}
+            data-tab={tab}
+            aria-selected={index === 0 ? 'true' : 'false'}
+            aria-controls={`thermal-panel-${tab}`}
+            tabindex={index === 0 ? 0 : -1}
+          >
+            {text.tabs[tab]}
+          </button>
+        ))}
+      </div>
+      <div class="thermal-control-summary" data-control-summary aria-hidden="true">
+        <p>
+          {text.junction}{' '}
+          <strong>
+            <span data-control-tj>{result.tjMax.toFixed(1)}</span> °C
+          </strong>{' '}
+          · <span data-control-rth>{result.rthTotal.toFixed(3)}</span> K/W
+        </p>
+        <small data-control-model>{text.modelAnalytic}</small>
+        <p class="thermal-warning" data-control-warning hidden={result.tjMax <= 175}>
+          {text.warning}
+        </p>
+      </div>
+      {tabs.map((tab, index) => {
+        const material = materialSets[tab];
+        return (
+          <div
+            class="thermal-tab-panel"
+            role="tabpanel"
+            id={`thermal-panel-${tab}`}
+            aria-labelledby={`thermal-tab-${tab}`}
+            data-panel={tab}
+            tabindex="0"
+            hidden={index !== 0}
+          >
+            <div class="thermal-panel-intro">
+              <p>{text.tabNotes[tab]}</p>
+              {material && (
+                <div
+                  class="thermal-material-pills"
+                  role="group"
+                  aria-label={`${text.presetLabel} · W/(m·K)`}
+                >
+                  {material.entries.map((preset) => (
+                    <button
+                      type="button"
+                      data-material-key={material.key}
+                      data-material-value={preset.conductivity}
+                      aria-pressed={
+                        DEFAULT_PARAMS[material.key] === preset.conductivity ? 'true' : 'false'
+                      }
+                    >
+                      {material.labels[preset.id]}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div class="thermal-control-grid">
+              {groupKeys[tab].map((key) => {
+                const definition = PARAMETER_DEFINITIONS.find((entry) => entry.key === key)!;
+                return (
+                  <div class="thermal-control">
+                    <div class="thermal-control-top">
+                      <label for={`thermal-param-${key}`}>{text.parameterLabels[key]}</label>
+                      <output for={`thermal-param-${key}`} data-param-output={key}>
+                        {DEFAULT_PARAMS[key]}
+                      </output>
+                    </div>
+                    <input
+                      type="range"
+                      id={`thermal-param-${key}`}
+                      data-param={key}
+                      min={definition.min}
+                      max={definition.max}
+                      step={definition.step}
+                      value={DEFAULT_PARAMS[key]}
+                      aria-describedby={`thermal-unit-${key}`}
+                    />
+                    <div class="thermal-range-labels">
+                      <span>{definition.min}</span>
+                      <span id={`thermal-unit-${key}`}>{definition.unit}</span>
+                      <span>{definition.max}</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+      <p class="thermal-model-status" data-model-status role="status" hidden></p>
+      <p class="thermal-input-error" data-input-error hidden role="alert">
+        {text.inputError}
+      </p>
+      <p class="sr-only" data-result-live aria-live="polite" aria-atomic="true"></p>
+    </section>
+  </div>
+
+  <footer class="thermal-model-notes">
+    <div>
+      <p class="thermal-note-label">
+        <span class="thermal-model-dot" aria-hidden="true"></span>
+        <span data-model-label>{text.modelLabel}</span>
+      </p>
+      <p data-model-description>{text.modelDescription}</p>
+      <p data-node-disclosure>{text.nodeDisclosure}</p>
+    </div>
+    <div>
+      <p class="thermal-note-label">{text.validationLabel}</p>
+      <p data-validation>{text.validation}</p>
+      <p data-field-disclosure>{text.fieldDisclosure}</p>
+      <p>{text.limitDisclosure}</p>
+    </div>
+  </footer>
+</section>
+
+<script>
+  import { initializeThermalStacks } from './client';
+  initializeThermalStacks();
+</script>

@@ -1,0 +1,17 @@
+title = "Portfolio secret protection"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated dependency and tool output only; application source and dist stay scanned"
+paths = [
+  '''(^|/)node_modules/''',
+  '''(^|/)\.git/''',
+  '''(^|/)\.astro/''',
+  '''(^|/)playwright-report/''',
+  '''(^|/)test-results/''',
+  '''(^|/)coverage/''',
+  '''(^|/)\.lighthouseci/''',
+  '''(^|/)pnpm-lock\.yaml$''',
+]

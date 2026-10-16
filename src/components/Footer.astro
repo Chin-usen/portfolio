@@ -1,0 +1,33 @@
+---
+import { getEntry } from 'astro:content';
+import { localePath } from '../i18n/utils';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const entry = await getEntry('home', locale);
+const profile = await getEntry('profile', locale);
+if (!profile) throw new Error('Missing profile content: ' + locale);
+if (!entry) throw new Error(`Missing home content: ${locale}`);
+const footer = entry.data.footer;
+const contactPath = localePath(locale, '/about/#contact');
+---
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <p>{footer.copyright}</p>
+    <ul class="footer-links">
+      <li>
+        <a href={contactPath}>{footer.contactLabel}</a>
+      </li>
+      <li>
+        <a href={profile.data.linkedin} rel="me noreferrer">
+          {footer.linkedInLabel}
+        </a>
+      </li>
+      <li>
+        <span>{footer.resumeLabel}</span>
+      </li>
+    </ul>
+  </div>
+</footer>

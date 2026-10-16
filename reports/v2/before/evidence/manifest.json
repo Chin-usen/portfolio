@@ -1,0 +1,266 @@
+{
+  "scope": "before archive only",
+  "baseline_commit": "36dd3d9d9210a9ea20b1d4574c5db366e79805c3",
+  "skill_source_commit": "2f98774f86bc05563876643db37e6c37c322850f",
+  "copied_files": [
+    {
+      "source": ".dev-tools/reviews/before-assessment-a.md",
+      "archive": "assessment-a.md",
+      "bytes": 20252,
+      "sha256": "a6d03a15cfbf6dff3c89818951aac4f07af2a0b385dc1d9f792fc3956827f7af",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-assessment-b.md",
+      "archive": "assessment-b.md",
+      "bytes": 7858,
+      "sha256": "2c4c2748f0a1cd111f1cd9f200dbe5ce857899c160c602c73ec97fa19529731d",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-audit.md",
+      "archive": "audit.md",
+      "bytes": 22773,
+      "sha256": "8fae2db76ac13d832cf605609a6aef5487c4e6a7921933f676f6f8fea86cb6f9",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-detector-raw.json",
+      "archive": "evidence/before-detector-raw.json",
+      "bytes": 7,
+      "sha256": "50056c08ce479cc2f54c4d6595a4264bdf32bf84f2995d59ff3bd513897ab414",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-browser-matrix.json",
+      "archive": "evidence/before-browser-matrix.json",
+      "bytes": 337260,
+      "sha256": "f320e47d5d19fce2ab27b64eabc81d4b9d752031f2be3150258d49b01b8ea060",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-interactions.json",
+      "archive": "evidence/before-interactions.json",
+      "bytes": 4443,
+      "sha256": "97fed0af6b4417dc73de431b921437bf5550c53ab0d42c7d480919a8209ef2ce",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/before-targeted-verification.json",
+      "archive": "evidence/before-targeted-verification.json",
+      "bytes": 1734,
+      "sha256": "cda3ea7ee0dcf714033de313a9aa56f8ec380263f295340f768c65e78b258d2c",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-capture.cjs",
+      "archive": "evidence/assessment-a-capture.cjs",
+      "bytes": 2173,
+      "sha256": "0a133841c23865b08cc348b794931bfffdcf33d6fe039c05cc8542884e503e9d",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-interactions.cjs",
+      "archive": "evidence/assessment-a-interactions.cjs",
+      "bytes": 3607,
+      "sha256": "714ae83bbd0f8a2814ca0477c61d170c5244b1c1d27ceaa55dc10b3ae49c492e",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-browser-matrix.cjs",
+      "archive": "evidence/b-browser-matrix.cjs",
+      "bytes": 4357,
+      "sha256": "1295c8bd23d67ce5d3dcfac62d06d7eba070bff228eb50ff5a290d9e64826ebc",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-interactions.cjs",
+      "archive": "evidence/b-interactions.cjs",
+      "bytes": 7152,
+      "sha256": "af055584279938e92038d10aa5e81edb0f3a8829442f979c85320260ff2a41e1",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-targeted-verification.cjs",
+      "archive": "evidence/b-targeted-verification.cjs",
+      "bytes": 2866,
+      "sha256": "219eed53f982f1124d432f43b490f17e37d20ff44a4f3495aa235c860729feff",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-contact-sheets.py",
+      "archive": "evidence/b-contact-sheets.py",
+      "bytes": 852,
+      "sha256": "7157008c0b086dfacf770534284eeac44e7f9044d160872bd5729f880be96673",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/matrix.json",
+      "archive": "evidence/assessment-a-evidence/matrix.json",
+      "bytes": 119406,
+      "sha256": "8217e3580537471036d913509a07da5b0b48b06ada29a6ea897d2152b65ca74a",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/interaction-notes.json",
+      "archive": "evidence/assessment-a-evidence/interaction-notes.json",
+      "bytes": 1695,
+      "sha256": "d6a397973390be83852e9fbddbdc91d90e80454e03ee74ac2865a1089a7eea48",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/en-s1-390-power-max-viewport.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-390-power-max-viewport.png",
+      "bytes": 53247,
+      "sha256": "9dcc398caef5a8e1f62609fbb7a9e1999ecc7b411f6564846536a1b7464ccdff",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/en-s1-390-cooler-keyboard.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-390-cooler-keyboard.png",
+      "bytes": 55879,
+      "sha256": "1ce9a8ab55643cb556b3e57851dd4f302054b794ef2628bfebb3385654ad9b41",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/en-s1-390-fem-load-failure.png",
+      "archive": "evidence/assessment-a-evidence/en-s1-390-fem-load-failure.png",
+      "bytes": 53158,
+      "sha256": "e80c0246b42accc64f1eb39708dd5bfa881fb9c7591b01517e99f3cbd31a6087",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/assessment-a-evidence/en-contact-390-revealed.png",
+      "archive": "evidence/assessment-a-evidence/en-contact-390-revealed.png",
+      "bytes": 20087,
+      "sha256": "35fe1b834a02ec79c41ffec3e0f06d599026c9420bcf15ac41b80209c86568c7",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-sheet-en-1440.png",
+      "archive": "evidence/b-sheet-en-1440.png",
+      "bytes": 169960,
+      "sha256": "cf13ceb3988410b43350a2e895870fae271266e6c6aff7e703217ccecad2c513",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-sheet-en-390.png",
+      "archive": "evidence/b-sheet-en-390.png",
+      "bytes": 438828,
+      "sha256": "a0c5c19b551d13f529e7f99de428b44ca552ad2b851fa9441727775294072d43",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-sheet-zh-1440.png",
+      "archive": "evidence/b-sheet-zh-1440.png",
+      "bytes": 131394,
+      "sha256": "cbbf2d19e9b54ade2cd9158c7b8ad6164e435083f3fe47b2b902df4c6c3b708d",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-sheet-zh-390.png",
+      "archive": "evidence/b-sheet-zh-390.png",
+      "bytes": 260750,
+      "sha256": "93a937a0881f7134be2694bfd42c17a130dc453d6afc1f4064ec34719fdd5318",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-home-1440-light.png",
+      "archive": "evidence/b-en-home-1440-light.png",
+      "bytes": 80210,
+      "sha256": "4c6216888594be08aab740b95b362626e195275b3837be38ecb39e978ebdd7b0",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-home-1440-dark.png",
+      "archive": "evidence/b-en-home-1440-dark.png",
+      "bytes": 80210,
+      "sha256": "4c6216888594be08aab740b95b362626e195275b3837be38ecb39e978ebdd7b0",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-s1-1440-light.png",
+      "archive": "evidence/b-en-s1-1440-light.png",
+      "bytes": 157294,
+      "sha256": "28d029ce158f46d596c91f8e2ec922efb1b145ff8e99ef6196a93b646709a5f6",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-zh-s1-1440-light.png",
+      "archive": "evidence/b-zh-s1-1440-light.png",
+      "bytes": 162175,
+      "sha256": "3781a900d2054fbf689f8ff4e3eb89978f09aaca6ce5a84160a51c3ddc4eef2c",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-s1-390-light.png",
+      "archive": "evidence/b-en-s1-390-light.png",
+      "bytes": 119908,
+      "sha256": "c04b6f2afb8e1fa534d88a60a197c973b10a19b5529699d29284a03b26efc337",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-s1-390-dark.png",
+      "archive": "evidence/b-en-s1-390-dark.png",
+      "bytes": 125098,
+      "sha256": "ec205049004cf1bf62d6420c30ee3d18adb628311ce6026f6dbe98ec6465c213",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-zh-s1-390-light.png",
+      "archive": "evidence/b-zh-s1-390-light.png",
+      "bytes": 122321,
+      "sha256": "e8bf185a966df8173d6dc234175825a0201e1b894095e4d736b8dc57638ffe78",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-zh-s1-390-dark.png",
+      "archive": "evidence/b-zh-s1-390-dark.png",
+      "bytes": 126542,
+      "sha256": "aa0f201cc18423b67c7755d5c407fc9e1a90bc3a81131253889a34c55ac9ff7b",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-en-dark-skip.png",
+      "archive": "evidence/b-en-dark-skip.png",
+      "bytes": 64700,
+      "sha256": "f7fb7807cec753399ddcb7871ff295ba04c28ca2d4e0af2684da274b19473ce2",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-zh-dark-skip.png",
+      "archive": "evidence/b-zh-dark-skip.png",
+      "bytes": 63564,
+      "sha256": "ee14f1f99456d4a227fbf3b142fe21ede837943a380e0a9a749859b66f1ac6ab",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-text200-s1-en.png",
+      "archive": "evidence/b-text200-s1-en.png",
+      "bytes": 287212,
+      "sha256": "3a20edd70e375f47555c904d56ca2a1d43b7b4827015b61c351805293f8978dc",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-text200-s1-zh.png",
+      "archive": "evidence/b-text200-s1-zh.png",
+      "bytes": 250238,
+      "sha256": "599b5643bd694769b23a2cc94dea834a7920050525ce98c888e5fead741ba8fb",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-orbit-before.png",
+      "archive": "evidence/b-orbit-before.png",
+      "bytes": 59675,
+      "sha256": "cd8b5e011c553805509dafcae559de6271f6eb6d3bf47b71119f91293a524595",
+      "unchanged": true
+    },
+    {
+      "source": ".dev-tools/reviews/b-orbit-after.png",
+      "archive": "evidence/b-orbit-after.png",
+      "bytes": 59675,
+      "sha256": "cd8b5e011c553805509dafcae559de6271f6eb6d3bf47b71119f91293a524595",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "status": "passed",
+  "docs_count": 14,
+  "docs": "All 14 worktree files equal the upstream Git blobs at each recorded source commit, and match the recorded byte sizes and SHA-256 values.",
+  "p2_count": 67,
+  "p2": "All 67 tracked files match frozen delivered v2 worktree bytes and the complete preservation manifest. No tracked file additions or removals and no untracked non-ignored P2 files.",
+  "p3_numeric_files_byte_identical": [
+    "evaluator.ts",
+    "fem-adapter.ts",
+    "parameters.ts",
+    "field-sampler.ts",
+    "types.ts",
+    "viewer.ts",
+    "viewer-fallback.ts",
+    "viewer-shared.ts",
+    "fem/evaluator.ts"
+  ],
+  "gsap": "Absent from manifest, lockfile, installed package directories; pnpm why returned empty array.",
+  "installed_license_package_groups": 651,
+  "declared_license_groups": [
+    "0BSD",
+    "Apache-2.0",
+    "Apache-2.0 AND LGPL-3.0-or-later",
+    "BSD",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BlueOak-1.0.0",
+    "CC0-1.0",
+    "ISC",
+    "MIT",
+    "MPL-2.0",
+    "OFL-1.1",
+    "Python-2.0"
+  ],
+  "bold_commit": "01dd4fc8bb3145886fffc1863d50e818f71ddc25",
+  "bold_clean": true,
+  "impeccable_pin": "2f98774f86bc05563876643db37e6c37c322850f",
+  "hero_assets": [
+    {
+      "file": "public/images/power-module-dark-450.webp",
+      "bytes": 5698,
+      "sha256": "c5cde14bda0d7e6940be650e4f5d5f236ff4c4b7e6cf77c07c4c9618477ff1cc"
+    },
+    {
+      "file": "public/images/power-module-dark-900.webp",
+      "bytes": 11528,
+      "sha256": "b76d24df3c79bee2135539f785feacd14d8bc409d9134aba467b381cf2af7e1c"
+    },
+    {
+      "file": "public/images/power-module-light-450.webp",
+      "bytes": 5700,
+      "sha256": "ae2ac161831171907fea998c5a366d76c7b990667d43871aaba229ea1334afdf"
+    },
+    {
+      "file": "public/images/power-module-light-900.webp",
+      "bytes": 11372,
+      "sha256": "b3ce6e709871490e0b0d7ae9ce1b05b36f78c5923ef334f99a5e45cf8877003f"
+    }
+  ],
+  "p3_ui_binding_changes": [
+    "client.ts: convection clears the unrelated Cooler selection and opens Conditions/h; model-specific contextual field captions update with analytic/FEM mode.",
+    "client.ts: ResizeObserver and window resize handler set data-static=true when the summary exceeds 35% of viewport height, keeping enlarged warnings in normal document flow. The observer disconnects on pagehide and resize listener uses the existing abort signal. No numerical evaluation, parameter, field sampling, or viewer modules changed.",
+    "copy.ts: adds bilingual short field-interpretation captions. Existing scientific disclosures, warning text and numerical data remain unchanged."
+  ],
+  "checked_utc": "2026-10-15T05:18:49.896382+00:00",
+  "audit_scope": "Independent final preservation audit. Raw worktree bytes compared directly, without newline normalization; recorded final test logs inspected. No runtime source edits, test reruns, build, browser, or Lighthouse launch were performed by this audit.",
+  "docs_manifest": "reports/v3/design-source-manifest.json",
+  "docs_source_commits": [
+    "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+    "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4"
+  ],
+  "p2_manifest": "reports/v3/p2-preservation.json",
+  "p2_baseline_commit": "85fdb504e35ee480f43c98b0237f87ee866fb367",
+  "p2_version": "2.0.0",
+  "p2_ignored_development_file_counts": {
+    "node_modules": 2619,
+    "__pycache__": 1
+  },
+  "p2_output_note": "The only ignored files are installed node_modules and one Python bytecode cache. Fresh validation results remain outside thermal-p2 in reports/v3/ci/p2-current-*.json. No unexpected P2 output files were found.",
+  "p3_numeric_file_records": [
+    {
+      "file": "src/components/lab/thermal-stack/evaluator.ts",
+      "bytes": 8416,
+      "sha256_hex_groups": [
+        "0e7f0e23",
+        "7ee08e46",
+        "426e34e1",
+        "a215e90e",
+        "c2d6044f",
+        "44c85538",
+        "b9843d75",
+        "a8cd5eee"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/fem-adapter.ts",
+      "bytes": 3100,
+      "sha256_hex_groups": [
+        "9390e781",
+        "b0becaa3",
+        "78d3ff6c",
+        "b67bf1ac",
+        "f583793b",
+        "4d076614",
+        "6ebe69f5",
+        "a77aec40"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/parameters.ts",
+      "bytes": 4281,
+      "sha256_hex_groups": [
+        "5c58d1c2",
+        "e2ab8594",
+        "f8507a5c",
+        "897ec22a",
+        "91a9fdd8",
+        "d1ac449b",
+        "493f8b38",
+        "b646995e"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/field-sampler.ts",
+      "bytes": 3833,
+      "sha256_hex_groups": [
+        "1d5b1b8b",
+        "d681f89c",
+        "6396917b",
+        "02416e3a",
+        "c6e2cc41",
+        "309fc2de",
+        "aec31a9f",
+        "d5e15871"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/types.ts",
+      "bytes": 3398,
+      "sha256_hex_groups": [
+        "ce761fa4",
+        "ed3ad616",
+        "2ec3b6bc",
+        "652cc2fc",
+        "dffcfebb",
+        "89338381",
+        "005a637b",
+        "d579652d"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/viewer.ts",
+      "bytes": 17568,
+      "sha256_hex_groups": [
+        "89b666d6",
+        "05ae103c",
+        "db024010",
+        "96801ad4",
+        "3a5de6d9",
+        "966bb350",
+        "1c200663",
+        "b43e38c1"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/viewer-fallback.ts",
+      "bytes": 8950,
+      "sha256_hex_groups": [
+        "963968e1",
+        "e6e495f6",
+        "e7427f51",
+        "9002fe19",
+        "ee9a1e36",
+        "f261976c",
+        "40f0f910",
+        "254a3b61"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/viewer-shared.ts",
+      "bytes": 3549,
+      "sha256_hex_groups": [
+        "b954ed04",
+        "b35a899f",
+        "de119025",
+        "2d1bb57e",
+        "b1fe37ca",
+        "3cbac604",
+        "c0594b1a",
+        "b35a2987"
+      ]
+    },
+    {
+      "file": "src/components/lab/thermal-stack/fem/evaluator.ts",
+      "bytes": 12647,
+      "sha256_hex_groups": [
+        "bc09c24a",
+        "d82dcaaf",
+        "d9b4b671",
+        "b5a7e4ef",
+        "23765f96",
+        "fd4310d0",
+        "0aab6f65",
+        "b02f5bd9"
+      ]
+    }
+  ],
+  "final_test_evidence": {
+    "browser": {
+      "log": "reports/v3/ci/browser-final.log",
+      "started_utc": "2026-10-15T05:02:41.169156+00:00",
+      "exit": 0,
+      "passed": 54,
+      "duration_seconds": 22.8
+    },
+    "unit": {
+      "log": "reports/v3/ci/unit-final.log",
+      "started_utc": "2026-10-15T04:58:10.736407+00:00",
+      "exit": 0,
+      "test_files": 5,
+      "passed": 48
+    },
+    "typecheck": {
+      "log": "reports/v3/ci/typecheck-final.log",
+      "started_utc": "2026-10-15T05:05:22.068832+00:00",
+      "exit": 0,
+      "files": 81,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "lint": {
+      "log": "reports/v3/ci/lint-final.log",
+      "exit": 0
+    }
+  },
+  "inherited_evidence_note": "License inventory, Impeccable pin, hero asset provenance and pnpm why output retain their separately recorded earlier evidence. This final audit rechecked GSAP absence from package.json, lockfile, installed pnpm directories and direct node_modules entry; it does not claim to rerun the license command."
+}

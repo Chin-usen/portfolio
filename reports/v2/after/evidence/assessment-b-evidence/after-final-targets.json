@@ -1,0 +1,466 @@
+{
+  "timestamp": "2026-10-14T13:56:15.242Z",
+  "source": "final standalone target closure",
+  "checks": [
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "/",
+      "targets": [
+        {
+          "text": "便携设备的壳体结构设计",
+          "width": 205.8125,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "芯片结温仿真",
+          "width": 112.265625,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "从装配路径读懂壳体结构",
+          "width": 205.8125,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "在求解之前，先检查边界条件",
+          "width": 243.234375,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "/work/",
+      "targets": [
+        {
+          "text": "便携设备的壳体结构设计",
+          "width": 264,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "/lab/",
+      "targets": [
+        {
+          "text": "芯片结温仿真",
+          "width": 144,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "从装配路径读懂壳体结构",
+          "width": 264,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "在求解之前，先检查边界条件",
+          "width": 312,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "/about/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "/contact/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "/",
+      "targets": [
+        {
+          "text": "便携设备的壳体结构设计",
+          "width": 205.8125,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "芯片结温仿真",
+          "width": 112.265625,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "从装配路径读懂壳体结构",
+          "width": 205.8125,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "在求解之前，先检查边界条件",
+          "width": 243.234375,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "/work/",
+      "targets": [
+        {
+          "text": "便携设备的壳体结构设计",
+          "width": 264,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "/lab/",
+      "targets": [
+        {
+          "text": "芯片结温仿真",
+          "width": 144,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "从装配路径读懂壳体结构",
+          "width": 264,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "在求解之前，先检查边界条件",
+          "width": 312,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "/about/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "/contact/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "/",
+      "targets": [
+        {
+          "text": "Enclosure design for a portable device",
+          "width": 324,
+          "height": 46.78125,
+          "pass": true
+        },
+        {
+          "text": "Chip junction temperature",
+          "width": 240.09375,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "Reading an enclosure through its assembly path",
+          "width": 324,
+          "height": 46.78125,
+          "pass": true
+        },
+        {
+          "text": "Check the boundary conditions before solving",
+          "width": 324,
+          "height": 46.78125,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "/work/",
+      "targets": [
+        {
+          "text": "Enclosure design for a portable device",
+          "width": 324,
+          "height": 60,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "/lab/",
+      "targets": [
+        {
+          "text": "Chip junction temperature",
+          "width": 307.96875,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "Reading an enclosure through its assembly path",
+          "width": 324,
+          "height": 60,
+          "pass": true
+        },
+        {
+          "text": "Check the boundary conditions before solving",
+          "width": 324,
+          "height": 60,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "/about/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "/contact/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 390,
+        "document": 390
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "/",
+      "targets": [
+        {
+          "text": "Enclosure design for a portable device",
+          "width": 351.765625,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "Chip junction temperature",
+          "width": 240.09375,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "Reading an enclosure through its assembly path",
+          "width": 334,
+          "height": 46.78125,
+          "pass": true
+        },
+        {
+          "text": "Check the boundary conditions before solving",
+          "width": 334,
+          "height": 46.78125,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "/work/",
+      "targets": [
+        {
+          "text": "Enclosure design for a portable device",
+          "width": 451.234375,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "/lab/",
+      "targets": [
+        {
+          "text": "Chip junction temperature",
+          "width": 307.96875,
+          "height": 44,
+          "pass": true
+        },
+        {
+          "text": "Reading an enclosure through its assembly path",
+          "width": 334,
+          "height": 60,
+          "pass": true
+        },
+        {
+          "text": "Check the boundary conditions before solving",
+          "width": 334,
+          "height": 60,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "/about/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "/contact/",
+      "targets": [
+        {
+          "text": "LinkedIn",
+          "width": 62.0625,
+          "height": 44,
+          "pass": true
+        }
+      ],
+      "widthState": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    }
+  ]
+}

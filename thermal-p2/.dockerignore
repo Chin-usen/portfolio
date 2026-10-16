@@ -1,0 +1,7 @@
+.venv/
+checkpoints/
+**/__pycache__/
+**/*.pyc
+reports/*.log
+data/samples-preview.npz
+.git/

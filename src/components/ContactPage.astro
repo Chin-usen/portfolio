@@ -1,0 +1,31 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ObfuscatedEmail from './ObfuscatedEmail.astro';
+import { getProfile } from '../lib/content';
+import { getUi } from '../i18n/dictionaries';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const ui = getUi(locale);
+const profile = await getProfile(locale);
+---
+
+<BaseLayout locale={locale} title={ui.contact.title} description={ui.contact.description}>
+  <header class="page-heading">
+    <h1>{ui.contact.title}</h1>
+    <p>{ui.contact.description}</p>
+  </header>
+  <dl class="meta-list">
+    <dt>{ui.about.email}</dt>
+    <dd>
+      <ObfuscatedEmail {...profile.email} locale={locale} />
+    </dd>
+    <dt>{ui.about.linkedin}</dt>
+    <dd>
+      <a href={profile.linkedin} rel="me noreferrer">
+        {ui.about.linkedin}
+      </a>
+    </dd>
+  </dl>
+</BaseLayout>

@@ -1,0 +1,54 @@
+{
+  "environment": "Windows / Node22.23.3 / pnpm12.11.2; local workflow-equivalent checks, not hosted GitHub Actions",
+  "checks": [
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "seconds": 2.614957,
+      "started_utc": "2026-10-15T00:44:45.150591+00:00",
+      "log": "lint.log"
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "seconds": 6.280471,
+      "started_utc": "2026-10-15T00:44:47.766563+00:00",
+      "log": "typecheck.log"
+    },
+    {
+      "check": "unit",
+      "exit_code": 0,
+      "seconds": 0.540851,
+      "started_utc": "2026-10-15T00:44:54.047034+00:00",
+      "log": "unit.log"
+    },
+    {
+      "check": "browser",
+      "exit_code": 0,
+      "seconds": 11.929918,
+      "started_utc": "2026-10-15T00:44:54.588884+00:00",
+      "log": "browser.log"
+    },
+    {
+      "check": "build",
+      "exit_code": 0,
+      "seconds": 2.049861,
+      "started_utc": "2026-10-15T00:45:06.518802+00:00",
+      "log": "build.log"
+    },
+    {
+      "check": "privacy",
+      "exit_code": 0,
+      "seconds": 0.345415,
+      "started_utc": "2026-10-15T00:45:08.569664+00:00",
+      "log": "privacy.log"
+    },
+    {
+      "check": "gitleaks",
+      "exit_code": 0,
+      "seconds": 1.617711,
+      "started_utc": "2026-10-15T00:45:08.916078+00:00",
+      "log": "gitleaks.log"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "keyboardView": {
+    "before": "cd8b5e011c553805509dafcae559de6271f6eb6d3bf47b71119f91293a524595",
+    "after": "cd8b5e011c553805509dafcae559de6271f6eb6d3bf47b71119f91293a524595",
+    "unchanged": true
+  },
+  "warning": {
+    "visible": true,
+    "role": null,
+    "live": null,
+    "text": "!Above the common SiC junction-temperature limit of 175 °C",
+    "inLiveRegion": false
+  },
+  "announcedResult": "Current calculation: Junction temperature 367.8 °C; Junction-to-fluid resistance 0.606 K/W.",
+  "fem": {
+    "value": "313.3",
+    "label": "FEM-trained surrogate"
+  },
+  "selectedPill": {
+    "color": "rgb(29, 29, 31)",
+    "background": "rgba(0, 0, 0, 0)"
+  },
+  "text200": [
+    {
+      "lang": "zh",
+      "metrics": {
+        "x": 50,
+        "y": 584.15625,
+        "width": 265.703125,
+        "height": 267.984375
+      },
+      "actions": {
+        "x": 215.8125,
+        "y": 581.15625,
+        "width": 129.1875,
+        "height": 145.5625
+      },
+      "scale": {
+        "x": 50,
+        "y": 786.09375,
+        "width": 119,
+        "height": 139.0625
+      },
+      "stage": {
+        "x": 32,
+        "y": 565.15625,
+        "width": 326,
+        "height": 380
+      }
+    },
+    {
+      "lang": "en",
+      "metrics": {
+        "x": 50,
+        "y": 836.421875,
+        "width": 265.703125,
+        "height": 267.984375
+      },
+      "actions": {
+        "x": 198.046875,
+        "y": 833.421875,
+        "width": 146.953125,
+        "height": 145.5625
+      },
+      "scale": {
+        "x": 50,
+        "y": 1015.3125,
+        "width": 119,
+        "height": 162.109375
+      },
+      "stage": {
+        "x": 32,
+        "y": 817.421875,
+        "width": 326,
+        "height": 380
+      }
+    }
+  ]
+}

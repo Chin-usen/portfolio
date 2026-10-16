@@ -1,0 +1,63 @@
+{
+  "status": "Closed: 45 browser tests and all 54 mobile Lighthouse measurements completed; original route median gates pass.",
+  "scope": "English mobile non-thermal shared header. No font, token, content, navigation markup, or JavaScript changes.",
+  "sourceEvidence": "reports/v2/lighthouse/attempt-1/median-reports/en.json (preserved first failed batch).",
+  "lighthouseBefore": {
+    "cumulativeLayoutShiftRounded6": 0.247041,
+    "shiftCount": 1,
+    "largestShiftSelector": "body > main#main-content",
+    "reportedCauses": [
+      "Geist web font loaded",
+      "Noto Sans SC web fonts loaded"
+    ]
+  },
+  "controlledFontProbeBefore": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "method": "Local production preview; hold all WOFF2 responses; sample after DOMContentLoaded; release fonts and await document.fonts.ready.",
+    "en": {
+      "fallbackMainTopPx": 85,
+      "loadedMainTopPx": 145,
+      "fallbackLanguageTopPx": 20,
+      "loadedLanguageTopPx": 80,
+      "measuredClsRounded6": 0.247041,
+      "enhancedBothStates": true
+    },
+    "zh": {
+      "fallbackMainTopPx": 85,
+      "loadedMainTopPx": 85,
+      "measuredCls": 0,
+      "enhancedBothStates": true
+    }
+  },
+  "conclusion": "English header fits one row in fallback fonts but the language selector wraps to a second row after the requested fonts load, moving main content by 60px. Enhancement was already active in both states.",
+  "fix": "In the existing max-width:42rem rule, reserve flex-basis:100% for body:not(.thermal-page) .nav-shell:lang(en) .language-nav. It retains the observed final English 390px geometry from first layout, leaving Chinese and S1 headers unchanged.",
+  "regressions": [
+    "Hold web fonts on all eight English non-S1 routes at 390x844 and require main/language-row movement <=0.5px; the passing test writes header-font-stability.json.",
+    "English mobile menu keyboard Enter/Tab/Escape and returned toggle focus.",
+    "JavaScript-disabled English mobile page exposes all five primary links and language switch."
+  ],
+  "initialEnglishHomeReportSha256": "4d39257f2e616105eb662dede129df158275e2c5298adfbb98580eb9d6442498",
+  "postFixEvidence": {
+    "browserSuiteTests": 45,
+    "fontGeometry": "header-font-stability.json",
+    "affectedRoutes": 8,
+    "fontLoadMovementPx": 0,
+    "lighthouseSummary": "../lighthouse/summary.json",
+    "lighthouseStartedUtc": "2026-10-15T00:46:37.561747+00:00",
+    "lighthouseFinishedUtc": "2026-10-15T00:56:28.655585+00:00",
+    "allRouteMedianPerformanceRange": [
+      90.0,
+      100
+    ],
+    "allRunAccessibility": 100,
+    "allRunSeo": 100,
+    "affectedEnglishRouteLighthouseClsRange": [
+      0.0002151158099224567,
+      0.01602797872071607
+    ],
+    "note": "The font hold/release probe isolates zero movement for the corrected header. Small residual whole-page Lighthouse shifts remain; no claim of globally zero CLS."
+  }
+}

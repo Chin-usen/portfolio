@@ -1,0 +1,21 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUi } from '../i18n/dictionaries';
+import { localePath } from '../i18n/utils';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const ui = getUi(locale);
+---
+
+<BaseLayout
+  locale={locale}
+  title={`404 · ${ui.common.notFound}`}
+  description={ui.common.notFoundDescription}
+  noindex
+>
+  <h1>404 · {ui.common.notFound}</h1>
+  <p>{ui.common.notFoundDescription}</p>
+  <a href={localePath(locale, '/')}>{ui.common.backHome}</a>
+</BaseLayout>

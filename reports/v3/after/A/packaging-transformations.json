@@ -1,0 +1,72 @@
+[
+  {
+    "source": "assessment-a.md",
+    "delivered": "assessment-a.md",
+    "bytes": 20214,
+    "source_sha256_groups": "5ebaa0ce 82fd3f13 139c011b 8e50b3d6 c3a7d062 e5abf91d 9aa43400 1d1ebe27",
+    "delivered_sha256_groups": "9412ffee e9a531ac 3909248f d70da6eb 62edc576 cc349276 046921bc 4f6974b7",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "prep.md",
+    "delivered": "prep.md",
+    "bytes": 4305,
+    "source_sha256_groups": "1ff10bb7 a0e81419 fb7a1d14 def1fc4e 690ddc93 8290c919 d3ae2028 9452e0a5",
+    "delivered_sha256_groups": "34a8ead3 e434325f 6656f63d 43d77b09 60779fe8 50cd19e4 eb1fb5cf e7b2cfd7",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "pre-followup/assessment-a.md",
+    "delivered": "pre-followup/assessment-a.md",
+    "bytes": 20214,
+    "source_sha256_groups": "5ebaa0ce 82fd3f13 139c011b 8e50b3d6 c3a7d062 e5abf91d 9aa43400 1d1ebe27",
+    "delivered_sha256_groups": "9412ffee e9a531ac 3909248f d70da6eb 62edc576 cc349276 046921bc 4f6974b7",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "pre-followup/capture.cjs",
+    "delivered": "pre-followup/capture.cjs",
+    "bytes": 4536,
+    "source_sha256_groups": "047a7e0f e11c8015 30c6c6e8 a820b89a 2b0fea81 dc75fbdd 76659041 f80518c4",
+    "delivered_sha256_groups": "08be2ac3 bedc7425 1a0802d7 8692c43b f3ac463d 62dee79b c89e70fc fa958205",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "pre-followup/interactions.cjs",
+    "delivered": "pre-followup/interactions.cjs",
+    "bytes": 5716,
+    "source_sha256_groups": "5431d431 893da29a b6e776ca a99bd894 8a3b7293 72c052ae 3e9c3aa1 4375fdf6",
+    "delivered_sha256_groups": "203a7421 3891553f ae1e1982 fb43d5e8 863ca9e4 d3bcaf8c ec32b155 6b5b1f67",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "pre-followup/prep.md",
+    "delivered": "pre-followup/prep.md",
+    "bytes": 4305,
+    "source_sha256_groups": "1ff10bb7 a0e81419 fb7a1d14 def1fc4e 690ddc93 8290c919 d3ae2028 9452e0a5",
+    "delivered_sha256_groups": "34a8ead3 e434325f 6656f63d 43d77b09 60779fe8 50cd19e4 eb1fb5cf e7b2cfd7",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  },
+  {
+    "source": "pre-followup/archive-manifest.json",
+    "delivered": "pre-followup/archive-manifest.json",
+    "bytes": 14803,
+    "source_sha256_groups": "3a37cee9 654bd8c2 aa6323ba c792742e 0dc23b72 7f225b71 2c793d12 5ea3d17a",
+    "delivered_sha256_groups": "f047a086 2947911b 10dbb25a aa701144 90fd47a5 076d51c5 3265d36a 05cf1134",
+    "reasons": [
+      "Removed UTF-8 BOM; text, findings and values unchanged"
+    ]
+  }
+]

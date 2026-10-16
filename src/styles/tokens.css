@@ -1,0 +1,14 @@
+/* Neutral placeholders: replace these values during visual design. */
+:root {
+  --color-background: Canvas;
+  --color-text: CanvasText;
+  --color-border: currentColor;
+  --color-focus: currentColor;
+  --font-body: system-ui, sans-serif;
+  --font-heading-size: clamp(2rem, 5vw, 3rem);
+  --font-small-size: 0.9rem;
+  --font-weight-strong: 700;
+  --line-height-body: 1.6;
+  --line-height-heading: 1.25;
+  --content-max-width: 72rem;
+}

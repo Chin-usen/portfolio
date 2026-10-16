@@ -1,0 +1,136 @@
+name: Quality and security
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22.23.3
+      - name: Install pinned pnpm
+        run: npm install --global pnpm@12.11.2
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint and formatting
+        run: pnpm lint
+      - name: Strict TypeScript and Astro checks
+        run: pnpm typecheck
+      - name: Unit tests
+        run: pnpm test:unit
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Browser tests against static build
+        run: pnpm test:e2e
+      - name: Production build
+        run: pnpm build
+      - name: Scan source and built output
+        env:
+          BLOCKED_KEYWORDS: ${{ secrets.BLOCKED_KEYWORDS }}
+        run: pnpm security:scan
+      - name: Mobile Lighthouse budgets
+        run: pnpm lhci
+      - name: Conventional Commits
+        run: node scripts/check-commits.mjs
+      - name: Keep local test reports as workflow artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: quality-reports
+          path: |
+            playwright-report/
+            .lighthouseci/reports/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 7
+
+  sensitive-data:
+    # Independent gate; does not wait for lint, tests, or build.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22.23.3
+      - name: Install checksum-pinned official Gitleaks CLI
+        shell: bash
+        run: |
+          set -euo pipefail
+          tool_dir="$RUNNER_TEMP/gitleaks-8.30.1"
+          mkdir -p "$tool_dir"
+          curl --fail --silent --show-error --location \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz \
+            --output "$tool_dir/gitleaks.tar.gz"
+          printf '%s  %s\n' '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb' "$tool_dir/gitleaks.tar.gz" | sha256sum --check --status
+          tar -xzf "$tool_dir/gitleaks.tar.gz" -C "$tool_dir" gitleaks
+          printf 'GITLEAKS_BIN=%s/gitleaks\n' "$tool_dir" >> "$GITHUB_ENV"
+      - name: Scan secrets without publishing findings
+        run: node scripts/run-gitleaks.mjs
+      - name: Scan private data and configured keywords
+        env:
+          BLOCKED_KEYWORDS: ${{ secrets.BLOCKED_KEYWORDS }}
+        run: node scripts/security-scan.mjs
+      - name: Explain keyword policy availability
+        env:
+          BLOCKED_KEYWORDS: ${{ secrets.BLOCKED_KEYWORDS }}
+        shell: bash
+        run: |
+          if [ -z "$BLOCKED_KEYWORDS" ]; then
+            echo '::warning::BLOCKED_KEYWORDS is unavailable or empty. Phone/birthday rules and Gitleaks ran; custom keyword policy did not. Fork pull requests do not receive repository secrets. A trusted push must pass the configured policy before release.'
+          fi
+
+  thermal-compute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: thermal-p2
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22.23.3
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: 3.12.10
+      - name: Install locked validation tools
+        run: |
+          npm install --global pnpm@12.11.2
+          pnpm install --frozen-lockfile
+          python -m pip install -r requirements-lock.txt
+      - name: Validate typed evaluator and exact load scaling
+        run: |
+          pnpm typecheck
+          pnpm test
+          pnpm verify
+          pnpm verify:linearity
+      - name: Recheck FEM evidence and exported mesh
+        run: |
+          python scripts/audit_v2.py
+          python scripts/export_mesh.py

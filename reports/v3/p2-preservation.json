@@ -1,0 +1,947 @@
+{
+  "baseline_commit": "85fdb504e35ee480f43c98b0237f87ee866fb367",
+  "status": "byte-identical",
+  "file_count": 67,
+  "note": "Copied the frozen delivered v2 bytes to avoid checkout newline conversion; fresh validation reports are outside thermal-p2.",
+  "files": [
+    {
+      "file": "thermal-p2/.dockerignore",
+      "bytes": 89,
+      "sha256_hex_groups": [
+        "82d78ca4",
+        "2bf76a01",
+        "f3c2c51a",
+        "3deb2400",
+        "3633cdaa",
+        "8050fed3",
+        "ca8965cc",
+        "6a91c91b"
+      ]
+    },
+    {
+      "file": "thermal-p2/CHANGELOG.md",
+      "bytes": 1197,
+      "sha256_hex_groups": [
+        "04a7424f",
+        "0c5d8e8c",
+        "0babb3c7",
+        "9e5878ae",
+        "8b8c3276",
+        "9d947ddf",
+        "d669fa63",
+        "44e3fd66"
+      ]
+    },
+    {
+      "file": "thermal-p2/Dockerfile",
+      "bytes": 481,
+      "sha256_hex_groups": [
+        "0efbf444",
+        "471d1ff6",
+        "21c6fd47",
+        "6646e32e",
+        "d7f3b90b",
+        "d04edac1",
+        "306c7385",
+        "4ab8a2e8"
+      ]
+    },
+    {
+      "file": "thermal-p2/README.md",
+      "bytes": 6160,
+      "sha256_hex_groups": [
+        "48406c69",
+        "5f678a32",
+        "fef3ba18",
+        "fc41c5de",
+        "0eaf23d8",
+        "42310643",
+        "df9d73db",
+        "f81d3fa9"
+      ]
+    },
+    {
+      "file": "thermal-p2/REPORT.md",
+      "bytes": 4466,
+      "sha256_hex_groups": [
+        "95ac7c01",
+        "2fd30b05",
+        "24af46fc",
+        "d59c489d",
+        "5d378b56",
+        "8d2588be",
+        "9c17f73b",
+        "749e0f4f"
+      ]
+    },
+    {
+      "file": "thermal-p2/SOLVER-LICENSE.txt",
+      "bytes": 1096,
+      "sha256_hex_groups": [
+        "7d768fa6",
+        "0f69a108",
+        "0dfe272c",
+        "b5099c9d",
+        "2dbc7bee",
+        "26c05c43",
+        "f47c09b6",
+        "883a745e"
+      ]
+    },
+    {
+      "file": "thermal-p2/SOLVER-REPORT.md",
+      "bytes": 13821,
+      "sha256_hex_groups": [
+        "fc335d8c",
+        "286fb223",
+        "c5754e81",
+        "b1e79c66",
+        "de0e43c7",
+        "3c977b27",
+        "4a2e5026",
+        "f751d156"
+      ]
+    },
+    {
+      "file": "thermal-p2/SURROGATE.md",
+      "bytes": 7720,
+      "sha256_hex_groups": [
+        "2a0b902e",
+        "b8bf8324",
+        "8c93389f",
+        "0b3cd829",
+        "e039bbb0",
+        "055ed0fe",
+        "e5b6d17c",
+        "c33fd1ed"
+      ]
+    },
+    {
+      "file": "thermal-p2/V2-VALIDATION.md",
+      "bytes": 6018,
+      "sha256_hex_groups": [
+        "918d0b07",
+        "e1a64781",
+        "8b001c9e",
+        "5b2a9ad6",
+        "c6b12ec4",
+        "74f67265",
+        "ab3cd990",
+        "30121a65"
+      ]
+    },
+    {
+      "file": "thermal-p2/data/mesh-l3-quarter.npz",
+      "bytes": 262882,
+      "sha256_hex_groups": [
+        "05eb5292",
+        "e8ecf54d",
+        "ed5f46ce",
+        "6c6c24e1",
+        "d30b32ad",
+        "dc494722",
+        "b18ed800",
+        "e13e1777"
+      ]
+    },
+    {
+      "file": "thermal-p2/data/parameters.csv",
+      "bytes": 118276,
+      "sha256_hex_groups": [
+        "d8717de3",
+        "7d05c262",
+        "ff529d3c",
+        "e60e1b73",
+        "3cdf40b2",
+        "6d5dfdd3",
+        "ec29c1eb",
+        "577ea350"
+      ]
+    },
+    {
+      "file": "thermal-p2/data/samples-float16.npz",
+      "bytes": 3242615,
+      "sha256_hex_groups": [
+        "322db453",
+        "659d5b37",
+        "e5bdf21a",
+        "8c35ddd2",
+        "e3ce779c",
+        "40f536d2",
+        "2d05cf5d",
+        "34059cc6"
+      ]
+    },
+    {
+      "file": "thermal-p2/data/samples.csv",
+      "bytes": 65347,
+      "sha256_hex_groups": [
+        "fc729595",
+        "48e52c87",
+        "4529e791",
+        "2f485989",
+        "22b89fb2",
+        "221de009",
+        "9219d71c",
+        "2971e911"
+      ]
+    },
+    {
+      "file": "thermal-p2/data/samples.npz",
+      "bytes": 5504103,
+      "sha256_hex_groups": [
+        "cc8aab1e",
+        "c1e4c473",
+        "c0944617",
+        "f3de40da",
+        "3305e4b2",
+        "fd186c4b",
+        "2e61926a",
+        "0c2a56a4"
+      ]
+    },
+    {
+      "file": "thermal-p2/models/field-basis.f16",
+      "bytes": 147456,
+      "sha256_hex_groups": [
+        "f626a03c",
+        "d6d29ae9",
+        "f23e6f7a",
+        "fc098706",
+        "b614b5f5",
+        "0d709f4e",
+        "78e37723",
+        "9835b31f"
+      ]
+    },
+    {
+      "file": "thermal-p2/models/field-model.json",
+      "bytes": 145389,
+      "sha256_hex_groups": [
+        "e6464c9b",
+        "0ec85859",
+        "382a3473",
+        "43b309bc",
+        "c8242254",
+        "6b506181",
+        "9cded57e",
+        "f6bce584"
+      ]
+    },
+    {
+      "file": "thermal-p2/models/scalar-model.json",
+      "bytes": 216323,
+      "sha256_hex_groups": [
+        "1ae88269",
+        "8690873c",
+        "b613a03c",
+        "b100959a",
+        "9cc90d72",
+        "2c251816",
+        "7dd8608b",
+        "ba3f3f20"
+      ]
+    },
+    {
+      "file": "thermal-p2/package.json",
+      "bytes": 559,
+      "sha256_hex_groups": [
+        "e0c29fd1",
+        "00e87e6f",
+        "867e6899",
+        "179901de",
+        "621da9fa",
+        "c6290fc2",
+        "08822626",
+        "bd667d95"
+      ]
+    },
+    {
+      "file": "thermal-p2/pnpm-lock.yaml",
+      "bytes": 25584,
+      "sha256_hex_groups": [
+        "0a2c50a9",
+        "be5a32ab",
+        "097b0842",
+        "a49dad71",
+        "58500d85",
+        "d52d2f74",
+        "ff8ded86",
+        "8aa3c332"
+      ]
+    },
+    {
+      "file": "thermal-p2/pnpm-workspace.yaml",
+      "bytes": 55,
+      "sha256_hex_groups": [
+        "4b05b05b",
+        "ee779b92",
+        "42c39167",
+        "5268bc75",
+        "c9ff1a3b",
+        "34105d15",
+        "36311393",
+        "795ac242"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/analytic-vs-fem.png",
+      "bytes": 108149,
+      "sha256_hex_groups": [
+        "7f8eaca6",
+        "6645d6a3",
+        "46f3e9a3",
+        "8ea67333",
+        "c5296fba",
+        "28d3d576",
+        "3a953f96",
+        "40aeb544"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/convergence.csv",
+      "bytes": 698,
+      "sha256_hex_groups": [
+        "84a98610",
+        "5f987aed",
+        "21545396",
+        "f9073649",
+        "9e68eabb",
+        "279f0820",
+        "ade18e79",
+        "d4fb1d01"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/convergence.png",
+      "bytes": 50573,
+      "sha256_hex_groups": [
+        "7a8e4588",
+        "561b2da7",
+        "f213cf6d",
+        "dad46e5b",
+        "57a2bdaa",
+        "ac8c7dd7",
+        "82846718",
+        "f894cb61"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/data-verification.json",
+      "bytes": 752,
+      "sha256_hex_groups": [
+        "c5d1c2b4",
+        "7e9b1671",
+        "8e6f6d38",
+        "9892a172",
+        "37ecf4bc",
+        "bc43d736",
+        "fddaa722",
+        "a389d814"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/dataset-verification.json",
+      "bytes": 1319,
+      "sha256_hex_groups": [
+        "37f38e73",
+        "72d8c9d3",
+        "99efaebe",
+        "96625052",
+        "212e457a",
+        "bbb1400f",
+        "78209535",
+        "c26f3184"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/default-fem.json",
+      "bytes": 284,
+      "sha256_hex_groups": [
+        "8c74a511",
+        "9e25e5f3",
+        "729584d9",
+        "47e30c65",
+        "1d4ee3dc",
+        "43b92ee9",
+        "493c80ab",
+        "2f50dc33"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/default-fem.npz",
+      "bytes": 13586,
+      "sha256_hex_groups": [
+        "84819477",
+        "271ca641",
+        "cf07f013",
+        "44b4982b",
+        "185120ad",
+        "c634ac4c",
+        "d5947c84",
+        "0bc71de4"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/element-verification.json",
+      "bytes": 116,
+      "sha256_hex_groups": [
+        "6ebfe306",
+        "08ca0c55",
+        "69b475c3",
+        "ef581acd",
+        "f84cc525",
+        "05bbcfad",
+        "91ff8280",
+        "e0097f85"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/field-export-validation.json",
+      "bytes": 497,
+      "sha256_hex_groups": [
+        "5bab0e2d",
+        "c1f52d97",
+        "d4a4f120",
+        "195edeff",
+        "38f7f34d",
+        "1dd1af85",
+        "dc061ada",
+        "6c86799f"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/gp-gradient-check.json",
+      "bytes": 30,
+      "sha256_hex_groups": [
+        "65ffbad2",
+        "827b953e",
+        "ec721429",
+        "1ed0d59c",
+        "a4a82b2c",
+        "404dee25",
+        "030a3352",
+        "6c88b07a"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/holdout-error-distribution.png",
+      "bytes": 96588,
+      "sha256_hex_groups": [
+        "cac3f9d6",
+        "8402d12c",
+        "d40086e2",
+        "9ee5402d",
+        "74621b59",
+        "f5157532",
+        "a7e20e2d",
+        "c885c3f6"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/holdout-predictions.csv",
+      "bytes": 12392,
+      "sha256_hex_groups": [
+        "1cb1c04b",
+        "e0cec29a",
+        "7da31b02",
+        "53c3e20c",
+        "eb9076a3",
+        "b17a37a0",
+        "e8b280d6",
+        "949f41f0"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/initial-model-selection.json",
+      "bytes": 9794,
+      "sha256_hex_groups": [
+        "5152d839",
+        "e89774af",
+        "7a06773b",
+        "6262e320",
+        "3fd8ca5f",
+        "c15eafd7",
+        "4074113f",
+        "88b22de8"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/initial-scalar-holdout.json",
+      "bytes": 355,
+      "sha256_hex_groups": [
+        "45ab10dc",
+        "a38303df",
+        "994f320d",
+        "04ec6cd9",
+        "d0dec6d3",
+        "72744232",
+        "5f01b33e",
+        "33d171d1"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/linearity-v2.json",
+      "bytes": 693,
+      "sha256_hex_groups": [
+        "4f636675",
+        "a9328341",
+        "e6a86848",
+        "e8b55f1a",
+        "b00b2aad",
+        "1a4d7656",
+        "528b2d9d",
+        "995e001e"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/material-parameters-v2.json",
+      "bytes": 1293,
+      "sha256_hex_groups": [
+        "97227afe",
+        "797a5e11",
+        "7428863c",
+        "1cb71ad7",
+        "4fe1cc2c",
+        "ba10609e",
+        "a1f7bc5a",
+        "c90e042c"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/mesh-export-v2.json",
+      "bytes": 1083,
+      "sha256_hex_groups": [
+        "5fc2cc47",
+        "c07079fb",
+        "cf4c6f02",
+        "251d1860",
+        "99b69500",
+        "d9ae5c9b",
+        "1d6c7495",
+        "68999405"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/model-selection.json",
+      "bytes": 59488,
+      "sha256_hex_groups": [
+        "35d19bab",
+        "97eeb439",
+        "f36d1f13",
+        "ca6f9e39",
+        "73a4f57e",
+        "79030856",
+        "7b5b9e26",
+        "aa1f3371"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/scalar-holdout.json",
+      "bytes": 356,
+      "sha256_hex_groups": [
+        "bbcb3f5c",
+        "a82b816b",
+        "db77b399",
+        "cbc974f2",
+        "87f79933",
+        "6e41dbc9",
+        "d302101d",
+        "c6f75f87"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/second-model-selection.json",
+      "bytes": 50848,
+      "sha256_hex_groups": [
+        "95a913b4",
+        "09ee597c",
+        "2aacf578",
+        "bf65ec82",
+        "cd64c66d",
+        "6b0f7b11",
+        "0d6f5a90",
+        "f438b668"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/second-scalar-holdout.json",
+      "bytes": 358,
+      "sha256_hex_groups": [
+        "888ab174",
+        "0313e541",
+        "d4008a54",
+        "b98513de",
+        "dd6895d8",
+        "f4a3384d",
+        "8b1bcd7b",
+        "38572aac"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/selected-mesh.json",
+      "bytes": 632,
+      "sha256_hex_groups": [
+        "87ee0a1a",
+        "835c1b3a",
+        "e4235481",
+        "379dfb21",
+        "bef19a91",
+        "6f46cdca",
+        "9acd12f0",
+        "4bea8845"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/surrogate-validation.json",
+      "bytes": 877,
+      "sha256_hex_groups": [
+        "ee887b67",
+        "66c4727d",
+        "58c64563",
+        "35a1548e",
+        "c3f6f06b",
+        "e95de30f",
+        "e50fc433",
+        "6fece35a"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/surrogate-vs-fem.png",
+      "bytes": 115992,
+      "sha256_hex_groups": [
+        "da769ebf",
+        "fed90c96",
+        "bf723d60",
+        "8e28a6b1",
+        "77da9a0c",
+        "6a20bf85",
+        "2c723174",
+        "f42a3d67"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/typescript-validation-first.json",
+      "bytes": 1221,
+      "sha256_hex_groups": [
+        "1a8c2f4f",
+        "9d793f61",
+        "774f5329",
+        "aafc0154",
+        "716b1a67",
+        "681d5cfe",
+        "6482f1bb",
+        "d8211878"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/typescript-validation.json",
+      "bytes": 1222,
+      "sha256_hex_groups": [
+        "96f5a368",
+        "94343ae2",
+        "9eee7e09",
+        "e3667940",
+        "21bd5be7",
+        "418a01d6",
+        "1c5f547b",
+        "9cf58e48"
+      ]
+    },
+    {
+      "file": "thermal-p2/reports/v2-audit.json",
+      "bytes": 3030,
+      "sha256_hex_groups": [
+        "ac313b48",
+        "ecd62603",
+        "7d462000",
+        "734213e3",
+        "1ecbacd7",
+        "7ae5d7f7",
+        "65ad5b35",
+        "67bdcb4f"
+      ]
+    },
+    {
+      "file": "thermal-p2/requirements-lock.txt",
+      "bytes": 223,
+      "sha256_hex_groups": [
+        "fddd21eb",
+        "ed229f53",
+        "24a3cf3f",
+        "36cfc74a",
+        "e6a9b61a",
+        "acbfd446",
+        "917d8f3e",
+        "653129f4"
+      ]
+    },
+    {
+      "file": "thermal-p2/requirements.txt",
+      "bytes": 66,
+      "sha256_hex_groups": [
+        "172b7963",
+        "800d120e",
+        "15792383",
+        "61722693",
+        "36775abf",
+        "38e67b11",
+        "fb9cd7a8",
+        "57c1222e"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/audit_v2.py",
+      "bytes": 6326,
+      "sha256_hex_groups": [
+        "68b32f86",
+        "3da15eb1",
+        "e58d9513",
+        "ef214a8d",
+        "456495c1",
+        "7b0ec04d",
+        "3051c25e",
+        "4c10485a"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/cv_select.py",
+      "bytes": 2995,
+      "sha256_hex_groups": [
+        "3517b09a",
+        "1313fbb0",
+        "1b24a722",
+        "2a2e0c8d",
+        "d76c4a8f",
+        "9430a629",
+        "bca88ba2",
+        "2008d643"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/export_mesh.py",
+      "bytes": 3125,
+      "sha256_hex_groups": [
+        "a522383f",
+        "efea10cd",
+        "9a35890b",
+        "e5c00f7c",
+        "207dc05b",
+        "9a7e8096",
+        "5269cbe2",
+        "0839211f"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/plot_errors.py",
+      "bytes": 1258,
+      "sha256_hex_groups": [
+        "4e7b0fd6",
+        "01faf20c",
+        "183461e8",
+        "ffb6a49b",
+        "06f9efc4",
+        "e03e5ac4",
+        "c5cf0305",
+        "5748931d"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/reproduce.py",
+      "bytes": 1695,
+      "sha256_hex_groups": [
+        "0483f2f5",
+        "e7c8fd06",
+        "d881e106",
+        "74eb741d",
+        "49d33458",
+        "3c3d5580",
+        "becdf24f",
+        "d8221936"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/train.py",
+      "bytes": 19159,
+      "sha256_hex_groups": [
+        "0389ee8f",
+        "b7f3c205",
+        "20f297c6",
+        "af4a0afd",
+        "0f11d4d5",
+        "8d7bd08b",
+        "c4777f5b",
+        "9e6bab1c"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/verify_dataset.py",
+      "bytes": 3169,
+      "sha256_hex_groups": [
+        "690f80bd",
+        "eb1debdf",
+        "073ca958",
+        "78895ddd",
+        "4e006e12",
+        "2e425275",
+        "3fa40314",
+        "4c857af4"
+      ]
+    },
+    {
+      "file": "thermal-p2/scripts/verify_field_export.py",
+      "bytes": 2559,
+      "sha256_hex_groups": [
+        "d304c978",
+        "da8b865d",
+        "f00b0af1",
+        "2fdb47b0",
+        "57d0968e",
+        "06c4d1f8",
+        "69632fb4",
+        "6c386649"
+      ]
+    },
+    {
+      "file": "thermal-p2/solver/fem.py",
+      "bytes": 10046,
+      "sha256_hex_groups": [
+        "c059547b",
+        "703ce510",
+        "6f12e7a3",
+        "a78faa1e",
+        "b3079494",
+        "c4277231",
+        "1c727dde",
+        "7642c123"
+      ]
+    },
+    {
+      "file": "thermal-p2/solver/run.py",
+      "bytes": 8770,
+      "sha256_hex_groups": [
+        "6de7cea1",
+        "08f5aaf4",
+        "812513c8",
+        "0e690eb7",
+        "82e974ce",
+        "d5f0cfb1",
+        "613799fd",
+        "6c3529c6"
+      ]
+    },
+    {
+      "file": "thermal-p2/tsconfig.json",
+      "bytes": 270,
+      "sha256_hex_groups": [
+        "d91efbf2",
+        "d5c1ba1e",
+        "4b9ceab1",
+        "06805ee2",
+        "fee51ad4",
+        "42fc7f18",
+        "e66dbeab",
+        "070a5d95"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/evaluator.test.ts",
+      "bytes": 3043,
+      "sha256_hex_groups": [
+        "33418cc0",
+        "77e443ad",
+        "40139cc3",
+        "c4271037",
+        "552fc1d3",
+        "33497fd7",
+        "b8039233",
+        "023b0d1d"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/evaluator.ts",
+      "bytes": 10542,
+      "sha256_hex_groups": [
+        "112a1e7b",
+        "57bb6db3",
+        "d9108a3a",
+        "de6bd97c",
+        "df600f2e",
+        "bc2bc3e4",
+        "23fd14d6",
+        "eef4b541"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/holdout-fixtures.json",
+      "bytes": 63316,
+      "sha256_hex_groups": [
+        "10dc488a",
+        "5667d70e",
+        "fd7eaf53",
+        "cf87de64",
+        "41718b2b",
+        "bfe669e1",
+        "94561738",
+        "89e9b869"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/linearity-check.ts",
+      "bytes": 3767,
+      "sha256_hex_groups": [
+        "2ba0157b",
+        "a318cef1",
+        "e3249f8c",
+        "ccbb55f0",
+        "6aac36d1",
+        "3ec65de1",
+        "8da53682",
+        "c3ce256b"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/linearity.mjs",
+      "bytes": 1533,
+      "sha256_hex_groups": [
+        "d1e9a205",
+        "4135123e",
+        "0462dbf7",
+        "2263743a",
+        "51d296f9",
+        "19d33c4b",
+        "dc453486",
+        "ef4451ba"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/linearity.test.ts",
+      "bytes": 2201,
+      "sha256_hex_groups": [
+        "7a7226a2",
+        "f8bba9b2",
+        "3692d326",
+        "b2119ae8",
+        "995013f9",
+        "3573b8fd",
+        "52008d0c",
+        "cce434da"
+      ]
+    },
+    {
+      "file": "thermal-p2/web/test.mjs",
+      "bytes": 4700,
+      "sha256_hex_groups": [
+        "5dc102a5",
+        "a7779aa8",
+        "9dc4090e",
+        "218fc1cb",
+        "64840c85",
+        "c46331b4",
+        "aa4f2c76",
+        "db845ad1"
+      ]
+    }
+  ],
+  "digest_format": "sha256_hex_groups contains all 64 hex characters in eight groups; concatenate the groups to recover SHA-256. This explicit byte-fingerprint representation avoids misclassifying digit runs as telephone numbers."
+}

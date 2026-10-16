@@ -1,0 +1,10 @@
+$ astro check
+09:44:49 [content] Syncing content
+09:44:49 [content] Synced content
+09:44:49 [types] Generated 358ms
+09:44:49 [check] Getting diagnostics for Astro files in <workspace>\portfolio-main-v2...
+Result (73 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

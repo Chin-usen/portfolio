@@ -1,0 +1,18 @@
+{
+  "cases": 100,
+  "scenariosPerCase": 8,
+  "fieldValuesChecked": 6553600,
+  "maxResistanceChange": 0,
+  "maxScalarAffineErrorC": 1.1368683772161603e-13,
+  "maxLayerAffineErrorC": 1.1368683772161603e-13,
+  "maxFieldAffineErrorC": 0.0000457763671875,
+  "maxFieldRoundingRatio": 0.18749821746553863,
+  "maxZeroPowerErrorC": 0,
+  "coordinateChanges": 0,
+  "maskChanges": 0,
+  "node": "v22.23.3",
+  "pass": true,
+  "law": "T(P,T_cool)=T_cool+(P/100)*T(100,0)",
+  "field_precision": "Float32 output; 4*2^-23*max(1,abs(expected),abs(scaled reference)) tolerance",
+  "scope": "Constant conductivity, geometry and h; no temperature-dependent material properties, radiation or nonlinear fluid solve"
+}

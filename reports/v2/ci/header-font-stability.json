@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fontDelay": "All WOFF2 requests held until fallback geometry is sampled after two animation frames.",
+  "maximumAllowedMovementPx": 0.5,
+  "measurements": [
+    {
+      "route": "/en/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/work/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/work/sample-case/",
+      "fontRequests": 4,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/lab/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/lab/sample-teardown/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/lab/sample-simulation/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/about/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "route": "/en/contact/",
+      "fontRequests": 3,
+      "fallback": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      },
+      "loaded": {
+        "mainTop": 145,
+        "languageTop": 80,
+        "viewport": 390,
+        "width": 390
+      }
+    }
+  ]
+}

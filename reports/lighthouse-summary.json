@@ -1,0 +1,25 @@
+{
+  "runsPerUrl": 1,
+  "ciRunsPerUrl": 3,
+  "results": [
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "performance": 96.0,
+      "accessibility": 100,
+      "seo": 100,
+      "cls": 0.00085511360527645,
+      "fetchTime": "2026-10-14T06:15:12.281Z",
+      "lighthouseVersion": "12.6.1"
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "cls": 0.08046629768115048,
+      "fetchTime": "2026-10-14T06:15:24.186Z",
+      "lighthouseVersion": "12.6.1"
+    }
+  ],
+  "assertionFailures": []
+}

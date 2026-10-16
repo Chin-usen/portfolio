@@ -1,0 +1,166 @@
+[
+  {
+    "check": "menu-keyboard",
+    "lang": "zh",
+    "open": "true",
+    "navFocused": true,
+    "closed": "false",
+    "focusReturned": true
+  },
+  {
+    "check": "translation",
+    "from": "/",
+    "to": "/en/",
+    "expected": "/en/"
+  },
+  {
+    "check": "translation",
+    "from": "/lab/chip-junction-temperature/",
+    "to": "/en/lab/chip-junction-temperature/",
+    "expected": "/en/lab/chip-junction-temperature/"
+  },
+  {
+    "check": "dark-skip",
+    "lang": "zh",
+    "focused": true,
+    "color": "rgb(245, 245, 247)",
+    "background": "rgb(22, 22, 23)",
+    "outline": "rgb(255, 159, 90)",
+    "mainFocused": true
+  },
+  {
+    "check": "keyboard-tabs",
+    "lang": "zh",
+    "selected": "cooler"
+  },
+  {
+    "check": "keyboard-slider",
+    "lang": "zh",
+    "before": "100",
+    "after": "110",
+    "tj": "131.6"
+  },
+  {
+    "check": "fem",
+    "lang": "zh",
+    "tj": "119.6",
+    "statusHidden": true
+  },
+  {
+    "check": "keyboard-view-orbit-zoom",
+    "lang": "zh",
+    "hashBefore": "67b0b6560d8f2e4ea6393bb5e96531d5b4ceec8f81bcd63c90fa43bf27f5ceaf",
+    "hashAfter": "4630480891217698cbbc6aee13bb2aeacd599d09c3147fe9f047986c34da0dd1",
+    "unchanged": false
+  },
+  {
+    "check": "fallback-keyboard",
+    "lang": "zh",
+    "selected": "true",
+    "fallbackNote": true
+  },
+  {
+    "check": "menu-keyboard",
+    "lang": "en",
+    "open": "true",
+    "navFocused": true,
+    "closed": "false",
+    "focusReturned": true
+  },
+  {
+    "check": "translation",
+    "from": "/en/",
+    "to": "/",
+    "expected": "/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/lab/chip-junction-temperature/",
+    "to": "/lab/chip-junction-temperature/",
+    "expected": "/lab/chip-junction-temperature/"
+  },
+  {
+    "check": "dark-skip",
+    "lang": "en",
+    "focused": true,
+    "color": "rgb(245, 245, 247)",
+    "background": "rgb(22, 22, 23)",
+    "outline": "rgb(255, 159, 90)",
+    "mainFocused": true
+  },
+  {
+    "check": "keyboard-tabs",
+    "lang": "en",
+    "selected": "cooler"
+  },
+  {
+    "check": "keyboard-slider",
+    "lang": "en",
+    "before": "100",
+    "after": "110",
+    "tj": "131.6"
+  },
+  {
+    "check": "fem",
+    "lang": "en",
+    "tj": "119.6",
+    "statusHidden": true
+  },
+  {
+    "check": "keyboard-view-orbit-zoom",
+    "lang": "en",
+    "hashBefore": "74e8c7cef31ce4adc4a3b234a4a936cefa61fa75c0d174506d89c9ad2e9f3337",
+    "hashAfter": "cd980b6cf2ba9179bedfe024f5072066246a0e2c1ff804d1608e158668f0144c",
+    "unchanged": false
+  },
+  {
+    "check": "fallback-keyboard",
+    "lang": "en",
+    "selected": "true",
+    "fallbackNote": true
+  },
+  {
+    "check": "touch-orbit",
+    "changed": true
+  },
+  {
+    "check": "touch-orbit-after-cancel",
+    "changed": true
+  },
+  {
+    "check": "touch-slider",
+    "before": "100",
+    "after": "370"
+  },
+  {
+    "check": "touch-tab-strip",
+    "before": 0,
+    "after": 111,
+    "scrollWidth": 435,
+    "clientWidth": 324
+  },
+  {
+    "check": "200-percent-reflow-proxy-only",
+    "route": "/",
+    "width": 720,
+    "scrollWidth": 720
+  },
+  {
+    "check": "200-percent-reflow-proxy-only",
+    "route": "/en/",
+    "width": 720,
+    "scrollWidth": 720
+  },
+  {
+    "check": "200-percent-reflow-proxy-only",
+    "route": "/lab/chip-junction-temperature/",
+    "width": 720,
+    "scrollWidth": 720
+  },
+  {
+    "check": "200-percent-reflow-proxy-only",
+    "route": "/en/lab/chip-junction-temperature/",
+    "width": 720,
+    "scrollWidth": 720
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-15T05:18:47.352848+00:00",
+  "status": "pass",
+  "scope": "Saved-file packaging and metadata verification only; no browser or production checks",
+  "final_matrix_count": 16,
+  "normal_state_count": 16,
+  "recapture_count": 12,
+  "recapture_hashes_match": true,
+  "recapture_hashes_identical_to_previous_review": true,
+  "recapture_section_geometries_identical": true,
+  "final_source_hashes_match_current_source_count": 6,
+  "focused_state_count": 10,
+  "original_archive_items_resolved": 85,
+  "original_items_deduplicated_to_identical_current_payload": 46,
+  "copied_artifact_count": 171,
+  "transformed_text_count": 7,
+  "png_bytes_unchanged": true,
+  "text_utf8_without_bom": true,
+  "personal_identifier_scan": "pass",
+  "scores": {
+    "original_A": "30/40",
+    "followup_new_blind_aggregate": null
+  },
+  "omitted": [
+    "followup-pending.md",
+    "followup-checkpoint.md",
+    "unselected duplicate root initial evidence; archived originals remain indexed"
+  ],
+  "explicit_local_markdown_links_checked": 110,
+  "total_files": 177,
+  "total_bytes": 16923328
+}

@@ -1,0 +1,3554 @@
+{
+  "date": "2026-10-15T01:57:55.027Z",
+  "engine": "Chromium",
+  "source": "Frozen portfolio-main-v2 before v3",
+  "matrix": [
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-zh-home-1440-light.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "首页",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 236.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "项目",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 284.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "关于",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 396.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "联系",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 444.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 16.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 10.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 7.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 7.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 7.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 7.699999995529652
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 7.699999995529652
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 7.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 13
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 12.699999995529652
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 13
+          },
+          {
+            "name": "noto-sans-sc-114-600-normal.DJcvbmLg.woff2",
+            "type": "css",
+            "transferSize": 31532,
+            "decodedBodySize": 31232,
+            "duration": 13.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 12
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 12.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 13.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 13.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 11
+          },
+          {
+            "name": "noto-sans-sc-109-600-normal.ByuX8nYO.woff2",
+            "type": "css",
+            "transferSize": 32732,
+            "decodedBodySize": 32432,
+            "duration": 11.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 10.599999994039536
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 10
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 9.5
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 9.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 9.199999995529652
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 8.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 6.700000002980232
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "首页",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "从结构出发，把设计讲清楚。"
+          },
+          {
+            "level": "H2",
+            "text": "精选项目"
+          },
+          {
+            "level": "H3",
+            "text": "便携设备的壳体结构设计"
+          },
+          {
+            "level": "H2",
+            "text": "实验记录"
+          },
+          {
+            "level": "H3",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H3",
+            "text": "从装配路径读懂壳体结构"
+          },
+          {
+            "level": "H3",
+            "text": "在求解之前，先检查边界条件"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-zh-s1-1440-light.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "芯片结温仿真",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "首页",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 228.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "项目",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 272.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "实验室",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 316.03125,
+              "y": 20,
+              "width": 42,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "关于",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 374.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "联系",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 418.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.8000000044703484
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.3999999985098839
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 1.6999999955296516
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 4
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 3.5999999940395355
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 3.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 3.4000000059604645
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 3.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 4.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 4.0999999940395355
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 3.7999999970197678
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 2.600000001490116
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 36.19999999552965
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 32
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 32.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 28.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 28.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 28.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 21
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 18.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 18.900000005960464
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 18.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 18.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 19.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-110-600-normal.BOBszRCT.woff2",
+            "type": "css",
+            "transferSize": 33484,
+            "decodedBodySize": 33184,
+            "duration": 17
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 18
+          },
+          {
+            "name": "noto-sans-sc-113-600-normal.e4aGDSvi.woff2",
+            "type": "css",
+            "transferSize": 31780,
+            "decodedBodySize": 31480,
+            "duration": 15.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 13.400000005960464
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 9.600000001490116
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 2.100000001490116
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.899999998509884
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "实验室",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H2",
+            "text": "芯片"
+          },
+          {
+            "level": "H2",
+            "text": "热阻构成"
+          },
+          {
+            "level": "H2",
+            "text": "探索参数"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-en-home-1440-light.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Work",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 297.59375,
+              "y": 20,
+              "width": 38.515625,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Lab",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 352.109375,
+              "y": 20,
+              "width": 27.5,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 395.609375,
+              "y": 20,
+              "width": 43.765625,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 3.1999999955296516
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 14
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 6.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 6.399999998509884
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "Home",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Make the structure clear. Make the choices count."
+          },
+          {
+            "level": "H2",
+            "text": "Selected work"
+          },
+          {
+            "level": "H3",
+            "text": "Enclosure design for a portable device"
+          },
+          {
+            "level": "H2",
+            "text": "Lab notes"
+          },
+          {
+            "level": "H3",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H3",
+            "text": "Reading an enclosure through its assembly path"
+          },
+          {
+            "level": "H3",
+            "text": "Check the boundary conditions before solving"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-en-s1-1440-light.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Chip junction temperature",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Home",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 228.03125,
+              "y": 20,
+              "width": 37.703125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Work",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 281.734375,
+              "y": 20,
+              "width": 33.703125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Lab",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 331.4375,
+              "y": 20,
+              "width": 25.328125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 372.765625,
+              "y": 20,
+              "width": 38.296875,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.7000000029802322
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 2.100000001490116
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 5
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 4
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 2
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 19.700000002980232
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.5
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "Lab",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H2",
+            "text": "Chip"
+          },
+          {
+            "level": "H2",
+            "text": "Thermal resistance breakdown"
+          },
+          {
+            "level": "H2",
+            "text": "Explore parameters"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-zh-home-1440-dark.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "首页",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 236.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "项目",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 284.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "关于",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 396.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "联系",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 444.609375,
+              "y": 20,
+              "width": 32,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 3.2000000029802322
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 15.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 10.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 6.0999999940395355
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 6.5999999940395355
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 6.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 6.9000000059604645
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 6.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 6.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 11.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-114-600-normal.DJcvbmLg.woff2",
+            "type": "css",
+            "transferSize": 31532,
+            "decodedBodySize": 31232,
+            "duration": 12.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 12.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 12.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 11.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 11.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 11.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 12
+          },
+          {
+            "name": "noto-sans-sc-109-600-normal.ByuX8nYO.woff2",
+            "type": "css",
+            "transferSize": 32732,
+            "decodedBodySize": 32432,
+            "duration": 10.199999995529652
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 10.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 9.400000005960464
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 8.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 7.699999995529652
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 7.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 7.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 6.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 5.800000004470348
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "首页",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "从结构出发，把设计讲清楚。"
+          },
+          {
+            "level": "H2",
+            "text": "精选项目"
+          },
+          {
+            "level": "H3",
+            "text": "便携设备的壳体结构设计"
+          },
+          {
+            "level": "H2",
+            "text": "实验记录"
+          },
+          {
+            "level": "H3",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H3",
+            "text": "从装配路径读懂壳体结构"
+          },
+          {
+            "level": "H3",
+            "text": "在求解之前，先检查边界条件"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-zh-s1-1440-dark.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "芯片结温仿真",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "首页",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 228.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "项目",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 272.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "实验室",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 316.03125,
+              "y": 20,
+              "width": 42,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "关于",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 374.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "联系",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 418.03125,
+              "y": 20,
+              "width": 28,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.6000000014901161
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.7000000029802322
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 2.2000000029802322
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 4.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 4.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 3.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 3.3000000044703484
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 3.2999999970197678
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 4.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 4.5
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 4.199999995529652
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 37.5
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 32.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 33
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 29.19999999552965
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 29
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 29.19999999552965
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 20.80000000447035
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 20
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 20.099999994039536
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 20
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 20
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 19.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-110-600-normal.BOBszRCT.woff2",
+            "type": "css",
+            "transferSize": 33484,
+            "decodedBodySize": 33184,
+            "duration": 18.599999994039536
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 18.5
+          },
+          {
+            "name": "noto-sans-sc-113-600-normal.e4aGDSvi.woff2",
+            "type": "css",
+            "transferSize": 31780,
+            "decodedBodySize": 31480,
+            "duration": 16
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 14.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 10.899999998509884
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 8
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 2
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.399999998509884
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "实验室",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H2",
+            "text": "芯片"
+          },
+          {
+            "level": "H2",
+            "text": "热阻构成"
+          },
+          {
+            "level": "H2",
+            "text": "探索参数"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-en-home-1440-dark.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Work",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 297.59375,
+              "y": 20,
+              "width": 38.515625,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Lab",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 352.109375,
+              "y": 20,
+              "width": 27.5,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 395.609375,
+              "y": 20,
+              "width": 43.765625,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 4.5
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 1.7999999970197678
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 8.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 8.5
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "Home",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Make the structure clear. Make the choices count."
+          },
+          {
+            "level": "H2",
+            "text": "Selected work"
+          },
+          {
+            "level": "H3",
+            "text": "Enclosure design for a portable device"
+          },
+          {
+            "level": "H2",
+            "text": "Lab notes"
+          },
+          {
+            "level": "H3",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H3",
+            "text": "Reading an enclosure through its assembly path"
+          },
+          {
+            "level": "H3",
+            "text": "Check the boundary conditions before solving"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-en-s1-1440-dark.png",
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Chip junction temperature",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Home",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 228.03125,
+              "y": 20,
+              "width": 37.703125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Work",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 281.734375,
+              "y": 20,
+              "width": 33.703125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "Lab",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 331.4375,
+              "y": 20,
+              "width": 25.328125,
+              "height": 44
+            }
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 372.765625,
+              "y": 20,
+              "width": 38.296875,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.6000000014901161
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.7999999970197678
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 2
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 7.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 6
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 6
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 1.7000000029802322
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.5
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.600000001490116
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "Lab",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H2",
+            "text": "Chip"
+          },
+          {
+            "level": "H2",
+            "text": "Thermal resistance breakdown"
+          },
+          {
+            "level": "H2",
+            "text": "Explore parameters"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-zh-home-390-light.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 3.6999999955296516
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 14.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 5.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 6.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 6.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 6
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 6.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 6
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 12.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 12.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-114-600-normal.DJcvbmLg.woff2",
+            "type": "css",
+            "transferSize": 31532,
+            "decodedBodySize": 31232,
+            "duration": 13
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 13.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 12.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 12.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 12.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 12.900000005960464
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 13.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 10.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-109-600-normal.ByuX8nYO.woff2",
+            "type": "css",
+            "transferSize": 32732,
+            "decodedBodySize": 32432,
+            "duration": 10.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 10.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 9.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 8.5
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 9
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 8.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 8.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 7.199999995529652
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "首页",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "从结构出发，把设计讲清楚。"
+          },
+          {
+            "level": "H2",
+            "text": "精选项目"
+          },
+          {
+            "level": "H3",
+            "text": "便携设备的壳体结构设计"
+          },
+          {
+            "level": "H2",
+            "text": "实验记录"
+          },
+          {
+            "level": "H3",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H3",
+            "text": "从装配路径读懂壳体结构"
+          },
+          {
+            "level": "H3",
+            "text": "在求解之前，先检查边界条件"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-zh-s1-390-light.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "芯片结温仿真",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "text": "工况",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 38,
+              "y": 1284.03125,
+              "width": 39.984375,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.4000000059604645
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.5
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 1.7000000029802322
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 3.2000000029802322
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 2.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 3.5
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 3.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 2.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 4.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 4.700000002980232
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 36.69999999552965
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 31.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 32.5
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 28.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 30.5
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 30
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 30.69999999552965
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 21.69999999552965
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 19.80000000447035
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 21.30000000447035
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 21.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 21.5
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 21
+          },
+          {
+            "name": "noto-sans-sc-110-600-normal.BOBszRCT.woff2",
+            "type": "css",
+            "transferSize": 33484,
+            "decodedBodySize": 33184,
+            "duration": 22.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 22.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-113-600-normal.e4aGDSvi.woff2",
+            "type": "css",
+            "transferSize": 31780,
+            "decodedBodySize": 31480,
+            "duration": 20.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 18.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 17.69999999552965
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 15.100000001490116
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 11.599999994039536
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.6000000014901161
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "实验室",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H2",
+            "text": "芯片"
+          },
+          {
+            "level": "H2",
+            "text": "热阻构成"
+          },
+          {
+            "level": "H2",
+            "text": "探索参数"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/",
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-en-home-390-light.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 3.5
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 11.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 5.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 5.300000004470348
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "Home",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Make the structure clear. Make the choices count."
+          },
+          {
+            "level": "H2",
+            "text": "Selected work"
+          },
+          {
+            "level": "H3",
+            "text": "Enclosure design for a portable device"
+          },
+          {
+            "level": "H2",
+            "text": "Lab notes"
+          },
+          {
+            "level": "H3",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H3",
+            "text": "Reading an enclosure through its assembly path"
+          },
+          {
+            "level": "H3",
+            "text": "Check the boundary conditions before solving"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "screenshot": "b-en-s1-390-light.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(29, 29, 31)",
+        "bodyBg": "rgb(251, 251, 253)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Chip junction temperature",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.9000000059604645
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 2.2000000029802322
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 3.5
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 2.2000000029802322
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 2.5
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 1.5
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 1.8000000044703484
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.6000000014901161
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.100000001490116
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#6e6e73",
+          "card": "#fff"
+        },
+        "hiddenActiveNav": [
+          "Lab",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H2",
+            "text": "Chip"
+          },
+          {
+            "level": "H2",
+            "text": "Thermal resistance breakdown"
+          },
+          {
+            "level": "H2",
+            "text": "Explore parameters"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-zh-home-390-dark.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 15.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 5.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 5.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 5.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 5.700000002980232
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 5.800000004470348
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 5.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 13
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 13.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-114-600-normal.DJcvbmLg.woff2",
+            "type": "css",
+            "transferSize": 31532,
+            "decodedBodySize": 31232,
+            "duration": 13.199999995529652
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 13.5
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 12.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 13
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 13.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 14
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 14.5
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 11.5
+          },
+          {
+            "name": "noto-sans-sc-109-600-normal.ByuX8nYO.woff2",
+            "type": "css",
+            "transferSize": 32732,
+            "decodedBodySize": 32432,
+            "duration": 11.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 11.800000004470348
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 11.199999995529652
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 10.300000004470348
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 10.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 10.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 9.400000005960464
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 8.600000001490116
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "首页",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "从结构出发，把设计讲清楚。"
+          },
+          {
+            "level": "H2",
+            "text": "精选项目"
+          },
+          {
+            "level": "H3",
+            "text": "便携设备的壳体结构设计"
+          },
+          {
+            "level": "H2",
+            "text": "实验记录"
+          },
+          {
+            "level": "H3",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H3",
+            "text": "从装配路径读懂壳体结构"
+          },
+          {
+            "level": "H3",
+            "text": "在求解之前，先检查边界条件"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-zh-s1-390-dark.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "zh-CN",
+        "title": "芯片结温仿真",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "跳到主要内容",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 112,
+              "height": 41.59375
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "text": "工况",
+            "testid": null,
+            "class": "",
+            "box": {
+              "x": 38,
+              "y": 1284.03125,
+              "width": 39.984375,
+              "height": 44
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.5
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 1.8999999985098839
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 3.100000001490116
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 2.5
+          },
+          {
+            "name": "noto-sans-sc-116-400-normal.B9rv4EzF.woff2",
+            "type": "css",
+            "transferSize": 28420,
+            "decodedBodySize": 28120,
+            "duration": 2.7000000029802322
+          },
+          {
+            "name": "noto-sans-sc-117-400-normal.QPrBdlQO.woff2",
+            "type": "css",
+            "transferSize": 28164,
+            "decodedBodySize": 27864,
+            "duration": 2.9000000059604645
+          },
+          {
+            "name": "noto-sans-sc-118-600-normal.CrdY8srg.woff2",
+            "type": "css",
+            "transferSize": 25240,
+            "decodedBodySize": 24940,
+            "duration": 2.7999999970197678
+          },
+          {
+            "name": "noto-sans-sc-119-600-normal.r16dHS10.woff2",
+            "type": "css",
+            "transferSize": 41772,
+            "decodedBodySize": 41472,
+            "duration": 3
+          },
+          {
+            "name": "noto-sans-sc-113-400-normal.DZoqVzDv.woff2",
+            "type": "css",
+            "transferSize": 31296,
+            "decodedBodySize": 30996,
+            "duration": 2.600000001490116
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 35.600000001490116
+          },
+          {
+            "name": "noto-sans-sc-111-600-normal.4vIPn_Pp.woff2",
+            "type": "css",
+            "transferSize": 34036,
+            "decodedBodySize": 33736,
+            "duration": 31.19999999552965
+          },
+          {
+            "name": "noto-sans-sc-117-600-normal.B_0llC_g.woff2",
+            "type": "css",
+            "transferSize": 28536,
+            "decodedBodySize": 28236,
+            "duration": 31.299999997019768
+          },
+          {
+            "name": "noto-sans-sc-115-600-normal.AGbcQmm1.woff2",
+            "type": "css",
+            "transferSize": 30668,
+            "decodedBodySize": 30368,
+            "duration": 27.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-108-600-normal.BVdTPKhg.woff2",
+            "type": "css",
+            "transferSize": 34932,
+            "decodedBodySize": 34632,
+            "duration": 27.400000005960464
+          },
+          {
+            "name": "noto-sans-sc-114-400-normal.CZUMxNv_.woff2",
+            "type": "css",
+            "transferSize": 31012,
+            "decodedBodySize": 30712,
+            "duration": 26.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-108-400-normal.D80tGT87.woff2",
+            "type": "css",
+            "transferSize": 34444,
+            "decodedBodySize": 34144,
+            "duration": 27.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 18.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-105-400-normal.BiKizsW3.woff2",
+            "type": "css",
+            "transferSize": 33060,
+            "decodedBodySize": 32760,
+            "duration": 17.5
+          },
+          {
+            "name": "noto-sans-sc-111-400-normal.C5Xi9UGz.woff2",
+            "type": "css",
+            "transferSize": 33464,
+            "decodedBodySize": 33164,
+            "duration": 17.5
+          },
+          {
+            "name": "noto-sans-sc-115-400-normal.BQfWDt6M.woff2",
+            "type": "css",
+            "transferSize": 30268,
+            "decodedBodySize": 29968,
+            "duration": 17.5
+          },
+          {
+            "name": "noto-sans-sc-112-400-normal.F9zvXQVU.woff2",
+            "type": "css",
+            "transferSize": 30772,
+            "decodedBodySize": 30472,
+            "duration": 17.30000000447035
+          },
+          {
+            "name": "noto-sans-sc-110-600-normal.BOBszRCT.woff2",
+            "type": "css",
+            "transferSize": 33484,
+            "decodedBodySize": 33184,
+            "duration": 16.69999999552965
+          },
+          {
+            "name": "noto-sans-sc-116-600-normal.j1eco9la.woff2",
+            "type": "css",
+            "transferSize": 28716,
+            "decodedBodySize": 28416,
+            "duration": 16.799999997019768
+          },
+          {
+            "name": "noto-sans-sc-109-400-normal.ZEHPyOzB.woff2",
+            "type": "css",
+            "transferSize": 32356,
+            "decodedBodySize": 32056,
+            "duration": 16.5
+          },
+          {
+            "name": "noto-sans-sc-113-600-normal.e4aGDSvi.woff2",
+            "type": "css",
+            "transferSize": 31780,
+            "decodedBodySize": 31480,
+            "duration": 14.399999998509884
+          },
+          {
+            "name": "noto-sans-sc-110-400-normal.D1IYcvpb.woff2",
+            "type": "css",
+            "transferSize": 32976,
+            "decodedBodySize": 32676,
+            "duration": 12.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-112-600-normal.C-K1VlX5.woff2",
+            "type": "css",
+            "transferSize": 31212,
+            "decodedBodySize": 30912,
+            "duration": 11.5
+          },
+          {
+            "name": "noto-sans-sc-106-400-normal.DDMMORp2.woff2",
+            "type": "css",
+            "transferSize": 33508,
+            "decodedBodySize": 33208,
+            "duration": 7.5
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 5
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.7000000029802322
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.5
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "实验室",
+          "中文"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "芯片结温仿真"
+          },
+          {
+            "level": "H2",
+            "text": "芯片"
+          },
+          {
+            "level": "H2",
+            "text": "热阻构成"
+          },
+          {
+            "level": "H2",
+            "text": "探索参数"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/",
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-en-home-390-dark.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 0,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 4
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 1.5999999940395355
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 7.899999998509884
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 8.5
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "Home",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Make the structure clear. Make the choices count."
+          },
+          {
+            "level": "H2",
+            "text": "Selected work"
+          },
+          {
+            "level": "H3",
+            "text": "Enclosure design for a portable device"
+          },
+          {
+            "level": "H2",
+            "text": "Lab notes"
+          },
+          {
+            "level": "H3",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H3",
+            "text": "Reading an enclosure through its assembly path"
+          },
+          {
+            "level": "H3",
+            "text": "Check the boundary conditions before solving"
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "route": "/en/lab/chip-junction-temperature/",
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "screenshot": "b-en-s1-390-dark.png",
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "bodyColor": "rgb(245, 245, 247)",
+        "bodyBg": "rgb(0, 0, 0)",
+        "colorScheme": "light dark",
+        "mainCount": 1,
+        "h1Count": 1,
+        "lang": "en",
+        "title": "Chip junction temperature",
+        "smallTargets": [
+          {
+            "tag": "A",
+            "text": "Skip to main content",
+            "testid": null,
+            "class": "skip-link",
+            "box": {
+              "x": 16,
+              "y": -79.1875,
+              "width": 167.640625,
+              "height": 41.59375
+            }
+          }
+        ],
+        "minText": [],
+        "rangeCount": 14,
+        "resources": [
+          {
+            "name": "BaseLayout.Bbauv7k1.css",
+            "type": "link",
+            "transferSize": 25205,
+            "decodedBodySize": 24905,
+            "duration": 1.3999999985098839
+          },
+          {
+            "name": "LabDetail.AsVB8Eh4.css",
+            "type": "link",
+            "transferSize": 18520,
+            "decodedBodySize": 18220,
+            "duration": 1.5999999940395355
+          },
+          {
+            "name": "ThermalStack.astro_astro_type_script_index_0_lang.she2sYHz.js",
+            "type": "script",
+            "transferSize": 31278,
+            "decodedBodySize": 30978,
+            "duration": 1.6000000014901161
+          },
+          {
+            "name": "geist-latin-wght-normal.BgDaEnEv.woff2",
+            "type": "css",
+            "transferSize": 29700,
+            "decodedBodySize": 29400,
+            "duration": 5.200000002980232
+          },
+          {
+            "name": "noto-sans-sc-119-400-normal.flOVnW3A.woff2",
+            "type": "css",
+            "transferSize": 41588,
+            "decodedBodySize": 41288,
+            "duration": 3.9000000059604645
+          },
+          {
+            "name": "noto-sans-sc-118-400-normal.CqQ_A8sl.woff2",
+            "type": "css",
+            "transferSize": 25020,
+            "decodedBodySize": 24720,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "preload-helper.DHhhL8Zf.js",
+            "type": "script",
+            "transferSize": 1965,
+            "decodedBodySize": 1665,
+            "duration": 2
+          },
+          {
+            "name": "geist-mono-latin-wght-normal.XN7g48iV.woff2",
+            "type": "css",
+            "transferSize": 23428,
+            "decodedBodySize": 23128,
+            "duration": 19.80000000447035
+          },
+          {
+            "name": "viewer.C6ux1qBU.js",
+            "type": "script",
+            "transferSize": 27905,
+            "decodedBodySize": 27605,
+            "duration": 1.9000000059604645
+          },
+          {
+            "name": "three.module.C8enonVg.js",
+            "type": "script",
+            "transferSize": 736740,
+            "decodedBodySize": 736440,
+            "duration": 3.399999998509884
+          }
+        ],
+        "themeTokens": {
+          "secondary": "#a1a1a6",
+          "card": "#161617"
+        },
+        "hiddenActiveNav": [
+          "Lab",
+          "English"
+        ],
+        "headings": [
+          {
+            "level": "H1",
+            "text": "Chip junction temperature"
+          },
+          {
+            "level": "H2",
+            "text": "Chip"
+          },
+          {
+            "level": "H2",
+            "text": "Thermal resistance breakdown"
+          },
+          {
+            "level": "H2",
+            "text": "Explore parameters"
+          }
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "interactions": [],
+  "errors": [],
+  "browserVersion": "156.0.8078.4"
+}

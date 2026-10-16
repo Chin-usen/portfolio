@@ -1,0 +1,7 @@
+Command: pnpm security:scan
+Started: 2026-10-15T06:19:16.185889+00:00
+Exit: 0
+
+$ node scripts/security-scan.mjs
+Security scan: 483 text files; keyword policy NOT CONFIGURED (phone/birthday rules still enforced).
+Security scan passed for the enabled rules.

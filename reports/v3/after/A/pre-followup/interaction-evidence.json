@@ -1,0 +1,124 @@
+{
+  "homeBefore": "125.6",
+  "homeAfter": {
+    "tj": "133.4",
+    "value": "1",
+    "announcement": "结温 Tj: 133.4 °C"
+  },
+  "menuOpen": {
+    "expanded": "true",
+    "languageVisible": true
+  },
+  "menuEsc": {
+    "expanded": "false",
+    "focused": "menu-toggle"
+  },
+  "highPower": {
+    "value": "500",
+    "tj": "367.8",
+    "warning": "!\nAbove the common SiC junction-temperature limit of 175 °C",
+    "warningVisible": true,
+    "summary": "Junction temperature 367.8 °C · 0.606 K/W\n\nAnalytical\n\nAbove the common SiC junction-temperature limit of 175 °C"
+  },
+  "reset": {
+    "power": "100",
+    "tj": "125.6",
+    "warningVisible": false
+  },
+  "keyboardTab": {
+    "active": "thermal-tab-top-solder",
+    "panel": true
+  },
+  "ceramic": {
+    "card": "Layer\n\nCeramic\nThickness\n0.32mm\nConductivity\n90W/(m·K)\nLayer temperature drop\n10.18°C\nShare of total resistance\n16.8%",
+    "tab": "true"
+  },
+  "material": {
+    "k": "170",
+    "tj": "120.8"
+  },
+  "fem": {
+    "tj": "110.4",
+    "label": "FEM-trained surrogate",
+    "validation": "100 held-out cases: peak resistance mean / max error 0.55% / 2.68%; average resistance 0.46% / 2.42%. This holdout was inspected during development; no fresh independent test set or experimental validation."
+  },
+  "convection": {
+    "card": "Layer\n\nCooler\nThickness\n3mm\nConductivity\n390W/(m·K)\nLayer temperature drop\n31.31°C\nShare of total resistance\n51.7%",
+    "tab": "Cooler"
+  },
+  "resetView": {
+    "cardHidden": true
+  },
+  "keyboardHome": [
+    {
+      "tag": "A",
+      "text": "Skip to main content",
+      "outline": "solid"
+    },
+    {
+      "tag": "A",
+      "text": "Sample Engineer",
+      "outline": "solid"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Open navigation",
+      "outline": "solid"
+    },
+    {
+      "tag": "A",
+      "text": "View work ›",
+      "outline": "solid"
+    },
+    {
+      "tag": "A",
+      "text": "Explore the lab ›",
+      "outline": "solid"
+    },
+    {
+      "tag": "A",
+      "text": "All experiments ›",
+      "outline": "solid"
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "outline": "solid"
+    },
+    {
+      "tag": "A",
+      "text": "Open full simulation ›",
+      "outline": "solid"
+    }
+  ],
+  "text200": [
+    {
+      "name": "home-zh",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "76px",
+      "overflows": []
+    },
+    {
+      "name": "home-en",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "76px",
+      "overflows": []
+    },
+    {
+      "name": "s1-zh",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "64px",
+      "overflows": []
+    },
+    {
+      "name": "s1-en",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "64px",
+      "overflows": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "first20": {
+    "Rjmax": {
+      "mean": 0.00476867156288086,
+      "max": 0.023619508434717162
+    },
+    "Rjavg": {
+      "mean": 0.0035842693378112687,
+      "max": 0.02103296387051401
+    }
+  },
+  "all100": {
+    "Rjmax": {
+      "mean": 0.005490011330852339,
+      "max": 0.02680148774263791
+    },
+    "Rjavg": {
+      "mean": 0.004565511725887753,
+      "max": 0.024177129504863393
+    }
+  },
+  "python_ts_max_relative_difference": 1.3139711541043653e-11,
+  "closure_max_abs": 4.440892098500626e-16,
+  "inference": {
+    "scalar_only": {
+      "median_ms": 0.02740000000000009,
+      "p95_ms": 0.033299999999997,
+      "max_ms": 0.11609999999998877,
+      "mean_ms": 0.028580899999999774
+    },
+    "scalar_and_field": {
+      "median_ms": 0.11230000000000473,
+      "p95_ms": 0.14269999999999072,
+      "max_ms": 1.2267999999999972,
+      "mean_ms": 0.11825190000000017
+    },
+    "node": "v22.23.3",
+    "platform": "win32",
+    "cpu": "Intel(R) Core(TM) Ultra 7 265"
+  },
+  "scalar_model_bytes": 216323,
+  "total_model_bytes": 509168,
+  "accuracy_target_pass": true,
+  "scalar_size_target_pass": true,
+  "total_size_target_pass": true,
+  "scalar_time_target_pass": true,
+  "field_time_target_pass": true
+}

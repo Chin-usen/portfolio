@@ -1,0 +1,29 @@
+{
+    "assessment":  "B",
+    "phase":  "after-source",
+    "startedUtc":  "2026-10-15T04:10:22.8882653Z",
+    "endedUtc":  "2026-10-15T04:10:22.9547587Z",
+    "cwd":  "<workspace>\\portfolio-main-v3",
+    "invocation":  "\"<workspace>\\.dev-tools\\skills\\impeccable\\scripts\\impeccable.cmd\" detect --json \"src/components/HomePage.astro\" \"src/components/Header.astro\" \"src/components/Footer.astro\" \"src/layouts/BaseLayout.astro\" \"src/components/LabDetail.astro\" \"src/components/lab/thermal-stack/ThermalStack.astro\" \"src/pages/index.astro\" \"src/pages/en/index.astro\" \"src/pages/lab/[slug].astro\" \"src/pages/en/lab/[slug].astro\"",
+    "executable":  "C:\\Windows\\system32\\cmd.exe",
+    "arguments":  "/d /s /c \"\"<workspace>\\.dev-tools\\skills\\impeccable\\scripts\\impeccable.cmd\" detect --json \"src/components/HomePage.astro\" \"src/components/Header.astro\" \"src/components/Footer.astro\" \"src/layouts/BaseLayout.astro\" \"src/components/LabDetail.astro\" \"src/components/lab/thermal-stack/ThermalStack.astro\" \"src/pages/index.astro\" \"src/pages/en/index.astro\" \"src/pages/lab/[slug].astro\" \"src/pages/en/lab/[slug].astro\"\"",
+    "exitCode":  0,
+    "stdout":  "detector.stdout.json",
+    "stderr":  "detector.stderr.txt",
+    "toolSourcePin":  "2f98774f86bc05563876643db37e6c37c322850f",
+    "applicationBaselineHead":  "85fdb504e35ee480f43c98b0237f87ee866fb367",
+    "scope":  [
+                  "src/components/HomePage.astro",
+                  "src/components/Header.astro",
+                  "src/components/Footer.astro",
+                  "src/layouts/BaseLayout.astro",
+                  "src/components/LabDetail.astro",
+                  "src/components/lab/thermal-stack/ThermalStack.astro",
+                  "src/pages/index.astro",
+                  "src/pages/en/index.astro",
+                  "src/pages/lab/[slug].astro",
+                  "src/pages/en/lab/[slug].astro"
+              ],
+    "browserStarted":  false,
+    "independence":  "A and before findings/scores not read"
+}

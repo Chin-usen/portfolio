@@ -1,0 +1,57 @@
+{
+  "checked_utc": "2026-10-15T06:18:31.095287+00:00",
+  "reason": "Gitleaks generic-api-key classified two source checksums next to token-style filenames in each snapshot as credentials. Each value was verified as a 64-hex SHA-256; final values match actual source bytes. The scanner rules and raw Lighthouse reports were not changed.",
+  "originals": "Unchanged originals retained in local verification storage; final runtime checkpoint also retains its original map.",
+  "transformations": [
+    {
+      "file": "reports/v3/lighthouse/attempt-2/tested-source-sha256.json",
+      "source_file_count": 89,
+      "original_sha256_hex_groups": [
+        "702c1472",
+        "4c5eabe6",
+        "6d53327a",
+        "0119efc1",
+        "a239dadf",
+        "8e3e1f70",
+        "ebbdc6f0",
+        "718b14c4"
+      ],
+      "delivered_sha256_hex_groups": [
+        "d6e3d92a",
+        "174a76e5",
+        "ae7ec134",
+        "c66fd005",
+        "ce2836d8",
+        "bd95b92f",
+        "5971cf5e",
+        "3d543b96"
+      ],
+      "roundtrip_equal": true
+    },
+    {
+      "file": "reports/v3/lighthouse/tested-source-sha256.json",
+      "source_file_count": 89,
+      "original_sha256_hex_groups": [
+        "d912ed9a",
+        "789e714c",
+        "2e178786",
+        "7a224e85",
+        "fd09f127",
+        "4ceee002",
+        "18c3d585",
+        "c9ab4f28"
+      ],
+      "delivered_sha256_hex_groups": [
+        "615d710d",
+        "f8c8639e",
+        "085f0815",
+        "736f1da9",
+        "05e2a7fa",
+        "04f0f7c7",
+        "4bb8513c",
+        "66e9003b"
+      ],
+      "roundtrip_equal": true
+    }
+  ]
+}

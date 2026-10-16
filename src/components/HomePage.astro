@@ -1,0 +1,78 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localePath } from '../i18n/utils';
+import '../styles/home.css';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const entry = await getEntry('home', locale);
+if (!entry) throw new Error(`Missing home content: ${locale}`);
+const home = entry.data;
+---
+
+<BaseLayout
+  locale={locale}
+  title={home.pageTitle}
+  description={home.description}
+  bodyClass="home-page"
+>
+  <section class="home-hero" aria-labelledby="home-title">
+    <p class="home-eyebrow">{home.eyebrow}</p>
+    <h1 id="home-title">
+      {home.titleLines.map((line) => (
+        <span>{line}</span>
+      ))}
+    </h1>
+    <p class="home-specialties">
+      {home.specialties.map((item, index) => (
+        <>
+          <span>{item}</span>
+          {index < home.specialties.length - 1 && (
+            <span
+              class:list={['specialty-divider', { 'specialty-middle': index === 1 }]}
+              aria-hidden="true"
+            >
+              {' '}
+              ·{' '}
+            </span>
+          )}
+        </>
+      ))}
+    </p>
+    <ul class="home-actions">
+      <li>
+        <a href={localePath(locale, '/work/')}>
+          {home.workCta}
+          <span aria-hidden="true"> ›</span>
+        </a>
+      </li>
+      <li>
+        <a href={localePath(locale, '/lab/')}>
+          {home.labCta}
+          <span aria-hidden="true"> ›</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <figure class="home-module">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="/images/power-module-dark-450.webp 450w, /images/power-module-dark-900.webp 900w"
+        sizes="(max-width: 600px) calc(100vw - 32px), 900px"
+      />
+      <img
+        src="/images/power-module-light-900.webp"
+        srcset="/images/power-module-light-450.webp 450w, /images/power-module-light-900.webp 900w"
+        sizes="(max-width: 600px) calc(100vw - 32px), 900px"
+        width="900"
+        height="600"
+        alt={home.modelAlt}
+        fetchpriority="high"
+        decoding="async"
+      />
+    </picture>
+  </figure>
+</BaseLayout>

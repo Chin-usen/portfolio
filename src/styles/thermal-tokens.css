@@ -1,0 +1,64 @@
+:root {
+  --thermal-bg: #fbfbfd;
+  --thermal-card: #fff;
+  --thermal-text: #1d1d1f;
+  --thermal-secondary: #6e6e73;
+  --thermal-accent: #bf4800;
+  --thermal-line: #e5e5e9;
+  --thermal-soft: #f2f2f7;
+  --thermal-overlay: rgb(255 255 255 / 88%);
+  --thermal-ring: rgb(191 72 0 / 19%);
+  --thermal-font: 'Geist Variable', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --thermal-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Consolas, monospace;
+  --thermal-cold: #16123a;
+  --thermal-cool: #5b1f6b;
+  --thermal-neutral: #d63a4f;
+  --thermal-warm: #ff8a3d;
+  --thermal-hot: #ffeeaa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --thermal-bg: #0e0e10;
+    --thermal-card: #161617;
+    --thermal-text: #f5f5f7;
+    --thermal-secondary: #a1a1a6;
+    --thermal-accent: #ff9f5a;
+    --thermal-line: #333336;
+    --thermal-soft: #242426;
+    --thermal-overlay: rgb(22 22 23 / 90%);
+    --thermal-ring: rgb(255 159 90 / 22%);
+  }
+}
+
+:root[data-theme='dark'] {
+  --thermal-bg: #0e0e10;
+  --thermal-card: #161617;
+  --thermal-text: #f5f5f7;
+  --thermal-secondary: #a1a1a6;
+  --thermal-accent: #ff9f5a;
+  --thermal-line: #333336;
+  --thermal-soft: #242426;
+  --thermal-overlay: rgb(22 22 23 / 90%);
+  --thermal-ring: rgb(255 159 90 / 22%);
+}
+
+body.thermal-page {
+  --thermal-font:
+    'Geist Variable', 'Noto Sans SC Thermal', 'Noto Sans SC', -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  background: var(--thermal-bg);
+  color: var(--thermal-text);
+  font-family: var(--thermal-font);
+}
+.thermal-page .site-header,
+.thermal-page .site-footer {
+  border-color: var(--thermal-line);
+  font-size: 0.875rem;
+}
+.thermal-page a {
+  color: inherit;
+}
+.thermal-page .site-name {
+  text-decoration: none;
+}

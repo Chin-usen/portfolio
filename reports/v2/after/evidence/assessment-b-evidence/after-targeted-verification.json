@@ -1,0 +1,519 @@
+{
+  "timestamp": "2026-10-14T13:40:16.252Z",
+  "engine": "Chromium",
+  "checks": [
+    {
+      "theme": "light",
+      "lang": "zh",
+      "skipPair": {
+        "fg": [
+          29,
+          29,
+          31
+        ],
+        "bg": [
+          255,
+          255,
+          255
+        ],
+        "fontSize": "16px",
+        "text": "跳到主要内容",
+        "ratio": 16.829972351390765
+      },
+      "pillPair": {
+        "fg": [
+          29,
+          29,
+          31
+        ],
+        "bg": [
+          242.84,
+          220.23000000000002,
+          206.55
+        ],
+        "fontSize": "12px",
+        "text": "Al₂O₃ · 24",
+        "ratio": 12.793417296593285
+      },
+      "secondaryPair": {
+        "fg": [
+          110,
+          110,
+          115
+        ],
+        "bg": [
+          255,
+          255,
+          255
+        ],
+        "fontSize": "12px",
+        "text": "等效源节点",
+        "ratio": 5.071321606018516
+      },
+      "tabVisibility": {
+        "selected": "true",
+        "left": 275.21875,
+        "right": 337.4375,
+        "stripLeft": 33,
+        "stripRight": 357,
+        "scrollLeft": 0,
+        "fullyVisible": true
+      },
+      "sticky": {
+        "top": 257.84375,
+        "bottom": 343.359375,
+        "height": 85.515625,
+        "viewport": 844,
+        "visible": true,
+        "text": "芯片结温 507.7 °C · 0.885 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "duplicateAriaHidden": "true"
+      },
+      "inputNotObscured": true,
+      "warning": {
+        "visible": true,
+        "liveText": "当前计算结果: 芯片结温 507.7 °C; 结到冷却液热阻 0.885 K/W. 超过 SiC 器件常见最高结温 175 °C",
+        "liveAttributes": {
+          "live": "polite",
+          "atomic": "true"
+        }
+      },
+      "fem": {
+        "summary": "芯片结温 404.3 °C · 0.679 K/W\n\nFEM 代理\n\n超过 SiC 器件常见最高结温 175 °C",
+        "tj": "404.3",
+        "model": "FEM 训练的代理模型"
+      },
+      "enlarged": {
+        "width": 390,
+        "scrollWidth": 390,
+        "metrics": {
+          "top": -2600.875,
+          "bottom": -1920.5625,
+          "left": 33,
+          "right": 357,
+          "height": 680.3125
+        },
+        "actions": {
+          "top": -1920.5625,
+          "bottom": -1755.78125,
+          "left": 33,
+          "right": 357,
+          "height": 164.78125
+        },
+        "canvas": {
+          "top": -1755.78125,
+          "bottom": -1375.78125,
+          "left": 33,
+          "right": 357,
+          "height": 380
+        },
+        "scale": {
+          "top": -1343.78125,
+          "bottom": -1186.828125,
+          "left": 65,
+          "right": 325,
+          "height": 156.953125
+        },
+        "summary": {
+          "top": 0,
+          "bottom": 246.765625,
+          "left": 49,
+          "right": 341,
+          "height": 246.765625
+        },
+        "input": {
+          "top": 400.390625,
+          "bottom": 444.390625,
+          "left": 49,
+          "right": 341,
+          "height": 44
+        }
+      }
+    },
+    {
+      "theme": "light",
+      "lang": "en",
+      "skipPair": {
+        "fg": [
+          29,
+          29,
+          31
+        ],
+        "bg": [
+          255,
+          255,
+          255
+        ],
+        "fontSize": "16px",
+        "text": "Skip to main content",
+        "ratio": 16.829972351390765
+      },
+      "pillPair": {
+        "fg": [
+          29,
+          29,
+          31
+        ],
+        "bg": [
+          242.84,
+          220.23000000000002,
+          206.55
+        ],
+        "fontSize": "12px",
+        "text": "Al₂O₃ · 24",
+        "ratio": 12.793417296593285
+      },
+      "secondaryPair": {
+        "fg": [
+          110,
+          110,
+          115
+        ],
+        "bg": [
+          255,
+          255,
+          255
+        ],
+        "fontSize": "12px",
+        "text": "Equivalent source node",
+        "ratio": 5.071321606018516
+      },
+      "tabVisibility": {
+        "selected": "true",
+        "left": 289.59375,
+        "right": 351.8125,
+        "stripLeft": 33,
+        "stripRight": 357,
+        "scrollLeft": 110,
+        "fullyVisible": true
+      },
+      "sticky": {
+        "top": 224.640625,
+        "bottom": 329.65625,
+        "height": 105.015625,
+        "viewport": 844,
+        "visible": true,
+        "text": "Junction temperature 507.7 °C · 0.885 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "duplicateAriaHidden": "true"
+      },
+      "inputNotObscured": true,
+      "warning": {
+        "visible": true,
+        "liveText": "Current calculation: Junction temperature 507.7 °C; Junction-to-fluid resistance 0.885 K/W. Above the common SiC junction-temperature limit of 175 °C",
+        "liveAttributes": {
+          "live": "polite",
+          "atomic": "true"
+        }
+      },
+      "fem": {
+        "summary": "Junction temperature 404.3 °C · 0.679 K/W\n\nFEM surrogate\n\nAbove the common SiC junction-temperature limit of 175 °C",
+        "tj": "404.3",
+        "model": "FEM-trained surrogate"
+      },
+      "enlarged": {
+        "width": 390,
+        "scrollWidth": 390,
+        "metrics": {
+          "top": -2895.09375,
+          "bottom": -2104.390625,
+          "left": 33,
+          "right": 357,
+          "height": 790.703125
+        },
+        "actions": {
+          "top": -2104.390625,
+          "bottom": -1939.609375,
+          "left": 33,
+          "right": 357,
+          "height": 164.78125
+        },
+        "canvas": {
+          "top": -1939.609375,
+          "bottom": -1559.609375,
+          "left": 33,
+          "right": 357,
+          "height": 380
+        },
+        "scale": {
+          "top": -1527.609375,
+          "bottom": -1332.265625,
+          "left": 65,
+          "right": 325,
+          "height": 195.34375
+        },
+        "summary": {
+          "top": 0,
+          "bottom": 285.765625,
+          "left": 49,
+          "right": 341,
+          "height": 285.765625
+        },
+        "input": {
+          "top": 399.515625,
+          "bottom": 443.515625,
+          "left": 49,
+          "right": 341,
+          "height": 44
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "lang": "zh",
+      "skipPair": {
+        "fg": [
+          245,
+          245,
+          247
+        ],
+        "bg": [
+          22,
+          22,
+          23
+        ],
+        "fontSize": "16px",
+        "text": "跳到主要内容",
+        "ratio": 16.60841880008277
+      },
+      "pillPair": {
+        "fg": [
+          245,
+          245,
+          247
+        ],
+        "bg": [
+          73.26,
+          52.14,
+          37.74
+        ],
+        "fontSize": "12px",
+        "text": "Al₂O₃ · 24",
+        "ratio": 10.67511139917708
+      },
+      "secondaryPair": {
+        "fg": [
+          161,
+          161,
+          166
+        ],
+        "bg": [
+          22,
+          22,
+          23
+        ],
+        "fontSize": "12px",
+        "text": "等效源节点",
+        "ratio": 7.030347139500558
+      },
+      "tabVisibility": {
+        "selected": "true",
+        "left": 275.21875,
+        "right": 337.4375,
+        "stripLeft": 33,
+        "stripRight": 357,
+        "scrollLeft": 0,
+        "fullyVisible": true
+      },
+      "sticky": {
+        "top": 257.84375,
+        "bottom": 343.359375,
+        "height": 85.515625,
+        "viewport": 844,
+        "visible": true,
+        "text": "芯片结温 507.7 °C · 0.885 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "duplicateAriaHidden": "true"
+      },
+      "inputNotObscured": true,
+      "warning": {
+        "visible": true,
+        "liveText": "当前计算结果: 芯片结温 507.7 °C; 结到冷却液热阻 0.885 K/W. 超过 SiC 器件常见最高结温 175 °C",
+        "liveAttributes": {
+          "live": "polite",
+          "atomic": "true"
+        }
+      },
+      "fem": {
+        "summary": "芯片结温 404.3 °C · 0.679 K/W\n\nFEM 代理\n\n超过 SiC 器件常见最高结温 175 °C",
+        "tj": "404.3",
+        "model": "FEM 训练的代理模型"
+      },
+      "enlarged": {
+        "width": 390,
+        "scrollWidth": 390,
+        "metrics": {
+          "top": -2600.875,
+          "bottom": -1920.5625,
+          "left": 33,
+          "right": 357,
+          "height": 680.3125
+        },
+        "actions": {
+          "top": -1920.5625,
+          "bottom": -1755.78125,
+          "left": 33,
+          "right": 357,
+          "height": 164.78125
+        },
+        "canvas": {
+          "top": -1755.78125,
+          "bottom": -1375.78125,
+          "left": 33,
+          "right": 357,
+          "height": 380
+        },
+        "scale": {
+          "top": -1343.78125,
+          "bottom": -1186.828125,
+          "left": 65,
+          "right": 325,
+          "height": 156.953125
+        },
+        "summary": {
+          "top": 0,
+          "bottom": 246.765625,
+          "left": 49,
+          "right": 341,
+          "height": 246.765625
+        },
+        "input": {
+          "top": 400.390625,
+          "bottom": 444.390625,
+          "left": 49,
+          "right": 341,
+          "height": 44
+        }
+      }
+    },
+    {
+      "theme": "dark",
+      "lang": "en",
+      "skipPair": {
+        "fg": [
+          245,
+          245,
+          247
+        ],
+        "bg": [
+          22,
+          22,
+          23
+        ],
+        "fontSize": "16px",
+        "text": "Skip to main content",
+        "ratio": 16.60841880008277
+      },
+      "pillPair": {
+        "fg": [
+          245,
+          245,
+          247
+        ],
+        "bg": [
+          73.26,
+          52.14,
+          37.74
+        ],
+        "fontSize": "12px",
+        "text": "Al₂O₃ · 24",
+        "ratio": 10.67511139917708
+      },
+      "secondaryPair": {
+        "fg": [
+          161,
+          161,
+          166
+        ],
+        "bg": [
+          22,
+          22,
+          23
+        ],
+        "fontSize": "12px",
+        "text": "Equivalent source node",
+        "ratio": 7.030347139500558
+      },
+      "tabVisibility": {
+        "selected": "true",
+        "left": 289.59375,
+        "right": 351.8125,
+        "stripLeft": 33,
+        "stripRight": 357,
+        "scrollLeft": 110,
+        "fullyVisible": true
+      },
+      "sticky": {
+        "top": 224.640625,
+        "bottom": 329.65625,
+        "height": 105.015625,
+        "viewport": 844,
+        "visible": true,
+        "text": "Junction temperature 507.7 °C · 0.885 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "duplicateAriaHidden": "true"
+      },
+      "inputNotObscured": true,
+      "warning": {
+        "visible": true,
+        "liveText": "Current calculation: Junction temperature 507.7 °C; Junction-to-fluid resistance 0.885 K/W. Above the common SiC junction-temperature limit of 175 °C",
+        "liveAttributes": {
+          "live": "polite",
+          "atomic": "true"
+        }
+      },
+      "fem": {
+        "summary": "Junction temperature 404.3 °C · 0.679 K/W\n\nFEM surrogate\n\nAbove the common SiC junction-temperature limit of 175 °C",
+        "tj": "404.3",
+        "model": "FEM-trained surrogate"
+      },
+      "enlarged": {
+        "width": 390,
+        "scrollWidth": 390,
+        "metrics": {
+          "top": -2895.09375,
+          "bottom": -2104.390625,
+          "left": 33,
+          "right": 357,
+          "height": 790.703125
+        },
+        "actions": {
+          "top": -2104.390625,
+          "bottom": -1939.609375,
+          "left": 33,
+          "right": 357,
+          "height": 164.78125
+        },
+        "canvas": {
+          "top": -1939.609375,
+          "bottom": -1559.609375,
+          "left": 33,
+          "right": 357,
+          "height": 380
+        },
+        "scale": {
+          "top": -1527.609375,
+          "bottom": -1332.265625,
+          "left": 65,
+          "right": 325,
+          "height": 195.34375
+        },
+        "summary": {
+          "top": 0,
+          "bottom": 285.765625,
+          "left": 49,
+          "right": 341,
+          "height": 285.765625
+        },
+        "input": {
+          "top": 399.515625,
+          "bottom": 443.515625,
+          "left": 49,
+          "right": 341,
+          "height": 44
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "No physical device or assistive-technology speech output",
+    "Text-only 200% root-font scaling, not OS-level magnification"
+  ],
+  "browserVersion": "156.0.8078.4"
+}

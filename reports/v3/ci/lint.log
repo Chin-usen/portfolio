@@ -1,0 +1,7 @@
+Command: pnpm lint
+Started: 2026-10-15T04:25:49.505043+00:00
+Exit: 0
+
+$ eslint . && prettier --check .
+Checking formatting...
+All matched files use Prettier code style!

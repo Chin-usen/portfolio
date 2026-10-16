@@ -1,0 +1,38 @@
+[
+  {
+    "file": "reports/v2/ci/build.log",
+    "original_sha256": "f81f52f2a99a1e91c8acaf5ca8b301e7cb5d0d9d2ee1eac4197afb6b42717fd2",
+    "shared_sha256": "5fd513bbbd65f80d41ade0a8b076285d19aae20cb912476762d13b3db19042f9",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  },
+  {
+    "file": "reports/v2/ci/p2-unit.log",
+    "original_sha256": "e8562a8943a96450af3ef7a4eb3d3c36907d06a5cd82617b7a0fe01390b6d6cb",
+    "shared_sha256": "68b650e2852e1775a5aa917a4a077fc0e7ce16db47c0066ca83c889e9ed4504d",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  },
+  {
+    "file": "reports/v2/ci/typecheck.log",
+    "original_sha256": "12330fa3a247567fa8fbab4da2c634841f9fba14c17261044a77338cf9880fc0",
+    "shared_sha256": "2f62c70ce6d11810d827482847c3f91771611c92baffd869c7207596bbcaa8c4",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  },
+  {
+    "file": "reports/v2/ci/unit.log",
+    "original_sha256": "616bc50febdf77bf35a07af4e0450f707d3b4da27776af79fa06c569a73d4e60",
+    "shared_sha256": "9847b7115734616ab712d722c145efcbf4f2fc5b181b1cdc6e3798bceb51fb76",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  },
+  {
+    "file": "reports/v2/lighthouse/attempt-1/run.log",
+    "original_sha256": "8deaceae72d190d6016741e2bffcda0b58f142fac2ab824358e287c09635cd9e",
+    "shared_sha256": "b9d662b3fbafe74b6d854736b5d127ad8a77b473520913332862792f655e4f79",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  },
+  {
+    "file": "reports/v2/lighthouse/run.log",
+    "original_sha256": "44194f0790f4844c14547d1b4b43a0e0d43fa9704fb9290c60a0d81ead89ab1d",
+    "shared_sha256": "c5643414b6cc7f643986b3981e8a5545fe45ff5dd3c544c0816d470da440e17c",
+    "redaction": "Only the absolute operator workspace prefix was replaced with <workspace>; measurements and diagnostics unchanged."
+  }
+]

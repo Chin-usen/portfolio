@@ -1,0 +1,33 @@
+Command: pnpm lhci --config=../.dev-tools/v3-s1-lh-pilot.cjs
+Started: 2026-10-15T05:47:20.522993+00:00
+Exit: 1
+
+$ lhci autorun --config=../.dev-tools/v3-s1-lh-pilot.cjs
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Started a web server on port 55210...
+Running Lighthouse 3 time(s) on http://localhost:55210/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+Checking assertions against 1 URL(s), 3 total run(s)
+
+1 result(s) for http://localhost:55210/lab/chip-junction-temperature/ :
+
+  ×  categories.performance failure for minScore assertion
+        expected: >=0.9
+           found: 0.88
+      all values: 0.88, 0.88, 0.88
+
+Assertion failed. Exiting with status code 1.
+
+Dumping 3 reports to disk at <workspace>\portfolio-main-v3\.lighthouseci\reports...
+Done writing reports to disk.
+
+assert command failed. Exiting with status code 1.
+[ELIFECYCLE] Command failed with exit code 1.

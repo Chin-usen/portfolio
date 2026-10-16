@@ -1,0 +1,84 @@
+{
+  "lang": "en",
+  "pageTitle": "Sample Engineer · Work and Lab Bench",
+  "description": "Work and self-initiated experiments by Sample Engineer. Career information is placeholder content.",
+  "name": "Sample Engineer",
+  "navWork": "Work",
+  "navLab": "Lab Bench",
+  "eyebrow": "SAMPLE ENGINEER",
+  "titleLines": ["[Role title line one]", "[Role title line two]"],
+  "specialties": ["[Specialty 1]", "[Specialty 2]", "[Specialty 3]", "[Specialty 4]"],
+  "workCta": "View work",
+  "labCta": "Explore the lab",
+  "modelAlt": "Generic power module with a gray baseplate, dark housing and three copper terminals, shown in an isometric view.",
+  "metrics": {
+    "label": "[Career case A] · [Optimization target]",
+    "value": "00 → 00 units",
+    "description": [
+      "[Primary metric], reduced by [x]%",
+      "[Secondary metric] 00 → 00 · Method: [Method overview]"
+    ],
+    "secondary": [
+      {
+        "value": "0 → 0 units",
+        "label": "[Career case B] · [Metric]"
+      },
+      {
+        "value": "< 0.00 units",
+        "label": "[Career case B] · [Metric]"
+      },
+      {
+        "value": "00 → 00%",
+        "label": "[Career case C] · [Metric]"
+      }
+    ]
+  },
+  "lab": {
+    "title": "Lab Bench",
+    "kicker": "Self-initiated",
+    "allLabel": "All experiments",
+    "simulation": {
+      "label": "S1 · Simulation",
+      "title": "Chip junction temperature",
+      "subtitle": "Steady-state conduction through an AMB stack",
+      "description": [
+        "Inputs: layer thickness, conductivity, power, coolant temperature, h",
+        "Outputs: Tj, temperature field, thermal-resistance breakdown"
+      ],
+      "thicknessLabel": "Ceramic thickness",
+      "temperatureLabel": "Junction temperature Tj",
+      "modelNote": "Analytic model · 100 W / 65 °C defaults · Not FEM",
+      "openLabel": "Open full simulation",
+      "noJs": "Showing the default result. Enable JavaScript to adjust ceramic thickness."
+    },
+    "planned": [
+      {
+        "label": "L1 · 3D teardown",
+        "title": "INPC three-level power module",
+        "subtitle": "P/N busbar stack and loop inductance",
+        "description": "Chips, AMB, clips, terminals, busbars and pin-fin cooler",
+        "status": "Concept preview · Not implemented"
+      },
+      {
+        "label": "L3 · 3D teardown",
+        "title": "RV cycloidal reducer",
+        "subtitle": "Involute planetary and cycloidal pinwheel stages",
+        "description": "Transmission animation",
+        "status": "Concept preview · Not implemented"
+      },
+      {
+        "label": "S3 · Simulation",
+        "title": "Pin-fin cooling simulation",
+        "subtitle": "Flow, pin diameter, pitch and layout",
+        "description": "Thermal resistance and pressure drop",
+        "status": "Concept preview · Not implemented"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Sample Engineer",
+    "contactLabel": "Email",
+    "linkedInLabel": "LinkedIn",
+    "resumeLabel": "[Resume PDF]"
+  }
+}

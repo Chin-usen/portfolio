@@ -1,0 +1,501 @@
+{
+  "completed_utc": "2026-10-15T05:51:30.638536+00:00",
+  "route": "/lab/chip-junction-temperature/",
+  "scope": "Mobile 390x844 DPR1 simulated throttling; unchanged Lighthouse config, category median of three runs",
+  "expected_runs_per_treatment": 3,
+  "thresholds": {
+    "performance": 90,
+    "accessibility": 95,
+    "seo": 95
+  },
+  "diagnosis": "The LCP node is the 125.6 numeric output. The original S1 page discovered nine font faces after the BaseLayout stylesheet. Latin-only preloads reduced the CSS dependency for Latin, but delayed Chinese font requests still penalized first contentful paint. Preloading the seven already-requested Chinese common/content faces improved FCP and passed the S1 performance threshold without changing transfer volume or font bytes. S1 LCP remains about3.16s; this fix does not claim a2.5s S1 LCP. The Home LCP target is measured separately.",
+  "runtime_changed_files": [
+    "src/layouts/BaseLayout.astro"
+  ],
+  "base_layout_sha256_before_hex_groups": "a7724176 286a0a15 0ab5cc74 c58b88ae e07769a8 1b2b25ec d938991b 646cdd92",
+  "base_layout_sha256_after_hex_groups": "b2b1801d f34fc873 1c16c638 58979828 32d81965 338b52a4 417bc9a0 abf1fd50",
+  "unchanged_runtime_files": 88,
+  "unchanged_font_asset_and_css_files": 15,
+  "preload_scope": {
+    "all_s1_locales": [
+      "existing Geist Latin variable WOFF2",
+      "existing Geist Mono Latin variable WOFF2"
+    ],
+    "zh_s1_only": [
+      "common400",
+      "common500",
+      "common600",
+      "common700",
+      "content400",
+      "content500",
+      "content600"
+    ],
+    "home": "Existing Chinese Home400/600/700 common preloads unchanged; no new Home link."
+  },
+  "validation": {
+    "build": "s1-all-preload-build.log:20pages,exit0",
+    "prettier": "s1-preload-format.log:unchanged,exit0",
+    "astro_check": "s1-preload-typecheck.log:86files,0errors,0warnings,0hints",
+    "fonts": "Every font asset and generated-fonts.css exactly matches interrupted attempt-2 sourcehashes; no glyph, spacing, fontweight, family, layout or numerical-model changes."
+  },
+  "trials": [
+    {
+      "treatment": "latin-only",
+      "description": "Only the two existing Latin fonts preloaded on S1 routes",
+      "pass": false,
+      "medians": {
+        "performance": 88.0,
+        "accessibility": 100,
+        "seo": 100,
+        "fcp_ms": 2938.148,
+        "lcp_ms": 3163.148,
+        "speed_index_ms": 2938.148,
+        "tbt_ms": 17,
+        "cls": 0,
+        "font_transfer_bytes": 354417
+      },
+      "runs": [
+        {
+          "fetchTime": "2026-10-15T05:47:24.186Z",
+          "performance": 88.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 2942.3559999999998,
+          "lcp_ms": 3167.356,
+          "speed_index_ms": 2942.3559999999998,
+          "cls": 0,
+          "tbt_ms": 18,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 19.16099999845028,
+              "response_end_ms": 24.774000003933907,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 19.25900000333786,
+              "response_end_ms": 25.684000000357628,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 110.47800000011921,
+              "response_end_ms": 117.21900001168251,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 110.53200000524521,
+              "response_end_ms": 118.02300000190735,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 110.56899999082088,
+              "response_end_ms": 118.09099999070168,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 110.62700000405312,
+              "response_end_ms": 119.27399998903275,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 110.66800001263618,
+              "response_end_ms": 120.10100001096725,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 110.70899999141693,
+              "response_end_ms": 120.16899999976158,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 110.76799999177456,
+              "response_end_ms": 121.4919999986887,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-only/lhr-1792043252784.json",
+          "raw_sha256_hex_groups": "c560bfc7 0a031a49 28c8f67b 3eaa7ab5 5fc99986 1bb6e3ab e951af58 60de7818"
+        },
+        {
+          "fetchTime": "2026-10-15T05:47:36.083Z",
+          "performance": 88.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 2935.8360000000002,
+          "lcp_ms": 3160.836,
+          "speed_index_ms": 2935.8360000000002,
+          "cls": 0,
+          "tbt_ms": 17,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 14.083999991416931,
+              "response_end_ms": 19.607999995350838,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 14.187999993562698,
+              "response_end_ms": 18.786999985575676,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 109.266999989748,
+              "response_end_ms": 112.91899998486042,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 109.40600000321865,
+              "response_end_ms": 113.71399998664856,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 109.48699998855591,
+              "response_end_ms": 113.77599999308586,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 109.570999994874,
+              "response_end_ms": 115.43699999153614,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 110.03699998557568,
+              "response_end_ms": 115.36699998378754,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 110.14000000059605,
+              "response_end_ms": 115.48599998652935,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 110.23999999463558,
+              "response_end_ms": 117.7880000025034,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-only/lhr-1792043264691.json",
+          "raw_sha256_hex_groups": "42288803 d45b8b87 ef29df7b 639bd36f 715fcfa0 69f86ea9 173c01da 6e64e6af"
+        },
+        {
+          "fetchTime": "2026-10-15T05:47:47.222Z",
+          "performance": 88.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 2938.148,
+          "lcp_ms": 3163.148,
+          "speed_index_ms": 2938.148,
+          "cls": 0,
+          "tbt_ms": 17,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 14.082000002264977,
+              "response_end_ms": 18.722000002861023,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 14.172000005841255,
+              "response_end_ms": 19.876999989151955,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 106.47300000488758,
+              "response_end_ms": 111.98100000619888,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 106.5240000039339,
+              "response_end_ms": 112.81700000166893,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 106.55599999427795,
+              "response_end_ms": 112.88599999248981,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 106.6009999960661,
+              "response_end_ms": 114.08599999547005,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 106.63400000333786,
+              "response_end_ms": 114.83599999547005,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 106.67099998891354,
+              "response_end_ms": 114.90700000524521,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 106.71899999678135,
+              "response_end_ms": 116.26000000536442,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-only/lhr-1792043275801.json",
+          "raw_sha256_hex_groups": "930949e1 18fedc19 dc85564f a9c162ee 53893208 5042a4e3 45a12b9c 5b8af529"
+        }
+      ]
+    },
+    {
+      "treatment": "latin-and-used-chinese",
+      "description": "The two Latin fonts and seven already-requested Chinese faces preloaded on Chinese S1",
+      "pass": true,
+      "medians": {
+        "performance": 92.0,
+        "accessibility": 100,
+        "seo": 100,
+        "fcp_ms": 1274.2225,
+        "lcp_ms": 3159.5609999999997,
+        "speed_index_ms": 1649.299701628791,
+        "tbt_ms": 99.5,
+        "cls": 0,
+        "font_transfer_bytes": 354417
+      },
+      "runs": [
+        {
+          "fetchTime": "2026-10-15T05:48:56.436Z",
+          "performance": 92.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 1276.085,
+          "lcp_ms": 3160.3019999999997,
+          "speed_index_ms": 1649.299701628791,
+          "cls": 0,
+          "tbt_ms": 95,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 18.19200000166893,
+              "response_end_ms": 22.819000005722046,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 18.29100000858307,
+              "response_end_ms": 24.818000003695488,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 18.348000019788742,
+              "response_end_ms": 22.968000009655952,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 18.405000016093254,
+              "response_end_ms": 23.02300000190735,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 19.33100000023842,
+              "response_end_ms": 25.01000002026558,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 19.412000015378,
+              "response_end_ms": 25.59900000691414,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 19.46900001168251,
+              "response_end_ms": 27.226000010967255,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 19.966000005602837,
+              "response_end_ms": 28.775000005960464,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 20.035000011324883,
+              "response_end_ms": 28.95100000500679,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-and-used-chinese/lhr-1792043345015.json",
+          "raw_sha256_hex_groups": "27d5411b 06707bde 6a8f7ef4 50f17111 aa533ed2 961fe221 b423e218 98148567"
+        },
+        {
+          "fetchTime": "2026-10-15T05:49:08.193Z",
+          "performance": 93.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 1274.2225,
+          "lcp_ms": 3159.267,
+          "speed_index_ms": 1645.2597369304126,
+          "cls": 0,
+          "tbt_ms": 102.5,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 13.986000016331673,
+              "response_end_ms": 18.467000007629395,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 14.075000017881393,
+              "response_end_ms": 18.587000012397766,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 14.127000004053116,
+              "response_end_ms": 18.54100002348423,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 14.177000001072884,
+              "response_end_ms": 18.6870000064373,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 15.028999999165535,
+              "response_end_ms": 18.73800002038479,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 15.097000017762184,
+              "response_end_ms": 18.783000007271767,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 15.151000022888184,
+              "response_end_ms": 22.955000013113022,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 15.606000006198883,
+              "response_end_ms": 22.865000009536743,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 15.679000005126,
+              "response_end_ms": 24.00500002503395,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-and-used-chinese/lhr-1792043356730.json",
+          "raw_sha256_hex_groups": "cea38e91 1382c8bb d5020ab1 e27cfea7 81e322b1 e05bfa19 331ec1f6 d2644804"
+        },
+        {
+          "fetchTime": "2026-10-15T05:49:19.258Z",
+          "performance": 92.0,
+          "accessibility": 100,
+          "seo": 100,
+          "fcp_ms": 1273.9675000000002,
+          "lcp_ms": 3159.5609999999997,
+          "speed_index_ms": 1667.8790318554254,
+          "cls": 0,
+          "tbt_ms": 99.5,
+          "font_transfer_bytes": 354417,
+          "font_requests": [
+            {
+              "path": "/_astro/geist-latin-wght-normal.BgDaEnEv.woff2",
+              "request_ms": 15.375,
+              "response_end_ms": 19.962999999523163,
+              "transfer_bytes": 29705
+            },
+            {
+              "path": "/_astro/geist-mono-latin-wght-normal.XN7g48iV.woff2",
+              "request_ms": 15.471000000834465,
+              "response_end_ms": 20.07999999821186,
+              "transfer_bytes": 23433
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-400-normal.woff2",
+              "request_ms": 15.532000005245209,
+              "response_end_ms": 20.032999992370605,
+              "transfer_bytes": 34785
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-500-normal.woff2",
+              "request_ms": 15.585999995470047,
+              "response_end_ms": 20.183999985456467,
+              "transfer_bytes": 35145
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-600-normal.woff2",
+              "request_ms": 16.457000002264977,
+              "response_end_ms": 20.234999999403954,
+              "transfer_bytes": 35237
+            },
+            {
+              "path": "/fonts/noto-sans-sc-common-700-normal.woff2",
+              "request_ms": 16.52699999511242,
+              "response_end_ms": 20.273999989032745,
+              "transfer_bytes": 35445
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-400-normal.woff2",
+              "request_ms": 16.573999986052513,
+              "response_end_ms": 24.71400000154972,
+              "transfer_bytes": 53129
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-500-normal.woff2",
+              "request_ms": 17.04899999499321,
+              "response_end_ms": 24.76299999654293,
+              "transfer_bytes": 53657
+            },
+            {
+              "path": "/fonts/noto-sans-sc-content-600-normal.woff2",
+              "request_ms": 17.145999997854233,
+              "response_end_ms": 24.80799999833107,
+              "transfer_bytes": 53881
+            }
+          ],
+          "raw": "latin-and-used-chinese/lhr-1792043367860.json",
+          "raw_sha256_hex_groups": "8d0cc627 101fc711 85785e35 0fd375d8 d1b12973 a786bffd 84db4458 55dd1fe7"
+        }
+      ]
+    }
+  ],
+  "pass": true,
+  "limitations": "This focused pilot is not the final18route/54run result. Full suite remains the coordinator responsibility."
+}

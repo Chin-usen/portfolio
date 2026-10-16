@@ -1,0 +1,80 @@
+{
+  "menuFirstFocus": "Home",
+  "menuClosed": "false",
+  "emailFocus": "email-address",
+  "s1Style": [
+    {
+      "selector": ".thermal-node-label",
+      "fontSize": "8.32px",
+      "height": 13.296875
+    },
+    {
+      "selector": ".thermal-legend-value",
+      "fontSize": "8px",
+      "height": 12.796875
+    },
+    {
+      "selector": ".thermal-model-notes p",
+      "fontSize": "10.72px",
+      "height": 18.75
+    },
+    {
+      "selector": ".thermal-scale p",
+      "fontSize": "7.2px",
+      "height": 23.03125
+    },
+    {
+      "selector": ".thermal-view-actions button",
+      "fontSize": "8.8px",
+      "height": 31
+    },
+    {
+      "selector": ".thermal-range-labels",
+      "fontSize": "9.28px",
+      "height": 14.84375
+    }
+  ],
+  "tabs": {
+    "clientWidth": 324,
+    "scrollWidth": 383,
+    "scrollbar": "none",
+    "children": [
+      {
+        "text": "Conditions",
+        "left": 33,
+        "right": 102.5
+      },
+      {
+        "text": "Top solder",
+        "left": 102.5,
+        "right": 175.734375
+      },
+      {
+        "text": "AMB substrate",
+        "left": 175.734375,
+        "right": 269.984375
+      },
+      {
+        "text": "Bottom solder",
+        "left": 269.984375,
+        "right": 360.984375
+      },
+      {
+        "text": "Cooler",
+        "left": 360.984375,
+        "right": 416.375
+      }
+    ]
+  },
+  "afterPower": {
+    "result": "367.8",
+    "resultTop": -312.6875,
+    "inputTop": 413.65625,
+    "scrollY": 570,
+    "warningVisible": true
+  },
+  "resetResult": "125.6",
+  "coolerKeyboardSelected": "true",
+  "failureStatus": "The FEM model could not load. Analytical results remain active; try again.",
+  "failureResult": "125.6"
+}

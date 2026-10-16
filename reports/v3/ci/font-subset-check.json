@@ -1,0 +1,11 @@
+﻿{
+  "status": "passed",
+  "python_command": "python scripts/subset-noto-fonts.py --check",
+  "python_exit": 0,
+  "checks": ["four asset and original source hashes", "594 cmap entries per weight", "every retained decomposed glyph outline", "advance widths and line metrics", "real weights 400/500/600/700", "original font name/copyright/license metadata", "original OFL notice"],
+  "total_subset_bytes": 338376,
+  "node_command": "node scripts/generate-font-css.mjs --check",
+  "node_exit": 0,
+  "future_text_probe": "U+4E01 uses all four original locked faces",
+  "normal_build_requires_python": false
+}

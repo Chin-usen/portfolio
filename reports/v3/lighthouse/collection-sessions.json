@@ -1,0 +1,237 @@
+{
+  "sessions": [
+    {
+      "kind": "collect",
+      "route": "/lab/chip-junction-temperature/",
+      "started_utc": "2026-10-15T06:08:27.342328+00:00",
+      "log": "001-lab-chip-junction-temperature-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:09:02.010082+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/lab/chip-junction-temperature/",
+      "started_utc": "2026-10-15T06:09:02.105315+00:00",
+      "log": "001-lab-chip-junction-temperature-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:09:02.530038+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/about/",
+      "started_utc": "2026-10-15T06:09:38.259762+00:00",
+      "log": "003-about-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:10:11.974283+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/about/",
+      "started_utc": "2026-10-15T06:10:12.055820+00:00",
+      "log": "003-about-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:10:12.486358+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/contact/",
+      "started_utc": "2026-10-15T06:10:12.525688+00:00",
+      "log": "005-contact-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:10:46.192319+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/contact/",
+      "started_utc": "2026-10-15T06:10:46.282870+00:00",
+      "log": "005-contact-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:10:46.705239+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/",
+      "started_utc": "2026-10-15T06:10:46.749512+00:00",
+      "log": "007-en-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:11:20.497835+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/",
+      "started_utc": "2026-10-15T06:11:20.612285+00:00",
+      "log": "007-en-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:11:21.049834+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/work/",
+      "started_utc": "2026-10-15T06:11:21.115489+00:00",
+      "log": "009-en-work-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:11:54.641134+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/work/",
+      "started_utc": "2026-10-15T06:11:54.733649+00:00",
+      "log": "009-en-work-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:11:55.166281+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/work/sample-case/",
+      "started_utc": "2026-10-15T06:11:55.236049+00:00",
+      "log": "011-en-work-sample-case-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:12:28.929534+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/work/sample-case/",
+      "started_utc": "2026-10-15T06:12:29.036683+00:00",
+      "log": "011-en-work-sample-case-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:12:29.464143+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/lab/",
+      "started_utc": "2026-10-15T06:12:29.523277+00:00",
+      "log": "013-en-lab-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:13:03.144638+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/lab/",
+      "started_utc": "2026-10-15T06:13:03.222144+00:00",
+      "log": "013-en-lab-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:13:03.654640+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/lab/sample-teardown/",
+      "started_utc": "2026-10-15T06:13:03.720698+00:00",
+      "log": "015-en-lab-sample-teardown-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:13:37.168457+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/lab/sample-teardown/",
+      "started_utc": "2026-10-15T06:13:37.275881+00:00",
+      "log": "015-en-lab-sample-teardown-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:13:37.706763+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/lab/sample-simulation/",
+      "started_utc": "2026-10-15T06:13:37.771483+00:00",
+      "log": "017-en-lab-sample-simulation-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:14:11.332304+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/lab/sample-simulation/",
+      "started_utc": "2026-10-15T06:14:11.430537+00:00",
+      "log": "017-en-lab-sample-simulation-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:14:11.861041+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/lab/chip-junction-temperature/",
+      "started_utc": "2026-10-15T06:14:11.923880+00:00",
+      "log": "019-en-lab-chip-junction-temperature-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:14:46.110412+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/lab/chip-junction-temperature/",
+      "started_utc": "2026-10-15T06:14:46.222229+00:00",
+      "log": "019-en-lab-chip-junction-temperature-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:14:46.652082+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/about/",
+      "started_utc": "2026-10-15T06:14:46.688319+00:00",
+      "log": "021-en-about-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:15:20.365656+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/about/",
+      "started_utc": "2026-10-15T06:15:20.481554+00:00",
+      "log": "021-en-about-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:15:20.925128+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "collect",
+      "route": "/en/contact/",
+      "started_utc": "2026-10-15T06:15:20.989413+00:00",
+      "log": "023-en-contact-collect.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:15:54.523644+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "route_assert",
+      "route": "/en/contact/",
+      "started_utc": "2026-10-15T06:15:54.625360+00:00",
+      "log": "023-en-contact-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:15:55.051190+00:00",
+      "exit_code": 0
+    },
+    {
+      "kind": "final_assert",
+      "route": null,
+      "started_utc": "2026-10-15T06:15:55.186840+00:00",
+      "log": "final-all-54-assert.log",
+      "status": "complete",
+      "finished_utc": "2026-10-15T06:15:55.713146+00:00",
+      "exit_code": 0
+    }
+  ],
+  "runtime_source_snapshot": "tested-source-sha256.json",
+  "initial_import": {
+    "imported_utc": "2026-10-15T06:08:27.325194+00:00",
+    "samples": 18,
+    "source_snapshot_match": true,
+    "initial_started_utc": "2026-10-15T05:51:12.068899+00:00"
+  },
+  "measurement_policy": "Retain every completed same-source sample. Complete only missing samples. Never restart a completed route to improve its score."
+}

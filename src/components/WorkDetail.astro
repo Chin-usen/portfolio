@@ -1,0 +1,44 @@
+﻿---
+import { render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MetricRow from './MetricRow.astro';
+import '../styles/work.css';
+import { getUi } from '../i18n/dictionaries';
+import { localePath } from '../i18n/utils';
+interface Props {
+  locale: 'zh' | 'en';
+  entry: CollectionEntry<'work'>;
+}
+const { locale, entry } = Astro.props;
+const ui = getUi(locale);
+const { title, summary, metrics, role, period, tools } = entry.data;
+const { Content } = await render(entry);
+---
+
+<BaseLayout locale={locale} title={title} description={summary} bodyClass="work-detail-page">
+  <a class="work-detail-back" href={localePath(locale, '/work/')}>
+    {ui.work.back}
+  </a>
+  <article>
+    <header class="page-heading">
+      <h1>{title}</h1>
+      <p>{summary}</p>
+      <p class="work-placeholder-note">{ui.common.contentPlaceholder}</p>
+    </header>
+    <dl class="meta-list">
+      <dt>{ui.work.role}</dt>
+      <dd>{role}</dd>
+      <dt>{ui.work.period}</dt>
+      <dd>{period}</dd>
+      <dt>{ui.work.tools}</dt>
+      <dd>{tools.join(' / ')}</dd>
+    </dl>
+    <section class="section" aria-labelledby="metrics">
+      <h2 id="metrics">{ui.work.metrics}</h2>
+      <MetricRow metrics={metrics} />
+    </section>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

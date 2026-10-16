@@ -1,0 +1,4297 @@
+{
+  "started": "2026-10-15T04:29:07.057Z",
+  "checks": [],
+  "tabSequence": [
+    {
+      "key": "ArrowRight",
+      "selected": "Top solder",
+      "focused": "thermal-tab-top-solder"
+    },
+    {
+      "key": "End",
+      "selected": "Cooler",
+      "focused": "thermal-tab-cooler"
+    },
+    {
+      "key": "Home",
+      "selected": "Conditions",
+      "focused": "thermal-tab-operating"
+    }
+  ],
+  "warning": {
+    "power": "500",
+    "tj": "367.8",
+    "top": true,
+    "controls": true,
+    "announcement": "Current calculation: Junction temperature 367.8 °C; Junction-to-fluid resistance 0.606 K/W. Above the common SiC junction-temperature limit of 175 °C"
+  },
+  "reset": {
+    "tj": "125.6",
+    "warning": false
+  },
+  "layer": {
+    "name": "Ceramic",
+    "visible": true,
+    "selectedTab": "AMB substrate",
+    "pressed": "true"
+  },
+  "scrolledState": {
+    "scrollY": 608,
+    "summary": {
+      "x": 857.953125,
+      "y": 52,
+      "width": 414.03125,
+      "height": 66.5,
+      "top": 52,
+      "right": 1271.984375,
+      "bottom": 118.5,
+      "left": 857.953125
+    },
+    "tabs": [
+      {
+        "text": "Conditions",
+        "rect": {
+          "x": 861.953125,
+          "y": 47.828125,
+          "width": 88.046875,
+          "height": 44,
+          "top": 47.828125,
+          "right": 950,
+          "bottom": 91.828125,
+          "left": 861.953125
+        },
+        "centerTopElement": "<p>Junction temperature <strong><span data-control-tj=\"\">125.6</span> °C</strong> · <span data-control-rth=\"\">0.606</span> K/W</p>"
+      },
+      {
+        "text": "Top solder",
+        "rect": {
+          "x": 952,
+          "y": 47.828125,
+          "width": 86.296875,
+          "height": 44,
+          "top": 47.828125,
+          "right": 1038.296875,
+          "bottom": 91.828125,
+          "left": 952
+        },
+        "centerTopElement": "<span data-control-tj=\"\">125.6</span>"
+      },
+      {
+        "text": "AMB substrate",
+        "rect": {
+          "x": 1040.296875,
+          "y": 47.828125,
+          "width": 117.1875,
+          "height": 44,
+          "top": 47.828125,
+          "right": 1157.484375,
+          "bottom": 91.828125,
+          "left": 1040.296875
+        },
+        "centerTopElement": "<p>Junction temperature <strong><span data-control-tj=\"\">125.6</span> °C</strong> · <span data-control-rth=\"\">0.606</span> K/W</p>"
+      },
+      {
+        "text": "Bottom solder",
+        "rect": {
+          "x": 1159.484375,
+          "y": 47.828125,
+          "width": 108.5,
+          "height": 44,
+          "top": 47.828125,
+          "right": 1267.984375,
+          "bottom": 91.828125,
+          "left": 1159.484375
+        },
+        "centerTopElement": "<p>Junction temperature <strong><span data-control-tj=\"\">125.6</span> °C</strong> · <span data-control-rth=\"\">0.606</span> K/W</p>"
+      },
+      {
+        "text": "Cooler",
+        "rect": {
+          "x": 861.953125,
+          "y": 93.828125,
+          "width": 406.03125,
+          "height": 44,
+          "top": 93.828125,
+          "right": 1267.984375,
+          "bottom": 137.828125,
+          "left": 861.953125
+        },
+        "centerTopElement": "<div class=\"thermal-control-summary\" data-control-summary=\"\" aria-hidden=\"true\"><p>Junction temperature <strong><span data-control-tj=\"\">125.6</span> °C</strong> · <span data-control-rth=\"\">0.606</spa"
+      }
+    ]
+  },
+  "fem": {
+    "tj": "114.7",
+    "pressed": "true",
+    "label": "FEM-trained surrogate"
+  },
+  "analytic": {
+    "tj": "125.6",
+    "pressed": "true"
+  },
+  "contrast": [
+    {
+      "surface": "home",
+      "colorScheme": "light",
+      "minimum": 4.905,
+      "count": 57,
+      "failures": [],
+      "all": [
+        {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to main content",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "site-name",
+          "text": "Sample Engineer",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-eyebrow",
+          "text": "SAMPLE ENGINEER",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.905,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Role title line one]",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 3,
+          "font": 38
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Role title line two]",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 3,
+          "font": 38
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 1]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "specialty-divider",
+          "text": "·",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 2]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 3]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "specialty-divider",
+          "text": "·",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 4]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "View work ›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Explore the lab ›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "[Career case A] · [Optimization target]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Primary metric], reduced by [x]%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Secondary metric] 00 → 00 · Method: [Method overview]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case B] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "0 → 0 units",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case B] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "< 0.00 units",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case C] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "00 → 00%",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Lab Bench Self-initiated",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 3,
+          "font": 32
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Self-initiated",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "All experiments ›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "S1 · Simulation",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.07,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Chip junction temperature",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Steady-state conduction through an AMB stack",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 44
+        },
+        {
+          "tag": "SPAN",
+          "cls": "home-temperature-unit",
+          "text": "°C",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 18
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Ceramic thickness 0.32 mm",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.32",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "home-model-note",
+          "text": "Analytic model · 100 W / 65 °C defaults · Not FEM",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "home-card-link",
+          "text": "Open full simulation ›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.567,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.567,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "L1 · 3D teardown",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.07,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "INPC three-level power module",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "P/N busbar stack and loop inductance",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Chips, AMB, clips, terminals, busbars and pin-fin cooler",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "L3 · 3D teardown",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.07,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "RV cycloidal reducer",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Involute planetary and cycloidal pinwheel stages",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Transmission animation",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "S3 · Simulation",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.07,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Pin-fin cooling simulation",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Flow, pin diameter, pitch and layout",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Thermal resistance and pressure drop",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "© 2026 Sample Engineer",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Email",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "LinkedIn",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Resume PDF]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        }
+      ]
+    },
+    {
+      "surface": "home",
+      "colorScheme": "dark",
+      "minimum": 5.998,
+      "count": 57,
+      "failures": [],
+      "all": [
+        {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to main content",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "site-name",
+          "text": "Sample Engineer",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-eyebrow",
+          "text": "SAMPLE ENGINEER",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 10.359,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Role title line one]",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 3,
+          "font": 38
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Role title line two]",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 3,
+          "font": 38
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 1]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "specialty-divider",
+          "text": "·",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 2]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 3]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "specialty-divider",
+          "text": "·",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Specialty 4]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "View work ›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Explore the lab ›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "[Career case A] · [Optimization target]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Primary metric], reduced by [x]%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Secondary metric] 00 → 00 · Method: [Method overview]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case B] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "0 → 0 units",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case B] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "< 0.00 units",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "DT",
+          "cls": "",
+          "text": "[Career case C] · [Metric]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 11
+        },
+        {
+          "tag": "DD",
+          "cls": "",
+          "text": "00 → 00%",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 20
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Lab Bench Self-initiated",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 3,
+          "font": 32
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Self-initiated",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "All experiments ›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "S1 · Simulation",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 8.92,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Chip junction temperature",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Steady-state conduction through an AMB stack",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 44
+        },
+        {
+          "tag": "SPAN",
+          "cls": "home-temperature-unit",
+          "text": "°C",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 18
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Ceramic thickness 0.32 mm",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.32",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "home-model-note",
+          "text": "Analytic model · 100 W / 65 °C defaults · Not FEM",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "home-card-link",
+          "text": "Open full simulation ›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 5.998,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "›",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 5.998,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "L1 · 3D teardown",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 8.92,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "INPC three-level power module",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "P/N busbar stack and loop inductance",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Chips, AMB, clips, terminals, busbars and pin-fin cooler",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "L3 · 3D teardown",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 8.92,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "RV cycloidal reducer",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Involute planetary and cycloidal pinwheel stages",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Transmission animation",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-label",
+          "text": "S3 · Simulation",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 8.92,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Pin-fin cooling simulation",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 24
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-subtitle",
+          "text": "Flow, pin diameter, pitch and layout",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-card-description",
+          "text": "Thermal resistance and pressure drop",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "home-planned-status",
+          "text": "Concept preview · Not implemented",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "© 2026 Sample Engineer",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Email",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "LinkedIn",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Resume PDF]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        }
+      ]
+    },
+    {
+      "surface": "s1",
+      "colorScheme": "light",
+      "minimum": 4.905,
+      "count": 90,
+      "failures": [],
+      "all": [
+        {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to main content",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "site-name",
+          "text": "Sample Engineer",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-eyebrow",
+          "text": "S1 · SIMULATION",
+          "fg": "rgb(191, 72, 0)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.905,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "H1",
+          "cls": "",
+          "text": "Chip junction temperature",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 3,
+          "font": 32
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-subtitle",
+          "text": "Steady-state conduction through an AMB stack",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "thermal-back-link",
+          "text": "‹ Back to Lab",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "‹",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 5.386,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-metric-label",
+          "text": "Junction temperature Tj",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Tj",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SUB",
+          "cls": "",
+          "text": "j",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 10.8333
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 3,
+          "font": 54.6
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 3,
+          "font": 26
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-node-label",
+          "text": "Equivalent source node",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "ABBR",
+          "cls": "",
+          "text": "Rth,j-f",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SUB",
+          "cls": "",
+          "text": "th,j-f",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 10.8333
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 22
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "K/W",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "ABBR",
+          "cls": "",
+          "text": "ΔT",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "60.6",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 22
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "K",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-loading",
+          "text": "Preparing the interactive model",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Cutaway",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Explode",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Reset view",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Temperature",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "65.0",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Thickness direction enlarged for clarity",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-interaction-hint",
+          "text": "Drag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Thermal resistance breakdown",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "0.606 K/W",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Chip",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "3.2%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Top solder",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "2.6%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Upper copper",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "4.5%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Ceramic",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "16.8%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Lower copper",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "3.0%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Bottom solder",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "5.9%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Cooler",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "51.7%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Convection",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "12.2%",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Junction temperature 125.6 °C · 0.606 K/W",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "125.6 °C",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "Analytical",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Explore parameters",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 17
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Analytical",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "FEM surrogate",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "thermal-text-button",
+          "text": "Restore defaults",
+          "fg": "rgb(0, 102, 204)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.567,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Conditions",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Top solder",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "AMB substrate",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Bottom solder",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Cooler",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            242,
+            242,
+            247
+          ],
+          "ratio": 15.082,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Fixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Chip power",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "100",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "50",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "W",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "500",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Coolant temperature",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "65",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "25",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "85",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Convection coefficient",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "15000",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 16.83,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "2000",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "W/(m²·K)",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "20000",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 5.071,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Placeholder analytical model",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Steady state and ideal interfaces. An equivalent resistance network estimates conduction a",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Tj,max and Tj,avg represent the same equivalent source node. This model does not resolve t",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-note-label",
+          "text": "Validation status",
+          "fg": "rgb(29, 29, 31)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 16.284,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Default analytical benchmark: 125.564 °C and 0.605642 K/W. This reference formula is appro",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "The color field combines Chebyshev radial attenuation and vertical layer interpolation for",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "175 °C is a common reference limit for some SiC devices. Use the specific device datasheet",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "© 2026 Sample Engineer",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Email",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "LinkedIn",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Resume PDF]",
+          "fg": "rgb(110, 110, 115)",
+          "bg": [
+            251,
+            251,
+            253
+          ],
+          "ratio": 4.907,
+          "required": 4.5,
+          "font": 12
+        }
+      ]
+    },
+    {
+      "surface": "s1",
+      "colorScheme": "dark",
+      "minimum": 5.998,
+      "count": 90,
+      "failures": [],
+      "all": [
+        {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to main content",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "A",
+          "cls": "site-name",
+          "text": "Sample Engineer",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-eyebrow",
+          "text": "S1 · SIMULATION",
+          "fg": "rgb(255, 159, 90)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 10.359,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "H1",
+          "cls": "",
+          "text": "Chip junction temperature",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 3,
+          "font": 32
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-subtitle",
+          "text": "Steady-state conduction through an AMB stack",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 15
+        },
+        {
+          "tag": "A",
+          "cls": "thermal-back-link",
+          "text": "‹ Back to Lab",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "‹",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 6.965,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-metric-label",
+          "text": "Junction temperature Tj",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Tj",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SUB",
+          "cls": "",
+          "text": "j",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 10.8333
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 3,
+          "font": 54.6
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 3,
+          "font": 26
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-node-label",
+          "text": "Equivalent source node",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "ABBR",
+          "cls": "",
+          "text": "Rth,j-f",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SUB",
+          "cls": "",
+          "text": "th,j-f",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 10.8333
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 22
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "K/W",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "ABBR",
+          "cls": "",
+          "text": "ΔT",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "60.6",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 22
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "K",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-loading",
+          "text": "Preparing the interactive model",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Cutaway",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Explode",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Reset view",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Temperature",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "65.0",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Thickness direction enlarged for clarity",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-interaction-hint",
+          "text": "Drag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Thermal resistance breakdown",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "0.606 K/W",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Chip",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "3.2%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Top solder",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "2.6%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Upper copper",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "4.5%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Ceramic",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "16.8%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Lower copper",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "3.0%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Bottom solder",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "5.9%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Cooler",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "51.7%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Convection",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "thermal-legend-value",
+          "text": "12.2%",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Junction temperature 125.6 °C · 0.606 K/W",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "125.6 °C",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "125.6",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "0.606",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "Analytical",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "text": "Explore parameters",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 17
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Analytical",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "FEM surrogate",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "thermal-text-button",
+          "text": "Restore defaults",
+          "fg": "rgb(41, 151, 255)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 5.998,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Conditions",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Top solder",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "AMB substrate",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Bottom solder",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "text": "Cooler",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            36,
+            36,
+            38
+          ],
+          "ratio": 14.23,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Fixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 13
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Chip power",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "100",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "50",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "W",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "500",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Coolant temperature",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "65",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "25",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "°C",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "85",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "text": "Convection coefficient",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "OUTPUT",
+          "cls": "",
+          "text": "15000",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 16.608,
+          "required": 4.5,
+          "font": 16
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "2000",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "W/(m²·K)",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "20000",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            22,
+            22,
+            23
+          ],
+          "ratio": 7.03,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "Placeholder analytical model",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Steady state and ideal interfaces. An equivalent resistance network estimates conduction a",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Tj,max and Tj,avg represent the same equivalent source node. This model does not resolve t",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "thermal-note-label",
+          "text": "Validation status",
+          "fg": "rgb(245, 245, 247)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 19.287,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Default analytical benchmark: 125.564 °C and 0.605642 K/W. This reference formula is appro",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "The color field combines Chebyshev radial attenuation and vertical layer interpolation for",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "175 °C is a common reference limit for some SiC devices. Use the specific device datasheet",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "© 2026 Sample Engineer",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Email",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "LinkedIn",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "[Resume PDF]",
+          "fg": "rgb(161, 161, 166)",
+          "bg": [
+            0,
+            0,
+            0
+          ],
+          "ratio": 8.164,
+          "required": 4.5,
+          "font": 12
+        }
+      ]
+    }
+  ],
+  "touchRecovery": [
+    {
+      "endType": "touchCancel",
+      "value": "420"
+    },
+    {
+      "endType": "touchEnd",
+      "value": "180"
+    }
+  ],
+  "finished": "2026-10-15T04:29:10.228Z"
+}

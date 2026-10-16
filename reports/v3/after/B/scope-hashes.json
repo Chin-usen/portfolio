@@ -1,0 +1,247 @@
+[
+    {
+        "path":  "docs/DESIGN.md",
+        "sha256":  "f87ecf519d528f6fe162a5310b7d4ea5aef27c080aded32de38e11425d4d57b1",
+        "bytes":  1075
+    },
+    {
+        "path":  "docs/design/D1-desktop.html",
+        "sha256":  "8932320c369895957fde41b0f4c8bd5c3d923f6ad4d1bf943fc3e5d19473cabe",
+        "bytes":  11503
+    },
+    {
+        "path":  "docs/design/D1-desktop.jpg",
+        "sha256":  "ffd50706b097c7b0e416d5d7a0fc6775e2597a67e42f2889ed92cf23619d8bba",
+        "bytes":  234089
+    },
+    {
+        "path":  "docs/design/D1-mobile.html",
+        "sha256":  "273a62b2bada4231183ae4756808524b4f809481f0ceff1fe9477f3d7b985ff9",
+        "bytes":  7937
+    },
+    {
+        "path":  "docs/design/D1-mobile.jpg",
+        "sha256":  "c88e3806e26b305e3d05aa0670900eca06ad8890d0ab0d1d473f8dab2e9d6943",
+        "bytes":  84655
+    },
+    {
+        "path":  "docs/design/README.md",
+        "sha256":  "12c92e9dae3df9e7f825d77be3f094df56302b57663654203f0a570b7dca64a3",
+        "bytes":  676
+    },
+    {
+        "path":  "docs/design/S1-desktop.html",
+        "sha256":  "0f47cfa409a92c46c9cada9de89b6409da59f545f08a3f9c5d053a0e8885315f",
+        "bytes":  12767
+    },
+    {
+        "path":  "docs/design/S1-desktop.jpg",
+        "sha256":  "c83892391976b3eb9e4e18db0e8f53796c9994716565a83b910ebe616b73c22b",
+        "bytes":  104572
+    },
+    {
+        "path":  "docs/PRD.md",
+        "sha256":  "d428795bc9b691e27bc4fe2f940efd27318d5ec53cf67d8ac136e9630eeb35e7",
+        "bytes":  3404
+    },
+    {
+        "path":  "public/images/power-module-dark-450.webp",
+        "sha256":  "c5cde14bda0d7e6940be650e4f5d5f236ff4c4b7e6cf77c07c4c9618477ff1cc",
+        "bytes":  5698
+    },
+    {
+        "path":  "public/images/power-module-dark-900.webp",
+        "sha256":  "b76d24df3c79bee2135539f785feacd14d8bc409d9134aba467b381cf2af7e1c",
+        "bytes":  11528
+    },
+    {
+        "path":  "public/images/power-module-light-450.webp",
+        "sha256":  "ae2ac161831171907fea998c5a366d76c7b990667d43871aaba229ea1334afdf",
+        "bytes":  5700
+    },
+    {
+        "path":  "public/images/power-module-light-900.webp",
+        "sha256":  "b3ce6e709871490e0b0d7ae9ce1b05b36f78c5923ef334f99a5e45cf8877003f",
+        "bytes":  11372
+    },
+    {
+        "path":  "src/components/Footer.astro",
+        "sha256":  "aeb91727b8df100b7364828ed5d0d3ad80856f0ec01aaa7ad7aa4570a44ccdc3",
+        "bytes":  726
+    },
+    {
+        "path":  "src/components/Header.astro",
+        "sha256":  "12934d8904dd965c1c0c54e6f13838fcfaed9a1bf55cc5dd00d830020da74488",
+        "bytes":  3746
+    },
+    {
+        "path":  "src/components/HomePage.astro",
+        "sha256":  "03faf0fb8fdd0cbb17e6ea1972be9f52267bd88547dc401f697cc55d7ae99383",
+        "bytes":  6125
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/client.ts",
+        "sha256":  "b2c4f6b42c8e7901ab8a34636de6058b42ae0215d840760b2269739717fff692",
+        "bytes":  16515
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/copy.ts",
+        "sha256":  "46fcfa74e82e17abe0d576e197405ffa30917ec51751b640e693ae355c2cc3df",
+        "bytes":  12681
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/evaluator.ts",
+        "sha256":  "0e7f0e237ee08e46426e34e1a215e90ec2d6044f44c85538b9843d75a8cd5eee",
+        "bytes":  8416
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/fem/evaluator.ts",
+        "sha256":  "bc09c24ad82dcaafd9b4b671b5a7e4ef23765f96fd4310d00aab6f65b02f5bd9",
+        "bytes":  12647
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/fem/LICENSE.txt",
+        "sha256":  "7d768fa60f69a1080dfe272cb5099c9d2dbc7bee26c05c43f47c09b6883a745e",
+        "bytes":  1096
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/fem-adapter.ts",
+        "sha256":  "9390e781b0becaa378d3ff6cb67bf1acf583793b4d0766146ebe69f5a77aec40",
+        "bytes":  3100
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/field-sampler.ts",
+        "sha256":  "1d5b1b8bd681f89c6396917b02416e3ac6e2cc41309fc2deaec31a9fd5e15871",
+        "bytes":  3833
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/parameters.ts",
+        "sha256":  "5c58d1c2e2ab8594f8507a5c897ec22a91a9fdd8d1ac449b493f8b38b646995e",
+        "bytes":  4281
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/thermal.css",
+        "sha256":  "694eb309b5b6e87646047949e688dc57d4db3f3e717b713a25b6348663c7a282",
+        "bytes":  18272
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/ThermalStack.astro",
+        "sha256":  "8734f591e805e681ce29203317d937f8533fad6f11fbea21b17ff8d74bce4617",
+        "bytes":  13336
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/types.ts",
+        "sha256":  "ce761fa4ed3ad6162ec3b6bc652cc2fcdffcfebb89338381005a637bd579652d",
+        "bytes":  3398
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/viewer.ts",
+        "sha256":  "89b666d605ae103cdb02401096801ad43a5de6d9966bb3501c200663b43e38c1",
+        "bytes":  17568
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/viewer-fallback.ts",
+        "sha256":  "963968e1e6e495f6e7427f519002fe19ee9a1e36f261976c40f0f910254a3b61",
+        "bytes":  8950
+    },
+    {
+        "path":  "src/components/lab/thermal-stack/viewer-shared.ts",
+        "sha256":  "b954ed04b35a899fde1190252d1bb57eb1fe37ca3cbac604c0594b1ab35a2987",
+        "bytes":  3549
+    },
+    {
+        "path":  "src/components/LabDetail.astro",
+        "sha256":  "1ae7030e80c8544537324bae11073ec0f48d7b79ed7ce7a0cd9d51b49a811cf3",
+        "bytes":  1465
+    },
+    {
+        "path":  "src/content/home/en.json",
+        "sha256":  "1e51dab2ed9d8c65574afd58ccc3b5e702da0d95bb6f3804b780ac7a77bdfd36",
+        "bytes":  3031
+    },
+    {
+        "path":  "src/content/home/zh.json",
+        "sha256":  "3b93537776d8aa89dff405b465b1d234beda744f29c210a2ac1a81a02e51944a",
+        "bytes":  2818
+    },
+    {
+        "path":  "src/content/lab/en/chip-junction-temperature.md",
+        "sha256":  "6872be6f9e386545d766596b9d4022166e31370ba310e5a8aaaa79d04fbb0a55",
+        "bytes":  415
+    },
+    {
+        "path":  "src/content/lab/zh/chip-junction-temperature.md",
+        "sha256":  "0121e14e621ea4c54c6136f3569df4089008650a4b386e340a61830cda8f6715",
+        "bytes":  351
+    },
+    {
+        "path":  "src/i18n/dictionaries.ts",
+        "sha256":  "a3e6813686706f3b64ae05567e35a98f9f925466d2e4b2009b65472841d9b6e0",
+        "bytes":  7306
+    },
+    {
+        "path":  "src/i18n/routing.ts",
+        "sha256":  "05d9c027dfda2939ee0d6ba4d4beb182286692da373e1b58302731498feef37e",
+        "bytes":  2467
+    },
+    {
+        "path":  "src/i18n/utils.ts",
+        "sha256":  "3e8d76f7714175d3feeb903768f07110515d52125d85cb1e3e3293a5e99e5c31",
+        "bytes":  569
+    },
+    {
+        "path":  "src/layouts/BaseLayout.astro",
+        "sha256":  "6812167df4104c1a337218e976336af0836c77e0d105206de994082230379d5a",
+        "bytes":  2772
+    },
+    {
+        "path":  "src/pages/en/index.astro",
+        "sha256":  "09ba3c8a70ff05b7e49c88336459949b3cf9e0fe6c68cf2d74a40641c623bed3",
+        "bytes":  85
+    },
+    {
+        "path":  "src/pages/en/lab/[slug].astro",
+        "sha256":  "48c3a2a370431e83d3903e3f315f6d048910b492f3c6170915f953120d82c863",
+        "bytes":  479
+    },
+    {
+        "path":  "src/pages/index.astro",
+        "sha256":  "800bef60a5682f72ec264fbac65b18d51f6b98d4013e83b877b0f1137741cb2e",
+        "bytes":  82
+    },
+    {
+        "path":  "src/pages/lab/[slug].astro",
+        "sha256":  "71ac4386df75f51eaabcd25aa3077951ff5863b62c22bd1e20a4e8204a9dff47",
+        "bytes":  473
+    },
+    {
+        "path":  "src/scripts/home-preview.ts",
+        "sha256":  "d648a059628743928317e298b821fc259113266ac1c5efd700ba6f26c6826115",
+        "bytes":  1440
+    },
+    {
+        "path":  "src/styles/generated-fonts.css",
+        "sha256":  "6653a6fcaa336d79e69485591879102e07615ff76436707891ffd49e6b78b381",
+        "bytes":  36537
+    },
+    {
+        "path":  "src/styles/global.css",
+        "sha256":  "cbf6a89e091aeba72d1304781cd0de2b1c96927ef3d6c42104f9246c11a7e841",
+        "bytes":  9467
+    },
+    {
+        "path":  "src/styles/home.css",
+        "sha256":  "119ddf78759db0c4ad07235c4455380477fef095a8463b044d97ff39ac1895ad",
+        "bytes":  7355
+    },
+    {
+        "path":  "src/styles/thermal-tokens.css",
+        "sha256":  "849cb2c4409148b04d3a9e271490e395f531c04c78e409c891880a202c42744b",
+        "bytes":  1623
+    },
+    {
+        "path":  "src/styles/tokens.css",
+        "sha256":  "3a44e3219f6a0ce7d4b6a07410a2d3382b8655bc96f42c33fc0f60719960ea5f",
+        "bytes":  433
+    }
+]

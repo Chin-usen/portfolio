@@ -1,0 +1,78 @@
+{
+  "lang": "zh",
+  "pageTitle": "示例工程师 · 作品与实验台",
+  "description": "示例工程师的作品与实验台。所有职业信息和案例数据均为占位内容。",
+  "name": "示例工程师",
+  "navWork": "作品",
+  "navLab": "实验台",
+  "eyebrow": "示例工程师 · SAMPLE ENGINEER",
+  "titleLines": ["[职位标题第一行]", "[职位标题第二行]"],
+  "specialties": ["[专业方向 1]", "[专业方向 2]", "[专业方向 3]", "[专业方向 4]"],
+  "workCta": "查看作品",
+  "labCta": "进入实验台",
+  "modelAlt": "通用功率模块示意：灰色基板、深色壳体和三个铜端子，等轴测视图。",
+  "metrics": {
+    "label": "[职业案例 A 名称] · [优化目标]",
+    "value": "00 → 00 单位",
+    "description": ["[主指标说明]，降低约 [x]%", "[次指标] 00 → 00 · 方法：[方法概述]"],
+    "secondary": [
+      {
+        "value": "0 → 0 单位",
+        "label": "[职业案例 B] · [指标]"
+      },
+      {
+        "value": "< 0.00 单位",
+        "label": "[职业案例 B] · [指标]"
+      },
+      {
+        "value": "00 → 00%",
+        "label": "[职业案例 C] · [指标]"
+      }
+    ]
+  },
+  "lab": {
+    "title": "实验台",
+    "kicker": "Lab Bench · Self-initiated",
+    "allLabel": "全部实验",
+    "simulation": {
+      "label": "S1 · 仿真",
+      "title": "芯片结温仿真",
+      "subtitle": "AMB 叠层稳态导热",
+      "description": ["输入：各层厚度与热导率、功率、冷却液温度、h", "输出：Tj、温度场、热阻分解"],
+      "thicknessLabel": "陶瓷厚度",
+      "temperatureLabel": "结温 Tj",
+      "modelNote": "解析模型 · 100 W / 65 °C 默认工况 · 非 FEM",
+      "openLabel": "打开完整仿真",
+      "noJs": "当前为默认工况结果；启用 JavaScript 可调节陶瓷厚度。"
+    },
+    "planned": [
+      {
+        "label": "L1 · 3D 拆解",
+        "title": "INPC 三电平功率模块",
+        "subtitle": "P/N 母排叠层与回路电感",
+        "description": "芯片、AMB、Clip、端子、母排、Pin-fin Cooler",
+        "status": "概念预览 · 尚未实现"
+      },
+      {
+        "label": "L3 · 3D 拆解",
+        "title": "RV 摆线减速器",
+        "subtitle": "渐开线行星级 + 摆线针轮级",
+        "description": "传动动画",
+        "status": "概念预览 · 尚未实现"
+      },
+      {
+        "label": "S3 · 仿真",
+        "title": "Pin-fin 流体散热仿真",
+        "subtitle": "流量 · 针径 · 针间距 · 顺排/叉排",
+        "description": "热阻与压降",
+        "status": "概念预览 · 尚未实现"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 示例工程师",
+    "contactLabel": "邮箱",
+    "linkedInLabel": "LinkedIn",
+    "resumeLabel": "[简历 PDF]"
+  }
+}
