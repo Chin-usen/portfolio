@@ -1,0 +1,78 @@
+/* About owns the single contact section used by navigation and legacy redirects. */
+.about-page main {
+  width: min(1200px, calc(100% - 48px));
+  padding-block: 96px 64px;
+}
+.about-heading {
+  margin-bottom: 64px;
+}
+.about-heading h1 {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: -0.015em;
+}
+.about-heading p {
+  margin-top: 14px;
+  color: var(--thermal-secondary);
+  font-size: 1.25rem;
+}
+.about-section {
+  padding-block: 36px;
+  border-top: 1px solid var(--thermal-line);
+}
+.about-section h2 {
+  margin: 0 0 16px;
+  font-size: 1.75rem;
+}
+.about-section p,
+.about-section ul {
+  margin-block: 0;
+  color: var(--thermal-secondary);
+}
+.about-section ul {
+  padding-left: 1.25em;
+}
+.about-section li + li {
+  margin-top: 8px;
+}
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+.about-contact {
+  margin-top: 28px;
+  scroll-margin-top: 76px;
+}
+.about-contact .meta-list {
+  align-items: center;
+  margin-top: 24px;
+}
+.about-contact:focus:not(:focus-visible) {
+  outline: none;
+}
+@media (max-width: 42rem) {
+  .about-page main {
+    width: calc(100% - 40px);
+    padding-block: 48px 32px;
+  }
+  .about-heading {
+    margin-bottom: 40px;
+  }
+  .about-heading h1 {
+    font-size: 2.5rem;
+  }
+  .about-heading p {
+    font-size: 1rem;
+  }
+  .about-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about-section {
+    padding-block: 28px;
+  }
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+}

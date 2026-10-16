@@ -1,0 +1,9 @@
+{
+  "status": "running",
+  "started_utc": "2026-10-15T05:15:17.483436+00:00",
+  "command": "pnpm lhci",
+  "node": "22.23.3",
+  "pnpm": "12.11.2",
+  "config": "lighthouserc.cjs",
+  "host": "Windows local, not hosted GitHub Actions"
+}

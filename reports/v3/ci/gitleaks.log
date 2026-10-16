@@ -1,0 +1,5 @@
+Command: pnpm exec node scripts/run-gitleaks.mjs
+Started: 2026-10-15T06:18:36.685834+00:00
+Exit: 0
+
+Gitleaks passed for the available scopes. No raw reports were generated.

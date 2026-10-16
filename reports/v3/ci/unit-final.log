@@ -1,0 +1,14 @@
+Command: pnpm test:unit
+Started: 2026-10-15T04:58:10.736407+00:00
+Exit: 0
+
+$ vitest run
+
+ RUN  v5.0.4 <workspace>/portfolio-main-v3
+
+
+ Test Files  5 passed (5)
+      Tests  48 passed (48)
+   Start at  13:58:11
+   Duration  197ms (tests 57%, import 22%, transform 14%, worker 7%)
+

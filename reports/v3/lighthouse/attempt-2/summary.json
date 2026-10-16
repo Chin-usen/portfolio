@@ -1,0 +1,753 @@
+{
+  "status": "interrupted",
+  "finished_utc": "2026-10-15T05:46:03.329134+00:00",
+  "completed_runs": 39,
+  "expected_runs": 54,
+  "full_run_pass": false,
+  "runtime_hashes_match": true,
+  "reason": "Execution session disappeared after 39 completed measurements; no live Lighthouse process remained. Chinese S1 already missed the median threshold at 92/86/85. Not a completed or passing full run.",
+  "all_raw_evidence": "Retained internally; all39 score/time/hash records and3 failed-route raw reports delivered.",
+  "runs": [
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T05:15:21.199Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2110.0879999999997,
+      "raw_file": "lhr-1792041329555.json",
+      "sha256_hex_groups": [
+        "a4ecc8ea",
+        "5712c75b",
+        "8d7ac5b4",
+        "ee497a7e",
+        "389b8491",
+        "7f726990",
+        "0c53101f",
+        "6af92a08"
+      ]
+    },
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T05:15:32.816Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1808.1014999999998,
+      "raw_file": "lhr-1792041341119.json",
+      "sha256_hex_groups": [
+        "9a862074",
+        "57c1c01e",
+        "da0015c4",
+        "04dc555e",
+        "a205cce0",
+        "26a97a87",
+        "2d02c689",
+        "748ab968"
+      ]
+    },
+    {
+      "route": "/",
+      "fetchTime": "2026-10-15T05:15:43.650Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2108.7219999999998,
+      "raw_file": "lhr-1792041352058.json",
+      "sha256_hex_groups": [
+        "cde6f94d",
+        "8534b21a",
+        "81bdb8e4",
+        "2a1d275a",
+        "b2d915ef",
+        "40a98e8c",
+        "325cc96b",
+        "ba7ff7cb"
+      ]
+    },
+    {
+      "route": "/work/",
+      "fetchTime": "2026-10-15T05:15:54.683Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1356.942,
+      "raw_file": "lhr-1792041362924.json",
+      "sha256_hex_groups": [
+        "966caffc",
+        "9573588c",
+        "2561e3c1",
+        "96a316e1",
+        "2e0eeb50",
+        "123aa803",
+        "7456d4e0",
+        "1a91b1c0"
+      ]
+    },
+    {
+      "route": "/work/",
+      "fetchTime": "2026-10-15T05:16:05.466Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2556.5025,
+      "raw_file": "lhr-1792041373652.json",
+      "sha256_hex_groups": [
+        "813a6b16",
+        "897d202a",
+        "e5e1aa60",
+        "e56390ae",
+        "8e996f10",
+        "d029ac83",
+        "c0366921",
+        "64b84274"
+      ]
+    },
+    {
+      "route": "/work/",
+      "fetchTime": "2026-10-15T05:16:16.210Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2255.583,
+      "raw_file": "lhr-1792041384463.json",
+      "sha256_hex_groups": [
+        "0feef931",
+        "73e11c74",
+        "9274f781",
+        "9c891047",
+        "7c55c898",
+        "e854f7eb",
+        "320858df",
+        "d747840e"
+      ]
+    },
+    {
+      "route": "/work/sample-case/",
+      "fetchTime": "2026-10-15T05:16:27.010Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1658.3519999999999,
+      "raw_file": "lhr-1792041395355.json",
+      "sha256_hex_groups": [
+        "b9ee17cb",
+        "60d871a9",
+        "0e4a100f",
+        "2a20f3ea",
+        "c704ad66",
+        "29d0aa3b",
+        "fa8ab84f",
+        "6d7de57b"
+      ]
+    },
+    {
+      "route": "/work/sample-case/",
+      "fetchTime": "2026-10-15T05:16:37.930Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2556.135,
+      "raw_file": "lhr-1792041406235.json",
+      "sha256_hex_groups": [
+        "b96285f1",
+        "7e36e23e",
+        "5458a0f6",
+        "70dc8b57",
+        "b645eef0",
+        "9d5a11af",
+        "d1b4f47d",
+        "788e8a7b"
+      ]
+    },
+    {
+      "route": "/work/sample-case/",
+      "fetchTime": "2026-10-15T05:16:48.807Z",
+      "performance": 93.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2558.805,
+      "raw_file": "lhr-1792041417103.json",
+      "sha256_hex_groups": [
+        "dca7df91",
+        "c3b59b13",
+        "513b20b6",
+        "538909b8",
+        "ef864445",
+        "bc03e132",
+        "6e5d4175",
+        "31e2cd73"
+      ]
+    },
+    {
+      "route": "/lab/",
+      "fetchTime": "2026-10-15T05:16:59.637Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2255.2215,
+      "raw_file": "lhr-1792041427983.json",
+      "sha256_hex_groups": [
+        "6e4dcd01",
+        "012cd73c",
+        "f13f83d7",
+        "5035ede9",
+        "8bf25699",
+        "531052c7",
+        "e586c050",
+        "1ad2cf1a"
+      ]
+    },
+    {
+      "route": "/lab/",
+      "fetchTime": "2026-10-15T05:17:10.547Z",
+      "performance": 98.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1957.4325,
+      "raw_file": "lhr-1792041438847.json",
+      "sha256_hex_groups": [
+        "fc06c976",
+        "3cf37e4c",
+        "2d26b754",
+        "302fed0a",
+        "16fe2235",
+        "d3e73e15",
+        "a5b186f9",
+        "55c0657b"
+      ]
+    },
+    {
+      "route": "/lab/",
+      "fetchTime": "2026-10-15T05:17:21.386Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1356.5565000000001,
+      "raw_file": "lhr-1792041449662.json",
+      "sha256_hex_groups": [
+        "15390fd4",
+        "54029786",
+        "672306de",
+        "8fe42106",
+        "89069db8",
+        "ccfea1cf",
+        "b1b9b304",
+        "b9beb33d"
+      ]
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "fetchTime": "2026-10-15T05:17:32.203Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1357.521,
+      "raw_file": "lhr-1792041460572.json",
+      "sha256_hex_groups": [
+        "13d2ee58",
+        "0b9d0b82",
+        "be36eaca",
+        "95b0d828",
+        "3385dd31",
+        "f3be9799",
+        "5fd8bfcf",
+        "208f8c5a"
+      ]
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "fetchTime": "2026-10-15T05:17:43.111Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2405.892,
+      "raw_file": "lhr-1792041471384.json",
+      "sha256_hex_groups": [
+        "38d97e56",
+        "1435ef31",
+        "412c695d",
+        "936f6e30",
+        "f56d4795",
+        "ebebc33f",
+        "99340dd0",
+        "8f5cd041"
+      ]
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "fetchTime": "2026-10-15T05:17:53.914Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2554.902,
+      "raw_file": "lhr-1792041482252.json",
+      "sha256_hex_groups": [
+        "dd1cc7fa",
+        "2f77b961",
+        "94b30993",
+        "5d2b270f",
+        "5372f26d",
+        "8b79ca22",
+        "82640f89",
+        "05ea422b"
+      ]
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "fetchTime": "2026-10-15T05:18:04.782Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1957.2630000000001,
+      "raw_file": "lhr-1792041493127.json",
+      "sha256_hex_groups": [
+        "dd945c73",
+        "f6ca929b",
+        "8b33df80",
+        "328690ce",
+        "ca31de24",
+        "335b7ee2",
+        "551e4104",
+        "c8e21ecf"
+      ]
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "fetchTime": "2026-10-15T05:18:15.685Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1505.4389999999999,
+      "raw_file": "lhr-1792041504079.json",
+      "sha256_hex_groups": [
+        "41e1b4cc",
+        "a5757e5d",
+        "ca640b66",
+        "f35557ad",
+        "3ec4af0c",
+        "de49fabe",
+        "59c73a8e",
+        "d349b29c"
+      ]
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "fetchTime": "2026-10-15T05:18:26.606Z",
+      "performance": 99.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1655.9279999999999,
+      "raw_file": "lhr-1792041515026.json",
+      "sha256_hex_groups": [
+        "b5de861a",
+        "f2ba22f8",
+        "b95dc1e1",
+        "78d75909",
+        "605720e6",
+        "f19ac8a2",
+        "81632796",
+        "99c2a006"
+      ]
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T05:18:37.553Z",
+      "performance": 92.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3308.492,
+      "raw_file": "lhr-1792041526069.json",
+      "sha256_hex_groups": [
+        "e0a2da34",
+        "48d35dc5",
+        "467c04dd",
+        "bc9e4f99",
+        "6f89ef1d",
+        "8acc8d9f",
+        "98c7fc1a",
+        "0863b2bf"
+      ]
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T05:18:48.622Z",
+      "performance": 86.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3312.0840000000003,
+      "raw_file": "lhr-1792041537107.json",
+      "sha256_hex_groups": [
+        "bb5ed87a",
+        "2c6aa67d",
+        "2669ac98",
+        "cacb6df1",
+        "735303bd",
+        "a8ed8933",
+        "500cd0d6",
+        "4598121e"
+      ]
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "fetchTime": "2026-10-15T05:18:59.634Z",
+      "performance": 85.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 3312.724,
+      "raw_file": "lhr-1792041548153.json",
+      "sha256_hex_groups": [
+        "487da6fe",
+        "6f0d482d",
+        "07ffb3f8",
+        "d647fa8a",
+        "37dcff1f",
+        "2ad62c2e",
+        "c49832ee",
+        "265d52b4"
+      ]
+    },
+    {
+      "route": "/about/",
+      "fetchTime": "2026-10-15T05:19:10.687Z",
+      "performance": 93.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2554.6980000000003,
+      "raw_file": "lhr-1792041559002.json",
+      "sha256_hex_groups": [
+        "938fbc9f",
+        "0e094d54",
+        "c93430e6",
+        "c5b1eeb6",
+        "787a75bb",
+        "30cd0986",
+        "7dfb82f6",
+        "149b6e2b"
+      ]
+    },
+    {
+      "route": "/about/",
+      "fetchTime": "2026-10-15T05:19:21.583Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1057.254,
+      "raw_file": "lhr-1792041569850.json",
+      "sha256_hex_groups": [
+        "64b9df5c",
+        "80516782",
+        "f2d32785",
+        "6966056b",
+        "0d017a6c",
+        "fc7aa972",
+        "af1ce674",
+        "93c489d5"
+      ]
+    },
+    {
+      "route": "/about/",
+      "fetchTime": "2026-10-15T05:19:32.380Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2554.209,
+      "raw_file": "lhr-1792041580655.json",
+      "sha256_hex_groups": [
+        "b6b8924d",
+        "8efc79bf",
+        "8b46722b",
+        "048b9de0",
+        "6850592b",
+        "6fe7f3ed",
+        "a49d781a",
+        "28ceef44"
+      ]
+    },
+    {
+      "route": "/contact/",
+      "fetchTime": "2026-10-15T05:19:43.180Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1356.057,
+      "raw_file": "lhr-1792041591489.json",
+      "sha256_hex_groups": [
+        "72552b3d",
+        "22d5cb08",
+        "ea504a32",
+        "c80e8a5a",
+        "eddb79e7",
+        "08380b42",
+        "71f7c639",
+        "6e359be8"
+      ]
+    },
+    {
+      "route": "/contact/",
+      "fetchTime": "2026-10-15T05:19:53.985Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1357.002,
+      "raw_file": "lhr-1792041602297.json",
+      "sha256_hex_groups": [
+        "c14a46a8",
+        "b028715a",
+        "63208429",
+        "ad00a42f",
+        "7abbcd96",
+        "8b01e501",
+        "87d6a2ee",
+        "6859c76b"
+      ]
+    },
+    {
+      "route": "/contact/",
+      "fetchTime": "2026-10-15T05:20:04.814Z",
+      "performance": 97.0,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 2554.1175,
+      "raw_file": "lhr-1792041613100.json",
+      "sha256_hex_groups": [
+        "eaba28c2",
+        "0da29bee",
+        "88129d43",
+        "0e28a56c",
+        "a2a6e2c8",
+        "455b06a1",
+        "02f86702",
+        "2fe3cf6c"
+      ]
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T05:20:15.613Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1504.7024999999999,
+      "raw_file": "lhr-1792041623996.json",
+      "sha256_hex_groups": [
+        "6b41f72b",
+        "c5dc6d14",
+        "5eafc2d5",
+        "26373c5f",
+        "df546641",
+        "ddaeddc7",
+        "53d781b6",
+        "cf6364a6"
+      ]
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T05:20:26.537Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1505.6129999999998,
+      "raw_file": "lhr-1792041634863.json",
+      "sha256_hex_groups": [
+        "722a8172",
+        "44858be2",
+        "0a711fbf",
+        "153316cf",
+        "f06490b6",
+        "9eef5d0d",
+        "ee51e29d",
+        "e4f25c7e"
+      ]
+    },
+    {
+      "route": "/en/",
+      "fetchTime": "2026-10-15T05:20:37.398Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1504.7250000000001,
+      "raw_file": "lhr-1792041645791.json",
+      "sha256_hex_groups": [
+        "d592baeb",
+        "93fa9993",
+        "73437ade",
+        "9273a76c",
+        "ce345d1a",
+        "a13b6166",
+        "600077fb",
+        "1ca0332b"
+      ]
+    },
+    {
+      "route": "/en/work/",
+      "fetchTime": "2026-10-15T05:20:48.345Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1053.6989999999998,
+      "raw_file": "lhr-1792041656567.json",
+      "sha256_hex_groups": [
+        "892e17d6",
+        "650c5672",
+        "c200f836",
+        "e3a528df",
+        "79c949e8",
+        "103d814f",
+        "9f6d5e42",
+        "de8c89d2"
+      ]
+    },
+    {
+      "route": "/en/work/",
+      "fetchTime": "2026-10-15T05:20:59.090Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1055.583,
+      "raw_file": "lhr-1792041667340.json",
+      "sha256_hex_groups": [
+        "1ffbb2d9",
+        "bc8efd72",
+        "42ddd1c9",
+        "4a27e360",
+        "8632d287",
+        "652d9a49",
+        "5d7350bf",
+        "8c0d6480"
+      ]
+    },
+    {
+      "route": "/en/work/",
+      "fetchTime": "2026-10-15T05:21:09.880Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1054.047,
+      "raw_file": "lhr-1792041678166.json",
+      "sha256_hex_groups": [
+        "0bd9e00c",
+        "67474ae0",
+        "b20b6af4",
+        "ffd51c07",
+        "74073111",
+        "0e2e55b8",
+        "d17e4849",
+        "7a127516"
+      ]
+    },
+    {
+      "route": "/en/work/sample-case/",
+      "fetchTime": "2026-10-15T05:21:20.712Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1202.4015000000002,
+      "raw_file": "lhr-1792041688998.json",
+      "sha256_hex_groups": [
+        "6d8f2ec3",
+        "4b49fb02",
+        "8a791ce6",
+        "2d3818f0",
+        "51d2b92d",
+        "6209f25d",
+        "97558ec0",
+        "49fd83cc"
+      ]
+    },
+    {
+      "route": "/en/work/sample-case/",
+      "fetchTime": "2026-10-15T05:21:31.552Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1205.121,
+      "raw_file": "lhr-1792041699868.json",
+      "sha256_hex_groups": [
+        "cafdba76",
+        "bd8c9333",
+        "312eeecc",
+        "0a7a6ec8",
+        "c6c32f9f",
+        "baebbae7",
+        "27517090",
+        "b75a4855"
+      ]
+    },
+    {
+      "route": "/en/work/sample-case/",
+      "fetchTime": "2026-10-15T05:21:42.405Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1204.1729999999998,
+      "raw_file": "lhr-1792041710785.json",
+      "sha256_hex_groups": [
+        "cd0c07f9",
+        "7b3f345d",
+        "2a44ea69",
+        "aa9394ca",
+        "4097fa8b",
+        "58973b70",
+        "a76938a0",
+        "f6475786"
+      ]
+    },
+    {
+      "route": "/en/lab/",
+      "fetchTime": "2026-10-15T05:21:53.314Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1053.672,
+      "raw_file": "lhr-1792041721649.json",
+      "sha256_hex_groups": [
+        "0a720267",
+        "5747893e",
+        "1028ac71",
+        "5114facf",
+        "9614141a",
+        "38f6bdc9",
+        "357e24a2",
+        "afc0ce55"
+      ]
+    },
+    {
+      "route": "/en/lab/",
+      "fetchTime": "2026-10-15T05:22:04.176Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1053.453,
+      "raw_file": "lhr-1792041732416.json",
+      "sha256_hex_groups": [
+        "d787a283",
+        "d0cdaab5",
+        "ca94a182",
+        "ff416ec0",
+        "5b0f9623",
+        "162c35b8",
+        "f0ae4080",
+        "0fa092dc"
+      ]
+    },
+    {
+      "route": "/en/lab/",
+      "fetchTime": "2026-10-15T05:22:14.962Z",
+      "performance": 100,
+      "accessibility": 100,
+      "seo": 100,
+      "lcp_ms": 1052.382,
+      "raw_file": "lhr-1792041743234.json",
+      "sha256_hex_groups": [
+        "fc1c762d",
+        "d4f1a54c",
+        "b9530ea5",
+        "298e63a5",
+        "be5a7712",
+        "442a47bd",
+        "9d1248a0",
+        "f50d2fb4"
+      ]
+    }
+  ]
+}

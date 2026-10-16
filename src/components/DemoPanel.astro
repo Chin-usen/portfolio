@@ -1,0 +1,46 @@
+---
+import { getUi } from '../i18n/dictionaries';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const ui = getUi(Astro.props.locale);
+---
+
+<lazy-demos class="demo-panel section" data-labels={JSON.stringify(ui.demo)}>
+  <h2>{ui.demo.title}</h2>
+  <p>{ui.demo.description}</p>
+  <p>{ui.demo.motionPreference}</p>
+  <div class="demo-controls">
+    <button type="button" data-demo="three">
+      {ui.demo.three}
+    </button>
+    <button type="button" data-demo="animation">
+      {ui.demo.animation}
+    </button>
+    <button type="button" data-demo="lenis">
+      {ui.demo.lenis}
+    </button>
+    <button type="button" data-demo-reset>
+      {ui.demo.reset}
+    </button>
+  </div>
+  <p role="status" aria-live="polite" data-testid="demo-status"></p>
+  <div class="demo-stage" data-testid="demo-stage"></div>
+  <noscript>
+    <p>{ui.demo.disabledJs}</p>
+  </noscript>
+</lazy-demos>
+<script>
+  import { initializeDemos } from '../scripts/demos';
+  class LazyDemos extends HTMLElement {
+    cleanup?: () => void;
+    connectedCallback() {
+      if (!this.cleanup) this.cleanup = initializeDemos(this);
+    }
+    disconnectedCallback() {
+      this.cleanup?.();
+      this.cleanup = undefined;
+    }
+  }
+  if (!customElements.get('lazy-demos')) customElements.define('lazy-demos', LazyDemos);
+</script>

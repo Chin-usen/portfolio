@@ -1,0 +1,46 @@
+﻿---
+import { getUi } from '../i18n/dictionaries';
+interface Props {
+  user: string;
+  domain: string;
+  locale: 'zh' | 'en';
+}
+const { user, domain, locale } = Astro.props;
+const ui = getUi(locale);
+---
+
+<obfuscated-email data-user={user} data-domain={domain}>
+  <button type="button" data-testid="email-reveal">
+    {ui.about.showEmail}
+  </button>
+  <noscript>
+    <span>{ui.about.emailUnavailable}</span>
+  </noscript>
+</obfuscated-email>
+<script>
+  class ObfuscatedEmail extends HTMLElement {
+    connectedCallback() {
+      const button = this.querySelector('button');
+      if (!button || this.dataset.enhanced) return;
+      this.dataset.enhanced = 'true';
+      button.addEventListener(
+        'click',
+        () => {
+          const user = this.dataset.user;
+          const domain = this.dataset.domain;
+          if (!user || !domain) return;
+          const address = [user, domain].join('@');
+          const link = document.createElement('a');
+          link.href = `mailto:${address}`;
+          link.dataset.testid = 'email-address';
+          link.textContent = address;
+          button.replaceWith(link);
+          link.focus();
+        },
+        { once: true },
+      );
+    }
+  }
+  if (!customElements.get('obfuscated-email'))
+    customElements.define('obfuscated-email', ObfuscatedEmail);
+</script>

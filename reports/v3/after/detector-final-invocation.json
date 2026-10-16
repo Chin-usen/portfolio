@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-15T05:04:24.477243+00:00",
+  "tool_commit": "2f98774f86bc05563876643db37e6c37c322850f",
+  "command": "impeccable detect --json dist/index.html dist/en/index.html dist/lab/chip-junction-temperature/index.html dist/en/lab/chip-junction-temperature/index.html",
+  "exit_code": 2,
+  "findings": 3,
+  "distinct_css_rules": 1,
+  "scope_note": "Three identical tiny-text warnings:11px secondary metric captions specified by immutable D1-mobile.html. Retained reference constraint; not suppressed.",
+  "redaction": "Absolute personal file path converted to project-relative path; other detector fields unchanged. Raw original retained locally.",
+  "original_stdout_sha256": "bbc1dc0883882e7d608eab0f469521f14d6c05dfdfca610aa2b0936e56d6ee15",
+  "delivered_stdout_sha256": "d37d544e439ff13c03b23faceb7be6f00550f783df4580c577f18e8e8d131651",
+  "built_hashes": {
+    "dist/index.html": "66b1fbdeada39cffa877a1057f6c3ccf0506f7ef7838246f74faaf10656027d7",
+    "dist/en/index.html": "07ffdfbee27e3d8608fe3bddc2c8c35632a21cc79dbf1aab1529ebc849c206dc",
+    "dist/lab/chip-junction-temperature/index.html": "02d6665bee81bb2c69421a7806ef21a8f8ce3abbcb9b67e7e85dcd334c6db38e",
+    "dist/en/lab/chip-junction-temperature/index.html": "91b3ed3e1cd9f899677e34b7fa6676f37240153b20f5a8a1635038c2a625cfaa"
+  }
+}

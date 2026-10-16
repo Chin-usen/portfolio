@@ -1,0 +1,146 @@
+$ lhci autorun
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Started a web server on port 57689...
+Running Lighthouse 3 time(s) on http://localhost:57689/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/work/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/work/sample-case/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/lab/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/lab/sample-teardown/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/lab/sample-simulation/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/about/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/contact/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/work/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/work/sample-case/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/lab/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/lab/sample-teardown/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/lab/sample-simulation/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/about/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:57689/en/contact/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+Checking assertions against 18 URL(s), 54 total run(s)
+
+1 result(s) for [1mhttp://localhost:57689/en/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.87[0m
+      [2mall values: 0.87, 0.87, 0.87[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/work/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.88[0m
+      [2mall values: 0.88, 0.88, 0.88[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/work/sample-case/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.86[0m
+      [2mall values: 0.86, 0.87, 0.86[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/lab/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.88[0m
+      [2mall values: 0.88, 0.88, 0.88[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/lab/sample-teardown/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.87[0m
+      [2mall values: 0.87, 0.87, 0.87[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/lab/sample-simulation/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.87[0m
+      [2mall values: 0.87, 0.87, 0.87[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/about/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.88[0m
+      [2mall values: 0.88, 0.88, 0.88[0m
+
+1 result(s) for [1mhttp://localhost:57689/en/contact/[0m :
+
+  [31m×[0m  [1mcategories[0m.performance failure for [1mminScore[0m assertion
+        expected: >=[32m0.9[0m
+           found: [31m0.89[0m
+      [2mall values: 0.89, 0.89, 0.88[0m
+
+Assertion failed. Exiting with status code 1.
+
+Dumping 54 reports to disk at <workspace>\portfolio-main-v2\.lighthouseci\reports...
+Done writing reports to disk.
+
+assert command failed. Exiting with status code 1.
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,14 @@
+Command: pnpm typecheck
+Started: 2026-10-15T04:25:49.505043+00:00
+Exit: 0
+
+$ astro check
+13:25:51 [content] Syncing content
+13:25:51 [content] Synced content
+13:25:51 [types] Generated 395ms
+13:25:51 [check] Getting diagnostics for Astro files in <workspace>\portfolio-main-v3...
+Result (77 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

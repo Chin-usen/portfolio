@@ -1,0 +1,20 @@
+{
+    "assessment":  "B",
+    "phase":  "after-built-markup",
+    "startedUtc":  "2026-10-15T04:11:08.3988685Z",
+    "endedUtc":  "2026-10-15T04:11:08.5444129Z",
+    "cwd":  "<workspace>\\portfolio-main-v3",
+    "invocation":  "\"<workspace>\\.dev-tools\\skills\\impeccable\\scripts\\impeccable.cmd\" detect --json \"dist/index.html\" \"dist/en/index.html\" \"dist/lab/chip-junction-temperature/index.html\" \"dist/en/lab/chip-junction-temperature/index.html\"",
+    "executable":  "C:\\Windows\\system32\\cmd.exe",
+    "arguments":  "/d /s /c \"\"<workspace>\\.dev-tools\\skills\\impeccable\\scripts\\impeccable.cmd\" detect --json \"dist/index.html\" \"dist/en/index.html\" \"dist/lab/chip-junction-temperature/index.html\" \"dist/en/lab/chip-junction-temperature/index.html\"\"",
+    "exitCode":  2,
+    "stdout":  "detector-built.stdout.json",
+    "stderr":  "detector-built.stderr.txt",
+    "scope":  [
+                  "dist/index.html",
+                  "dist/en/index.html",
+                  "dist/lab/chip-junction-temperature/index.html",
+                  "dist/en/lab/chip-junction-temperature/index.html"
+              ],
+    "browserStarted":  false
+}

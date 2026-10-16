@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>v3 · D1 设计对照</title>
+<style>
+:root{color-scheme:light dark;font:16px/1.6 system-ui,sans-serif;background:#fbfbfd;color:#1d1d1f}body{margin:0;padding:32px;max-width:1800px;margin-inline:auto}h1{margin:0}p{max-width:90ch}a{color:#0066cc}nav{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}label{display:grid;gap:4px}select{font:inherit;min-height:44px;padding:4px 12px;border:1px solid #999;border-radius:6px}main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}figure{margin:0;min-width:0}figcaption{font-weight:600;margin-bottom:8px}img{width:100%;height:auto;display:block;border:1px solid #ddd}small{display:block;font-weight:400;color:#6e6e73}.links{columns:2;margin-top:32px}.links a{display:block;min-height:44px}a:focus-visible,select:focus-visible{outline:3px solid #0066cc;outline-offset:4px}@media(max-width:800px){body{padding:16px}main{grid-template-columns:1fr}.links{columns:1}}@media(prefers-color-scheme:dark){:root{background:#000;color:#f5f5f7}a{color:#2997ff}small{color:#a1a1a6}img{border-color:#424245}}
+</style>
+<header>
+<h1>主线 v3 · D1 设计对照</h1>
+<p>16 个实现状态：首页 / S1 × 中文 / 英文 × 桌面 1440 / 手机 390 × 浅色 / 深色。原始示意稿只有中文浅色；英文与深色沿用同一结构和令牌。S1 的布局按本次明确要求采用顶部测量栏与左右双栏，原始 S1 示意稿用于视觉样式参考。</p>
+<p>左：原始示意稿；中：v3 实现；右：修改前 v2。图片可点击查看原始分辨率。本页仅用于离线查看截图，不运行仿真。</p>
+<nav aria-label="截图状态">
+<label>页面<select id="surface"><option value="home">首页 Home</option><option value="s1">S1 结温</option></select></label>
+<label>语言<select id="locale"><option value="zh">中文</option><option value="en">English</option></select></label>
+<label>宽度<select id="width"><option value="1440">桌面 1440</option><option value="390">手机 390</option></select></label>
+<label>主题<select id="theme"><option value="light">浅色</option><option value="dark">深色</option></select></label>
+</nav>
+</header>
+<main>
+<figure><figcaption>原始示意稿<small id="reference-note">D1-desktop · 中文浅色</small></figcaption><a id="reference-link" href="../../docs/design/D1-desktop.jpg"><img id="reference" src="../../docs/design/D1-desktop.jpg" alt="提供的原始 D1 桌面示意稿"></a></figure>
+<figure><figcaption>v3 实现<small id="current-note">home · zh · 1440 · light</small></figcaption><a id="current-link" href="after/A/home-zh-1440-light.png"><img id="current" src="after/A/home-zh-1440-light.png" alt="v3 首页中文桌面浅色完整截图"></a></figure>
+<figure><figcaption>修改前 v2<small>同一页面、语言、宽度与主题</small></figcaption><a id="before-link" href="before/A/home-zh-1440-light.png"><img id="before" src="before/A/home-zh-1440-light.png" alt="v2 对应状态完整截图"></a></figure>
+</main>
+<section class="links" aria-label="全部 v3 截图" id="all-links"></section>
+<script>
+const controls=['surface','locale','width','theme'].map(id=>document.getElementById(id));
+function update(){const [surface,locale,width,theme]=controls.map(el=>el.value);const key=[surface,locale,width,theme].join('-');const ref=surface==='s1'?'S1-desktop':width==='390'?'D1-mobile':'D1-desktop';for(const [name,path]of[['reference',`../../docs/design/${ref}.jpg`],['current',`after/A/${key}.png`],['before',`before/A/${key}.png`]]){document.getElementById(name).src=path;document.getElementById(name+'-link').href=path;}document.getElementById('current').alt=`v3 ${key} 完整截图`;document.getElementById('before').alt=`v2 ${key} 完整截图`;document.getElementById('reference').alt=`原始 ${ref} 示意稿`;document.getElementById('current-note').textContent=key;document.getElementById('reference-note').textContent=`${ref} · 中文浅色${surface==='s1'&&width==='390'?'（未提供独立手机版参考）':''}`;}
+controls.forEach(el=>el.addEventListener('change',update));
+for(const surface of['home','s1'])for(const locale of['zh','en'])for(const width of['1440','390'])for(const theme of['light','dark']){const key=[surface,locale,width,theme].join('-');const a=document.createElement('a');a.href=`after/A/${key}.png`;a.textContent=key;document.getElementById('all-links').append(a);}
+</script>
+</html>

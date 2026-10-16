@@ -1,0 +1,90 @@
+{
+  "repository": "https://github.com/Chin-usen/portfolio",
+  "copy_method": "Byte-exact Git blobs: main docs plus design/d1-mockups docs/design; authoritative files are not edited.",
+  "files": [
+    {
+      "file": "docs/COLLABORATION.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 1327,
+      "sha256": "531b38f119bbecf5f809057755c849f6abef534e5d57047563ae14a39385ce5d"
+    },
+    {
+      "file": "docs/CONTENT_POLICY.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 1349,
+      "sha256": "6630c43af87a328200c46732bb264d249a392b10fd79c5222acf0bf555382c17"
+    },
+    {
+      "file": "docs/DESIGN.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 1075,
+      "sha256": "f87ecf519d528f6fe162a5310b7d4ea5aef27c080aded32de38e11425d4d57b1"
+    },
+    {
+      "file": "docs/PRD.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 3404,
+      "sha256": "d428795bc9b691e27bc4fe2f940efd27318d5ec53cf67d8ac136e9630eeb35e7"
+    },
+    {
+      "file": "docs/adr/0001-astro-cloudflare-pages.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 776,
+      "sha256": "5667839b7ba29b0f8881cb1e4adb713afb538826e874abd53962bb4e9c1faf85"
+    },
+    {
+      "file": "docs/adr/0002-offline-fem-surrogate.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 854,
+      "sha256": "e405e192c8327653b2e70c8266924602876f2e9924853ff8ccb628f793d9be6b"
+    },
+    {
+      "file": "docs/adr/0003-open-source-toolchain.md",
+      "source_commit": "dd722bb5615d7eaaa3209d5633ee8f6b3a8e18a4",
+      "bytes": 345,
+      "sha256": "59ea73890e6b859f81b02c2a8676f9a8e3f723cbeea9de3083c6e5e8499c4487"
+    },
+    {
+      "file": "docs/design/D1-desktop.html",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 11503,
+      "sha256": "8932320c369895957fde41b0f4c8bd5c3d923f6ad4d1bf943fc3e5d19473cabe"
+    },
+    {
+      "file": "docs/design/D1-desktop.jpg",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 234089,
+      "sha256": "ffd50706b097c7b0e416d5d7a0fc6775e2597a67e42f2889ed92cf23619d8bba"
+    },
+    {
+      "file": "docs/design/D1-mobile.html",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 7937,
+      "sha256": "273a62b2bada4231183ae4756808524b4f809481f0ceff1fe9477f3d7b985ff9"
+    },
+    {
+      "file": "docs/design/D1-mobile.jpg",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 84655,
+      "sha256": "c88e3806e26b305e3d05aa0670900eca06ad8890d0ab0d1d473f8dab2e9d6943"
+    },
+    {
+      "file": "docs/design/README.md",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 676,
+      "sha256": "12c92e9dae3df9e7f825d77be3f094df56302b57663654203f0a570b7dca64a3"
+    },
+    {
+      "file": "docs/design/S1-desktop.html",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 12767,
+      "sha256": "0f47cfa409a92c46c9cada9de89b6409da59f545f08a3f9c5d053a0e8885315f"
+    },
+    {
+      "file": "docs/design/S1-desktop.jpg",
+      "source_commit": "c439f3cc435fcbbf438ffe2c2259290b6c58f051",
+      "bytes": 104572,
+      "sha256": "c83892391976b3eb9e4e18db0e8f53796c9994716565a83b910ebe616b73c22b"
+    }
+  ]
+}

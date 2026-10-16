@@ -1,0 +1,896 @@
+{
+  "format": "sha256-hex-groups-v1",
+  "encoding": "Concatenate the eight 8-hex-digit groups for each source file to recover its original SHA-256. This is lossless checksum serialization, not redaction.",
+  "files": {
+    "astro.config.mjs": [
+      "b8ffbc97",
+      "c8270af6",
+      "6836d4d4",
+      "a3e05b68",
+      "0bb59999",
+      "e74a80c2",
+      "175df0c5",
+      "64b7d32e"
+    ],
+    "lighthouserc.cjs": [
+      "8850cc12",
+      "f240bfcd",
+      "ee445e9b",
+      "ddedefc6",
+      "629cb7c7",
+      "e871b24a",
+      "9e9c7ad2",
+      "3da86540"
+    ],
+    "package.json": [
+      "6706527e",
+      "814d7a6f",
+      "1b7c3e6a",
+      "a7933fac",
+      "87cc7450",
+      "665621d9",
+      "63de85c8",
+      "5b383df3"
+    ],
+    "pnpm-lock.yaml": [
+      "cb1714dd",
+      "7b2bbc0c",
+      "5398d8c2",
+      "e039546b",
+      "a0304441",
+      "18ffc68b",
+      "40f93b0e",
+      "3d6219cd"
+    ],
+    "public/fonts/noto-sans-sc-common-400-normal.woff2": [
+      "0e9f9eb0",
+      "c842d09c",
+      "83a15e3c",
+      "48fed13f",
+      "382e4643",
+      "7541e51d",
+      "44a69a52",
+      "92a9715a"
+    ],
+    "public/fonts/noto-sans-sc-common-500-normal.woff2": [
+      "1f877536",
+      "946ae2af",
+      "2f43b4f9",
+      "47b98a4f",
+      "b012d217",
+      "188cddd0",
+      "1dac02cf",
+      "53f82387"
+    ],
+    "public/fonts/noto-sans-sc-common-600-normal.woff2": [
+      "ddade225",
+      "06361c3c",
+      "bb404f61",
+      "1dc135dc",
+      "2e15e1e7",
+      "2d6c5b6d",
+      "ac93e3b1",
+      "7582a8bc"
+    ],
+    "public/fonts/noto-sans-sc-common-700-normal.woff2": [
+      "d78f0649",
+      "4ed73ee6",
+      "9e3751a5",
+      "84d410d6",
+      "1073feeb",
+      "2c821f89",
+      "73c791c8",
+      "a51f1313"
+    ],
+    "public/fonts/noto-sans-sc-content-400-normal.woff2": [
+      "23695b2c",
+      "39d01aed",
+      "6c877cc2",
+      "1000cca2",
+      "1e2ffaf4",
+      "027a2158",
+      "2f71644c",
+      "7d4da697"
+    ],
+    "public/fonts/noto-sans-sc-content-500-normal.woff2": [
+      "523aaef5",
+      "5b1feee2",
+      "cb30b3ad",
+      "54731fe1",
+      "16bbc130",
+      "7668ce6c",
+      "b28a648e",
+      "e8bd6796"
+    ],
+    "public/fonts/noto-sans-sc-content-600-normal.woff2": [
+      "bb83cc1c",
+      "a12efaed",
+      "25d21545",
+      "4b8cf73f",
+      "174ff71f",
+      "254d7e70",
+      "c9ce8a32",
+      "2e59358e"
+    ],
+    "public/fonts/noto-sans-sc-content-700-normal.woff2": [
+      "cb7de835",
+      "9a19eb7d",
+      "837512ae",
+      "908b5dbe",
+      "6f77c7f7",
+      "023f4c5d",
+      "d3aeb694",
+      "c9f4a814"
+    ],
+    "public/fonts/noto-sans-sc-subset-manifest.json": [
+      "0617875a",
+      "33176d66",
+      "7f7902d1",
+      "77095bde",
+      "8d5b6ccc",
+      "666ff5cc",
+      "8b4c904c",
+      "30f0f175"
+    ],
+    "public/fonts/noto-sans-sc-symbols-109-400-normal.woff2": [
+      "017c07c2",
+      "4cc4c5b9",
+      "760756b8",
+      "3dcc9192",
+      "98eabc64",
+      "33044c31",
+      "3e495345",
+      "8a381876"
+    ],
+    "public/fonts/noto-sans-sc-symbols-109-500-normal.woff2": [
+      "9ba4200b",
+      "4ef59341",
+      "d57b5d0f",
+      "1d9e0146",
+      "df89b61e",
+      "e8b4aaf7",
+      "9c1a9e3f",
+      "3106140d"
+    ],
+    "public/fonts/noto-sans-sc-symbols-109-600-normal.woff2": [
+      "e94cf97e",
+      "578d3093",
+      "2362c6a4",
+      "c12a3f6a",
+      "377b1fa2",
+      "3b5ef3e6",
+      "b6333b8b",
+      "7ec418b6"
+    ],
+    "public/fonts/noto-sans-sc-symbols-109-700-normal.woff2": [
+      "b579b3f9",
+      "0146f355",
+      "52061ce0",
+      "41d1936e",
+      "558c38aa",
+      "1bd46bf9",
+      "4bf2bc6f",
+      "acf79a16"
+    ],
+    "public/fonts/OFL.txt": [
+      "18aabf19",
+      "0848725e",
+      "2576eefb",
+      "5c29ba06",
+      "aac1029d",
+      "02132252",
+      "a7f312ea",
+      "c2e50cf3"
+    ],
+    "src/components/AboutPage.astro": [
+      "62cb1eb1",
+      "74fdfc1f",
+      "b7b98c6d",
+      "54c64a3d",
+      "61dc6530",
+      "da4868ba",
+      "a271436a",
+      "0d0d5d3a"
+    ],
+    "src/components/CaseCard.astro": [
+      "a03771f4",
+      "d14a126f",
+      "9f293350",
+      "e23dae34",
+      "129e7222",
+      "d038fca9",
+      "019e0bfd",
+      "e88c42f7"
+    ],
+    "src/components/ContactPage.astro": [
+      "75ebe127",
+      "49dd8593",
+      "9377d4da",
+      "225039df",
+      "800ad74c",
+      "76178d73",
+      "4954f88d",
+      "4b6cebdf"
+    ],
+    "src/components/DemoPanel.astro": [
+      "6da1a0fa",
+      "1dcf1a91",
+      "744c71d3",
+      "c2b8d908",
+      "cd0db5fc",
+      "edbdc884",
+      "da94f63f",
+      "ab875e23"
+    ],
+    "src/components/Footer.astro": [
+      "aeb91727",
+      "b8df100b",
+      "7364828e",
+      "d5d0d3ad",
+      "80856f0e",
+      "c01aaa7a",
+      "d7aa4570",
+      "a44ccdc3"
+    ],
+    "src/components/Header.astro": [
+      "12934d89",
+      "04dd965c",
+      "1c0c54e6",
+      "f13838fc",
+      "faed9a1b",
+      "f55cc5dd",
+      "00d83002",
+      "0da74488"
+    ],
+    "src/components/HomePage.astro": [
+      "03faf0fb",
+      "8fdd0cbb",
+      "17e6ea19",
+      "72be9f52",
+      "267bd885",
+      "47dc401f",
+      "697cc55d",
+      "7ae99383"
+    ],
+    "src/components/lab/thermal-stack/client.ts": [
+      "0d7b15ed",
+      "adb74159",
+      "732e494b",
+      "836a3edb",
+      "558dd12e",
+      "000fb7e3",
+      "ca48342b",
+      "e55713e5"
+    ],
+    "src/components/lab/thermal-stack/copy.ts": [
+      "741b228f",
+      "1b33f033",
+      "1ccaa9d5",
+      "b5141aa2",
+      "c3e7b491",
+      "d7f8c1bf",
+      "f80e17aa",
+      "67bbc699"
+    ],
+    "src/components/lab/thermal-stack/evaluator.ts": [
+      "0e7f0e23",
+      "7ee08e46",
+      "426e34e1",
+      "a215e90e",
+      "c2d6044f",
+      "44c85538",
+      "b9843d75",
+      "a8cd5eee"
+    ],
+    "src/components/lab/thermal-stack/fem/evaluator.ts": [
+      "bc09c24a",
+      "d82dcaaf",
+      "d9b4b671",
+      "b5a7e4ef",
+      "23765f96",
+      "fd4310d0",
+      "0aab6f65",
+      "b02f5bd9"
+    ],
+    "src/components/lab/thermal-stack/fem/LICENSE.txt": [
+      "7d768fa6",
+      "0f69a108",
+      "0dfe272c",
+      "b5099c9d",
+      "2dbc7bee",
+      "26c05c43",
+      "f47c09b6",
+      "883a745e"
+    ],
+    "src/components/lab/thermal-stack/fem-adapter.ts": [
+      "9390e781",
+      "b0becaa3",
+      "78d3ff6c",
+      "b67bf1ac",
+      "f583793b",
+      "4d076614",
+      "6ebe69f5",
+      "a77aec40"
+    ],
+    "src/components/lab/thermal-stack/field-sampler.ts": [
+      "1d5b1b8b",
+      "d681f89c",
+      "6396917b",
+      "02416e3a",
+      "c6e2cc41",
+      "309fc2de",
+      "aec31a9f",
+      "d5e15871"
+    ],
+    "src/components/lab/thermal-stack/parameters.ts": [
+      "5c58d1c2",
+      "e2ab8594",
+      "f8507a5c",
+      "897ec22a",
+      "91a9fdd8",
+      "d1ac449b",
+      "493f8b38",
+      "b646995e"
+    ],
+    "src/components/lab/thermal-stack/thermal.css": [
+      "741990d6",
+      "bd96c488",
+      "693b3afb",
+      "eaea1664",
+      "82250e09",
+      "3684b6a0",
+      "69975c86",
+      "3704fcbf"
+    ],
+    "src/components/lab/thermal-stack/ThermalStack.astro": [
+      "417c053d",
+      "f2e8fd78",
+      "da4e8e8e",
+      "c057bd6a",
+      "f2f8d631",
+      "fe4c5138",
+      "a450fee9",
+      "c27d8175"
+    ],
+    "src/components/lab/thermal-stack/types.ts": [
+      "ce761fa4",
+      "ed3ad616",
+      "2ec3b6bc",
+      "652cc2fc",
+      "dffcfebb",
+      "89338381",
+      "005a637b",
+      "d579652d"
+    ],
+    "src/components/lab/thermal-stack/viewer-fallback.ts": [
+      "963968e1",
+      "e6e495f6",
+      "e7427f51",
+      "9002fe19",
+      "ee9a1e36",
+      "f261976c",
+      "40f0f910",
+      "254a3b61"
+    ],
+    "src/components/lab/thermal-stack/viewer-shared.ts": [
+      "b954ed04",
+      "b35a899f",
+      "de119025",
+      "2d1bb57e",
+      "b1fe37ca",
+      "3cbac604",
+      "c0594b1a",
+      "b35a2987"
+    ],
+    "src/components/lab/thermal-stack/viewer.ts": [
+      "89b666d6",
+      "05ae103c",
+      "db024010",
+      "96801ad4",
+      "3a5de6d9",
+      "966bb350",
+      "1c200663",
+      "b43e38c1"
+    ],
+    "src/components/LabCard.astro": [
+      "4ec3e4bf",
+      "29db142b",
+      "7434b1af",
+      "1c2a1454",
+      "11b5ea2e",
+      "b8965657",
+      "c301a361",
+      "84f7fa7e"
+    ],
+    "src/components/LabDetail.astro": [
+      "1ae7030e",
+      "80c85445",
+      "37324bae",
+      "11073ec0",
+      "f48d7b79",
+      "ed7ce7a0",
+      "cd9d51b4",
+      "9a811cf3"
+    ],
+    "src/components/LabIndex.astro": [
+      "ce37a02f",
+      "c5995cb2",
+      "ef5bb22d",
+      "2cdf8f83",
+      "9bc9ed86",
+      "74cb93f1",
+      "0b59ad9c",
+      "686e32d6"
+    ],
+    "src/components/MetricRow.astro": [
+      "14660933",
+      "ddf53a89",
+      "baa72ee7",
+      "a37b6386",
+      "b51ccc22",
+      "97b038e0",
+      "97cd3f74",
+      "6eb2ba29"
+    ],
+    "src/components/NotFoundPage.astro": [
+      "ca770ece",
+      "34009c2f",
+      "9b0cdaa9",
+      "396cae72",
+      "54cc156c",
+      "bf273817",
+      "54599d25",
+      "bba334c9"
+    ],
+    "src/components/ObfuscatedEmail.astro": [
+      "2b2654dd",
+      "06120ebf",
+      "a9c8ff4d",
+      "f6be4291",
+      "a5170212",
+      "c7894d07",
+      "3c80f42d",
+      "f7488112"
+    ],
+    "src/components/WorkDetail.astro": [
+      "9032508d",
+      "2580f3e4",
+      "f824938f",
+      "fb538195",
+      "fe50bb65",
+      "2b5de2d7",
+      "9931f041",
+      "f7d1e2a9"
+    ],
+    "src/components/WorkIndex.astro": [
+      "74eeab2c",
+      "3772b348",
+      "88a499f0",
+      "d605c6ce",
+      "ac1810d7",
+      "73495e42",
+      "28735af1",
+      "2c5852a7"
+    ],
+    "src/content/home/en.json": [
+      "1e51dab2",
+      "ed9d8c65",
+      "574afd58",
+      "ccc3b5e7",
+      "02da0d95",
+      "bb6f3804",
+      "b780ac7a",
+      "77bdfd36"
+    ],
+    "src/content/home/zh.json": [
+      "3b935377",
+      "76d8aa89",
+      "dff405b4",
+      "65b1d234",
+      "beda744f",
+      "29c210a2",
+      "ac1a81a0",
+      "2e51944a"
+    ],
+    "src/content/lab/en/chip-junction-temperature.md": [
+      "6872be6f",
+      "9e386545",
+      "d766596b",
+      "9d402216",
+      "6e31370b",
+      "a310e5a8",
+      "aaaa79d0",
+      "4fbb0a55"
+    ],
+    "src/content/lab/en/sample-simulation.md": [
+      "74725654",
+      "682f6450",
+      "e0874438",
+      "96ac2c40",
+      "ce4afae1",
+      "33e0bcb9",
+      "cdb8ff1b",
+      "24a1725a"
+    ],
+    "src/content/lab/en/sample-teardown.md": [
+      "892f84d7",
+      "344799d3",
+      "2a3a93f2",
+      "81a29e5d",
+      "1819971f",
+      "faeb2775",
+      "7021186a",
+      "ced7ed0f"
+    ],
+    "src/content/lab/zh/chip-junction-temperature.md": [
+      "0121e14e",
+      "621ea4c5",
+      "4c6136f3",
+      "569df408",
+      "9008650a",
+      "4b386e34",
+      "0a61830c",
+      "da8f6715"
+    ],
+    "src/content/lab/zh/sample-simulation.md": [
+      "acd09981",
+      "060ada30",
+      "9424a4c2",
+      "8a8d3009",
+      "c734d9e7",
+      "61f224f1",
+      "2af017ac",
+      "eeed5fcc"
+    ],
+    "src/content/lab/zh/sample-teardown.md": [
+      "0b62e55e",
+      "ad670c26",
+      "a888f88d",
+      "60b460d5",
+      "01cc8687",
+      "4c9cf609",
+      "d1e7a0c9",
+      "1dec2351"
+    ],
+    "src/content/profile/en.yaml": [
+      "c7f4502f",
+      "4e0de4ab",
+      "577dffca",
+      "966b455f",
+      "417b593c",
+      "0cf156dc",
+      "1dc9922f",
+      "e9c4659d"
+    ],
+    "src/content/profile/zh.yaml": [
+      "961b38a7",
+      "d6c7c3fd",
+      "7fbd963a",
+      "9973c734",
+      "29f619bf",
+      "d50ff916",
+      "4c9cd44c",
+      "dff1cf91"
+    ],
+    "src/content/work/en/sample-case.md": [
+      "72f4216b",
+      "04bb9fea",
+      "fd19fbc5",
+      "9a62da9a",
+      "6695d1f2",
+      "0fc19b35",
+      "782775fd",
+      "895dc2f2"
+    ],
+    "src/content/work/zh/sample-case.md": [
+      "fcb2c8a8",
+      "d72794f5",
+      "53f04f5d",
+      "da1ad749",
+      "de8c66ae",
+      "4b9ba5b1",
+      "90d1eb95",
+      "99f35a99"
+    ],
+    "src/content.config.ts": [
+      "cb79c08e",
+      "bacd3c06",
+      "cd099d93",
+      "b9b2b31c",
+      "73f9aabd",
+      "f4b20cd8",
+      "f50f9c2d",
+      "7fd1a2d4"
+    ],
+    "src/i18n/dictionaries.ts": [
+      "a3e68136",
+      "86706f3b",
+      "64ae0556",
+      "7e35a98f",
+      "9f925466",
+      "d2e4b200",
+      "9b654728",
+      "41d9b6e0"
+    ],
+    "src/i18n/routing.ts": [
+      "05d9c027",
+      "dfda2939",
+      "ee0d6ba4",
+      "d4beb182",
+      "286692da",
+      "373e1b58",
+      "30273149",
+      "8feef37e"
+    ],
+    "src/i18n/utils.ts": [
+      "3e8d76f7",
+      "714175d3",
+      "feeb9037",
+      "68f07110",
+      "515d5212",
+      "5d85cb1e",
+      "3e3293a5",
+      "e99e5c31"
+    ],
+    "src/layouts/BaseLayout.astro": [
+      "a7724176",
+      "286a0a15",
+      "0ab5cc74",
+      "c58b88ae",
+      "e07769a8",
+      "1b2b25ec",
+      "d938991b",
+      "646cdd92"
+    ],
+    "src/lib/content-utils.ts": [
+      "e9289c05",
+      "d353e2de",
+      "0533ab61",
+      "bb0c7159",
+      "70707df1",
+      "70baef6c",
+      "bba39a19",
+      "ec9c5f9e"
+    ],
+    "src/lib/content.ts": [
+      "46dee36d",
+      "2afa99e8",
+      "02961856",
+      "c1918109",
+      "2bcc02cb",
+      "5a14b157",
+      "539537fb",
+      "19fcbd83"
+    ],
+    "src/pages/404.astro": [
+      "7f9aeaf3",
+      "ac27e247",
+      "b007fe45",
+      "771e0896",
+      "cfcb96c6",
+      "fa5af689",
+      "fd1b49ed",
+      "a71a2c2f"
+    ],
+    "src/pages/about.astro": [
+      "6d4c3475",
+      "78392ced",
+      "f8b2c232",
+      "10954f2b",
+      "9b9fcd03",
+      "593bf134",
+      "b025b8eb",
+      "7223873b"
+    ],
+    "src/pages/contact.astro": [
+      "43225c83",
+      "f86f77ff",
+      "1a2e9ff6",
+      "5631b85c",
+      "19c79e45",
+      "64b21353",
+      "a9982725",
+      "e869a669"
+    ],
+    "src/pages/en/404.astro": [
+      "b96459c6",
+      "f7da3757",
+      "820bf7fa",
+      "df3190b4",
+      "cc937756",
+      "8f06def4",
+      "e9cc6be6",
+      "a966f632"
+    ],
+    "src/pages/en/about.astro": [
+      "9a08737b",
+      "abe12298",
+      "678b4ba1",
+      "39e1466d",
+      "f8de6edf",
+      "516e1c03",
+      "eb7d7e7a",
+      "cfef20d5"
+    ],
+    "src/pages/en/contact.astro": [
+      "b6e2bf1d",
+      "4c742c7a",
+      "550b48f6",
+      "8ca05cdb",
+      "5c560f17",
+      "a9bcff26",
+      "4196434c",
+      "9e0ac7e3"
+    ],
+    "src/pages/en/index.astro": [
+      "09ba3c8a",
+      "70ff05b7",
+      "e49c8833",
+      "6459949b",
+      "3cf9e0fe",
+      "6c68cf2d",
+      "74a40641",
+      "c623bed3"
+    ],
+    "src/pages/en/lab/[slug].astro": [
+      "48c3a2a3",
+      "70431e83",
+      "d3903e3f",
+      "315f6d04",
+      "8910b492",
+      "f3c61709",
+      "15f95312",
+      "0d82c863"
+    ],
+    "src/pages/en/lab/index.astro": [
+      "43fe3f19",
+      "f8bbda69",
+      "8f4cb210",
+      "72ccac8d",
+      "7fc3f745",
+      "b4fa73c8",
+      "9578ca19",
+      "9ca91e3b"
+    ],
+    "src/pages/en/work/[slug].astro": [
+      "8f29252c",
+      "457e899c",
+      "c2070cbc",
+      "077adc71",
+      "7bbbb747",
+      "4965f436",
+      "0cd5d5b3",
+      "61625b2a"
+    ],
+    "src/pages/en/work/index.astro": [
+      "5d8e2000",
+      "7cc26fca",
+      "829cbf64",
+      "0f283508",
+      "0ac2e7fb",
+      "0d91fa77",
+      "be999f6c",
+      "7e5f3f6b"
+    ],
+    "src/pages/index.astro": [
+      "800bef60",
+      "a5682f72",
+      "ec264fba",
+      "c65b18d5",
+      "1f6b98d4",
+      "013e83b8",
+      "77b0f113",
+      "7741cb2e"
+    ],
+    "src/pages/lab/[slug].astro": [
+      "71ac4386",
+      "df75f51e",
+      "aabcd25a",
+      "a3077951",
+      "ff5863b6",
+      "2c22bd1e",
+      "20a4e820",
+      "4a9dff47"
+    ],
+    "src/pages/lab/index.astro": [
+      "52d12e3a",
+      "d1d60049",
+      "55826f8c",
+      "68732e4e",
+      "471b4ffd",
+      "4d4e068f",
+      "9811e70e",
+      "d8fe8b5f"
+    ],
+    "src/pages/work/[slug].astro": [
+      "ab4b687e",
+      "0b49f741",
+      "a0a84bb9",
+      "a6c4c273",
+      "d352cd8f",
+      "3411f1da",
+      "4f036a17",
+      "1b6b364c"
+    ],
+    "src/pages/work/index.astro": [
+      "f3b95a1b",
+      "9eed60cd",
+      "58050a66",
+      "24c27936",
+      "c51a0c3c",
+      "63c04ff4",
+      "a85e08cc",
+      "592999a3"
+    ],
+    "src/scripts/demos.ts": [
+      "2bd2f224",
+      "ff1c2275",
+      "8cdee6d1",
+      "a79b3701",
+      "01d2ee3b",
+      "d55307b5",
+      "7d5fe294",
+      "2c610c8a"
+    ],
+    "src/scripts/home-preview.ts": [
+      "d648a059",
+      "62874392",
+      "8317e298",
+      "b821fc25",
+      "9113266a",
+      "c1c5efd7",
+      "00ba6f26",
+      "c6826115"
+    ],
+    "src/styles/generated-fonts.css": [
+      "6c0ff4c8",
+      "da424937",
+      "c60d5b42",
+      "c80d4229",
+      "20e36989",
+      "66b61265",
+      "ce3d9891",
+      "2a55d47b"
+    ],
+    "src/styles/global.css": [
+      "cbf6a89e",
+      "091aeba7",
+      "2d130478",
+      "1cd0de2b",
+      "1c96927e",
+      "f3d6c421",
+      "04f9246c",
+      "11a7e841"
+    ],
+    "src/styles/home.css": [
+      "119ddf78",
+      "759db0c4",
+      "ad07235c",
+      "44553804",
+      "77fef095",
+      "a8463b04",
+      "4d97ff39",
+      "ac1895ad"
+    ],
+    "src/styles/thermal-tokens.css": [
+      "849cb2c4",
+      "409148b0",
+      "4d3a9e27",
+      "1490e395",
+      "f531c04c",
+      "78e409c8",
+      "91880a20",
+      "2c42744b"
+    ],
+    "src/styles/tokens.css": [
+      "3a44e321",
+      "9f6a0ce7",
+      "d4b6a074",
+      "10a2d338",
+      "2b8655bc",
+      "96f42c33",
+      "fc0f6071",
+      "9960ea5f"
+    ]
+  }
+}

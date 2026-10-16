@@ -1,0 +1,10 @@
+$ vitest run
+
+ RUN  v5.0.4 <workspace>/portfolio-main-v2
+
+
+ Test Files  5 passed (5)
+      Tests  48 passed (48)
+   Start at  09:59:15
+   Duration  189ms (tests 56%, import 21%, transform 16%, worker 7%)
+

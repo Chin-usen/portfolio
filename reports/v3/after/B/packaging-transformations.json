@@ -1,0 +1,92 @@
+[
+  {
+    "file": "assessment-b.md",
+    "source_sha256": "c81d7a211537be8a333bf74af42d381dcbe42c8201ef6b8f69e7adb2b6345aa1",
+    "delivered_sha256": "b6bbdddfb3cdcfd83b5ce43537f5c68e363da9f8b84d8fe767e4c0eefff9875a",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "audit.md",
+    "source_sha256": "c5d033f3d41df2c7450a5f3c81b15a2bcba51217449114bd71b2be1d5c4a49a8",
+    "delivered_sha256": "de02db905bab055c6f043e808a94948cda4b34435e67d8a6d31283e0d9192b7c",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "browser-audit.cjs",
+    "source_sha256": "8cc65679edd96f38cbfa961fde94a71866753d8bc92a09a616e0a4230c46cab3",
+    "delivered_sha256": "b4b5fa8117824412cf15b3172b2f8b81f6570ad02d11d45f1a2e66f5f50a8417",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "browser-evidence.json",
+    "source_sha256": "7fb6895ef56cc9825e8fee38b8e613bc90af9d4d481b9244fa464eefaf9b6812",
+    "delivered_sha256": "fb4b40afb6eee9a595de3bdb060d73a5e6680fc6ecc70330ef1bc9e9fcbb86bd",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "browser-followup.cjs",
+    "source_sha256": "1493096f49692dd94f22d987ad11956d33803c3038620773ab4c903ef4d8fd12",
+    "delivered_sha256": "70b4c049da8606203e052ad0d3818f0a67285aa3352a8f38ddb55177baa65ec8",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "built-scope-hashes.json",
+    "source_sha256": "919833e231c22274aef1404e76ec1c4944146e4bd1dae75f435ba32f1ca1609d",
+    "delivered_sha256": "36689bf93e5d7ee1e0f39026468b0ae75e3e416bb5deb1c823f8c137d77b4954",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-built-invocation.json",
+    "source_sha256": "01237d50f0ad9b70edd78086c86c315a5afeca911fe946a03ad13ac9de79fe8b",
+    "delivered_sha256": "f96efd21cd9a5e9a32aec6a565337a8f0062aea9c916e23924a8e7bae60b1868",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-built.stdout.json",
+    "source_sha256": "bbc1dc0883882e7d608eab0f469521f14d6c05dfdfca610aa2b0936e56d6ee15",
+    "delivered_sha256": "c1c0e31d0a6e8548796f34ccd0b3db51ad719c6b4cb2ce862054ba1127789817",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-current-verified.exit.txt",
+    "source_sha256": "24c813cb6f9bade379034e39a4665bf3be056293a53543502481e4f3db7e9291",
+    "delivered_sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-current-verified.stdout.json",
+    "source_sha256": "eb66b6a4a3fa41af087877742a52c9f739ac5316b70eaf01bdeac4a8fd0bb2aa",
+    "delivered_sha256": "fe0c2e7e2e13c7a4ccf50b667384d61f1727fdce2eda8a5bcdcf6de58c558501",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-current.stderr.txt",
+    "source_sha256": "ea77f247c007172708ee5d4248cc413d99ce2c6f92d74b63ca6050dc86cd3fa5",
+    "delivered_sha256": "b58b05b430c746cc23ac9b36462632588c22a95d52d4535b8675675f474611fe",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "detector-invocation.json",
+    "source_sha256": "e155ad63fdcf47f980c5900b191bfe5b791c3b71d8d20a9a7e93342384bc35d6",
+    "delivered_sha256": "e9495fa48d29e2d5b1a48000863a9b9243e4ff493af387fb184a70e4ef515ca3",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "finalization-state.md",
+    "source_sha256": "010ab41107f5501e663af592a1b4bfa9bb2cabc534380ec4ef30c5daaf974609",
+    "delivered_sha256": "d11824607a726441a986507da691da10383316ae2ee1635bba326043f2f5466a",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "phase1-ready.md",
+    "source_sha256": "211ca437c72e959688e2eaa77d396b8fdc163f01e6de00e3c866ef16e8825052",
+    "delivered_sha256": "3799e70cd6fa503f05da3e30fd7859eec765b6fc63081f3a0293a911851a409f",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  },
+  {
+    "file": "scope-hashes.json",
+    "source_sha256": "4d90b71386c0d0afdea1230088bb296360ce4f025e803bb21c3a1affe759c909",
+    "delivered_sha256": "18cf267b069e1a0ff143980344e360e60720b8852d302275b122e48103a741a0",
+    "reason": "Personal-path redaction, UTF8 encoding normalization, or draft-location wording; findings and scores unchanged."
+  }
+]

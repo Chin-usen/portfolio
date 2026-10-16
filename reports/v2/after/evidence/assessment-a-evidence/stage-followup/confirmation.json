@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "zh-390-light-200-default",
+    "width": 390,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 599.125,
+      "width": 326,
+      "height": 1178.3125,
+      "top": 599.125,
+      "right": 358,
+      "bottom": 1777.4375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": 600.125,
+          "width": 324,
+          "height": 410.578125,
+          "top": 600.125,
+          "right": 357,
+          "bottom": 1010.703125,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": 1587.484375,
+          "width": 260,
+          "height": 156.953125,
+          "top": 1587.484375,
+          "right": 325,
+          "bottom": 1744.4375,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": 1010.703125,
+          "width": 324,
+          "height": 164.78125,
+          "top": 1010.703125,
+          "right": 357,
+          "bottom": 1175.484375,
+          "left": 33
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "zh-390-light-200-selected",
+    "width": 390,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -1014.875,
+      "width": 326,
+      "height": 1508.640625,
+      "top": -1014.875,
+      "right": 358,
+      "bottom": 493.765625,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": -1013.875,
+          "width": 324,
+          "height": 410.578125,
+          "top": -1013.875,
+          "right": 357,
+          "bottom": -603.296875,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": -26.515625,
+          "width": 260,
+          "height": 156.953125,
+          "top": -26.515625,
+          "right": 325,
+          "bottom": 130.4375,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": -603.296875,
+          "width": 324,
+          "height": 164.78125,
+          "top": -603.296875,
+          "right": 357,
+          "bottom": -438.515625,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 65,
+          "y": 162.4375,
+          "width": 260,
+          "height": 298.328125,
+          "top": 162.4375,
+          "right": 325,
+          "bottom": 460.765625,
+          "left": 65
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "zh-390-dark-200-default",
+    "width": 390,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 599.125,
+      "width": 326,
+      "height": 1178.3125,
+      "top": 599.125,
+      "right": 358,
+      "bottom": 1777.4375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": 600.125,
+          "width": 324,
+          "height": 410.578125,
+          "top": 600.125,
+          "right": 357,
+          "bottom": 1010.703125,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": 1587.484375,
+          "width": 260,
+          "height": 156.953125,
+          "top": 1587.484375,
+          "right": 325,
+          "bottom": 1744.4375,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": 1010.703125,
+          "width": 324,
+          "height": 164.78125,
+          "top": 1010.703125,
+          "right": 357,
+          "bottom": 1175.484375,
+          "left": 33
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "zh-390-dark-200-selected",
+    "width": 390,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -1014.875,
+      "width": 326,
+      "height": 1508.640625,
+      "top": -1014.875,
+      "right": 358,
+      "bottom": 493.765625,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": -1013.875,
+          "width": 324,
+          "height": 410.578125,
+          "top": -1013.875,
+          "right": 357,
+          "bottom": -603.296875,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": -26.515625,
+          "width": 260,
+          "height": 156.953125,
+          "top": -26.515625,
+          "right": 325,
+          "bottom": 130.4375,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": -603.296875,
+          "width": 324,
+          "height": 164.78125,
+          "top": -603.296875,
+          "right": 357,
+          "bottom": -438.515625,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 65,
+          "y": 162.4375,
+          "width": 260,
+          "height": 298.328125,
+          "top": 162.4375,
+          "right": 325,
+          "bottom": 460.765625,
+          "left": 65
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "en-390-light-200-default",
+    "width": 390,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 852.90625,
+      "width": 326,
+      "height": 1255.09375,
+      "top": 852.90625,
+      "right": 358,
+      "bottom": 2108,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": 853.90625,
+          "width": 324,
+          "height": 448.96875,
+          "top": 853.90625,
+          "right": 357,
+          "bottom": 1302.875,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": 1879.65625,
+          "width": 260,
+          "height": 195.34375,
+          "top": 1879.65625,
+          "right": 325,
+          "bottom": 2075,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": 1302.875,
+          "width": 324,
+          "height": 164.78125,
+          "top": 1302.875,
+          "right": 357,
+          "bottom": 1467.65625,
+          "left": 33
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "en-390-light-200-selected",
+    "width": 390,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -1197.09375,
+      "width": 326,
+      "height": 1834.9375,
+      "top": -1197.09375,
+      "right": 358,
+      "bottom": 637.84375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": -1196.09375,
+          "width": 324,
+          "height": 448.96875,
+          "top": -1196.09375,
+          "right": 357,
+          "bottom": -747.125,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": -170.34375,
+          "width": 260,
+          "height": 195.34375,
+          "top": -170.34375,
+          "right": 325,
+          "bottom": 25,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": -747.125,
+          "width": 324,
+          "height": 164.78125,
+          "top": -747.125,
+          "right": 357,
+          "bottom": -582.34375,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 65,
+          "y": 57,
+          "width": 260,
+          "height": 547.84375,
+          "top": 57,
+          "right": 325,
+          "bottom": 604.84375,
+          "left": 65
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "en-390-dark-200-default",
+    "width": 390,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 852.90625,
+      "width": 326,
+      "height": 1255.09375,
+      "top": 852.90625,
+      "right": 358,
+      "bottom": 2108,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": 853.90625,
+          "width": 324,
+          "height": 448.96875,
+          "top": 853.90625,
+          "right": 357,
+          "bottom": 1302.875,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": 1879.65625,
+          "width": 260,
+          "height": 195.34375,
+          "top": 1879.65625,
+          "right": 325,
+          "bottom": 2075,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": 1302.875,
+          "width": 324,
+          "height": 164.78125,
+          "top": 1302.875,
+          "right": 357,
+          "bottom": 1467.65625,
+          "left": 33
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "en-390-dark-200-selected",
+    "width": 390,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -1197.09375,
+      "width": 326,
+      "height": 1834.9375,
+      "top": -1197.09375,
+      "right": 358,
+      "bottom": 637.84375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 33,
+          "y": -1196.09375,
+          "width": 324,
+          "height": 448.96875,
+          "top": -1196.09375,
+          "right": 357,
+          "bottom": -747.125,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 65,
+          "y": -170.34375,
+          "width": 260,
+          "height": 195.34375,
+          "top": -170.34375,
+          "right": 325,
+          "bottom": 25,
+          "left": 65
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 33,
+          "y": -747.125,
+          "width": 324,
+          "height": 164.78125,
+          "top": -747.125,
+          "right": 357,
+          "bottom": -582.34375,
+          "left": 33
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 65,
+          "y": 57,
+          "width": 260,
+          "height": 547.84375,
+          "top": 57,
+          "right": 325,
+          "bottom": 604.84375,
+          "left": 65
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 390
+  },
+  {
+    "id": "zh-1440-light-200-default",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 330.640625,
+      "width": 1376,
+      "height": 742.5,
+      "top": 330.640625,
+      "right": 1408,
+      "bottom": 1073.140625,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": 358.640625,
+          "width": 659,
+          "height": 343.96875,
+          "top": 358.640625,
+          "right": 720,
+          "bottom": 702.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 766.609375,
+          "width": 172,
+          "height": 209.140625,
+          "top": 766.609375,
+          "right": 233,
+          "bottom": 975.75,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 893.1875,
+          "y": 358.640625,
+          "width": 485.8125,
+          "height": 58,
+          "top": 358.640625,
+          "right": 1379,
+          "bottom": 416.640625,
+          "left": 893.1875
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 399.453125,
+          "y": 1007.75,
+          "width": 641.09375,
+          "height": 38.390625,
+          "top": 1007.75,
+          "right": 1040.546875,
+          "bottom": 1046.140625,
+          "left": 399.453125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-light-200-selected",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -370.359375,
+      "width": 1376,
+      "height": 867.34375,
+      "top": -370.359375,
+      "right": 1408,
+      "bottom": 496.984375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": -342.359375,
+          "width": 659,
+          "height": 343.96875,
+          "top": -342.359375,
+          "right": 720,
+          "bottom": 1.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 65.609375,
+          "width": 172,
+          "height": 333.984375,
+          "top": 65.609375,
+          "right": 233,
+          "bottom": 399.59375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 893.1875,
+          "y": -342.359375,
+          "width": 485.8125,
+          "height": 58,
+          "top": -342.359375,
+          "right": 1379,
+          "bottom": -284.359375,
+          "left": 893.1875
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 945,
+          "y": 65.609375,
+          "width": 434,
+          "height": 333.984375,
+          "top": 65.609375,
+          "right": 1379,
+          "bottom": 399.59375,
+          "left": 945
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 399.453125,
+          "y": 431.59375,
+          "width": 641.09375,
+          "height": 38.390625,
+          "top": 431.59375,
+          "right": 1040.546875,
+          "bottom": 469.984375,
+          "left": 399.453125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-dark-200-default",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 330.640625,
+      "width": 1376,
+      "height": 742.5,
+      "top": 330.640625,
+      "right": 1408,
+      "bottom": 1073.140625,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": 358.640625,
+          "width": 659,
+          "height": 343.96875,
+          "top": 358.640625,
+          "right": 720,
+          "bottom": 702.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 766.609375,
+          "width": 172,
+          "height": 209.140625,
+          "top": 766.609375,
+          "right": 233,
+          "bottom": 975.75,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 893.1875,
+          "y": 358.640625,
+          "width": 485.8125,
+          "height": 58,
+          "top": 358.640625,
+          "right": 1379,
+          "bottom": 416.640625,
+          "left": 893.1875
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 399.453125,
+          "y": 1007.75,
+          "width": 641.09375,
+          "height": 38.390625,
+          "top": 1007.75,
+          "right": 1040.546875,
+          "bottom": 1046.140625,
+          "left": 399.453125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-dark-200-selected",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -370.359375,
+      "width": 1376,
+      "height": 867.34375,
+      "top": -370.359375,
+      "right": 1408,
+      "bottom": 496.984375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": -342.359375,
+          "width": 659,
+          "height": 343.96875,
+          "top": -342.359375,
+          "right": 720,
+          "bottom": 1.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 65.609375,
+          "width": 172,
+          "height": 333.984375,
+          "top": 65.609375,
+          "right": 233,
+          "bottom": 399.59375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 893.1875,
+          "y": -342.359375,
+          "width": 485.8125,
+          "height": 58,
+          "top": -342.359375,
+          "right": 1379,
+          "bottom": -284.359375,
+          "left": 893.1875
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 945,
+          "y": 65.609375,
+          "width": 434,
+          "height": 333.984375,
+          "top": 65.609375,
+          "right": 1379,
+          "bottom": 399.59375,
+          "left": 945
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 399.453125,
+          "y": 431.59375,
+          "width": 641.09375,
+          "height": 38.390625,
+          "top": 431.59375,
+          "right": 1040.546875,
+          "bottom": 469.984375,
+          "left": 399.453125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-light-200-default",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 330.640625,
+      "width": 1376,
+      "height": 819.28125,
+      "top": 330.640625,
+      "right": 1408,
+      "bottom": 1149.921875,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": 358.640625,
+          "width": 659,
+          "height": 343.96875,
+          "top": 358.640625,
+          "right": 720,
+          "bottom": 702.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 766.609375,
+          "width": 172,
+          "height": 285.921875,
+          "top": 766.609375,
+          "right": 233,
+          "bottom": 1052.53125,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 828.484375,
+          "y": 358.640625,
+          "width": 550.515625,
+          "height": 58,
+          "top": 358.640625,
+          "right": 1379,
+          "bottom": 416.640625,
+          "left": 828.484375
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 317.03125,
+          "y": 1084.53125,
+          "width": 805.921875,
+          "height": 38.390625,
+          "top": 1084.53125,
+          "right": 1122.953125,
+          "bottom": 1122.921875,
+          "left": 317.03125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-light-200-selected",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -446.359375,
+      "width": 1376,
+      "height": 867.34375,
+      "top": -446.359375,
+      "right": 1408,
+      "bottom": 420.984375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": -418.359375,
+          "width": 659,
+          "height": 343.96875,
+          "top": -418.359375,
+          "right": 720,
+          "bottom": -74.390625,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": -10.390625,
+          "width": 172,
+          "height": 333.984375,
+          "top": -10.390625,
+          "right": 233,
+          "bottom": 323.59375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 828.484375,
+          "y": -418.359375,
+          "width": 550.515625,
+          "height": 58,
+          "top": -418.359375,
+          "right": 1379,
+          "bottom": -360.359375,
+          "left": 828.484375
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 945,
+          "y": -10.390625,
+          "width": 434,
+          "height": 333.984375,
+          "top": -10.390625,
+          "right": 1379,
+          "bottom": 323.59375,
+          "left": 945
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 317.03125,
+          "y": 355.59375,
+          "width": 805.921875,
+          "height": 38.390625,
+          "top": 355.59375,
+          "right": 1122.953125,
+          "bottom": 393.984375,
+          "left": 317.03125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-dark-200-default",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": false,
+    "stage": {
+      "x": 32,
+      "y": 330.640625,
+      "width": 1376,
+      "height": 819.28125,
+      "top": 330.640625,
+      "right": 1408,
+      "bottom": 1149.921875,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": 358.640625,
+          "width": 659,
+          "height": 343.96875,
+          "top": 358.640625,
+          "right": 720,
+          "bottom": 702.609375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": 766.609375,
+          "width": 172,
+          "height": 285.921875,
+          "top": 766.609375,
+          "right": 233,
+          "bottom": 1052.53125,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 828.484375,
+          "y": 358.640625,
+          "width": 550.515625,
+          "height": 58,
+          "top": 358.640625,
+          "right": 1379,
+          "bottom": 416.640625,
+          "left": 828.484375
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 317.03125,
+          "y": 1084.53125,
+          "width": 805.921875,
+          "height": 38.390625,
+          "top": 1084.53125,
+          "right": 1122.953125,
+          "bottom": 1122.921875,
+          "left": 317.03125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-dark-200-selected",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 200,
+    "selected": true,
+    "stage": {
+      "x": 32,
+      "y": -446.359375,
+      "width": 1376,
+      "height": 867.34375,
+      "top": -446.359375,
+      "right": 1408,
+      "bottom": 420.984375,
+      "left": 32
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 61,
+          "y": -418.359375,
+          "width": 659,
+          "height": 343.96875,
+          "top": -418.359375,
+          "right": 720,
+          "bottom": -74.390625,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 61,
+          "y": -10.390625,
+          "width": 172,
+          "height": 333.984375,
+          "top": -10.390625,
+          "right": 233,
+          "bottom": 323.59375,
+          "left": 61
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 828.484375,
+          "y": -418.359375,
+          "width": 550.515625,
+          "height": 58,
+          "top": -418.359375,
+          "right": 1379,
+          "bottom": -360.359375,
+          "left": 828.484375
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 945,
+          "y": -10.390625,
+          "width": 434,
+          "height": 333.984375,
+          "top": -10.390625,
+          "right": 1379,
+          "bottom": 323.59375,
+          "left": 945
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 317.03125,
+          "y": 355.59375,
+          "width": 805.921875,
+          "height": 38.390625,
+          "top": 355.59375,
+          "right": 1122.953125,
+          "bottom": 393.984375,
+          "left": 317.03125
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-light-100-default",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 100,
+    "selected": false,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 490,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 692.90625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 542.375,
+          "width": 172,
+          "height": 88.34375,
+          "top": 542.375,
+          "right": 345,
+          "bottom": 630.71875,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 998.640625,
+          "y": 230.90625,
+          "width": 268.359375,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 998.640625
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 559.71875,
+          "y": 646.71875,
+          "width": 320.546875,
+          "height": 19.1875,
+          "top": 646.71875,
+          "right": 880.265625,
+          "bottom": 665.90625,
+          "left": 559.71875
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-light-100-selected",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "light",
+    "textPercent": 100,
+    "selected": true,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 494.859375,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 697.765625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 452.625,
+          "width": 172,
+          "height": 182.953125,
+          "top": 452.625,
+          "right": 345,
+          "bottom": 635.578125,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 998.640625,
+          "y": 230.90625,
+          "width": 268.359375,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 998.640625
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 1050,
+          "y": 452.625,
+          "width": 217,
+          "height": 182.953125,
+          "top": 452.625,
+          "right": 1267,
+          "bottom": 635.578125,
+          "left": 1050
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 559.71875,
+          "y": 651.578125,
+          "width": 320.546875,
+          "height": 19.1875,
+          "top": 651.578125,
+          "right": 880.265625,
+          "bottom": 670.765625,
+          "left": 559.71875
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-dark-100-default",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 100,
+    "selected": false,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 490,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 692.90625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 542.375,
+          "width": 172,
+          "height": 88.34375,
+          "top": 542.375,
+          "right": 345,
+          "bottom": 630.71875,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 998.640625,
+          "y": 230.90625,
+          "width": 268.359375,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 998.640625
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 559.71875,
+          "y": 646.71875,
+          "width": 320.546875,
+          "height": 19.1875,
+          "top": 646.71875,
+          "right": 880.265625,
+          "bottom": 665.90625,
+          "left": 559.71875
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "zh-1440-dark-100-selected",
+    "width": 1440,
+    "locale": "zh",
+    "colorScheme": "dark",
+    "textPercent": 100,
+    "selected": true,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 494.859375,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 697.765625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 452.625,
+          "width": 172,
+          "height": 182.953125,
+          "top": 452.625,
+          "right": 345,
+          "bottom": 635.578125,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 998.640625,
+          "y": 230.90625,
+          "width": 268.359375,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 998.640625
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 1050,
+          "y": 452.625,
+          "width": 217,
+          "height": 182.953125,
+          "top": 452.625,
+          "right": 1267,
+          "bottom": 635.578125,
+          "left": 1050
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 559.71875,
+          "y": 651.578125,
+          "width": 320.546875,
+          "height": 19.1875,
+          "top": 651.578125,
+          "right": 880.265625,
+          "bottom": 670.765625,
+          "left": 559.71875
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-light-100-default",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 100,
+    "selected": false,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 490,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 692.90625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 523.1875,
+          "width": 172,
+          "height": 107.53125,
+          "top": 523.1875,
+          "right": 345,
+          "bottom": 630.71875,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 966.28125,
+          "y": 230.90625,
+          "width": 300.71875,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 966.28125
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 518.515625,
+          "y": 646.71875,
+          "width": 402.96875,
+          "height": 19.1875,
+          "top": 646.71875,
+          "right": 921.484375,
+          "bottom": 665.90625,
+          "left": 518.515625
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-light-100-selected",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "light",
+    "textPercent": 100,
+    "selected": true,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 552.421875,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 755.328125,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 452.625,
+          "width": 172,
+          "height": 240.515625,
+          "top": 452.625,
+          "right": 345,
+          "bottom": 693.140625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 966.28125,
+          "y": 230.90625,
+          "width": 300.71875,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 966.28125
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 1050,
+          "y": 452.625,
+          "width": 217,
+          "height": 240.515625,
+          "top": 452.625,
+          "right": 1267,
+          "bottom": 693.140625,
+          "left": 1050
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 518.515625,
+          "y": 709.140625,
+          "width": 402.96875,
+          "height": 19.1875,
+          "top": 709.140625,
+          "right": 921.484375,
+          "bottom": 728.328125,
+          "left": 518.515625
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-dark-100-default",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 100,
+    "selected": false,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 490,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 692.90625,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 523.1875,
+          "width": 172,
+          "height": 107.53125,
+          "top": 523.1875,
+          "right": 345,
+          "bottom": 630.71875,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 966.28125,
+          "y": 230.90625,
+          "width": 300.71875,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 966.28125
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 518.515625,
+          "y": 646.71875,
+          "width": 402.96875,
+          "height": 19.1875,
+          "top": 646.71875,
+          "right": 921.484375,
+          "bottom": 665.90625,
+          "left": 518.515625
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  },
+  {
+    "id": "en-1440-dark-100-selected",
+    "width": 1440,
+    "locale": "en",
+    "colorScheme": "dark",
+    "textPercent": 100,
+    "selected": true,
+    "stage": {
+      "x": 144,
+      "y": 202.90625,
+      "width": 1152,
+      "height": 552.421875,
+      "top": 202.90625,
+      "right": 1296,
+      "bottom": 755.328125,
+      "left": 144
+    },
+    "items": [
+      {
+        "selector": ".thermal-metrics",
+        "rect": {
+          "x": 173,
+          "y": 230.90625,
+          "width": 547,
+          "height": 189.71875,
+          "top": 230.90625,
+          "right": 720,
+          "bottom": 420.625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-scale",
+        "rect": {
+          "x": 173,
+          "y": 452.625,
+          "width": 172,
+          "height": 240.515625,
+          "top": 452.625,
+          "right": 345,
+          "bottom": 693.140625,
+          "left": 173
+        }
+      },
+      {
+        "selector": ".thermal-view-actions",
+        "rect": {
+          "x": 966.28125,
+          "y": 230.90625,
+          "width": 300.71875,
+          "height": 44,
+          "top": 230.90625,
+          "right": 1267,
+          "bottom": 274.90625,
+          "left": 966.28125
+        }
+      },
+      {
+        "selector": ".thermal-layer-card",
+        "rect": {
+          "x": 1050,
+          "y": 452.625,
+          "width": 217,
+          "height": 240.515625,
+          "top": 452.625,
+          "right": 1267,
+          "bottom": 693.140625,
+          "left": 1050
+        }
+      },
+      {
+        "selector": ".thermal-interaction-hint",
+        "rect": {
+          "x": 518.515625,
+          "y": 709.140625,
+          "width": 402.96875,
+          "height": 19.1875,
+          "top": 709.140625,
+          "right": 921.484375,
+          "bottom": 728.328125,
+          "left": 518.515625
+        }
+      }
+    ],
+    "collisions": [],
+    "outside": [],
+    "pageWidth": 1440
+  }
+]

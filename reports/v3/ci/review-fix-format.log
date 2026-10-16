@@ -1,0 +1,9 @@
+Command: pnpm exec prettier --write src/components/lab/thermal-stack/client.ts src/components/lab/thermal-stack/copy.ts src/components/lab/thermal-stack/ThermalStack.astro src/components/lab/thermal-stack/thermal.css tests/e2e/thermal.spec.ts
+Started: 2026-10-15T04:47:04.756164+00:00
+Exit: 0
+
+src/components/lab/thermal-stack/client.ts 85ms (unchanged)
+src/components/lab/thermal-stack/copy.ts 12ms (unchanged)
+src/components/lab/thermal-stack/ThermalStack.astro 45ms
+src/components/lab/thermal-stack/thermal.css 61ms
+tests/e2e/thermal.spec.ts 32ms

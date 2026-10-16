@@ -1,0 +1,12 @@
+{
+  "project": "portfolio-main-v4",
+  "version": "1.3.0",
+  "branch": "main",
+  "commit": "f911b27c344a5b58d62d052c1a3378df8a082757",
+  "approved_v3_baseline": "90dd6a5b93886ff45a7cbd6bc0e96b1c2b5f42ba",
+  "files": 905,
+  "selection": "git ls-files from clean committed checkout; historical tracked reports retained",
+  "byte_source": "actual worktree files; no Git archive/newline conversion",
+  "new_evidence_location": "../v4-evidence/",
+  "note": "Main only. No deployment. New generated reviews/evidence are separate and not committed."
+}

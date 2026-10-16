@@ -1,0 +1,26 @@
+[
+  {
+    "file": "src/styles/tokens.css",
+    "baseline_git_sha256": "3a44e3219f6a0ce7d4b6a07410a2d3382b8655bc96f42c33fc0f60719960ea5f",
+    "current_normalized_sha256": "3a44e3219f6a0ce7d4b6a07410a2d3382b8655bc96f42c33fc0f60719960ea5f",
+    "unchanged": true
+  },
+  {
+    "file": "src/styles/thermal-tokens.css",
+    "baseline_git_sha256": "849cb2c4409148b04d3a9e271490e395f531c04c78e409c891880a202c42744b",
+    "current_normalized_sha256": "849cb2c4409148b04d3a9e271490e395f531c04c78e409c891880a202c42744b",
+    "unchanged": true
+  },
+  {
+    "path": "src/content",
+    "changed_tracked_files": []
+  },
+  {
+    "path": "src/pages",
+    "changed_tracked_files": []
+  },
+  {
+    "path": "public/models/thermal",
+    "changed_tracked_files": []
+  }
+]

@@ -1,0 +1,14 @@
+Command: pnpm exec prettier --ignore-path .gitignore --write README.md CHANGELOG.md RELEASE-v3.md scripts/font-subset-README.md reports/v3/README.md reports/v3/PROVENANCE.md reports/v3/FIXES.md reports/v3/after/critique.md reports/v3/after/coordinator-followup.md reports/v3/performance.md
+Started: 2026-10-15T06:19:06.304667+00:00
+Exit: 0
+
+README.md 51ms (unchanged)
+CHANGELOG.md 10ms
+RELEASE-v3.md 13ms
+scripts/font-subset-README.md 4ms
+reports/v3/README.md 8ms
+reports/v3/PROVENANCE.md 10ms
+reports/v3/FIXES.md 7ms
+reports/v3/after/critique.md 12ms
+reports/v3/after/coordinator-followup.md 8ms
+reports/v3/performance.md 4ms

@@ -1,0 +1,72 @@
+$ playwright test
+[WebServer] $ node scripts/generate-font-css.mjs && astro build
+
+Running 45 tests using 10 workers
+
+(node:34528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36888) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\header-stability.spec.ts:97:1 › English mobile navigation remains available when JavaScript is disabled (340ms)
+  ok  4 [chromium] › tests\e2e\header-stability.spec.ts:81:1 › reserved English mobile language row retains keyboard menu operation (325ms)
+  ok  8 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /work/ serves the expected document and same-page translation (419ms)
+  ok  9 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /lab/ serves the expected document and same-page translation (501ms)
+  ok  6 [chromium] › tests\e2e\smoke.spec.ts:23:3 › / serves the expected document and same-page translation (592ms)
+  ok 10 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /work/sample-case/ serves the expected document and same-page translation (722ms)
+  ok 13 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /about/ serves the expected document and same-page translation (398ms)
+  ok 14 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /contact/ serves the expected document and same-page translation (346ms)
+  ok 12 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /lab/sample-simulation/ serves the expected document and same-page translation (451ms)
+  ok 11 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /lab/sample-teardown/ serves the expected document and same-page translation (526ms)
+  ok 15 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /404/ serves the expected document and same-page translation (380ms)
+  ok  2 [chromium] › tests\e2e\header-stability.spec.ts:15:1 › English mobile header does not move page content when delayed fonts load (1.1s)
+  ok 16 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/ serves the expected document and same-page translation (412ms)
+  ok 17 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/work/ serves the expected document and same-page translation (330ms)
+  ok 20 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/lab/sample-teardown/ serves the expected document and same-page translation (336ms)
+  ok 19 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/lab/ serves the expected document and same-page translation (386ms)
+  ok 18 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/work/sample-case/ serves the expected document and same-page translation (405ms)
+  ok 21 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/lab/sample-simulation/ serves the expected document and same-page translation (331ms)
+  ok 24 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/404/ serves the expected document and same-page translation (253ms)
+  ok 25 [chromium] › tests\e2e\smoke.spec.ts:41:1 › unknown URLs are genuine localized 404 responses, not SPA fallbacks (272ms)
+  ok 23 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/contact/ serves the expected document and same-page translation (323ms)
+  ok 22 [chromium] › tests\e2e\smoke.spec.ts:23:3 › /en/about/ serves the expected document and same-page translation (378ms)
+  ok 27 [chromium] › tests\e2e\smoke.spec.ts:68:1 › mobile menu works with keyboard and returns focus when dismissed (257ms)
+  ok 28 [chromium] › tests\e2e\smoke.spec.ts:86:1 › email is assembled only after a visitor asks to reveal it (328ms)
+  ok 30 [chromium] › tests\e2e\smoke.spec.ts:136:1 › on-demand dependency demos run and reset (831ms)
+  ok 33 [chromium] › tests\e2e\thermal.spec.ts:71:1 › forced 2D fallback remains operable with keyboard and reduced motion (782ms)
+  ok 32 [chromium] › tests\e2e\thermal.spec.ts:5:1 › thermal interaction, default benchmark, keyboard tabs and material presets (1.3s)
+  ok 26 [chromium] › tests\e2e\smoke.spec.ts:53:1 › all routes fit a 390px mobile viewport (1.7s)
+  ok 35 [chromium] › tests\e2e\thermal.spec.ts:159:1 › a lost WebGL context activates the usable 2D renderer (634ms)
+  ok  5 [chromium] › tests\e2e\keyboard-view.spec.ts:16:3 › keyboard orbit, zoom and reset change the rendered view (no-preference) (3.4s)
+  ok  3 [chromium] › tests\e2e\keyboard-view.spec.ts:16:3 › keyboard orbit, zoom and reset change the rendered view (reduce) (3.7s)
+  ok 34 [chromium] › tests\e2e\thermal.spec.ts:90:1 › WebGL orbit and demand rendering stop when idle (2.1s)
+  ok 40 [chromium] › tests\e2e\v2-audit.spec.ts:77:1 › 200 percent text has nonoverlapping mobile metrics, actions and model (656ms)
+  ok  7 [chromium] › tests\e2e\keyboard-view.spec.ts:71:1 › keyboard zoom and polar orbit stop at their bounds and remain reversible (4.2s)
+  ok 31 [chromium] › tests\e2e\thermal.spec.ts:44:1 › thermal bilingual routes, mobile sizes, color themes and real screenshot QA (2.7s)
+  ok 41 [chromium] › tests\e2e\v2-audit.spec.ts:104:1 › D1 skip link and technical labels keep readable theme pairs and minimum sizes (628ms)
+  ok 29 [chromium] › tests\e2e\smoke.spec.ts:115:1 › metadata is localized and scripts stay on the same origin (3.2s)
+  ok 39 [chromium] › tests\e2e\v2-audit.spec.ts:36:1 › mobile result and threshold remain visible at the controls, with selected tab in view (1.8s)
+  ok 36 [chromium] › tests\e2e\thermal.spec.ts:127:1 › FEM model loads real scalar and field assets, switches back, and handles extremes (3.1s)
+  ok 45 [chromium] › tests\e2e\v2-audit.spec.ts:183:1 › standalone card and contact links provide comfortable mobile targets (1.2s)
+  ok 42 [chromium] › tests\e2e\v2-audit.spec.ts:132:1 › desktop edits keep the current result and warning in the visible parameter area (1.7s)
+  ok 37 [chromium] › tests\e2e\thermal.spec.ts:184:1 › record frame timings while changing FEM power every animation frame (2.9s)
+  ok 43 [chromium] › tests\e2e\v2-audit.spec.ts:153:1 › enlarged scientific numbers never split internally or overflow the page (1.9s)
+  ok 44 [chromium] › tests\e2e\v2-audit.spec.ts:205:1 › desktop enlarged metrics, temperature scale and selected layer remain separate (2.3s)
+  ok 38 [chromium] › tests\e2e\v2-audit.spec.ts:13:1 › v2 D1 shell and experiment retain both themes across all 48 review states (4.3s)
+
+  45 passed (11.5s)

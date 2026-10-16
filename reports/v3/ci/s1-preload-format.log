@@ -1,0 +1,5 @@
+Command: pnpm exec prettier --write src/layouts/BaseLayout.astro
+Started: 2026-10-15T05:50:03.694165+00:00
+Exit: 0
+
+src/layouts/BaseLayout.astro 34ms (unchanged)

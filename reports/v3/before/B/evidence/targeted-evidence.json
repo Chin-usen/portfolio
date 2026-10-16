@@ -1,0 +1,533 @@
+{
+  "date": "2026-10-15T02:00:26.450Z",
+  "geometry": [
+    {
+      "width": 1440,
+      "route": "/",
+      "h1": {
+        "x": 144,
+        "y": 190.75,
+        "w": 1152,
+        "h": 60,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "48px",
+        "color": "rgb(29, 29, 31)",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "firstInput": null,
+      "main": {
+        "x": 144,
+        "y": 85,
+        "w": 1152,
+        "h": 1076.546875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "结构设计 · 工程推理 · 证据表达从结构出发，把设计讲清楚。示例工程师 · 结构设计与工程验证这里记录设计选择、拆解观察与验证思路。每个项目都从问题开始，呈现约束、推理和仍待验证的部分。查看项目进入实验室精选项目便携设备的壳体结构设计围绕"
+      },
+      "heroImages": 0,
+      "landmarks": 1
+    },
+    {
+      "width": 1440,
+      "route": "/en/",
+      "h1": {
+        "x": 144,
+        "y": 190.75,
+        "w": 1152,
+        "h": 120,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "48px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "firstInput": null,
+      "main": {
+        "x": 144,
+        "y": 85,
+        "w": 1152,
+        "h": 1162.140625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "STRUCTURAL DESIGN · ENGINEERING REASONING · EVIDENCEMake the structure clear. Make the choices count.Sample Engineer · S"
+      },
+      "heroImages": 0,
+      "landmarks": 1
+    },
+    {
+      "width": 1440,
+      "route": "/lab/chip-junction-temperature/",
+      "h1": {
+        "x": 144,
+        "y": 134.578125,
+        "w": 244.234375,
+        "h": 48.328125,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "42.4px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温仿真"
+      },
+      "stage": {
+        "x": 144,
+        "y": 202.90625,
+        "w": 1152,
+        "h": 490,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°"
+      },
+      "parameters": {
+        "x": 144,
+        "y": 834.6875,
+        "w": 1152,
+        "h": 398.296875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler固定芯片：5 × 5 × 0.18 mm，导热系数 370"
+      },
+      "summary": {
+        "x": 169,
+        "y": 856.6875,
+        "w": 1102,
+        "h": 62.015625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "13px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C"
+      },
+      "firstInput": {
+        "x": 169,
+        "y": 1139.328125,
+        "w": 245.5,
+        "h": 44,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": ""
+      },
+      "main": {
+        "x": 144,
+        "y": 85,
+        "w": 1152,
+        "h": 1376.21875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "S1 · 仿真芯片结温仿真AMB 叠层稳态导热芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·"
+      },
+      "heroImages": 0,
+      "landmarks": 1,
+      "renderer": "webgl"
+    },
+    {
+      "width": 1440,
+      "route": "/en/lab/chip-junction-temperature/",
+      "h1": {
+        "x": 144,
+        "y": 134.578125,
+        "w": 488.640625,
+        "h": 48.328125,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "42.4px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Chip junction temperature"
+      },
+      "stage": {
+        "x": 144,
+        "y": 202.90625,
+        "w": 1152,
+        "h": 490,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature lim"
+      },
+      "parameters": {
+        "x": 144,
+        "y": 834.6875,
+        "w": 1152,
+        "h": 398.296875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CExplore para"
+      },
+      "summary": {
+        "x": 169,
+        "y": 856.6875,
+        "w": 1102,
+        "h": 62.015625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "13px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C"
+      },
+      "firstInput": {
+        "x": 169,
+        "y": 1139.328125,
+        "w": 245.5,
+        "h": 44,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": ""
+      },
+      "main": {
+        "x": 144,
+        "y": 85,
+        "w": 1152,
+        "h": 1425.21875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "S1 · SIMULATIONChip junction temperatureSteady-state conduction through an AMB stackJunction temperature Tj125.6°CEquiva"
+      },
+      "heroImages": 0,
+      "landmarks": 1,
+      "renderer": "webgl"
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "h1": {
+        "x": 16,
+        "y": 180.03125,
+        "w": 358,
+        "h": 80,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "32px",
+        "color": "rgb(29, 29, 31)",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "firstInput": null,
+      "main": {
+        "x": 16,
+        "y": 85,
+        "w": 358,
+        "h": 1617.296875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "结构设计 · 工程推理 · 证据表达从结构出发，把设计讲清楚。示例工程师 · 结构设计与工程验证这里记录设计选择、拆解观察与验证思路。每个项目都从问题开始，呈现约束、推理和仍待验证的部分。查看项目进入实验室精选项目便携设备的壳体结构设计围绕"
+      },
+      "heroImages": 0,
+      "landmarks": 1
+    },
+    {
+      "width": 390,
+      "route": "/en/",
+      "h1": {
+        "x": 16,
+        "y": 265.625,
+        "w": 358,
+        "h": 120,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "32px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "firstInput": null,
+      "main": {
+        "x": 16,
+        "y": 145,
+        "w": 358,
+        "h": 1875.84375,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "STRUCTURAL DESIGN · ENGINEERING REASONING · EVIDENCEMake the structure clear. Make the choices count.Sample Engineer · S"
+      },
+      "heroImages": 0,
+      "landmarks": 1
+    },
+    {
+      "width": 390,
+      "route": "/lab/chip-junction-temperature/",
+      "h1": {
+        "x": 16,
+        "y": 146.578125,
+        "w": 175.109375,
+        "h": 34.65625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "30.4px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温仿真"
+      },
+      "stage": {
+        "x": 16,
+        "y": 233.1875,
+        "w": 358,
+        "h": 721.6875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°"
+      },
+      "parameters": {
+        "x": 16,
+        "y": 1123.453125,
+        "w": 358,
+        "h": 632.90625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler固定芯片：5 × 5 × 0.18 mm，导热系数 370"
+      },
+      "summary": {
+        "x": 33,
+        "y": 1141.453125,
+        "w": 324,
+        "h": 62.015625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "13px",
+        "color": "rgb(29, 29, 31)",
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C"
+      },
+      "firstInput": {
+        "x": 33,
+        "y": 1422.015625,
+        "w": 324,
+        "h": 44,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": ""
+      },
+      "main": {
+        "x": 16,
+        "y": 85,
+        "w": 358,
+        "h": 2106.328125,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "S1 · 仿真芯片结温仿真AMB 叠层稳态导热芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·"
+      },
+      "heroImages": 0,
+      "landmarks": 1,
+      "renderer": "webgl"
+    },
+    {
+      "width": 390,
+      "route": "/en/lab/chip-junction-temperature/",
+      "h1": {
+        "x": 16,
+        "y": 146.578125,
+        "w": 350.34375,
+        "h": 34.65625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "30.4px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Chip junction temperature"
+      },
+      "stage": {
+        "x": 16,
+        "y": 233.1875,
+        "w": 358,
+        "h": 721.6875,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature lim"
+      },
+      "parameters": {
+        "x": 16,
+        "y": 1172.25,
+        "w": 358,
+        "h": 666.40625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CExplore para"
+      },
+      "summary": {
+        "x": 33,
+        "y": 1190.25,
+        "w": 324,
+        "h": 62.015625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "13px",
+        "color": "rgb(29, 29, 31)",
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C"
+      },
+      "firstInput": {
+        "x": 33,
+        "y": 1504.3125,
+        "w": 324,
+        "h": 44,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": ""
+      },
+      "main": {
+        "x": 16,
+        "y": 85,
+        "w": 358,
+        "h": 2384.625,
+        "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "size": "16px",
+        "color": "rgb(29, 29, 31)",
+        "text": "S1 · SIMULATIONChip junction temperatureSteady-state conduction through an AMB stackJunction temperature Tj125.6°CEquiva"
+      },
+      "heroImages": 0,
+      "landmarks": 1,
+      "renderer": "webgl"
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "name": "text",
+      "fg": "#1d1d1f",
+      "surface": "background",
+      "bg": "#fbfbfd",
+      "ratio": 16.28
+    },
+    {
+      "theme": "light",
+      "name": "text",
+      "fg": "#1d1d1f",
+      "surface": "card",
+      "bg": "#ffffff",
+      "ratio": 16.83
+    },
+    {
+      "theme": "light",
+      "name": "secondary",
+      "fg": "#6e6e73",
+      "surface": "background",
+      "bg": "#fbfbfd",
+      "ratio": 4.91
+    },
+    {
+      "theme": "light",
+      "name": "secondary",
+      "fg": "#6e6e73",
+      "surface": "card",
+      "bg": "#ffffff",
+      "ratio": 5.07
+    },
+    {
+      "theme": "light",
+      "name": "accent",
+      "fg": "#bf4800",
+      "surface": "background",
+      "bg": "#fbfbfd",
+      "ratio": 4.91
+    },
+    {
+      "theme": "light",
+      "name": "accent",
+      "fg": "#bf4800",
+      "surface": "card",
+      "bg": "#ffffff",
+      "ratio": 5.07
+    },
+    {
+      "theme": "dark",
+      "name": "text",
+      "fg": "#f5f5f7",
+      "surface": "background",
+      "bg": "#000000",
+      "ratio": 19.29
+    },
+    {
+      "theme": "dark",
+      "name": "text",
+      "fg": "#f5f5f7",
+      "surface": "card",
+      "bg": "#161617",
+      "ratio": 16.61
+    },
+    {
+      "theme": "dark",
+      "name": "secondary",
+      "fg": "#a1a1a6",
+      "surface": "background",
+      "bg": "#000000",
+      "ratio": 8.16
+    },
+    {
+      "theme": "dark",
+      "name": "secondary",
+      "fg": "#a1a1a6",
+      "surface": "card",
+      "bg": "#161617",
+      "ratio": 7.03
+    },
+    {
+      "theme": "dark",
+      "name": "accent",
+      "fg": "#ff9f5a",
+      "surface": "background",
+      "bg": "#000000",
+      "ratio": 10.36
+    },
+    {
+      "theme": "dark",
+      "name": "accent",
+      "fg": "#ff9f5a",
+      "surface": "card",
+      "bg": "#161617",
+      "ratio": 8.92
+    }
+  ],
+  "model": [
+    {
+      "width": 1440,
+      "route": "/lab/chip-junction-temperature/",
+      "femDefaultTj": "114.7",
+      "maxPower": "500",
+      "tj": "313.3",
+      "warning": true,
+      "live": "当前计算结果: 芯片结温 313.3 °C; 结到冷却液热阻 0.497 K/W. 超过 SiC 器件常见最高结温 175 °C",
+      "disclosures": "FEM 训练的代理模型\n\n三维稳态导热 FEM 样本训练；理想界面、常数热导率、芯片顶面均匀热流、Cooler 底面对流，其余表面绝热。浏览器执行代理求值。\n\n峰值与芯片顶面面积平均温度分别预测。分解条由中心线温降 / 总功率得到，不是三维各层独立串联热阻。\n\n验证状态\n\n100 例留出复核：峰值热阻平均 / 最大误差 0.55% / 2.68%，平均结温热阻 0.46% / 2.42%。该留出集在开发中已查看；无独立新测试集或实物试验。\n\n剖面色场来自 FEM 中心剖面的 POD 重构；三维外表面按切比雪夫距离延拓此剖面，并非完整三维温度场。厚度为非均匀视觉放大。\n\n175 °C 是部分 SiC 器件的常见最高结温参考，实际允许值应以具体器件数据手册为准。"
+    },
+    {
+      "width": 1440,
+      "route": "/en/lab/chip-junction-temperature/",
+      "femDefaultTj": "114.7",
+      "maxPower": "500",
+      "tj": "313.3",
+      "warning": true,
+      "live": "Current calculation: Junction temperature 313.3 °C; Junction-to-fluid resistance 0.497 K/W. Above the common SiC junction-temperature limit of 175 °C",
+      "disclosures": "FEM-trained surrogate\n\nTrained on 3D steady-conduction FEM samples: ideal contacts, constant conductivity, uniform chip-top heat flux, cooler-bottom convection and other surfaces adiabatic. The browser evaluates the surrogate.\n\nPeak and chip-top area-average temperatures are predicted separately. The breakdown uses centreline temperature drops divided by total power, not independent series resistances of 3D layers.\n\nValidation status\n\n100 held-out cases: peak resistance mean / max error 0.55% / 2.68%; average resistance 0.46% / 2.42%. This holdout was inspected during development; no fresh independent test set or experimental validation.\n\nThe cutaway uses a POD reconstruction of the FEM central plane. Outer 3D surfaces extend that plane using Chebyshev distance; this is not a complete 3D temperature field. Thicknesses are visually exaggerated by different factors.\n\n175 °C is a common reference limit for some SiC devices. Use the specific device datasheet to determine its permitted junction temperature."
+    },
+    {
+      "width": 390,
+      "route": "/lab/chip-junction-temperature/",
+      "femDefaultTj": "114.7",
+      "maxPower": "500",
+      "tj": "313.3",
+      "warning": true,
+      "live": "当前计算结果: 芯片结温 313.3 °C; 结到冷却液热阻 0.497 K/W. 超过 SiC 器件常见最高结温 175 °C",
+      "disclosures": "FEM 训练的代理模型\n\n三维稳态导热 FEM 样本训练；理想界面、常数热导率、芯片顶面均匀热流、Cooler 底面对流，其余表面绝热。浏览器执行代理求值。\n\n峰值与芯片顶面面积平均温度分别预测。分解条由中心线温降 / 总功率得到，不是三维各层独立串联热阻。\n\n验证状态\n\n100 例留出复核：峰值热阻平均 / 最大误差 0.55% / 2.68%，平均结温热阻 0.46% / 2.42%。该留出集在开发中已查看；无独立新测试集或实物试验。\n\n剖面色场来自 FEM 中心剖面的 POD 重构；三维外表面按切比雪夫距离延拓此剖面，并非完整三维温度场。厚度为非均匀视觉放大。\n\n175 °C 是部分 SiC 器件的常见最高结温参考，实际允许值应以具体器件数据手册为准。"
+    },
+    {
+      "width": 390,
+      "route": "/en/lab/chip-junction-temperature/",
+      "femDefaultTj": "114.7",
+      "maxPower": "500",
+      "tj": "313.3",
+      "warning": true,
+      "live": "Current calculation: Junction temperature 313.3 °C; Junction-to-fluid resistance 0.497 K/W. Above the common SiC junction-temperature limit of 175 °C",
+      "disclosures": "FEM-trained surrogate\n\nTrained on 3D steady-conduction FEM samples: ideal contacts, constant conductivity, uniform chip-top heat flux, cooler-bottom convection and other surfaces adiabatic. The browser evaluates the surrogate.\n\nPeak and chip-top area-average temperatures are predicted separately. The breakdown uses centreline temperature drops divided by total power, not independent series resistances of 3D layers.\n\nValidation status\n\n100 held-out cases: peak resistance mean / max error 0.55% / 2.68%; average resistance 0.46% / 2.42%. This holdout was inspected during development; no fresh independent test set or experimental validation.\n\nThe cutaway uses a POD reconstruction of the FEM central plane. Outer 3D surfaces extend that plane using Chebyshev distance; this is not a complete 3D temperature field. Thicknesses are visually exaggerated by different factors.\n\n175 °C is a common reference limit for some SiC devices. Use the specific device datasheet to determine its permitted junction temperature."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  'lang': 'zh',
+  'name': '示例工程师',
+  'role': '[职位与专业方向]',
+  'email': { 'user': 'hello', 'domain': 'example.com' },
+  'linkedin': 'https://www.linkedin.com/',
+  'languages': ['[语言 1]', '[语言 2]'],
+  'skills': ['[专业方向 1]', '[专业方向 2]', '[专业方向 3]'],
+}

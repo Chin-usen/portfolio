@@ -1,0 +1,246 @@
+/* N1 navigation: 52px shell, independent section links, native modal on mobile. */
+:root {
+  --n1-active: #e8e8ed;
+}
+.site-header.n1-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  flex-shrink: 0;
+  height: 52px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--d1-header);
+  border-bottom: 1px solid var(--d1-separator);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.n1-nav-shell {
+  display: flex;
+  height: 51px;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 40px;
+  gap: 16px;
+}
+.n1-header .site-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--thermal-text);
+}
+.n1-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.n1-nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 4px;
+}
+.n1-nav-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding-inline: 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--thermal-secondary);
+  background-clip: padding-box;
+  border-block: 6px solid transparent;
+}
+.n1-nav-list a[aria-current='page'] {
+  background-color: var(--n1-active);
+  color: var(--thermal-text);
+  font-weight: 600;
+}
+.n1-nav-list a:hover {
+  background-color: var(--n1-active);
+  text-decoration: none;
+}
+.n1-nav-divider {
+  height: 14px;
+  width: 1px;
+  background: var(--d1-separator);
+  margin-inline: 8px;
+}
+.n1-header .n1-language {
+  display: inline-flex;
+  min-height: 44px;
+  min-width: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 8px;
+  font-size: 13px;
+  color: var(--thermal-secondary);
+}
+.n1-header .menu-toggle {
+  display: none;
+}
+.n1-menu {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  color: var(--thermal-text);
+  background: var(--thermal-bg);
+}
+.n1-menu[open] {
+  display: flex;
+  flex-direction: column;
+}
+.n1-menu::backdrop {
+  background: var(--thermal-bg);
+}
+.n1-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 52px;
+  height: 52px;
+  padding-inline: 16px;
+  border-bottom: 1px solid var(--d1-separator);
+}
+.n1-menu .menu-close,
+.n1-header .menu-toggle {
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--thermal-text);
+}
+.n1-menu .menu-close {
+  display: flex;
+}
+.n1-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 28px 24px;
+}
+.n1-menu-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding-block: 12px;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--thermal-text);
+}
+.n1-current-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--thermal-accent);
+  flex: 0 0 8px;
+}
+.n1-menu-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: auto 24px 24px;
+  padding-top: 8px;
+  border-top: 1px solid var(--d1-separator);
+  font-size: 14px;
+  color: var(--thermal-secondary);
+}
+.n1-menu-footer nav,
+.n1-menu-contact {
+  display: flex;
+  align-items: center;
+}
+.n1-menu-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  color: var(--d1-link);
+}
+.n1-menu-footer a[aria-current],
+.n1-menu-contact a {
+  color: var(--thermal-secondary);
+  font-weight: 400;
+}
+.n1-menu-footer span {
+  padding-inline: 2px;
+}
+@media (max-width: 767px) {
+  .n1-nav-shell {
+    padding-inline: 16px;
+    gap: 4px;
+  }
+  .n1-nav-shell[data-enhanced] .n1-desktop-nav {
+    display: none;
+  }
+  .n1-nav-divider {
+    display: none;
+  }
+  .n1-nav-shell[data-enhanced] .menu-toggle {
+    display: flex;
+  }
+  .n1-nav-shell:not([data-enhanced]) .n1-nav-list {
+    gap: 0;
+  }
+  .n1-nav-shell:not([data-enhanced]) .n1-nav-list a {
+    padding-inline: 6px;
+    font-size: 12px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --n1-active: #2c2c2e;
+    --d1-header: rgb(14 14 16 / 82%);
+  }
+}
+:root[data-theme='dark'] {
+  --n1-active: #2c2c2e;
+  --d1-header: rgb(14 14 16 / 82%);
+}
+@keyframes n1-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes n1-leave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* The bypass action must remain readable above the sticky navigation. */
+.skip-link {
+  z-index: 40;
+}

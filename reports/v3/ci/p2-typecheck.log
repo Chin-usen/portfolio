@@ -1,0 +1,7 @@
+node.exe : $ tsc --noEmit
+At line:3 char:1
++ & '../../.p1-tools/node_modules/node/bin/node.exe' '../../.p1-tools/n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ tsc --noEmit:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

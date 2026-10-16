@@ -1,0 +1,79 @@
+{
+  "assessment": "B",
+  "kind": "supplementary-current-build-zoom-capture",
+  "started": "2026-10-15T04:46:22.785Z",
+  "browserClosed": true,
+  "builtHashesBefore": [
+    {
+      "file": "dist/index.html",
+      "sha256": "ddba72b50a27327a1ab5dca2d529ce4a021da473c15c6391843d6336852ef1b8"
+    },
+    {
+      "file": "dist/en/index.html",
+      "sha256": "d92108f3fbf4a83015b17291483ec5358561e4f301743b2192ae649f32100caa"
+    },
+    {
+      "file": "dist/lab/chip-junction-temperature/index.html",
+      "sha256": "a768c7a77623e64f0fcb200b9d2914317b07747a95f73116ebd2d871dd35cc76"
+    },
+    {
+      "file": "dist/en/lab/chip-junction-temperature/index.html",
+      "sha256": "78cef62f7c26fe0130c0ac810ac4d9f16a9440d1f0bab6d1f620a7f1fcfd40e5"
+    }
+  ],
+  "url": "http://127.0.0.1:4337/en/",
+  "zoom": 2,
+  "geometry": {
+    "innerWidth": 720,
+    "innerHeight": 500,
+    "dpr": 2,
+    "visualScale": 1,
+    "clientWidth": 720,
+    "scrollWidth": 720,
+    "scrollX": 0,
+    "scrollY": 0,
+    "fonts": "loaded",
+    "headings": [
+      {
+        "text": "[Role title line one][Role title line two]",
+        "rect": {
+          "x": 161.1640625,
+          "y": 223.59375,
+          "width": 397.671875,
+          "height": 94.859375,
+          "top": 223.59375,
+          "right": 558.8359375,
+          "bottom": 318.453125,
+          "left": 161.1640625
+        }
+      }
+    ]
+  },
+  "screenshot": "screenshots/zoom200-home-en-viewport.png",
+  "pixelDimensions": {
+    "width": 1440,
+    "height": 1000
+  },
+  "screenshotSha256": "2c275f63a58f698788d51b9bf3f4537d7b0477a97453e8e737cfec88ce68d0d9",
+  "builtHashesAfter": [
+    {
+      "file": "dist/index.html",
+      "sha256": "ddba72b50a27327a1ab5dca2d529ce4a021da473c15c6391843d6336852ef1b8"
+    },
+    {
+      "file": "dist/en/index.html",
+      "sha256": "d92108f3fbf4a83015b17291483ec5358561e4f301743b2192ae649f32100caa"
+    },
+    {
+      "file": "dist/lab/chip-junction-temperature/index.html",
+      "sha256": "a768c7a77623e64f0fcb200b9d2914317b07747a95f73116ebd2d871dd35cc76"
+    },
+    {
+      "file": "dist/en/lab/chip-junction-temperature/index.html",
+      "sha256": "78cef62f7c26fe0130c0ac810ac4d9f16a9440d1f0bab6d1f620a7f1fcfd40e5"
+    }
+  ],
+  "buildUnchangedDuringCapture": true,
+  "captureComplete": true,
+  "finished": "2026-10-15T04:46:23.767Z"
+}

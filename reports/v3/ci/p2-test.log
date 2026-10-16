@@ -1,0 +1,16 @@
+node.exe : $ vitest run
+At line:3 char:1
++ & '../../.p1-tools/node_modules/node/bin/node.exe' '../../.p1-tools/n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ vitest run:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+ RUN  v5.0.4 <workspace>/portfolio-main-v3/thermal-p2
+
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  11:48:02
+   Duration  352ms (import 70%, transform 21%, tests 6%, worker 2%)
+

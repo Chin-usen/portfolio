@@ -1,0 +1,51 @@
+Command: pnpm build
+Started: 2026-10-15T04:24:08.689169+00:00
+Exit: 0
+
+$ node scripts/generate-font-css.mjs && astro build
+Noto CSS: 4 content subsets + 8 original fallback faces, 18911 bytes.
+Code points outside the original Noto package retain the CSS font stack: U+394,U+2084.
+13:24:09 [content] Syncing content
+13:24:09 [content] Synced content
+13:24:09 [types] Generated 356ms
+13:24:09 [build] output: "static"
+13:24:09 [build] mode: "static"
+13:24:09 [build] directory: <workspace>\portfolio-main-v3\dist\
+13:24:09 [build] Collecting build info...
+13:24:09 [build] ✓ Completed in 383ms.
+13:24:09 [build] Building static entrypoints...
+13:24:10 [vite] ✓ built in 190ms
+13:24:10 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+13:24:10 [vite] ✓ built in 137ms
+13:24:10 [build] Rearranging server assets...
+
+ generating static routes 
+13:24:10   ├─ /404.html (+11ms) 
+13:24:10   ├─ /about/index.html (+3ms) 
+13:24:10   ├─ /contact/index.html (+3ms) 
+13:24:10   ├─ /en/404/index.html (+2ms) 
+13:24:10   ├─ /en/about/index.html (+5ms) 
+13:24:10   ├─ /en/contact/index.html (+2ms) 
+13:24:10   ├─ /en/lab/chip-junction-temperature/index.html (+5ms) 
+13:24:10   ├─ /en/lab/sample-teardown/index.html (+2ms) 
+13:24:10   ├─ /en/lab/sample-simulation/index.html (+3ms) 
+13:24:10   ├─ /en/lab/index.html (+3ms) 
+13:24:10   ├─ /en/work/sample-case/index.html (+2ms) 
+13:24:10   ├─ /en/work/index.html (+2ms) 
+13:24:10   ├─ /en/index.html (+2ms) 
+13:24:10   ├─ /lab/chip-junction-temperature/index.html (+2ms) 
+13:24:10   ├─ /lab/sample-teardown/index.html (+1ms) 
+13:24:10   ├─ /lab/sample-simulation/index.html (+1ms) 
+13:24:10   ├─ /lab/index.html (+2ms) 
+13:24:10   ├─ /work/sample-case/index.html (+2ms) 
+13:24:10   ├─ /work/index.html (+1ms) 
+13:24:10   ├─ /index.html (+2ms) 
+13:24:10 ✓ Completed in 79ms.
+
+13:24:10 [build] ✓ Completed in 601ms.
+13:24:10 [build] 20 page(s) built in 1.00s
+13:24:10 [build] Complete!

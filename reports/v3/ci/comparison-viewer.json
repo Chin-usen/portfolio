@@ -1,0 +1,391 @@
+{
+  "time": "2026-10-15T05:50:02.772Z",
+  "browser": "156.0.8078.4",
+  "pass": true,
+  "errors": [],
+  "states": [
+    {
+      "state": "home-zh-1440-light",
+      "images": [
+        {
+          "source": "../../docs/design/D1-desktop.jpg",
+          "width": 1440,
+          "height": 3067
+        },
+        {
+          "source": "after/A/home-zh-1440-light.png",
+          "width": 1440,
+          "height": 3252
+        },
+        {
+          "source": "before/A/home-zh-1440-light.png",
+          "width": 1440,
+          "height": 1308
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-zh-1440-dark",
+      "images": [
+        {
+          "source": "../../docs/design/D1-desktop.jpg",
+          "width": 1440,
+          "height": 3067
+        },
+        {
+          "source": "after/A/home-zh-1440-dark.png",
+          "width": 1440,
+          "height": 3252
+        },
+        {
+          "source": "before/A/home-zh-1440-dark.png",
+          "width": 1440,
+          "height": 1308
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-zh-390-light",
+      "images": [
+        {
+          "source": "../../docs/design/D1-mobile.jpg",
+          "width": 390,
+          "height": 2044
+        },
+        {
+          "source": "after/A/home-zh-390-light.png",
+          "width": 390,
+          "height": 2367
+        },
+        {
+          "source": "before/A/home-zh-390-light.png",
+          "width": 390,
+          "height": 1849
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-zh-390-dark",
+      "images": [
+        {
+          "source": "../../docs/design/D1-mobile.jpg",
+          "width": 390,
+          "height": 2044
+        },
+        {
+          "source": "after/A/home-zh-390-dark.png",
+          "width": 390,
+          "height": 2367
+        },
+        {
+          "source": "before/A/home-zh-390-dark.png",
+          "width": 390,
+          "height": 1849
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-en-1440-light",
+      "images": [
+        {
+          "source": "../../docs/design/D1-desktop.jpg",
+          "width": 1440,
+          "height": 3067
+        },
+        {
+          "source": "after/A/home-en-1440-light.png",
+          "width": 1440,
+          "height": 3252
+        },
+        {
+          "source": "before/A/home-en-1440-light.png",
+          "width": 1440,
+          "height": 1394
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-en-1440-dark",
+      "images": [
+        {
+          "source": "../../docs/design/D1-desktop.jpg",
+          "width": 1440,
+          "height": 3067
+        },
+        {
+          "source": "after/A/home-en-1440-dark.png",
+          "width": 1440,
+          "height": 3252
+        },
+        {
+          "source": "before/A/home-en-1440-dark.png",
+          "width": 1440,
+          "height": 1394
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-en-390-light",
+      "images": [
+        {
+          "source": "../../docs/design/D1-mobile.jpg",
+          "width": 390,
+          "height": 2044
+        },
+        {
+          "source": "after/A/home-en-390-light.png",
+          "width": 390,
+          "height": 2558
+        },
+        {
+          "source": "before/A/home-en-390-light.png",
+          "width": 390,
+          "height": 2167
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "home-en-390-dark",
+      "images": [
+        {
+          "source": "../../docs/design/D1-mobile.jpg",
+          "width": 390,
+          "height": 2044
+        },
+        {
+          "source": "after/A/home-en-390-dark.png",
+          "width": 390,
+          "height": 2558
+        },
+        {
+          "source": "before/A/home-en-390-dark.png",
+          "width": 390,
+          "height": 2167
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-zh-1440-light",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-zh-1440-light.png",
+          "width": 1440,
+          "height": 1603
+        },
+        {
+          "source": "before/A/s1-zh-1440-light.png",
+          "width": 1440,
+          "height": 1552
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-zh-1440-dark",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-zh-1440-dark.png",
+          "width": 1440,
+          "height": 1603
+        },
+        {
+          "source": "before/A/s1-zh-1440-dark.png",
+          "width": 1440,
+          "height": 1552
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-zh-390-light",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-zh-390-light.png",
+          "width": 390,
+          "height": 2568
+        },
+        {
+          "source": "before/A/s1-zh-390-light.png",
+          "width": 390,
+          "height": 2331
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-zh-390-dark",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-zh-390-dark.png",
+          "width": 390,
+          "height": 2568
+        },
+        {
+          "source": "before/A/s1-zh-390-dark.png",
+          "width": 390,
+          "height": 2331
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-en-1440-light",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-en-1440-light.png",
+          "width": 1440,
+          "height": 1652
+        },
+        {
+          "source": "before/A/s1-en-1440-light.png",
+          "width": 1440,
+          "height": 1601
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-en-1440-dark",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-en-1440-dark.png",
+          "width": 1440,
+          "height": 1652
+        },
+        {
+          "source": "before/A/s1-en-1440-dark.png",
+          "width": 1440,
+          "height": 1601
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-en-390-light",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-en-390-light.png",
+          "width": 390,
+          "height": 2898
+        },
+        {
+          "source": "before/A/s1-en-390-light.png",
+          "width": 390,
+          "height": 2609
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    },
+    {
+      "state": "s1-en-390-dark",
+      "images": [
+        {
+          "source": "../../docs/design/S1-desktop.jpg",
+          "width": 1440,
+          "height": 1240
+        },
+        {
+          "source": "after/A/s1-en-390-dark.png",
+          "width": 390,
+          "height": 2898
+        },
+        {
+          "source": "before/A/s1-en-390-dark.png",
+          "width": 390,
+          "height": 2609
+        }
+      ],
+      "links": 16,
+      "overflow": false
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "id": "surface",
+        "height": 44
+      },
+      {
+        "id": "locale",
+        "height": 44
+      },
+      {
+        "id": "width",
+        "height": 44
+      },
+      {
+        "id": "theme",
+        "height": 44
+      }
+    ]
+  },
+  "visual_review": {
+    "reviewer": "coordinator",
+    "screens": [
+      "comparison-home-desktop.png",
+      "comparison-s1-desktop.png",
+      "comparison-mobile.png"
+    ],
+    "result": "All three saved viewport screenshots inspected: reference/current/baseline labels and images legible, controls visible, mobile reflow intact. Individual product screenshots were reviewed separately by A."
+  }
+}

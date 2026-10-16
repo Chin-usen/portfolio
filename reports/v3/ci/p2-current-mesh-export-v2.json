@@ -1,0 +1,37 @@
+{
+  "mesh_file": "data/mesh-l3-quarter.npz",
+  "sha256": "05eb5292e8ecf54ded5f46ce6c6c24e1d30b32addc494722b18ed800e13e1777",
+  "nodes": 24897,
+  "hexahedra": 21648,
+  "coordinate_units": "mm",
+  "domain": "quarter: x >= 0, y >= 0; symmetry planes x=0 and y=0",
+  "connectivity_order": "tensor-product dz,dy,dx binary order; VTK order is [0,1,3,2,4,5,7,6]",
+  "default_parameters": {
+    "t_cooler": 3.0,
+    "k_cooler": 390.0,
+    "t_sb": 0.1,
+    "k_sb": 58.0,
+    "t_cub": 0.3,
+    "t_cer": 0.32,
+    "k_cer": 90.0,
+    "t_cut": 0.3,
+    "k_cu": 390.0,
+    "t_st": 0.08,
+    "k_st": 200.0,
+    "h": 15000.0
+  },
+  "layer_ids_bottom_to_top": [
+    "cooler",
+    "solder-bottom",
+    "copper-bottom",
+    "ceramic",
+    "copper-top",
+    "solder-top",
+    "chip"
+  ],
+  "all_sample_reconstruction": "x,y unchanged; z = cumulative_thickness[node_z_layer] + node_z_eta * sample_thickness[node_z_layer]",
+  "default_volume_mm3": 705.645,
+  "analytic_quarter_volume_mm3": 705.645,
+  "positive_element_volumes": true,
+  "all_nodes_referenced": true
+}

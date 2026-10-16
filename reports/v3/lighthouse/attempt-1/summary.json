@@ -1,0 +1,239 @@
+{
+  "status": "stopped after confirmed budget failures",
+  "completed_runs": 29,
+  "reason": "Chinese Home performance 87-89 and S1 below90. LCP image loaded early but render delay and35+Noto font requests (~1.1MB) dominated. Stop task-owned run; preserve failures; implement glyph subsetting without changing D1 families or weights; rerun final gates.",
+  "runs": [
+    {
+      "route": "/",
+      "performance": 0.87,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 4067.5,
+      "cls": 0.002255634745023092
+    },
+    {
+      "route": "/",
+      "performance": 0.88,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 3914.4449999999997,
+      "cls": 0.002255634745023092
+    },
+    {
+      "route": "/",
+      "performance": 0.89,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 3768.1575,
+      "cls": 0.002255634745023092
+    },
+    {
+      "route": "/work/",
+      "performance": 0.98,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2409.704,
+      "cls": 0.0002505731953632944
+    },
+    {
+      "route": "/work/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1358.7495000000001,
+      "cls": 0.0002505731953632944
+    },
+    {
+      "route": "/work/",
+      "performance": 0.96,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2711.062,
+      "cls": 0.0002505731953632944
+    },
+    {
+      "route": "/work/sample-case/",
+      "performance": 0.93,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 3162.096,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/work/sample-case/",
+      "performance": 0.98,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2410.464,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/work/sample-case/",
+      "performance": 0.96,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2262.256,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1508.3129999999999,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/",
+      "performance": 0.96,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2710.0159999999996,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1357.2705,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1508.6370000000002,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "performance": 0.98,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1810.539,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/sample-teardown/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1508.433,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "performance": 0.98,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2411.4680000000003,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1509.048,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/lab/sample-simulation/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1360.1009999999999,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "performance": 0.9,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 3616.825,
+      "cls": 0.0005402575636482985
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "performance": 0.83,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 4669.973999999999,
+      "cls": 0.0005402575636482985
+    },
+    {
+      "route": "/lab/chip-junction-temperature/",
+      "performance": 0.85,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 4366.245,
+      "cls": 0.0005402575636482985
+    },
+    {
+      "route": "/about/",
+      "performance": 0.96,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2858.9439999999995,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/about/",
+      "performance": 0.97,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 2107.611,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/about/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1058.328,
+      "cls": 0.0001701012313981474
+    },
+    {
+      "route": "/contact/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1210.701,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/contact/",
+      "performance": 1,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1208.538,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/contact/",
+      "performance": 0.9,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 3611.5200000000004,
+      "cls": 0.0003247387144873724
+    },
+    {
+      "route": "/en/",
+      "performance": 0.99,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1805.742,
+      "cls": 0.003814441306040249
+    },
+    {
+      "route": "/en/",
+      "performance": 0.99,
+      "accessibility": 1,
+      "seo": 1,
+      "lcp_ms": 1803.5055,
+      "cls": 0.003814441306040249
+    }
+  ]
+}

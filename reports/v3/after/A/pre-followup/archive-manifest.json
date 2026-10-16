@@ -1,0 +1,427 @@
+[
+    {
+        "name":  "assessment-a.md",
+        "bytes":  20217,
+        "sha256":  "5EBAA0CE82FD3F13139C011B8E50B3D6C3A7D062E5ABF91D9AA434001D1EBE27"
+    },
+    {
+        "name":  "capture.cjs",
+        "bytes":  4539,
+        "sha256":  "047A7E0FE11C801530C6C6E8A820B89A2B0FEA81DC75FBDD76659041F80518C4"
+    },
+    {
+        "name":  "home-en-1440-dark-career.png",
+        "bytes":  68265,
+        "sha256":  "9411BF569CADC43E817694CEA1B7FF4A58E4B67FAF8D49604CDBE84B3F4EF882"
+    },
+    {
+        "name":  "home-en-1440-dark-lab.png",
+        "bytes":  100707,
+        "sha256":  "6B8F230001682B875E11C249DD5C0077C2EA182598E8D8F8E08204CAF6379843"
+    },
+    {
+        "name":  "home-en-1440-dark-top.png",
+        "bytes":  77047,
+        "sha256":  "1020A8186FDEA2866B21963C9E782D95AC30D05432D2BAEF6A3836D77EF62C51"
+    },
+    {
+        "name":  "home-en-1440-dark.png",
+        "bytes":  312371,
+        "sha256":  "203518B570BC999A81B240B6D2FDF02964ACB0B5D55A7E34C3B6725147CCEFA2"
+    },
+    {
+        "name":  "home-en-1440-light-career.png",
+        "bytes":  68274,
+        "sha256":  "D1B7A1EDE24568031FFB730AFD8901ACDE85BE4699BE976E3E50B43DA15E4E35"
+    },
+    {
+        "name":  "home-en-1440-light-lab.png",
+        "bytes":  102603,
+        "sha256":  "1C38F4D6DD614FC9B85A776F1FAC6461AC2B6930073A127FD70D16B192E8BA25"
+    },
+    {
+        "name":  "home-en-1440-light-top.png",
+        "bytes":  77467,
+        "sha256":  "F320263BBA4F426508F837C2622BC369C54D451FF66EE06099CB9F1AC37D5030"
+    },
+    {
+        "name":  "home-en-1440-light.png",
+        "bytes":  320638,
+        "sha256":  "E020F8249C1E8D2653B63AFC9B418E2DECC77F21A6A15CDD556090D35A68165E"
+    },
+    {
+        "name":  "home-en-390-dark-career.png",
+        "bytes":  29314,
+        "sha256":  "207E29458CDA63875796E9307FAF161EB0ECC80593A2DAFA9E207544006767BC"
+    },
+    {
+        "name":  "home-en-390-dark-lab.png",
+        "bytes":  80072,
+        "sha256":  "A97B4DB475BE3A64FE557A4525B969C451251CAB8ECF2BEBBA2C2862566E0111"
+    },
+    {
+        "name":  "home-en-390-dark-top.png",
+        "bytes":  68841,
+        "sha256":  "B96477EC06C2CCAD9CCCD92941BA4BE1CFC0FB692483C387C517B34EE7EDA968"
+    },
+    {
+        "name":  "home-en-390-dark.png",
+        "bytes":  164572,
+        "sha256":  "850CA2A9BECC1C6BCDB36D6A472C12FB0AD34FC5387E8F3DD9B513CA87ED0CD3"
+    },
+    {
+        "name":  "home-en-390-light-career.png",
+        "bytes":  29317,
+        "sha256":  "A51C47EE1F033A2EB71F68866ADE46DA78BA8529ABC7EA4DE19D95C2C0FAFB69"
+    },
+    {
+        "name":  "home-en-390-light-lab.png",
+        "bytes":  80514,
+        "sha256":  "634320C8F495C9B9D9E24721D118BFCE7746AE7F3C56F426D0777AA8A351A981"
+    },
+    {
+        "name":  "home-en-390-light-top.png",
+        "bytes":  70755,
+        "sha256":  "A67C0109A28F759E08E273D3384BEE62AD8F63454DC77226C724283A3FC04BA9"
+    },
+    {
+        "name":  "home-en-390-light.png",
+        "bytes":  167750,
+        "sha256":  "FA8E15A6DF88C564D80E842E6613D0C40FCFA41B452B68276116B0C750E65E02"
+    },
+    {
+        "name":  "home-en-390-text200.png",
+        "bytes":  336837,
+        "sha256":  "9C64C46781C86F3E621F9F92A6F8020E2184C4BA127FCD8D45232A2A8D44EA11"
+    },
+    {
+        "name":  "home-interaction.png",
+        "bytes":  18912,
+        "sha256":  "0492083EAE638C52E99A52D8F99B446629875123594FE2DDA9830682C289C472"
+    },
+    {
+        "name":  "home-zh-1440-dark-career.png",
+        "bytes":  70211,
+        "sha256":  "92EE9D6053037CEC3A15B4887B744BA7732FE35A9E37FA014A282B8BA4717CEF"
+    },
+    {
+        "name":  "home-zh-1440-dark-lab.png",
+        "bytes":  103888,
+        "sha256":  "54FCD1BFB3657586C712D10CE6DCCC750F8BAD306DE7B67EEA07B21964F24A0D"
+    },
+    {
+        "name":  "home-zh-1440-dark-top.png",
+        "bytes":  85556,
+        "sha256":  "EA11E8F653649A5AAFD5EE686F08D8AB0F223F2B8C96FDDDBC1D599D53D2695A"
+    },
+    {
+        "name":  "home-zh-1440-dark.png",
+        "bytes":  327222,
+        "sha256":  "F565996AD74668EFE0465CBFDE681F75873F4EE81D79EEFFE1F593E2F6018F1D"
+    },
+    {
+        "name":  "home-zh-1440-light-career.png",
+        "bytes":  70220,
+        "sha256":  "CF936C9D755533EA8B22A742B5FB054C4B3D28D3E5A4CEB169A3B63D35C3552C"
+    },
+    {
+        "name":  "home-zh-1440-light-lab.png",
+        "bytes":  104691,
+        "sha256":  "E11093223E184D42974D0E9D7C44644135905F31892307BF6A02343613750D5A"
+    },
+    {
+        "name":  "home-zh-1440-light-top.png",
+        "bytes":  85788,
+        "sha256":  "693BD3B865688CA5392595B85FBE938D01E8511ACD05C4F301A95D323C7F96E2"
+    },
+    {
+        "name":  "home-zh-1440-light.png",
+        "bytes":  334107,
+        "sha256":  "26F21B8FCF6B7434F14D991DF3B1A0C960B71A5E0FED84E793047985DC11227D"
+    },
+    {
+        "name":  "home-zh-390-dark-career.png",
+        "bytes":  29461,
+        "sha256":  "A818584FA45DB91B87C672FBCD036F10677C3A4E92514517A1665A667AAFA78D"
+    },
+    {
+        "name":  "home-zh-390-dark-lab.png",
+        "bytes":  75094,
+        "sha256":  "42C8C495404EC6CCC3686CABB4888FD3DC96F9B982152ED15F60E09B58E26431"
+    },
+    {
+        "name":  "home-zh-390-dark-top.png",
+        "bytes":  70656,
+        "sha256":  "CBDF63B1E00EC9DF4408F00C8158627EDB225FD1EA7C5EF7FC02E70955CD7431"
+    },
+    {
+        "name":  "home-zh-390-dark.png",
+        "bytes":  160673,
+        "sha256":  "0B6057EAB9AEEA29790D31F262BA7BCDEE570F71FB59842DC82BCDD2CE45A2B3"
+    },
+    {
+        "name":  "home-zh-390-light-career.png",
+        "bytes":  29468,
+        "sha256":  "D2D1FE705807A76D6C751C3B7A3BCBE66505AA2CCDE96192385718D47CD1B6D3"
+    },
+    {
+        "name":  "home-zh-390-light-lab.png",
+        "bytes":  75566,
+        "sha256":  "B3677DEF502A0AF669B9B9A966896BD278D8673AD8618165CCD953E9C33DA9AF"
+    },
+    {
+        "name":  "home-zh-390-light-top.png",
+        "bytes":  72699,
+        "sha256":  "664AFF6D8205442FD2468AA436AD8E2A4C617E83F915DE458B2D9D16BE0BB4DF"
+    },
+    {
+        "name":  "home-zh-390-light.png",
+        "bytes":  164075,
+        "sha256":  "4574CD443300B85136FFEEC10C2C96086C08258A6C60810153E397299508F176"
+    },
+    {
+        "name":  "home-zh-390-text200.png",
+        "bytes":  302571,
+        "sha256":  "8FCFEBA7392AA45D6A341DDE06256A3AD594680B12152E48A9EDB8EFCDC3211D"
+    },
+    {
+        "name":  "interaction-evidence.json",
+        "bytes":  2798,
+        "sha256":  "EE5F7015CA401A862C68D56D8AAFA0981A41AFCEB793203ABB1979091087CCDE"
+    },
+    {
+        "name":  "interactions.cjs",
+        "bytes":  5719,
+        "sha256":  "5431D431893DA29AB6E776CAA99BD8948A3B729372C052AE3E9C3AA14375FDF6"
+    },
+    {
+        "name":  "observed-geometry.json",
+        "bytes":  147994,
+        "sha256":  "99008D191B22E44A51D993FE1BC3DF43CD932455519C15E48AD34189CA1F1CBA"
+    },
+    {
+        "name":  "prep.md",
+        "bytes":  4308,
+        "sha256":  "1FF10BB7A0E81419FB7A1D14DEF1FC4E690DDC938290C919D3AE20289452E0A5"
+    },
+    {
+        "name":  "s1-convection-selection.png",
+        "bytes":  41747,
+        "sha256":  "3DD1B6179B541A2E63653E5EA474FA480B141FD2500F60963F478964A1C68969"
+    },
+    {
+        "name":  "s1-en-1440-dark-model.png",
+        "bytes":  42494,
+        "sha256":  "268555759284611EA33C0038BDC4781393AA7C8DAF06B93D62ABA637981DE55E"
+    },
+    {
+        "name":  "s1-en-1440-dark-notes.png",
+        "bytes":  54655,
+        "sha256":  "20B761469CE2B030557D5C7A8E09AFB22B9FE741A4C6769A6305909DAD93F8AF"
+    },
+    {
+        "name":  "s1-en-1440-dark-parameters.png",
+        "bytes":  36698,
+        "sha256":  "0DA71A0C6B2D1DBF6375B1ED09B325160D46414D8871DA4C4024C506B83751E5"
+    },
+    {
+        "name":  "s1-en-1440-dark-top.png",
+        "bytes":  110352,
+        "sha256":  "4A919E4E4F8FD15B16E9D9E5FE2906894278BC1D426265895E5C8077309E43BD"
+    },
+    {
+        "name":  "s1-en-1440-dark.png",
+        "bytes":  198515,
+        "sha256":  "CA6ADCC85850F48EA249A972915F5C039A94F261E405E4F9083788E0232240C3"
+    },
+    {
+        "name":  "s1-en-1440-light-model.png",
+        "bytes":  41015,
+        "sha256":  "932D774F035001FCC4BBD33871F72A5A72A1CA798C77A782B2CD9E294F172294"
+    },
+    {
+        "name":  "s1-en-1440-light-notes.png",
+        "bytes":  54077,
+        "sha256":  "9A78DA80A194900B0EC54B02FD09DD1ABCF80292487FB8F4908C338DDF551AA0"
+    },
+    {
+        "name":  "s1-en-1440-light-parameters.png",
+        "bytes":  37666,
+        "sha256":  "1BA8659F5F233548209D2731FB3EA97EDB34FB0C18309533EAE6BB4CB727CBCC"
+    },
+    {
+        "name":  "s1-en-1440-light-top.png",
+        "bytes":  109444,
+        "sha256":  "BB7AC884FC233DDC3D8DACA21535D454416968F065BBCC989F7FD81F4A24D5A1"
+    },
+    {
+        "name":  "s1-en-1440-light.png",
+        "bytes":  196677,
+        "sha256":  "60B95E2958528898D3E1102880E5772B98514572AB67E9E001CFDA07E80720D5"
+    },
+    {
+        "name":  "s1-en-390-dark-model.png",
+        "bytes":  31953,
+        "sha256":  "88527945460734B3CC0591680553D77D08C0F5C6BC6C23573373C0E0B59C73F6"
+    },
+    {
+        "name":  "s1-en-390-dark-notes.png",
+        "bytes":  56087,
+        "sha256":  "EB4FA0286F6B80161DF09B4575D57032F030820D31651236EA0B36FF6220CE2A"
+    },
+    {
+        "name":  "s1-en-390-dark-parameters.png",
+        "bytes":  38460,
+        "sha256":  "1E4C68618BE2175CAC2F98C2CCFDE10FCC29CDFE79C0DE64FF919B714D8C6B8D"
+    },
+    {
+        "name":  "s1-en-390-dark-top.png",
+        "bytes":  48504,
+        "sha256":  "5890E2F8DB62F27433ED934B5169853262470EA81B5FE0D4086A40F02A5743F7"
+    },
+    {
+        "name":  "s1-en-390-dark.png",
+        "bytes":  175589,
+        "sha256":  "FFDCAE647EC53100A087D1D34133840844D8F3C6C8DC677031CE915B1CBBEDC4"
+    },
+    {
+        "name":  "s1-en-390-light-model.png",
+        "bytes":  30551,
+        "sha256":  "2AA8DF1102E1362052C8D9323DE9CDEADE800F3E73C6CC53BB27B4CD12A8DA34"
+    },
+    {
+        "name":  "s1-en-390-light-notes.png",
+        "bytes":  55898,
+        "sha256":  "D418046DF9FAF0A71B29680CF12C317414871F3A20356422CDDBA0EE26A14057"
+    },
+    {
+        "name":  "s1-en-390-light-parameters.png",
+        "bytes":  39210,
+        "sha256":  "D3B634E82C75F73B46C89C6BAFC1224CCCBFFC0375CF0914494822E8ADBB12F4"
+    },
+    {
+        "name":  "s1-en-390-light-top.png",
+        "bytes":  47688,
+        "sha256":  "30A3BA216A3243F1F163388CDAE589CBF6FF296E41A0B3622C6A8BEFC102CB81"
+    },
+    {
+        "name":  "s1-en-390-light.png",
+        "bytes":  174274,
+        "sha256":  "F3002ED6F51778F59CF1009137C651D306D4A56BCD6315C2C6368F41A74AEEF4"
+    },
+    {
+        "name":  "s1-en-390-text200.png",
+        "bytes":  427236,
+        "sha256":  "BB9D6F6153878EF25B5AD73BA80A421F6E428DA87C865413DFB66075590CBCD8"
+    },
+    {
+        "name":  "s1-mobile-high-power.png",
+        "bytes":  44090,
+        "sha256":  "BB39BE3C724E07571D49D79990692253EA8AB486122E7473BE45BA32904EB771"
+    },
+    {
+        "name":  "s1-zh-1440-dark-model.png",
+        "bytes":  43446,
+        "sha256":  "B674E61E0C24431E424C9346112A47E8AC518FFD82D99CEDE288FF4326F2B199"
+    },
+    {
+        "name":  "s1-zh-1440-dark-notes.png",
+        "bytes":  60119,
+        "sha256":  "6739485B9F760480D1F47F6374528468D3A0E1E6C53A30C71ED4A4C83628CE30"
+    },
+    {
+        "name":  "s1-zh-1440-dark-parameters.png",
+        "bytes":  38354,
+        "sha256":  "356CE8DAC342BE3327AFE2EE60DE7A4FA31E1EFF28E131DE6433C87EE635D813"
+    },
+    {
+        "name":  "s1-zh-1440-dark-top.png",
+        "bytes":  110473,
+        "sha256":  "4F5994C2282C653514095025960ABD982FAF35008F60E75F53FF4AAEE029A081"
+    },
+    {
+        "name":  "s1-zh-1440-dark.png",
+        "bytes":  196839,
+        "sha256":  "14F6B1B28120FBC6347372322FD01BADF85BEEF5BAB6C695E467F5D7347CFC25"
+    },
+    {
+        "name":  "s1-zh-1440-light-model.png",
+        "bytes":  41984,
+        "sha256":  "8410B31BCC31580A572938BFD20D1BAF2B689EE9DC1A0BFE32D2C196ED45C993"
+    },
+    {
+        "name":  "s1-zh-1440-light-notes.png",
+        "bytes":  59369,
+        "sha256":  "1C8305A71CD256BD5BC10BC521A71C075F6D305497C69951CB4C78708CA83836"
+    },
+    {
+        "name":  "s1-zh-1440-light-parameters.png",
+        "bytes":  38454,
+        "sha256":  "2BCF108EA893E4039DB2112693440E2000B8683FFB7724F21979B0095D9386EB"
+    },
+    {
+        "name":  "s1-zh-1440-light-top.png",
+        "bytes":  109687,
+        "sha256":  "B0B2C2EDF94C44560BDC3CDA5436E21091F98F9B901C882B8EC3FA168413F18D"
+    },
+    {
+        "name":  "s1-zh-1440-light.png",
+        "bytes":  195074,
+        "sha256":  "AC966938A92F84E76BCF3F0DB04BE318AB4EE7B1D23BCCB598CF9071EAF7E656"
+    },
+    {
+        "name":  "s1-zh-390-dark-model.png",
+        "bytes":  32625,
+        "sha256":  "D0F1D5993625BE02FA247E183C2103140FAB0EE18AAD33733C2F7E4A8D86AC7B"
+    },
+    {
+        "name":  "s1-zh-390-dark-notes.png",
+        "bytes":  62227,
+        "sha256":  "11A674CECD5650AA59636DEE6366B1CF20D3E9CF1B0F2CA91D2B68A405A56DD2"
+    },
+    {
+        "name":  "s1-zh-390-dark-parameters.png",
+        "bytes":  39097,
+        "sha256":  "B7C644A80369FD4DE0F51435F0DCCD937144CED6AF886239D4FC6FFA90F9DCA1"
+    },
+    {
+        "name":  "s1-zh-390-dark-top.png",
+        "bytes":  47164,
+        "sha256":  "27D681E701443F7534CB1385C58E55F948F9C346351CFFC68CF65A1F868D9D18"
+    },
+    {
+        "name":  "s1-zh-390-dark.png",
+        "bytes":  176815,
+        "sha256":  "4B584F8467579A250D14E0697E2A554A8E2AF9805122A2EA3A13971CEED7443C"
+    },
+    {
+        "name":  "s1-zh-390-light-model.png",
+        "bytes":  31628,
+        "sha256":  "7CB358E8B5FB6875CF14CBB898B9428556DD82D82FCA33E3F1C786600995BA80"
+    },
+    {
+        "name":  "s1-zh-390-light-notes.png",
+        "bytes":  61568,
+        "sha256":  "FE28620226046C42A582EA2C1F27EF05ECE8BA475C80B4D4D9E1975B9F7EB3B8"
+    },
+    {
+        "name":  "s1-zh-390-light-parameters.png",
+        "bytes":  39323,
+        "sha256":  "E02A2BC039FAF496F744861837A056706A4CD968A109C21800C51595AD44D9F0"
+    },
+    {
+        "name":  "s1-zh-390-light-top.png",
+        "bytes":  46612,
+        "sha256":  "449BDFFA55D229B446060CC19ED17C6FD1ADBC2824FB34E5DD6F6F80B17B7A16"
+    },
+    {
+        "name":  "s1-zh-390-light.png",
+        "bytes":  175425,
+        "sha256":  "4A10BF43D33B33B405542A4555D9A00AD797B91C300B8B814A1DAB310071B52A"
+    },
+    {
+        "name":  "s1-zh-390-text200.png",
+        "bytes":  365264,
+        "sha256":  "D652CAB9A7B002A2E8B538C0159636BE2B96A093FE38E3A3D9BDCA6794F6DAE8"
+    }
+]

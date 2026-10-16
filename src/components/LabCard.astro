@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { localePath } from '../i18n/utils';
+import { getUi } from '../i18n/dictionaries';
+interface Props {
+  entry: CollectionEntry<'lab'>;
+  locale: 'zh' | 'en';
+  headingLevel?: 'h2' | 'h3';
+}
+const { entry, locale, headingLevel: Heading = 'h3' } = Astro.props;
+const { title, summary, kind, status, translationKey } = entry.data;
+const ui = getUi(locale);
+---
+
+<article class="content-card">
+  <p>
+    {kind === 'teardown' ? ui.lab.teardown : ui.lab.simulation} · {status}
+  </p>
+  <Heading>
+    <a href={localePath(locale, `/lab/${translationKey}/`)}>{title}</a>
+  </Heading>
+  <p>{summary}</p>
+</article>

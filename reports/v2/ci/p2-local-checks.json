@@ -1,0 +1,44 @@
+[
+  {
+    "check": "p2-typecheck",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:53.004823+00:00",
+    "seconds": 0.705204,
+    "log": "p2-typecheck.log"
+  },
+  {
+    "check": "p2-unit",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:53.710027+00:00",
+    "seconds": 0.638515,
+    "log": "p2-unit.log"
+  },
+  {
+    "check": "p2-verify",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:54.348542+00:00",
+    "seconds": 0.361939,
+    "log": "p2-verify.log"
+  },
+  {
+    "check": "p2-linearity",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:54.710481+00:00",
+    "seconds": 0.337726,
+    "log": "p2-linearity.log"
+  },
+  {
+    "check": "p2-fem-audit",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:55.048207+00:00",
+    "seconds": 4.887409,
+    "log": "p2-fem-audit.log"
+  },
+  {
+    "check": "p2-mesh",
+    "exit_code": 0,
+    "started_utc": "2026-10-14T13:37:59.943233+00:00",
+    "seconds": 0.533987,
+    "log": "p2-mesh.log"
+  }
+]

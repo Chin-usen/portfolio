@@ -1,0 +1,25 @@
+Command: pnpm lhci --config=../.dev-tools/v3-s1-lh-pilot.cjs
+Started: 2026-10-15T05:48:52.841591+00:00
+Exit: 0
+
+$ lhci autorun --config=../.dev-tools/v3-s1-lh-pilot.cjs
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Started a web server on port 65369...
+Running Lighthouse 3 time(s) on http://localhost:65369/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+Dumping 3 reports to disk at <workspace>\portfolio-main-v3\.lighthouseci\reports...
+Done writing reports to disk.
+
+Done running autorun.

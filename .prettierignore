@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+coverage/
+playwright-report/
+test-results/
+.lighthouseci/
+pnpm-lock.yaml
+public/**/*.svg
+public/models/thermal/*.json
+
+thermal-p2/
+reports/v2/
+src/styles/generated-fonts.css
+reports/browser-frame-timings.json
+
+# Immutable user-supplied design documentation and raw v3 evidence.
+docs/
+reports/v3/

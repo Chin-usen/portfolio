@@ -1,0 +1,219 @@
+INITIAL INTERRUPTED COLLECTION
+$ lhci autorun
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Started a web server on port 60946...
+Running Lighthouse 3 time(s) on http://localhost:60946/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/work/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/work/sample-case/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/lab/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/lab/sample-teardown/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/lab/sample-simulation/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Running Lighthouse 3 time(s) on http://localhost:60946/lab/chip-junction-temperature/
+Run #1...
+
+RESUMED collect /lab/chip-junction-temperature/
+Started a web server on port 52095...
+Running Lighthouse 3 time(s) on http://localhost:52095/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /lab/chip-junction-temperature/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /about/
+Started a web server on port 53645...
+Running Lighthouse 3 time(s) on http://localhost:53645/about/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /about/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /contact/
+Started a web server on port 63891...
+Running Lighthouse 3 time(s) on http://localhost:63891/contact/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /contact/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/
+Started a web server on port 62109...
+Running Lighthouse 3 time(s) on http://localhost:62109/en/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/work/
+Started a web server on port 56776...
+Running Lighthouse 3 time(s) on http://localhost:56776/en/work/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/work/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/work/sample-case/
+Started a web server on port 59054...
+Running Lighthouse 3 time(s) on http://localhost:59054/en/work/sample-case/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/work/sample-case/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/lab/
+Started a web server on port 63675...
+Running Lighthouse 3 time(s) on http://localhost:63675/en/lab/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/lab/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/lab/sample-teardown/
+Started a web server on port 62330...
+Running Lighthouse 3 time(s) on http://localhost:62330/en/lab/sample-teardown/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/lab/sample-teardown/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/lab/sample-simulation/
+Started a web server on port 57659...
+Running Lighthouse 3 time(s) on http://localhost:57659/en/lab/sample-simulation/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/lab/sample-simulation/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/lab/chip-junction-temperature/
+Started a web server on port 63262...
+Running Lighthouse 3 time(s) on http://localhost:63262/en/lab/chip-junction-temperature/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/lab/chip-junction-temperature/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/about/
+Started a web server on port 51536...
+Running Lighthouse 3 time(s) on http://localhost:51536/en/about/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/about/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED collect /en/contact/
+Started a web server on port 50823...
+Running Lighthouse 3 time(s) on http://localhost:50823/en/contact/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+
+RESUMED route_assert /en/contact/
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+
+RESUMED final_assert None
+Checking assertions against 18 URL(s), 54 total run(s)
+
+All results processed!

@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ObfuscatedEmail from './ObfuscatedEmail.astro';
+import { getProfile } from '../lib/content';
+import { getUi } from '../i18n/dictionaries';
+import '../styles/about.css';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const ui = getUi(locale);
+const profile = await getProfile(locale);
+const introduction = locale === 'zh' ? '[个人介绍]' : '[Personal introduction]';
+const contactNote =
+  locale === 'zh'
+    ? '示例联系信息 · 请替换为实际资料'
+    : 'Sample contact details · Replace with real information';
+---
+
+<BaseLayout
+  locale={locale}
+  title={ui.about.title}
+  description={introduction}
+  bodyClass="about-page"
+>
+  <header class="page-heading about-heading">
+    <h1>{ui.about.title}</h1>
+    <p>{introduction}</p>
+  </header>
+  <section class="about-section" aria-labelledby="about-profile-title">
+    <h2 id="about-profile-title">{profile.name}</h2>
+    <p>{profile.role}</p>
+  </section>
+  <div class="about-columns">
+    <section class="about-section" aria-labelledby="about-skills-title">
+      <h2 id="about-skills-title">{ui.about.skills}</h2>
+      <ul>
+        {profile.skills.map((skill) => (
+          <li>{skill}</li>
+        ))}
+      </ul>
+    </section>
+    <section class="about-section" aria-labelledby="about-languages-title">
+      <h2 id="about-languages-title">{ui.about.languages}</h2>
+      <ul>
+        {profile.languages.map((language) => (
+          <li>{language}</li>
+        ))}
+      </ul>
+    </section>
+  </div>
+  <section
+    class="about-section about-contact"
+    id="contact"
+    aria-labelledby="about-contact-title"
+    tabindex="-1"
+  >
+    <h2 id="about-contact-title">{ui.about.contact}</h2>
+    <p>{contactNote}</p>
+    <dl class="meta-list">
+      <dt>{ui.about.email}</dt>
+      <dd>
+        <ObfuscatedEmail {...profile.email} locale={locale} />
+      </dd>
+      <dt>{ui.about.linkedin}</dt>
+      <dd>
+        <a href={profile.linkedin} rel="me noreferrer">
+          {locale === 'zh' ? '[LinkedIn 主页]' : '[LinkedIn profile]'}
+        </a>
+      </dd>
+    </dl>
+  </section>
+</BaseLayout>

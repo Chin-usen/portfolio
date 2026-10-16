@@ -1,0 +1,206 @@
+/* N1: a single-screen landing page. The image uses only the space left by readable copy. */
+.home-page {
+  height: 100svh;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.home-page .site-header,
+.home-page .site-footer {
+  flex-shrink: 0;
+}
+.home-page main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  min-height: min-content;
+  padding: 0;
+}
+.home-hero {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px 0;
+  gap: 12px;
+  text-align: center;
+}
+.home-hero p,
+.home-hero h1 {
+  margin: 0;
+}
+.home-eyebrow {
+  color: var(--thermal-accent);
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.home-hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.home-hero h1 > span {
+  display: block;
+}
+.home-specialties {
+  color: var(--thermal-secondary);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-top: 6px !important;
+}
+.home-specialties > span:not(.specialty-divider) {
+  display: inline-block;
+}
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1.125rem;
+}
+.home-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  min-height: 44px;
+}
+.home-module {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: calc(100% - 48px);
+  min-height: 80px;
+  margin: 8px auto 0;
+}
+.home-module picture {
+  background: var(--thermal-bg);
+  isolation: isolate;
+  /* Do not let intrinsic image dimensions force scrolling at normal text size. */
+  contain: size;
+  display: block;
+  width: min(900px, 100%);
+  min-height: 0;
+}
+.home-module img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.home-page .site-footer {
+  /* Keep 44 px targets plus the 1 px desktop separator inside the viewport. */
+  height: 45px;
+  margin-top: 0;
+  padding: 0;
+}
+.home-page .footer-shell {
+  width: calc(100% - 80px);
+  height: 100%;
+  gap: 0 24px;
+}
+@media (max-width: 60rem) {
+  .home-hero h1 {
+    font-size: clamp(2.25rem, 6.1vw, 4.5rem);
+  }
+}
+@media (max-width: 42rem) {
+  .home-hero {
+    padding: 48px 16px 0;
+    gap: 10px;
+  }
+  .home-eyebrow {
+    font-size: 0.9375rem;
+  }
+  .home-hero h1 {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+  }
+  .home-specialties {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-top: 4px !important;
+  }
+  .specialty-middle {
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  .home-actions {
+    gap: 8px 24px;
+    font-size: 1rem;
+  }
+  .home-module {
+    width: calc(100% - 32px);
+    margin-top: 28px;
+  }
+  .home-module img {
+    max-height: 240px;
+    object-position: center top;
+  }
+  .home-page .site-footer {
+    height: 44px;
+    border-top: 0;
+  }
+  .home-page .footer-shell {
+    width: calc(100% - 32px);
+    justify-content: center;
+  }
+  .home-page .footer-shell > p {
+    display: none;
+  }
+}
+@media (max-height: 699px) {
+  .home-hero {
+    padding-top: 24px;
+    gap: 8px;
+  }
+  .home-hero h1 {
+    font-size: clamp(1.875rem, 6vw, 3.75rem);
+  }
+  .home-specialties {
+    margin-top: 0 !important;
+  }
+  .home-module {
+    margin-top: 8px;
+  }
+}
+@media (max-height: 499px) and (orientation: landscape) {
+  .home-page {
+    height: auto;
+    min-height: 100svh;
+  }
+  .home-page main {
+    flex: 1 0 auto;
+  }
+  .home-module {
+    flex: 0 0 auto;
+    height: 180px;
+  }
+}
+@media print {
+  .home-page {
+    height: auto;
+  }
+  .home-module {
+    flex: 0 0 auto;
+    height: 240px;
+  }
+}
+
+/* Preserve the existing dark WebP bytes while compositing its black matte into the page. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .home-module img {
+    mix-blend-mode: lighten;
+  }
+}
+:root[data-theme='dark'] .home-module img {
+  mix-blend-mode: lighten;
+}

@@ -1,0 +1,174 @@
+{
+  "timestamp": "2026-10-14T13:55:48.708Z",
+  "source": "final rebuilt after numeric grouping and standalone target fixes",
+  "checks": [
+    {
+      "lang": "zh",
+      "width": 1440,
+      "desktopSummary": {
+        "display": "grid",
+        "top": 255.6875,
+        "bottom": 341.203125,
+        "height": 85.515625,
+        "text": "芯片结温 367.8 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "viewport": 1000,
+        "visible": true
+      },
+      "numericWrapping": [
+        {
+          "selector": "data-value=tj",
+          "text": "125.6",
+          "lines": 1,
+          "width": 273.46875,
+          "height": 104,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "height": 40.9375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "height": 40.9375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "desktopSummary": {
+        "display": "grid",
+        "top": 119.84375,
+        "bottom": 205.359375,
+        "height": 85.515625,
+        "text": "芯片结温 367.8 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "viewport": 844,
+        "visible": true
+      },
+      "numericWrapping": [
+        {
+          "selector": "data-value=tj",
+          "text": "125.6",
+          "lines": 1,
+          "width": 221.796875,
+          "height": 84.796875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "height": 51.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "height": 51.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "desktopSummary": {
+        "display": "grid",
+        "top": 206.6875,
+        "bottom": 292.203125,
+        "height": 85.515625,
+        "text": "Junction temperature 367.8 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "viewport": 1000,
+        "visible": true
+      },
+      "numericWrapping": [
+        {
+          "selector": "data-value=tj",
+          "text": "125.6",
+          "lines": 1,
+          "width": 273.46875,
+          "height": 104,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "height": 40.9375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "height": 40.9375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "desktopSummary": {
+        "display": "grid",
+        "top": 85.640625,
+        "bottom": 190.65625,
+        "height": 105.015625,
+        "text": "Junction temperature 367.8 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "viewport": 844,
+        "visible": true
+      },
+      "numericWrapping": [
+        {
+          "selector": "data-value=tj",
+          "text": "125.6",
+          "lines": 1,
+          "width": 221.796875,
+          "height": 84.796875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "height": 51.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "selector": "data-param-output=h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "height": 51.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    }
+  ]
+}

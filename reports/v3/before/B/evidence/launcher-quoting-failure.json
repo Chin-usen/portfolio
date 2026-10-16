@@ -1,0 +1,187 @@
+{
+  "start": "2026-10-15T01:57:37.404Z",
+  "finish": "2026-10-15T01:57:37.430Z",
+  "cwd": "<workspace>\\portfolio-main-v2",
+  "command": [
+    "<workspace>\\.dev-tools\\skills\\impeccable\\scripts\\impeccable.cmd",
+    "detect",
+    "--json",
+    "src/components",
+    "src/pages",
+    "src/layouts"
+  ],
+  "exit": 1,
+  "signal": null,
+  "pinnedSource": "2f98774f86bc05563876643db37e6c37c322850f",
+  "launcherVersion": "0.1.14",
+  "inventory": [
+    {
+      "path": "src/components/AboutPage.astro",
+      "bytes": 1386,
+      "sha256": "62cb1eb174fdfc1fb7b98c6d54c64a3d61dc6530da4868baa271436a0d0d5d3a"
+    },
+    {
+      "path": "src/components/CaseCard.astro",
+      "bytes": 764,
+      "sha256": "a03771f4d14a126f9f293350e23dae34129e7222d038fca9019e0bfde88c42f7"
+    },
+    {
+      "path": "src/components/ContactPage.astro",
+      "bytes": 860,
+      "sha256": "75ebe12749dd85939377d4da225039df800ad74c76178d734954f88d4b6cebdf"
+    },
+    {
+      "path": "src/components/DemoPanel.astro",
+      "bytes": 1285,
+      "sha256": "6556b72e1cc41aeb44070b6fb7dbfe1e2ac45f3101fc896793ad246bd844f5a9"
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "bytes": 206,
+      "sha256": "dc3d810dc5946d214282873f41af7813743a5e61ded5c09255c1b3916ecabca0"
+    },
+    {
+      "path": "src/components/Header.astro",
+      "bytes": 3486,
+      "sha256": "0fe33e09c08e249ea4c0d4e9e6b2158e8969772a97f0ba019c70e40036cafbac"
+    },
+    {
+      "path": "src/components/HomePage.astro",
+      "bytes": 1610,
+      "sha256": "283ca7a45c7f4cd47269bcf29694e4593e29c80820af8f84797912cc4f1b6e7e"
+    },
+    {
+      "path": "src/components/lab/thermal-stack/ThermalStack.astro",
+      "bytes": 12448,
+      "sha256": "31a8d471e90323b258d54a22d11a749703d3a3b383ecd6937d5bb982788bd193"
+    },
+    {
+      "path": "src/components/LabCard.astro",
+      "bytes": 670,
+      "sha256": "4ec3e4bf29db142b7434b1af1c2a145411b5ea2eb8965657c301a36184f7fa7e"
+    },
+    {
+      "path": "src/components/LabDetail.astro",
+      "bytes": 1465,
+      "sha256": "1ae7030e80c8544537324bae11073ec0f48d7b79ed7ce7a0cd9d51b49a811cf3"
+    },
+    {
+      "path": "src/components/LabIndex.astro",
+      "bytes": 724,
+      "sha256": "ce37a02fc5995cb2ef5bb22d2cdf8f839bc9ed8674cb93f10b59ad9c686e32d6"
+    },
+    {
+      "path": "src/components/MetricRow.astro",
+      "bytes": 365,
+      "sha256": "14660933ddf53a89baa72ee7a37b6386b51ccc2297b038e097cd3f746eb2ba29"
+    },
+    {
+      "path": "src/components/NotFoundPage.astro",
+      "bytes": 541,
+      "sha256": "ca770ece34009c2f9b0cdaa9396cae7254cc156cbf27381754599d25bba334c9"
+    },
+    {
+      "path": "src/components/ObfuscatedEmail.astro",
+      "bytes": 1328,
+      "sha256": "2b2654dd06120ebfa9c8ff4df6be4291a5170212c7894d073c80f42df7488112"
+    },
+    {
+      "path": "src/components/WorkDetail.astro",
+      "bytes": 1190,
+      "sha256": "9032508d2580f3e4f824938ffb538195fe50bb652b5de2d79931f041f7d1e2a9"
+    },
+    {
+      "path": "src/components/WorkIndex.astro",
+      "bytes": 736,
+      "sha256": "74eeab2c3772b34888a499f0d605c6ceac1810d773495e4228735af12c5852a7"
+    },
+    {
+      "path": "src/pages/404.astro",
+      "bytes": 86,
+      "sha256": "7f9aeaf3ac27e247b007fe45771e0896cfcb96c6fa5af689fd1b49eda71a2c2f"
+    },
+    {
+      "path": "src/pages/about.astro",
+      "bytes": 83,
+      "sha256": "6d4c347578392cedf8b2c23210954f2b9b9fcd03593bf134b025b8eb7223873b"
+    },
+    {
+      "path": "src/pages/contact.astro",
+      "bytes": 85,
+      "sha256": "43225c83f86f77ff1a2e9ff65631b85c19c79e4564b21353a9982725e869a669"
+    },
+    {
+      "path": "src/pages/en/404.astro",
+      "bytes": 89,
+      "sha256": "b96459c6f7da3757820bf7fadf3190b4cc9377568f06def4e9cc6be6a966f632"
+    },
+    {
+      "path": "src/pages/en/about.astro",
+      "bytes": 86,
+      "sha256": "9a08737babe12298678b4ba139e1466df8de6edf516e1c03eb7d7e7acfef20d5"
+    },
+    {
+      "path": "src/pages/en/contact.astro",
+      "bytes": 88,
+      "sha256": "b6e2bf1d4c742c7a550b48f68ca05cdb5c560f17a9bcff264196434c9e0ac7e3"
+    },
+    {
+      "path": "src/pages/en/index.astro",
+      "bytes": 85,
+      "sha256": "09ba3c8a70ff05b7e49c88336459949b3cf9e0fe6c68cf2d74a40641c623bed3"
+    },
+    {
+      "path": "src/pages/en/lab/index.astro",
+      "bytes": 88,
+      "sha256": "43fe3f19f8bbda698f4cb21072ccac8d7fc3f745b4fa73c89578ca199ca91e3b"
+    },
+    {
+      "path": "src/pages/en/lab/[slug].astro",
+      "bytes": 479,
+      "sha256": "48c3a2a370431e83d3903e3f315f6d048910b492f3c6170915f953120d82c863"
+    },
+    {
+      "path": "src/pages/en/work/index.astro",
+      "bytes": 89,
+      "sha256": "5d8e20007cc26fca829cbf640f2835080ac2e7fb0d91fa77be999f6c7e5f3f6b"
+    },
+    {
+      "path": "src/pages/en/work/[slug].astro",
+      "bytes": 484,
+      "sha256": "8f29252c457e899cc2070cbc077adc717bbbb7474965f4360cd5d5b361625b2a"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "bytes": 82,
+      "sha256": "800bef60a5682f72ec264fbac65b18d51f6b98d4013e83b877b0f1137741cb2e"
+    },
+    {
+      "path": "src/pages/lab/index.astro",
+      "bytes": 85,
+      "sha256": "52d12e3ad1d6004955826f8c68732e4e471b4ffd4d4e068f9811e70ed8fe8b5f"
+    },
+    {
+      "path": "src/pages/lab/[slug].astro",
+      "bytes": 473,
+      "sha256": "71ac4386df75f51eaabcd25aa3077951ff5863b62c22bd1e20a4e8204a9dff47"
+    },
+    {
+      "path": "src/pages/work/index.astro",
+      "bytes": 86,
+      "sha256": "f3b95a1b9eed60cd58050a6624c27936c51a0c3c63c04ff4a85e08cc592999a3"
+    },
+    {
+      "path": "src/pages/work/[slug].astro",
+      "bytes": 478,
+      "sha256": "ab4b687e0b49f741a0a84bb9a6c4c273d352cd8f3411f1da4f036a171b6b364c"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "bytes": 2772,
+      "sha256": "6812167df4104c1a337218e976336af0836c77e0d105206de994082230379d5a"
+    }
+  ],
+  "stdoutBytes": 0,
+  "stderrBytes": 189,
+  "stdoutSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

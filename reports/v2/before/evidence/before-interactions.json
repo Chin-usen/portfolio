@@ -1,0 +1,226 @@
+[
+  {
+    "check": "menu-keyboard",
+    "lang": "zh",
+    "open": "true",
+    "navFocused": true,
+    "closed": "false",
+    "focusReturned": true
+  },
+  {
+    "check": "email-reveal",
+    "lang": "zh",
+    "visible": true,
+    "focused": true
+  },
+  {
+    "check": "translation",
+    "from": "/",
+    "to": "/en/",
+    "expected": "/en/"
+  },
+  {
+    "check": "translation",
+    "from": "/work/",
+    "to": "/en/work/",
+    "expected": "/en/work/"
+  },
+  {
+    "check": "translation",
+    "from": "/lab/",
+    "to": "/en/lab/",
+    "expected": "/en/lab/"
+  },
+  {
+    "check": "translation",
+    "from": "/about/",
+    "to": "/en/about/",
+    "expected": "/en/about/"
+  },
+  {
+    "check": "translation",
+    "from": "/contact/",
+    "to": "/en/contact/",
+    "expected": "/en/contact/"
+  },
+  {
+    "check": "translation",
+    "from": "/lab/chip-junction-temperature/",
+    "to": "/en/lab/chip-junction-temperature/",
+    "expected": "/en/lab/chip-junction-temperature/"
+  },
+  {
+    "check": "dark-skip",
+    "lang": "zh",
+    "focused": true,
+    "color": "rgb(245, 245, 247)",
+    "background": "rgb(255, 255, 255)",
+    "outline": "rgb(245, 245, 247)",
+    "mainFocused": true
+  },
+  {
+    "check": "keyboard-tabs",
+    "lang": "zh",
+    "selected": "cooler"
+  },
+  {
+    "check": "keyboard-slider",
+    "lang": "zh",
+    "before": "100",
+    "after": "110",
+    "tj": "131.6"
+  },
+  {
+    "check": "fem",
+    "lang": "zh",
+    "tj": "131.6",
+    "statusHidden": true
+  },
+  {
+    "check": "keyboard-view-orbit-zoom",
+    "lang": "zh",
+    "hashBefore": "ff5694ecb579d0839c2ad2b9b6155609013a5953629b46f1cd6ee1cab1c61d0a",
+    "hashAfter": "7023e7cf425c2fb8c12e69863f0111f166c14a71ae98e443c42e061af5d2925f",
+    "unchanged": false
+  },
+  {
+    "check": "fallback-keyboard",
+    "lang": "zh",
+    "selected": "true",
+    "fallbackNote": true
+  },
+  {
+    "check": "menu-keyboard",
+    "lang": "en",
+    "open": "true",
+    "navFocused": true,
+    "closed": "false",
+    "focusReturned": true
+  },
+  {
+    "check": "email-reveal",
+    "lang": "en",
+    "visible": true,
+    "focused": true
+  },
+  {
+    "check": "translation",
+    "from": "/en/",
+    "to": "/",
+    "expected": "/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/work/",
+    "to": "/work/",
+    "expected": "/work/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/lab/",
+    "to": "/lab/",
+    "expected": "/lab/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/about/",
+    "to": "/about/",
+    "expected": "/about/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/contact/",
+    "to": "/contact/",
+    "expected": "/contact/"
+  },
+  {
+    "check": "translation",
+    "from": "/en/lab/chip-junction-temperature/",
+    "to": "/lab/chip-junction-temperature/",
+    "expected": "/lab/chip-junction-temperature/"
+  },
+  {
+    "check": "dark-skip",
+    "lang": "en",
+    "focused": true,
+    "color": "rgb(245, 245, 247)",
+    "background": "rgb(255, 255, 255)",
+    "outline": "rgb(245, 245, 247)",
+    "mainFocused": true
+  },
+  {
+    "check": "keyboard-tabs",
+    "lang": "en",
+    "selected": "cooler"
+  },
+  {
+    "check": "keyboard-slider",
+    "lang": "en",
+    "before": "100",
+    "after": "110",
+    "tj": "131.6"
+  },
+  {
+    "check": "fem",
+    "lang": "en",
+    "tj": "119.6",
+    "statusHidden": true
+  },
+  {
+    "check": "keyboard-view-orbit-zoom",
+    "lang": "en",
+    "hashBefore": "8944342c0c098476eb196fc9f87291890d40a7ecab0ff9ab670d2040f0d82afb",
+    "hashAfter": "aeeaf513bfde85f36e85fb1ac65e690dbb426b5f837144bece4457fe71bb6df1",
+    "unchanged": false
+  },
+  {
+    "check": "fallback-keyboard",
+    "lang": "en",
+    "selected": "true",
+    "fallbackNote": true
+  },
+  {
+    "check": "touch-orbit",
+    "changed": true
+  },
+  {
+    "check": "touch-orbit-after-cancel",
+    "changed": true
+  },
+  {
+    "check": "touch-slider",
+    "before": "100",
+    "after": "370"
+  },
+  {
+    "check": "touch-tab-strip",
+    "before": 0,
+    "after": 59,
+    "scrollWidth": 383,
+    "clientWidth": 324
+  },
+  {
+    "check": "text200",
+    "route": "/",
+    "width": 390,
+    "scrollWidth": 390
+  },
+  {
+    "check": "text200",
+    "route": "/en/",
+    "width": 390,
+    "scrollWidth": 390
+  },
+  {
+    "check": "text200",
+    "route": "/lab/chip-junction-temperature/",
+    "width": 390,
+    "scrollWidth": 390
+  },
+  {
+    "check": "text200",
+    "route": "/en/lab/chip-junction-temperature/",
+    "width": 390,
+    "scrollWidth": 390
+  }
+]

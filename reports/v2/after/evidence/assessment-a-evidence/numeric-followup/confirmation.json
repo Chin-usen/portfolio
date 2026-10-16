@@ -1,0 +1,1566 @@
+{
+  "metrics": [
+    {
+      "width": 221.796875,
+      "locale": "en",
+      "colorScheme": "light",
+      "text": "125.6",
+      "lines": 1,
+      "left": 65,
+      "right": 286.796875,
+      "viewport": 390
+    },
+    {
+      "width": 221.796875,
+      "locale": "en",
+      "colorScheme": "dark",
+      "text": "125.6",
+      "lines": 1,
+      "left": 65,
+      "right": 286.796875,
+      "viewport": 390
+    },
+    {
+      "width": 221.796875,
+      "locale": "zh",
+      "colorScheme": "light",
+      "text": "125.6",
+      "lines": 1,
+      "left": 65,
+      "right": 286.796875,
+      "viewport": 390
+    },
+    {
+      "width": 221.796875,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "text": "125.6",
+      "lines": 1,
+      "left": 65,
+      "right": 286.796875,
+      "viewport": 390
+    },
+    {
+      "width": 273.46875,
+      "locale": "en",
+      "colorScheme": "light",
+      "text": "125.6",
+      "lines": 1,
+      "left": 61,
+      "right": 334.46875,
+      "viewport": 1440
+    },
+    {
+      "width": 273.46875,
+      "locale": "en",
+      "colorScheme": "dark",
+      "text": "125.6",
+      "lines": 1,
+      "left": 61,
+      "right": 334.46875,
+      "viewport": 1440
+    },
+    {
+      "width": 273.46875,
+      "locale": "zh",
+      "colorScheme": "light",
+      "text": "125.6",
+      "lines": 1,
+      "left": 61,
+      "right": 334.46875,
+      "viewport": 1440
+    },
+    {
+      "width": 273.46875,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "text": "125.6",
+      "lines": 1,
+      "left": 61,
+      "right": 334.46875,
+      "viewport": 1440
+    }
+  ],
+  "panels": [
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "operating",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "left": 49,
+          "right": 138.609375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "top-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 49,
+          "right": 120.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "amb",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 49,
+          "right": 120.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "bottom-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "cooler",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 17.921875,
+          "left": 323.078125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "operating",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "left": 49,
+          "right": 138.609375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "top-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 49,
+          "right": 120.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "amb",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 49,
+          "right": 120.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "bottom-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 49,
+          "right": 84.84375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "cooler",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 17.921875,
+          "left": 323.078125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 49,
+          "right": 102.765625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "operating",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "left": 251.390625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "top-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 269.3125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "amb",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 269.3125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "bottom-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "cooler",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 17.921875,
+          "left": 323.078125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "operating",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 89.609375,
+          "left": 251.390625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "top-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 269.3125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "amb",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 269.3125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "bottom-solder",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 35.84375,
+          "left": 305.15625,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "cooler",
+      "pageWidth": 390,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 17.921875,
+          "left": 323.078125,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 53.765625,
+          "left": 287.234375,
+          "right": 341,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "operating",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 408.5,
+          "right": 437.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 760,
+          "right": 831.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "top-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 57,
+          "right": 114.359375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 408.5,
+          "right": 451.515625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "amb",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 408.5,
+          "right": 465.859375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 760,
+          "right": 803.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 1111.5,
+          "right": 1140.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "bottom-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 408.5,
+          "right": 437.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "light",
+      "tab": "cooler",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 14.34375,
+          "left": 314.15625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 408.5,
+          "right": 451.515625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "operating",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 408.5,
+          "right": 437.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 760,
+          "right": 831.6875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "top-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 57,
+          "right": 114.359375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 408.5,
+          "right": 451.515625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "amb",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 408.5,
+          "right": 465.859375,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 760,
+          "right": 803.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 1111.5,
+          "right": 1140.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "bottom-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 57,
+          "right": 100.015625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 408.5,
+          "right": 437.1875,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "colorScheme": "dark",
+      "tab": "cooler",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 14.34375,
+          "left": 314.15625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 408.5,
+          "right": 451.515625,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "operating",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 651.3125,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 959.8125,
+          "right": 1031.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "top-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 271.140625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 636.984375,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "amb",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 622.640625,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 988.484375,
+          "right": 1031.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 1354.3125,
+          "right": 1383,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "bottom-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 651.3125,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "light",
+      "tab": "cooler",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 14.34375,
+          "left": 314.15625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 636.984375,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "operating",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "P",
+          "text": "100",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "T_cool",
+          "text": "65",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 651.3125,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "h",
+          "text": "15000",
+          "lines": 1,
+          "width": 71.6875,
+          "left": 959.8125,
+          "right": 1031.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "top-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_st",
+          "text": "0.08",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 271.140625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_st",
+          "text": "200",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 636.984375,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "amb",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cut",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cer",
+          "text": "0.32",
+          "lines": 1,
+          "width": 57.359375,
+          "left": 622.640625,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "t_cub",
+          "text": "0.3",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 988.484375,
+          "right": 1031.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cer",
+          "text": "90",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 1354.3125,
+          "right": 1383,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cu",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "bottom-solder",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_sb",
+          "text": "0.1",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 285.484375,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_sb",
+          "text": "58",
+          "lines": 1,
+          "width": 28.6875,
+          "left": 651.3125,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "colorScheme": "dark",
+      "tab": "cooler",
+      "pageWidth": 1440,
+      "outputs": [
+        {
+          "parameter": "t_cooler",
+          "text": "3",
+          "lines": 1,
+          "width": 14.34375,
+          "left": 314.15625,
+          "right": 328.5,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        },
+        {
+          "parameter": "k_cooler",
+          "text": "390",
+          "lines": 1,
+          "width": 43.015625,
+          "left": 636.984375,
+          "right": 680,
+          "whiteSpace": "nowrap",
+          "flexShrink": "0"
+        }
+      ]
+    }
+  ]
+}

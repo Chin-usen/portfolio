@@ -1,0 +1,9 @@
+Command: pnpm security:scan
+Started: 2026-10-15T04:07:55.256310+00:00
+Exit: 1
+
+$ node scripts/security-scan.mjs
+Security scan: 354 text files; keyword policy NOT CONFIGURED (phone/birthday rules still enforced).
+reports/v3/p2-preservation.json:320 [cn-mobile-number] value withheld
+Security scan failed: 1 finding(s). Matched text and policy values are never printed.
+[ELIFECYCLE] Command failed with exit code 1.

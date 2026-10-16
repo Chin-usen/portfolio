@@ -1,0 +1,53 @@
+{
+  "sample_count": 500,
+  "train_count": 400,
+  "test_count": 100,
+  "seed": 20261014,
+  "mesh": {
+    "name": "L3",
+    "xy_counts": [
+      8,
+      8,
+      4,
+      14
+    ],
+    "z_counts": [
+      12,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "criterion": "both Rjmax and source-surface Rjavg change <0.5% vs previous mesh after >=3 levels",
+    "baseline": "arithmetic midpoint of all 12 parameter bounds",
+    "parameters": {
+      "t_cooler": 3.0,
+      "k_cooler": 260.0,
+      "t_sb": 0.175,
+      "k_sb": 135.0,
+      "t_cub": 0.55,
+      "t_cer": 0.6,
+      "k_cer": 110.0,
+      "t_cut": 0.55,
+      "k_cu": 325.0,
+      "t_st": 0.175,
+      "k_st": 135.0,
+      "h": 11000.0
+    },
+    "nodes": 24897,
+    "elements": 21648
+  },
+  "max_residual_rel": 1.0515072052197702e-12,
+  "max_heat_balance_rel": 1.9463186617940665e-12,
+  "mean_solve_seconds": 1.2107973588025198,
+  "analytic_comparison": {
+    "pearson_r": 0.926542854566646,
+    "spearman_r": 0.9248133632534531,
+    "mean_absolute_relative_error": 0.24019860845189264,
+    "max_absolute_relative_error": 0.8560935285486864,
+    "analytic_bias_mean_relative": 0.2401346811406024
+  },
+  "samples_sha256": "cc8aab1ec1e4c473c0944617f3de40da3305e4b2fd186c4b2e61926a0c2a56a4"
+}

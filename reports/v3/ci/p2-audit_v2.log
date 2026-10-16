@@ -1,0 +1,58 @@
+Exit: 0
+{
+  "version": "2.0.0",
+  "pass": true,
+  "dataset": {
+    "count": 500,
+    "train": 400,
+    "test": 100,
+    "shape": [
+      500,
+      64,
+      128
+    ],
+    "source_sha256": "cc8aab1ec1e4c473c0944617f3de40da3305e4b2fd186c4b2e61926a0c2a56a4"
+  },
+  "fixture_ids_and_fem_truth_match_raw_data": true,
+  "cross_validation_excludes_holdout_ids": true,
+  "recomputed_holdout_metrics": {
+    "Rjmax": {
+      "mean_relative_error": 0.005490011330695124,
+      "max_relative_error": 0.02680148774574409
+    },
+    "Rjavg": {
+      "mean_relative_error": 0.004565511726071052,
+      "max_relative_error": 0.024177129503373807
+    }
+  },
+  "fem_affine_checks": [
+    {
+      "parameters": "default",
+      "scenarios": 5,
+      "max_nodal_affine_error_C": 7.688072400924284e-12,
+      "max_peak_affine_error_C": 5.8832938520936295e-12,
+      "max_average_affine_error_C": 4.161115896295086e-12,
+      "max_relative_residual": 3.217411806021834e-13
+    },
+    {
+      "parameters": "holdout_low_Rmax",
+      "scenarios": 5,
+      "max_nodal_affine_error_C": 3.6834535421803594e-11,
+      "max_peak_affine_error_C": 3.589661901060026e-11,
+      "max_average_affine_error_C": 3.420963512468233e-11,
+      "max_relative_residual": 3.2008308420070743e-13
+    },
+    {
+      "parameters": "holdout_high_Rmax",
+      "scenarios": 5,
+      "max_nodal_affine_error_C": 3.586819730116986e-11,
+      "max_peak_affine_error_C": 2.3746338229102548e-11,
+      "max_average_affine_error_C": 2.22266094418444e-11,
+      "max_relative_residual": 1.6284718478439041e-12
+    }
+  ],
+  "mesh_nodes": 24897,
+  "mesh_elements": 21648,
+  "holdout_caveat": "The 100 holdouts were inspected during earlier development; reused validation, not a fresh blind test. Final selection used training-only 3-fold CV; v2 performs no retraining.",
+  "field_note": "A physical 3D FEM y=0 slice; exported POD Float32 temperatures have final-rounding deviations from exact affine arithmetic."
+}

@@ -1,0 +1,4338 @@
+{
+  "time": "2026-10-15T04:57:58.373Z",
+  "browser": "156.0.8078.4",
+  "base": "http://127.0.0.1:4337",
+  "sourceHashes": {
+    "src/components/HomePage.astro": "03faf0fb8fdd0cbb17e6ea1972be9f52267bd88547dc401f697cc55d7ae99383",
+    "src/styles/home.css": "119ddf78759db0c4ad07235c4455380477fef095a8463b044d97ff39ac1895ad",
+    "src/components/lab/thermal-stack/ThermalStack.astro": "417c053df2e8fd78da4e8e8ec057bd6af2f8d631fe4c5138a450fee9c27d8175",
+    "src/components/lab/thermal-stack/thermal.css": "b5f7eab16e35543d193bb3d49d31d334dba23bec91eab8ca30aab94fa73589d5",
+    "src/components/lab/thermal-stack/client.ts": "8d89beaff9655ffafe97673e3a939e89b494f591b547d4cc79603ba04a1ce10c",
+    "src/components/Header.astro": "12934d8904dd965c1c0c54e6f13838fcfaed9a1bf55cc5dd00d830020da74488"
+  },
+  "screenshotHashes": {
+    "home-zh-1440-light.png": "26f21b8fcf6b7434f14d991df3b1a0c960b71a5e0fed84e793047985dc11227d",
+    "home-zh-1440-dark.png": "f565996ad74668efe0465cbfde681f75873f4ee81d79eeffe1f593e2f6018f1d",
+    "home-zh-390-light.png": "4574cd443300b85136ffeec10c2c96086c08258a6c60810153e397299508f176",
+    "home-zh-390-dark.png": "0b6057eab9aeea29790d31f262ba7bcdee570f71fb59842dc82bcdd2ce45a2b3",
+    "home-en-1440-light.png": "e020f8249c1e8d2653b63afc9b418e2decc77f21a6a15cdd556090d35a68165e",
+    "home-en-1440-dark.png": "203518b570bc999a81b240b6d2fdf02964acb0b5d55a7e34c3b6725147ccefa2",
+    "home-en-390-light.png": "fa8e15a6df88c564d80e842e6613d0c40fcfa41b452b68276116b0c750e65e02",
+    "home-en-390-dark.png": "850ca2a9becc1c6bcdb36d6a472c12fb0ad34fc5387e8f3dd9b513ca87ed0cd3",
+    "s1-zh-1440-light.png": "44d48a07776a10026a861eae67902897c1385936e1f37909dd29b38ddd350110",
+    "s1-zh-1440-dark.png": "61ad5ffbd1b78876e84f3dd46d767014ccaf15a20dec3f202d9e9d57e0d0cff9",
+    "s1-zh-390-light.png": "06ef8e2efb4f80130ffa66e8bebfa9ea2a6b28f2ab15e02ef184edcf5d0cd355",
+    "s1-zh-390-dark.png": "7190e64837821bf69d2e6311cd9e2a31bee2542416bb1b20ced4212caa21db0e",
+    "s1-en-1440-light.png": "17fbf72d5281b83145c76214c5a624d243f15e20a6c383e266f38bc45755b173",
+    "s1-en-1440-dark.png": "f583217bc832ae04b5f49954fae63dab07845e17fc47678caf0f573a38307dee",
+    "s1-en-390-light.png": "d485698ea7124960d564661315088acd15dd73f9defc83b60c479ad50425ce61",
+    "s1-en-390-dark.png": "ccebbffa4cdc94dfc882b4ebe07df9765fcfe248b9d1c2a1fe3e57eefd2ef042"
+  },
+  "states": [
+    {
+      "name": "home-zh-1440-light",
+      "title": "示例工程师 · 作品与实验台",
+      "url": "http://127.0.0.1:4337/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 3252,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[职位标题第一行][职位标题第二行]",
+        "x": 383.609375,
+        "y": 223.59375,
+        "width": 672.765625,
+        "height": 190.0625,
+        "font": "88px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 66.3125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "作品",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "实验台",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "关于",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "联系",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Switch to English",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "查看作品 ›",
+          "width": 87.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "进入实验台 ›",
+          "width": 106.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "全部实验 ›",
+          "width": 78.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 500,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "打开完整仿真 ›",
+          "width": 112.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-zh-1440-dark",
+      "title": "示例工程师 · 作品与实验台",
+      "url": "http://127.0.0.1:4337/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 3252,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[职位标题第一行][职位标题第二行]",
+        "x": 383.609375,
+        "y": 223.59375,
+        "width": 672.765625,
+        "height": 190.0625,
+        "font": "88px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 66.3125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "作品",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "实验台",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "关于",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "联系",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Switch to English",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "查看作品 ›",
+          "width": 87.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "进入实验台 ›",
+          "width": 106.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "全部实验 ›",
+          "width": 78.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 500,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "打开完整仿真 ›",
+          "width": 112.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-zh-390-light",
+      "title": "示例工程师 · 作品与实验台",
+      "url": "http://127.0.0.1:4337/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2367,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[职位标题第一行][职位标题第二行]",
+        "x": 51.453125,
+        "y": 152,
+        "width": 287.09375,
+        "height": 87.375,
+        "font": "38px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 71.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "打开导航",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "查看作品 ›",
+          "width": 74.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "进入实验台 ›",
+          "width": 90.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "全部实验 ›",
+          "width": 64.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 302,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "打开完整仿真 ›",
+          "width": 92.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-zh-390-dark",
+      "title": "示例工程师 · 作品与实验台",
+      "url": "http://127.0.0.1:4337/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2367,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[职位标题第一行][职位标题第二行]",
+        "x": 51.453125,
+        "y": 152,
+        "width": 287.09375,
+        "height": 87.375,
+        "font": "38px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 71.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "打开导航",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "查看作品 ›",
+          "width": 74.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "进入实验台 ›",
+          "width": 90.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "全部实验 ›",
+          "width": 64.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 302,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "打开完整仿真 ›",
+          "width": 92.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-en-1440-light",
+      "title": "Sample Engineer · Work and Lab Bench",
+      "url": "http://127.0.0.1:4337/en/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 3252,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[Role title line one][Role title line two]",
+        "x": 321.59375,
+        "y": 223.59375,
+        "width": 796.796875,
+        "height": 190.0625,
+        "font": "88px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 109.28125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Work",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Lab Bench",
+          "width": 63.484375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "About",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "width": 47.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "切换为中文",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "View work ›",
+          "width": 102.796875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Explore the lab ›",
+          "width": 141.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "All experiments ›",
+          "width": 130.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 500,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Open full simulation ›",
+          "width": 166.609375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-en-1440-dark",
+      "title": "Sample Engineer · Work and Lab Bench",
+      "url": "http://127.0.0.1:4337/en/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 3252,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[Role title line one][Role title line two]",
+        "x": 321.59375,
+        "y": 223.59375,
+        "width": 796.796875,
+        "height": 190.0625,
+        "font": "88px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 109.28125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Work",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Lab Bench",
+          "width": 63.484375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "About",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "width": 47.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "切换为中文",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "View work ›",
+          "width": 102.796875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Explore the lab ›",
+          "width": 141.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "All experiments ›",
+          "width": 130.828125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 500,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Open full simulation ›",
+          "width": 166.609375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-en-390-light",
+      "title": "Sample Engineer · Work and Lab Bench",
+      "url": "http://127.0.0.1:4337/en/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2558,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[Role title line one][Role title line two]",
+        "x": 26.953125,
+        "y": 152,
+        "width": 336.09375,
+        "height": 87.375,
+        "font": "38px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 117.6875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Open navigation",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "View work ›",
+          "width": 86.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Explore the lab ›",
+          "width": 119.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "All experiments ›",
+          "width": 107.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 302,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Open full simulation ›",
+          "width": 137.203125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "home-en-390-dark",
+      "title": "Sample Engineer · Work and Lab Bench",
+      "url": "http://127.0.0.1:4337/en/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2558,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "[Role title line one][Role title line two]",
+        "x": 26.953125,
+        "y": 152,
+        "width": 336.09375,
+        "height": 87.375,
+        "font": "38px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": null,
+      "metrics": null,
+      "stage": null,
+      "parameters": null,
+      "summary": null,
+      "tablist": null,
+      "metric": null,
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 117.6875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Open navigation",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "View work ›",
+          "width": 86.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Explore the lab ›",
+          "width": 119.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "All experiments ›",
+          "width": 107.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "home-ceramic-thickness",
+          "text": "",
+          "width": 302,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Open full simulation ›",
+          "width": 137.203125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-zh-1440-light",
+      "title": "芯片结温仿真",
+      "url": "http://127.0.0.1:4337/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 1603,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "芯片结温仿真",
+        "x": 144,
+        "y": 116.78125,
+        "width": 280.8125,
+        "height": 53.75,
+        "font": "48px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层已启用二维示意图；参数计算与层选择仍可使用。<p class=\"thermal-notice\">交互需要 JavaScript。当前显示默认工况的解析计算结果。</p>热阻构成0.606 K/W芯片3.2%上焊层2.6%上铜层4.5%陶瓷层16.8%下铜层3.0%下焊层5.9%Cooler51.7%对流12.2%探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si",
+        "x": 144,
+        "y": 425.328125,
+        "width": 1152,
+        "height": 776.75,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "669.953px 462.031px"
+      },
+      "metrics": {
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C",
+        "x": 144,
+        "y": 231.21875,
+        "width": 1152,
+        "height": 174.109375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "528px 528px"
+      },
+      "stage": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层",
+        "x": 144,
+        "y": 425.328125,
+        "width": 669.953125,
+        "height": 620.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "629.953px"
+      },
+      "parameters": {
+        "text": "探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si₃N₄ · 90AlN · 170上铜层厚度0.30.1mm1陶瓷厚度0.320.2mm1下铜层厚度0.30.1mm1陶瓷导热系数9020W/(m·K)200铜导热系数390250W/(m·K)400AMB 下铜层与 Cooler 之间的连接层。SAC305 · 58烧结银 · 200下焊层厚度0.10.05mm0.3下焊层导热系数5820W/(m·K)250冷却液侧采用等效对流换热边界。铜 · 390Al 6061 · 167Cooler 厚度31mm5Cooler 导热系数390120W/(m·K)400当前参数无法计算，请检查数值或恢复默认参数。",
+        "x": 833.953125,
+        "y": 425.328125,
+        "width": 462.03125,
+        "height": 558.453125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "x": 857.953125,
+        "y": 755,
+        "width": 414.03125,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "414.031px"
+      },
+      "tablist": {
+        "text": "工况上焊层AMB 基板下焊层Cooler",
+        "x": 857.953125,
+        "y": 573.328125,
+        "width": 414.03125,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(242, 242, 247)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 176,
+        "y": 283.4375,
+        "width": 528,
+        "height": 72,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 66.3125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "作品",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "实验台",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "关于",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "联系",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Switch to English",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ 返回实验台",
+          "width": 83.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "剖面",
+          "width": 68.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "爆炸视图",
+          "width": 94.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "复位视角",
+          "width": 94.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "芯片3.2%",
+          "width": 68.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上焊层2.6%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上铜层4.5%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "陶瓷层16.8%",
+          "width": 87.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下铜层3.0%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下焊层5.9%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "对流12.2%",
+          "width": 75.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "解析参考",
+          "width": 200.125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM 代理",
+          "width": 203.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "恢复默认参数",
+          "width": 78,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "工况",
+          "width": 65.421875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "上焊层",
+          "width": 78.4375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB 基板",
+          "width": 97.078125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "下焊层",
+          "width": 78.4375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 78.65625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-zh-1440-dark",
+      "title": "芯片结温仿真",
+      "url": "http://127.0.0.1:4337/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 1603,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "芯片结温仿真",
+        "x": 144,
+        "y": 116.78125,
+        "width": 280.8125,
+        "height": 53.75,
+        "font": "48px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层已启用二维示意图；参数计算与层选择仍可使用。<p class=\"thermal-notice\">交互需要 JavaScript。当前显示默认工况的解析计算结果。</p>热阻构成0.606 K/W芯片3.2%上焊层2.6%上铜层4.5%陶瓷层16.8%下铜层3.0%下焊层5.9%Cooler51.7%对流12.2%探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si",
+        "x": 144,
+        "y": 425.328125,
+        "width": 1152,
+        "height": 776.75,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "669.953px 462.031px"
+      },
+      "metrics": {
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C",
+        "x": 144,
+        "y": 231.21875,
+        "width": 1152,
+        "height": 174.109375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "528px 528px"
+      },
+      "stage": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层",
+        "x": 144,
+        "y": 425.328125,
+        "width": 669.953125,
+        "height": 620.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "629.953px"
+      },
+      "parameters": {
+        "text": "探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si₃N₄ · 90AlN · 170上铜层厚度0.30.1mm1陶瓷厚度0.320.2mm1下铜层厚度0.30.1mm1陶瓷导热系数9020W/(m·K)200铜导热系数390250W/(m·K)400AMB 下铜层与 Cooler 之间的连接层。SAC305 · 58烧结银 · 200下焊层厚度0.10.05mm0.3下焊层导热系数5820W/(m·K)250冷却液侧采用等效对流换热边界。铜 · 390Al 6061 · 167Cooler 厚度31mm5Cooler 导热系数390120W/(m·K)400当前参数无法计算，请检查数值或恢复默认参数。",
+        "x": 833.953125,
+        "y": 425.328125,
+        "width": 462.03125,
+        "height": 558.453125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "x": 857.953125,
+        "y": 755,
+        "width": 414.03125,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "414.031px"
+      },
+      "tablist": {
+        "text": "工况上焊层AMB 基板下焊层Cooler",
+        "x": 857.953125,
+        "y": 573.328125,
+        "width": 414.03125,
+        "height": 52,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(36, 36, 38)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 176,
+        "y": 283.4375,
+        "width": 528,
+        "height": 72,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 66.3125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "作品",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "实验台",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "关于",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "联系",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Switch to English",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ 返回实验台",
+          "width": 83.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "剖面",
+          "width": 68.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "爆炸视图",
+          "width": 94.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "复位视角",
+          "width": 94.96875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "芯片3.2%",
+          "width": 68.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上焊层2.6%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上铜层4.5%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "陶瓷层16.8%",
+          "width": 87.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下铜层3.0%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下焊层5.9%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "对流12.2%",
+          "width": 75.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "解析参考",
+          "width": 200.125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM 代理",
+          "width": 203.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "恢复默认参数",
+          "width": 78,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "工况",
+          "width": 65.421875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "上焊层",
+          "width": 78.4375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB 基板",
+          "width": 97.078125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "下焊层",
+          "width": 78.4375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 78.65625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-zh-390-light",
+      "title": "芯片结温仿真",
+      "url": "http://127.0.0.1:4337/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2568,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "芯片结温仿真",
+        "x": 16,
+        "y": 116.78125,
+        "width": 187.203125,
+        "height": 35.828125,
+        "font": "32px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层已启用二维示意图；参数计算与层选择仍可使用。<p class=\"thermal-notice\">交互需要 JavaScript。当前显示默认工况的解析计算结果。</p>热阻构成0.606 K/W芯片3.2%上焊层2.6%上铜层4.5%陶瓷层16.8%下铜层3.0%下焊层5.9%Cooler51.7%对流12.2%探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si",
+        "x": 16,
+        "y": 443.296875,
+        "width": 358,
+        "height": 1516.78125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "358px"
+      },
+      "metrics": {
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C",
+        "x": 16,
+        "y": 202.296875,
+        "width": 358,
+        "height": 221,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "318px"
+      },
+      "stage": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层",
+        "x": 16,
+        "y": 443.296875,
+        "width": 358,
+        "height": 582.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "326px"
+      },
+      "parameters": {
+        "text": "探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si₃N₄ · 90AlN · 170上铜层厚度0.30.1mm1陶瓷厚度0.320.2mm1下铜层厚度0.30.1mm1陶瓷导热系数9020W/(m·K)200铜导热系数390250W/(m·K)400AMB 下铜层与 Cooler 之间的连接层。SAC305 · 58烧结银 · 200下焊层厚度0.10.05mm0.3下焊层导热系数5820W/(m·K)250冷却液侧采用等效对流换热边界。铜 · 390Al 6061 · 167Cooler 厚度31mm5Cooler 导热系数390120W/(m·K)400当前参数无法计算，请检查数值或恢复默认参数。",
+        "x": 16,
+        "y": 1248.4375,
+        "width": 358,
+        "height": 711.640625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "x": 36,
+        "y": 1720,
+        "width": 318,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "318px"
+      },
+      "tablist": {
+        "text": "工况上焊层AMB 基板下焊层Cooler",
+        "x": 36,
+        "y": 1392.4375,
+        "width": 318,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(242, 242, 247)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 36,
+        "y": 250.515625,
+        "width": 318,
+        "height": 54.59375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 71.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "打开导航",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ 返回实验台",
+          "width": 78.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "剖面",
+          "width": 88.65625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "爆炸视图",
+          "width": 112.671875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "复位视角",
+          "width": 112.671875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "芯片3.2%",
+          "width": 68.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上焊层2.6%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上铜层4.5%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "陶瓷层16.8%",
+          "width": 87.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下铜层3.0%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下焊层5.9%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "对流12.2%",
+          "width": 75.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "解析参考",
+          "width": 152.109375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM 代理",
+          "width": 155.890625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "恢复默认参数",
+          "width": 78,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "工况",
+          "width": 61.578125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "上焊层",
+          "width": 74.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB 基板",
+          "width": 93.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "下焊层",
+          "width": 74.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 310,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-zh-390-dark",
+      "title": "芯片结温仿真",
+      "url": "http://127.0.0.1:4337/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2568,
+      "header": {
+        "text": "示例工程师首页作品实验台关于联系EN",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "芯片结温仿真",
+        "x": 16,
+        "y": 116.78125,
+        "width": 187.203125,
+        "height": 35.828125,
+        "font": "32px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层已启用二维示意图；参数计算与层选择仍可使用。<p class=\"thermal-notice\">交互需要 JavaScript。当前显示默认工况的解析计算结果。</p>热阻构成0.606 K/W芯片3.2%上焊层2.6%上铜层4.5%陶瓷层16.8%下铜层3.0%下焊层5.9%Cooler51.7%对流12.2%探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si",
+        "x": 16,
+        "y": 443.296875,
+        "width": 358,
+        "height": 1516.78125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "358px"
+      },
+      "metrics": {
+        "text": "芯片结温 Tj125.6°C等效源节点Rth,j-f0.606K/WΔT60.6K!超过 SiC 器件常见最高结温 175 °C",
+        "x": 16,
+        "y": 202.296875,
+        "width": 358,
+        "height": 221,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "318px"
+      },
+      "stage": {
+        "text": "剖面爆炸视图复位视角层芯片厚度0.18mm导热系数370W/(m·K)本层温降0.0°C总热阻占比0.0%温度°C65.0125.6示意温度场 · 局部温度未经验证。厚度方向按比例放大拖动 / 方向键旋转 · 滚轮 / +/- 缩放 · Home 复位 · 点击选择层",
+        "x": 16,
+        "y": 443.296875,
+        "width": 358,
+        "height": 582.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "326px"
+      },
+      "parameters": {
+        "text": "探索参数解析参考FEM 代理恢复默认参数工况上焊层AMB 基板下焊层Cooler芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C固定芯片：5 × 5 × 0.18 mm，导热系数 370 W/(m·K)。芯片功耗10050W500冷却液温度6525°C85对流换热系数150002000W/(m²·K)20000芯片与上铜层之间的连接层。材料预设只改变导热系数。SAC305 · 58烧结银 · 200上焊层厚度0.080.05mm0.3上焊层导热系数20020W/(m·K)250铜层包覆陶瓷芯层；上下铜层厚度可独立调节，共用铜导热系数。Al₂O₃ · 24Si₃N₄ · 90AlN · 170上铜层厚度0.30.1mm1陶瓷厚度0.320.2mm1下铜层厚度0.30.1mm1陶瓷导热系数9020W/(m·K)200铜导热系数390250W/(m·K)400AMB 下铜层与 Cooler 之间的连接层。SAC305 · 58烧结银 · 200下焊层厚度0.10.05mm0.3下焊层导热系数5820W/(m·K)250冷却液侧采用等效对流换热边界。铜 · 390Al 6061 · 167Cooler 厚度31mm5Cooler 导热系数390120W/(m·K)400当前参数无法计算，请检查数值或恢复默认参数。",
+        "x": 16,
+        "y": 1248.4375,
+        "width": 358,
+        "height": 711.640625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "芯片结温 125.6 °C · 0.606 K/W解析参考超过 SiC 器件常见最高结温 175 °C",
+        "x": 36,
+        "y": 1720,
+        "width": 318,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "318px"
+      },
+      "tablist": {
+        "text": "工况上焊层AMB 基板下焊层Cooler",
+        "x": 36,
+        "y": 1392.4375,
+        "width": 318,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(36, 36, 38)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 36,
+        "y": 250.515625,
+        "width": 318,
+        "height": 54.59375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "跳到主要内容",
+          "width": 112,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "示例工程师",
+          "width": 71.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "打开导航",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ 返回实验台",
+          "width": 78.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "剖面",
+          "width": 88.65625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "爆炸视图",
+          "width": 112.671875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "复位视角",
+          "width": 112.671875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "芯片3.2%",
+          "width": 68.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上焊层2.6%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "上铜层4.5%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "陶瓷层16.8%",
+          "width": 87.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下铜层3.0%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "下焊层5.9%",
+          "width": 80.40625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "对流12.2%",
+          "width": 75.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "解析参考",
+          "width": 152.109375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM 代理",
+          "width": 155.890625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "恢复默认参数",
+          "width": 78,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "工况",
+          "width": 61.578125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "上焊层",
+          "width": 74.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB 基板",
+          "width": 93.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "下焊层",
+          "width": 74.59375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 310,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "邮箱",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-en-1440-light",
+      "title": "Chip junction temperature",
+      "url": "http://127.0.0.1:4337/en/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 1652,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "Chip junction temperature",
+        "x": 144,
+        "y": 116.78125,
+        "width": 585.921875,
+        "height": 53.75,
+        "font": "48px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layerThe 2D schematic is active. Parameter calculations and layer selection remain available.<p class=\"thermal-notice\">JavaScript is required for interaction. The default analytical result is shown.</p>Thermal resistance breakdown0.606 K/WChip3.2%Top solder2.6%Upper copper4.5%Ceramic16.",
+        "x": 144,
+        "y": 425.328125,
+        "width": 1152,
+        "height": 776.75,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "669.953px 462.031px"
+      },
+      "metrics": {
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature limit of 175 °C",
+        "x": 144,
+        "y": 231.21875,
+        "width": 1152,
+        "height": 174.109375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "528px 528px"
+      },
+      "stage": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+        "x": 144,
+        "y": 425.328125,
+        "width": 669.953125,
+        "height": 620.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "629.953px"
+      },
+      "parameters": {
+        "text": "Explore parametersAnalyticalFEM surrogateRestore defaultsConditionsTop solderAMB substrateBottom solderCoolerJunction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CFixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).Chip power10050W500Coolant temperature6525°C85Convection coefficient150002000W/(m²·K)20000Bond layer between the chip and upper copper. Material presets change conductivity only.SAC305 · 58Sintered Ag · 200Top solder thickness0.080.05mm0.3Top solder conductivity20020W/(m·K)250A ceramic core between copper layers. Upper and lowe",
+        "x": 833.953125,
+        "y": 425.328125,
+        "width": 462.03125,
+        "height": 629.453125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "x": 857.953125,
+        "y": 804,
+        "width": 414.03125,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "414.031px"
+      },
+      "tablist": {
+        "text": "ConditionsTop solderAMB substrateBottom solderCooler",
+        "x": 857.953125,
+        "y": 573.328125,
+        "width": 414.03125,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(242, 242, 247)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 176,
+        "y": 283.4375,
+        "width": 528,
+        "height": 72,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 109.28125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Work",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Lab Bench",
+          "width": 66.625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "About",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "width": 47.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "切换为中文",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ Back to Lab",
+          "width": 91.625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cutaway",
+          "width": 95.109375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Explode",
+          "width": 90.765625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Reset view",
+          "width": 108.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Chip3.2%",
+          "width": 69.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Top solder2.6%",
+          "width": 101.21875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Upper copper4.5%",
+          "width": 119.265625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Ceramic16.8%",
+          "width": 97,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Lower copper3.0%",
+          "width": 119.546875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Bottom solder5.9%",
+          "width": 121.71875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Convection12.2%",
+          "width": 113.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Analytical",
+          "width": 189.875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM surrogate",
+          "width": 214.15625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Restore defaults",
+          "width": 97.5,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "Conditions",
+          "width": 91.890625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "Top solder",
+          "width": 86.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB substrate",
+          "width": 112.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "Bottom solder",
+          "width": 108.765625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 406.03125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-en-1440-dark",
+      "title": "Chip junction temperature",
+      "url": "http://127.0.0.1:4337/en/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "scrollWidth": 1440,
+      "scrollHeight": 1652,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "Chip junction temperature",
+        "x": 144,
+        "y": 116.78125,
+        "width": 585.921875,
+        "height": 53.75,
+        "font": "48px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layerThe 2D schematic is active. Parameter calculations and layer selection remain available.<p class=\"thermal-notice\">JavaScript is required for interaction. The default analytical result is shown.</p>Thermal resistance breakdown0.606 K/WChip3.2%Top solder2.6%Upper copper4.5%Ceramic16.",
+        "x": 144,
+        "y": 425.328125,
+        "width": 1152,
+        "height": 776.75,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "669.953px 462.031px"
+      },
+      "metrics": {
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature limit of 175 °C",
+        "x": 144,
+        "y": 231.21875,
+        "width": 1152,
+        "height": 174.109375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "528px 528px"
+      },
+      "stage": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+        "x": 144,
+        "y": 425.328125,
+        "width": 669.953125,
+        "height": 620.375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "629.953px"
+      },
+      "parameters": {
+        "text": "Explore parametersAnalyticalFEM surrogateRestore defaultsConditionsTop solderAMB substrateBottom solderCoolerJunction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CFixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).Chip power10050W500Coolant temperature6525°C85Convection coefficient150002000W/(m²·K)20000Bond layer between the chip and upper copper. Material presets change conductivity only.SAC305 · 58Sintered Ag · 200Top solder thickness0.080.05mm0.3Top solder conductivity20020W/(m·K)250A ceramic core between copper layers. Upper and lowe",
+        "x": 833.953125,
+        "y": 425.328125,
+        "width": 462.03125,
+        "height": 629.453125,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "x": 857.953125,
+        "y": 804,
+        "width": 414.03125,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "414.031px"
+      },
+      "tablist": {
+        "text": "ConditionsTop solderAMB substrateBottom solderCooler",
+        "x": 857.953125,
+        "y": 573.328125,
+        "width": 414.03125,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(36, 36, 38)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 176,
+        "y": 283.4375,
+        "width": 528,
+        "height": 72,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 109.28125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Work",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Lab Bench",
+          "width": 66.625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "About",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Contact",
+          "width": 47.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "切换为中文",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ Back to Lab",
+          "width": 91.625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cutaway",
+          "width": 95.109375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Explode",
+          "width": 90.765625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Reset view",
+          "width": 108.09375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Chip3.2%",
+          "width": 69.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Top solder2.6%",
+          "width": 101.21875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Upper copper4.5%",
+          "width": 119.265625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Ceramic16.8%",
+          "width": 97,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Lower copper3.0%",
+          "width": 119.546875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Bottom solder5.9%",
+          "width": 121.71875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Convection12.2%",
+          "width": 113.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Analytical",
+          "width": 189.875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM surrogate",
+          "width": 214.15625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Restore defaults",
+          "width": 97.5,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "Conditions",
+          "width": 91.890625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "Top solder",
+          "width": 86.5625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB substrate",
+          "width": 112.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "Bottom solder",
+          "width": 108.765625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 406.03125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 195.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-en-390-light",
+      "title": "Chip junction temperature",
+      "url": "http://127.0.0.1:4337/en/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2898,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(251, 251, 253, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "Chip junction temperature",
+        "x": 16,
+        "y": 116.78125,
+        "width": 358,
+        "height": 71.65625,
+        "font": "32px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layerThe 2D schematic is active. Parameter calculations and layer selection remain available.<p class=\"thermal-notice\">JavaScript is required for interaction. The default analytical result is shown.</p>Thermal resistance breakdown0.606 K/WChip3.2%Top solder2.6%Upper copper4.5%Ceramic16.",
+        "x": 16,
+        "y": 531.125,
+        "width": 358,
+        "height": 1535.96875,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "358px"
+      },
+      "metrics": {
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature limit of 175 °C",
+        "x": 16,
+        "y": 290.125,
+        "width": 358,
+        "height": 221,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "318px"
+      },
+      "stage": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+        "x": 16,
+        "y": 531.125,
+        "width": 358,
+        "height": 601.5625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "326px"
+      },
+      "parameters": {
+        "text": "Explore parametersAnalyticalFEM surrogateRestore defaultsConditionsTop solderAMB substrateBottom solderCoolerJunction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CFixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).Chip power10050W500Coolant temperature6525°C85Convection coefficient150002000W/(m²·K)20000Bond layer between the chip and upper copper. Material presets change conductivity only.SAC305 · 58Sintered Ag · 200Top solder thickness0.080.05mm0.3Top solder conductivity20020W/(m·K)250A ceramic core between copper layers. Upper and lowe",
+        "x": 16,
+        "y": 1355.453125,
+        "width": 358,
+        "height": 711.640625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "x": 36,
+        "y": 1964.59375,
+        "width": 318,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "318px"
+      },
+      "tablist": {
+        "text": "ConditionsTop solderAMB substrateBottom solderCooler",
+        "x": 36,
+        "y": 1499.453125,
+        "width": 318,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(242, 242, 247)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 36,
+        "y": 338.34375,
+        "width": 318,
+        "height": 54.59375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 117.6875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Open navigation",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ Back to Lab",
+          "width": 85.78125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cutaway",
+          "width": 102,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Explode",
+          "width": 98.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Reset view",
+          "width": 113.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Chip3.2%",
+          "width": 69.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Top solder2.6%",
+          "width": 101.21875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Upper copper4.5%",
+          "width": 119.265625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Ceramic16.8%",
+          "width": 97,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Lower copper3.0%",
+          "width": 119.546875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Bottom solder5.9%",
+          "width": 121.71875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Convection12.2%",
+          "width": 113.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Analytical",
+          "width": 141.859375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM surrogate",
+          "width": 166.140625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Restore defaults",
+          "width": 97.5,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "Conditions",
+          "width": 96.796875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "Top solder",
+          "width": 91.46875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB substrate",
+          "width": 117.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "Bottom solder",
+          "width": 176.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 131.75,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "s1-en-390-dark",
+      "title": "Chip junction temperature",
+      "url": "http://127.0.0.1:4337/en/lab/chip-junction-temperature/",
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "scrollWidth": 390,
+      "scrollHeight": 2898,
+      "header": {
+        "text": "Sample EngineerHomeWorkLab BenchAboutContact中文",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 52,
+        "font": "14px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0.8)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "h1": {
+        "text": "Chip junction temperature",
+        "x": 16,
+        "y": 116.78125,
+        "width": 358,
+        "height": 71.65625,
+        "font": "32px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "workspace": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layerThe 2D schematic is active. Parameter calculations and layer selection remain available.<p class=\"thermal-notice\">JavaScript is required for interaction. The default analytical result is shown.</p>Thermal resistance breakdown0.606 K/WChip3.2%Top solder2.6%Upper copper4.5%Ceramic16.",
+        "x": 16,
+        "y": 531.125,
+        "width": 358,
+        "height": 1535.96875,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "static",
+        "grid": "358px"
+      },
+      "metrics": {
+        "text": "Junction temperature Tj125.6°CEquivalent source nodeRth,j-f0.606K/WΔT60.6K!Above the common SiC junction-temperature limit of 175 °C",
+        "x": 16,
+        "y": 290.125,
+        "width": 358,
+        "height": 221,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "static",
+        "grid": "318px"
+      },
+      "stage": {
+        "text": "CutawayExplodeReset viewLayerChipThickness0.18mmConductivity370W/(m·K)Layer temperature drop0.0°CShare of total resistance0.0%Temperature°C65.0125.6Illustrative field · local temperatures unvalidated.Thickness direction enlarged for clarityDrag / arrows to orbit · Scroll / +/- to zoom · Home to reset · Select a layer",
+        "x": 16,
+        "y": 531.125,
+        "width": 358,
+        "height": 601.5625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "grid",
+        "position": "relative",
+        "grid": "326px"
+      },
+      "parameters": {
+        "text": "Explore parametersAnalyticalFEM surrogateRestore defaultsConditionsTop solderAMB substrateBottom solderCoolerJunction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °CFixed chip: 5 × 5 × 0.18 mm, conductivity 370 W/(m·K).Chip power10050W500Coolant temperature6525°C85Convection coefficient150002000W/(m²·K)20000Bond layer between the chip and upper copper. Material presets change conductivity only.SAC305 · 58Sintered Ag · 200Top solder thickness0.080.05mm0.3Top solder conductivity20020W/(m·K)250A ceramic core between copper layers. Upper and lowe",
+        "x": 16,
+        "y": 1355.453125,
+        "width": 358,
+        "height": 711.640625,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "24px",
+        "display": "block",
+        "position": "static",
+        "grid": "none"
+      },
+      "summary": {
+        "text": "Junction temperature 125.6 °C · 0.606 K/WAnalyticalAbove the common SiC junction-temperature limit of 175 °C",
+        "x": 36,
+        "y": 1964.59375,
+        "width": 318,
+        "height": 66.5,
+        "font": "13px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(22, 22, 23)",
+        "radius": "0px",
+        "display": "grid",
+        "position": "sticky",
+        "grid": "318px"
+      },
+      "tablist": {
+        "text": "ConditionsTop solderAMB substrateBottom solderCooler",
+        "x": 36,
+        "y": 1499.453125,
+        "width": 318,
+        "height": 98,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(36, 36, 38)",
+        "radius": "24px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "metric": {
+        "text": "125.6°C",
+        "x": 36,
+        "y": 338.34375,
+        "width": 318,
+        "height": 54.59375,
+        "font": "16px",
+        "fontFamily": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "radius": "0px",
+        "display": "flex",
+        "position": "static",
+        "grid": "none"
+      },
+      "renderer": "webgl",
+      "visibleControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to main content",
+          "width": 167.640625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sample Engineer",
+          "width": 117.6875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Open navigation",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "‹ Back to Lab",
+          "width": 85.78125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cutaway",
+          "width": 102,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Explode",
+          "width": 98.015625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Reset view",
+          "width": 113.984375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Chip3.2%",
+          "width": 69.90625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Top solder2.6%",
+          "width": 101.21875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Upper copper4.5%",
+          "width": 119.265625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Ceramic16.8%",
+          "width": 97,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Lower copper3.0%",
+          "width": 119.546875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Bottom solder5.9%",
+          "width": 121.71875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Cooler51.7%",
+          "width": 87.8125,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Convection12.2%",
+          "width": 113.234375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Analytical",
+          "width": 141.859375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "FEM surrogate",
+          "width": 166.140625,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Restore defaults",
+          "width": 97.5,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-operating",
+          "text": "Conditions",
+          "width": 96.796875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-top-solder",
+          "text": "Top solder",
+          "width": 91.46875,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-amb",
+          "text": "AMB substrate",
+          "width": 117.734375,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-bottom-solder",
+          "text": "Bottom solder",
+          "width": 176.25,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "id": "thermal-tab-cooler",
+          "text": "Cooler",
+          "width": 131.75,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-P",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-T_cool",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "INPUT",
+          "id": "thermal-param-h",
+          "text": "",
+          "width": 318,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Email",
+          "width": 44,
+          "height": 44,
+          "disabled": false
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "LinkedIn",
+          "width": 46.546875,
+          "height": 44,
+          "disabled": false
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "captureCorrection": "Four dark Home and eight S1 PNGs use geometry-verified full-document viewport capture at scroll0; see final-fullpage-capture.json",
+  "finalSourceHashes": {
+    "src/components/HomePage.astro": "03faf0fb8fdd0cbb17e6ea1972be9f52267bd88547dc401f697cc55d7ae99383",
+    "src/styles/home.css": "119ddf78759db0c4ad07235c4455380477fef095a8463b044d97ff39ac1895ad",
+    "src/components/lab/thermal-stack/ThermalStack.astro": "417c053df2e8fd78da4e8e8ec057bd6af2f8d631fe4c5138a450fee9c27d8175",
+    "src/components/lab/thermal-stack/thermal.css": "741990d6bd96c488693b3afbeaea166482250e093684b6a069975c863704fcbf",
+    "src/components/lab/thermal-stack/client.ts": "0d7b15edadb74159732e494b836a3edb558dd12e000fb7e3ca48342be55713e5",
+    "src/components/Header.astro": "12934d8904dd965c1c0c54e6f13838fcfaed9a1bf55cc5dd00d830020da74488"
+  }
+}

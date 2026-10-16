@@ -1,0 +1,46 @@
+$ node scripts/generate-font-css.mjs && astro build
+Noto CSS: 40 faces, 17833 bytes; original glyph files unchanged.
+09:45:07 [content] Syncing content
+09:45:07 [content] Synced content
+09:45:07 [types] Generated 348ms
+09:45:07 [build] output: "static"
+09:45:07 [build] mode: "static"
+09:45:07 [build] directory: <workspace>\portfolio-main-v2\dist\
+09:45:07 [build] Collecting build info...
+09:45:07 [build] ✓ Completed in 373ms.
+09:45:07 [build] Building static entrypoints...
+09:45:07 [vite] ✓ built in 215ms
+09:45:08 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+09:45:08 [vite] ✓ built in 143ms
+09:45:08 [build] Rearranging server assets...
+
+ generating static routes 
+09:45:08   ├─ /404.html (+11ms) 
+09:45:08   ├─ /about/index.html (+4ms) 
+09:45:08   ├─ /contact/index.html (+6ms) 
+09:45:08   ├─ /en/404/index.html (+3ms) 
+09:45:08   ├─ /en/about/index.html (+2ms) 
+09:45:08   ├─ /en/contact/index.html (+2ms) 
+09:45:08   ├─ /en/lab/chip-junction-temperature/index.html (+5ms) 
+09:45:08   ├─ /en/lab/sample-teardown/index.html (+2ms) 
+09:45:08   ├─ /en/lab/sample-simulation/index.html (+3ms) 
+09:45:08   ├─ /en/lab/index.html (+3ms) 
+09:45:08   ├─ /en/work/sample-case/index.html (+2ms) 
+09:45:08   ├─ /en/work/index.html (+2ms) 
+09:45:08   ├─ /en/index.html (+2ms) 
+09:45:08   ├─ /lab/chip-junction-temperature/index.html (+3ms) 
+09:45:08   ├─ /lab/sample-teardown/index.html (+1ms) 
+09:45:08   ├─ /lab/sample-simulation/index.html (+1ms) 
+09:45:08   ├─ /lab/index.html (+2ms) 
+09:45:08   ├─ /work/sample-case/index.html (+1ms) 
+09:45:08   ├─ /work/index.html (+2ms) 
+09:45:08   ├─ /index.html (+2ms) 
+09:45:08 ✓ Completed in 80ms.
+
+09:45:08 [build] ✓ Completed in 838ms.
+09:45:08 [build] 20 page(s) built in 1.22s
+09:45:08 [build] Complete!

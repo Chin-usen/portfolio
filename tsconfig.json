@@ -1,0 +1,18 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "playwright-report",
+    "test-results",
+    ".lighthouseci",
+    "thermal-p2",
+    "reports/v2"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "types": ["node"]
+  }
+}

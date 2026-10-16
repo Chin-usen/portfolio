@@ -1,0 +1,1 @@
+{"Rjmax":{"mean_relative_error":0.01006779047735665,"max_relative_error":0.04878330720394741,"rmse_K_per_W":0.014277559523471425,"mean_target_pass":false,"max_target_pass":false},"Rjavg":{"mean_relative_error":0.009021028097976386,"max_relative_error":0.032578136714102035,"rmse_K_per_W":0.011644971736742418,"mean_target_pass":true,"max_target_pass":false}}

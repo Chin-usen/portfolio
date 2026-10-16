@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "recorded_utc": "2026-10-15T06:19:24.036650+00:00",
+  "version": "1.2.0",
+  "local_only": true,
+  "logs": [
+    "lint-release.log",
+    "s1-preload-typecheck.log",
+    "unit-final.log",
+    "browser-release.log",
+    "security-release.log",
+    "gitleaks.log"
+  ],
+  "typecheck": {
+    "files": 86,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "unit_tests": 48,
+  "browser_tests": 54,
+  "browser_seconds": 22.2,
+  "build_pages": 20,
+  "lighthouse": {
+    "routes": 18,
+    "runs": 54,
+    "pass": true,
+    "summary": "../lighthouse/summary.json",
+    "collection": "Resumed exact-source set, no score-based reruns"
+  },
+  "custom_keyword_policy": "NOT CONFIGURED",
+  "archive_validation": "Performed separately after committing, on the actual emitted source ZIP and split parts; final attachment message confirms delivery."
+}

@@ -1,0 +1,1270 @@
+{
+  "time": "2026-10-15T05:05:07.417Z",
+  "browserClosed": true,
+  "rows": [
+    {
+      "name": "home-zh-1440-dark.png",
+      "priorSha256": "f565996ad74668efe0465cbfde681f75873f4ee81d79eeffe1f593e2f6018f1d",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 3252
+      },
+      "before": {
+        "height": 3252,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 1440,
+            "h": 496.65625
+          },
+          {
+            "name": "home-module",
+            "x": 230,
+            "y": 588.65625,
+            "w": 980,
+            "h": 653.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 1305.984375,
+            "w": 1440,
+            "h": 700.234375
+          },
+          {
+            "name": "home-lab",
+            "x": 120,
+            "y": 2006.21875,
+            "w": 1200,
+            "h": 1152.375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 3158.59375,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 3252,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 1440,
+            "h": 496.65625
+          },
+          {
+            "name": "home-module",
+            "x": 230,
+            "y": 588.65625,
+            "w": 980,
+            "h": 653.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 1305.984375,
+            "w": 1440,
+            "h": 700.234375
+          },
+          {
+            "name": "home-lab",
+            "x": 120,
+            "y": 2006.21875,
+            "w": 1200,
+            "h": 1152.375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 3158.59375,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "f565996ad74668efe0465cbfde681f75873f4ee81d79eeffe1f593e2f6018f1d"
+    },
+    {
+      "name": "home-zh-390-dark.png",
+      "priorSha256": "0b6057eab9aeea29790d31f262ba7bcdee570f71fb59842dc82bcdd2ce45a2b3",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2367
+      },
+      "before": {
+        "height": 2367,
+        "width": 390,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 390,
+            "h": 315.375
+          },
+          {
+            "name": "home-module",
+            "x": 8,
+            "y": 399.375,
+            "w": 374,
+            "h": 249.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 688.703125,
+            "w": 390,
+            "h": 358.59375
+          },
+          {
+            "name": "home-lab",
+            "x": 16,
+            "y": 1047.296875,
+            "w": 358,
+            "h": 1234.25
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2281.546875,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "after": {
+        "height": 2367,
+        "width": 390,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 390,
+            "h": 315.375
+          },
+          {
+            "name": "home-module",
+            "x": 8,
+            "y": 399.375,
+            "w": 374,
+            "h": 249.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 688.703125,
+            "w": 390,
+            "h": 358.59375
+          },
+          {
+            "name": "home-lab",
+            "x": 16,
+            "y": 1047.296875,
+            "w": 358,
+            "h": 1234.25
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2281.546875,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "sha256": "0b6057eab9aeea29790d31f262ba7bcdee570f71fb59842dc82bcdd2ce45a2b3"
+    },
+    {
+      "name": "home-en-1440-dark.png",
+      "priorSha256": "203518b570bc999a81b240b6d2fdf02964acb0b5d55a7e34c3b6725147ccefa2",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 3252
+      },
+      "before": {
+        "height": 3252,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 1440,
+            "h": 496.65625
+          },
+          {
+            "name": "home-module",
+            "x": 230,
+            "y": 588.65625,
+            "w": 980,
+            "h": 653.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 1305.984375,
+            "w": 1440,
+            "h": 700.234375
+          },
+          {
+            "name": "home-lab",
+            "x": 120,
+            "y": 2006.21875,
+            "w": 1200,
+            "h": 1152.375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 3158.59375,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 3252,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 1440,
+            "h": 496.65625
+          },
+          {
+            "name": "home-module",
+            "x": 230,
+            "y": 588.65625,
+            "w": 980,
+            "h": 653.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 1305.984375,
+            "w": 1440,
+            "h": 700.234375
+          },
+          {
+            "name": "home-lab",
+            "x": 120,
+            "y": 2006.21875,
+            "w": 1200,
+            "h": 1152.375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 3158.59375,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "203518b570bc999a81b240b6d2fdf02964acb0b5d55a7e34c3b6725147ccefa2"
+    },
+    {
+      "name": "home-en-390-dark.png",
+      "priorSha256": "850ca2a9becc1c6bcdb36d6a472c12fb0ad34fc5387e8f3dd9b513ca87ed0cd3",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2558
+      },
+      "before": {
+        "height": 2558,
+        "width": 390,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 390,
+            "h": 315.375
+          },
+          {
+            "name": "home-module",
+            "x": 8,
+            "y": 399.375,
+            "w": 374,
+            "h": 249.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 688.703125,
+            "w": 390,
+            "h": 401.1875
+          },
+          {
+            "name": "home-lab",
+            "x": 16,
+            "y": 1089.890625,
+            "w": 358,
+            "h": 1355.828125
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2445.71875,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "after": {
+        "height": 2558,
+        "width": 390,
+        "sections": [
+          {
+            "name": "home-hero",
+            "x": 0,
+            "y": 52,
+            "w": 390,
+            "h": 315.375
+          },
+          {
+            "name": "home-module",
+            "x": 8,
+            "y": 399.375,
+            "w": 374,
+            "h": 249.328125
+          },
+          {
+            "name": "home-metrics",
+            "x": 0,
+            "y": 688.703125,
+            "w": 390,
+            "h": 401.1875
+          },
+          {
+            "name": "home-lab",
+            "x": 16,
+            "y": 1089.890625,
+            "w": 358,
+            "h": 1355.828125
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2445.71875,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "sha256": "850ca2a9becc1c6bcdb36d6a472c12fb0ad34fc5387e8f3dd9b513ca87ed0cd3"
+    },
+    {
+      "name": "s1-zh-1440-light.png",
+      "priorSha256": "44d48a07776a10026a861eae67902897c1385936e1f37909dd29b38ddd350110",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 1603
+      },
+      "before": {
+        "height": 1603,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 558.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 203.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1510.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 1603,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 558.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 203.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1510.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "44d48a07776a10026a861eae67902897c1385936e1f37909dd29b38ddd350110"
+    },
+    {
+      "name": "s1-zh-1440-dark.png",
+      "priorSha256": "61ad5ffbd1b78876e84f3dd46d767014ccaf15a20dec3f202d9e9d57e0d0cff9",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 1603
+      },
+      "before": {
+        "height": 1603,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 558.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 203.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1510.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 1603,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 558.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 203.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1510.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "61ad5ffbd1b78876e84f3dd46d767014ccaf15a20dec3f202d9e9d57e0d0cff9"
+    },
+    {
+      "name": "s1-zh-390-light.png",
+      "priorSha256": "06ef8e2efb4f80130ffa66e8bebfa9ea2a6b28f2ab15e02ef184edcf5d0cd355",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2568
+      },
+      "before": {
+        "height": 2568,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 102.296875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 202.296875,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 443.296875,
+            "w": 358,
+            "h": 582.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1248.4375,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 1984.078125,
+            "w": 358,
+            "h": 418.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2482.75,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "after": {
+        "height": 2568,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 102.296875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 202.296875,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 443.296875,
+            "w": 358,
+            "h": 582.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1248.4375,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 1984.078125,
+            "w": 358,
+            "h": 418.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2482.75,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "sha256": "06ef8e2efb4f80130ffa66e8bebfa9ea2a6b28f2ab15e02ef184edcf5d0cd355"
+    },
+    {
+      "name": "s1-zh-390-dark.png",
+      "priorSha256": "7190e64837821bf69d2e6311cd9e2a31bee2542416bb1b20ced4212caa21db0e",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2568
+      },
+      "before": {
+        "height": 2568,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 102.296875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 202.296875,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 443.296875,
+            "w": 358,
+            "h": 582.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1248.4375,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 1984.078125,
+            "w": 358,
+            "h": 418.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2482.75,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "after": {
+        "height": 2568,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 102.296875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 202.296875,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 443.296875,
+            "w": 358,
+            "h": 582.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1248.4375,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 1984.078125,
+            "w": 358,
+            "h": 418.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2482.75,
+            "w": 390,
+            "h": 85
+          }
+        ]
+      },
+      "sha256": "7190e64837821bf69d2e6311cd9e2a31bee2542416bb1b20ced4212caa21db0e"
+    },
+    {
+      "name": "s1-en-1440-light.png",
+      "priorSha256": "17fbf72d5281b83145c76214c5a624d243f15e20a6c383e266f38bc45755b173",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 1652
+      },
+      "before": {
+        "height": 1652,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 629.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 252.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1559.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 1652,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 629.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 252.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1559.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "17fbf72d5281b83145c76214c5a624d243f15e20a6c383e266f38bc45755b173"
+    },
+    {
+      "name": "s1-en-1440-dark.png",
+      "priorSha256": "f583217bc832ae04b5f49954fae63dab07845e17fc47678caf0f573a38307dee",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 1440,
+        "height": 1652
+      },
+      "before": {
+        "height": 1652,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 629.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 252.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1559.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "after": {
+        "height": 1652,
+        "width": 1440,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 144,
+            "y": 84,
+            "w": 1152,
+            "h": 123.21875
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 144,
+            "y": 231.21875,
+            "w": 1152,
+            "h": 174.109375
+          },
+          {
+            "name": "thermal-stage",
+            "x": 144,
+            "y": 425.328125,
+            "w": 669.953125,
+            "h": 620.375
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 833.953125,
+            "y": 425.328125,
+            "w": 462.03125,
+            "h": 629.453125
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 144,
+            "y": 1226.078125,
+            "w": 1152,
+            "h": 252.984375
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 1559.0625,
+            "w": 1440,
+            "h": 93
+          }
+        ]
+      },
+      "sha256": "f583217bc832ae04b5f49954fae63dab07845e17fc47678caf0f573a38307dee"
+    },
+    {
+      "name": "s1-en-390-light.png",
+      "priorSha256": "d485698ea7124960d564661315088acd15dd73f9defc83b60c479ad50425ce61",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2898
+      },
+      "before": {
+        "height": 2898,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 190.125
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 290.125,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 531.125,
+            "w": 358,
+            "h": 601.5625
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1355.453125,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 2091.09375,
+            "w": 358,
+            "h": 614.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2785.765625,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "after": {
+        "height": 2898,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 190.125
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 290.125,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 531.125,
+            "w": 358,
+            "h": 601.5625
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1355.453125,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 2091.09375,
+            "w": 358,
+            "h": 614.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2785.765625,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "sha256": "d485698ea7124960d564661315088acd15dd73f9defc83b60c479ad50425ce61"
+    },
+    {
+      "name": "s1-en-390-dark.png",
+      "priorSha256": "ccebbffa4cdc94dfc882b4ebe07df9765fcfe248b9d1c2a1fe3e57eefd2ef042",
+      "method": "Viewport expanded to full document height after verifying identical section geometry; no image compositing or CSS changes.",
+      "originalViewport": {
+        "width": 390,
+        "height": 900
+      },
+      "captureViewport": {
+        "width": 390,
+        "height": 2898
+      },
+      "before": {
+        "height": 2898,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 190.125
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 290.125,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 531.125,
+            "w": 358,
+            "h": 601.5625
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1355.453125,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 2091.09375,
+            "w": 358,
+            "h": 614.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2785.765625,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "after": {
+        "height": 2898,
+        "width": 390,
+        "sections": [
+          {
+            "name": "thermal-heading",
+            "x": 16,
+            "y": 84,
+            "w": 358,
+            "h": 190.125
+          },
+          {
+            "name": "thermal-metrics",
+            "x": 16,
+            "y": 290.125,
+            "w": 358,
+            "h": 221
+          },
+          {
+            "name": "thermal-stage",
+            "x": 16,
+            "y": 531.125,
+            "w": 358,
+            "h": 601.5625
+          },
+          {
+            "name": "thermal-parameters",
+            "x": 16,
+            "y": 1355.453125,
+            "w": 358,
+            "h": 711.640625
+          },
+          {
+            "name": "thermal-model-notes",
+            "x": 16,
+            "y": 2091.09375,
+            "w": 358,
+            "h": 614.671875
+          },
+          {
+            "name": "site-footer",
+            "x": 0,
+            "y": 2785.765625,
+            "w": 390,
+            "h": 112.1875
+          }
+        ]
+      },
+      "sha256": "ccebbffa4cdc94dfc882b4ebe07df9765fcfe248b9d1c2a1fe3e57eefd2ef042"
+    }
+  ]
+}

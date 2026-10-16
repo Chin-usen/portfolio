@@ -1,0 +1,29 @@
+{
+  "createdAt": "2026-10-15T04:51:37.896416+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "command": "python scripts/subset-noto-fonts.py --check",
+      "exitCode": 0,
+      "output": "PASS: 12 subset hashes, cmap coverage, exact outlines, advance/line metrics, real weights, and original font metadata\r\n"
+    },
+    {
+      "command": "node scripts/generate-font-css.mjs --check",
+      "exitCode": 0,
+      "output": "Future-text check: U+4E01 uses all four original locked faces.\nNoto CSS: 12 content subsets + 4 original fallback faces, 19843 bytes.\nCode points outside the original Noto package retain the CSS font stack: U+394,U+2084.\n"
+    }
+  ],
+  "faces": 12,
+  "realWeights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "totalAssetBytes": 356344,
+  "homeCommonCodepointsPerWeight": 241,
+  "otherContentCodepointsPerWeight": 354,
+  "originalSymbolCodepointsPerWeight": 1,
+  "originalFontPackage": "@fontsource/noto-sans-sc@5.3.1",
+  "normalBuildRequiresPython": false
+}

@@ -1,0 +1,3 @@
+$ node scripts/security-scan.mjs
+Security scan: 310 text files; keyword policy NOT CONFIGURED (phone/birthday rules still enforced).
+Security scan passed for the enabled rules.

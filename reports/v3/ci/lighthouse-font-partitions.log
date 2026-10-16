@@ -1,0 +1,24 @@
+Command: pnpm exec lhci autorun --config=../.dev-tools/v3-lh-home.cjs
+Started: 2026-10-15T04:49:45.472963+00:00
+Exit: 0
+
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Started a web server on port 50679...
+Running Lighthouse 3 time(s) on http://localhost:50679/
+Run #1...done.
+Run #2...done.
+Run #3...done.
+Done running Lighthouse!
+
+Checking assertions against 1 URL(s), 3 total run(s)
+
+All results processed!
+
+Dumping 3 reports to disk at <workspace>\portfolio-main-v3\.lighthouseci\reports...
+Done writing reports to disk.
+
+Done running autorun.

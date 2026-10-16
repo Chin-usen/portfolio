@@ -1,0 +1,15 @@
+﻿---
+import type { GetStaticPaths } from 'astro';
+import WorkDetail from '../../components/WorkDetail.astro';
+import { getLocalizedWork } from '../../lib/content';
+export const getStaticPaths = (async () => {
+  const entries = await getLocalizedWork('zh');
+  return entries.map((entry) => ({
+    params: { slug: entry.data.translationKey },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+const { entry } = Astro.props;
+---
+
+<WorkDetail locale="zh" entry={entry} />

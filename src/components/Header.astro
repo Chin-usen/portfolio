@@ -1,0 +1,139 @@
+---
+import { getEntry } from 'astro:content';
+import { localePath, stripLocale } from '../i18n/utils';
+import { getUi } from '../i18n/dictionaries';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+const ui = getUi(locale);
+const entry = await getEntry('home', locale);
+const profile = await getEntry('profile', locale);
+if (!profile) throw new Error('Missing profile content: ' + locale);
+if (!entry) throw new Error('Missing home content: ' + locale);
+const home = entry.data;
+const path = stripLocale(Astro.url.pathname).replace(/\/$/, '') || '/';
+const alternateLocale = locale === 'zh' ? 'en' : 'zh';
+const alternatePath = localePath(alternateLocale, path);
+const links: Array<[string, string]> = [
+  ['/work/', home.navWork],
+  ['/lab/', home.navLab],
+  ['/about/', ui.nav.about],
+];
+const isCurrent = (href: string) => {
+  const segment = href.replace(/\/$/, '');
+  return path === segment || path.startsWith(segment + '/');
+};
+const contactPath = localePath(locale, '/about/') + '#contact';
+---
+
+<header class="site-header n1-header" transition:name="site-header" transition:animate="none">
+  <site-nav class="n1-nav-shell">
+    <a class="site-name" href={localePath(locale, '/')}>
+      {home.name}
+    </a>
+    <div class="n1-nav-right">
+      <nav class="n1-desktop-nav" data-testid="desktop-nav" aria-label={ui.common.primaryNav}>
+        <ul class="n1-nav-list">
+          {links.map(([href, label]) => (
+            <li>
+              <a
+                href={localePath(locale, href)}
+                aria-current={isCurrent(href) ? 'page' : undefined}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <span class="n1-nav-divider" aria-hidden="true"></span>
+      <a
+        class="n1-language"
+        data-testid="language-switch"
+        href={alternatePath}
+        lang={alternateLocale === 'zh' ? 'zh-CN' : 'en'}
+        hreflang={alternateLocale === 'zh' ? 'zh-CN' : 'en'}
+        aria-label={alternateLocale === 'zh' ? ui.common.switchToZh : ui.common.switchToEn}
+      >
+        {alternateLocale === 'zh' ? '中文' : 'EN'}
+      </a>
+      <button
+        class="menu-toggle"
+        data-testid="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label={ui.nav.openMenu}
+      >
+        <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true">
+          <path d="M0 2h18M0 10h18" fill="none" stroke="currentColor" stroke-width="1.6" />
+        </svg>
+      </button>
+    </div>
+    <dialog id="mobile-menu" class="n1-menu" aria-label={ui.common.primaryNav}>
+      <div class="n1-menu-header">
+        <a class="site-name" href={localePath(locale, '/')}>
+          {home.name}
+        </a>
+        <div class="n1-nav-right">
+          <a
+            class="n1-language"
+            href={alternatePath}
+            aria-label={alternateLocale === 'zh' ? ui.common.switchToZh : ui.common.switchToEn}
+          >
+            {alternateLocale === 'zh' ? '中文' : 'EN'}
+          </a>
+          <button
+            type="button"
+            class="menu-close"
+            data-testid="menu-close"
+            aria-label={ui.nav.closeMenu}
+            autofocus
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+              <path d="m3 3 12 12M15 3 3 15" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="n1-menu-links" data-testid="primary-nav" aria-label={ui.common.primaryNav}>
+        {links.map(([href, label]) => (
+          <a href={localePath(locale, href)} aria-current={isCurrent(href) ? 'page' : undefined}>
+            {label}
+            {isCurrent(href) && <span class="n1-current-dot" aria-hidden="true"></span>}
+          </a>
+        ))}
+      </nav>
+      <div class="n1-menu-footer">
+        <nav aria-label={ui.common.selectLanguage}>
+          <a
+            href={localePath('zh', path)}
+            lang="zh-CN"
+            aria-current={locale === 'zh' ? 'true' : undefined}
+          >
+            中文
+          </a>
+          <span aria-hidden="true"> / </span>
+          <a
+            href={localePath('en', path)}
+            lang="en"
+            aria-current={locale === 'en' ? 'true' : undefined}
+          >
+            EN
+          </a>
+        </nav>
+        <div class="n1-menu-contact">
+          <a href={contactPath}>{locale === 'zh' ? '邮箱' : 'Email'}</a>
+          <span aria-hidden="true"> · </span>
+          <a href={profile.data.linkedin} rel="me noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </dialog>
+  </site-nav>
+</header>
+<script>
+  import '../scripts/navigation';
+</script>

@@ -1,0 +1,8 @@
+Command: pnpm exec prettier --write scripts/generate-font-css.mjs scripts/font-subset-README.md src/layouts/BaseLayout.astro public/fonts/noto-sans-sc-subset-manifest.json
+Started: 2026-10-15T04:46:26.896175+00:00
+Exit: 0
+
+scripts/generate-font-css.mjs 42ms
+scripts/font-subset-README.md 20ms (unchanged)
+src/layouts/BaseLayout.astro 15ms
+public/fonts/noto-sans-sc-subset-manifest.json 31ms

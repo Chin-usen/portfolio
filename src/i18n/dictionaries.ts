@@ -1,0 +1,206 @@
+import type { Locale } from './routing';
+
+const zh = {
+  nav: {
+    home: '首页',
+    work: '项目',
+    lab: '实验室',
+    about: '关于',
+    contact: '联系',
+    openMenu: '打开导航',
+    closeMenu: '关闭导航',
+  },
+  home: {
+    eyebrow: '结构设计 · 工程推理 · 证据表达',
+    title: '从结构出发，把设计讲清楚。',
+    intro:
+      '这里记录设计选择、拆解观察与验证思路。每个项目都从问题开始，呈现约束、推理和仍待验证的部分。',
+    workCta: '查看项目',
+    labCta: '进入实验室',
+    featuredWork: '精选项目',
+    featuredLab: '实验记录',
+  },
+  work: {
+    title: '项目',
+    description: '从需求与约束出发，记录方案、取舍和验证结果。',
+    back: '返回全部项目',
+    metrics: '项目指标',
+    role: '承担角色',
+    period: '项目阶段',
+    tools: '使用工具',
+    context: '问题与约束',
+    result: '结果与验证',
+  },
+  lab: {
+    title: '实验室',
+    description: '小范围的问题，清晰可复查的过程。这里收录拆解观察与模拟验证笔记。',
+    back: '返回实验室',
+    basis: '分析依据',
+    status: '当前状态',
+    teardown: '拆解观察',
+    simulation: '模拟验证',
+  },
+  about: {
+    title: '关于',
+    description: '关注产品结构、装配逻辑与设计验证，习惯用可追溯的过程说明设计选择。',
+    skills: '技能方向',
+    languages: '语言',
+    contact: '联系',
+    email: '邮箱',
+    linkedin: 'LinkedIn',
+    showEmail: '显示邮箱',
+    emailUnavailable: '邮箱暂不可用',
+  },
+  contact: {
+    title: '一起讨论，下一个工程问题。',
+    description: '欢迎围绕结构设计、作品交流与合作机会联系。当前资料为示例，请在正式发布前替换。',
+  },
+  common: {
+    siteName: 'Portfolio',
+    primaryNav: '主导航',
+    languageSwitch: '切换语言',
+    switchToZh: '切换为中文',
+    switchToEn: 'Switch to English',
+    selectLanguage: '选择语言',
+    skipToContent: '跳到主要内容',
+    notFound: '这个页面暂时找不到。',
+    notFoundDescription: '链接可能已经更新，或这个页面尚未发布。可以返回首页继续浏览。',
+    backHome: '返回首页',
+    footer: '设计有据，表达清楚。',
+    contentPlaceholder: '示例内容 · 待替换为真实项目资料',
+    viewDetail: '查看详情',
+    readMore: '阅读全文',
+    noItems: '内容正在整理中。',
+    details: '了解更多',
+    updated: '最近更新',
+  },
+  demo: {
+    title: '交互实验',
+    description: '按需启动轻量演示，观察三维渲染、时间线动画与滚动控制。',
+    start: '启动演示',
+    pause: '暂停',
+    resume: '继续',
+    reset: '重置',
+    unsupported: '当前浏览器不支持此演示。',
+    reducedMotion: '已遵循减少动态效果偏好，演示不会自动播放。',
+    loading: '正在载入演示…',
+    error: '演示载入失败，请重试。',
+    three: 'Three.js 三维实验',
+    animation: '动画实验',
+    lenis: 'Lenis 滚动实验',
+    complete: '演示已就绪。再次点击可重播。',
+    disabledJs: '启用 JavaScript 后可运行交互演示，页面内容仍可正常阅读。',
+    motionPreference: '动态效果偏好',
+    scrollTarget: '滚动至演示终点',
+  },
+};
+
+type Strings<T> = { [K in keyof T]: T[K] extends string ? string : Strings<T[K]> };
+export type UiDictionary = Strings<typeof zh>;
+
+const en: UiDictionary = {
+  nav: {
+    home: 'Home',
+    work: 'Work',
+    lab: 'Lab',
+    about: 'About',
+    contact: 'Contact',
+    openMenu: 'Open navigation',
+    closeMenu: 'Close navigation',
+  },
+  home: {
+    eyebrow: 'STRUCTURAL DESIGN · ENGINEERING REASONING · EVIDENCE',
+    title: 'Make the structure clear. Make the choices count.',
+    intro:
+      'Design decisions, teardown observations and validation plans. Each project starts with a question and makes its constraints, reasoning and open questions visible.',
+    workCta: 'Explore work',
+    labCta: 'Visit the lab',
+    featuredWork: 'Selected work',
+    featuredLab: 'Lab notes',
+  },
+  work: {
+    title: 'Work',
+    description:
+      'Requirements, constraints and the decisions that connect a design to its validation.',
+    back: 'Back to all work',
+    metrics: 'Project metrics',
+    role: 'Role',
+    period: 'Stage',
+    tools: 'Tools',
+    context: 'Problem and constraints',
+    result: 'Results and validation',
+  },
+  lab: {
+    title: 'Lab',
+    description:
+      'Focused questions and reviewable methods. Notes on teardown observations and simulation studies.',
+    back: 'Back to the lab',
+    basis: 'Basis of analysis',
+    status: 'Current status',
+    teardown: 'Teardown',
+    simulation: 'Simulation',
+  },
+  about: {
+    title: 'About',
+    description:
+      'Interested in product structures, assembly logic and design validation, with a focus on making design decisions traceable.',
+    skills: 'Focus areas',
+    languages: 'Languages',
+    contact: 'Contact',
+    email: 'Email',
+    linkedin: 'LinkedIn',
+    showEmail: 'Reveal email',
+    emailUnavailable: 'Email is unavailable',
+  },
+  contact: {
+    title: 'Let’s discuss the next engineering question.',
+    description:
+      'Get in touch about structural design, portfolio feedback or collaboration. These are sample details to replace before a public launch.',
+  },
+  common: {
+    siteName: 'Portfolio',
+    primaryNav: 'Main navigation',
+    languageSwitch: 'Change language',
+    switchToZh: '切换为中文',
+    switchToEn: 'Switch to English',
+    selectLanguage: 'Choose language',
+    skipToContent: 'Skip to main content',
+    notFound: 'This page could not be found.',
+    notFoundDescription:
+      'The link may have changed, or the page may not have been published yet. Return home to keep exploring.',
+    backHome: 'Back to home',
+    footer: 'Reasoned design. Clear communication.',
+    contentPlaceholder: 'Sample content · Replace with your own project evidence',
+    viewDetail: 'View details',
+    readMore: 'Read the full note',
+    noItems: 'More content is being prepared.',
+    details: 'Explore further',
+    updated: 'Last updated',
+  },
+  demo: {
+    title: 'Interaction experiments',
+    description:
+      'Start a lightweight experiment on demand to explore 3D rendering, timeline animation and scroll control.',
+    start: 'Start demo',
+    pause: 'Pause',
+    resume: 'Resume',
+    reset: 'Reset',
+    unsupported: 'This browser does not support the demo.',
+    reducedMotion: 'Reduced motion is enabled. This experiment will not start automatically.',
+    loading: 'Loading demo…',
+    error: 'The demo could not load. Please try again.',
+    three: 'Three.js 3D experiment',
+    animation: 'Animation experiment',
+    lenis: 'Lenis scroll experiment',
+    complete: 'Demo ready. Select a button again to replay.',
+    disabledJs:
+      'Enable JavaScript to run these experiments. All written content remains available.',
+    motionPreference: 'Motion preference',
+    scrollTarget: 'Scroll to the demo endpoint',
+  },
+};
+
+const dictionaries: Record<Locale, UiDictionary> = { zh, en };
+export function getUi(locale: Locale): UiDictionary {
+  return dictionaries[locale];
+}

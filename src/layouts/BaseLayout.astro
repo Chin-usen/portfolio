@@ -1,0 +1,115 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import type { TransitionDirectionalAnimations } from 'astro';
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
+import geistLatinUrl from '@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url';
+import geistMonoLatinUrl from '@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2?url';
+import '../styles/global.css';
+import '../styles/generated-fonts.css';
+import '../styles/thermal-tokens.css';
+import '../styles/navigation.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { localePath, stripLocale } from '../i18n/utils';
+import { getUi } from '../i18n/dictionaries';
+type Locale = 'zh' | 'en';
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  noindex?: boolean;
+  bodyClass?: string;
+}
+const { title, description, locale, noindex = false, bodyClass } = Astro.props;
+const ui = getUi(locale);
+const base = Astro.site ?? new URL(Astro.url.origin);
+const canonical = new URL(Astro.url.pathname, base).href;
+const unlocalizedPath = stripLocale(Astro.url.pathname);
+const zhUrl = new URL(localePath('zh', unlocalizedPath), base).href;
+const enUrl = new URL(localePath('en', unlocalizedPath), base).href;
+const image = new URL('/og-default.svg', base).href;
+const pageTransition: TransitionDirectionalAnimations = {
+  forwards: {
+    old: { name: 'n1-leave', duration: '120ms', easing: 'ease-out' },
+    new: { name: 'n1-enter', duration: '220ms', easing: 'ease-out' },
+  },
+  backwards: {
+    old: { name: 'n1-leave', duration: '120ms', easing: 'ease-out' },
+    new: { name: 'n1-enter', duration: '220ms', easing: 'ease-out' },
+  },
+};
+---
+
+<!doctype html>
+<html lang={locale === 'zh' ? 'zh-CN' : 'en'}>
+  <head>
+    <ClientRouter fallback="none" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="zh-CN" href={zhUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={zhUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : 'en_US'} />
+    <meta property="og:locale:alternate" content={locale === 'zh' ? 'en_US' : 'zh_CN'} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    {locale === 'zh' &&
+      unlocalizedPath !== '/lab/chip-junction-temperature/' &&
+      [400, 600, 700].map((weight) => (
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          crossorigin
+          href={`/fonts/noto-sans-sc-common-${weight}-normal.woff2`}
+        />
+      ))}
+    <link rel="preload" as="font" type="font/woff2" crossorigin href={geistLatinUrl} />
+    {unlocalizedPath === '/lab/chip-junction-temperature/' && (
+      <link rel="preload" as="font" type="font/woff2" crossorigin href={geistMonoLatinUrl} />
+    )}
+    {locale === 'zh' &&
+      unlocalizedPath === '/lab/chip-junction-temperature/' &&
+      [400, 500, 600, 700].map((weight) => (
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          crossorigin
+          href={`/fonts/noto-sans-sc-thermal-${weight}-normal.woff2`}
+        />
+      ))}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main-content">
+      {ui.common.skipToContent}
+    </a>
+    <Header locale={locale} />
+    <main
+      id="main-content"
+      tabindex="-1"
+      transition:name="page-main"
+      transition:animate={pageTransition}
+    >
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>

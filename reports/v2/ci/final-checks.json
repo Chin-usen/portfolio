@@ -1,0 +1,40 @@
+{
+  "note": "Final scanner/docs checks; unchanged UI/browser/build evidence in local-checks.json. Absolute workspace prefixes replaced only for privacy.",
+  "checks": [
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "started_utc": "2026-10-15T00:59:06.691192+00:00",
+      "seconds": 2.556613,
+      "log": "lint-final.log"
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "started_utc": "2026-10-15T00:59:09.248803+00:00",
+      "seconds": 6.220005,
+      "log": "typecheck-final.log"
+    },
+    {
+      "check": "unit",
+      "exit_code": 0,
+      "started_utc": "2026-10-15T00:59:15.468808+00:00",
+      "seconds": 0.528812,
+      "log": "unit-final.log"
+    },
+    {
+      "check": "privacy",
+      "exit_code": 0,
+      "started_utc": "2026-10-15T00:59:15.998618+00:00",
+      "seconds": 0.345368,
+      "log": "privacy-final.log"
+    },
+    {
+      "check": "gitleaks",
+      "exit_code": 0,
+      "started_utc": "2026-10-15T00:59:16.344985+00:00",
+      "seconds": 2.049876,
+      "log": "gitleaks-final.log"
+    }
+  ]
+}

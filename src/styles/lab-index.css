@@ -1,0 +1,94 @@
+/* Keep the complete experiment list and the existing, explicitly unfinished concepts. */
+.lab-index-page main {
+  width: min(1200px, calc(100% - 48px));
+  padding-block: 96px 64px;
+}
+.lab-heading {
+  margin-bottom: 48px;
+}
+.lab-heading h1 {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: -0.015em;
+}
+.lab-heading h1 span {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--thermal-secondary);
+}
+.lab-heading > p {
+  color: var(--thermal-secondary);
+  font-size: 1.125rem;
+}
+.lab-index-page .content-card {
+  padding: 32px;
+  border: 0;
+  border-radius: 28px;
+}
+.lab-index-page .content-card h2,
+.lab-index-page .content-card h3 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  text-wrap: pretty;
+}
+.lab-index-page .content-card > p {
+  color: var(--thermal-secondary);
+}
+.lab-planned {
+  margin-top: 64px;
+}
+.lab-planned > h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+.lab-planned-card {
+  display: flex;
+  flex-direction: column;
+}
+.lab-planned-card .lab-card-label {
+  margin-top: 0;
+  color: var(--thermal-accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.lab-planned-card .lab-card-subtitle {
+  margin-top: 0;
+}
+.lab-planned-card .lab-card-status {
+  margin-top: auto;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+@media (max-width: 42rem) {
+  .lab-index-page main {
+    width: calc(100% - 32px);
+    padding-block: 48px 32px;
+  }
+  .lab-heading {
+    margin-inline: 4px;
+    margin-bottom: 32px;
+  }
+  .lab-heading h1 {
+    font-size: 2.5rem;
+  }
+  .lab-heading h1 span {
+    display: block;
+    margin: 8px 0 0;
+    font-size: 1rem;
+  }
+  .lab-heading > p {
+    font-size: 1rem;
+  }
+  .lab-index-page .content-card {
+    padding: 28px;
+  }
+  .lab-planned {
+    margin-top: 40px;
+  }
+  .lab-planned > h2 {
+    margin-inline: 4px;
+    font-size: 1.75rem;
+  }
+}

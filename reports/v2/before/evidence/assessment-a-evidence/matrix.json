@@ -1,0 +1,5778 @@
+[
+  {
+    "id": "zh-home-1440-light",
+    "url": "http://127.0.0.1:4325/",
+    "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1230,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      {
+        "tag": "H2",
+        "text": "精选项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      },
+      {
+        "tag": "H2",
+        "text": "实验记录"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "查看项目",
+        "width": 64,
+        "height": 20,
+        "top": 375.28125
+      },
+      {
+        "tag": "A",
+        "text": "进入实验室",
+        "width": 80,
+        "height": 20,
+        "top": 375.28125
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 512.78125
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 876.21875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 850.625
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 850.625
+      }
+    ]
+  },
+  {
+    "id": "zh-work-1440-light",
+    "url": "http://127.0.0.1:4325/work/",
+    "title": "项目",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 296.5
+      }
+    ]
+  },
+  {
+    "id": "zh-lab-1440-light",
+    "url": "http://127.0.0.1:4325/lab/",
+    "title": "实验室",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "实验室"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 379.6875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 354.09375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 354.09375
+      }
+    ]
+  },
+  {
+    "id": "zh-about-1440-light",
+    "url": "http://127.0.0.1:4325/about/",
+    "title": "关于",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1085,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于"
+      },
+      {
+        "tag": "H2",
+        "text": "示例工程师"
+      },
+      {
+        "tag": "H2",
+        "text": "技能方向"
+      },
+      {
+        "tag": "H2",
+        "text": "语言"
+      },
+      {
+        "tag": "H2",
+        "text": "联系"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 793.6875
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 835.28125
+      }
+    ]
+  },
+  {
+    "id": "zh-contact-1440-light",
+    "url": "http://127.0.0.1:4325/contact/",
+    "title": "一起讨论，下一个工程问题。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "一起讨论，下一个工程问题。"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 306.09375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 347.6875
+      }
+    ]
+  },
+  {
+    "id": "zh-s1-1440-light",
+    "url": "http://127.0.0.1:4325/lab/chip-junction-temperature/",
+    "title": "芯片结温仿真",
+    "background": "rgb(251, 251, 253)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1357,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H2",
+        "text": "芯片"
+      },
+      {
+        "tag": "H2",
+        "text": "热阻构成"
+      },
+      {
+        "tag": "H2",
+        "text": "探索参数"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 42,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 46.90625,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "剖面",
+        "width": 67.21875,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "爆炸视图",
+        "width": 88.984375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "复位视角",
+        "width": 88.984375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "芯片\n3.2%",
+        "width": 55.265625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层\n2.6%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上铜层\n4.5%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "陶瓷层\n16.8%",
+        "width": 70.15625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下铜层\n3.0%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层\n5.9%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 70.3125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "对流\n12.2%",
+        "width": 60.546875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "解析参考",
+        "width": 64,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM 代理",
+        "width": 67.25,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "恢复默认参数",
+        "width": 62.40625,
+        "height": 24.640625,
+        "top": 819.5625
+      },
+      {
+        "tag": "BUTTON",
+        "text": "工况",
+        "width": 44.625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层",
+        "width": 66.5625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB 基板",
+        "width": 83.09375,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层",
+        "width": 66.5625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 66.765625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      }
+    ]
+  },
+  {
+    "id": "en-home-1440-light",
+    "url": "http://127.0.0.1:4325/en/",
+    "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1392,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      {
+        "tag": "H2",
+        "text": "Selected work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      },
+      {
+        "tag": "H2",
+        "text": "Lab notes"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 48.6875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Explore work",
+        "width": 98.828125,
+        "height": 20,
+        "top": 460.875
+      },
+      {
+        "tag": "A",
+        "text": "Visit the lab",
+        "width": 90.390625,
+        "height": 20,
+        "top": 460.875
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 360.46875,
+        "height": 24,
+        "top": 598.375
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 1013
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 961.8125
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 961.8125
+      }
+    ]
+  },
+  {
+    "id": "en-work-1440-light",
+    "url": "http://127.0.0.1:4325/en/work/",
+    "title": "Work",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 43.609375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 360.46875,
+        "height": 24,
+        "top": 322.09375
+      }
+    ]
+  },
+  {
+    "id": "en-lab-1440-light",
+    "url": "http://127.0.0.1:4325/en/lab/",
+    "title": "Lab",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Lab"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 28.65625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 430.875
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 379.6875
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 379.6875
+      }
+    ]
+  },
+  {
+    "id": "en-about-1440-light",
+    "url": "http://127.0.0.1:4325/en/about/",
+    "title": "About",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1111,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "About"
+      },
+      {
+        "tag": "H2",
+        "text": "Sample Engineer"
+      },
+      {
+        "tag": "H2",
+        "text": "Focus areas"
+      },
+      {
+        "tag": "H2",
+        "text": "Languages"
+      },
+      {
+        "tag": "H2",
+        "text": "Contact"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 50.203125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 819.28125
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 860.875
+      }
+    ]
+  },
+  {
+    "id": "en-contact-1440-light",
+    "url": "http://127.0.0.1:4325/en/contact/",
+    "title": "Let’s discuss the next engineering question.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Let’s discuss the next engineering question."
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 62.421875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 306.09375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 347.6875
+      }
+    ]
+  },
+  {
+    "id": "en-s1-1440-light",
+    "url": "http://127.0.0.1:4325/en/lab/chip-junction-temperature/",
+    "title": "Chip junction temperature",
+    "background": "rgb(251, 251, 253)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1409,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H2",
+        "text": "Chip"
+      },
+      {
+        "tag": "H2",
+        "text": "Thermal resistance breakdown"
+      },
+      {
+        "tag": "H2",
+        "text": "Explore parameters"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 167.640625,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 37.703125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 33.703125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 25.328125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 38.296875,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 50.890625,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 50.421875,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cutaway",
+        "width": 89.09375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Explode",
+        "width": 85.453125,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reset view",
+        "width": 99.953125,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Chip\n3.2%",
+        "width": 56.46875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder\n2.6%",
+        "width": 81.515625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Upper copper\n4.5%",
+        "width": 95.953125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ceramic\n16.8%",
+        "width": 77.671875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Lower copper\n3.0%",
+        "width": 96.171875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder\n5.9%",
+        "width": 97.90625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 70.3125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Convection\n12.2%",
+        "width": 90.65625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Analytical",
+        "width": 69.421875,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM surrogate",
+        "width": 93.65625,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Restore defaults",
+        "width": 78,
+        "height": 24.640625,
+        "top": 819.5625
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Conditions",
+        "width": 80.859375,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder",
+        "width": 86.546875,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB substrate",
+        "width": 109.8125,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder",
+        "width": 106.21875,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 66.765625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      }
+    ]
+  },
+  {
+    "id": "zh-home-1440-dark",
+    "url": "http://127.0.0.1:4325/",
+    "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1230,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      {
+        "tag": "H2",
+        "text": "精选项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      },
+      {
+        "tag": "H2",
+        "text": "实验记录"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "查看项目",
+        "width": 64,
+        "height": 20,
+        "top": 375.28125
+      },
+      {
+        "tag": "A",
+        "text": "进入实验室",
+        "width": 80,
+        "height": 20,
+        "top": 375.28125
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 512.78125
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 876.21875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 850.625
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 850.625
+      }
+    ]
+  },
+  {
+    "id": "zh-work-1440-dark",
+    "url": "http://127.0.0.1:4325/work/",
+    "title": "项目",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 296.5
+      }
+    ]
+  },
+  {
+    "id": "zh-lab-1440-dark",
+    "url": "http://127.0.0.1:4325/lab/",
+    "title": "实验室",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "实验室"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 379.6875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 354.09375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 354.09375
+      }
+    ]
+  },
+  {
+    "id": "zh-about-1440-dark",
+    "url": "http://127.0.0.1:4325/about/",
+    "title": "关于",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1085,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于"
+      },
+      {
+        "tag": "H2",
+        "text": "示例工程师"
+      },
+      {
+        "tag": "H2",
+        "text": "技能方向"
+      },
+      {
+        "tag": "H2",
+        "text": "语言"
+      },
+      {
+        "tag": "H2",
+        "text": "联系"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 793.6875
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 835.28125
+      }
+    ]
+  },
+  {
+    "id": "zh-contact-1440-dark",
+    "url": "http://127.0.0.1:4325/contact/",
+    "title": "一起讨论，下一个工程问题。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "一起讨论，下一个工程问题。"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 48,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 306.09375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 347.6875
+      }
+    ]
+  },
+  {
+    "id": "zh-s1-1440-dark",
+    "url": "http://127.0.0.1:4325/lab/chip-junction-temperature/",
+    "title": "芯片结温仿真",
+    "background": "rgb(0, 0, 0)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1357,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H2",
+        "text": "芯片"
+      },
+      {
+        "tag": "H2",
+        "text": "热阻构成"
+      },
+      {
+        "tag": "H2",
+        "text": "探索参数"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "首页",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "项目",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "实验室",
+        "width": 42,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "关于",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "联系",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 46.90625,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "剖面",
+        "width": 67.21875,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "爆炸视图",
+        "width": 88.984375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "复位视角",
+        "width": 88.984375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "芯片\n3.2%",
+        "width": 55.265625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层\n2.6%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上铜层\n4.5%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "陶瓷层\n16.8%",
+        "width": 70.15625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下铜层\n3.0%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层\n5.9%",
+        "width": 64.875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 70.3125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "对流\n12.2%",
+        "width": 60.546875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "解析参考",
+        "width": 64,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM 代理",
+        "width": 67.25,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "恢复默认参数",
+        "width": 62.40625,
+        "height": 24.640625,
+        "top": 819.5625
+      },
+      {
+        "tag": "BUTTON",
+        "text": "工况",
+        "width": 44.625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层",
+        "width": 66.5625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB 基板",
+        "width": 83.09375,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层",
+        "width": 66.5625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 66.765625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      }
+    ]
+  },
+  {
+    "id": "en-home-1440-dark",
+    "url": "http://127.0.0.1:4325/en/",
+    "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1392,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      {
+        "tag": "H2",
+        "text": "Selected work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      },
+      {
+        "tag": "H2",
+        "text": "Lab notes"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 48.6875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Explore work",
+        "width": 98.828125,
+        "height": 20,
+        "top": 460.875
+      },
+      {
+        "tag": "A",
+        "text": "Visit the lab",
+        "width": 90.390625,
+        "height": 20,
+        "top": 460.875
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 360.46875,
+        "height": 24,
+        "top": 598.375
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 1013
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 961.8125
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 961.8125
+      }
+    ]
+  },
+  {
+    "id": "en-work-1440-dark",
+    "url": "http://127.0.0.1:4325/en/work/",
+    "title": "Work",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 43.609375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 360.46875,
+        "height": 24,
+        "top": 322.09375
+      }
+    ]
+  },
+  {
+    "id": "en-lab-1440-dark",
+    "url": "http://127.0.0.1:4325/en/lab/",
+    "title": "Lab",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Lab"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 28.65625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 430.875
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 379.6875
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 379.6875
+      }
+    ]
+  },
+  {
+    "id": "en-about-1440-dark",
+    "url": "http://127.0.0.1:4325/en/about/",
+    "title": "About",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1111,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "About"
+      },
+      {
+        "tag": "H2",
+        "text": "Sample Engineer"
+      },
+      {
+        "tag": "H2",
+        "text": "Focus areas"
+      },
+      {
+        "tag": "H2",
+        "text": "Languages"
+      },
+      {
+        "tag": "H2",
+        "text": "Contact"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 50.203125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 59.53125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 819.28125
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 860.875
+      }
+    ]
+  },
+  {
+    "id": "en-contact-1440-dark",
+    "url": "http://127.0.0.1:4325/en/contact/",
+    "title": "Let’s discuss the next engineering question.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1000,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Let’s discuss the next engineering question."
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 46.625,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 40.859375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 27.28125,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 47.46875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 62.421875,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 306.09375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 347.6875
+      }
+    ]
+  },
+  {
+    "id": "en-s1-1440-dark",
+    "url": "http://127.0.0.1:4325/en/lab/chip-junction-temperature/",
+    "title": "Chip junction temperature",
+    "background": "rgb(0, 0, 0)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "pageHeight": 1409,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H2",
+        "text": "Chip"
+      },
+      {
+        "tag": "H2",
+        "text": "Thermal resistance breakdown"
+      },
+      {
+        "tag": "H2",
+        "text": "Explore parameters"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 167.640625,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "width": 37.703125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Work",
+        "width": 33.703125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Lab",
+        "width": 25.328125,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "About",
+        "width": 38.296875,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "Contact",
+        "width": 50.890625,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 50.421875,
+        "height": 18,
+        "top": 22
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cutaway",
+        "width": 89.09375,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Explode",
+        "width": 85.453125,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reset view",
+        "width": 99.953125,
+        "height": 38,
+        "top": 203.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Chip\n3.2%",
+        "width": 56.46875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder\n2.6%",
+        "width": 81.515625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Upper copper\n4.5%",
+        "width": 95.953125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ceramic\n16.8%",
+        "width": 77.671875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Lower copper\n3.0%",
+        "width": 96.171875,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder\n5.9%",
+        "width": 97.90625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 70.3125,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Convection\n12.2%",
+        "width": 90.65625,
+        "height": 28,
+        "top": 728.734375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Analytical",
+        "width": 69.421875,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM surrogate",
+        "width": 93.65625,
+        "height": 25.921875,
+        "top": 818.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Restore defaults",
+        "width": 78,
+        "height": 24.640625,
+        "top": 819.5625
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Conditions",
+        "width": 80.859375,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder",
+        "width": 86.546875,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB substrate",
+        "width": 109.8125,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder",
+        "width": 106.21875,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 66.765625,
+        "height": 38.9375,
+        "top": 865.03125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 245.5,
+        "height": 16,
+        "top": 985.796875
+      }
+    ]
+  },
+  {
+    "id": "zh-home-390-light",
+    "url": "http://127.0.0.1:4325/",
+    "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1736,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      {
+        "tag": "H2",
+        "text": "精选项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      },
+      {
+        "tag": "H2",
+        "text": "实验记录"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "查看项目",
+        "width": 64,
+        "height": 20,
+        "top": 405.4375
+      },
+      {
+        "tag": "A",
+        "text": "进入实验室",
+        "width": 80,
+        "height": 20,
+        "top": 405.4375
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 542.9375
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 931.96875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 1156.859375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 1381.75
+      }
+    ]
+  },
+  {
+    "id": "zh-work-390-light",
+    "url": "http://127.0.0.1:4325/work/",
+    "title": "项目",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 261.0625
+      }
+    ]
+  },
+  {
+    "id": "zh-lab-390-light",
+    "url": "http://127.0.0.1:4325/lab/",
+    "title": "实验室",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1126,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "实验室"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 369.84375
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 594.734375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 819.625
+      }
+    ]
+  },
+  {
+    "id": "zh-about-390-light",
+    "url": "http://127.0.0.1:4325/about/",
+    "title": "关于",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1159,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于"
+      },
+      {
+        "tag": "H2",
+        "text": "示例工程师"
+      },
+      {
+        "tag": "H2",
+        "text": "技能方向"
+      },
+      {
+        "tag": "H2",
+        "text": "语言"
+      },
+      {
+        "tag": "H2",
+        "text": "联系"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 817.4375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 900.625
+      }
+    ]
+  },
+  {
+    "id": "zh-contact-390-light",
+    "url": "http://127.0.0.1:4325/contact/",
+    "title": "一起讨论，下一个工程问题。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "一起讨论，下一个工程问题。"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 344.25
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 427.4375
+      }
+    ]
+  },
+  {
+    "id": "zh-s1-390-light",
+    "url": "http://127.0.0.1:4325/lab/chip-junction-temperature/",
+    "title": "芯片结温仿真",
+    "background": "rgb(251, 251, 253)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1606,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H2",
+        "text": "芯片"
+      },
+      {
+        "tag": "H2",
+        "text": "热阻构成"
+      },
+      {
+        "tag": "H2",
+        "text": "探索参数"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 72,
+        "height": 28.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 46.90625,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "剖面",
+        "width": 54,
+        "height": 31,
+        "top": 228.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "爆炸视图",
+        "width": 71.59375,
+        "height": 31,
+        "top": 264.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "复位视角",
+        "width": 71.59375,
+        "height": 31,
+        "top": 300.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "芯片\n3.2%",
+        "width": 52.0625,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层\n2.6%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上铜层\n4.5%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "陶瓷层\n16.8%",
+        "width": 65.828125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下铜层\n3.0%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层\n5.9%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 65.984375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "对流\n12.2%",
+        "width": 56.859375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "解析参考",
+        "width": 64,
+        "height": 25.921875,
+        "top": 753.1875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM 代理",
+        "width": 67.25,
+        "height": 25.921875,
+        "top": 753.1875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "恢复默认参数",
+        "width": 62.40625,
+        "height": 24.640625,
+        "top": 753.828125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "工况",
+        "width": 36.796875,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层",
+        "width": 55.203125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB 基板",
+        "width": 70.125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层",
+        "width": 55.203125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 55.390625,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 324,
+        "height": 16,
+        "top": 910.21875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 324,
+        "height": 16,
+        "top": 996.125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 324,
+        "height": 16,
+        "top": 1082.03125
+      }
+    ]
+  },
+  {
+    "id": "en-home-390-light",
+    "url": "http://127.0.0.1:4325/en/",
+    "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 2082,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      {
+        "tag": "H2",
+        "text": "Selected work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      },
+      {
+        "tag": "H2",
+        "text": "Lab notes"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Explore work",
+        "width": 98.828125,
+        "height": 20,
+        "top": 522.21875
+      },
+      {
+        "tag": "A",
+        "text": "Visit the lab",
+        "width": 90.390625,
+        "height": 20,
+        "top": 522.21875
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 294.6875,
+        "height": 47.390625,
+        "top": 659.71875
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 1154.375
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 1404.859375
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 1678.734375
+      }
+    ]
+  },
+  {
+    "id": "en-work-390-light",
+    "url": "http://127.0.0.1:4325/en/work/",
+    "title": "Work",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 294.6875,
+        "height": 47.390625,
+        "top": 286.65625
+      }
+    ]
+  },
+  {
+    "id": "en-lab-390-light",
+    "url": "http://127.0.0.1:4325/en/lab/",
+    "title": "Lab",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1300,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Lab"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 421.03125
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 671.515625
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 945.390625
+      }
+    ]
+  },
+  {
+    "id": "en-about-390-light",
+    "url": "http://127.0.0.1:4325/en/about/",
+    "title": "About",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1210,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "About"
+      },
+      {
+        "tag": "H2",
+        "text": "Sample Engineer"
+      },
+      {
+        "tag": "H2",
+        "text": "Focus areas"
+      },
+      {
+        "tag": "H2",
+        "text": "Languages"
+      },
+      {
+        "tag": "H2",
+        "text": "Contact"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 868.625
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 951.8125
+      }
+    ]
+  },
+  {
+    "id": "en-contact-390-light",
+    "url": "http://127.0.0.1:4325/en/contact/",
+    "title": "Let’s discuss the next engineering question.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Let’s discuss the next engineering question."
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 369.84375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 453.03125
+      }
+    ]
+  },
+  {
+    "id": "en-s1-390-light",
+    "url": "http://127.0.0.1:4325/en/lab/chip-junction-temperature/",
+    "title": "Chip junction temperature",
+    "background": "rgb(251, 251, 253)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1748,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H2",
+        "text": "Chip"
+      },
+      {
+        "tag": "H2",
+        "text": "Thermal resistance breakdown"
+      },
+      {
+        "tag": "H2",
+        "text": "Explore parameters"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 167.640625,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 119.796875,
+        "height": 28.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 50.421875,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cutaway",
+        "width": 71.6875,
+        "height": 31,
+        "top": 228.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Explode",
+        "width": 68.75,
+        "height": 31,
+        "top": 264.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reset view",
+        "width": 80.484375,
+        "height": 31,
+        "top": 300.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Chip\n3.2%",
+        "width": 53.1875,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder\n2.6%",
+        "width": 76.5625,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Upper copper\n4.5%",
+        "width": 90.046875,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ceramic\n16.8%",
+        "width": 72.84375,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Lower copper\n3.0%",
+        "width": 90.25,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder\n5.9%",
+        "width": 91.875,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 65.984375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Convection\n12.2%",
+        "width": 84.96875,
+        "height": 32,
+        "top": 714.796875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Analytical",
+        "width": 69.421875,
+        "height": 25.921875,
+        "top": 785.984375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM surrogate",
+        "width": 93.65625,
+        "height": 25.921875,
+        "top": 785.984375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Restore defaults",
+        "width": 78,
+        "height": 24.640625,
+        "top": 832.09375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Conditions",
+        "width": 69.5,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder",
+        "width": 73.234375,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB substrate",
+        "width": 94.25,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder",
+        "width": 91,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 55.390625,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 324,
+        "height": 16,
+        "top": 983.65625
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 324,
+        "height": 16,
+        "top": 1069.5625
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 324,
+        "height": 16,
+        "top": 1155.46875
+      }
+    ]
+  },
+  {
+    "id": "zh-home-390-dark",
+    "url": "http://127.0.0.1:4325/",
+    "title": "示例工程师 · 从结构出发，把设计讲清楚。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1736,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "从结构出发，把设计讲清楚。"
+      },
+      {
+        "tag": "H2",
+        "text": "精选项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      },
+      {
+        "tag": "H2",
+        "text": "实验记录"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "查看项目",
+        "width": 64,
+        "height": 20,
+        "top": 405.4375
+      },
+      {
+        "tag": "A",
+        "text": "进入实验室",
+        "width": 80,
+        "height": 20,
+        "top": 405.4375
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 542.9375
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 931.96875
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 1156.859375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 1381.75
+      }
+    ]
+  },
+  {
+    "id": "zh-work-390-dark",
+    "url": "http://127.0.0.1:4325/work/",
+    "title": "项目",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "项目"
+      },
+      {
+        "tag": "H3",
+        "text": "便携设备的壳体结构设计"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "便携设备的壳体结构设计",
+        "width": 205.8125,
+        "height": 24,
+        "top": 261.0625
+      }
+    ]
+  },
+  {
+    "id": "zh-lab-390-dark",
+    "url": "http://127.0.0.1:4325/lab/",
+    "title": "实验室",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1126,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "实验室"
+      },
+      {
+        "tag": "H3",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H3",
+        "text": "从装配路径读懂壳体结构"
+      },
+      {
+        "tag": "H3",
+        "text": "在求解之前，先检查边界条件"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "芯片结温仿真",
+        "width": 112.265625,
+        "height": 24,
+        "top": 369.84375
+      },
+      {
+        "tag": "A",
+        "text": "从装配路径读懂壳体结构",
+        "width": 205.8125,
+        "height": 24,
+        "top": 594.734375
+      },
+      {
+        "tag": "A",
+        "text": "在求解之前，先检查边界条件",
+        "width": 243.234375,
+        "height": 24,
+        "top": 819.625
+      }
+    ]
+  },
+  {
+    "id": "zh-about-390-dark",
+    "url": "http://127.0.0.1:4325/about/",
+    "title": "关于",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1159,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于"
+      },
+      {
+        "tag": "H2",
+        "text": "示例工程师"
+      },
+      {
+        "tag": "H2",
+        "text": "技能方向"
+      },
+      {
+        "tag": "H2",
+        "text": "语言"
+      },
+      {
+        "tag": "H2",
+        "text": "联系"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 817.4375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 900.625
+      }
+    ]
+  },
+  {
+    "id": "zh-contact-390-dark",
+    "url": "http://127.0.0.1:4325/contact/",
+    "title": "一起讨论，下一个工程问题。",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "一起讨论，下一个工程问题。"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 80,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 54.671875,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "显示邮箱",
+        "width": 80,
+        "height": 31.59375,
+        "top": 344.25
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 427.4375
+      }
+    ]
+  },
+  {
+    "id": "zh-s1-390-dark",
+    "url": "http://127.0.0.1:4325/lab/chip-junction-temperature/",
+    "title": "芯片结温仿真",
+    "background": "rgb(0, 0, 0)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1606,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "芯片结温仿真"
+      },
+      {
+        "tag": "H2",
+        "text": "芯片"
+      },
+      {
+        "tag": "H2",
+        "text": "热阻构成"
+      },
+      {
+        "tag": "H2",
+        "text": "探索参数"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "width": 112,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "打开导航",
+        "width": 72,
+        "height": 28.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 46.90625,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "剖面",
+        "width": 54,
+        "height": 31,
+        "top": 228.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "爆炸视图",
+        "width": 71.59375,
+        "height": 31,
+        "top": 264.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "复位视角",
+        "width": 71.59375,
+        "height": 31,
+        "top": 300.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "芯片\n3.2%",
+        "width": 52.0625,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层\n2.6%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上铜层\n4.5%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "陶瓷层\n16.8%",
+        "width": 65.828125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下铜层\n3.0%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层\n5.9%",
+        "width": 61.03125,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 65.984375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "对流\n12.2%",
+        "width": 56.859375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "解析参考",
+        "width": 64,
+        "height": 25.921875,
+        "top": 753.1875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM 代理",
+        "width": 67.25,
+        "height": 25.921875,
+        "top": 753.1875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "恢复默认参数",
+        "width": 62.40625,
+        "height": 24.640625,
+        "top": 753.828125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "工况",
+        "width": 36.796875,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "上焊层",
+        "width": 55.203125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB 基板",
+        "width": 70.125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下焊层",
+        "width": 55.203125,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 55.390625,
+        "height": 36.796875,
+        "top": 794.484375
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 324,
+        "height": 16,
+        "top": 910.21875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 324,
+        "height": 16,
+        "top": 996.125
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 324,
+        "height": 16,
+        "top": 1082.03125
+      }
+    ]
+  },
+  {
+    "id": "en-home-390-dark",
+    "url": "http://127.0.0.1:4325/en/",
+    "title": "Sample Engineer · Make the structure clear. Make the choices count.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 2082,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Make the structure clear. Make the choices count."
+      },
+      {
+        "tag": "H2",
+        "text": "Selected work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      },
+      {
+        "tag": "H2",
+        "text": "Lab notes"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Explore work",
+        "width": 98.828125,
+        "height": 20,
+        "top": 522.21875
+      },
+      {
+        "tag": "A",
+        "text": "Visit the lab",
+        "width": 90.390625,
+        "height": 20,
+        "top": 522.21875
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 294.6875,
+        "height": 47.390625,
+        "top": 659.71875
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 1154.375
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 1404.859375
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 1678.734375
+      }
+    ]
+  },
+  {
+    "id": "en-work-390-dark",
+    "url": "http://127.0.0.1:4325/en/work/",
+    "title": "Work",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Work"
+      },
+      {
+        "tag": "H3",
+        "text": "Enclosure design for a portable device"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Enclosure design for a portable device",
+        "width": 294.6875,
+        "height": 47.390625,
+        "top": 286.65625
+      }
+    ]
+  },
+  {
+    "id": "en-lab-390-dark",
+    "url": "http://127.0.0.1:4325/en/lab/",
+    "title": "Lab",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1300,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Lab"
+      },
+      {
+        "tag": "H3",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H3",
+        "text": "Reading an enclosure through its assembly path"
+      },
+      {
+        "tag": "H3",
+        "text": "Check the boundary conditions before solving"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "Chip junction temperature",
+        "width": 248.703125,
+        "height": 24,
+        "top": 421.03125
+      },
+      {
+        "tag": "A",
+        "text": "Reading an enclosure through its assembly path",
+        "width": 311.71875,
+        "height": 47.390625,
+        "top": 671.515625
+      },
+      {
+        "tag": "A",
+        "text": "Check the boundary conditions before solving",
+        "width": 294.546875,
+        "height": 47.390625,
+        "top": 945.390625
+      }
+    ]
+  },
+  {
+    "id": "en-about-390-dark",
+    "url": "http://127.0.0.1:4325/en/about/",
+    "title": "About",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1210,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "About"
+      },
+      {
+        "tag": "H2",
+        "text": "Sample Engineer"
+      },
+      {
+        "tag": "H2",
+        "text": "Focus areas"
+      },
+      {
+        "tag": "H2",
+        "text": "Languages"
+      },
+      {
+        "tag": "H2",
+        "text": "Contact"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 868.625
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 951.8125
+      }
+    ]
+  },
+  {
+    "id": "en-contact-390-dark",
+    "url": "http://127.0.0.1:4325/en/contact/",
+    "title": "Let’s discuss the next engineering question.",
+    "background": "rgb(255, 255, 255)",
+    "font": "system-ui, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 844,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Let’s discuss the next engineering question."
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 175.359375,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 71.390625,
+        "height": 25.59375,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 143.625,
+        "height": 31.59375,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 32,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 57.84375,
+        "height": 20,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reveal email",
+        "width": 111.6875,
+        "height": 31.59375,
+        "top": 369.84375
+      },
+      {
+        "tag": "A",
+        "text": "LinkedIn",
+        "width": 64.578125,
+        "height": 20,
+        "top": 453.03125
+      }
+    ]
+  },
+  {
+    "id": "en-s1-390-dark",
+    "url": "http://127.0.0.1:4325/en/lab/chip-junction-temperature/",
+    "title": "Chip junction temperature",
+    "background": "rgb(0, 0, 0)",
+    "font": "\"Geist Variable\", \"Noto Sans SC\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "pageWidth": 390,
+    "viewport": 390,
+    "pageHeight": 1748,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Chip junction temperature"
+      },
+      {
+        "tag": "H2",
+        "text": "Chip"
+      },
+      {
+        "tag": "H2",
+        "text": "Thermal resistance breakdown"
+      },
+      {
+        "tag": "H2",
+        "text": "Explore parameters"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 167.640625,
+        "height": 41.59375,
+        "top": -79.1875
+      },
+      {
+        "tag": "A",
+        "text": "Portfolio",
+        "width": 60.03125,
+        "height": 22.390625,
+        "top": 23
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Open navigation",
+        "width": 119.796875,
+        "height": 28.390625,
+        "top": 20
+      },
+      {
+        "tag": "A",
+        "text": "中文",
+        "width": 28,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "A",
+        "text": "English",
+        "width": 50.421875,
+        "height": 18,
+        "top": 25
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cutaway",
+        "width": 71.6875,
+        "height": 31,
+        "top": 228.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Explode",
+        "width": 68.75,
+        "height": 31,
+        "top": 264.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Reset view",
+        "width": 80.484375,
+        "height": 31,
+        "top": 300.96875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Chip\n3.2%",
+        "width": 53.1875,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder\n2.6%",
+        "width": 76.5625,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Upper copper\n4.5%",
+        "width": 90.046875,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ceramic\n16.8%",
+        "width": 72.84375,
+        "height": 32,
+        "top": 649.203125
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Lower copper\n3.0%",
+        "width": 90.25,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder\n5.9%",
+        "width": 91.875,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler\n51.7%",
+        "width": 65.984375,
+        "height": 32,
+        "top": 682
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Convection\n12.2%",
+        "width": 84.96875,
+        "height": 32,
+        "top": 714.796875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Analytical",
+        "width": 69.421875,
+        "height": 25.921875,
+        "top": 785.984375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FEM surrogate",
+        "width": 93.65625,
+        "height": 25.921875,
+        "top": 785.984375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Restore defaults",
+        "width": 78,
+        "height": 24.640625,
+        "top": 832.09375
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Conditions",
+        "width": 69.5,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Top solder",
+        "width": 73.234375,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "AMB substrate",
+        "width": 94.25,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Bottom solder",
+        "width": 91,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Cooler",
+        "width": 55.390625,
+        "height": 36.796875,
+        "top": 867.921875
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-P",
+        "width": 324,
+        "height": 16,
+        "top": 983.65625
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-T_cool",
+        "width": 324,
+        "height": 16,
+        "top": 1069.5625
+      },
+      {
+        "tag": "INPUT",
+        "text": "thermal-param-h",
+        "width": 324,
+        "height": 16,
+        "top": 1155.46875
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+﻿---
+import type { GetStaticPaths } from 'astro';
+import LabDetail from '../../../components/LabDetail.astro';
+import { getLocalizedLab } from '../../../lib/content';
+export const getStaticPaths = (async () => {
+  const entries = await getLocalizedLab('en');
+  return entries.map((entry) => ({
+    params: { slug: entry.data.translationKey },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+const { entry } = Astro.props;
+---
+
+<LabDetail locale="en" entry={entry} />

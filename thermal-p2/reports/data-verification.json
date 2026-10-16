@@ -1,0 +1,22 @@
+{
+  "sample_count": 500,
+  "csv_rows_each": 500,
+  "lhs_strata_each": 500,
+  "split": {
+    "train": 400,
+    "test": 100
+  },
+  "source_file": "data\\samples.npz",
+  "source_sha256": "cc8aab1ec1e4c473c0944617f3de40da3305e4b2fd186c4b2e61926a0c2a56a4",
+  "float16_file": "data\\samples-float16.npz",
+  "float16_sha256": "322db453659d5b37e5bdf21a8c35ddd2e3ce779c40f536d22d05cf5d34059cc6",
+  "source_field_dtype": "float32",
+  "export_field_dtype": "float16",
+  "float16_archive_bytes": 3242615,
+  "quantization": {
+    "max_abs_K_per_W": 0.00048828125,
+    "max_pointwise_relative_valid": 0.0004879237385324517,
+    "mean_relative_l2_per_sample": 0.00020701854339633208,
+    "max_relative_l2_per_sample": 0.00024084051067640023
+  }
+}
