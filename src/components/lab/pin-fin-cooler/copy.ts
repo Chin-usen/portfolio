@@ -279,7 +279,7 @@ export const pinFinCopy: Record<PinFinLocale, PinFinCopy> = {
     referencesTitle: '参考文献',
     references: [
       'Incropera, DeWitt, Bergman, Lavine. Fundamentals of Heat and Mass Transfer, 6th ed., Wiley, 2007 — §7.6 式 7.58、表 7.5–7.6；§3.6 针翅；表 A.6。',
-      'Žukauskas, A. Heat transfer from tubes in crossflow. Advances in Heat Transfer 8 (1972) 93–160.',
+      'Zukauskas, A. Heat transfer from tubes in crossflow. Advances in Heat Transfer 8 (1972) 93–160.',
       'Gaddis, E. S., Gnielinski, V. Pressure drop in cross flow across tube bundles. Int. Chem. Eng. 25 (1985) 1–15；VDI Heat Atlas, 2nd ed., 2010, Ch. L1.',
       'Melinder, Å. Properties of Secondary Working Fluids for Indirect Systems. IIR, 2010；Bell et al., CoolProp, Ind. Eng. Chem. Res. 53 (2014) 2498–2508.',
     ],
@@ -500,7 +500,7 @@ export const pinFinCopy: Record<PinFinLocale, PinFinCopy> = {
     referencesTitle: 'References',
     references: [
       'Incropera, DeWitt, Bergman, Lavine. Fundamentals of Heat and Mass Transfer, 6th ed., Wiley, 2007 — §7.6 Eq. 7.58, Tables 7.5–7.6; §3.6 pin fins; Table A.6.',
-      'Žukauskas, A. Heat transfer from tubes in crossflow. Advances in Heat Transfer 8 (1972) 93–160.',
+      'Zukauskas, A. Heat transfer from tubes in crossflow. Advances in Heat Transfer 8 (1972) 93–160.',
       'Gaddis, E. S., Gnielinski, V. Pressure drop in cross flow across tube bundles. Int. Chem. Eng. 25 (1985) 1–15; VDI Heat Atlas, 2nd ed., 2010, Ch. L1.',
       'Melinder, Å. Properties of Secondary Working Fluids for Indirect Systems. IIR, 2010; Bell et al., CoolProp, Ind. Eng. Chem. Res. 53 (2014) 2498–2508.',
     ],
@@ -523,6 +523,6 @@ export const FORMULAS = [
   'Re_D,max = ρ V_max D / μ,   V_max = S_T/(S_T − D) · V  (or S_T/[2(S_D − D)] · V)',
   'Nu_D = C₁ C₂ Re_D,max^m Pr^0.36 (Pr/Pr_s)^1/4,   h = Nu_D k / D',
   'η_f = tanh(mH)/(mH),   m = √(4h / (k_f D)),   η_o = 1 − (A_f/A)(1 − η_f)',
-  'NTU = η_o h A / (ṁ c_p),   ε = 1 − e^−NTU,   R_th = 1 / (ε ṁ c_p)',
+  'NTU = η_o h A / C,   C = ρ V_f c_p (V_f volumetric flow),   ε = 1 − e^−NTU,   R_th = 1 / (ε C)',
   'Δp = ξ N_W ρ u₀² / 2,   ξ = ξ_lam + (ξ_turb + f_n)[1 − e^−(Re+k₁)/k₂]',
 ] as const;

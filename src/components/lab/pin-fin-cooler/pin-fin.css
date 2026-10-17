@@ -590,3 +590,20 @@
 .pf-detail-list > div:has(> [data-detail='props']) {
   grid-column: 1 / -1;
 }
+/* Below-the-fold result cards skip layout until scrolled near; this keeps CJK text shaping
+   off the first-paint path. */
+.pf-stream,
+.pf-tradeoff,
+.pf-details,
+.pf-validity,
+.pf-notes {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 32rem;
+}
+@media (max-width: 56rem) {
+  /* Stacked layout: the parameter card follows the result cards, well below the fold. */
+  .pf-parameters {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 40rem;
+  }
+}

@@ -67,7 +67,13 @@ const detailKeys = Object.keys(text.details) as (keyof typeof text.details)[];
   locale={locale}
   labelledBy="pf-title"
   class="thermal-lab pf-lab"
-  rootAttributes={{ 'data-pin-fin-lab': true, 'data-status': statusKind }}
+  rootAttributes={{
+    'data-pin-fin-lab': true,
+    'data-status': statusKind,
+    'data-text-loading': text.loading,
+    'data-text-manual': text.manualLoad,
+    'data-text-stage': text.stageLabel,
+  }}
 >
   <header slot="heading" class="thermal-heading">
     <div>
@@ -251,11 +257,8 @@ const detailKeys = Object.keys(text.details) as (keyof typeof text.details)[];
             width={sketch.length}
             height={sketch.width}
           ></rect>
-          <g class="pf-stream-lines" data-stream-lines>
-            {sketch.lines.map((d, index) => (
-              <path d={d} style={`--line:${index}`} />
-            ))}
-          </g>
+          <!-- Streamlines are drawn by the client at idle; the server sends the pin field only. -->
+          <g class="pf-stream-lines" data-stream-lines></g>
           <path class="pf-stream-pins" data-stream-pins d={sketch.pins}></path>
         </svg>
         <figcaption>

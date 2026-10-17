@@ -204,7 +204,7 @@ describe('trade-off sweep and sketches', () => {
   it('draws one closed circle per pin and streamlines across the footprint', () => {
     const sketch = streamlineSketch({ ...DEFAULT_PARAMS });
     expect(sketch.pins.match(/M/g)).toHaveLength(240);
-    expect(sketch.lines).toHaveLength(11);
+    expect(sketch.lines).toHaveLength(9);
     for (const line of sketch.lines) {
       const numbers = line.match(/-?\d+(\.\d+)?/g)!.map(Number);
       const xs = numbers.filter((_, index) => index % 2 === 0);

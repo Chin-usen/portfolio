@@ -15,7 +15,7 @@ export interface StreamlineSketch {
   lines: string[];
 }
 
-export function streamlineSketch(params: PinFinParams, lineCount = 11): StreamlineSketch {
+export function streamlineSketch(params: PinFinParams, lineCount = 9): StreamlineSketch {
   const layout = pinLayout(params);
   const r = params.diameter / 2;
   const st = params.pitchT * params.diameter;
