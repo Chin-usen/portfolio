@@ -9,7 +9,7 @@ const sectionRoutes = [
   { path: '/work/career-case-b/', active: '/work/' },
   { path: '/work/career-case-c/', active: '/work/' },
   { path: '/lab/', active: '/lab/' },
-  { path: '/lab/sample-teardown/', active: '/lab/' },
+  { path: '/lab/half-bridge-module/', active: '/lab/' },
   { path: '/lab/sample-simulation/', active: '/lab/' },
   { path: '/lab/chip-junction-temperature/', active: '/lab/' },
   { path: '/about/', active: '/about/' },

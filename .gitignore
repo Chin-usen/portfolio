@@ -24,6 +24,10 @@ coverage/
 **/__pycache__/
 **/.venv/
 
+# Built from all installed page text; independent page patches do not carry this output.
+/src/styles/generated-fonts.css
+/src/styles/lab-index-composed-fonts.css
+
 # 私人素材永不入库 / private source material never committed
 private/
 *.private.*

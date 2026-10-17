@@ -3,8 +3,9 @@ import { getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LabCard from './LabCard.astro';
 import { getLocalizedLab } from '../lib/content';
+import { installedLabCodes } from '../lib/lab-descriptors';
 import { getUi } from '../i18n/dictionaries';
-import '../styles/lab-index.css';
+import labIndexStyles from '../styles/lab-index.css?inline';
 interface Props {
   locale: 'zh' | 'en';
 }
@@ -22,6 +23,7 @@ const content = homeEntry.data.lab;
   description={ui.lab.description}
   bodyClass="lab-index-page"
 >
+  <style slot="head" is:inline data-critical-lab="index" set:html={labIndexStyles} />
   <header class="page-heading lab-heading">
     <h1>
       {content.title}
@@ -40,15 +42,22 @@ const content = homeEntry.data.lab;
   <section class="lab-planned" aria-labelledby="lab-planned-title">
     <h2 id="lab-planned-title">{locale === 'zh' ? '概念预览' : 'Concept previews'}</h2>
     <div class="card-grid">
-      {content.planned.map((card) => (
-        <article class="content-card lab-planned-card">
-          <p class="lab-card-label">{card.label}</p>
-          <h3>{card.title}</h3>
-          <p class="lab-card-subtitle">{card.subtitle}</p>
-          <p>{card.description}</p>
-          <p class="lab-card-status">{card.status}</p>
-        </article>
-      ))}
+      {content.planned
+        .filter(
+          (card) =>
+            !installedLabCodes.has(
+              card.label.match(/^[LS][0-9]+(?=\b|\s|[\u00b7\u2022])/u)?.[0] ?? '',
+            ),
+        )
+        .map((card) => (
+          <article class="content-card lab-planned-card">
+            <p class="lab-card-label">{card.label}</p>
+            <h3>{card.title}</h3>
+            <p class="lab-card-subtitle">{card.subtitle}</p>
+            <p>{card.description}</p>
+            <p class="lab-card-status">{card.status}</p>
+          </article>
+        ))}
     </div>
   </section>
 </BaseLayout>

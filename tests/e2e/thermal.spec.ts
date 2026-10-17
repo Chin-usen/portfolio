@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import path from 'node:path';
 
-const thermalReports = path.join(process.env.V4_REPORT_DIR ?? 'test-results', 'thermal');
+const thermalReports = path.join(process.env.V5_REPORT_DIR ?? 'test-results', 'thermal');
 
 const route = '/lab/chip-junction-temperature/';
 

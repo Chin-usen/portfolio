@@ -1,0 +1,14 @@
+{
+  "partId": "mosfet",
+  "nameZh": "SiC MOSFET 芯片",
+  "nameEn": "SiC MOSFET dies",
+  "shortZh": "SiC MOSFET",
+  "shortEn": "SiC MOSFET",
+  "roleZh": "上下桥臂分别控制 P–AC 与 AC–N 的开关通路。",
+  "roleEn": "High-side and low-side switch groups control P–AC and AC–N paths.",
+  "featuresZh": "共 8 颗芯片，每臂 4 颗并联。均流、寄生参数和驱动时序不由外观模型验证。",
+  "featuresEn": "Eight dies, four in parallel per switch. The visual model does not validate current sharing, parasitics or gate timing.",
+  "materialZh": "碳化硅芯片；表面金属化与具体器件相关。",
+  "materialEn": "Silicon-carbide dies; metallization is device-dependent.",
+  "order": 6
+}

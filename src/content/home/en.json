@@ -24,7 +24,7 @@
         "label": "[Career case B] · [Metric]"
       },
       {
-        "value": "< 0.00 units",
+        "value": "\u003c 0.00 units",
         "label": "[Career case B] · [Metric]"
       },
       {
@@ -54,10 +54,10 @@
     "planned": [
       {
         "label": "L1 · 3D teardown",
-        "title": "INPC three-level power module",
-        "subtitle": "P/N busbar stack and loop inductance",
-        "description": "Chips, AMB, clips, terminals, busbars and pin-fin cooler",
-        "status": "Concept preview · Not implemented"
+        "title": "SiC half-bridge power module",
+        "subtitle": "Laminated busbars and gate bond wires",
+        "description": "Assembly, exploded and transient commutation views; linked parts, circuit and busbar inductance trends",
+        "status": "Interactive model"
       },
       {
         "label": "L3 · 3D teardown",

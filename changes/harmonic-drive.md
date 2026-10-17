@@ -1,0 +1,13 @@
+# Harmonic drive page (L4)
+
+Adds Chinese and English harmonic-drive lessons using the shared disassembly template and lifecycle. Nine semantic component groups support selection, assembly/mechanism views, axial explosion and keyboard controls. The lesson starts paused. Its default 200-tooth flexspline and 202-tooth fixed circular spline give a signed reduction ratio of −100 and an output speed of −12 rpm at 1200 rpm input.
+
+Even flexspline tooth counts from 80 to 240 automatically set the circular spline to two more teeth and rebuild the calculation and schematic. Invalid, blank or fractional inputs retain the previous valid result. Module remains 0.5 mm. Nominal radial deflection is m × (zc − zf) / 2 = 0.5 mm; explicit ×4 display magnification gives 2 mm without changing the nominal calculation. The rotating wave shape, two major-axis engagement directions and opposite output are shown in the 3D view and a lightweight end-view phase diagram. Restore defaults resets teeth, speed, phase, separation and playback.
+
+The source is an original generic parametric schematic, with bilingual role, feature and placeholder-material descriptions for every part. The page explains the fixed-circular-spline kinematic assumption and the radial display clearance used for magnification. It links a primary operating-principle reference. No vendor CAD, manufacturing tooth surfaces, load, stress, backlash, efficiency or life results are claimed.
+
+The viewer is dynamically imported through the shared controller. Reduced-motion and low-resource fallbacks retain part selection, tooth/speed calculations and the manually adjustable phase diagram without downloading Three or the GLB. A lightweight fallback layer diagram responds to axial separation, part selection and mechanism mode. Static exploded images explicitly retain the default geometry. Automatic playback stays disabled in these modes. Scoped page styles are inlined with page-specific fonts to preserve the established layout and loading behavior.
+
+Lifecycle diagnostics are exposed through harmonicDriveLifecycle. The controller aborts listeners, cancels pending work and releases the viewer on route changes. Final executed build, accessibility, browser, model and performance evidence is supplied separately by the task coordinator.
+
+The mobile phase slider remains beside the end-view diagram and output angle. A visible keyboard-controls disclosure supplements the accessible canvas instructions, essential operating hints use readable secondary type, and scene labels retain 44px hit areas. Page separators follow the existing theme tokens.

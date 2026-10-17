@@ -1,0 +1,19 @@
+{
+  "contractVersion": 1,
+  "slug": "half-bridge-module",
+  "code": "L1",
+  "template": "disassembly",
+  "bodyClass": "half-bridge-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": true,
+    "preload": {
+      "zh": [
+        "/fonts/noto-sans-sc-half-bridge-400-normal.woff2",
+        "/fonts/noto-sans-sc-half-bridge-500-normal.woff2",
+        "/fonts/noto-sans-sc-half-bridge-600-normal.woff2",
+        "/fonts/noto-sans-sc-half-bridge-700-normal.woff2"
+      ]
+    }
+  }
+}

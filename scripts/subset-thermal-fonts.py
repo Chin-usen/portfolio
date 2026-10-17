@@ -1,7 +1,7 @@
 """Build exact-outline, actual-weight Noto subsets for the S1 interface only.
 
 Uses the same pinned toolchain and provenance checks as subset-noto-fonts.py.
-The route-scoped CSS retains Noto Sans SC as a fallback for future copy changes.
+The route-scoped CSS uses checked local subsets; changed copy requires regeneration.
 """
 from __future__ import annotations
 
@@ -19,9 +19,13 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("base_subsetter", ROOT / "scripts/subset-noto-fonts.py")
 base = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(base)
+input_spec = importlib.util.spec_from_file_location("lab_font_inputs", ROOT / "scripts/lab-font-inputs.py")
+lab_inputs = importlib.util.module_from_spec(input_spec)
+input_spec.loader.exec_module(lab_inputs)
 OUTPUT = ROOT / "public/fonts"
 MANIFEST = OUTPUT / "noto-sans-sc-thermal-manifest.json"
 CSS = ROOT / "src/components/lab/thermal-stack/thermal-fonts.css"
+CURRENT_INPUTS = {}
 
 
 def requested_by_weight() -> dict[int, set[int]]:
@@ -53,6 +57,8 @@ def requested_by_weight() -> dict[int, set[int]]:
         600: nav + values(["eyebrow", "tabs", "layerNames", "modelAnalytic", "modelFem", "parameterTitle", "modelLabel", "femLabel", "validationLabel"]),
         700: nav + values(["title"]),
     }
+    CURRENT_INPUTS.clear()
+    source[400] += lab_inputs.component_text("thermal-stack", CURRENT_INPUTS)
     requested = {}
     for weight, text in source.items():
         codes = {ord(character) for character in text if ord(character) > 127}
@@ -73,6 +79,7 @@ def main() -> None:
     if args.check:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
         requested = requested_by_weight()
+        assert lab_inputs.decode_bindings(manifest["sourceInputsSha256"]) == CURRENT_INPUTS, "S1 source changed; regenerate thermal fonts"
         for face in manifest["faces"]:
             source, output = base.PACKAGE / face["source"], OUTPUT / face["file"]
             assert base.digest(source.read_bytes()) == face["sourceSha256"]
@@ -120,7 +127,7 @@ def main() -> None:
             "fallbackCodepoints": base.codepoints(codes - coverage),
         }
         faces.append(face)
-        css.append("@font-face {\n  font-family: 'Noto Sans SC Thermal';\n  font-style: normal;\n  font-display: swap;\n  font-weight: " + str(weight) + ";\n  src: url('/fonts/" + output.name + "') format('woff2');\n  unicode-range: " + ",".join(face["codepoints"]) + ";\n}")
+        css.append("@font-face {\n  font-family: 'Noto Sans SC Thermal';\n  font-style: normal;\n  font-display: optional;\n  font-weight: " + str(weight) + ";\n  src: url('/fonts/" + output.name + "') format('woff2');\n  unicode-range: " + ",".join(face["codepoints"]) + ";\n}")
         print(f"{weight}: {face['bytes']} bytes / {len(coverage)} glyphs, exact outlines verified")
     manifest = {
         "format": "noto-thermal-subsets-v1",
@@ -128,7 +135,8 @@ def main() -> None:
         "packageVersion": package["version"],
         "license": {"spdx": "OFL-1.1", "file": "OFL.txt", "sha256": base.digest((OUTPUT / "OFL.txt").read_bytes())},
         "tools": {"fonttools": base.FONTTOOLS_VERSION, "brotli": base.BROTLI_VERSION},
-        "coverageRule": "Thermal interface strings by actual CSS weight plus shared navigation; see requested_by_weight(). Missing or future glyphs retain the original Noto Sans SC fallback. Latin remains Geist.",
+        "sourceInputsSha256": lab_inputs.encode_bindings(CURRENT_INPUTS),
+        "coverageRule": "Thermal interface strings by actual CSS weight plus shared navigation; see requested_by_weight(). Latin remains Geist; symbols outside the original master use the system stack. Changed bound copy must pass regeneration and coverage checks.",
         "faces": faces,
     }
     MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")

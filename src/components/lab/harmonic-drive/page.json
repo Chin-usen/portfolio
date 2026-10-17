@@ -1,0 +1,15 @@
+{
+  "contractVersion": 1,
+  "slug": "harmonic-drive",
+  "code": "L4",
+  "template": "disassembly",
+  "bodyClass": "disassembly-page harmonic-drive-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": false,
+    "preload": {
+      "zh": [],
+      "en": []
+    }
+  }
+}

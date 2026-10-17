@@ -1,0 +1,22 @@
+---
+import type { PartView } from './types';
+interface Props {
+  parts: readonly PartView[];
+  selectedId: string;
+  label: string;
+}
+const { parts, selectedId, label } = Astro.props;
+---
+
+<div class="l1-parts" role="group" aria-label={label}>
+  {parts.map((part) => (
+    <button
+      type="button"
+      data-l1-select={part.id}
+      data-l1-part={part.id}
+      aria-pressed={part.id === selectedId}
+    >
+      {part.short}
+    </button>
+  ))}
+</div>

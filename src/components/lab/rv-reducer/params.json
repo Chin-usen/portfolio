@@ -1,0 +1,19 @@
+{
+  "sunTeeth": 10,
+  "planetTeeth": 30,
+  "planetCount": 3,
+  "pinCount": 40,
+  "lobeCount": 39,
+  "pinCircleRadiusMm": 82,
+  "pinRadiusMm": 3.5,
+  "eccentricityMm": 1.5,
+  "spurModuleMm": 2,
+  "pressureAngleRad": 0.5235987755982988,
+  "addendumCoefficient": 1,
+  "dedendumCoefficient": 1.25,
+  "normalReliefMm": 0,
+  "profileSamplesPerLobe": 64,
+  "profileChordToleranceMm": 0.005,
+  "gearFlankSamples": 16,
+  "gearArcSamples": 8
+}

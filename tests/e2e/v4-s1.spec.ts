@@ -98,7 +98,7 @@ test('ten Home to S1 returns release WebGL resources and reinitialize all contro
     cycles.push({ cycle: index + 1, active: active.active[0], released: last });
   }
   expect(errors).toEqual([]);
-  const directory = path.resolve('../deliverables-v4/reports/lifecycle');
+  const directory = path.resolve('../deliverables-v5/reports/lifecycle');
   await mkdir(directory, { recursive: true });
   await writeFile(
     path.join(directory, 'home-s1-ten-round-trips.json'),

@@ -1,0 +1,236 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { localePath } from '../../../i18n/utils';
+import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
+import { rvCopy, rvModes, type RvLocale } from './copy';
+import { RV_DEFAULT_PARAMETERS } from './params';
+import { reductionRatio } from './math';
+import rvStyles from './rv-reducer.css?inline';
+import rvFonts from './rv-reducer-fonts.css?inline';
+interface Props {
+  locale: RvLocale;
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const copy = rvCopy[locale];
+const parts = [...(entry.data.parts ?? [])].sort((a, b) => a.order - b.order);
+const ratio = reductionRatio(RV_DEFAULT_PARAMETERS);
+const controls = [
+  { key: 'sunTeeth', label: copy.inputGear, min: 10, max: 20 },
+  { key: 'planetTeeth', label: copy.planetGear, min: 20, max: 40 },
+  { key: 'pinCount', label: copy.pinCount, min: 24, max: 48 },
+] as const;
+const poster = {
+  src: '/models/rv-reducer/rv-reducer-exploded.webp',
+  srcset:
+    '/models/rv-reducer/rv-reducer-exploded-640.webp 640w, /models/rv-reducer/rv-reducer-exploded.webp 1600w',
+  sizes:
+    '(max-width: 652px) calc(100vw - 64px), (max-width: 800px) 588px, (max-width: 1100px) 58vw, 64vw',
+  width: 1600,
+  height: 1400,
+  alt: copy.staticAlt,
+};
+---
+
+<style is:inline set:html={rvStyles + '\n' + rvFonts} />
+
+<DisassemblyPage
+  locale={locale}
+  copy={copy}
+  parts={parts}
+  modes={rvModes(locale)}
+  defaultPartId="cycloid-disc"
+  defaultMode="whole"
+  idPrefix="rv"
+  poster={poster}
+  backHref={localePath(locale, '/lab/')}
+  rootClass="disassembly rv-reducer"
+  rootAttributes={{ 'data-rv-reducer': true, 'data-playing': 'false' }}
+>
+  <Fragment slot="after-stage">
+    <div class="rv-view-controls" data-rv-visual-controls>
+      <div class="rv-explode-control">
+        <label for="rv-explode">
+          {copy.explode}
+          <output for="rv-explode" data-rv-explode-output>
+            100%
+          </output>
+        </label>
+        <input
+          id="rv-explode"
+          data-rv-explode
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="100"
+        />
+        <div class="rv-endpoints">
+          <span>{copy.assembled}</span>
+          <span>{copy.exploded}</span>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="rv-play"
+        data-rv-play
+        aria-pressed="false"
+        aria-describedby="rv-slow-note"
+      >
+        {copy.play}
+      </button>
+    </div>
+    <p class="rv-stage-note">{copy.stageNote}</p>
+  </Fragment>
+  <Fragment slot="scale-note">
+    <p class="rv-selection-note" data-rv-selection-note>
+      {copy.selected}: {parts.find((part) => part.id === 'cycloid-disc')?.name}
+    </p>
+    <p class="rv-model-label">{copy.modelScope}</p>
+  </Fragment>
+  <Fragment slot="addons">
+    <section class="l1-card rv-ratio-card" aria-labelledby="rv-ratio-title">
+      <h2 class="l1-small-label" id="rv-ratio-title">
+        {copy.calculation}
+      </h2>
+      <p class="rv-ratio">
+        <output data-rv-ratio>{ratio}</output>
+        <span>: 1</span>
+      </p>
+      <p class="rv-equation">i = 1 + (z₂ / z₁) zₚ</p>
+      <form data-rv-teeth-form novalidate>
+        <div class="rv-tooth-fields">
+          {controls.map(({ key, label, min, max }) => (
+            <div class="rv-tooth-field">
+              <label for={`rv-${key}`}>{label}</label>
+              <input
+                id={`rv-${key}`}
+                data-rv-teeth={key}
+                type="number"
+                min={min}
+                max={max}
+                step="1"
+                value={RV_DEFAULT_PARAMETERS[key]}
+                required
+                aria-describedby="rv-parameter-status"
+              />
+              <span class="rv-range">
+                {min}–{max}
+              </span>
+            </div>
+          ))}
+        </div>
+        <p class="rv-lobes">
+          {copy.lobeCount}: <output data-rv-lobes>{RV_DEFAULT_PARAMETERS.lobeCount}</output>
+        </p>
+        <div class="rv-form-actions">
+          <button type="button" class="rv-defaults" data-rv-defaults>
+            {copy.defaults}
+          </button>
+        </div>
+        <p id="rv-parameter-status" class="rv-form-status" data-rv-parameter-status role="status">
+          {copy.pending}
+        </p>
+      </form>
+    </section>
+    <section class="l1-card rv-motion-card" aria-labelledby="rv-motion-title">
+      <h2 class="l1-small-label" id="rv-motion-title">
+        {copy.motion}
+      </h2>
+      <div class="rv-speed-heading">
+        <label for="rv-rpm-number">{copy.speed}</label>
+        <div>
+          <input
+            id="rv-rpm-number"
+            data-rv-rpm-number
+            aria-describedby="rv-speed-status rv-slow-note"
+            type="number"
+            min="0"
+            max="3000"
+            step="1"
+            value="1200"
+          />
+          <span>rpm</span>
+        </div>
+      </div>
+      <input
+        data-rv-rpm
+        type="range"
+        min="0"
+        max="3000"
+        step="1"
+        value="1200"
+        aria-label={copy.speed}
+        aria-describedby="rv-slow-note"
+      />
+      <div class="rv-endpoints">
+        <span>0</span>
+        <span>3000 rpm</span>
+      </div>
+      <p id="rv-speed-status" class="rv-form-status" data-rv-speed-status role="status" hidden></p>
+      <dl class="rv-speed-results">
+        <div>
+          <dt>{copy.outputSpeed}</dt>
+          <dd>
+            <output data-rv-output-rpm>{(1200 / ratio).toFixed(2)}</output> rpm
+          </dd>
+        </div>
+        <div>
+          <dt>{copy.displayedSpeed}</dt>
+          <dd>
+            <output data-rv-displayed-rpm>20.00</output> rpm
+          </dd>
+        </div>
+        <div>
+          <dt>{copy.playback}</dt>
+          <dd>× 1/60</dd>
+        </div>
+      </dl>
+      <p id="rv-slow-note" class="rv-fineprint">
+        {copy.slowNote}
+      </p>
+      <div class="rv-phase" data-rv-visual-controls>
+        <label for="rv-phase">
+          {copy.phase}
+          <output data-rv-phase-output>0°</output>
+        </label>
+        <input id="rv-phase" data-rv-phase type="range" min="0" max="360" step="1" value="0" />
+      </div>
+      <span class="sr-only" aria-live="polite" data-rv-result-live></span>
+    </section>
+  </Fragment>
+  <Fragment slot="notes">
+    <details class="rv-assumptions">
+      <summary>{copy.assumptions}</summary>
+      <div class="rv-assumption-content">
+        <p>{copy.ratioText}</p>
+        <h2>{copy.formulaTitle}</h2>
+        <div class="rv-formula-block">
+          <p>q(t) = R u(t) − e u(zₚt)</p>
+          <p>w(t) = R u(t) − e zₚ u(zₚt)</p>
+          <p>p(t) = q(t) − rₚ w(t) / ‖w(t)‖</p>
+        </div>
+        <p>{copy.formulaTerms}</p>
+        <p>{copy.formulaConstraint}</p>
+        <p>{copy.formulaPhase}</p>
+        <p>{copy.geometryText}</p>
+        <p>{copy.spurText}</p>
+        <p>{copy.contactText}</p>
+        <p class="rv-reference-links">
+          {copy.sources}:{' '}
+          <a href="https://www.jstage.jst.go.jp/article/jamdsm/18/2/18_2024jamdsm0023/_pdf">
+            {copy.ratioSource}
+          </a>
+          <a href="https://khkgears.net/new/gear_knowledge/gear_technical_reference/calculation_gear_dimensions.html">
+            {copy.gearSource}
+          </a>
+        </p>
+      </div>
+    </details>
+    <p class="rv-provenance">{copy.provenance}</p>
+  </Fragment>
+</DisassemblyPage>
+<script>
+  import { initializeRvReducers } from './client';
+  initializeRvReducers();
+</script>

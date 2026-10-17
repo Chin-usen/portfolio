@@ -79,6 +79,12 @@
   min-height: 80px;
   margin: 8px auto 0;
 }
+/* The module image is also the L1 entry; keep its link in the flex sizing chain. */
+.home-module > a {
+  display: flex;
+  width: min(900px, 100%);
+  min-height: 0;
+}
 .home-module picture {
   background: var(--thermal-bg);
   isolation: isolate;
@@ -146,7 +152,8 @@
     object-position: center top;
   }
   .home-page .site-footer {
-    height: 44px;
+    min-height: 44px;
+    height: auto;
     border-top: 0;
   }
   .home-page .footer-shell {
@@ -155,6 +162,30 @@
   }
   .home-page .footer-shell > p {
     display: none;
+  }
+}
+/* Center the mobile composition and spend the raster's empty side margins on the module.
+   At 390px, the 126% image keeps the complete module inside the 358px picture window. */
+@media (max-width: 42rem) and (min-height: 700px) {
+  .home-page main {
+    justify-content: center;
+  }
+  .home-hero {
+    padding-top: 0;
+  }
+  .home-module {
+    flex: 0 0 auto;
+    height: min(300px, calc((100vw - 32px) * 0.84));
+  }
+  .home-module picture {
+    overflow: clip;
+  }
+  .home-module img {
+    width: 126%;
+    max-width: none;
+    max-height: none;
+    margin-inline: -13%;
+    object-position: center;
   }
 }
 @media (max-height: 699px) {

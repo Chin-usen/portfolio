@@ -1,0 +1,19 @@
+{
+  "contractVersion": 1,
+  "slug": "chip-junction-temperature",
+  "code": "S1",
+  "template": "simulation",
+  "bodyClass": "thermal-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": true,
+    "preload": {
+      "zh": [
+        "/fonts/noto-sans-sc-thermal-400-normal.woff2",
+        "/fonts/noto-sans-sc-thermal-500-normal.woff2",
+        "/fonts/noto-sans-sc-thermal-600-normal.woff2",
+        "/fonts/noto-sans-sc-thermal-700-normal.woff2"
+      ]
+    }
+  }
+}

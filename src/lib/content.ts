@@ -1,5 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { Locale } from '../i18n/routing';
+import { labDescriptors } from './lab-descriptors';
+import { assertLabPageContent } from './lab-page-contract';
 import { assertLocalizedContent, localizedEntries } from './content-utils';
 
 export type WorkEntry = CollectionEntry<'work'>;
@@ -15,6 +17,7 @@ export async function getLocalizedWork(locale: Locale): Promise<WorkEntry[]> {
 export async function getLocalizedLab(locale: Locale): Promise<LabEntry[]> {
   const entries = await getCollection('lab');
   assertLocalizedContent(entries);
+  assertLabPageContent(entries, labDescriptors);
   return localizedEntries(entries, locale);
 }
 

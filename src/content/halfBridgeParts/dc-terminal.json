@@ -1,0 +1,14 @@
+{
+  "partId": "dc-terminal",
+  "nameZh": "直流端子",
+  "nameEn": "DC+ / DC− terminals",
+  "shortZh": "DC+ / DC− 端子",
+  "shortEn": "DC+ / DC−",
+  "roleZh": "将外部直流电容或母线接入 P、N 层。",
+  "roleEn": "Connects an external DC link or capacitor to the P and N layers.",
+  "featuresZh": "正负端子相邻布置有利于缩小回路面积；连接电阻与扭矩需验证。",
+  "featuresEn": "Adjacent positive and negative terminals help reduce loop area; joint resistance and torque need verification.",
+  "materialZh": "铜或镀锡、镀镍铜。",
+  "materialEn": "Copper, with optional tin or nickel plating.",
+  "order": 1
+}

@@ -1,0 +1,77 @@
+---
+import PartTags from './PartTags.astro';
+import type { DisassemblyDefinition } from './types';
+type Props = DisassemblyDefinition;
+const { copy, parts, modes, defaultPartId, defaultMode, poster, idPrefix } = Astro.props;
+---
+
+<section class="l1-stage-card" aria-label={copy.stage}>
+  <div class="l1-toolbar">
+    <div class="l1-modes" role="group" aria-label={copy.modes}>
+      {modes.map((mode) => (
+        <button type="button" data-l1-mode={mode.id} aria-pressed={mode.id === defaultMode}>
+          {mode.label}
+        </button>
+      ))}
+    </div>
+    <slot name="toolbar" />
+    <button class="l1-reset" type="button" data-l1-reset>
+      {copy.reset}
+    </button>
+  </div>
+  <p class="l1-hint" data-l1-hint>
+    {copy.hint}
+  </p>
+  <div class="l1-stage" data-l1-stage>
+    <img
+      class="l1-preview"
+      data-l1-preview
+      src={poster.src}
+      srcset={poster.srcset}
+      sizes={poster.sizes}
+      width={poster.width}
+      height={poster.height}
+      style={`aspect-ratio: ${poster.width} / ${poster.height};`}
+      alt={poster.alt}
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="l1-canvas" data-l1-canvas></div>
+    {copy.load3d && (
+      <button class="l1-load3d" type="button" data-l1-load data-status={copy.manualLoad} hidden>
+        {copy.load3d}
+      </button>
+    )}
+    <svg class="l1-leaders" data-l1-leaders aria-hidden="true">
+      {parts.map((part) => (
+        <path data-l1-leader={part.id} d="" />
+      ))}
+    </svg>
+    <div class="l1-labels" data-l1-labels hidden>
+      {parts.map((part) => (
+        <button
+          type="button"
+          data-l1-select={part.id}
+          data-l1-label={part.id}
+          aria-pressed={part.id === defaultPartId}
+        >
+          {part.short}
+        </button>
+      ))}
+    </div>
+    <slot name="overlay" />
+  </div>
+  <slot name="after-stage" />
+  <div class="l1-stage-status">
+    <p data-l1-caption>{modes.find((mode) => mode.id === defaultMode)?.caption}</p>
+    <slot name="status-action" />
+  </div>
+  <p class="l1-load-status" data-l1-status role="status">
+    {copy.loading}
+  </p>
+  <p class="sr-only" id={`${idPrefix}-keyboard`}>
+    {copy.keyboard}
+  </p>
+  <PartTags parts={parts} selectedId={defaultPartId} label={copy.parts} />
+  <slot name="scale-note" />
+</section>

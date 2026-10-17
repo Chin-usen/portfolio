@@ -6,7 +6,7 @@ const englishRoutes = [
   '/en/work/',
   '/en/work/sample-case/',
   '/en/lab/',
-  '/en/lab/sample-teardown/',
+  '/en/lab/half-bridge-module/',
   '/en/lab/sample-simulation/',
   '/en/about/',
   '/en/work/career-case-b/',
@@ -60,7 +60,7 @@ test('English mobile header does not move page content when delayed fonts load',
     measurements.push({ route, fontRequests, fallback, loaded });
     await page.unroute('**/*.woff2');
   }
-  const reportDirectory = new URL('../../../deliverables-v4/reports/ci/', import.meta.url);
+  const reportDirectory = new URL('../../../deliverables-v5/reports/ci/', import.meta.url);
   await mkdir(reportDirectory, { recursive: true });
   await writeFile(
     new URL('header-font-stability.json', reportDirectory),

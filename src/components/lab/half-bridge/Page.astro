@@ -1,0 +1,9 @@
+---
+import HalfBridge from './HalfBridge.astro';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+---
+
+<HalfBridge locale={locale} />

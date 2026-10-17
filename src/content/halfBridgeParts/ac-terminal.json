@@ -1,0 +1,14 @@
+{
+  "partId": "ac-terminal",
+  "nameZh": "交流端子",
+  "nameEn": "AC terminal",
+  "shortZh": "AC 端子",
+  "shortEn": "AC terminal",
+  "roleZh": "引出上下桥臂的中点，连接相线负载。",
+  "roleEn": "Brings out the high-side / low-side midpoint to the phase load.",
+  "featuresZh": "AC 与 P/N 的电气节点不同；演示模型不代表具体额定电流。",
+  "featuresEn": "AC is a distinct electrical node from P/N. This model does not specify a current rating.",
+  "materialZh": "铜；表面处理按连接方案选择。",
+  "materialEn": "Copper; surface finish depends on the joint design.",
+  "order": 2
+}

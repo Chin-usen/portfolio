@@ -1,0 +1,456 @@
+.harmonic-drive {
+  --hd-action-bg: #0066cc;
+  --hd-action-text: #fff;
+  --hd-zone: #9f6900;
+  --hd-output: #087e68;
+}
+.harmonic-drive .l1-stage {
+  height: 560px;
+}
+.harmonic-drive .l1-modes {
+  border-radius: 16px;
+}
+.harmonic-drive .l1-modes button {
+  min-height: 44px;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  min-inline-size: max-content;
+  border-radius: 12px;
+}
+.harmonic-drive .l1-reset,
+.harmonic-drive .l1-parts button {
+  min-height: 44px;
+}
+.harmonic-drive .l1-labels button {
+  width: max-content;
+  min-width: 44px;
+  max-width: 116px;
+  overflow-wrap: normal;
+  word-break: normal;
+  font-size: 0.7rem;
+}
+.harmonic-drive .l1-part-translation {
+  display: block;
+  margin: 6px 0 0;
+}
+.harmonic-drive .l1-info dl {
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+.harmonic-drive .l1-info dd {
+  margin-bottom: 8px;
+}
+.harmonic-drive .l1-stage-status p {
+  line-height: 1.65;
+}
+.hd-view-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-block: 12px;
+  border-top: 1px solid var(--thermal-line);
+}
+.hd-explode-control {
+  flex: 1;
+  min-width: 0;
+}
+.hd-explode-control label,
+.hd-phase label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.8125rem;
+}
+.harmonic-drive input[type='range'] {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--l1-blue);
+  margin: 0;
+}
+.hd-endpoints {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--thermal-secondary);
+  font-size: 0.6875rem;
+}
+.hd-play {
+  min-height: 44px;
+  min-width: 84px;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 18px;
+  background: var(--hd-action-bg);
+  color: var(--hd-action-text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.harmonic-drive button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.harmonic-drive input:focus-visible,
+.harmonic-drive button:focus-visible,
+.harmonic-drive summary:focus-visible {
+  outline: 3px solid var(--l1-blue);
+  outline-offset: 3px;
+}
+.hd-stage-note,
+.hd-model-label {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--thermal-secondary);
+}
+.hd-stage-note {
+  margin: 0 0 14px;
+}
+.hd-model-label {
+  margin: 12px 0 0;
+}
+.hd-ratio {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.hd-ratio span {
+  color: var(--thermal-secondary);
+  font-size: 1.25rem;
+  margin-left: 8px;
+  letter-spacing: 0;
+}
+.hd-equation {
+  font-size: 0.875rem;
+  margin: 14px 0 24px;
+  color: var(--thermal-secondary);
+}
+.hd-tooth-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px;
+  gap: 2px 10px;
+  align-items: center;
+}
+.hd-tooth-field label {
+  font-size: 0.8125rem;
+}
+.harmonic-drive input[type='number'] {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--thermal-secondary);
+  border-radius: 10px;
+  background: var(--thermal-card);
+  color: var(--thermal-text);
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+.harmonic-drive input[aria-invalid='true'] {
+  border-color: #c44830;
+}
+.hd-range {
+  grid-column: 2;
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+.hd-defaults {
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--thermal-secondary);
+  padding: 8px 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 0.75rem;
+}
+.hd-form-status,
+.hd-fineprint {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--thermal-secondary);
+  margin: 10px 0 0;
+}
+.hd-form-status[data-error='true'] {
+  color: #a8311e;
+}
+.hd-speed-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8125rem;
+}
+.hd-speed-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hd-speed-heading input {
+  max-width: 92px;
+}
+.hd-speed-heading span {
+  color: var(--thermal-secondary);
+  font-size: 0.6875rem;
+}
+.hd-results {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  font-size: 0.8125rem;
+}
+.hd-results div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.hd-results dt {
+  color: var(--thermal-secondary);
+}
+.hd-results dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.hd-deformation-results,
+.hd-phase {
+  border-top: 1px solid var(--thermal-line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.hd-phase-diagram {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  border-top: 1px solid var(--thermal-line);
+  padding-top: 12px;
+}
+.hd-diagram {
+  display: block;
+  width: 150px;
+  flex: 0 0 150px;
+  height: 150px;
+}
+.hd-phase-diagram h2 {
+  font-size: 0.8125rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.hd-diagram-fixed {
+  fill: none;
+  stroke: var(--thermal-secondary);
+  stroke-width: 9;
+}
+.hd-diagram-flex {
+  fill: none;
+  stroke: var(--l1-blue);
+  stroke-width: 3;
+}
+.hd-diagram-wave {
+  fill: var(--l1-control);
+  stroke: var(--l1-blue);
+  stroke-width: 2;
+}
+.hd-diagram-axis {
+  stroke: var(--hd-zone);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+.hd-diagram-zone {
+  fill: var(--hd-zone);
+  stroke: var(--thermal-card);
+  stroke-width: 2;
+}
+.hd-diagram-output {
+  fill: none;
+  stroke: var(--hd-output);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hd-diagram-centre {
+  fill: var(--hd-output);
+}
+.hd-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  margin: 7px 0;
+}
+.hd-legend-zone,
+.hd-legend-output {
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--hd-zone);
+}
+.hd-legend-output {
+  background: var(--hd-output);
+  border-radius: 1px;
+}
+.hd-diagram-angle {
+  margin: 10px 0 0;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.hd-assumptions {
+  padding: 8px 20px;
+  border: 1px solid var(--thermal-line);
+  border-radius: 16px;
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
+.hd-assumptions summary {
+  cursor: pointer;
+  padding-block: 10px;
+  min-height: 44px;
+  color: var(--thermal-text);
+  font-weight: 600;
+}
+.hd-assumption-content {
+  max-width: 85ch;
+  padding-block: 8px 16px;
+}
+.hd-assumption-content p {
+  margin: 10px 0;
+}
+.hd-reference-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  align-items: center;
+}
+.hd-provenance {
+  padding-block: 14px;
+}
+@media (max-width: 1100px) {
+  .harmonic-drive .l1-stage {
+    height: 510px;
+  }
+}
+@media (max-width: 800px) {
+  .harmonic-drive .l1-stage {
+    height: 460px;
+  }
+  .harmonic-drive .l1-modes {
+    flex-wrap: nowrap;
+  }
+  .harmonic-drive .l1-modes button {
+    flex: 1 1 0;
+    min-inline-size: 0;
+  }
+  .harmonic-drive .l1-reset {
+    margin-left: auto;
+  }
+  .harmonic-drive .l1-hint {
+    margin-top: 0;
+  }
+}
+@media (max-width: 420px) {
+  .harmonic-drive .l1-stage {
+    height: 360px;
+  }
+  .hd-view-controls {
+    gap: 16px;
+  }
+  .hd-assumptions {
+    padding-inline: 14px;
+  }
+  .hd-phase-diagram {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .hd-diagram {
+    width: 110px;
+    height: 110px;
+    flex-basis: 110px;
+  }
+}
+:root[data-theme='dark'] .harmonic-drive {
+  --hd-zone: #e1b35a;
+  --hd-output: #6acdb4;
+}
+:root[data-theme='dark'] .hd-form-status[data-error='true'] {
+  color: #ffac94;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .harmonic-drive {
+    --hd-zone: #e1b35a;
+    --hd-output: #6acdb4;
+  }
+  :root:not([data-theme='light']) .hd-form-status[data-error='true'] {
+    color: #ffac94;
+  }
+}
+
+.hd-static-stack {
+  display: none;
+  border-top: 1px solid var(--thermal-line);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.harmonic-drive[data-renderer='fallback'] .hd-static-stack {
+  display: block;
+}
+.hd-static-stack-title,
+.hd-static-stack-selection {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.hd-static-stack svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+}
+.hd-stack-axis {
+  stroke: var(--thermal-secondary);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+.hd-static-stack rect {
+  fill: var(--l1-control);
+  stroke: var(--thermal-secondary);
+  stroke-width: 1.5;
+}
+.hd-static-stack [data-selected='true'] rect {
+  fill: var(--l1-blue);
+  stroke: var(--thermal-text);
+  stroke-width: 3;
+}
+.hd-static-stack-selection {
+  color: var(--l1-blue);
+}
+
+.hd-phase-diagram .hd-phase {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+.harmonic-drive .l1-hint,
+.hd-stage-note,
+.hd-keyboard-help {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+.hd-keyboard-help {
+  color: var(--thermal-secondary);
+  margin-bottom: 6px;
+}
+.hd-keyboard-help summary {
+  min-height: 44px;
+  padding-block: 10px;
+  cursor: pointer;
+  color: var(--thermal-text);
+}
+.hd-keyboard-help p {
+  margin: 0 0 12px;
+  max-width: 65ch;
+}

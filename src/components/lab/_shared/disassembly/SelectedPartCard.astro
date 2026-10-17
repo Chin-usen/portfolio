@@ -1,0 +1,27 @@
+---
+import type { DisassemblyCopy, PartView } from './types';
+interface Props {
+  initial: PartView;
+  copy: DisassemblyCopy;
+  idPrefix: string;
+}
+const { initial, copy, idPrefix } = Astro.props;
+---
+
+<section class="l1-info l1-card" aria-labelledby={`${idPrefix}-part-name`}>
+  <p class="l1-small-label">{copy.selected}</p>
+  <h2 id={`${idPrefix}-part-name`}>
+    <span data-l1-name>{initial.name}</span>
+    <span class="l1-part-translation" data-l1-name-secondary>
+      {initial.secondaryName}
+    </span>
+  </h2>
+  <dl>
+    <dt>{copy.role}</dt>
+    <dd data-l1-role>{initial.role}</dd>
+    <dt>{copy.features}</dt>
+    <dd data-l1-features>{initial.features}</dd>
+    <dt>{copy.material}</dt>
+    <dd data-l1-material>{initial.material}</dd>
+  </dl>
+</section>

@@ -124,7 +124,7 @@ test('five client-route demo visits release contexts, observers, frames and old 
     await oldButton!.dispose();
   }
   expect(errors).toEqual([]);
-  const directory = path.resolve('../deliverables-v4/reports/lifecycle');
+  const directory = path.resolve('../deliverables-v5/reports/lifecycle');
   await mkdir(directory, { recursive: true });
   await writeFile(
     path.join(directory, 'demo-five-round-trips.json'),

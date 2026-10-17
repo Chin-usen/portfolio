@@ -1,0 +1,14 @@
+{
+  "partId": "gate-wire",
+  "nameZh": "栅极键合线",
+  "nameEn": "Gate bond wires",
+  "shortZh": "栅极键合线",
+  "shortEn": "Gate bond wires",
+  "roleZh": "在芯片栅极、Kelvin 源极焊盘与信号引出之间建立连接。",
+  "roleEn": "Connects die gate and Kelvin-source pads to signal leads.",
+  "featuresZh": "细线只示意信号连接，主功率连接由母排承担；线弧与焊点可靠性需验证。",
+  "featuresEn": "Fine wires represent signal connections; busbars carry main power current. Wire loops and bond reliability require validation.",
+  "materialZh": "铝线（示意直径 0.3 mm）；实际尺寸视工艺而定。",
+  "materialEn": "Aluminium wire, illustrated at 0.3 mm diameter; actual dimensions depend on the process.",
+  "order": 5
+}

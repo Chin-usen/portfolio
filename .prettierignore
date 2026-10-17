@@ -12,6 +12,7 @@ public/models/thermal/*.json
 thermal-p2/
 reports/v2/
 src/styles/generated-fonts.css
+src/styles/lab-index-composed-fonts.css
 reports/browser-frame-timings.json
 
 # Immutable user-supplied design documentation and raw v3 evidence.

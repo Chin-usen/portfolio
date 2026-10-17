@@ -1,0 +1,14 @@
+{
+  "partId": "amb",
+  "nameZh": "AMB 衬板",
+  "nameEn": "AMB substrates",
+  "shortZh": "AMB 衬板",
+  "shortEn": "AMB substrate",
+  "roleZh": "在电隔离的同时将芯片热量传向底板。",
+  "roleEn": "Provides electrical isolation while conducting die heat toward the baseplate.",
+  "featuresZh": "两片铜/陶瓷/铜衬板。铜层图形、电压等级与热循环寿命需专门设计。",
+  "featuresEn": "Two copper / ceramic / copper substrates. Copper patterning, voltage rating and thermal-cycle life require dedicated design.",
+  "materialZh": "Si₃N₄ 陶瓷与铜；以活性金属钎焊结合。",
+  "materialEn": "Si₃N₄ ceramic and copper joined by active-metal brazing.",
+  "order": 7
+}

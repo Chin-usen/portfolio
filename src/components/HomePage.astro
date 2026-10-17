@@ -57,22 +57,27 @@ const home = entry.data;
     </ul>
   </section>
   <figure class="home-module">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="/images/power-module-dark-450.webp 450w, /images/power-module-dark-900.webp 900w"
-        sizes="(max-width: 600px) calc(100vw - 32px), 900px"
-      />
-      <img
-        src="/images/power-module-light-900.webp"
-        srcset="/images/power-module-light-450.webp 450w, /images/power-module-light-900.webp 900w"
-        sizes="(max-width: 600px) calc(100vw - 32px), 900px"
-        width="900"
-        height="600"
-        alt={home.modelAlt}
-        fetchpriority="high"
-        decoding="async"
-      />
-    </picture>
+    <a
+      href={localePath(locale, '/lab/half-bridge-module/')}
+      aria-label={home.lab.planned[0]!.title}
+    >
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="/images/power-module-dark-450.webp 450w, /images/power-module-dark-900.webp 900w"
+          sizes="(max-width: 600px) calc(100vw - 32px), 900px"
+        />
+        <img
+          src="/images/power-module-light-900.webp"
+          srcset="/images/power-module-light-450.webp 450w, /images/power-module-light-900.webp 900w"
+          sizes="(max-width: 600px) calc(100vw - 32px), 900px"
+          width="900"
+          height="600"
+          alt={home.modelAlt}
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
+    </a>
   </figure>
 </BaseLayout>

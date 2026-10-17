@@ -21,7 +21,7 @@
         "label": "[职业案例 B] · [指标]"
       },
       {
-        "value": "< 0.00 单位",
+        "value": "\u003c 0.00 单位",
         "label": "[职业案例 B] · [指标]"
       },
       {
@@ -48,10 +48,10 @@
     "planned": [
       {
         "label": "L1 · 3D 拆解",
-        "title": "INPC 三电平功率模块",
-        "subtitle": "P/N 母排叠层与回路电感",
-        "description": "芯片、AMB、Clip、端子、母排、Pin-fin Cooler",
-        "status": "概念预览 · 尚未实现"
+        "title": "SiC 半桥功率模块",
+        "subtitle": "叠层母排互联与栅极键合线引出",
+        "description": "装配、爆炸与瞬态换流视图；零件与电路联动，探索母排电感趋势",
+        "status": "交互模型"
       },
       {
         "label": "L3 · 3D 拆解",

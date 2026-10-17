@@ -1,0 +1,14 @@
+{
+  "partId": "housing",
+  "nameZh": "外壳",
+  "nameEn": "PPS housing",
+  "shortZh": "外壳",
+  "shortEn": "Housing",
+  "roleZh": "保护内部组件并定位功率端子与信号针。",
+  "roleEn": "Protects internal components and locates power terminals and signal pins.",
+  "featuresZh": "开口框架展示内部装配；真实密封、爬电距离与灌封需要独立设计。",
+  "featuresEn": "An open frame reveals the assembly. Sealing, creepage and encapsulation require separate design.",
+  "materialZh": "PPS 工程塑料；材料牌号与填充量视设计而定。",
+  "materialEn": "PPS engineering polymer; grade and filler depend on the design.",
+  "order": 0
+}

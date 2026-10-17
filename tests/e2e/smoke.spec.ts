@@ -7,7 +7,7 @@ const pages = [
   '/work/career-case-b/',
   '/work/career-case-c/',
   '/lab/',
-  '/lab/sample-teardown/',
+  '/lab/half-bridge-module/',
   '/lab/sample-simulation/',
   '/lab/chip-junction-temperature/',
   '/about/',

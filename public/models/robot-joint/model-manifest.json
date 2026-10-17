@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "modelKind": "static-integrated-joint-schematic",
+  "descriptionEn": "Original generic hollow integrated robot joint system model; no vendor replication or manufacturing dimensions",
+  "units": "m",
+  "sourceUnits": "mm",
+  "upAxis": "Y",
+  "coordinateTransform": "(x,y,z) mm -> (x,z,-y)/1000 metres via root transform",
+  "parameters": {
+    "boreRadiusMm": 8,
+    "housingOuterRadiusMm": 67,
+    "radialSegments": 96,
+    "statorSlots": 24,
+    "bearingRollers": 24
+  },
+  "metrics": {
+    "cableBoreDiameterMm": 16,
+    "housingDiameterMm": 134,
+    "motorRadialAirGapMm": 2,
+    "transmissionAnimated": false
+  },
+  "parts": [
+    {
+      "id": "housing-shell",
+      "name": "housing-shell",
+      "partId": "housing",
+      "role": "Stationary structural enclosure and heat sink",
+      "restPositionMm": [0, 0, 2],
+      "explodeOffsetMm": [135, 0, 0],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "stator-yoke",
+      "name": "stator-yoke",
+      "partId": "motor-stator",
+      "role": "Stationary laminated magnetic return path",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [0, 0, -50],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "stator-teeth",
+      "name": "stator-teeth",
+      "partId": "motor-stator",
+      "role": "24 schematic stator teeth; no electromagnetic model",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [0, 0, -50],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "stator-copper-windings",
+      "name": "stator-copper-windings",
+      "partId": "motor-stator",
+      "role": "Separated copper winding envelopes between teeth",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [0, 0, -50],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "rotor-magnet-ring",
+      "name": "rotor-magnet-ring",
+      "partId": "motor-rotor",
+      "role": "Permanent magnet rotor envelope; 2 mm motor air gap",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [0, 0, -20],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "rotor-back-iron",
+      "name": "rotor-back-iron",
+      "partId": "motor-rotor",
+      "role": "Rotor back iron",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [0, 0, -20],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "rotor-front-web",
+      "name": "rotor-front-web",
+      "partId": "motor-rotor",
+      "role": "Hollow rotor web couples motor to reducer input sleeve",
+      "restPositionMm": [0, 0, 0.5],
+      "explodeOffsetMm": [0, 0, -20],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "rotor-input-sleeve",
+      "name": "rotor-input-sleeve",
+      "partId": "motor-rotor",
+      "role": "Hollow rotating input sleeve around stationary cable conduit",
+      "restPositionMm": [0, 0, -15],
+      "explodeOffsetMm": [0, 0, -20],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-fixed-ring",
+      "name": "reducer-fixed-ring",
+      "partId": "harmonic-reducer",
+      "role": "Simplified fixed circular spline envelope; no L4 mechanism code",
+      "restPositionMm": [0, 0, 18],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-flex-wall",
+      "name": "reducer-flex-wall",
+      "partId": "harmonic-reducer",
+      "role": "Simplified flexible cup wall; undeformed static schematic",
+      "restPositionMm": [0, 0, 18],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-flex-rim",
+      "name": "reducer-flex-rim",
+      "partId": "harmonic-reducer",
+      "role": "Schematic tooth band with 1 mm display clearance to fixed ring",
+      "restPositionMm": [0, 0, 11.5],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-cup-base",
+      "name": "reducer-cup-base",
+      "partId": "harmonic-reducer",
+      "role": "Cup base transfers reduced output to output sleeve",
+      "restPositionMm": [0, 0, 29],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-input-hub",
+      "name": "reducer-input-hub",
+      "partId": "harmonic-reducer",
+      "role": "Hollow wave-generator hub envelope; no transmission animation",
+      "restPositionMm": [0, 0, 12],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "reducer-flex-bearing",
+      "name": "reducer-flex-bearing",
+      "partId": "harmonic-reducer",
+      "role": "Simplified wave bearing annulus; elasticity omitted",
+      "restPositionMm": [0, 0, 12],
+      "explodeOffsetMm": [0, 0, 35],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "motor-encoder-track",
+      "name": "motor-encoder-track",
+      "partId": "motor-encoder",
+      "role": "Incremental motor-side encoder track, schematic graduation",
+      "restPositionMm": [0, 0, -33.5],
+      "explodeOffsetMm": [0, 0, -75],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "motor-encoder-readhead",
+      "name": "motor-encoder-readhead",
+      "partId": "motor-encoder",
+      "role": "Fixed incremental encoder readhead",
+      "restPositionMm": [0, 0, -33],
+      "explodeOffsetMm": [0, 0, -75],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-encoder-target",
+      "name": "output-encoder-target",
+      "partId": "output-encoder",
+      "role": "Absolute output-side magnetic target ring",
+      "restPositionMm": [0, 0, 39.5],
+      "explodeOffsetMm": [0, 0, 75],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-encoder-board",
+      "name": "output-encoder-board",
+      "partId": "output-encoder",
+      "role": "Output absolute encoder PCB independent of motor encoder",
+      "restPositionMm": [0, 0, 40],
+      "explodeOffsetMm": [0, 0, 75],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-encoder-readhead",
+      "name": "output-encoder-readhead",
+      "partId": "output-encoder",
+      "role": "Fixed absolute encoder sensor near output target",
+      "restPositionMm": [0, 0, 41.75],
+      "explodeOffsetMm": [0, 0, 75],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "brake-coil-body",
+      "name": "brake-coil-body",
+      "partId": "fail-safe-brake",
+      "role": "Normally engaged spring brake coil body; power releases brake",
+      "restPositionMm": [0, 0, -41],
+      "explodeOffsetMm": [0, 0, -100],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "brake-friction-disc",
+      "name": "brake-friction-disc",
+      "partId": "fail-safe-brake",
+      "role": "Brake friction disc on motor input side",
+      "restPositionMm": [0, 0, -43],
+      "explodeOffsetMm": [0, 0, -100],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "brake-armature",
+      "name": "brake-armature",
+      "partId": "fail-safe-brake",
+      "role": "Spring-applied armature shown with assembly clearance",
+      "restPositionMm": [0, 0, -38.5],
+      "explodeOffsetMm": [0, 0, -100],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "driver-pcb",
+      "name": "driver-pcb",
+      "partId": "driver-board",
+      "role": "Annular drive board with distinct power and control components",
+      "restPositionMm": [0, 0, -48],
+      "explodeOffsetMm": [0, 0, -125],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "driver-power-stage",
+      "name": "driver-power-stage",
+      "partId": "driver-board",
+      "role": "Three schematic power stage packages",
+      "restPositionMm": [0, 0, -45.75],
+      "explodeOffsetMm": [0, 0, -125],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "driver-control-ic",
+      "name": "driver-control-ic",
+      "partId": "driver-board",
+      "role": "Control processor package separated from power stage",
+      "restPositionMm": [0, 0, -46.25],
+      "explodeOffsetMm": [0, 0, -125],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "cross-roller-inner-race",
+      "name": "cross-roller-inner-race",
+      "partId": "cross-roller-bearing",
+      "role": "Output bearing inner race",
+      "restPositionMm": [0, 0, 42],
+      "explodeOffsetMm": [0, 0, 105],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "cross-roller-outer-race",
+      "name": "cross-roller-outer-race",
+      "partId": "cross-roller-bearing",
+      "role": "Stationary output bearing outer race",
+      "restPositionMm": [0, 0, 42],
+      "explodeOffsetMm": [0, 0, 105],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "cross-roller-elements",
+      "name": "cross-roller-elements",
+      "partId": "cross-roller-bearing",
+      "role": "Alternating roller orientations; contact mechanics omitted",
+      "restPositionMm": [0, 0, 42],
+      "explodeOffsetMm": [0, 0, 105],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "stationary-cable-conduit",
+      "name": "stationary-cable-conduit",
+      "partId": "hollow-shaft",
+      "role": "Continuous nominal 16 mm cable passage; stationary protected conduit",
+      "restPositionMm": [0, 0, 5],
+      "explodeOffsetMm": [-100, 0, 0],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "thermal-interface-sleeve",
+      "name": "thermal-interface-sleeve",
+      "partId": "thermal-pad",
+      "role": "Schematic thermal interface contacts stator OD and housing ID",
+      "restPositionMm": [0, 0, -14],
+      "explodeOffsetMm": [90, 0, -45],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "front-cover-ring",
+      "name": "front-cover-ring",
+      "partId": "front-cover",
+      "role": "Stationary front cover around rotating output neck",
+      "restPositionMm": [0, 0, 56],
+      "explodeOffsetMm": [0, 0, 160],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "rear-cover-ring",
+      "name": "rear-cover-ring",
+      "partId": "rear-cover",
+      "role": "Rear enclosure cover with cable opening",
+      "restPositionMm": [0, 0, -52],
+      "explodeOffsetMm": [0, 0, -155],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-sleeve",
+      "name": "output-sleeve",
+      "partId": "output-flange",
+      "role": "Reduced output sleeve coupled to cup base",
+      "restPositionMm": [0, 0, 39],
+      "explodeOffsetMm": [0, 0, 130],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-flange-face",
+      "name": "output-flange-face",
+      "partId": "output-flange",
+      "role": "Rotating load-side flange, independent of front enclosure cover",
+      "restPositionMm": [0, 0, 51],
+      "explodeOffsetMm": [0, 0, 130],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "output-flange-neck",
+      "name": "output-flange-neck",
+      "partId": "output-flange",
+      "role": "Hollow load attachment neck through front cover",
+      "restPositionMm": [0, 0, 57.5],
+      "explodeOffsetMm": [0, 0, 130],
+      "restRotationRad": [0, 0, 0],
+      "schematic": true
+    }
+  ],
+  "groups": {
+    "housing": { "nodeNames": ["housing-shell"] },
+    "motor-stator": { "nodeNames": ["stator-yoke", "stator-teeth", "stator-copper-windings"] },
+    "motor-rotor": {
+      "nodeNames": ["rotor-magnet-ring", "rotor-back-iron", "rotor-front-web", "rotor-input-sleeve"]
+    },
+    "harmonic-reducer": {
+      "nodeNames": [
+        "reducer-fixed-ring",
+        "reducer-flex-wall",
+        "reducer-flex-rim",
+        "reducer-cup-base",
+        "reducer-input-hub",
+        "reducer-flex-bearing"
+      ]
+    },
+    "motor-encoder": { "nodeNames": ["motor-encoder-track", "motor-encoder-readhead"] },
+    "output-encoder": {
+      "nodeNames": ["output-encoder-target", "output-encoder-board", "output-encoder-readhead"]
+    },
+    "fail-safe-brake": {
+      "nodeNames": ["brake-coil-body", "brake-friction-disc", "brake-armature"]
+    },
+    "driver-board": { "nodeNames": ["driver-pcb", "driver-power-stage", "driver-control-ic"] },
+    "cross-roller-bearing": {
+      "nodeNames": ["cross-roller-inner-race", "cross-roller-outer-race", "cross-roller-elements"]
+    },
+    "hollow-shaft": { "nodeNames": ["stationary-cable-conduit"] },
+    "thermal-pad": { "nodeNames": ["thermal-interface-sleeve"] },
+    "front-cover": { "nodeNames": ["front-cover-ring"] },
+    "rear-cover": { "nodeNames": ["rear-cover-ring"] },
+    "output-flange": { "nodeNames": ["output-sleeve", "output-flange-face", "output-flange-neck"] }
+  },
+  "constraints": {
+    "manufacturingQualified": false,
+    "transmissionAnimated": false,
+    "contactLoadSolved": false,
+    "motorFieldSolved": false,
+    "thermalResistanceSolved": false,
+    "encoderResolutionSpecified": false,
+    "brakeForceSolved": false,
+    "reducerScope": "Independent static annular/cup schematic; no harmonic-drive L4 source imports, tooth mesh or deformation animation",
+    "crossRollerScope": "Alternating roller orientations; support geometry only, no race/roller spin or load prediction",
+    "cablePath": "Continuous nominal 16 mm through bore; stationary conduit OD 20 mm and rotating sleeve ID 22 mm",
+    "thermalPath": "Stator outer radius 58 mm touches thermal pad inner radius 58 mm; pad outer radius 63 mm touches housing inner radius 63 mm",
+    "outputPath": "Motor rotor and hollow input sleeve to reducer hub; schematic cup output to separate hollow output sleeve and flange; no load simulation",
+    "displayClearances": "2 mm radial motor air gap, 1 mm fixed-ring-to-flex-rim radial gap, 1 mm stationary-conduit-to-rotating-sleeve radial gap; these are teaching dimensions"
+  },
+  "reproducibility": {
+    "deterministicScope": "Exact pinned Node and dependency versions; cross-runtime floating-point color serialization is not claimed",
+    "geometrySha256": "65c39ab9f68285d2103dcbfc15d737aa1c545836618965291b4febd9b79a9a2d",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      "src/components/lab/robot-joint/parts.ts": "1d23ceda16c15edbb7d1914fed6c87c814b7ee777051c373b330a557786a5dbb",
+      "src/components/lab/robot-joint/params.ts": "9ed30e49987661f72e66663d606af19351ed543915138899a1bee454b028cfde",
+      "src/components/lab/robot-joint/geometry.ts": "983243fea52223fcedf67d1d77543fcf46f88b55abb59578fd7553b169720f80",
+      "src/components/lab/robot-joint/model/build.mjs": "cf12a1a9e31b640cc68054f94fcb824dab7756f10e1c2dc8f5836c5b0e8b0e45",
+      "src/components/lab/robot-joint/model/inspect.mjs": "5fb187d20dd847c76782b00523a6da703fcc1c2dd6665d86372dc28ca4ae3337",
+      "src/components/lab/robot-joint/model/render.mjs": "e69edc7f88051e418ebdaca1bafb6fe184ef0c0188377b35fa871c55858d9acb",
+      "src/components/lab/robot-joint/model/generate.mjs": "9bf725515242edbadf422bae5a4ac0f6b2855d85bed5936b0ea5df6fb4d5eddf",
+      "src/components/lab/robot-joint/model/verify.mjs": "40e0fbc3b21f69e84f763bba91603afa519980e930a2d21b651e9016601f5ae8",
+      ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921"
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/robot-joint/robot-joint.glb",
+      "bytes": 258568,
+      "sha256": "31a9c1330153a5331147cb5baf7b3a39e78c19094fae58218a46b42aad76cd7d",
+      "compression": "EXT_meshopt_compression; 16-bit positions / 10-bit normals"
+    },
+    "explodedWebp": {
+      "path": "/models/robot-joint/robot-joint-exploded.webp",
+      "bytes": 32608,
+      "sha256": "0cf6b74b699fe89a46340224ca80223ded53f099f2f80b47559de8fe472b0bbc",
+      "width": 1600,
+      "height": 1400
+    },
+    "explodedWebp640": {
+      "path": "/models/robot-joint/robot-joint-exploded-640.webp",
+      "bytes": 15886,
+      "sha256": "e9d4ae3d4cc001438f69e1eb0c4e51e2b3d63736591673c8fc105c3c949fbbe7",
+      "width": 640,
+      "height": 560
+    }
+  },
+  "validation": {
+    "namedIndependentMeshes": 35,
+    "totalTriangles": 23876,
+    "finiteGeometry": true,
+    "compressedNodeMetadataPreserved": true
+  },
+  "toolchain": {
+    "node": "22.23.3",
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium"
+  }
+}

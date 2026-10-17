@@ -1,8 +1,10 @@
-﻿import { createHash } from 'node:crypto';
+import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkLabFonts } from './check-lab-fonts.mjs';
+import { checkWorkFonts } from './check-work-fonts.mjs';
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(import.meta.dirname, '..');
@@ -177,6 +179,13 @@ function checkFutureGlyphFallback() {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  checkWorkFonts();
+  const lab = checkLabFonts();
+  const labOutputPath = path.join(root, 'src/styles/lab-index-composed-fonts.css');
+  if (process.argv.includes('--check')) {
+    if (readFileSync(labOutputPath, 'utf8') !== lab.indexCss)
+      throw new Error('Generated lab index CSS is stale.');
+  } else writeFileSync(labOutputPath, lab.indexCss);
   const result = generateFontCss();
   const outputPath = path.join(root, 'src/styles/generated-fonts.css');
   if (process.argv.includes('--check')) {
