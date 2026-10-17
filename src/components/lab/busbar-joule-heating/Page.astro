@@ -1,0 +1,11 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BusbarHeating from './BusbarHeating.astro';
+interface Props {
+  locale: 'zh' | 'en';
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+---
+
+<BusbarHeating locale={locale} entry={entry} />

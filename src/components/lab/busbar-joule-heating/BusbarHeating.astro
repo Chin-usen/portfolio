@@ -1,0 +1,665 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import thermalStyles from '../thermal-stack/thermal.css?inline';
+import busbarStyles from './busbar.css?inline';
+import busbarFontStyles from './busbar-joule-heating-fonts.css?inline';
+import { busbarCopy, type BusbarLocale, type BusbarTab } from './copy';
+import { DEFAULT_PARAMS, MATERIAL_PRESETS, PARAMETER_DEFINITIONS, materialOf } from './parameters';
+import { evaluate, SCALAR_MODEL } from './evaluator';
+import { CONDUCTOR_IDS, type ConductorId } from './geometry';
+import type { NumericKey } from './types';
+import SimulationShell from '../_shared/simulation/SimulationShell.astro';
+import SimulationCard from '../_shared/simulation/SimulationCard.astro';
+import { formatDisplayNumber } from '../_shared/format-number';
+
+interface Props {
+  locale: BusbarLocale;
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const text = busbarCopy[locale];
+const parts = (entry.data.parts ?? []).slice().sort((a, b) => a.order - b.order);
+const partOf = (id: ConductorId) => {
+  const part = parts.find((item) => item.id === id);
+  if (!part) throw new Error(`Missing conductor content: ${id}`);
+  return part;
+};
+const result = evaluate({ ...DEFAULT_PARAMS });
+const tabs: BusbarTab[] = ['operating', 'conductor', 'material', 'cooling'];
+const groupKeys: Record<BusbarTab, readonly NumericKey[]> = {
+  operating: ['current', 'tSub'],
+  conductor: ['thickness', 'strapWidth'],
+  material: ['sigma', 'k'],
+  cooling: ['h'],
+};
+const segmentColors: Record<ConductorId, string> = {
+  'p-layer': '#d63a4f',
+  'ac-link': '#ff8a3d',
+  'n-layer': '#5b1f6b',
+};
+const material = materialOf(DEFAULT_PARAMS);
+const percent = (value: number) => `${(value * 100).toFixed(1)}%`;
+const errorPercent = (value: number) => `${(value * 100).toFixed(value < 0.01 ? 2 : 1)}%`;
+const validation = SCALAR_MODEL.validation;
+const testRise = [validation.states.sh.test.peakRise, validation.states.sl.test.peakRise];
+const testRes = [
+  validation.states.sh.test.equivalentResistance,
+  validation.states.sl.test.equivalentResistance,
+];
+const cvRise = [
+  validation.states.sh.crossValidation.peakRise,
+  validation.states.sl.crossValidation.peakRise,
+];
+const meanOf = (items: { mean: number; n: number }[]) =>
+  items.reduce((sum, item) => sum + item.mean * item.n, 0) /
+  items.reduce((sum, item) => sum + item.n, 0);
+const maxOf = (items: { max: number }[]) => Math.max(...items.map((item) => item.max));
+const validationText = text.validation
+  .replace('{testSamples}', String(validation.testSamples))
+  .replace('{riseMean}', errorPercent(meanOf(testRise)))
+  .replace('{riseMax}', errorPercent(maxOf(testRise)))
+  .replace('{resMean}', errorPercent(meanOf(testRes)))
+  .replace('{resMax}', errorPercent(maxOf(testRes)))
+  .replace('{cvMean}', errorPercent(meanOf(cvRise)))
+  .replace('{cvP95}', errorPercent(Math.max(...cvRise.map((item) => item.p95))))
+  .replace('{cvMax}', errorPercent(maxOf(cvRise)));
+const format = (value: number, digits: number) => formatDisplayNumber(value, digits);
+const posterBase = '/models/busbar-joule-heating/busbar-default';
+---
+
+<style
+  is:inline
+  data-critical-lab="busbar-joule-heating"
+  set:html={thermalStyles + '\n' + busbarStyles + '\n' + busbarFontStyles}
+/>
+
+<SimulationShell
+  locale={locale}
+  labelledBy="busbar-title"
+  class="thermal-lab busbar-lab"
+  rootAttributes={{
+    'data-busbar-lab': true,
+    'data-state': DEFAULT_PARAMS.state,
+    'data-field': 'temperature',
+  }}
+>
+  <header slot="heading" class="thermal-heading">
+    <div>
+      <p class="thermal-eyebrow">{text.eyebrow}</p>
+      <h1 id="busbar-title">{text.title}</h1>
+      <p class="thermal-subtitle">{text.subtitle}</p>
+    </div>
+    <a class="thermal-back-link" href={locale === 'zh' ? '/lab/' : '/en/lab/'}>
+      <span aria-hidden="true">‹</span>
+      {text.back}
+    </a>
+  </header>
+
+  <div slot="summary" class="thermal-metrics busbar-metrics">
+    <p class="thermal-metric-label">
+      {text.tMax}{' '}
+      <span>
+        T<sub>max</sub>
+      </span>
+    </p>
+    <p class="thermal-temperature">
+      <output data-value="tmax">{format(result.tMax, 1)}</output>
+      <span>°C</span>
+    </p>
+    <p class="thermal-node-label">
+      {text.hotspot}: <span data-value="hotspot">{partOf(result.hottest).name}</span> ·{' '}
+      {text.riseShort} <span data-value="rise">{format(result.riseMax, 1)}</span> K
+    </p>
+    <dl class="thermal-secondary-metrics">
+      <div>
+        <dt>
+          <abbr title={text.lossTitle}>{text.loss}</abbr>
+        </dt>
+        <dd>
+          <output data-value="loss">{format(result.loss, 2)}</output>
+          <span>W</span>
+        </dd>
+      </div>
+      <div>
+        <dt>
+          <abbr title={text.resistanceTitle}>{text.resistance}</abbr>
+        </dt>
+        <dd>
+          <output data-value="resistance">{format(result.resistance * 1e3, 3)}</output>
+          <span>mΩ</span>
+        </dd>
+      </div>
+    </dl>
+    <p class="thermal-warning" data-warning hidden={result.riseMax <= 50}>
+      <span aria-hidden="true">!</span>
+      {text.warning}
+    </p>
+  </div>
+
+  <a
+    slot="before-workspace"
+    class="thermal-parameter-jump"
+    href="#busbar-parameters"
+    data-astro-reload
+  >
+    {text.parameterTitle}
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M8 2v11M3 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+    </svg>
+  </a>
+
+  <SimulationCard as="div" slot="scene" class="thermal-stage busbar-stage" data-stage>
+    <div class="thermal-canvas busbar-canvas" data-busbar-canvas>
+      <img
+        class="busbar-poster"
+        data-busbar-poster
+        src={`${posterBase}-800.webp`}
+        srcset={`${posterBase}-480.webp 480w, ${posterBase}-800.webp 800w, ${posterBase}-1600.webp 1600w`}
+        sizes="(max-width: 37.5rem) 270px, (max-width: 56rem) 80vw, 680px"
+        width="1600"
+        height="1000"
+        alt={text.posterAlt}
+        fetchpriority="high"
+        decoding="async"
+      />
+      <span class="thermal-loading busbar-loading" data-loading hidden>
+        {text.loading}
+      </span>
+      <button class="busbar-load3d" type="button" data-busbar-load hidden>
+        {text.load3d}
+      </button>
+      <p class="busbar-poster-note" data-poster-note hidden>
+        {text.posterNote}
+      </p>
+    </div>
+
+    <div class="thermal-view-actions" role="group" aria-label={text.stageLabel}>
+      <button type="button" data-cutaway aria-pressed="false" data-webgl-only>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="m3 6 7-4 7 4v8l-7 4-7-4V6Zm0 0 7 4m0 8v-8m0 0 7-4M10 2v8"></path>
+        </svg>
+        <span>{text.cutaway}</span>
+      </button>
+      <button type="button" data-explode aria-pressed="false" data-webgl-only>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="m3 7 7-4 7 4-7 4-7-4Zm0 4 7 4 7-4M3 15l7 4 7-4M10 1v2"></path>
+        </svg>
+        <span>{text.explode}</span>
+      </button>
+      <button type="button" data-reset-view>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 6a7 7 0 1 1-1 7M4 2v4h4"></path>
+        </svg>
+        <span>{text.resetView}</span>
+      </button>
+    </div>
+
+    <SimulationCard
+      as="aside"
+      id="busbar-conductor-details"
+      class="thermal-layer-card busbar-conductor-card"
+      data-conductor-card
+      data-active="true"
+      aria-labelledby="busbar-conductor-name"
+    >
+      <p class="thermal-card-overline">
+        {text.conductor} · <span data-card-state>{text.conducting}</span>
+      </p>
+      <h2 id="busbar-conductor-name" data-card-name>
+        {partOf('ac-link').name}
+      </h2>
+      {CONDUCTOR_IDS.map((id) => (
+        <p class="busbar-card-role" data-card-role={id} hidden={id !== 'ac-link'}>
+          {partOf(id).role}
+        </p>
+      ))}
+      <dl>
+        <div>
+          <dt>{text.conductorResistance}</dt>
+          <dd>
+            <span data-card-resistance>
+              {format(result.conductors['ac-link'].resistance * 1e3, 4)}
+            </span>
+            <small>mΩ</small>
+          </dd>
+        </div>
+        <div>
+          <dt>{text.conductorLoss}</dt>
+          <dd>
+            <span data-card-loss>{format(result.conductors['ac-link'].loss, 2)}</span>
+            <small>W</small>
+          </dd>
+        </div>
+        <div>
+          <dt>{text.conductorPeak}</dt>
+          <dd>
+            <span data-card-peak>
+              {format(DEFAULT_PARAMS.tSub + result.conductors['ac-link'].riseMax, 1)}
+            </span>
+            <small>°C</small>
+          </dd>
+        </div>
+        <div data-card-probe hidden>
+          <dt>{text.cursor}</dt>
+          <dd>
+            <span data-card-probe-value></span>
+          </dd>
+        </div>
+      </dl>
+    </SimulationCard>
+
+    <div class="thermal-scale busbar-scale">
+      <div class="busbar-field-switch" role="group" aria-label={text.fieldChoice}>
+        <button type="button" data-field="temperature" aria-pressed="true">
+          {text.fieldTemperature}
+        </button>
+        <button type="button" data-field="current" aria-pressed="false">
+          {text.fieldCurrent}
+        </button>
+      </div>
+      <div class="thermal-scale-title">
+        <span data-scale-title>{text.fieldTemperature}</span>
+        <span data-scale-unit>°C</span>
+      </div>
+      <div class="thermal-palette busbar-palette" aria-hidden="true"></div>
+      <div class="thermal-scale-values">
+        <span data-scale-min>{format(DEFAULT_PARAMS.tSub, 1)}</span>
+        <span data-scale-max>{format(result.tMax, 1)}</span>
+      </div>
+      <p data-scale-caption>{text.fieldCaption}</p>
+      <p>{text.geometryScale}</p>
+      <p class="busbar-field-status" data-field-status role="status" hidden></p>
+    </div>
+    <p class="thermal-interaction-hint" data-webgl-only>
+      {text.interaction}
+    </p>
+  </SimulationCard>
+
+  <Fragment slot="supporting">
+    <p class="thermal-fallback-note" data-fallback-note hidden role="status">
+      {text.fallback}
+    </p>
+    <noscript>
+      <p class="thermal-notice">{text.noScript}</p>
+    </noscript>
+
+    <SimulationCard class="thermal-breakdown" aria-labelledby="busbar-loss-title">
+      <div class="thermal-section-caption">
+        <h2 id="busbar-loss-title">{text.lossBreakdown}</h2>
+        <p>
+          <span data-value="loss">{format(result.loss, 2)}</span> W
+        </p>
+      </div>
+      <div class="thermal-resistance-bar" role="img" aria-label={text.lossBreakdownDescription}>
+        {CONDUCTOR_IDS.map((id) => (
+          <span
+            data-loss-segment={id}
+            style={`--segment-color:${segmentColors[id]};flex-grow:${result.conductors[id].loss / result.loss}`}
+            title={`${partOf(id).name}: ${percent(result.conductors[id].loss / result.loss)}`}
+          />
+        ))}
+      </div>
+      <div
+        class="thermal-resistance-legend busbar-loss-legend"
+        role="group"
+        aria-label={text.lossBreakdown}
+      >
+        {CONDUCTOR_IDS.map((id) => (
+          <button
+            type="button"
+            data-select-conductor={id}
+            aria-pressed={id === 'ac-link' ? 'true' : 'false'}
+            aria-controls="busbar-conductor-details"
+          >
+            <i aria-hidden="true" style={`--segment-color:${segmentColors[id]}`} />
+            <span data-conductor-name={id}>{partOf(id).name}</span>
+            <span class="thermal-legend-value" data-loss-share={id}>
+              {percent(result.conductors[id].loss / result.loss)}
+            </span>
+          </button>
+        ))}
+      </div>
+    </SimulationCard>
+  </Fragment>
+
+  <SimulationCard
+    slot="parameters"
+    id="busbar-parameters"
+    class="thermal-parameters"
+    aria-label={text.parameterTitle}
+    tabindex="-1"
+  >
+    <div class="thermal-parameter-heading">
+      <h2>{text.parameterTitle}</h2>
+      <button type="button" class="thermal-text-button" data-reset-params>
+        {text.resetParameters}
+      </button>
+    </div>
+    <div class="thermal-tabs" role="tablist" aria-label={text.parameterTabs}>
+      {tabs.map((tab, index) => (
+        <button
+          type="button"
+          role="tab"
+          id={`busbar-tab-${tab}`}
+          data-tab={tab}
+          aria-selected={index === 0 ? 'true' : 'false'}
+          aria-controls={`busbar-panel-${tab}`}
+          tabindex={index === 0 ? 0 : -1}
+        >
+          {text.tabs[tab]}
+        </button>
+      ))}
+    </div>
+    <div class="thermal-control-summary" data-control-summary aria-hidden="true">
+      <p>
+        T<sub>max</sub>{' '}
+        <strong>
+          <span data-value="tmax">{format(result.tMax, 1)}</span> °C
+        </strong>{' '}
+        · <span data-value="loss">{format(result.loss, 2)}</span> W ·{' '}
+        <span data-value="resistance">{format(result.resistance * 1e3, 3)}</span> mΩ
+      </p>
+      <p class="thermal-warning" data-warning hidden={result.riseMax <= 50}>
+        {text.warning}
+      </p>
+    </div>
+    {tabs.map((tab, index) => (
+      <div
+        class="thermal-tab-panel"
+        role="tabpanel"
+        id={`busbar-panel-${tab}`}
+        aria-labelledby={`busbar-tab-${tab}`}
+        data-panel={tab}
+        tabindex="0"
+        hidden={index !== 0}
+      >
+        <div class="thermal-panel-intro">
+          <p>{text.tabNotes[tab]}</p>
+          {tab === 'operating' && (
+            <div class="busbar-segmented" role="group" aria-label={text.stateLabel}>
+              <button type="button" data-state="sh" aria-pressed="true">
+                {text.stateSh}
+              </button>
+              <button type="button" data-state="sl" aria-pressed="false">
+                {text.stateSl}
+              </button>
+            </div>
+          )}
+          {tab === 'material' && (
+            <div class="thermal-material-pills" role="group" aria-label={text.presetLabel}>
+              {[...MATERIAL_PRESETS.map((preset) => preset.id), 'custom' as const].map((id) => (
+                <button
+                  type="button"
+                  data-material={id}
+                  aria-pressed={id === material ? 'true' : 'false'}
+                >
+                  {text.materials[id]}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+        <div class="thermal-control-grid">
+          {groupKeys[tab].map((key) => {
+            const definition = PARAMETER_DEFINITIONS.find((item) => item.key === key)!;
+            return (
+              <div class="thermal-control">
+                <div class="thermal-control-top">
+                  <label for={`busbar-param-${key}`}>{text.parameterLabels[key]}</label>
+                  <output for={`busbar-param-${key}`} data-param-output={key}>
+                    {DEFAULT_PARAMS[key]}
+                  </output>
+                </div>
+                <input
+                  type="range"
+                  id={`busbar-param-${key}`}
+                  data-param={key}
+                  min={definition.min}
+                  max={definition.max}
+                  step={definition.step}
+                  value={DEFAULT_PARAMS[key]}
+                  aria-describedby={`busbar-unit-${key}`}
+                />
+                <div class="thermal-range-labels">
+                  <span>{definition.min}</span>
+                  <span id={`busbar-unit-${key}`}>{definition.unit}</span>
+                  <span>{definition.max}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+    <p class="thermal-input-error" data-input-error hidden role="alert">
+      {text.inputError}
+    </p>
+    <p class="sr-only" data-result-live aria-live="polite" aria-atomic="true"></p>
+  </SimulationCard>
+
+  <Fragment slot="notes">
+    <div class="busbar-reference">
+      <SimulationCard
+        class="busbar-card busbar-topology-card"
+        aria-labelledby="busbar-topology-title"
+      >
+        <div class="thermal-section-caption">
+          <h2 id="busbar-topology-title">{text.topology}</h2>
+          <p class="busbar-caption-note">{text.topologyHint}</p>
+        </div>
+        <div class="busbar-topology-layout">
+          <svg
+            class="busbar-topology"
+            viewBox="0 0 330 270"
+            role="group"
+            aria-label={text.topologyLabel}
+          >
+            <defs>
+              <marker
+                id={`busbar-arrow-${locale}`}
+                viewBox="0 0 10 10"
+                refX="8"
+                refY="5"
+                markerWidth="5"
+                markerHeight="5"
+                orient="auto-start-reverse"
+              >
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+              </marker>
+            </defs>
+            <path
+              class="busbar-path busbar-path-sh"
+              d="M58 40 H180 V136 H284"
+              marker-end={`url(#busbar-arrow-${locale})`}
+            ></path>
+            <path
+              class="busbar-path busbar-path-sl"
+              d="M284 136 H180 V232 H58"
+              marker-end={`url(#busbar-arrow-${locale})`}
+            ></path>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="p-layer"
+              data-conductor="p-layer"
+              aria-pressed="false"
+              aria-label={partOf('p-layer').name}
+            >
+              <path class="busbar-hit" d="M58 40 H190"></path>
+              <path class="busbar-rail" d="M58 40 H190"></path>
+              <circle cx="58" cy="40" r="2.5"></circle>
+              <text x="20" y="44">
+                DC+
+              </text>
+              <text x="100" y="30">
+                {partOf('p-layer').name}
+              </text>
+            </g>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="n-layer"
+              data-conductor="n-layer"
+              aria-pressed="false"
+              aria-label={partOf('n-layer').name}
+            >
+              <path class="busbar-hit" d="M58 232 H190"></path>
+              <path class="busbar-rail" d="M58 232 H190"></path>
+              <circle cx="58" cy="232" r="2.5"></circle>
+              <text x="20" y="236">
+                DC−
+              </text>
+              <text x="100" y="254">
+                {partOf('n-layer').name}
+              </text>
+            </g>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="ac-link"
+              data-conductor="ac-link"
+              aria-pressed="true"
+              aria-label={partOf('ac-link').name}
+            >
+              <path class="busbar-hit" d="M190 136 H286"></path>
+              <path class="busbar-rail" d="M190 136 H286"></path>
+              <circle cx="190" cy="136" r="2.5"></circle>
+              <circle cx="286" cy="136" r="2.5"></circle>
+              <text x="294" y="140">
+                AC
+              </text>
+              <text x="214" y="126">
+                {partOf('ac-link').short}
+              </text>
+            </g>
+            <g
+              class="busbar-switch"
+              role="button"
+              tabindex="0"
+              data-state="sh"
+              aria-pressed="true"
+              aria-label={text.stateSh}
+            >
+              <rect class="busbar-hit" x="157" y="52" width="70" height="65"></rect>
+              <path d="M190 40 V65 H181 V78 M181 84 V98 H190 V136 M174 64 V99 M181 81 H190 M190 65 H206 V98 H190 M200 74 H212 M200 88 L206 78 L212 88 Z"></path>
+              <text x="224" y="84">
+                S
+                <tspan baseline-shift="sub" font-size="10">
+                  H
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="busbar-switch"
+              role="button"
+              tabindex="0"
+              data-state="sl"
+              aria-pressed="false"
+              aria-label={text.stateSl}
+            >
+              <rect class="busbar-hit" x="157" y="156" width="70" height="65"></rect>
+              <path d="M190 136 V167 H181 V180 M181 186 V200 H190 V232 M174 166 V201 M181 183 H190 M190 167 H206 V200 H190 M200 176 H212 M200 190 L206 180 L212 190 Z"></path>
+              <text x="224" y="186">
+                S
+                <tspan baseline-shift="sub" font-size="10">
+                  L
+                </tspan>
+              </text>
+            </g>
+          </svg>
+          <div class="busbar-state-panel">
+            <div class="busbar-segmented" role="group" aria-label={text.stateLabel}>
+              <button type="button" data-state="sh" aria-pressed="true">
+                {text.stateSh}
+              </button>
+              <button type="button" data-state="sl" aria-pressed="false">
+                {text.stateSl}
+              </button>
+            </div>
+            <p class="busbar-path-text" data-path-text="sh">
+              {text.pathSh}
+            </p>
+            <p class="busbar-path-text" data-path-text="sl">
+              {text.pathSl}
+            </p>
+            <p class="busbar-muted">{text.noShootThrough}</p>
+            <p class="busbar-muted">
+              I / (b·t) = <span data-value="strap-j">{format(result.strapCurrentDensity, 1)}</span>{' '}
+              A/mm²
+            </p>
+          </div>
+        </div>
+      </SimulationCard>
+
+      <SimulationCard
+        class="busbar-card busbar-boundary-card"
+        aria-labelledby="busbar-boundary-title"
+      >
+        <div class="thermal-section-caption">
+          <h2 id="busbar-boundary-title">{text.boundaryTitle}</h2>
+        </div>
+        <ul class="busbar-boundaries">
+          {text.boundaries.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <div class="busbar-formulas" aria-label={text.formulaTitle} role="group">
+          {text.formulas.map((item) => (
+            <code>{item}</code>
+          ))}
+        </div>
+        <p class="busbar-muted">{text.formulaNote}</p>
+      </SimulationCard>
+
+      <SimulationCard class="busbar-card busbar-parts-card" aria-labelledby="busbar-parts-title">
+        <div class="thermal-section-caption">
+          <h2 id="busbar-parts-title">{text.descriptionHeading}</h2>
+        </div>
+        <div class="busbar-parts">
+          {parts.map((part) => (
+            <article class="busbar-part">
+              <h3>
+                {part.name}
+                {part.secondaryName && (
+                  <span lang={locale === 'zh' ? 'en' : 'zh-CN'}>{part.secondaryName}</span>
+                )}
+              </h3>
+              <dl>
+                <dt>{text.role}</dt>
+                <dd>{part.role}</dd>
+                <dt>{text.features}</dt>
+                <dd>{part.features}</dd>
+                <dt>{text.material}</dt>
+                <dd>{part.material}</dd>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </SimulationCard>
+    </div>
+    <footer class="thermal-model-notes">
+      <div>
+        <p class="thermal-note-label">
+          <span class="thermal-model-dot" aria-hidden="true"></span>
+          <span>{text.modelLabel}</span>
+        </p>
+        <p>{text.modelDescription}</p>
+        <p>{text.limitDisclosure}</p>
+      </div>
+      <div>
+        <p class="thermal-note-label">{text.validationLabel}</p>
+        <p data-validation>{validationText}</p>
+      </div>
+    </footer>
+  </Fragment>
+</SimulationShell>
+
+<script>
+  // The server-rendered default result is complete; interaction code loads after first paint.
+  const start = () => import('./client').then(({ initializeBusbarLabs }) => initializeBusbarLabs());
+  if ('requestIdleCallback' in window) window.requestIdleCallback(start, { timeout: 1200 });
+  else setTimeout(start, 0);
+</script>

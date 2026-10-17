@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "modelKind": "fem-trained-surrogate-with-parametric-geometry",
+  "descriptionZh": "参数化示意模型，几何经简化",
+  "descriptionEn": "Parametric illustrative model, simplified geometry",
+  "geometrySource": {
+    "file": "model/l1-half-bridge/params.json",
+    "sha256": "8e687aa05e34d5ad8929ff5c520ffc4c743fbe19373a7ad05a62322e683f5585",
+    "rule": "All nominal dimensions read from the L1 file at run time; inputs t replace busbarThickness/collectorThickness and b replaces acBridgeWidth/nRiseDepth/pFeedLength. Layers keep the L1 interlayer clearances.",
+    "nominal": { "thicknessMm": 0.8, "strapWidthMm": 3 }
+  },
+  "units": "m (GLB), mm (source geometry)",
+  "upAxis": "Y",
+  "coordinateTransform": "(x,y,z) mm -> (x,z,-y)/1000 metres",
+  "nodes": [
+    "ac-link",
+    "ac-link-bolt",
+    "ac-link-edges",
+    "context",
+    "n-layer",
+    "n-layer-bolt",
+    "n-layer-edges",
+    "p-layer",
+    "p-layer-bolt",
+    "p-layer-edges"
+  ],
+  "defaultCase": {
+    "params": {
+      "state": "sh",
+      "current": 200,
+      "tSub": 70,
+      "thickness": 0.8,
+      "strapWidth": 3,
+      "sigma": 58,
+      "k": 391,
+      "h": 50
+    },
+    "tMaxC": 114.57783666262542,
+    "lossW": 10.2408733831247,
+    "resistanceMilliohm": 0.2560218345781175,
+    "temperatureRangeC": [70, 114.57783666262542]
+  },
+  "runtimeGeometry": "The page rebuilds the same conductor surfaces from geometry.ts for every (t, b); the GLB is the nominal default-case scene used for the static preview.",
+  "reproducibility": {
+    "geometrySha256": "79fe3bcd3ffbb8b80b71c668fe4b29754f42d7a8ecefe841eff4c4281f9dcb87",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921",
+      "model/l1-half-bridge/params.json": "8e687aa05e34d5ad8929ff5c520ffc4c743fbe19373a7ad05a62322e683f5585",
+      "src/components/lab/thermal-stack/viewer-shared.ts": "f8195e7ea9c76e01525a10032bee0ea55271b49e722f39b0a72a72b3bc84a879",
+      "src/components/lab/busbar-joule-heating/geometry.ts": "4ac78bc692d6b00aa7ae63954a3ec37c83c114ff067a44dd105c854847d6c8cb",
+      "src/components/lab/busbar-joule-heating/parameters.ts": "1dc28a1d77c5fdd271c64c2ab063110ac07f3cccbc0dfbdc0548b349f39b270e",
+      "src/components/lab/busbar-joule-heating/types.ts": "afae0bf6ce472076dbb2eef19b772eec54464ede9b6d853f8e62b3c0061944c8",
+      "src/components/lab/busbar-joule-heating/surrogate.ts": "5cf8e7f3bd08949334c613a90767de19a02295a2dff9acb6cd169b1d38ffffeb",
+      "src/components/lab/busbar-joule-heating/evaluator.ts": "23248ef3431a810b12391f0590e0e8b03660eca3d7f66245c9b0415c11f38d55",
+      "src/components/lab/busbar-joule-heating/field.ts": "020d5a9fbd1012c8c4d9ec8f24eee6e829b4c4a82c395db134c208c904169fab",
+      "src/components/lab/busbar-joule-heating/viewer-shared.ts": "0de6d5683a26c81d652972990b30ddc325fd647dfd279a6654d8ec531533b843",
+      "src/components/lab/busbar-joule-heating/model/sources.mjs": "682c3859288eb5b9cc63f9aa503142db2680fbecb19845c4340093b2439bda9d",
+      "src/components/lab/busbar-joule-heating/model/build.mjs": "09c7c1b77f0869846aee3745cbe54a723a0f2725f725562b26b4a378c4556747",
+      "src/components/lab/busbar-joule-heating/model/render.mjs": "c1df414199b9345ebafa880b4f2f2ff839af2eaeacd246880eff9e1b00a202a9",
+      "src/components/lab/busbar-joule-heating/model/generate.mjs": "8a6160c40d3d704116b35d4ef0f86624899c867b018ff667e8b9221b9629edf8",
+      "src/components/lab/busbar-joule-heating/model/verify.mjs": "f48f3a0a307f59c55ccc971c95ca8da71214f25f4123e255455edd771fc81919",
+      "src/components/lab/busbar-joule-heating/model/export-geometry.mjs": "fb6d211cc3fe0f4e4e37619a1dd213f86d5dcb685a6572a3420d87a46843391e",
+      "src/components/lab/busbar-joule-heating/model/fem/fem.py": "739077c621b2255c4ead6e3d8938ca767bafd6610f80908ad7da646e6ccf1c31",
+      "src/components/lab/busbar-joule-heating/model/fem/common.py": "d22d9edc45b8b2237ba9cab70eb7a65b5db9a1708fe6c7edd76e25024a3cfec5",
+      "src/components/lab/busbar-joule-heating/model/fem/validate.py": "f3a467b491f64863caf41a7bbb576f322ced7ac47b9a2bae35e06c6308bac608",
+      "src/components/lab/busbar-joule-heating/model/fem/sample.py": "c3973bfdea1ada960c5b15b17cba1c91ebe030b30fab30a14198798a0ad375a8",
+      "src/components/lab/busbar-joule-heating/model/fem/surrogate.py": "59805fd027bc0daa85303b8cf0fe800150578e0d78a91c4f3301bc61d8c5d0d2",
+      "src/components/lab/busbar-joule-heating/model/fem/reproduce.py": "4ed4ab95123ed914cbc7ce461c3fa69ec4fbf4c9f19085639e9112e68dbd6648",
+      "src/components/lab/busbar-joule-heating/model/fem/requirements.txt": "983665a6331eda07ab1f4b23ef92d66f4b024c27b360ee0e7420511ef3b28c64"
+    },
+    "femDataSha256": {
+      "src/components/lab/busbar-joule-heating/model/fem/data/samples.csv": "6b0d5eaf47814910356d65b2aed7ffc1ab1c9b75354daad8c94ecedc7455e250",
+      "src/components/lab/busbar-joule-heating/model/fem/data/fields-float16.npz": "bdbecf5527747c5b323c187656492c66f0345a00ea3398c5d4b11a67dac303e6",
+      "src/components/lab/busbar-joule-heating/model/fem/data/doe.json": "3213c9aebee0ebb6d73d02cad84805d808c08f1b8767934d5a00ca8185f3c045",
+      "src/components/lab/busbar-joule-heating/model/fem/reports/analytic-validation.json": "c8a636010bebd8f1e2ad7ee1bc9b345131aee62142b9f9728bec18555d242f78",
+      "src/components/lab/busbar-joule-heating/model/fem/reports/mesh-convergence.json": "3ddd1952202bd6855008a3cb089038adc515b68ebc2ea03303094ee43a79f78f",
+      "src/components/lab/busbar-joule-heating/model/fem/reports/surrogate-validation.json": "3af86a774d8e3992d2c69c9c044c2bf0d69efb0163d3f67784cccacf038c9c18"
+    }
+  },
+  "surrogate": {
+    "assets": [
+      {
+        "path": "/models/busbar-joule-heating/scalar-model.json",
+        "bytes": 38423,
+        "sha256": "6e9d8f5e719914402df2d53c61a2512c27478386d8ad6ef6fd983327d2313053"
+      },
+      {
+        "path": "/models/busbar-joule-heating/field-model.json",
+        "bytes": 201440,
+        "sha256": "9637d6081a3493620798f0ac5efd282eb6fb96658e3f6bf4dcececd6a593aa6c"
+      },
+      {
+        "path": "/models/busbar-joule-heating/field-basis.f16",
+        "bytes": 303732,
+        "sha256": "4e2c30cca4733697194c68f2c42a2fae9bb62a0030230246ac20d52445a64f17"
+      }
+    ],
+    "trainingSamples": 276,
+    "testSamples": 60,
+    "validation": {
+      "sh": {
+        "crossValidation": {
+          "equivalentResistance": {
+            "mean": 0.00044436212656053355,
+            "max": 0.003554788457197464,
+            "p95": 0.0013194966098421302,
+            "n": 69
+          },
+          "jouleLoss": {
+            "mean": 0.00044436212656053355,
+            "max": 0.003554788457197464,
+            "p95": 0.0013194966098421302,
+            "n": 69
+          },
+          "peakRise": {
+            "mean": 0.0017313984479136013,
+            "max": 0.020030325115617833,
+            "p95": 0.005395512961828934,
+            "n": 276
+          }
+        },
+        "test": {
+          "equivalentResistance": {
+            "mean": 0.00024291211020212268,
+            "max": 0.0007199521543476648,
+            "p95": 0.0006615974434352288,
+            "n": 20
+          },
+          "jouleLoss": {
+            "mean": 0.00024291211020212268,
+            "max": 0.0007199521543476648,
+            "p95": 0.0006615974434352288,
+            "n": 20
+          },
+          "peakRise": {
+            "mean": 0.0009163958617024733,
+            "max": 0.00313375607531458,
+            "p95": 0.0019536010997972682,
+            "n": 60
+          }
+        }
+      },
+      "sl": {
+        "crossValidation": {
+          "equivalentResistance": {
+            "mean": 0.0003672276427547269,
+            "max": 0.0030810397987074078,
+            "p95": 0.001047462730900023,
+            "n": 69
+          },
+          "jouleLoss": {
+            "mean": 0.0003672276427547269,
+            "max": 0.0030810397987074078,
+            "p95": 0.001047462730900023,
+            "n": 69
+          },
+          "peakRise": {
+            "mean": 0.0029692640080155436,
+            "max": 0.1384016576371488,
+            "p95": 0.013438079067002383,
+            "n": 276
+          }
+        },
+        "test": {
+          "equivalentResistance": {
+            "mean": 0.00018086686747379946,
+            "max": 0.0005806783141364092,
+            "p95": 0.000579871538376574,
+            "n": 20
+          },
+          "jouleLoss": {
+            "mean": 0.00018086686747379946,
+            "max": 0.0005806783141364092,
+            "p95": 0.000579871538376574,
+            "n": 20
+          },
+          "peakRise": {
+            "mean": 0.0013866119173915191,
+            "max": 0.01744634064293542,
+            "p95": 0.008941970908474447,
+            "n": 60
+          }
+        }
+      }
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/busbar-joule-heating/busbar-default.glb",
+      "bytes": 50104,
+      "sha256": "3d70317f98cff1dd1bc769812cd5814a3a28ebefaf8e5bc52a844fe9b77d0d69",
+      "compression": "EXT_meshopt_compression; 16-bit positions"
+    },
+    "posterWebp": {
+      "path": "/models/busbar-joule-heating/busbar-default-1600.webp",
+      "bytes": 49668,
+      "sha256": "ad7d78ee9e5cd1efca5673465d9a83d5498427e5a6607d36a4b142a92216539d",
+      "width": 1600,
+      "height": 1000,
+      "visiblePixels": 497092
+    },
+    "posterWebp800": {
+      "path": "/models/busbar-joule-heating/busbar-default-800.webp",
+      "bytes": 22186,
+      "sha256": "7bea2b95d14cd9233955d32560b54a6382fc5226b48bbfdc6dee71635ae69cc3",
+      "width": 800,
+      "height": 500,
+      "visiblePixels": 124690
+    },
+    "posterWebp480": {
+      "path": "/models/busbar-joule-heating/busbar-default-480.webp",
+      "bytes": 13156,
+      "sha256": "0087543d79bfa393e424c3658e1a82f0c639c360a9dc70277ea2ac0b20f4a5fe",
+      "width": 480,
+      "height": 300,
+      "visiblePixels": 45139
+    }
+  },
+  "toolchain": {
+    "node": "22.23.3",
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium",
+    "femPython": "see src/components/lab/busbar-joule-heating/model/fem/requirements.txt"
+  }
+}
