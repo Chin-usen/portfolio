@@ -5,7 +5,7 @@ import LabCard from './LabCard.astro';
 import { getLocalizedLab } from '../lib/content';
 import { installedLabCodes } from '../lib/lab-descriptors';
 import { getUi } from '../i18n/dictionaries';
-import '../styles/lab-index.css';
+import labIndexStyles from '../styles/lab-index.css?inline';
 interface Props {
   locale: 'zh' | 'en';
 }
@@ -23,6 +23,7 @@ const content = homeEntry.data.lab;
   description={ui.lab.description}
   bodyClass="lab-index-page"
 >
+  <style slot="head" is:inline data-critical-lab="index" set:html={labIndexStyles} />
   <header class="page-heading lab-heading">
     <h1>
       {content.title}

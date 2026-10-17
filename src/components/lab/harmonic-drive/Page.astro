@@ -5,8 +5,9 @@ import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
 import { harmonicCopy, harmonicModes, type HarmonicLocale } from './copy';
 import { HARMONIC_DEFAULT_PARAMETERS } from './params';
 import { createHarmonicModel } from './math';
-import harmonicStyles from './harmonic-drive.css?raw';
-import harmonicFonts from './harmonic-drive-fonts.css?raw';
+import { formatDisplayNumber } from '../_shared/format-number';
+import harmonicStyles from './harmonic-drive.css?inline';
+import harmonicFonts from './harmonic-drive-fonts.css?inline';
 interface Props {
   locale: HarmonicLocale;
   entry: CollectionEntry<'lab'>;
@@ -177,7 +178,7 @@ const poster = {
         {copy.calculation}
       </h2>
       <p class="hd-ratio">
-        <output data-hd-ratio>{model.metrics.ratio}</output>
+        <output data-hd-ratio>{formatDisplayNumber(model.metrics.ratio)}</output>
         <span>: 1</span>
       </p>
       <p class="hd-equation">i = −zf / (zc − zf)</p>

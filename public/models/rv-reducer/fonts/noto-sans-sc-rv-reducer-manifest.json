@@ -25,7 +25,7 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/DisassemblyPage.astro",
-      "sha256": "e2eb6127f2da5ffaffe2056940f35457e3235ac4db7d216ce47f40922073c2a2"
+      "sha256": "5f6b1587558b766da14c73bd64e4f827600f365ae282d20594cf508a125296a4"
     },
     {
       "path": "src/components/lab/_shared/disassembly/PartTags.astro",
@@ -37,15 +37,43 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/StageCard.astro",
-      "sha256": "8402c2b81ca39ed4587dc7516a5fe99a55ce1deb379f35cc838e81f8f0106f9f"
+      "sha256": "df373186257570f15861e9e53705eb746bfc013a7853ade18abb00cf084f3192"
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/client.ts",
+      "sha256": "a0a9a7d87bd22f0f49b7d80d79ee0eea5035ed84d4bda880676d923479bdc6d2"
     },
     {
       "path": "src/components/lab/_shared/disassembly/disassembly.css",
-      "sha256": "38906ca0223c8bc65173bbfa8f7fbab764333656d3e22591524e3f14e100f052"
+      "sha256": "81eafb535755a078460e8b14ab624443a0a23aa4dee96d821ef6b70eed594b76"
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/types.ts",
+      "sha256": "ded2fae62768d539148294fccf83121329c23a055567c8fd4126387da2b55047"
+    },
+    {
+      "path": "src/components/lab/_shared/format-number.ts",
+      "sha256": "6a9c70b48de3f296d2a5ed89e053dcdc25ef7bf037e974187f4a7fb96e1c23c5"
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationCard.astro",
+      "sha256": "e5fca4284c22964580a7f9c8b0616a853128369acca9fc6f3a4c02198e5a302a"
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationShell.astro",
+      "sha256": "2399c671154feccf713b33e2c5edd7cb04118a7fbcb9e774be1a79451c727b9e"
+    },
+    {
+      "path": "src/components/lab/_shared/viewer-lifetime.ts",
+      "sha256": "b7e199fbb3c06b5bc8f5a5b1c8bcaa1adef8beaca5775345b5574a9eebd04f6a"
+    },
+    {
+      "path": "src/components/lab/_shared/visible-enhancement.ts",
+      "sha256": "1c213b24d3d7f07dd4dcbd5ddd078841dbce0a9949c6dde8103cd0943c75edf9"
     },
     {
       "path": "src/components/lab/rv-reducer/Page.astro",
-      "sha256": "c5969e22632af5148a77bba46a9d5de9c39bc5fda5d148f46ababe32e64f7f22"
+      "sha256": "5940b4899a37b943ad5e7c423a07b3f554588746171caeb40b9e648013577772"
     },
     {
       "path": "src/components/lab/rv-reducer/client.ts",
@@ -53,7 +81,7 @@
     },
     {
       "path": "src/components/lab/rv-reducer/copy.ts",
-      "sha256": "2824b8dd56378e6670aeab6d51c86794349792729f14f8a433985c98410112bf"
+      "sha256": "91a8f4e8e139816ba7637c4c92108820b567af7be279f8b87235f3adc71d031f"
     },
     {
       "path": "src/components/lab/rv-reducer/geometry.ts",
@@ -77,7 +105,7 @@
     },
     {
       "path": "src/components/lab/rv-reducer/rv-reducer.css",
-      "sha256": "7a00ccec887ffa60dbd8d81311a513f74f8cdaec54e606693274bdfad138781b"
+      "sha256": "ccf7773ad47df374a7845922724dd49b8dd4ca990b7b5c72d469195772cc3fb5"
     },
     {
       "path": "src/components/lab/rv-reducer/viewer.ts",
@@ -101,15 +129,15 @@
     },
     {
       "path": "src/i18n/dictionaries.ts",
-      "sha256": "a3e6813686706f3b64ae05567e35a98f9f925466d2e4b2009b65472841d9b6e0"
+      "sha256": "5d8f35c26a819dbc67724c4d9970d757c7c8d6b49d627b6af0850cbf4cabe0ea"
     },
     {
       "path": "src/layouts/BaseLayout.astro",
-      "sha256": "7fb4c1d86e1738d83c143f43ef7ebb3604da9cddbf6da4f644c9e1313ce8de43"
+      "sha256": "43dbca0bbb01305ac6a126c8d281316c9d52caeae5b481785a614e23f3beb46d"
     },
     {
       "path": "src/styles/global.css",
-      "sha256": "b8746bd8fcf03687a0dd1904cd84185cdd2b64d2fe3748edee3c4bbfaa484567"
+      "sha256": "dfdf01de6ef012df3339402a9f939167516076b56476a0525743cb3209b9134e"
     },
     {
       "path": "src/styles/navigation.css",
@@ -201,8 +229,8 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-rv-reducer-400-normal.woff2",
-      "bytes": 58696,
-      "sha256": "b2015d22f56fde65b85e8f4e587f77edc57f113563fb781d29a40b9b4c0178f1",
+      "bytes": 58544,
+      "sha256": "c03328b44f5bd0fe7f6d25e4caba523f69654404798f30b95cccf7fbe3808fb0",
       "codepoints": [
         "U+00A9",
         "U+00B0",
@@ -264,7 +292,6 @@
         "U+5173",
         "U+5176",
         "U+5177",
-        "U+5178",
         "U+5185",
         "U+51C6",
         "U+51CF",
@@ -354,6 +381,7 @@
         "U+5E03",
         "U+5E08",
         "U+5E26",
+        "U+5E38",
         "U+5E45",
         "U+5E55",
         "U+5E76",
@@ -435,7 +463,6 @@
         "U+67F1",
         "U+6807",
         "U+6839",
-        "U+68B0",
         "U+695A",
         "U+6A21",
         "U+6B63",
@@ -648,15 +675,14 @@
       "source": "files/noto-sans-sc-chinese-simplified-600-normal.woff2",
       "sourceSha256": "578fb41a3dc2817b703611ad94b5c27dac96a3907c9d6b843c513217b562e1a2",
       "file": "noto-sans-sc-rv-reducer-600-normal.woff2",
-      "bytes": 10024,
-      "sha256": "35af4dbd913f02e9a99c714d38802ed71571cdf2b713bacd87a90daf48fa7de9",
+      "bytes": 9320,
+      "sha256": "f343e9a19344455f4096101f09fe784ec59ebd431c46590842118cefb416cc65",
       "codepoints": [
         "U+00B7",
         "U+4E00",
         "U+4E0E",
         "U+4E3B",
         "U+4E8C",
-        "U+4F20",
         "U+4F53",
         "U+4F8B",
         "U+504F",
@@ -665,7 +691,6 @@
         "U+516C",
         "U+5170",
         "U+51FA",
-        "U+52A8",
         "U+53CC",
         "U+53F0",
         "U+578B",
@@ -686,8 +711,6 @@
         "U+661F",
         "U+6682",
         "U+66F2",
-        "U+673A",
-        "U+68B0",
         "U+6A21",
         "U+6CB9",
         "U+6CD5",

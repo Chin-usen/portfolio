@@ -1,0 +1,19 @@
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .demo-panel {
+    display: none;
+  }
+  main {
+    width: 100%;
+    padding: 0;
+  }
+  a {
+    color: inherit;
+  }
+  .content-card,
+  .metric-row > div {
+    break-inside: avoid;
+  }
+}

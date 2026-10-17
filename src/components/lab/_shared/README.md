@@ -17,3 +17,11 @@ Nested `tests/unit/**/*.test.ts` and `tests/e2e/**/*.spec.ts` are discovered aut
 The shared generated `src/styles/generated-fonts.css` is ignored and recreated by dev/build/typecheck from installed source text. Do not include that derived file in a page patch. Original font files and licenses stay checked in; exact page subsets must preserve original glyph outlines/metrics and include all runtime copy/weights.
 
 Deliver `git format-patch --binary` against the final 1.4.0 release commit, generated assets, concise checks/Lighthouse median summary, pinned Impeccable audit/critique before/after, and desktop/mobile screenshots. Prove each patch applies on the base independently and together in different orders. Keep each attachment <= 1 MB and provide a START archive with SHA-256 manifest; file upload alone is not completed delivery.
+
+## Shared disassembly presentation
+
+`DisassemblyPage` owns the localized back link, part-card field headings and `Lx · 3D teardown` kicker format. Page copy supplies the lesson title, descriptions and interactions. These shared labels therefore stay consistent when another page patch is applied.
+
+`StageCard` requires a poster width and height and reserves its aspect ratio before image decoding. Preserve the fixed responsive stage geometry, the loading/fallback control slots and the single-row mobile segmented controls. Page-specific styles must retain those layout guarantees. Import page and template CSS with `?inline` and emit it with the rendered component so unused lab styles are not added to other routes. Use `formatDisplayNumber` for mathematical minus signs in displayed numeric results; retain normal signed numbers in calculations and data attributes.
+
+Automatic WebGL enhancements use `scheduleVisibleEnhancement` from `visible-enhancement.ts`. The shared disassembly controller and S1 client already use it; later simulation controllers should reuse it with their lifecycle abort signal and optional static preview. It waits for readable content to paint, preview decoding, two rendering frames and idle time. Direct pointer/keyboard activation stays immediate. Cancel pending scheduling on route exit or static-mode fallback; do not add fixed startup delays, user-agent checks or benchmark-specific paths.

@@ -18,7 +18,7 @@
   font-size: 0.8125rem;
 }
 .robot-joint .l1-modes button {
-  white-space: normal;
+  white-space: nowrap;
   border-radius: 12px;
 }
 .robot-joint .l1-labels button {
@@ -305,10 +305,12 @@
     height: 480px;
   }
   .robot-joint .l1-modes {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
   }
   .robot-joint .l1-modes button {
-    flex: 1 1 80px;
+    flex: 1 0 auto;
   }
   .robot-joint .l1-reset {
     margin-left: auto;
@@ -340,7 +342,6 @@
   }
 }
 
-.robot-joint .l1-kicker,
 .rj-static-note {
   display: none;
 }

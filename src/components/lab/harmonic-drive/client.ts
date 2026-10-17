@@ -1,3 +1,4 @@
+import { formatDisplayNumber } from '../_shared/format-number';
 import {
   createDisassemblyController,
   createDisassemblyLifecycle,
@@ -88,7 +89,7 @@ function mountHarmonicAddon(
   }
   function updateReadings(announce = false) {
     const state = kinematics(model, phase, rpm);
-    setText('[data-hd-ratio]', String(model.metrics.ratio));
+    setText('[data-hd-ratio]', formatDisplayNumber(model.metrics.ratio));
     setText('[data-hd-output-rpm]', state.outputRpm.toFixed(2));
     setText('[data-hd-displayed-rpm]', (rpm * HARMONIC_TIME_FACTOR).toFixed(2));
     setText('[data-hd-circular-teeth]', String(parameters.circularTeeth));
@@ -109,7 +110,7 @@ function mountHarmonicAddon(
         if (!context.disposed)
           setText(
             '[data-hd-result-live]',
-            `${copy.calculation}: ${model.metrics.ratio}; ${copy.outputSpeed}: ${state.outputRpm.toFixed(2)} rpm`,
+            `${copy.calculation}: ${formatDisplayNumber(model.metrics.ratio)}; ${copy.outputSpeed}: ${state.outputRpm.toFixed(2)} rpm`,
           );
       }, 200);
     }

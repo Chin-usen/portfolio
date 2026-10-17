@@ -294,11 +294,12 @@
     height: 460px;
   }
   .rv-reducer .l1-modes {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
   }
   .rv-reducer .l1-modes button {
-    flex: 1 1 80px;
+    flex: 1 1 0;
+    min-inline-size: 0;
   }
   .rv-reducer .l1-reset {
     margin-left: auto;

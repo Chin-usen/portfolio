@@ -3,10 +3,10 @@ export type RvStage = 'whole' | 'first' | 'second';
 export const RV_TIME_FACTOR = 1 / 60;
 export const rvCopy = {
   zh: {
-    kicker: 'L3 · 机械传动拆解',
+    kicker: 'L3 · 3D 拆解',
     title: 'RV 减速器',
     subtitle: '从渐开线齿轮到双摆线盘，看两级传动如何汇入同一输出架。',
-    back: '返回实验室',
+    back: '返回实验台',
     stage: 'RV 减速器三维示意',
     modes: '传动级选择',
     whole: '整体',
@@ -22,8 +22,8 @@ export const rvCopy = {
     parts: '选择零件',
     selected: '当前零件',
     role: '作用',
-    features: '结构特点',
-    material: '典型材料',
+    features: '特点',
+    material: '常用材料',
     noJs: '静态示意。下方保留全部零件说明和默认计算；启用 JavaScript 后可编辑参数。',
     allParts: '全部零件',
     staticMode: '静态图显示默认齿数的爆炸装配',
@@ -80,7 +80,7 @@ export const rvCopy = {
       '参数化示意模型，几何经简化；不复刻某一产品。交互几何与静态 GLB 使用同一参数生成器。',
   },
   en: {
-    kicker: 'L3 · MECHANISM STUDY',
+    kicker: 'L3 · 3D teardown',
     title: 'RV reducer',
     subtitle: 'Follow the involute and cycloidal stages as they share one output carrier.',
     back: 'Back to lab',
@@ -103,7 +103,7 @@ export const rvCopy = {
     selected: 'Selected part',
     role: 'Role',
     features: 'Features',
-    material: 'Typical material',
+    material: 'Common materials',
     noJs: 'Static schematic. All part details and default calculations remain below; enable JavaScript to edit parameters.',
     allParts: 'All parts',
     staticMode: 'The static image shows the default exploded assembly',

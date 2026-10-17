@@ -31,6 +31,7 @@ const { copy, parts, modes, defaultPartId, defaultMode, poster, idPrefix } = Ast
       sizes={poster.sizes}
       width={poster.width}
       height={poster.height}
+      style={`aspect-ratio: ${poster.width} / ${poster.height};`}
       alt={poster.alt}
       fetchpriority="high"
       decoding="async"

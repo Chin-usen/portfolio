@@ -25,7 +25,7 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/DisassemblyPage.astro",
-      "sha256": "e2eb6127f2da5ffaffe2056940f35457e3235ac4db7d216ce47f40922073c2a2"
+      "sha256": "5f6b1587558b766da14c73bd64e4f827600f365ae282d20594cf508a125296a4"
     },
     {
       "path": "src/components/lab/_shared/disassembly/PartTags.astro",
@@ -37,23 +37,51 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/StageCard.astro",
-      "sha256": "8402c2b81ca39ed4587dc7516a5fe99a55ce1deb379f35cc838e81f8f0106f9f"
+      "sha256": "df373186257570f15861e9e53705eb746bfc013a7853ade18abb00cf084f3192"
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/client.ts",
+      "sha256": "a0a9a7d87bd22f0f49b7d80d79ee0eea5035ed84d4bda880676d923479bdc6d2"
     },
     {
       "path": "src/components/lab/_shared/disassembly/disassembly.css",
-      "sha256": "38906ca0223c8bc65173bbfa8f7fbab764333656d3e22591524e3f14e100f052"
+      "sha256": "81eafb535755a078460e8b14ab624443a0a23aa4dee96d821ef6b70eed594b76"
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/types.ts",
+      "sha256": "ded2fae62768d539148294fccf83121329c23a055567c8fd4126387da2b55047"
+    },
+    {
+      "path": "src/components/lab/_shared/format-number.ts",
+      "sha256": "6a9c70b48de3f296d2a5ed89e053dcdc25ef7bf037e974187f4a7fb96e1c23c5"
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationCard.astro",
+      "sha256": "e5fca4284c22964580a7f9c8b0616a853128369acca9fc6f3a4c02198e5a302a"
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationShell.astro",
+      "sha256": "2399c671154feccf713b33e2c5edd7cb04118a7fbcb9e774be1a79451c727b9e"
+    },
+    {
+      "path": "src/components/lab/_shared/viewer-lifetime.ts",
+      "sha256": "b7e199fbb3c06b5bc8f5a5b1c8bcaa1adef8beaca5775345b5574a9eebd04f6a"
+    },
+    {
+      "path": "src/components/lab/_shared/visible-enhancement.ts",
+      "sha256": "1c213b24d3d7f07dd4dcbd5ddd078841dbce0a9949c6dde8103cd0943c75edf9"
     },
     {
       "path": "src/components/lab/harmonic-drive/Page.astro",
-      "sha256": "404ec42df335bb8400e324bff0856a41bbff0352ca79574bf7130a1ac8aa52db"
+      "sha256": "196e7853098ca3c332d8740d3d7dcf599383f7c7852a7bb48c2c012cc8b021a1"
     },
     {
       "path": "src/components/lab/harmonic-drive/client.ts",
-      "sha256": "e1322fa087e9991da7cc287a45f0ba374c584bcf31cfb71cc8300ab862fb9f4a"
+      "sha256": "5492827780eb8456dde5c10140fdbf7b697ab39ccbf9c4e0de958b5abac62f63"
     },
     {
       "path": "src/components/lab/harmonic-drive/copy.ts",
-      "sha256": "4cfbc9269a0d3e2e9802c70843a4771e6d0da8779627f09bd74ec8e991501633"
+      "sha256": "283c93270505ed0a8f12aae598e011cc17387823470862c50a4469ae8665f540"
     },
     {
       "path": "src/components/lab/harmonic-drive/geometry.ts",
@@ -61,7 +89,7 @@
     },
     {
       "path": "src/components/lab/harmonic-drive/harmonic-drive.css",
-      "sha256": "dde748385809e22e62b3a711ad2bd176b1d3d35ad73630ad9d4a7a978b3701ba"
+      "sha256": "befb9e4396b0175095b0f3aa5269abd1bf400d5bc4815c098732d9ba52d7ad09"
     },
     {
       "path": "src/components/lab/harmonic-drive/math.ts",
@@ -93,23 +121,23 @@
     },
     {
       "path": "src/content/lab/en/harmonic-drive.md",
-      "sha256": "759eb2eee4c02af56474769057fa5624b65e05601c6dd9f5c734fe126506a3e9"
+      "sha256": "5016a0381b7d16caf13462da42ab8434acf5fb4cae6acdf3110118bf5e3eb163"
     },
     {
       "path": "src/content/lab/zh/harmonic-drive.md",
-      "sha256": "d12705c7d7c5b3fc7f99cf3fb9f256bd55f8ece3ef7922e8e70861eebbd0f4c6"
+      "sha256": "facdb58bd1d621de8fd9f3bf67a7b2a5ca29fb144b18e0e4760b1dcda879fa53"
     },
     {
       "path": "src/i18n/dictionaries.ts",
-      "sha256": "a3e6813686706f3b64ae05567e35a98f9f925466d2e4b2009b65472841d9b6e0"
+      "sha256": "5d8f35c26a819dbc67724c4d9970d757c7c8d6b49d627b6af0850cbf4cabe0ea"
     },
     {
       "path": "src/layouts/BaseLayout.astro",
-      "sha256": "7fb4c1d86e1738d83c143f43ef7ebb3604da9cddbf6da4f644c9e1313ce8de43"
+      "sha256": "43dbca0bbb01305ac6a126c8d281316c9d52caeae5b481785a614e23f3beb46d"
     },
     {
       "path": "src/styles/global.css",
-      "sha256": "b8746bd8fcf03687a0dd1904cd84185cdd2b64d2fe3748edee3c4bbfaa484567"
+      "sha256": "dfdf01de6ef012df3339402a9f939167516076b56476a0525743cb3209b9134e"
     },
     {
       "path": "src/styles/navigation.css",
@@ -209,8 +237,8 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-harmonic-drive-400-normal.woff2",
-      "bytes": 54836,
-      "sha256": "66aa47c95ef79597fd343d02867ce957a03c3000e2153345b4e375f6e65e2902",
+      "bytes": 55692,
+      "sha256": "37c7a393c3232cc2c1b7fd0dae19f6dbbfe38d9c02fe5d35c95b0c1acb0055d5",
       "codepoints": [
         "U+00A9",
         "U+00B0",
@@ -270,6 +298,7 @@
         "U+5171",
         "U+5173",
         "U+5176",
+        "U+5177",
         "U+5185",
         "U+51C6",
         "U+51CF",
@@ -277,10 +306,12 @@
         "U+51FA",
         "U+5206",
         "U+5207",
+        "U+5217",
         "U+521A",
         "U+521B",
         "U+5224",
         "U+5229",
+        "U+522B",
         "U+5230",
         "U+5236",
         "U+523B",
@@ -293,7 +324,6 @@
         "U+5316",
         "U+533A",
         "U+534A",
-        "U+5360",
         "U+5382",
         "U+5386",
         "U+538B",
@@ -365,6 +395,7 @@
         "U+5E03",
         "U+5E08",
         "U+5E26",
+        "U+5E38",
         "U+5E55",
         "U+5E76",
         "U+5E94",
@@ -375,6 +406,7 @@
         "U+5F0F",
         "U+5F31",
         "U+5F39",
+        "U+5F3A",
         "U+5F53",
         "U+5F62",
         "U+5F84",
@@ -428,7 +460,6 @@
         "U+6700",
         "U+6709",
         "U+672A",
-        "U+673A",
         "U+6746",
         "U+6750",
         "U+675F",
@@ -439,9 +470,9 @@
         "U+67D4",
         "U+67E5",
         "U+6807",
+        "U+680F",
         "U+6838",
         "U+6846",
-        "U+68B0",
         "U+692D",
         "U+695A",
         "U+6A21",
@@ -482,6 +513,7 @@
         "U+770B",
         "U+771F",
         "U+786E",
+        "U+78B3",
         "U+793A",
         "U+79BB",
         "U+79FB",
@@ -491,6 +523,7 @@
         "U+7B80",
         "U+7B97",
         "U+7BB1",
+        "U+7C7B",
         "U+7CFB",
         "U+7D22",
         "U+7D27",
@@ -519,7 +552,6 @@
         "U+88C5",
         "U+8981",
         "U+89C2",
-        "U+89C4",
         "U+89C6",
         "U+89C8",
         "U+89C9",
@@ -578,6 +610,7 @@
         "U+91D1",
         "U+94A2",
         "U+94DD",
+        "U+94EC",
         "U+94FE",
         "U+952E",
         "U+957F",
@@ -589,6 +622,7 @@
         "U+968F",
         "U+9699",
         "U+96F6",
+        "U+9700",
         "U+9759",
         "U+975E",
         "U+9762",
@@ -621,8 +655,8 @@
       "source": "files/noto-sans-sc-chinese-simplified-600-normal.woff2",
       "sourceSha256": "578fb41a3dc2817b703611ad94b5c27dac96a3907c9d6b843c513217b562e1a2",
       "file": "noto-sans-sc-harmonic-drive-600-normal.woff2",
-      "bytes": 9948,
-      "sha256": "0bcfdce6b5a32eb9e4098a5bf1bc12feb634c534e2196228d2cc5a04b135728c",
+      "bytes": 9596,
+      "sha256": "a9534d54cbc127367bf95ad6aad6d8d344106c625413d93e8d810bf67b907709",
       "codepoints": [
         "U+00B7",
         "U+4E0E",
@@ -659,11 +693,9 @@
         "U+653E",
         "U+6574",
         "U+6682",
-        "U+673A",
         "U+676F",
         "U+67D4",
         "U+6838",
-        "U+68B0",
         "U+6A21",
         "U+6CD5",
         "U+6CE2",

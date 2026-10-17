@@ -1,3 +1,4 @@
+import { scheduleVisibleEnhancement } from '../visible-enhancement';
 import type {
   ControllerOptions,
   ControllerSnapshot,
@@ -93,9 +94,7 @@ export function createDisassemblyController<
   let requested = false;
   let pendingLoad = false;
   let loadEpoch = 0;
-  let idle = 0;
-  let timeout = 0;
-  let fontsPending = false;
+  let cancelEnhancement: (() => void) | null = null;
   let observer: IntersectionObserver | null = null;
   let observerConnected = false;
   const setText = (selector: string, text: string) => {
@@ -184,9 +183,8 @@ export function createDisassemblyController<
   function cancelSchedule() {
     observer?.disconnect();
     observerConnected = false;
-    if (idle) window.cancelIdleCallback?.(idle);
-    if (timeout) window.clearTimeout(timeout);
-    idle = timeout = 0;
+    cancelEnhancement?.();
+    cancelEnhancement = null;
   }
   function fallback(failure = false) {
     if (disposed) return;
@@ -258,25 +256,14 @@ export function createDisassemblyController<
     }
   }
   function schedule() {
-    if (disposed || requested || fontsPending || idle || timeout) return;
-    fontsPending = true;
-    void document.fonts.ready.then(() => {
-      fontsPending = false;
-      if (disposed || requested) return;
-      if (typeof window.requestIdleCallback === 'function')
-        idle = window.requestIdleCallback(
-          () => {
-            idle = 0;
-            void loadViewer();
-          },
-          { timeout: 1500 },
-        );
-      else
-        timeout = window.setTimeout(() => {
-          timeout = 0;
-          void loadViewer();
-        }, 0);
-    });
+    if (disposed || requested || cancelEnhancement) return;
+    cancelEnhancement = scheduleVisibleEnhancement(
+      () => {
+        cancelEnhancement = null;
+        void loadViewer();
+      },
+      { signal, preview },
+    );
   }
   for (const element of all<HTMLElement | SVGElement>('[data-l1-select], [data-l1-label]')) {
     element.addEventListener(

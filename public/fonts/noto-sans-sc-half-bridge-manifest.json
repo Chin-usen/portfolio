@@ -12,7 +12,439 @@
     "fonttools": "4.65.0",
     "brotli": "1.2.0"
   },
-  "coverageRule": "L1 interface and all ten part records by actual CSS/UA weight, plus shared shell. Latin remains Geist; symbols/future uncovered copy retain the original global fallback.",
+  "sourceInputsSha256": {
+    "src/components/lab/half-bridge/copy.ts": [
+      "5269c93a",
+      "5561482d",
+      "8ea1ce4e",
+      "ada7ef3e",
+      "81415f4b",
+      "178e6fcb",
+      "e04e06ea",
+      "96084c66"
+    ],
+    "src/components/lab/half-bridge/HalfBridge.astro": [
+      "5df64ffa",
+      "2a2e687e",
+      "8c63de4c",
+      "912ec74b",
+      "86c4b770",
+      "f719cd60",
+      "07ae412c",
+      "293ee1c8"
+    ],
+    "src/components/lab/_shared/disassembly/DisassemblyPage.astro": [
+      "5f6b1587",
+      "558b766d",
+      "a14c73bd",
+      "64e4f827",
+      "600f365a",
+      "e282d205",
+      "94cf508a",
+      "125296a4"
+    ],
+    "src/components/lab/_shared/disassembly/StageCard.astro": [
+      "df373186",
+      "257570f1",
+      "5861e9e5",
+      "3705eb74",
+      "6bfc013a",
+      "7853ade1",
+      "8abb00cf",
+      "084f3192"
+    ],
+    "src/components/lab/_shared/disassembly/SelectedPartCard.astro": [
+      "65349c1f",
+      "b230bb14",
+      "67b98ddc",
+      "60c62832",
+      "ee2cbdf4",
+      "cba1fdf4",
+      "875da195",
+      "8d91e6fb"
+    ],
+    "src/components/lab/_shared/disassembly/PartTags.astro": [
+      "f32aecb7",
+      "d8dd1bdd",
+      "755441ed",
+      "cf449b8e",
+      "1c0f02d5",
+      "bb4c0f9b",
+      "ce5c4185",
+      "1be0bf00"
+    ],
+    "src/i18n/dictionaries.ts": [
+      "5d8f35c2",
+      "6a819dbc",
+      "67724c4d",
+      "9970d757",
+      "c7c8d6b4",
+      "9d627b6a",
+      "f0850cbf",
+      "4cabe0ea"
+    ],
+    "src/content/home/zh.json": [
+      "54e25746",
+      "276cceaa",
+      "674cd0b3",
+      "3360c152",
+      "a43d5634",
+      "053f26cf",
+      "dec7e137",
+      "df8918e9"
+    ],
+    "src/components/Header.astro": [
+      "fdfef2c7",
+      "46e7627b",
+      "75a4369f",
+      "d58ec5d7",
+      "a3f8a1a8",
+      "42c78591",
+      "5ea9447b",
+      "dbc9891c"
+    ],
+    "src/components/Footer.astro": [
+      "3f1d9d61",
+      "576279a3",
+      "5a03df9c",
+      "20dddb5a",
+      "29320ddf",
+      "160bd34f",
+      "6b7dfe6d",
+      "34e69242"
+    ],
+    "src/content/halfBridgeParts/ac-terminal.json": [
+      "dd107237",
+      "696829f5",
+      "c0e2cce1",
+      "aa3f2e24",
+      "99e65966",
+      "1ab108ba",
+      "085b27db",
+      "20daa0bb"
+    ],
+    "src/content/halfBridgeParts/amb.json": [
+      "e6587678",
+      "9b8aea9b",
+      "364e295e",
+      "9aed3aef",
+      "79aadb7d",
+      "36f4dd01",
+      "c5ea4e95",
+      "89646d7c"
+    ],
+    "src/content/halfBridgeParts/baseplate.json": [
+      "70000cf0",
+      "8ebcb308",
+      "2fe2a23e",
+      "cc8d5ef4",
+      "9274d12d",
+      "aff593fb",
+      "ef38ad70",
+      "84b4c58d"
+    ],
+    "src/content/halfBridgeParts/busbar.json": [
+      "f9288d69",
+      "35e1f019",
+      "9a86b605",
+      "a17c3ee3",
+      "f48b0b3d",
+      "4b46a07f",
+      "7edb0013",
+      "d5d4f06f"
+    ],
+    "src/content/halfBridgeParts/dc-terminal.json": [
+      "fd51814b",
+      "b85e494e",
+      "ee00d42a",
+      "821bdbdd",
+      "581f9eec",
+      "b3706fda",
+      "5b376a28",
+      "c5ee90ee"
+    ],
+    "src/content/halfBridgeParts/gate-wire.json": [
+      "b17f857f",
+      "c6716857",
+      "add010f4",
+      "6b4b7871",
+      "bdb9eca8",
+      "cb51fbae",
+      "e9d30c1a",
+      "8ea611d1"
+    ],
+    "src/content/halfBridgeParts/housing.json": [
+      "aae7c0f5",
+      "271fd15c",
+      "83876b46",
+      "85f9e08a",
+      "f00e00c5",
+      "240f00e9",
+      "c2c9da05",
+      "877610b5"
+    ],
+    "src/content/halfBridgeParts/mosfet.json": [
+      "9967d110",
+      "28a4b28d",
+      "4536d6c7",
+      "92b3beac",
+      "14538ff9",
+      "41483203",
+      "4f9f67c8",
+      "d03b27f5"
+    ],
+    "src/content/halfBridgeParts/signal-pin.json": [
+      "06e05d46",
+      "7c9633ba",
+      "47c458f1",
+      "1c2cc727",
+      "20b17d75",
+      "4e057345",
+      "22068219",
+      "38cea38d"
+    ],
+    "src/content/halfBridgeParts/solder.json": [
+      "b31aea3d",
+      "aac8950b",
+      "798159d1",
+      "349bacce",
+      "dd19a842",
+      "7edc2265",
+      "d9f5efcb",
+      "e1ec58e1"
+    ],
+    "src/components/lab/_shared/disassembly/disassembly.css": [
+      "81eafb53",
+      "5755a078",
+      "460e8b14",
+      "ab624443",
+      "a0a23aa4",
+      "dee96d82",
+      "1ef6b70e",
+      "ed594b76"
+    ],
+    "src/components/lab/half-bridge/half-bridge.css": [
+      "e5c3a88b",
+      "845e77dc",
+      "e630b614",
+      "0c35d179",
+      "fed5eb4e",
+      "6ceabb87",
+      "fe0a7b43",
+      "8096f17e"
+    ],
+    "src/styles/navigation.css": [
+      "4b7b7439",
+      "612b4947",
+      "1ae0b6aa",
+      "b10cadb3",
+      "10cc433e",
+      "24da73e7",
+      "24554efe",
+      "c9a727f8"
+    ],
+    "src/styles/global.css": [
+      "dfdf01de",
+      "6ef012df",
+      "3339402a",
+      "9f939167",
+      "516076b5",
+      "6476a052",
+      "5743cb32",
+      "09b9134e"
+    ],
+    "src/styles/thermal-tokens.css": [
+      "f3aca1ed",
+      "394cd6aa",
+      "1b14ed6d",
+      "976546ff",
+      "702d58f6",
+      "6aafd6d1",
+      "129ebce6",
+      "8297b380"
+    ],
+    "src/styles/tokens.css": [
+      "3a44e321",
+      "9f6a0ce7",
+      "d4b6a074",
+      "10a2d338",
+      "2b8655bc",
+      "96f42c33",
+      "fc0f6071",
+      "9960ea5f"
+    ],
+    "src/layouts/BaseLayout.astro": [
+      "43dbca0b",
+      "bb01305a",
+      "c6a126c8",
+      "d281316c",
+      "9d52caea",
+      "e5b48178",
+      "5a614e23",
+      "f3beb46d"
+    ],
+    "src/content/home/en.json": [
+      "de39386f",
+      "411c9f10",
+      "1b272542",
+      "0cdb2101",
+      "b91b836b",
+      "9d76f1bb",
+      "462c3788",
+      "365afc4b"
+    ],
+    "src/components/lab/half-bridge/client.ts": [
+      "6dc8162b",
+      "3734f9a8",
+      "a8879354",
+      "e10f0e99",
+      "bd260df6",
+      "20723bc7",
+      "ad5a0bf1",
+      "b9850676"
+    ],
+    "src/components/lab/half-bridge/inductance.ts": [
+      "73eb922e",
+      "24f5fd84",
+      "f4810c39",
+      "df8a1019",
+      "14cf21a0",
+      "e66dad07",
+      "9dfea770",
+      "fc719202"
+    ],
+    "src/components/lab/half-bridge/Page.astro": [
+      "75fd0bd8",
+      "a567c6a3",
+      "f99f36d2",
+      "7390712d",
+      "166dcf2d",
+      "33190567",
+      "0080bc67",
+      "f81ad73a"
+    ],
+    "src/components/lab/half-bridge/page.json": [
+      "000fe62c",
+      "bba3ca39",
+      "18650766",
+      "48dd3604",
+      "3b2e88c3",
+      "6fdfeb4c",
+      "6f7a9164",
+      "d38c17d0"
+    ],
+    "src/components/lab/half-bridge/types.ts": [
+      "d728556a",
+      "707a5c4e",
+      "fc042a5e",
+      "21b79790",
+      "b5c94581",
+      "9b6973d0",
+      "ed2ba791",
+      "a07eeb85"
+    ],
+    "src/components/lab/half-bridge/viewer.ts": [
+      "4c3e1605",
+      "40453931",
+      "7d22eab1",
+      "b6f32fc5",
+      "8a3ee20b",
+      "1f398d3f",
+      "bac58a85",
+      "9ec15a04"
+    ],
+    "src/components/lab/_shared/disassembly/client.ts": [
+      "a0a9a7d8",
+      "7bd22f0f",
+      "49b7d80d",
+      "79ee0eea",
+      "5035ed84",
+      "d4bda880",
+      "676d9234",
+      "79bdc6d2"
+    ],
+    "src/components/lab/_shared/disassembly/types.ts": [
+      "ded2fae6",
+      "2768d539",
+      "148294fc",
+      "cf831213",
+      "29c23a05",
+      "5567c8fd",
+      "4126387d",
+      "a2b55047"
+    ],
+    "src/components/lab/_shared/format-number.ts": [
+      "6a9c70b4",
+      "8de3f296",
+      "d2a5ed89",
+      "e053dcdc",
+      "25ef7bf0",
+      "37e97418",
+      "7f4a7fb9",
+      "6e1c23c5"
+    ],
+    "src/components/lab/_shared/simulation/SimulationCard.astro": [
+      "e5fca428",
+      "4c229645",
+      "80a7f9c8",
+      "b0616a85",
+      "3128369a",
+      "cca9fc6f",
+      "3a4c0219",
+      "8e5a302a"
+    ],
+    "src/components/lab/_shared/simulation/SimulationShell.astro": [
+      "2399c671",
+      "154feccf",
+      "713b33e2",
+      "c5edd7cb",
+      "04118a7f",
+      "bcb9e774",
+      "be1a7945",
+      "1c727b9e"
+    ],
+    "src/components/lab/_shared/viewer-lifetime.ts": [
+      "b7e199fb",
+      "b3c06b5b",
+      "c8f5a5b1",
+      "c8bcaa1a",
+      "def8beac",
+      "a5775345",
+      "b5574a9e",
+      "ebd04f6a"
+    ],
+    "src/components/lab/_shared/visible-enhancement.ts": [
+      "1c213b24",
+      "d3d7f07d",
+      "d4dcbd5d",
+      "dd078841",
+      "dbce0a99",
+      "49c6dde8",
+      "103cd094",
+      "3c75edf9"
+    ],
+    "src/content/lab/zh/half-bridge-module.md": [
+      "68a4f134",
+      "466d4afc",
+      "e919df7f",
+      "b85eeb10",
+      "f7981a57",
+      "3c0afad5",
+      "60249735",
+      "945d1305"
+    ],
+    "src/content/lab/en/half-bridge-module.md": [
+      "5632721b",
+      "953e9eb2",
+      "4420a464",
+      "6abfe595",
+      "15a6ae7e",
+      "40290327",
+      "08b6e726",
+      "5d3ff28f"
+    ]
+  },
+  "coverageRule": "L1 interface and all ten part records by actual CSS/UA weight, plus shared shell. Latin remains Geist; symbols outside the original master use the system stack; changed bound copy must pass regeneration and coverage checks.",
   "weightRules": {
     "400": "All L1 copy, every part's descriptions/materials and secondary name; unselected controls; shared shell, footer, skip link and language links.",
     "500": "Inactive shared desktop navigation (.n1-nav-list a). L1 controls inherit 400, not 500.",
@@ -25,8 +457,8 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-half-bridge-400-normal.woff2",
-      "bytes": 59436,
-      "sha256": "12a1f2bbd9077c038cf74183d36b07340045bae4cff79b4275028558408271b1",
+      "bytes": 59632,
+      "sha256": "14a8d4b64b6ddf049296b4bb75610e70c3fdc625afe654377ceedfbe028537a4",
       "codepoints": [
         "U+00A9",
         "U+00B7",
@@ -82,6 +514,7 @@
         "U+5145",
         "U+5165",
         "U+5168",
+        "U+516B",
         "U+5171",
         "U+5173",
         "U+5176",
@@ -132,6 +565,7 @@
         "U+54C1",
         "U+54CD",
         "U+5668",
+        "U+56DB",
         "U+56DE",
         "U+56FE",
         "U+5728",

@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("base_subsetter", ROOT / "scripts/subset-noto-fonts.py")
 base = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(base)
+input_spec = importlib.util.spec_from_file_location("lab_font_inputs", ROOT / "scripts/lab-font-inputs.py")
+lab_inputs = importlib.util.module_from_spec(input_spec)
+input_spec.loader.exec_module(lab_inputs)
 OUTPUT = ROOT / "public/fonts"
 MANIFEST = OUTPUT / "noto-sans-sc-half-bridge-manifest.json"
 CSS = ROOT / "src/components/lab/half-bridge/half-bridge-fonts.css"
@@ -100,6 +103,7 @@ def coverage_inputs() -> tuple[dict[int, set[int]], dict[str, str]]:
              + "".join(part["shortZh"] for part in parts),
         700: nav + values(["title", "allParts"]) + "".join(part["nameZh"] for part in parts),
     }
+    source[400] += lab_inputs.component_text("half-bridge", inputs)
     requested = {}
     for weight, text in source.items():
         codes = {ord(character) for character in text if ord(character) > 127}
@@ -114,7 +118,7 @@ def verify_css(faces: list[dict]) -> None:
     for face, block in zip(faces, blocks, strict=True):
         assert f"font-family: '{FAMILY}'" in block
         assert f"font-weight: {face['weight']}" in block
-        assert "font-display: swap" in block
+        assert "font-display: optional" in block
         assert f"/fonts/{face['file']}" in block
         ranges = re.search(r"unicode-range:\s*([^;]+)", block)[1]
         assert set(re.findall(r"U\+[0-9A-F]+", ranges)) == set(face["codepoints"])
@@ -126,14 +130,14 @@ def report(manifest: dict, requested: dict[int, set[int]], inputs: dict[str, str
         "scope": "Exact source-font coverage and asset verification; no browser or Lighthouse claim",
         "package": "@fontsource/noto-sans-sc@5.3.1",
         "tools": manifest["tools"],
-        "sourceInputsSha256": inputs,
+        "sourceInputsSha256": lab_inputs.encode_bindings(inputs),
         "manifestSha256": base.digest(MANIFEST.read_bytes()),
         "cssSha256": base.digest(CSS.read_bytes()),
         "totalBytes": sum(face["bytes"] for face in manifest["faces"]),
         "checks": ["Every retained glyph outline equals the original", "Advance and vertical metrics unchanged",
                    "Four original weights 400/500/600/700", "Exact original name/copyright/license metadata",
                    "Actual source copy mapped by existing CSS weights", "All requested CJK codepoints covered",
-                   "CSS face ranges match verified cmap", "Original global Noto fallback retained"],
+                   "CSS face ranges match verified cmap", "Complete both-locale source coverage; lab routes do not load global Fontsource fallback"],
         "weightRules": WEIGHT_RULES,
         "faces": [{**face, "requestedCodepoints": base.codepoints(requested[face["weight"]])}
                   for face in manifest["faces"]],
@@ -185,19 +189,21 @@ def main() -> None:
                 "codepoints": base.codepoints(coverage), "fallbackCodepoints": base.codepoints(codes - coverage),
             }
             faces.append(face)
-            css.append("@font-face {\n  font-family: '" + FAMILY + "';\n  font-style: normal;\n  font-display: swap;\n  font-weight: " + str(weight) + ";\n  src: url('/fonts/" + output.name + "') format('woff2');\n  unicode-range: " + ",".join(face["codepoints"]) + ";\n}")
+            css.append("@font-face {\n  font-family: '" + FAMILY + "';\n  font-style: normal;\n  font-display: optional;\n  font-weight: " + str(weight) + ";\n  src: url('/fonts/" + output.name + "') format('woff2');\n  unicode-range: " + ",".join(face["codepoints"]) + ";\n}")
             print(f"{weight}: {face['bytes']} bytes / {len(coverage)} codepoints; exact outlines verified")
         manifest = {
             "format": "noto-half-bridge-subsets-v1", "family": FAMILY,
             "package": "@fontsource/noto-sans-sc", "packageVersion": package["version"],
             "license": {"spdx": "OFL-1.1", "file": "OFL.txt", "sha256": base.digest((OUTPUT / "OFL.txt").read_bytes())},
             "tools": {"fonttools": base.FONTTOOLS_VERSION, "brotli": base.BROTLI_VERSION},
-            "coverageRule": "L1 interface and all ten part records by actual CSS/UA weight, plus shared shell. Latin remains Geist; symbols/future uncovered copy retain the original global fallback.",
+            "sourceInputsSha256": lab_inputs.encode_bindings(inputs),
+            "coverageRule": "L1 interface and all ten part records by actual CSS/UA weight, plus shared shell. Latin remains Geist; symbols outside the original master use the system stack; changed bound copy must pass regeneration and coverage checks.",
             "weightRules": WEIGHT_RULES, "faces": faces,
         }
         MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
         CSS.write_text("\n".join(css) + "\n", encoding="utf-8", newline="\n")
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    assert lab_inputs.decode_bindings(manifest["sourceInputsSha256"]) == inputs, "L1 source changed; regenerate fonts"
     assert [face["weight"] for face in manifest["faces"]] == [400, 500, 600, 700]
     for face in manifest["faces"]:
         source, output = base.PACKAGE / face["source"], OUTPUT / face["file"]

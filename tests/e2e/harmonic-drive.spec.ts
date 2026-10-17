@@ -51,7 +51,9 @@ async function setRange(page: Page, selector: string, value: string) {
 
 async function expectNumber(page: Page, selector: string, value: number, precision = 2) {
   await expect
-    .poll(async () => Number.parseFloat(await page.locator(selector).innerText()))
+    .poll(async () =>
+      Number.parseFloat((await page.locator(selector).innerText()).replace('−', '-')),
+    )
     .toBeCloseTo(value, precision);
 }
 
@@ -241,6 +243,7 @@ for (const prefix of ['', '/en']) {
       await expect(root).toHaveAttribute('data-renderer', 'webgl', { timeout: 30_000 });
       await expectNumber(page, '[data-hd-circular-teeth]', 202);
       await expectNumber(page, '[data-hd-ratio]', -100);
+      await expect(root.locator('[data-hd-ratio]')).toHaveText('−100');
       await expectNumber(page, '[data-hd-deformation]', 0.5);
       await expectNumber(page, '[data-hd-display-deformation]', 2);
       const before = await viewer(page);
@@ -251,6 +254,7 @@ for (const prefix of ['', '/en']) {
       await teeth.fill('160');
       await expectNumber(page, '[data-hd-circular-teeth]', 162);
       await expectNumber(page, '[data-hd-ratio]', -80);
+      await expect(root.locator('[data-hd-ratio]')).toHaveText('−80');
       await expect.poll(async () => (await viewer(page)).parameters.flexTeeth).toBe(160);
       const rebuilt = await viewer(page);
       expect(rebuilt.geometryRevision).toBeGreaterThan(before.geometryRevision);

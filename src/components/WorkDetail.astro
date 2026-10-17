@@ -5,6 +5,7 @@ import MetricRow from './MetricRow.astro';
 import '../styles/work.css';
 import { getUi } from '../i18n/dictionaries';
 import { localePath } from '../i18n/utils';
+import { notoTitleFontPreloads } from '../lib/critical-font-preloads';
 interface Props {
   locale: 'zh' | 'en';
   entry: CollectionEntry<'work'>;
@@ -13,9 +14,17 @@ const { locale, entry } = Astro.props;
 const ui = getUi(locale);
 const { title, summary, metrics, role, period, tools } = entry.data;
 const { Content } = await render(entry);
+const criticalFontPreloads = locale === 'zh' ? notoTitleFontPreloads(title) : undefined;
 ---
 
-<BaseLayout locale={locale} title={title} description={summary} bodyClass="work-detail-page">
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={summary}
+  bodyClass="work-detail-page"
+  criticalFontPreloads={criticalFontPreloads}
+  workDetailFonts
+>
   <a class="work-detail-back" href={localePath(locale, '/work/')}>
     {ui.work.back}
   </a>

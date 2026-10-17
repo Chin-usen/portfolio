@@ -3,10 +3,10 @@ export type HarmonicStage = 'whole' | 'mechanism';
 export const HARMONIC_TIME_FACTOR = 1 / 60;
 export const harmonicCopy = {
   zh: {
-    kicker: 'L4 · 机械传动拆解',
+    kicker: 'L4 · 3D 拆解',
     title: '谐波减速器',
     subtitle: '旋转的椭圆带动柔轮变形；两齿之差，让输出缓慢反转。',
-    back: '返回实验室',
+    back: '返回实验台',
     stage: '谐波减速器三维示意',
     modes: '视图选择',
     whole: '整体',
@@ -21,8 +21,8 @@ export const harmonicCopy = {
     parts: '选择零件',
     selected: '当前零件',
     role: '作用',
-    features: '结构特点',
-    material: '示例材料',
+    features: '特点',
+    material: '常用材料',
     noJs: '静态示意。下方保留全部零件说明和默认计算；启用 JavaScript 后可编辑参数。',
     allParts: '全部零件',
     staticMode: '爆炸图保留默认 200 / 202 齿；下方相位示意与读数跟随编辑',
@@ -80,14 +80,14 @@ export const harmonicCopy = {
     clearanceText:
       '放大位移时，刚轮加入径向显示偏移与间隙以便观察。高亮仅标识两处啮合方向，不能用于判断齿面穿透、接触压力或装配公差。',
     limitsText:
-      '不计算载荷、应力、回差、效率、润滑或寿命；材料仅为通用占位示例，不对应厂商、牌号、热处理或制造规范。',
+      '不计算载荷、应力、回差、效率、润滑或寿命。材料栏列出这类零件的常用材料类别；具体牌号、热处理和制造要求需按实际设计确定。',
     sources: '原理参考',
     principleSource: 'Harmonic Drive：应变波传动原理',
     provenance:
       '原创参数化通用示意；未复刻厂商 CAD，未使用厂商几何或材料数据。交互模型与静态 GLB 由同一生成器生成；原理链接仅用于说明运动关系。',
   },
   en: {
-    kicker: 'L4 · MECHANISM STUDY',
+    kicker: 'L4 · 3D teardown',
     title: 'Harmonic drive',
     subtitle:
       'A rotating ellipse flexes the cup. A two-tooth difference turns the output slowly in reverse.',
@@ -111,7 +111,7 @@ export const harmonicCopy = {
     selected: 'Selected part',
     role: 'Role',
     features: 'Features',
-    material: 'Example material',
+    material: 'Common materials',
     noJs: 'Static schematic. All part details and default calculations remain below; enable JavaScript to edit parameters.',
     allParts: 'All parts',
     staticMode:
@@ -178,7 +178,7 @@ export const harmonicCopy = {
     clearanceText:
       'The magnified view adds radial offset and clearance to the circular spline for visibility. Highlighted zones indicate engagement directions only; they cannot establish tooth interference, contact pressure or assembly tolerance.',
     limitsText:
-      'Loads, stress, backlash, efficiency, lubrication and life are not calculated. Materials are generic placeholders, with no vendor, grade, heat-treatment or manufacturing specification implied.',
+      'Loads, stress, backlash, efficiency, lubrication and life are not calculated. Part cards list common material families; grades, heat treatment and manufacturing requirements depend on the actual design.',
     sources: 'Principle reference',
     principleSource: 'Harmonic Drive: strain-wave operating principle',
     provenance:

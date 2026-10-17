@@ -105,6 +105,7 @@
   margin-top: 4px;
 }
 .l1-preview {
+  display: block;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -184,11 +185,11 @@
   margin: 4px 0 12px;
 }
 :is(.half-bridge, .disassembly)[data-renderer='webgl'] .l1-load-status {
-  display: none;
+  visibility: hidden;
 }
 :is(.half-bridge, .disassembly)[data-renderer='fallback'] .l1-hint,
 :is(.half-bridge, .disassembly)[data-renderer='fallback'] .l1-reset {
-  display: none;
+  visibility: hidden;
 }
 .l1-parts {
   display: flex;
@@ -337,9 +338,13 @@
     gap: 4px;
   }
   .l1-modes {
+    display: flex;
     flex-wrap: nowrap;
+    width: 100%;
   }
   .l1-modes button {
+    flex: 1 1 0;
+    min-width: 0;
     padding: 7px 10px;
     font-size: 0.75rem;
   }

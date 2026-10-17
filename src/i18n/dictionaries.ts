@@ -34,7 +34,7 @@ const zh = {
   lab: {
     title: '实验室',
     description: '小范围的问题，清晰可复查的过程。这里收录拆解观察与模拟验证笔记。',
-    back: '返回实验室',
+    back: '返回实验台',
     basis: '分析依据',
     status: '当前状态',
     teardown: '拆解观察',

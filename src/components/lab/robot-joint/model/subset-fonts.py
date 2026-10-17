@@ -24,6 +24,9 @@ COMPONENT = ROOT / "src/components/lab/robot-joint"
 spec = importlib.util.spec_from_file_location("robot_joint_base_subsetter", ROOT / "scripts/subset-noto-fonts.py")
 base = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(base)
+input_spec = importlib.util.spec_from_file_location("lab_font_inputs", ROOT / "scripts/lab-font-inputs.py")
+lab_inputs = importlib.util.module_from_spec(input_spec)
+input_spec.loader.exec_module(lab_inputs)
 OUTPUT = ROOT / "public/models/robot-joint/fonts"
 MANIFEST = OUTPUT / "noto-sans-sc-robot-joint-manifest.json"
 CSS = COMPONENT / "robot-joint-fonts.css"
@@ -166,6 +169,7 @@ def coverage_inputs():
         assert set(part_fields[locale]["secondaryName"]) <= set(sources[400])
         for key in ("modelScope", "geometryNote", "hollowNote", "brakeNote", "limitsNote", "provenance"):
             assert copies[locale][key] in sources[400], f"Missing updated {locale} {key} copy"
+    sources[400] += lab_inputs.component_text("robot-joint", inputs)
     requested = {}
     for weight, source in sources.items():
         codes = {ord(character) for character in source if ord(character) > 127}
@@ -192,12 +196,12 @@ def verify_css(faces):
     for face, block in zip(faces, blocks, strict=True):
         assert f"font-family: '{FAMILY}'" in block
         assert f"font-weight: {face['weight']}" in block
-        assert "font-display: swap" in block
+        assert "font-display: optional" in block
         assert URL + face["file"] in block
         ranges = re.search(r"unicode-range:\s*([^;]+)", block)[1]
         assert set(re.findall(r"U\+[0-9A-F]+", ranges)) == set(face["codepoints"])
     stack = re.search(r"body\.robot-joint-page\s*\{(.*?)\}", css, re.S)[1]
-    assert re.search(r"'Geist Variable'\s*,\s*'Noto Sans SC Robot Joint'\s*,\s*'Noto Sans SC'", stack)
+    assert re.search(r"'Geist Variable'\s*,\s*'Noto Sans SC Robot Joint'\s*,\s*-apple-system", stack)
     assert "font-family: var(--thermal-font)" in stack
     page = json.loads((COMPONENT / "page.json").read_text(encoding="utf-8"))
     assert page["fonts"]["commonNoto"] is False
@@ -247,9 +251,9 @@ def main():
                     "file": output.name, "bytes": output.stat().st_size, "sha256": base.digest(output.read_bytes()),
                     "codepoints": base.codepoints(coverage), "fallbackCodepoints": base.codepoints(codes - coverage)}
             faces.append(face)
-            css.append("@font-face {\n  font-family: '" + FAMILY + "';\n  font-style: normal;\n  font-display: swap;\n  font-weight: " + str(weight) + ";\n  src: url('" + URL + output.name + "') format('woff2');\n" + css_unicode_range(face["codepoints"]) + "\n}")
+            css.append("@font-face {\n  font-family: '" + FAMILY + "';\n  font-style: normal;\n  font-display: optional;\n  font-weight: " + str(weight) + ";\n  src: url('" + URL + output.name + "') format('woff2');\n" + css_unicode_range(face["codepoints"]) + "\n}")
             print(f"{weight}: {face['bytes']} bytes / {len(coverage)} original codepoints", flush=True)
-        css.append("body.robot-joint-page {\n  --thermal-font:\n    'Geist Variable', 'Noto Sans SC Robot Joint', 'Noto Sans SC', -apple-system, BlinkMacSystemFont,\n    sans-serif;\n  font-family: var(--thermal-font);\n}")
+        css.append("body.robot-joint-page {\n  --thermal-font:\n    'Geist Variable', 'Noto Sans SC Robot Joint', -apple-system, BlinkMacSystemFont,\n    sans-serif;\n  font-family: var(--thermal-font);\n}")
         manifest = {"format": "noto-robot-joint-subsets-v2", "family": FAMILY,
                     "hashEncoding": "Every SHA-256 is eight ordered hexadecimal groups; concatenate without separators for its canonical value.",
                     "package": "@fontsource/noto-sans-sc", "packageVersion": package["version"],
@@ -284,7 +288,7 @@ def main():
               "sourceBindings": inputs, "partsByLocale": parts, "weightMapping": mapping, "license": manifest["license"],
               "manifestSha256": base.digest(MANIFEST.read_bytes()), "cssSha256": base.digest(CSS.read_bytes()),
               "totalBytes": sum(face["bytes"] for face in manifest["faces"]),
-              "checks": ["All Chinese codepoints covered in both robot joint locales and every part", "Original glyph outlines and advance/vertical metrics unchanged", "Four actual original weights 400/500/600/700", "Original license/name/copyright metadata retained", "English secondary Chinese uses the same robot joint font stack", "CSS unicode ranges match verified assets; unused mono preload disabled and all robot joint faces load on demand", "Original global fallback retained"],
+              "checks": ["All Chinese codepoints covered in both robot joint locales and every part", "Original glyph outlines and advance/vertical metrics unchanged", "Four actual original weights 400/500/600/700", "Original license/name/copyright metadata retained", "English secondary Chinese uses the same robot joint font stack", "CSS unicode ranges match verified assets; unused mono preload disabled and all robot joint faces load on demand", "Only the scoped verified Noto subset is registered; system fallback remains"],
               "weightRules": WEIGHT_RULES, "faces": manifest["faces"]}
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)

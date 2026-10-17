@@ -831,3 +831,76 @@ test('robot joint reset fits visible bounds with useful occupancy across callout
     body: JSON.stringify({ observations, keyboardResetRestoredFit: true }, null, 2),
   });
 });
+
+for (const prefix of ['', '/en']) {
+  test(`${prefix} robot joint inherits stable mobile preview and scoped fonts`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    const fonts: string[] = [];
+    page.on('request', (request) => {
+      const pathname = new URL(request.url()).pathname;
+      if (pathname.endsWith('.woff2')) fonts.push(pathname);
+    });
+    let releaseImage!: () => void;
+    const imageGate = new Promise<void>((resolve) => {
+      releaseImage = resolve;
+    });
+    await page.route(/robot-joint-exploded(?:-640)?\.webp(?:\?|$)/, async (imageRoute) => {
+      await imageGate;
+      await imageRoute.continue();
+    });
+    try {
+      await page.goto(`${prefix}/lab/robot-joint/`, { waitUntil: 'domcontentloaded' });
+      const root = page.locator(roots);
+      await expect(root).toHaveAttribute('data-renderer', 'fallback');
+      await page.evaluate(() => document.fonts.ready);
+      const preview = root.locator('[data-l1-preview]');
+      await expect(preview).toBeVisible();
+      expect(await preview.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBe(0);
+      const before = await preview.boundingBox();
+      expect(before!.width).toBeGreaterThan(0);
+      expect(before!.height).toBeGreaterThan(0);
+      releaseImage();
+      await expect
+        .poll(() =>
+          preview.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0),
+        )
+        .toBe(true);
+      const after = await preview.boundingBox();
+      for (const key of ['x', 'y', 'width', 'height'] as const)
+        expect(after![key]).toBeCloseTo(before![key], 3);
+      const buttons = await root.locator('[data-l1-mode]').evaluateAll((modes) =>
+        modes.map((mode) => {
+          const box = mode.getBoundingClientRect();
+          return { top: box.top, height: box.height, width: box.width };
+        }),
+      );
+      expect(
+        Math.max(...buttons.map((button) => button.top)) -
+          Math.min(...buttons.map((button) => button.top)),
+      ).toBeLessThan(1);
+      expect(buttons.every((button) => button.width > 0 && button.height >= 44)).toBe(true);
+      await expect(root.locator('.l1-kicker')).toBeVisible();
+      await expect(root.locator('.l1-kicker')).toHaveText(
+        prefix ? 'L5 · 3D teardown' : 'L5 · 3D 拆解',
+      );
+      await expect(root.locator('.l1-info dt')).toHaveText(
+        prefix ? ['Role', 'Features', 'Common materials'] : ['作用', '特点', '常用材料'],
+      );
+      expect(fonts.filter((url) => /noto-sans-sc-\d+-/.test(url))).toEqual([]);
+      expect(
+        await page
+          .locator('link[rel="stylesheet"]')
+          .evaluateAll((links) =>
+            links
+              .filter((link) => (link as HTMLLinkElement).media !== 'print')
+              .map((link) => link.getAttribute('href')),
+          ),
+      ).toEqual([]);
+    } finally {
+      releaseImage();
+    }
+  });
+}

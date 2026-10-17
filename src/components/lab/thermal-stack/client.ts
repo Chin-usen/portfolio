@@ -1,3 +1,4 @@
+import { scheduleVisibleEnhancement } from '../_shared/visible-enhancement';
 import { thermalCopy, type ThermalLocale, type ThermalTab } from './copy';
 import { DEFAULT_PARAMS, PARAMETER_DEFINITIONS } from './parameters';
 import { evaluate } from './evaluator';
@@ -80,10 +81,8 @@ function initialize(root: HTMLElement): void {
   let disposed = false;
   let frame = 0;
   let announceTimer = 0;
-  let idle = 0;
-  let idleTimeout = 0;
+  let cancelEnhancement: (() => void) | null = null;
   let observer: IntersectionObserver | null = null;
-  let fontsPending = false;
 
   const controlSummary = query<HTMLElement>('[data-control-summary]');
   const updateSummaryPosition = () => {
@@ -409,10 +408,8 @@ function initialize(root: HTMLElement): void {
     if (viewerRequested || disposed) return;
     viewerRequested = true;
     observer?.disconnect();
-    if (idle) window.cancelIdleCallback?.(idle);
-    if (idleTimeout) window.clearTimeout(idleTimeout);
-    idle = 0;
-    idleTimeout = 0;
+    cancelEnhancement?.();
+    cancelEnhancement = null;
     const options = {
       container: canvas!,
       labels: {
@@ -452,24 +449,14 @@ function initialize(root: HTMLElement): void {
   }
 
   function scheduleViewer(): void {
-    if (viewerRequested || idle || idleTimeout || fontsPending || disposed) return;
-    fontsPending = true;
-    // Readable measurements take network/CPU priority over the WebGL enhancement.
-    // A pointer or keyboard interaction below can start the viewer immediately.
-    void document.fonts.ready.then(() => {
-      fontsPending = false;
-      if (viewerRequested || disposed) return;
-      if (typeof window.requestIdleCallback === 'function')
-        idle = window.requestIdleCallback(() => {
-          idle = 0;
-          void initializeViewer();
-        });
-      else
-        idleTimeout = window.setTimeout(() => {
-          idleTimeout = 0;
-          void initializeViewer();
-        }, 0);
-    });
+    if (viewerRequested || cancelEnhancement || disposed) return;
+    cancelEnhancement = scheduleVisibleEnhancement(
+      () => {
+        cancelEnhancement = null;
+        void initializeViewer();
+      },
+      { signal },
+    );
   }
   canvas.addEventListener('pointerdown', () => void initializeViewer(), { signal });
   root.addEventListener(
@@ -509,11 +496,9 @@ function initialize(root: HTMLElement): void {
       observer?.disconnect();
       summaryObserver?.disconnect();
       if (frame) window.cancelAnimationFrame(frame);
-      if (idle) window.cancelIdleCallback?.(idle);
-      if (idleTimeout) window.clearTimeout(idleTimeout);
+      cancelEnhancement?.();
+      cancelEnhancement = null;
       frame = 0;
-      idle = 0;
-      idleTimeout = 0;
       window.clearTimeout(announceTimer);
       viewer?.dispose();
       activeStacks.delete(root);

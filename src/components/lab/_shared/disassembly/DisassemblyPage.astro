@@ -3,7 +3,7 @@ import StageCard from './StageCard.astro';
 import SelectedPartCard from './SelectedPartCard.astro';
 import type { DisassemblyDefinition } from './types';
 // Preserve the established selector vocabulary and cascade for existing pages.
-import './disassembly.css';
+import disassemblyStyles from './disassembly.css?inline';
 interface Props extends DisassemblyDefinition {
   locale: 'zh' | 'en';
   backHref: string;
@@ -19,12 +19,26 @@ const {
   serializedParts,
   ...definition
 } = Astro.props;
-const { parts, copy, defaultPartId, defaultMode, idPrefix } = definition;
+const { parts, copy: pageCopy, defaultPartId, defaultMode, idPrefix } = definition;
+// Shared chrome stays consistent when later page patches supply their own lesson copy.
+const copy = {
+  ...pageCopy,
+  kicker: pageCopy.kicker.replace(
+    /^(L\d+).*$/,
+    locale === 'zh' ? '$1 · 3D 拆解' : '$1 · 3D teardown',
+  ),
+  back: locale === 'zh' ? '返回实验台' : 'Back to lab',
+  role: locale === 'zh' ? '作用' : 'Role',
+  features: locale === 'zh' ? '特点' : 'Features',
+  material: locale === 'zh' ? '常用材料' : 'Common materials',
+};
 const initial = parts.find((part) => part.id === defaultPartId);
 if (!initial) throw new Error(`Unknown default disassembly part: ${defaultPartId}`);
 if (!definition.modes.some((mode) => mode.id === defaultMode))
   throw new Error(`Unknown default disassembly mode: ${defaultMode}`);
 ---
+
+<style is:inline set:html={disassemblyStyles} />
 
 <article
   class={rootClass}
@@ -48,7 +62,7 @@ if (!definition.modes.some((mode) => mode.id === defaultMode))
   </header>
 
   <div class="l1-layout">
-    <StageCard {...definition}>
+    <StageCard {...definition} copy={copy}>
       <slot name="toolbar" slot="toolbar" />
       <slot name="stage-overlay" slot="overlay" />
       <slot name="after-stage" slot="after-stage" />

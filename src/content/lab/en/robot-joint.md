@@ -14,7 +14,7 @@ parts:
     short: 'Housing'
     role: 'Provides a stationary frame, enclosure and heat-transfer path.'
     features: 'The annular shell surrounds the stator and transmission; internal mode hides it and explosion moves it aside.'
-    material: 'Generic placeholder: aluminium alloy'
+    material: 'aluminium alloy'
     order: 0
   - id: 'motor-stator'
     name: 'Motor stator'
@@ -22,7 +22,7 @@ parts:
     short: 'Stator'
     role: 'Winding currents establish the magnetic field that interacts with the rotor to produce torque.'
     features: 'Includes a laminated yoke, teeth and separate winding envelopes; electromagnetic fields and torque are not calculated.'
-    material: 'Generic placeholder: electrical-steel laminations, copper windings and insulation'
+    material: 'electrical-steel laminations, copper windings and insulation'
     order: 1
   - id: 'motor-rotor'
     name: 'Motor rotor'
@@ -30,7 +30,7 @@ parts:
     short: 'Rotor'
     role: 'Transfers motor torque through a hollow input sleeve to the reducer.'
     features: 'Includes a magnet ring, back iron, connecting web and input sleeve; the central passage remains open and rotation is not animated.'
-    material: 'Generic placeholder: steel, permanent-magnet material and structural alloy'
+    material: 'steel, permanent-magnet material and structural alloy'
     order: 2
   - id: 'harmonic-reducer'
     name: 'Harmonic reducer'
@@ -38,7 +38,7 @@ parts:
     short: 'Reducer'
     role: 'Provides the reduction-transmission interface between motor and output flange.'
     features: 'Static rings represent the circular spline, cup flexspline and wave generator; meshing, elastic deformation and ratio are not solved.'
-    material: 'Generic placeholder: alloy steel and bearing steel'
+    material: 'alloy steel and bearing steel'
     order: 3
   - id: 'motor-encoder'
     name: 'Motor incremental encoder'
@@ -46,7 +46,7 @@ parts:
     short: 'Motor encoder'
     role: 'Measures relative motor-side position and speed for motor control feedback.'
     features: 'A graduated ring and fixed readhead illustrate incremental measurement. Initial referencing and auxiliary commutation signals are omitted; resolution is unspecified.'
-    material: 'Generic placeholder: metal scale ring, sensor and electronic packaging'
+    material: 'metal scale ring, semiconductors and encapsulation resin'
     order: 4
   - id: 'output-encoder'
     name: 'Output absolute encoder'
@@ -54,7 +54,7 @@ parts:
     short: 'Output encoder'
     role: 'Measures position after the reducer and provides independent output feedback to the driver.'
     features: 'A magnetic target, fixed sensor and annular circuit board illustrate measurement; they carry no drive power and specify no accuracy.'
-    material: 'Generic placeholder: magnetic material, glass-epoxy board and electronic packaging'
+    material: 'magnetic material, glass-epoxy board and encapsulation resin'
     order: 5
   - id: 'fail-safe-brake'
     name: 'Power-off holding brake'
@@ -62,7 +62,7 @@ parts:
     short: 'Holding brake'
     role: 'Restrains the motor input side with power-off holding force after a controlled stop.'
     features: 'Coil body, friction disc and armature depict a spring-applied, electrically released topology; emergency-stop capability is not claimed.'
-    material: 'Generic placeholder: steel, copper winding and friction material'
+    material: 'steel, copper winding and friction material'
     order: 6
   - id: 'driver-board'
     name: 'Driver board'
@@ -70,7 +70,7 @@ parts:
     short: 'Driver board'
     role: 'Converts DC bus power into motor phase currents and processes feedback and brake-release control.'
     features: 'The annular PCB distinguishes power-stage and controller packages; the external bus, wiring and safety circuit are not modeled.'
-    material: 'Generic placeholder: glass-epoxy board, copper and semiconductor packaging'
+    material: 'glass-epoxy board, copper and semiconductor packaging'
     order: 7
   - id: 'cross-roller-bearing'
     name: 'Cross-roller bearing'
@@ -78,7 +78,7 @@ parts:
     short: 'Cross-roller bearing'
     role: 'Supports rotation between the stationary enclosure and output assembly.'
     features: 'Inner and outer races surround alternating crossed rollers; preload, stiffness, contact stress and capacity are not calculated.'
-    material: 'Generic placeholder: bearing steel'
+    material: 'bearing steel'
     order: 8
   - id: 'hollow-shaft'
     name: 'Hollow cable conduit'
@@ -86,7 +86,7 @@ parts:
     short: 'Cable conduit'
     role: 'Provides a continuous protected cable passage through the joint center.'
     features: 'This model uses a stationary conduit inside the rotating input and output sleeves; cables and seals are omitted.'
-    material: 'Generic placeholder: stainless steel or aluminium alloy'
+    material: 'stainless steel or aluminium alloy'
     order: 9
   - id: 'thermal-pad'
     name: 'Thermal interface sleeve'
@@ -94,7 +94,7 @@ parts:
     short: 'Thermal interface'
     role: 'Represents heat transfer between the stator outer surface and the housing inner wall.'
     features: 'The annular interface connects stator and housing, rather than sitting under the driver PCB; thickness and thermal resistance are schematic.'
-    material: 'Generic placeholder: electrically insulating elastomer with thermally conductive filler'
+    material: 'electrically insulating elastomer with thermally conductive filler'
     order: 10
   - id: 'front-cover'
     name: 'Front cover'
@@ -102,7 +102,7 @@ parts:
     short: 'Front cover'
     role: 'Closes the output-side housing around the rotating output neck.'
     features: 'A stationary ring independent of the output flange; internal mode hides it, and seals and fasteners are omitted.'
-    material: 'Generic placeholder: aluminium alloy'
+    material: 'aluminium alloy'
     order: 11
   - id: 'rear-cover'
     name: 'Rear cover'
@@ -110,7 +110,7 @@ parts:
     short: 'Rear cover'
     role: 'Closes the driver side while retaining a central cable opening.'
     features: 'The stationary cover separates axially and is hidden in internal mode; no ingress-protection rating is specified.'
-    material: 'Generic placeholder: aluminium alloy'
+    material: 'aluminium alloy'
     order: 12
   - id: 'output-flange'
     name: 'Output flange'
@@ -118,7 +118,7 @@ parts:
     short: 'Output flange'
     role: 'Connects to the reducer output and provides the mechanical load interface.'
     features: 'The output sleeve, flange face and hollow neck form a rotating assembly separate from the stationary front cover.'
-    material: 'Generic placeholder: alloy steel or aluminium alloy'
+    material: 'alloy steel or aluminium alloy'
     order: 13
 ---
 

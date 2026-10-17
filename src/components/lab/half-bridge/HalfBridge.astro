@@ -4,8 +4,8 @@ import { localePath } from '../../../i18n/utils';
 import { bridgeCopy } from './copy';
 import { DEFAULT_INDUCTANCE, INDUCTANCE_LIMITS } from './inductance';
 import type { BridgeLocale, PartContent } from './types';
-import './half-bridge-fonts.css';
-import './half-bridge.css';
+import halfBridgeFontStyles from './half-bridge-fonts.css?inline';
+import halfBridgeStyles from './half-bridge.css?inline';
 import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
 interface Props {
   locale: BridgeLocale;
@@ -48,6 +48,12 @@ const poster = {
   alt: copy.staticAlt,
 };
 ---
+
+<style
+  is:inline
+  data-critical-lab="half-bridge"
+  set:html={halfBridgeStyles + '\n' + halfBridgeFontStyles}
+/>
 
 <DisassemblyPage
   locale={locale}

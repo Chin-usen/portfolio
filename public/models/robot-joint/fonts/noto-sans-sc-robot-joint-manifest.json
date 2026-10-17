@@ -54,14 +54,14 @@
     {
       "path": "src/components/lab/_shared/disassembly/DisassemblyPage.astro",
       "sha256": [
-        "e2eb6127",
-        "f2da5ffa",
-        "ffe20569",
-        "40f35457",
-        "e3235ac4",
-        "db7d216c",
-        "e47f4092",
-        "2073c2a2"
+        "5f6b1587",
+        "558b766d",
+        "a14c73bd",
+        "64e4f827",
+        "600f365a",
+        "e282d205",
+        "94cf508a",
+        "125296a4"
       ]
     },
     {
@@ -93,40 +93,131 @@
     {
       "path": "src/components/lab/_shared/disassembly/StageCard.astro",
       "sha256": [
-        "8402c2b8",
-        "1ca39ed4",
-        "587dc751",
-        "6a5fe99a",
-        "55ce1deb",
-        "379f35cc",
-        "838e81f8",
-        "f0106f9f"
+        "df373186",
+        "257570f1",
+        "5861e9e5",
+        "3705eb74",
+        "6bfc013a",
+        "7853ade1",
+        "8abb00cf",
+        "084f3192"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/client.ts",
+      "sha256": [
+        "a0a9a7d8",
+        "7bd22f0f",
+        "49b7d80d",
+        "79ee0eea",
+        "5035ed84",
+        "d4bda880",
+        "676d9234",
+        "79bdc6d2"
       ]
     },
     {
       "path": "src/components/lab/_shared/disassembly/disassembly.css",
       "sha256": [
-        "38906ca0",
-        "223c8bc6",
-        "5173bbfa",
-        "8f7fbab7",
-        "64333656",
-        "d3e22591",
-        "524e3f14",
-        "e100f052"
+        "81eafb53",
+        "5755a078",
+        "460e8b14",
+        "ab624443",
+        "a0a23aa4",
+        "dee96d82",
+        "1ef6b70e",
+        "ed594b76"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/disassembly/types.ts",
+      "sha256": [
+        "ded2fae6",
+        "2768d539",
+        "148294fc",
+        "cf831213",
+        "29c23a05",
+        "5567c8fd",
+        "4126387d",
+        "a2b55047"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/format-number.ts",
+      "sha256": [
+        "6a9c70b4",
+        "8de3f296",
+        "d2a5ed89",
+        "e053dcdc",
+        "25ef7bf0",
+        "37e97418",
+        "7f4a7fb9",
+        "6e1c23c5"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationCard.astro",
+      "sha256": [
+        "e5fca428",
+        "4c229645",
+        "80a7f9c8",
+        "b0616a85",
+        "3128369a",
+        "cca9fc6f",
+        "3a4c0219",
+        "8e5a302a"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/simulation/SimulationShell.astro",
+      "sha256": [
+        "2399c671",
+        "154feccf",
+        "713b33e2",
+        "c5edd7cb",
+        "04118a7f",
+        "bcb9e774",
+        "be1a7945",
+        "1c727b9e"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/viewer-lifetime.ts",
+      "sha256": [
+        "b7e199fb",
+        "b3c06b5b",
+        "c8f5a5b1",
+        "c8bcaa1a",
+        "def8beac",
+        "a5775345",
+        "b5574a9e",
+        "ebd04f6a"
+      ]
+    },
+    {
+      "path": "src/components/lab/_shared/visible-enhancement.ts",
+      "sha256": [
+        "1c213b24",
+        "d3d7f07d",
+        "d4dcbd5d",
+        "dd078841",
+        "dbce0a99",
+        "49c6dde8",
+        "103cd094",
+        "3c75edf9"
       ]
     },
     {
       "path": "src/components/lab/robot-joint/Page.astro",
       "sha256": [
-        "47e05a1b",
-        "22ed38b4",
-        "534ad6f6",
-        "4a1cc861",
-        "2473bdbe",
-        "b6c86d2b",
-        "543695a9",
-        "bde76a5a"
+        "622ede66",
+        "68266bac",
+        "b3427c9d",
+        "dc4c1483",
+        "3ff1d449",
+        "2f04d4f0",
+        "4d6cb26a",
+        "b850e3ec"
       ]
     },
     {
@@ -145,14 +236,14 @@
     {
       "path": "src/components/lab/robot-joint/copy.ts",
       "sha256": [
-        "00313103",
-        "9c3097c6",
-        "66fef152",
-        "72957352",
-        "a9fe494c",
-        "a6910840",
-        "3306aa30",
-        "6e2f72e9"
+        "d4b5fe49",
+        "cde593d8",
+        "1c8cfae9",
+        "b63f36dd",
+        "a20a2310",
+        "c9551b12",
+        "03d48dca",
+        "e3081bf1"
       ]
     },
     {
@@ -184,14 +275,14 @@
     {
       "path": "src/components/lab/robot-joint/model/subset-fonts.py",
       "sha256": [
-        "e2c799fb",
-        "d834d583",
-        "af9e2aa9",
-        "a2c62912",
-        "cdded092",
-        "6d2c1728",
-        "25da9fe8",
-        "3d903b3b"
+        "ae001b2e",
+        "b0364c7f",
+        "b02a65d2",
+        "028b2889",
+        "71b51df4",
+        "8a5789a7",
+        "1318ad81",
+        "45b15200"
       ]
     },
     {
@@ -236,14 +327,14 @@
     {
       "path": "src/components/lab/robot-joint/robot-joint.css",
       "sha256": [
-        "b36c34d5",
-        "d023e206",
-        "aecb6334",
-        "2be80eca",
-        "591c5aa3",
-        "125be976",
-        "14ad8588",
-        "c389c74b"
+        "6432292c",
+        "29047594",
+        "730c3170",
+        "86a0d56f",
+        "3d2cf34e",
+        "8a668ebc",
+        "3e599bdc",
+        "897dd643"
       ]
     },
     {
@@ -288,66 +379,66 @@
     {
       "path": "src/content/lab/en/robot-joint.md",
       "sha256": [
-        "92aa74a3",
-        "d7329797",
-        "96bae269",
-        "74418c97",
-        "32266506",
-        "ed5603ca",
-        "26b7f7e9",
-        "c418bd3c"
+        "fdb89190",
+        "4036f9d9",
+        "472fcc69",
+        "cee59291",
+        "78a4a840",
+        "d2a32b28",
+        "43f0481a",
+        "65c87d09"
       ]
     },
     {
       "path": "src/content/lab/zh/robot-joint.md",
       "sha256": [
-        "f5cb1b3c",
-        "06c8efa0",
-        "d2189f64",
-        "6b37309c",
-        "34d96c88",
-        "c5848b93",
-        "b822e0af",
-        "90ccd7a8"
+        "d69eda70",
+        "30b67413",
+        "7c7ca3aa",
+        "7245b341",
+        "b117fe4a",
+        "8eebc3de",
+        "fe92669d",
+        "afe6a24e"
       ]
     },
     {
       "path": "src/i18n/dictionaries.ts",
       "sha256": [
-        "a3e68136",
-        "86706f3b",
-        "64ae0556",
-        "7e35a98f",
-        "9f925466",
-        "d2e4b200",
-        "9b654728",
-        "41d9b6e0"
+        "5d8f35c2",
+        "6a819dbc",
+        "67724c4d",
+        "9970d757",
+        "c7c8d6b4",
+        "9d627b6a",
+        "f0850cbf",
+        "4cabe0ea"
       ]
     },
     {
       "path": "src/layouts/BaseLayout.astro",
       "sha256": [
-        "7fb4c1d8",
-        "6e1738d8",
-        "3c143f43",
-        "ef7ebb36",
-        "04da9cdd",
-        "bf6da4f6",
-        "44c9e131",
-        "3ce8de43"
+        "43dbca0b",
+        "bb01305a",
+        "c6a126c8",
+        "d281316c",
+        "9d52caea",
+        "e5b48178",
+        "5a614e23",
+        "f3beb46d"
       ]
     },
     {
       "path": "src/styles/global.css",
       "sha256": [
-        "b8746bd8",
-        "fcf03687",
-        "a0dd1904",
-        "cd84185c",
-        "dd2b64d2",
-        "fe3748ed",
-        "ee3c4bbf",
-        "aa484567"
+        "dfdf01de",
+        "6ef012df",
+        "3339402a",
+        "9f939167",
+        "516076b5",
+        "6476a052",
+        "5743cb32",
+        "09b9134e"
       ]
     },
     {
@@ -506,22 +597,23 @@
         "0f9c4c78"
       ],
       "file": "noto-sans-sc-robot-joint-400-normal.woff2",
-      "bytes": 67148,
+      "bytes": 67912,
       "sha256": [
-        "439ae86f",
-        "107737e8",
-        "6d9a46ac",
-        "88f335b6",
-        "8069b8fd",
-        "1417c7b7",
-        "7145265a",
-        "03486e7d"
+        "9e9fcf79",
+        "6edcee5d",
+        "0732ff9f",
+        "a50428bc",
+        "c2a1f6e4",
+        "a789ccb1",
+        "c995f265",
+        "d78f0ded"
       ],
       "codepoints": [
         "U+00A9",
         "U+00B7",
         "U+2039",
         "U+203A",
+        "U+2212",
         "U+3001",
         "U+3002",
         "U+4E00",
@@ -583,6 +675,7 @@
         "U+5206",
         "U+5207",
         "U+5212",
+        "U+5217",
         "U+521A",
         "U+521B",
         "U+521D",
@@ -601,7 +694,7 @@
         "U+533A",
         "U+5341",
         "U+534A",
-        "U+5360",
+        "U+5355",
         "U+5382",
         "U+5386",
         "U+539A",
@@ -691,6 +784,7 @@
         "U+5DF2",
         "U+5E03",
         "U+5E08",
+        "U+5E38",
         "U+5E73",
         "U+5E76",
         "U+5E94",
@@ -782,6 +876,7 @@
         "U+67D4",
         "U+67E5",
         "U+6807",
+        "U+6811",
         "U+683C",
         "U+6846",
         "U+68B0",
@@ -853,6 +948,7 @@
         "U+7BAD",
         "U+7BB1",
         "U+7C27",
+        "U+7C7B",
         "U+7C97",
         "U+7CBE",
         "U+7CFB",
@@ -881,6 +977,7 @@
         "U+8054",
         "U+80CC",
         "U+80FD",
+        "U+8102",
         "U+8179",
         "U+81EA",
         "U+81F3",

@@ -14,7 +14,7 @@ parts:
     short: '壳体'
     role: '提供固定框架、外围防护与散热路径。'
     features: '环形外壳包围定子及传动部件；内部机构模式隐藏，爆炸视图侧向移开。'
-    material: '通用占位示例：铝合金'
+    material: '铝合金'
     order: 0
   - id: 'motor-stator'
     name: '电机定子'
@@ -22,7 +22,7 @@ parts:
     short: '定子'
     role: '通过绕组电流建立磁场，与转子相互作用产生转矩。'
     features: '示意包含叠片轭部、定子齿和分立绕组包络；不计算电磁场或转矩。'
-    material: '通用占位示例：电工钢叠片、铜绕组与绝缘材料'
+    material: '电工钢叠片、铜绕组与绝缘材料'
     order: 1
   - id: 'motor-rotor'
     name: '电机转子'
@@ -30,7 +30,7 @@ parts:
     short: '转子'
     role: '将电机转矩经中空输入套筒传给减速器。'
     features: '包含磁体环、背铁、连接腹板与输入套筒；保留中央通道，不播放转动。'
-    material: '通用占位示例：钢、永磁材料与结构合金'
+    material: '钢、永磁材料与结构合金'
     order: 2
   - id: 'harmonic-reducer'
     name: '谐波减速器'
@@ -38,7 +38,7 @@ parts:
     short: '减速器'
     role: '在电机与输出法兰之间提供减速传动的功能接口。'
     features: '刚轮、杯形柔轮和波发生器以静态环件表达；未求解啮合、弹性变形或速比。'
-    material: '通用占位示例：合金钢与轴承钢'
+    material: '合金钢与轴承钢'
     order: 3
   - id: 'motor-encoder'
     name: '电机侧增量编码器'
@@ -46,7 +46,7 @@ parts:
     short: '电机编码器'
     role: '测量电机侧相对转角与转速，为电机控制提供反馈。'
     features: '刻度环与固定读头组成增量测量示意；初始位置基准与辅助换相信号未展开，不指定分辨率。'
-    material: '通用占位示例：金属刻度环、传感器与电子封装'
+    material: '金属刻度环、半导体与封装树脂'
     order: 4
   - id: 'output-encoder'
     name: '输出侧绝对编码器'
@@ -54,7 +54,7 @@ parts:
     short: '输出编码器'
     role: '测量减速器之后的输出位置，并独立反馈至驱动控制。'
     features: '示意磁目标环、固定传感器与环形电路板；不承载动力，不指定精度。'
-    material: '通用占位示例：磁性材料、玻纤环氧基板与电子封装'
+    material: '磁性材料、玻纤环氧基板与封装树脂'
     order: 5
   - id: 'fail-safe-brake'
     name: '失电保持制动器'
@@ -62,7 +62,7 @@ parts:
     short: '制动器'
     role: '在受控停机后，通过失电施加的保持力约束电机输入侧。'
     features: '示意线圈体、摩擦盘与衔铁；采用弹簧施加、通电释放拓扑，不声称紧急制动能力。'
-    material: '通用占位示例：钢、铜线圈与摩擦材料'
+    material: '钢、铜线圈与摩擦材料'
     order: 6
   - id: 'driver-board'
     name: '驱动板'
@@ -70,7 +70,7 @@ parts:
     short: '驱动板'
     role: '把直流母线电能转换为电机相电流，并处理反馈及制动释放控制。'
     features: '环形电路板上区分功率级与控制器封装；外部母线、线束及安全回路未建模。'
-    material: '通用占位示例：玻纤环氧基板、铜与半导体封装'
+    material: '玻纤环氧基板、铜与半导体封装'
     order: 7
   - id: 'cross-roller-bearing'
     name: '交叉滚子轴承'
@@ -78,7 +78,7 @@ parts:
     short: '交叉滚子轴承'
     role: '在固定外壳与旋转输出之间提供支承。'
     features: '示意内外圈和交替倾斜滚子；不计算预紧、刚度、接触应力或承载能力。'
-    material: '通用占位示例：轴承钢'
+    material: '轴承钢'
     order: 8
   - id: 'hollow-shaft'
     name: '中空导管'
@@ -86,7 +86,7 @@ parts:
     short: '中空导管'
     role: '为电缆通过关节中心提供连续保护通道。'
     features: '此模型中为固定导管，旋转输入与输出套筒位于外侧；电缆与密封未绘出。'
-    material: '通用占位示例：不锈钢或铝合金'
+    material: '不锈钢或铝合金'
     order: 9
   - id: 'thermal-pad'
     name: '导热界面套'
@@ -94,7 +94,7 @@ parts:
     short: '导热界面'
     role: '表示定子外圆与壳体内壁之间的传热界面。'
     features: '环形导热层连接定子与壳体，不是驱动板底部垫片；厚度与热阻均为示意。'
-    material: '通用占位示例：含导热填料的绝缘弹性体'
+    material: '含导热填料的绝缘弹性体'
     order: 10
   - id: 'front-cover'
     name: '前端盖'
@@ -102,7 +102,7 @@ parts:
     short: '前端盖'
     role: '封闭输出侧壳体，围绕旋转输出颈部提供固定边界。'
     features: '独立于输出法兰的固定环件；内部机构模式隐藏，密封与紧固结构省略。'
-    material: '通用占位示例：铝合金'
+    material: '铝合金'
     order: 11
   - id: 'rear-cover'
     name: '后端盖'
@@ -110,7 +110,7 @@ parts:
     short: '后端盖'
     role: '封闭驱动板侧壳体，同时保留中央布线开口。'
     features: '固定端盖沿轴线分离；内部机构模式隐藏，不定义防护等级。'
-    material: '通用占位示例：铝合金'
+    material: '铝合金'
     order: 12
   - id: 'output-flange'
     name: '输出法兰'
@@ -118,7 +118,7 @@ parts:
     short: '输出法兰'
     role: '连接减速器输出并为外部负载提供机械接口。'
     features: '输出套筒、法兰面与中空连接颈部组成旋转组件；与固定前端盖分离。'
-    material: '通用占位示例：合金钢或铝合金'
+    material: '合金钢或铝合金'
     order: 13
 ---
 

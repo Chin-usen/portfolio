@@ -2,10 +2,10 @@ import type { RobotJointMode } from './parts';
 export type RobotJointLocale = 'zh' | 'en';
 export const robotJointCopy = {
   zh: {
-    kicker: 'L5 · 系统拆解',
+    kicker: 'L5 · 3D 拆解',
     title: '一体化机器人关节',
     subtitle: '沿中空轴线拆开十四个部件，追踪电能、转矩与双编码器反馈。',
-    back: '返回实验室',
+    back: '返回实验台',
     stage: '通用中空一体化机器人关节三维拆解',
     modes: '视图选择',
     whole: '完整模块',
@@ -22,7 +22,7 @@ export const robotJointCopy = {
     selected: '当前部件',
     role: '作用',
     features: '特点',
-    material: '材料示例',
+    material: '常用材料',
     noJs: '当前为静态示意。下方保留全部部件说明；启用 JavaScript 后可联动选择和调节分离程度。',
     allParts: '全部部件',
     staticMode: '静态图片保持默认爆炸状态；下方二维分层示意响应分离与选择',
@@ -81,12 +81,12 @@ export const robotJointCopy = {
     brakeNote:
       '制动器表示断电保持的功能拓扑。实际系统需按负载、停机过程与风险分析选择制动及安全回路，本图不构成接线或安全设计。',
     limitsNote:
-      '未计算转矩、热平衡、刚度、寿命、控制性能或安全等级。材料为通用占位示例，不指定厂商、牌号或制造工艺。',
+      '未计算转矩、热平衡、刚度、寿命、控制性能或安全等级。所列为常用材料类别，供理解部件功能；不代表特定产品的材料清单，也不指定厂商、牌号或制造工艺。',
     provenance:
       '原创参数化教学模型；不复刻厂商 CAD、外形或尺寸。静态图片与交互几何来自同一模型生成流程。',
   },
   en: {
-    kicker: 'L5 · SYSTEM TEARDOWN',
+    kicker: 'L5 · 3D teardown',
     title: 'Integrated robot joint',
     subtitle:
       'Separate fourteen parts around a hollow axis. Follow power, torque and dual-encoder feedback.',
@@ -110,7 +110,7 @@ export const robotJointCopy = {
     selected: 'Selected part',
     role: 'Role',
     features: 'Features',
-    material: 'Example material',
+    material: 'Common materials',
     noJs: 'Static schematic. All part details remain below; enable JavaScript for linked selection and separation.',
     allParts: 'All parts',
     staticMode:
@@ -174,7 +174,7 @@ export const robotJointCopy = {
     brakeNote:
       'The brake represents power-off holding as a functional topology. Actual brake and safety circuits depend on load, stopping sequence and risk assessment; this is not a wiring or safety design.',
     limitsNote:
-      'Torque, thermal balance, stiffness, life, control performance and safety ratings are not calculated. Materials are generic placeholders, with no vendor, grade or manufacturing process specified.',
+      'Torque, thermal balance, stiffness, life, control performance and safety ratings are not calculated. Listed materials are common categories for understanding component function, not a product-specific bill of materials; no vendor, grade or manufacturing process is specified.',
     provenance:
       'Original parametric teaching model, without vendor CAD, shape or dimension replication. Static images and interactive geometry use the same model-generation process.',
   },

@@ -1,14 +1,18 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import type { TransitionDirectionalAnimations } from 'astro';
-import '@fontsource-variable/geist';
-import '@fontsource-variable/geist-mono';
+import geistStyles from '@fontsource-variable/geist/index.css?inline';
+import geistMonoStyles from '@fontsource-variable/geist-mono/index.css?inline';
 import geistLatinUrl from '@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url';
 import geistMonoLatinUrl from '@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2?url';
-import '../styles/global.css';
-import '../styles/generated-fonts.css';
-import '../styles/thermal-tokens.css';
-import '../styles/navigation.css';
+import globalStyles from '../styles/global.css?inline';
+import generalFontStyles from '../styles/generated-fonts.css?inline';
+import workDetailFontStyles from '../styles/work-detail-fonts.css?inline';
+import labIndexFontStyles from '../styles/lab-index-composed-fonts.css?inline';
+import labFallbackFontStyles from '../styles/lab-fallback-fonts.css?inline';
+import thermalTokenStyles from '../styles/thermal-tokens.css?inline';
+import navigationStyles from '../styles/navigation.css?inline';
+import printStylesUrl from '../styles/print.css?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { localePath, stripLocale } from '../i18n/utils';
@@ -22,12 +26,51 @@ interface Props {
   noindex?: boolean;
   bodyClass?: string;
   labFonts?: LabFontPolicy;
+  criticalFontPreloads?: readonly string[];
+  workDetailFonts?: boolean;
 }
-const { title, description, locale, noindex = false, bodyClass, labFonts } = Astro.props;
+const {
+  title,
+  description,
+  locale,
+  noindex = false,
+  bodyClass,
+  labFonts,
+  criticalFontPreloads,
+  workDetailFonts = false,
+} = Astro.props;
 const ui = getUi(locale);
 const base = Astro.site ?? new URL(Astro.url.origin);
 const canonical = new URL(Astro.url.pathname, base).href;
 const unlocalizedPath = stripLocale(Astro.url.pathname);
+// Runtime-owned styles keep unrelated laboratory CSS out of the shared import graph.
+const isLab = unlocalizedPath === '/lab' || unlocalizedPath.startsWith('/lab/');
+const isLabIndex = unlocalizedPath === '/lab' || unlocalizedPath === '/lab/';
+const fallbackLab = isLab && !isLabIndex && !labFonts;
+const commonFontPreloads =
+  criticalFontPreloads ??
+  [400, 600, 700].map((weight) => `/fonts/noto-sans-sc-common-${weight}-normal.woff2`);
+const selectedFontStyles = !isLab
+  ? workDetailFonts
+    ? workDetailFontStyles
+    : generalFontStyles
+  : isLabIndex
+    ? labIndexFontStyles
+    : fallbackLab
+      ? labFallbackFontStyles
+      : '';
+const criticalStyles = [
+  geistStyles,
+  geistMonoStyles,
+  globalStyles,
+  thermalTokenStyles,
+  navigationStyles,
+  selectedFontStyles,
+].join('\n');
+const resolvedBodyClass = [bodyClass, fallbackLab ? 'lab-fallback-page' : undefined]
+  .filter(Boolean)
+  .join(' ');
+
 const zhUrl = new URL(localePath('zh', unlocalizedPath), base).href;
 const enUrl = new URL(localePath('en', unlocalizedPath), base).href;
 const image = new URL('/og-default.svg', base).href;
@@ -50,6 +93,9 @@ const pageTransition: TransitionDirectionalAnimations = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
+    <style is:inline data-critical-shell set:html={criticalStyles} />
+    <link rel="stylesheet" href={printStylesUrl} media="print" />
+    <slot name="head" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
@@ -72,15 +118,10 @@ const pageTransition: TransitionDirectionalAnimations = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
     {locale === 'zh' &&
+      !isLab &&
       labFonts?.commonNoto !== false &&
-      [400, 600, 700].map((weight) => (
-        <link
-          rel="preload"
-          as="font"
-          type="font/woff2"
-          crossorigin
-          href={`/fonts/noto-sans-sc-common-${weight}-normal.woff2`}
-        />
+      commonFontPreloads.map((href) => (
+        <link rel="preload" as="font" type="font/woff2" crossorigin href={href} />
       ))}
     <link rel="preload" as="font" type="font/woff2" crossorigin href={geistLatinUrl} />
     {labFonts?.mono && (
@@ -91,7 +132,7 @@ const pageTransition: TransitionDirectionalAnimations = {
     ))}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-  <body class={bodyClass}>
+  <body class={resolvedBodyClass}>
     <a class="skip-link" href="#main-content">
       {ui.common.skipToContent}
     </a>

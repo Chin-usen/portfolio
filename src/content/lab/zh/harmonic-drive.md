@@ -14,7 +14,7 @@ parts:
     short: '输入轴'
     role: '将输入转动传给波发生器。'
     features: '与波发生器同轴旋转；输入相位可手动调整。'
-    material: '通用占位：合金钢'
+    material: '合金钢'
     order: 0
   - id: 'wave-generator'
     name: '波发生器'
@@ -22,7 +22,7 @@ parts:
     short: '波发生器'
     role: '使柔性轴承和柔轮杯口形成随输入旋转的椭圆变形。'
     features: '椭圆轮廓示意；其长轴确定两处啮合区域。'
-    material: '通用占位：合金钢'
+    material: '合金钢'
     order: 1
   - id: 'flexible-bearing'
     name: '柔性轴承'
@@ -30,7 +30,7 @@ parts:
     short: '柔性轴承'
     role: '在波发生器与柔轮之间传递径向变形并容许相对转动。'
     features: '柔性套圈与滚动体示意；不求解保持架、滚动体自转或接触力。'
-    material: '通用占位：轴承钢'
+    material: '高碳铬轴承钢'
     order: 2
   - id: 'flexspline'
     name: '杯形柔轮'
@@ -38,7 +38,7 @@ parts:
     short: '杯形柔轮'
     role: '利用与刚轮的齿数差，将波发生器旋转转换为低速反向输出。'
     features: '默认 200 齿；杯口变形放大 ×4，沿杯深减弱，杯底随输出旋转。'
-    material: '通用占位：弹性合金钢'
+    material: '高强度合金钢'
     order: 3
   - id: 'circular-spline'
     name: '刚轮'
@@ -46,7 +46,7 @@ parts:
     short: '刚轮'
     role: '作为固定内齿圈，约束柔轮的相对运动。'
     features: '齿数始终比柔轮多 2；默认 202 齿。显示径向间隙不代表制造配合。'
-    material: '通用占位：合金钢'
+    material: '合金钢'
     order: 4
   - id: 'cross-roller-bearing'
     name: '交叉滚子轴承'
@@ -54,7 +54,7 @@ parts:
     short: '交叉滚子轴承'
     role: '示意壳体与输出法兰之间的转动支承。'
     features: '滚子交替交叉布置；不计算预紧、刚度或承载能力。'
-    material: '通用占位：轴承钢'
+    material: '高碳铬轴承钢'
     order: 5
   - id: 'output-flange'
     name: '输出法兰'
@@ -62,7 +62,7 @@ parts:
     short: '输出法兰'
     role: '连接柔轮杯底并输出减速后的转动。'
     features: '与柔轮输出同相；默认转速为输入的 −1/100。'
-    material: '通用占位：合金钢'
+    material: '合金钢'
     order: 6
   - id: 'housing'
     name: '壳体'
@@ -70,7 +70,7 @@ parts:
     short: '壳体'
     role: '固定刚轮并提供装配与支承框架。'
     features: '剖开式示意便于观察内部传动；不定义实际接口尺寸。'
-    material: '通用占位：铝合金或钢'
+    material: '铝合金或钢'
     order: 7
   - id: 'endcap'
     name: '端盖'
@@ -78,7 +78,7 @@ parts:
     short: '端盖'
     role: '封闭壳体端部并示意轴向装配关系。'
     features: '爆炸视图中沿轴向分离；密封结构与公差经过简化。'
-    material: '通用占位：铝合金或钢'
+    material: '铝合金或钢'
     order: 8
 ---
 

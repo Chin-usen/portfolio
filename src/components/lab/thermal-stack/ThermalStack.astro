@@ -1,9 +1,8 @@
 ---
-import '@fontsource-variable/geist';
-import '@fontsource-variable/geist-mono';
-import './thermal.css';
-import './thermal-fonts.css';
-import '../../../styles/thermal-tokens.css';
+import thermalStyles from './thermal.css?inline';
+import thermalPrintStylesUrl from './thermal-print.css?url';
+import thermalFontStyles from './thermal-fonts.css?inline';
+
 import { thermalCopy, type ThermalLocale, type ThermalTab } from './copy';
 import { DEFAULT_PARAMS, MATERIAL_PRESETS, PARAMETER_DEFINITIONS } from './parameters';
 import { evaluate } from './evaluator';
@@ -61,6 +60,13 @@ const breakdown = [
   { id: 'convection', name: text.convection, rth: result.rConv, color: colorStops[7] },
 ];
 ---
+
+<style
+  is:inline
+  data-critical-lab="thermal-stack"
+  set:html={thermalStyles + '\n' + thermalFontStyles}
+/>
+<link rel="stylesheet" href={thermalPrintStylesUrl} media="print" />
 
 <SimulationShell
   locale={locale}

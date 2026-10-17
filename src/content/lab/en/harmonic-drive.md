@@ -14,7 +14,7 @@ parts:
     short: 'Input shaft'
     role: 'Transfers input rotation to the wave generator.'
     features: 'Rotates coaxially with the wave generator; input phase is manually adjustable.'
-    material: 'Generic placeholder: alloy steel'
+    material: 'alloy steel'
     order: 0
   - id: 'wave-generator'
     name: 'Wave generator'
@@ -22,7 +22,7 @@ parts:
     short: 'Wave generator'
     role: 'Forms the rotating elliptical deformation of the bearing and flexspline mouth.'
     features: 'Schematic ellipse; its major axis locates the two engagement zones.'
-    material: 'Generic placeholder: alloy steel'
+    material: 'alloy steel'
     order: 1
   - id: 'flexible-bearing'
     name: 'Flexible bearing'
@@ -30,7 +30,7 @@ parts:
     short: 'Flexible bearing'
     role: 'Transfers radial deflection between the wave generator and flexspline while allowing relative rotation.'
     features: 'Schematic flexible races and rolling elements; cage motion, roller spin and contact forces are not solved.'
-    material: 'Generic placeholder: bearing steel'
+    material: 'high-carbon chromium bearing steel'
     order: 2
   - id: 'flexspline'
     name: 'Cup flexspline'
@@ -38,7 +38,7 @@ parts:
     short: 'Cup flexspline'
     role: 'Converts wave-generator rotation into slow reverse output through the tooth-count difference.'
     features: 'Defaults to 200 teeth. Cup-mouth deflection is magnified ×4 and tapers toward the base, which follows the output.'
-    material: 'Generic placeholder: elastic alloy steel'
+    material: 'high-strength alloy steel'
     order: 3
   - id: 'circular-spline'
     name: 'Circular spline'
@@ -46,7 +46,7 @@ parts:
     short: 'Circular spline'
     role: 'Provides the fixed internal teeth that constrain relative flexspline motion.'
     features: 'Always has two more teeth than the flexspline; 202 by default. Display clearance is not a manufacturing fit.'
-    material: 'Generic placeholder: alloy steel'
+    material: 'alloy steel'
     order: 4
   - id: 'cross-roller-bearing'
     name: 'Cross-roller bearing'
@@ -54,7 +54,7 @@ parts:
     short: 'Cross-roller bearing'
     role: 'Illustrates rotational support between the housing and output flange.'
     features: 'Alternately crossed rollers; preload, stiffness and load capacity are not calculated.'
-    material: 'Generic placeholder: bearing steel'
+    material: 'high-carbon chromium bearing steel'
     order: 5
   - id: 'output-flange'
     name: 'Output flange'
@@ -62,7 +62,7 @@ parts:
     short: 'Output flange'
     role: 'Connects to the flexspline base and delivers the reduced output rotation.'
     features: 'Shares the flexspline output angle; default speed is −1/100 of the input.'
-    material: 'Generic placeholder: alloy steel'
+    material: 'alloy steel'
     order: 6
   - id: 'housing'
     name: 'Housing'
@@ -70,7 +70,7 @@ parts:
     short: 'Housing'
     role: 'Fixes the circular spline and provides an assembly and support frame.'
     features: 'A cutaway exposes the mechanism; actual mounting dimensions are not defined.'
-    material: 'Generic placeholder: aluminium alloy or steel'
+    material: 'aluminium alloy or steel'
     order: 7
   - id: 'endcap'
     name: 'End cover'
@@ -78,7 +78,7 @@ parts:
     short: 'End cover'
     role: 'Closes the housing end and illustrates the axial assembly relationship.'
     features: 'Separates axially in the exploded view; seals and tolerances are simplified.'
-    material: 'Generic placeholder: aluminium alloy or steel'
+    material: 'aluminium alloy or steel'
     order: 8
 ---
 

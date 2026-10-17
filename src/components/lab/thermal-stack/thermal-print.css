@@ -1,0 +1,18 @@
+@media print {
+  .thermal-view-actions,
+  .thermal-parameters,
+  .thermal-interaction-hint {
+    display: none;
+  }
+  .thermal-workspace {
+    display: block;
+  }
+  .thermal-stage,
+  .thermal-metrics {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .thermal-model-notes {
+    grid-template-columns: 1fr;
+  }
+}
