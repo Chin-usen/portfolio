@@ -1,0 +1,345 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { localePath } from '../../../i18n/utils';
+import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
+import { formatDisplayNumber } from '../_shared/format-number';
+import { aclCopy, aclModes, type AclLocale } from './copy';
+import { prepareOptics } from './params';
+import { createCameraLayout } from './layout';
+import { createSection } from './section';
+import aclStyles from './automotive-camera-lens.css?inline';
+import aclFonts from './automotive-camera-lens-fonts.css?inline';
+interface Props {
+  locale: AclLocale;
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const copy = aclCopy[locale];
+const parts = [...(entry.data.parts ?? [])].sort((a, b) => a.order - b.order);
+const defaultPartId = 'lens-1';
+const initial = parts.find((part) => part.id === defaultPartId)!;
+const optics = prepareOptics();
+const layout = createCameraLayout(optics);
+const section = createSection(optics, layout);
+const metrics = optics.metrics;
+const partName = (id: string) => parts.find((part) => part.id === id)?.name ?? id;
+const mm = (value: number, digits = 2) => `${formatDisplayNumber(value, digits)} mm`;
+const fieldStyles = ['solid', 'dashed', 'dotted'] as const;
+const elementRows = optics.elements.map((element, index) => ({
+  id: element.id,
+  label: `L${index + 1}`,
+  type: `${element.material === 'glass' ? copy.glass : copy.plastic} · ${
+    element.aspheric ? copy.aspheric : copy.spherical
+  }`,
+  nd: element.nd.toFixed(2),
+  focal: formatDisplayNumber(element.focalLengthMm, 2),
+  material: element.material,
+}));
+const opticalTargets = [
+  ...optics.elements.map((element, index) => ({
+    partId: element.id,
+    label: `L${index + 1}`,
+    material: element.material,
+  })),
+  { partId: 'aperture-stop', label: partName('aperture-stop'), material: 'stop' },
+  { partId: 'ir-cut-filter', label: partName('ir-cut-filter'), material: 'filter' },
+  { partId: 'image-sensor', label: partName('image-sensor'), material: 'sensor' },
+];
+const lensLabel = (id: string) => section.labels.find((label) => label.partId === id);
+const backFocal = optics.imageZ - optics.elements.at(-1)!.zBack;
+const poster = {
+  src: '/models/automotive-camera-lens/automotive-camera-lens-exploded.webp',
+  srcset:
+    '/models/automotive-camera-lens/automotive-camera-lens-exploded-640.webp 640w, /models/automotive-camera-lens/automotive-camera-lens-exploded.webp 1600w',
+  sizes:
+    '(max-width: 652px) calc(100vw - 64px), (max-width: 800px) 588px, (max-width: 1100px) 58vw, 64vw',
+  width: 1600,
+  height: 1400,
+  alt: copy.staticAlt,
+};
+---
+
+<style is:inline set:html={aclStyles + '\n' + aclFonts} />
+<DisassemblyPage
+  locale={locale}
+  copy={copy}
+  parts={parts}
+  modes={aclModes(locale)}
+  defaultPartId={defaultPartId}
+  defaultMode="whole"
+  idPrefix="acl"
+  poster={poster}
+  backHref={localePath(locale, '/lab/')}
+  rootClass="disassembly automotive-camera-lens"
+  rootAttributes={{ 'data-automotive-camera-lens': true, 'data-separation': '1' }}
+>
+  <Fragment slot="after-stage">
+    <p class="acl-static-note">{copy.staticMode}</p>
+    <div class="acl-separation-control">
+      <label for="acl-separation">
+        {copy.separation}
+        <output for="acl-separation" data-acl-separation-output>
+          100%
+        </output>
+      </label>
+      <input
+        id="acl-separation"
+        data-acl-separation
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="100"
+        aria-describedby="acl-separation-note"
+      />
+      <div class="acl-endpoints">
+        <span>{copy.assembled}</span>
+        <span>{copy.exploded}</span>
+      </div>
+      <p id="acl-separation-note" class="acl-note">
+        {copy.separationNote}
+      </p>
+    </div>
+    <details class="acl-keyboard-help">
+      <summary>{copy.keyboardTitle}</summary>
+      <p>{copy.keyboard}</p>
+    </details>
+  </Fragment>
+  <Fragment slot="scale-note">
+    <p class="acl-model-label">{copy.modelScope}</p>
+    <section class="acl-section" aria-labelledby="acl-section-title" data-acl-section>
+      <div class="acl-section-heading">
+        <h2 id="acl-section-title">{copy.sectionTitle}</h2>
+        <p class="acl-disclaimer">{copy.sectionDisclaimer}</p>
+      </div>
+      <p class="acl-section-intro">{copy.sectionIntro}</p>
+      <svg
+        class="acl-diagram"
+        viewBox={section.viewBox}
+        role="group"
+        aria-labelledby="acl-section-description"
+        data-acl-diagram
+      >
+        <title id="acl-section-description">{copy.sectionAlt}</title>
+        <defs>
+          <clipPath id="acl-section-clip">
+            <rect
+              x={section.bounds.x}
+              y={section.bounds.y}
+              width={section.bounds.width}
+              height={section.bounds.height}
+            />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#acl-section-clip)">
+          <g class="acl-mechanics" aria-hidden="true">
+            {section.mechanical.map((shape) => (
+              <path class="acl-mech" d={shape.d} data-l1-select={shape.partId} />
+            ))}
+          </g>
+          <line
+            class="acl-axis"
+            x1={section.axis.x1}
+            x2={section.axis.x2}
+            y1="0"
+            y2="0"
+            aria-hidden="true"
+          />
+          <g class="acl-optics">
+            {opticalTargets.map((target) => (
+              <g
+                class="acl-target"
+                data-l1-select={target.partId}
+                data-acl-kind={target.material}
+                role="button"
+                tabindex="0"
+                aria-pressed={target.partId === defaultPartId ? 'true' : 'false'}
+                aria-label={partName(target.partId)}
+              >
+                {section.optical
+                  .filter((shape) => shape.partId === target.partId)
+                  .map((shape) => (
+                    <>
+                      <path class="acl-hit" d={shape.d} />
+                      <path class="acl-shape" d={shape.d} />
+                    </>
+                  ))}
+                {target.partId === 'aperture-stop' && (
+                  <rect
+                    class="acl-hit"
+                    x={section.stopHit.x}
+                    y={section.stopHit.y}
+                    width={section.stopHit.width}
+                    height={section.stopHit.height}
+                  />
+                )}
+                {lensLabel(target.partId) && (
+                  <text
+                    class="acl-lens-label"
+                    x={lensLabel(target.partId)!.x}
+                    y={lensLabel(target.partId)!.y}
+                    text-anchor="middle"
+                  >
+                    {lensLabel(target.partId)!.text}
+                  </text>
+                )}
+              </g>
+            ))}
+          </g>
+          <g class="acl-rays" aria-hidden="true">
+            {section.rays.map((ray) => (
+              <path
+                class={`acl-ray acl-field-${ray.field}`}
+                data-kind={ray.kind}
+                data-style={fieldStyles[ray.field]}
+                d={ray.d}
+              />
+            ))}
+          </g>
+          <g class="acl-field-labels" aria-hidden="true">
+            {section.fieldStarts.map((start) => (
+              <text
+                class={`acl-field-label acl-field-${start.field}`}
+                x={start.x - 0.25}
+                y={start.y}
+                text-anchor="end"
+                dominant-baseline="middle"
+              >
+                {start.deg}°
+              </text>
+            ))}
+          </g>
+        </g>
+      </svg>
+      <ul class="acl-legend" aria-label={copy.sectionTitle}>
+        {optics.prescription.fieldAnglesDeg.map((deg, field) => (
+          <li>
+            <svg width="30" height="10" viewBox="0 0 30 10" aria-hidden="true">
+              <path
+                d="M 1 5 H 29"
+                class={`acl-ray acl-field-${field}`}
+                data-style={fieldStyles[field]}
+              />
+            </svg>
+            <span>
+              {deg}° {copy.field}
+            </span>
+          </li>
+        ))}
+        <li>
+          <span class="acl-swatch" data-acl-kind="glass" aria-hidden="true"></span>
+          <span>{copy.glass}</span>
+        </li>
+        <li>
+          <span class="acl-swatch" data-acl-kind="plastic" aria-hidden="true"></span>
+          <span>{copy.plastic}</span>
+        </li>
+      </ul>
+      <p class="acl-note">{copy.chiefRay}</p>
+      <div class="acl-section-selection" aria-live="polite" aria-atomic="true">
+        <p>
+          <span>{copy.selected}</span>
+          <strong data-acl-section-name>{initial.name}</strong>
+        </p>
+        <p data-acl-section-role>{initial.role}</p>
+      </div>
+    </section>
+  </Fragment>
+  <Fragment slot="addons">
+    <section class="l1-card acl-paraxial" aria-labelledby="acl-paraxial-title">
+      <h2 class="acl-card-title" id="acl-paraxial-title">
+        {copy.paraxialTitle}
+      </h2>
+      <dl class="acl-metrics">
+        <div>
+          <dt>{copy.efl}</dt>
+          <dd>{mm(metrics.effectiveFocalLengthMm)}</dd>
+        </div>
+        <div>
+          <dt>{copy.fNumber}</dt>
+          <dd>F/{metrics.fNumber.toFixed(1)}</dd>
+        </div>
+        <div>
+          <dt>{copy.halfField}</dt>
+          <dd>{metrics.halfFieldDeg.map((deg) => `${deg}°`).join(' / ')}</dd>
+        </div>
+        <div>
+          <dt>{copy.imageHeight}</dt>
+          <dd>{metrics.imageHeightsMm.map((value) => value.toFixed(2)).join(' / ')} mm</dd>
+        </div>
+        <div>
+          <dt>{copy.stopDiameter}</dt>
+          <dd>{mm(optics.stopRadius * 2)}</dd>
+        </div>
+        <div>
+          <dt>{copy.totalTrack}</dt>
+          <dd>{mm(metrics.totalTrackMm)}</dd>
+        </div>
+        <div>
+          <dt>{copy.backFocal}</dt>
+          <dd>{mm(backFocal)}</dd>
+        </div>
+      </dl>
+      <div class="acl-formula">
+        <p>n′u′ = nu − yφ, φ = (n′ − n) c</p>
+        <p>y₊ = y + u′t, f′ = −y₁ / u′ₖ</p>
+      </div>
+      <table class="acl-elements">
+        <caption>{copy.elementsCaption}</caption>
+        <thead>
+          <tr>
+            <th scope="col">{copy.colElement}</th>
+            <th scope="col">{copy.colType}</th>
+            <th scope="col">{copy.colIndex}</th>
+            <th scope="col">{copy.colFocal}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {elementRows.map((row) => (
+            <tr data-acl-row={row.id}>
+              <th scope="row">
+                <button
+                  type="button"
+                  data-l1-select={row.id}
+                  data-acl-kind={row.material}
+                  aria-pressed={row.id === defaultPartId ? 'true' : 'false'}
+                  aria-label={partName(row.id)}
+                >
+                  {row.label}
+                </button>
+              </th>
+              <td>{row.type}</td>
+              <td>{row.nd}</td>
+              <td>{row.focal}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="acl-note">{copy.paraxialNote}</p>
+    </section>
+  </Fragment>
+  <Fragment slot="notes">
+    <details class="acl-assumptions">
+      <summary>{copy.assumptions}</summary>
+      <div>
+        <h3>{copy.traceTitle}</h3>
+        <div class="acl-formula">
+          <p>n′u′ = nu − yφ, φ = (n′ − n) c, c = 1 / R</p>
+          <p>y₊ = y + u′t, f′ = −y₁ / u′ₖ, D = f′ / F</p>
+          <p>y′ = f′ tan θ</p>
+        </div>
+        <p>{copy.traceTerms}</p>
+        <p>{copy.traceFocal}</p>
+        <p>{copy.asphereNote}</p>
+        <p>{copy.materialNote}</p>
+        <p>{copy.aaNote}</p>
+        <p>{copy.limitsNote}</p>
+      </div>
+    </details>
+    <p class="acl-provenance">{copy.provenance}</p>
+  </Fragment>
+</DisassemblyPage>
+<script>
+  import { initializeAutomotiveCameraLenses } from './client';
+  initializeAutomotiveCameraLenses();
+</script>

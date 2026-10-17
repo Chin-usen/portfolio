@@ -1,0 +1,502 @@
+{
+  "version": 1,
+  "modelKind": "illustrative-automotive-camera-lens",
+  "descriptionEn": "Generic six-element automotive camera lens module for teaching; illustrative paraxial prescription, not a real optical design or a vendor product",
+  "units": "m",
+  "sourceUnits": "mm",
+  "upAxis": "Y",
+  "coordinateTransform": "Optical axis z (mm) -> local +x; root rotated about z by the display tilt and scaled 1/1000 to metres",
+  "optics": {
+    "method": "Paraxial y-nu trace with vertex curvatures; conic/A4 terms shape drawn surfaces only",
+    "prescription": {
+      "fNumber": 2,
+      "fieldAnglesDeg": [0, 15, 30],
+      "elements": [
+        {
+          "id": "lens-1",
+          "material": "glass",
+          "nd": 1.77,
+          "front": { "radius": 14, "conic": 0, "a4": 0 },
+          "back": { "radius": 4.6, "conic": 0, "a4": 0 },
+          "thickness": 1.2,
+          "gapAfter": 2.6,
+          "clearFront": 4.5,
+          "clearBack": 3.8,
+          "outerRadius": 5.6
+        },
+        {
+          "id": "lens-2",
+          "material": "plastic",
+          "nd": 1.53,
+          "front": { "radius": -30, "conic": 0, "a4": 0.0012 },
+          "back": { "radius": 6, "conic": -0.4, "a4": 0 },
+          "thickness": 1,
+          "gapAfter": 1.4,
+          "clearFront": 3.3,
+          "clearBack": 3.2,
+          "outerRadius": 4.3
+        },
+        {
+          "id": "lens-3",
+          "material": "glass",
+          "nd": 1.85,
+          "front": { "radius": 9, "conic": 0, "a4": 0 },
+          "back": { "radius": -12, "conic": 0, "a4": 0 },
+          "thickness": 2.6,
+          "gapAfter": 1.5,
+          "clearFront": 3.3,
+          "clearBack": 3,
+          "outerRadius": 4.3
+        },
+        {
+          "id": "lens-4",
+          "material": "plastic",
+          "nd": 1.53,
+          "front": { "radius": 7, "conic": -1, "a4": -0.001 },
+          "back": { "radius": -5, "conic": 0, "a4": 0 },
+          "thickness": 2.4,
+          "gapAfter": 0.3,
+          "clearFront": 2.9,
+          "clearBack": 3,
+          "outerRadius": 4.3
+        },
+        {
+          "id": "lens-5",
+          "material": "glass",
+          "nd": 1.92,
+          "front": { "radius": -4.6, "conic": 0, "a4": 0 },
+          "back": { "radius": 20, "conic": 0, "a4": 0 },
+          "thickness": 0.7,
+          "gapAfter": 0.3,
+          "clearFront": 3,
+          "clearBack": 3.1,
+          "outerRadius": 4.3
+        },
+        {
+          "id": "lens-6",
+          "material": "plastic",
+          "nd": 1.64,
+          "front": { "radius": 6, "conic": 0, "a4": 0 },
+          "back": { "radius": -20, "conic": 0, "a4": -0.002 },
+          "thickness": 2.2,
+          "gapAfter": 2.4,
+          "clearFront": 3.2,
+          "clearBack": 3.35,
+          "outerRadius": 4.3
+        }
+      ],
+      "stop": { "afterElement": "lens-3", "distanceMm": 0.9, "sheetThicknessMm": 0.1 },
+      "filter": { "nd": 1.52, "thickness": 0.7, "halfWidth": 4.2 },
+      "radialSegments": 96
+    },
+    "metrics": {
+      "effectiveFocalLengthMm": 5.832159,
+      "backFocalDistanceMm": 3.960348,
+      "totalTrackMm": 23.260348,
+      "entrancePupilDiameterMm": 2.916079,
+      "fNumber": 2,
+      "halfFieldDeg": [0, 15, 30],
+      "imageHeightsMm": [0, 1.562722, 3.367199],
+      "filterZ": [18.6, 19.3]
+    },
+    "stopZmm": 9.7,
+    "stopRadiusMm": 2.556041,
+    "elements": [
+      {
+        "id": "lens-1",
+        "material": "glass",
+        "aspheric": false,
+        "nd": 1.77,
+        "focalLengthMm": -9.420667,
+        "zFront": 0,
+        "zBack": 1.2
+      },
+      {
+        "id": "lens-2",
+        "material": "plastic",
+        "aspheric": true,
+        "nd": 1.53,
+        "focalLengthMm": -9.34405,
+        "zFront": 3.8,
+        "zBack": 4.8
+      },
+      {
+        "id": "lens-3",
+        "material": "glass",
+        "aspheric": false,
+        "nd": 1.85,
+        "focalLengthMm": 6.415361,
+        "zFront": 6.2,
+        "zBack": 8.8
+      },
+      {
+        "id": "lens-4",
+        "material": "plastic",
+        "aspheric": true,
+        "nd": 1.53,
+        "focalLengthMm": 5.912789,
+        "zFront": 10.3,
+        "zBack": 12.7
+      },
+      {
+        "id": "lens-5",
+        "material": "glass",
+        "aspheric": false,
+        "nd": 1.92,
+        "focalLengthMm": -4.01036,
+        "zFront": 13,
+        "zBack": 13.7
+      },
+      {
+        "id": "lens-6",
+        "material": "plastic",
+        "aspheric": true,
+        "nd": 1.64,
+        "focalLengthMm": 7.4578,
+        "zFront": 14,
+        "zBack": 16.2
+      }
+    ]
+  },
+  "mechanicalLayoutMm": {
+    "barrelFront": -0.607074,
+    "shoulder": 3.207704,
+    "frontBore": 6.4,
+    "rearBore": 4.3,
+    "hoodOuter": 7.4,
+    "threadCrest": 6,
+    "lipFront": 15.665553,
+    "lipBack": 16.265553,
+    "neckFront": 7.765553,
+    "neckOuter": 7.6,
+    "plateFront": 17.465553,
+    "filterFront": 18.6,
+    "filterBack": 19.3,
+    "imageZ": 23.260348,
+    "aaFront": 23.860348,
+    "pcbFront": 24.210348,
+    "pcbBack": 25.810348,
+    "holderHalf": 10,
+    "skirtInner": 8.5
+  },
+  "parts": [
+    {
+      "id": "lens-1",
+      "partId": "lens-1",
+      "group": "lens-1",
+      "material": "glass",
+      "explodeOffsetMm": [-42.542454384331116, 0, 0],
+      "opticsExplodeOffsetMm": [-9.976621576584426, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "lens-2",
+      "partId": "lens-2",
+      "group": "lens-2",
+      "material": "plastic",
+      "explodeOffsetMm": [-36.524126471535084, 0, 0],
+      "opticsExplodeOffsetMm": [-7.510848078639768, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "lens-3",
+      "partId": "lens-3",
+      "group": "lens-3",
+      "material": "glass",
+      "explodeOffsetMm": [-29.897297913706804, 0, 0],
+      "opticsExplodeOffsetMm": [-5.017622114121998, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "lens-4",
+      "partId": "lens-4",
+      "group": "lens-4",
+      "material": "plastic",
+      "explodeOffsetMm": [-16.986261766614767, 0, 0],
+      "opticsExplodeOffsetMm": [-0.4176221141219969, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "lens-5",
+      "partId": "lens-5",
+      "group": "lens-5",
+      "material": "glass",
+      "explodeOffsetMm": [-9.986261766614774, 0, 0],
+      "opticsExplodeOffsetMm": [3.3952587310454625, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "lens-6",
+      "partId": "lens-6",
+      "group": "lens-6",
+      "material": "plastic",
+      "explodeOffsetMm": [-3.06169278279458, 0, 0],
+      "opticsExplodeOffsetMm": [6.3369693314035995, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "aperture-stop",
+      "partId": "aperture-stop",
+      "group": "aperture-stop",
+      "material": "film",
+      "explodeOffsetMm": [-23.516247952329053, 0, 0],
+      "opticsExplodeOffsetMm": [-2.867622114121998, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "spacer-1",
+      "partId": "spacers",
+      "group": "spacer-1",
+      "material": "metal",
+      "explodeOffsetMm": [-39.542454384331116, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "spacer-2",
+      "partId": "spacers",
+      "group": "spacer-2",
+      "material": "metal",
+      "explodeOffsetMm": [-33.524126471535084, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "spacer-3",
+      "partId": "spacers",
+      "group": "spacer-3",
+      "material": "metal",
+      "explodeOffsetMm": [-26.516247952329053, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "spacer-4",
+      "partId": "spacers",
+      "group": "spacer-4",
+      "material": "metal",
+      "explodeOffsetMm": [-20.516247952329053, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "spacer-5",
+      "partId": "spacers",
+      "group": "spacer-5",
+      "material": "metal",
+      "explodeOffsetMm": [-12.986261766614774, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "spacer-6",
+      "partId": "spacers",
+      "group": "spacer-6",
+      "material": "metal",
+      "explodeOffsetMm": [-6.986261766614774, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "lens-barrel",
+      "partId": "lens-barrel",
+      "group": "lens-barrel",
+      "material": "metal",
+      "explodeOffsetMm": [20.745380800768274, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "retaining-ring",
+      "partId": "retaining-ring",
+      "group": "retaining-ring",
+      "material": "metal",
+      "explodeOffsetMm": [-50.045380800768264, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "o-ring",
+      "partId": "o-ring",
+      "group": "o-ring",
+      "material": "elastomer",
+      "explodeOffsetMm": [-47.89776945286812, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "holder-neck",
+      "partId": "lens-holder",
+      "group": "lens-holder",
+      "material": "polymer",
+      "explodeOffsetMm": [36.245380800768274, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "holder-plate",
+      "partId": "lens-holder",
+      "group": "lens-holder",
+      "material": "polymer",
+      "explodeOffsetMm": [36.245380800768274, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "holder-skirt",
+      "partId": "lens-holder",
+      "group": "lens-holder",
+      "material": "polymer",
+      "explodeOffsetMm": [36.245380800768274, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "ir-cut-filter",
+      "partId": "ir-cut-filter",
+      "group": "ir-cut-filter",
+      "material": "glass",
+      "explodeOffsetMm": [44.50572855558745, 0, 0],
+      "opticsExplodeOffsetMm": [10.936969331403601, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "aa-adhesive-bead",
+      "partId": "aa-adhesive",
+      "group": "aa-adhesive",
+      "material": "adhesive",
+      "explodeOffsetMm": [42.94538080076828, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "sensor-die",
+      "partId": "image-sensor",
+      "group": "image-sensor",
+      "material": "silicon",
+      "explodeOffsetMm": [46.895380800768265, 0, 0],
+      "opticsExplodeOffsetMm": [9.976621576584423, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "sensor-package",
+      "partId": "image-sensor",
+      "group": "image-sensor",
+      "material": "ceramic",
+      "explodeOffsetMm": [46.895380800768265, 0, 0],
+      "opticsExplodeOffsetMm": [9.976621576584423, 0, 0],
+      "schematic": true
+    },
+    {
+      "id": "pcb-board",
+      "partId": "pcb",
+      "group": "pcb",
+      "material": "laminate",
+      "explodeOffsetMm": [49.89538080076828, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "pcb-connector",
+      "partId": "pcb",
+      "group": "pcb",
+      "material": "polymer",
+      "explodeOffsetMm": [49.89538080076828, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    },
+    {
+      "id": "pcb-regulator",
+      "partId": "pcb",
+      "group": "pcb",
+      "material": "polymer",
+      "explodeOffsetMm": [49.89538080076828, 0, 0],
+      "opticsExplodeOffsetMm": null,
+      "schematic": true
+    }
+  ],
+  "groups": {
+    "lens-1": { "nodeNames": ["lens-1"] },
+    "lens-2": { "nodeNames": ["lens-2"] },
+    "lens-3": { "nodeNames": ["lens-3"] },
+    "lens-4": { "nodeNames": ["lens-4"] },
+    "lens-5": { "nodeNames": ["lens-5"] },
+    "lens-6": { "nodeNames": ["lens-6"] },
+    "aperture-stop": { "nodeNames": ["aperture-stop"] },
+    "spacers": {
+      "nodeNames": ["spacer-1", "spacer-2", "spacer-3", "spacer-4", "spacer-5", "spacer-6"]
+    },
+    "lens-barrel": { "nodeNames": ["lens-barrel"] },
+    "retaining-ring": { "nodeNames": ["retaining-ring"] },
+    "o-ring": { "nodeNames": ["o-ring"] },
+    "lens-holder": { "nodeNames": ["holder-neck", "holder-plate", "holder-skirt"] },
+    "ir-cut-filter": { "nodeNames": ["ir-cut-filter"] },
+    "aa-adhesive": { "nodeNames": ["aa-adhesive-bead"] },
+    "image-sensor": { "nodeNames": ["sensor-die", "sensor-package"] },
+    "pcb": { "nodeNames": ["pcb-board", "pcb-connector", "pcb-regulator"] }
+  },
+  "constraints": {
+    "realOpticalDesign": false,
+    "manufacturingQualified": false,
+    "aberrationsSolved": false,
+    "distortionSolved": false,
+    "thermalFocusShiftSolved": false,
+    "toleranceAnalysis": false,
+    "activeAlignmentProcessModelled": false,
+    "sensorCoverGlass": "omitted; active die surface on the paraxial image plane",
+    "explosion": "Groups spread along the optical axis with a 3 mm display gap; lenses leave the barrel through its front"
+  },
+  "reproducibility": {
+    "deterministicScope": "Exact pinned Node and dependency versions; cross-runtime floating-point color serialization is not claimed",
+    "geometrySha256": "7dc59d2244f33c6ec306b979bc15ffaf115a6ebfa34059438f93f3d29194214a",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      "src/components/lab/automotive-camera-lens/params.json": "4943ff7873058e3948ed0a971d6a47de9023949f64a8c1d39e4d62c65c432a51",
+      "src/components/lab/automotive-camera-lens/params.ts": "a1a887f46e92c9c5ec808313d9cf4e527dfc11ef018c44d9cf89fcb1429a291e",
+      "src/components/lab/automotive-camera-lens/optics.ts": "dcca8cb8569d4996cfb20b6cedb3690a5a12567253fe6cb017cfce1060367675",
+      "src/components/lab/automotive-camera-lens/layout.ts": "8fe34e510e946d98c897b7019da4312bf41abf9e3af5a3d386c13c72217edf3d",
+      "src/components/lab/automotive-camera-lens/geometry.ts": "a861ccd1bf89ad9786c4a06ebdc7c36719f703a419f97f79f08884083fc78bc6",
+      "src/components/lab/automotive-camera-lens/model/build.mjs": "432025060aafe9e4d0401a01278459e4592fdd7c9088b0575b4983d131dd7385",
+      "src/components/lab/automotive-camera-lens/model/render.mjs": "099ba6d1738ff2aa25602e7eae3217981253f5707884c71c8e88dc8200404362",
+      "src/components/lab/automotive-camera-lens/model/generate.mjs": "3ad4eafb82dbc1fc0aaeadd4e32df7d547e931302f447bacbb45175ac7f18e19",
+      "src/components/lab/automotive-camera-lens/model/verify.mjs": "ea2dcb81127db7c595e3fa2f061013d099c1480331a2b29bfeb223ad0735370d",
+      ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921"
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/automotive-camera-lens/automotive-camera-lens.glb",
+      "bytes": 288872,
+      "sha256": "33d04d6e22fa90884e43de18b6972b29a038e2132f42b7bfd1c3dc4e9350a6f5",
+      "compression": "EXT_meshopt_compression; 16-bit positions / 10-bit normals"
+    },
+    "explodedWebp": {
+      "path": "/models/automotive-camera-lens/automotive-camera-lens-exploded.webp",
+      "bytes": 44878,
+      "sha256": "d923490de143ae099c776cf4573eebeb51dca56f466ceb3e948fe579f36970cf",
+      "width": 1600,
+      "height": 1400
+    },
+    "explodedWebp640": {
+      "path": "/models/automotive-camera-lens/automotive-camera-lens-exploded-640.webp",
+      "bytes": 19112,
+      "sha256": "197b11cacc7e9d4467db19354aa307d4b91645cf48d09822801c3becafce9080",
+      "width": 640,
+      "height": 560
+    }
+  },
+  "validation": {
+    "namedIndependentMeshes": 26,
+    "totalTriangles": 79448,
+    "finiteGeometry": true,
+    "compressedNodeMetadataPreserved": true
+  },
+  "toolchain": {
+    "node": "22.23.3",
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium"
+  }
+}

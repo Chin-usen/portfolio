@@ -1,0 +1,81 @@
+{
+  "fNumber": 2,
+  "fieldAnglesDeg": [0, 15, 30],
+  "elements": [
+    {
+      "id": "lens-1",
+      "material": "glass",
+      "nd": 1.77,
+      "front": { "radius": 14, "conic": 0, "a4": 0 },
+      "back": { "radius": 4.6, "conic": 0, "a4": 0 },
+      "thickness": 1.2,
+      "gapAfter": 2.6,
+      "clearFront": 4.5,
+      "clearBack": 3.8,
+      "outerRadius": 5.6
+    },
+    {
+      "id": "lens-2",
+      "material": "plastic",
+      "nd": 1.53,
+      "front": { "radius": -30, "conic": 0, "a4": 0.0012 },
+      "back": { "radius": 6, "conic": -0.4, "a4": 0 },
+      "thickness": 1,
+      "gapAfter": 1.4,
+      "clearFront": 3.3,
+      "clearBack": 3.2,
+      "outerRadius": 4.3
+    },
+    {
+      "id": "lens-3",
+      "material": "glass",
+      "nd": 1.85,
+      "front": { "radius": 9, "conic": 0, "a4": 0 },
+      "back": { "radius": -12, "conic": 0, "a4": 0 },
+      "thickness": 2.6,
+      "gapAfter": 1.5,
+      "clearFront": 3.3,
+      "clearBack": 3,
+      "outerRadius": 4.3
+    },
+    {
+      "id": "lens-4",
+      "material": "plastic",
+      "nd": 1.53,
+      "front": { "radius": 7, "conic": -1, "a4": -0.001 },
+      "back": { "radius": -5, "conic": 0, "a4": 0 },
+      "thickness": 2.4,
+      "gapAfter": 0.3,
+      "clearFront": 2.9,
+      "clearBack": 3,
+      "outerRadius": 4.3
+    },
+    {
+      "id": "lens-5",
+      "material": "glass",
+      "nd": 1.92,
+      "front": { "radius": -4.6, "conic": 0, "a4": 0 },
+      "back": { "radius": 20, "conic": 0, "a4": 0 },
+      "thickness": 0.7,
+      "gapAfter": 0.3,
+      "clearFront": 3,
+      "clearBack": 3.1,
+      "outerRadius": 4.3
+    },
+    {
+      "id": "lens-6",
+      "material": "plastic",
+      "nd": 1.64,
+      "front": { "radius": 6, "conic": 0, "a4": 0 },
+      "back": { "radius": -20, "conic": 0, "a4": -0.002 },
+      "thickness": 2.2,
+      "gapAfter": 2.4,
+      "clearFront": 3.2,
+      "clearBack": 3.35,
+      "outerRadius": 4.3
+    }
+  ],
+  "stop": { "afterElement": "lens-3", "distanceMm": 0.9, "sheetThicknessMm": 0.1 },
+  "filter": { "nd": 1.52, "thickness": 0.7, "halfWidth": 4.2 },
+  "radialSegments": 96
+}

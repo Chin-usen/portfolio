@@ -1,0 +1,555 @@
+.automotive-camera-lens {
+  --acl-field-0: #b4471a;
+  --acl-field-1: #1f62a8;
+  --acl-field-2: #6d4c9a;
+  --acl-glass: #cfe2f0;
+  --acl-glass-line: #5f8fb3;
+  --acl-plastic: #d4ead9;
+  --acl-plastic-line: #5e9470;
+  --acl-mech-fill: #e3e6ea;
+  --acl-mech-line: #9aa3ad;
+  --acl-dark: #3b4249;
+}
+.automotive-camera-lens .l1-stage {
+  height: 600px;
+}
+.automotive-camera-lens .l1-modes {
+  border-radius: 16px;
+}
+.automotive-camera-lens .l1-modes button,
+.automotive-camera-lens .l1-reset,
+.automotive-camera-lens .l1-parts button {
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 0.8125rem;
+}
+.automotive-camera-lens .l1-modes button {
+  white-space: nowrap;
+  border-radius: 12px;
+}
+.automotive-camera-lens .l1-labels button {
+  width: 124px;
+  min-width: 124px;
+  max-width: 124px;
+  font-size: 0.8125rem;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.automotive-camera-lens .l1-part-translation {
+  display: block;
+  margin: 6px 0 0;
+}
+.automotive-camera-lens .l1-info dl {
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+.automotive-camera-lens .l1-info dd {
+  margin-bottom: 8px;
+}
+.automotive-camera-lens .l1-hint,
+.automotive-camera-lens .l1-stage-status p,
+.automotive-camera-lens .l1-load-status,
+.automotive-camera-lens .l1-small-label {
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+.automotive-camera-lens input:focus-visible,
+.automotive-camera-lens button:focus-visible,
+.automotive-camera-lens summary:focus-visible {
+  outline: 3px solid var(--l1-blue);
+  outline-offset: 3px;
+}
+.acl-separation-control {
+  border-top: 1px solid var(--thermal-line);
+  padding-block: 14px 4px;
+}
+.acl-separation-control label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.875rem;
+}
+.acl-separation-control output {
+  font-variant-numeric: tabular-nums;
+}
+.automotive-camera-lens input[type='range'] {
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--l1-blue);
+}
+.acl-endpoints {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+}
+.acl-note,
+.acl-model-label,
+.acl-keyboard-help,
+.acl-provenance {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--thermal-secondary);
+}
+.acl-note {
+  margin: 10px 0 0;
+}
+.acl-keyboard-help summary,
+.acl-assumptions summary {
+  min-height: 44px;
+  padding-block: 10px;
+  cursor: pointer;
+  color: var(--thermal-text);
+}
+.acl-keyboard-help p {
+  margin: 0 0 14px;
+  max-width: 70ch;
+}
+.acl-static-note {
+  display: none;
+}
+.automotive-camera-lens[data-renderer='fallback'] .acl-static-note {
+  display: block;
+  margin: 12px 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--thermal-secondary);
+}
+.automotive-camera-lens[data-renderer='fallback'] .acl-separation-control,
+.automotive-camera-lens[data-renderer='fallback'] .acl-keyboard-help {
+  display: none;
+}
+.acl-model-label {
+  margin: 16px 0 0;
+}
+
+/* Ray section */
+.acl-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--thermal-line);
+}
+.acl-section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+}
+.acl-section h2,
+.acl-card-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.acl-disclaimer {
+  margin: 0;
+  padding: 3px 10px;
+  border: 1px solid var(--l1-orange);
+  border-radius: 999px;
+  color: var(--l1-orange);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.acl-section-intro {
+  margin: 8px 0 12px;
+  max-width: 72ch;
+  color: var(--thermal-secondary);
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.acl-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  overflow: visible;
+  font-family: inherit;
+}
+.acl-mech {
+  fill: var(--acl-mech-fill);
+  stroke: var(--acl-mech-line);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition:
+    fill 160ms ease,
+    stroke 160ms ease;
+}
+.acl-mech[aria-pressed='true'] {
+  fill: var(--l1-selected);
+  stroke: var(--l1-blue);
+  stroke-width: 1.6;
+}
+.acl-axis {
+  pointer-events: none;
+  stroke: var(--thermal-secondary);
+  stroke-width: 1;
+  stroke-dasharray: 6 3 1.5 3;
+  vector-effect: non-scaling-stroke;
+}
+.acl-target {
+  cursor: pointer;
+  outline: none;
+}
+.acl-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 12;
+  vector-effect: non-scaling-stroke;
+  pointer-events: all;
+}
+.acl-shape {
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  transition:
+    fill 160ms ease,
+    stroke 160ms ease,
+    stroke-width 160ms ease;
+}
+.acl-target[data-acl-kind='glass'] .acl-shape {
+  fill: var(--acl-glass);
+  stroke: var(--acl-glass-line);
+}
+.acl-target[data-acl-kind='plastic'] .acl-shape {
+  fill: var(--acl-plastic);
+  stroke: var(--acl-plastic-line);
+}
+.acl-target[data-acl-kind='stop'] .acl-shape {
+  fill: var(--acl-dark);
+  stroke: var(--acl-dark);
+}
+.acl-target[data-acl-kind='filter'] .acl-shape {
+  fill: var(--acl-glass);
+  stroke: var(--acl-field-2);
+  stroke-dasharray: 2 1.5;
+}
+.acl-target[data-acl-kind='sensor'] .acl-shape {
+  fill: var(--acl-dark);
+  stroke: var(--acl-dark);
+}
+.acl-target:hover .acl-shape {
+  stroke: var(--l1-blue);
+}
+.acl-target[aria-pressed='true'] .acl-shape {
+  fill: var(--l1-selected);
+  stroke: var(--l1-blue);
+  stroke-width: 2.4;
+  stroke-dasharray: none;
+}
+.acl-target[data-acl-kind='stop'][aria-pressed='true'] .acl-shape,
+.acl-target[data-acl-kind='sensor'][aria-pressed='true'] .acl-shape {
+  fill: var(--l1-blue);
+}
+.acl-target:focus-visible .acl-shape {
+  stroke: var(--thermal-text);
+  stroke-width: 3;
+  stroke-dasharray: 3 2;
+}
+.acl-lens-label,
+.acl-field-label {
+  pointer-events: none;
+  font-size: 0.82px;
+  fill: var(--thermal-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.acl-target[aria-pressed='true'] .acl-lens-label {
+  fill: var(--l1-blue);
+  font-weight: 600;
+}
+.acl-ray {
+  fill: none;
+  stroke: var(--acl-ray);
+  stroke-width: 1.15;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.acl-ray[data-kind='chief'] {
+  stroke-width: 0.85;
+  opacity: 0.85;
+}
+.acl-ray[data-style='dashed'] {
+  stroke-dasharray: 5 3;
+}
+.acl-ray[data-style='dotted'] {
+  stroke-dasharray: 1.4 2.4;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+.acl-field-0 {
+  --acl-ray: var(--acl-field-0);
+  fill: var(--acl-field-0);
+}
+.acl-field-1 {
+  --acl-ray: var(--acl-field-1);
+  fill: var(--acl-field-1);
+}
+.acl-field-2 {
+  --acl-ray: var(--acl-field-2);
+  fill: var(--acl-field-2);
+}
+.acl-legend .acl-ray,
+.acl-rays .acl-ray {
+  fill: none;
+}
+.acl-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 0;
+  margin: 12px 0 0;
+}
+.acl-legend li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.8125rem;
+}
+.acl-legend svg {
+  flex: 0 0 30px;
+}
+.acl-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1.5px solid;
+}
+.acl-swatch[data-acl-kind='glass'] {
+  background: var(--acl-glass);
+  border-color: var(--acl-glass-line);
+}
+.acl-swatch[data-acl-kind='plastic'] {
+  background: var(--acl-plastic);
+  border-color: var(--acl-plastic-line);
+}
+.acl-section-selection {
+  border-top: 1px solid var(--thermal-line);
+  padding: 14px 0 2px;
+  margin-top: 14px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.acl-section-selection p {
+  margin: 0;
+}
+.acl-section-selection p:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 4px;
+}
+.acl-section-selection span,
+.acl-section-selection p:last-child {
+  color: var(--thermal-secondary);
+}
+.acl-section-selection strong {
+  font-weight: 600;
+  color: var(--l1-blue);
+}
+
+/* Paraxial data card */
+.acl-paraxial .acl-card-title {
+  margin-bottom: 14px;
+}
+.acl-metrics {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.acl-metrics div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-block: 7px;
+  border-bottom: 1px solid var(--thermal-line);
+}
+.acl-metrics dt {
+  color: var(--thermal-secondary);
+}
+.acl-metrics dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.acl-formula {
+  margin: 14px 0 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--l1-control);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  font-variant-numeric: tabular-nums;
+}
+.acl-formula p {
+  margin: 0;
+}
+.acl-elements {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+.acl-elements caption {
+  text-align: left;
+  color: var(--thermal-secondary);
+  padding-bottom: 6px;
+}
+.acl-elements th,
+.acl-elements td {
+  padding: 2px 4px;
+  text-align: left;
+  border-bottom: 1px solid var(--thermal-line);
+}
+.acl-elements thead th {
+  font-weight: 400;
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  padding-block: 6px;
+}
+.acl-elements td:nth-child(n + 3),
+.acl-elements thead th:nth-child(n + 3) {
+  text-align: right;
+}
+.acl-elements button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--thermal-text);
+  font: inherit;
+  cursor: pointer;
+}
+.acl-elements button[data-acl-kind='glass'] {
+  box-shadow: inset 3px 0 0 var(--acl-glass-line);
+}
+.acl-elements button[data-acl-kind='plastic'] {
+  box-shadow: inset 3px 0 0 var(--acl-plastic-line);
+}
+.acl-elements button[aria-pressed='true'] {
+  background: var(--l1-selected);
+  color: var(--l1-blue);
+  font-weight: 600;
+}
+.acl-elements tr:has(button[aria-pressed='true']) td {
+  color: var(--l1-blue);
+}
+.acl-elements button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Notes */
+.acl-assumptions {
+  border: 1px solid var(--thermal-line);
+  border-radius: 16px;
+  padding: 8px 20px;
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
+.acl-assumptions summary {
+  font-weight: 600;
+}
+.acl-assumptions > div {
+  max-width: 85ch;
+  padding-block: 8px 14px;
+}
+.acl-assumptions h3 {
+  margin: 8px 0 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--thermal-text);
+}
+.automotive-camera-lens .acl-assumptions p {
+  margin: 10px 0;
+}
+.automotive-camera-lens .acl-assumptions .acl-formula p {
+  margin: 0;
+}
+.automotive-camera-lens .acl-provenance {
+  padding-block: 14px;
+}
+@media (max-width: 1100px) {
+  .automotive-camera-lens .l1-stage {
+    height: 540px;
+  }
+  .automotive-camera-lens .l1-labels,
+  .automotive-camera-lens .l1-leaders {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .automotive-camera-lens .l1-stage {
+    height: 480px;
+  }
+  .automotive-camera-lens .l1-modes {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .automotive-camera-lens .l1-modes button {
+    flex: 1 0 auto;
+  }
+  .automotive-camera-lens .l1-reset {
+    margin-left: auto;
+  }
+  .acl-lens-label,
+  .acl-field-label {
+    font-size: 1.15px;
+  }
+}
+@media (max-width: 420px) {
+  .automotive-camera-lens .l1-stage {
+    height: 360px;
+  }
+  .acl-legend {
+    gap: 8px 12px;
+  }
+  .acl-assumptions {
+    padding-inline: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .acl-mech,
+  .acl-shape {
+    transition: none;
+  }
+}
+:root[data-theme='dark'] .automotive-camera-lens {
+  --acl-field-0: #f0a57c;
+  --acl-field-1: #8fc1fb;
+  --acl-field-2: #c9a8e6;
+  --acl-glass: #1e3a50;
+  --acl-glass-line: #7fb0d8;
+  --acl-plastic: #1f3d2b;
+  --acl-plastic-line: #86c49c;
+  --acl-mech-fill: #2a2e33;
+  --acl-mech-line: #6c7580;
+  --acl-dark: #b7c0c9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .automotive-camera-lens {
+    --acl-field-0: #f0a57c;
+    --acl-field-1: #8fc1fb;
+    --acl-field-2: #c9a8e6;
+    --acl-glass: #1e3a50;
+    --acl-glass-line: #7fb0d8;
+    --acl-plastic: #1f3d2b;
+    --acl-plastic-line: #86c49c;
+    --acl-mech-fill: #2a2e33;
+    --acl-mech-line: #6c7580;
+    --acl-dark: #b7c0c9;
+  }
+}

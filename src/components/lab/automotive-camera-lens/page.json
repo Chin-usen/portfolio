@@ -1,0 +1,12 @@
+{
+  "contractVersion": 1,
+  "slug": "automotive-camera-lens",
+  "code": "L2",
+  "template": "disassembly",
+  "bodyClass": "disassembly-page automotive-camera-lens-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": false,
+    "preload": { "zh": [], "en": [] }
+  }
+}
