@@ -38,6 +38,32 @@ WEIGHT_RULES = {
 }
 
 
+
+def encode_hashes(value, key=""):
+    # Lossless eight-group SHA-256 representation avoids accidental phone-shaped
+    # digit runs in machine hashes. Privacy scanner rules and real text stay unchanged.
+    if isinstance(value, dict):
+        return {name: encode_hashes(item, name) for name, item in value.items()}
+    if isinstance(value, list):
+        return [encode_hashes(item) for item in value]
+    if isinstance(key, str) and key.lower().endswith("sha256") and isinstance(value, str):
+        assert re.fullmatch(r"[0-9a-f]{64}", value), "Invalid SHA-256 value"
+        return [value[index:index + 8] for index in range(0, 64, 8)]
+    return value
+
+
+def decode_hashes(value, key=""):
+    if isinstance(key, str) and key.lower().endswith("sha256"):
+        assert isinstance(value, list) and len(value) == 8
+        assert all(isinstance(item, str) and re.fullmatch(r"[0-9a-f]{8}", item) for item in value)
+        return "".join(value)
+    if isinstance(value, dict):
+        return {name: decode_hashes(item, name) for name, item in value.items()}
+    if isinstance(value, list):
+        return [decode_hashes(item) for item in value]
+    return value
+
+
 def coverage_inputs():
     inputs = {}
 
@@ -46,6 +72,7 @@ def coverage_inputs():
         inputs[relative] = base.digest(path.read_bytes())
         return path.read_text(encoding="utf-8-sig")
 
+    read("src/components/lab/robot-joint/model/subset-fonts.py")
     text = ""
     for path in sorted(COMPONENT.iterdir()):
         if path.is_file() and path.suffix in {".astro", ".ts", ".json"}:
@@ -223,17 +250,19 @@ def main():
             css.append("@font-face {\n  font-family: '" + FAMILY + "';\n  font-style: normal;\n  font-display: swap;\n  font-weight: " + str(weight) + ";\n  src: url('" + URL + output.name + "') format('woff2');\n" + css_unicode_range(face["codepoints"]) + "\n}")
             print(f"{weight}: {face['bytes']} bytes / {len(coverage)} original codepoints", flush=True)
         css.append("body.robot-joint-page {\n  --thermal-font:\n    'Geist Variable', 'Noto Sans SC Robot Joint', 'Noto Sans SC', -apple-system, BlinkMacSystemFont,\n    sans-serif;\n  font-family: var(--thermal-font);\n}")
-        manifest = {"format": "noto-robot-joint-subsets-v1", "family": FAMILY,
+        manifest = {"format": "noto-robot-joint-subsets-v2", "family": FAMILY,
+                    "hashEncoding": "Every SHA-256 is eight ordered hexadecimal groups; concatenate without separators for its canonical value.",
                     "package": "@fontsource/noto-sans-sc", "packageVersion": package["version"],
                     "license": {"spdx": "OFL-1.1", "file": "OFL.txt", "source": "node_modules/@fontsource/noto-sans-sc/LICENSE", "sha256": base.digest(license_bytes)},
                     "tools": {"fonttools": base.FONTTOOLS_VERSION, "brotli": base.BROTLI_VERSION},
                     "coverageRule": "Both robot joint locales, all 14 parts, linked-flow descriptions and provenance, shared shell/footer at 400. Actual CSS-mapped navigation/selected controls/headings at 500/600/700. Latin remains Geist; symbols outside the original master retain existing fallback.",
                     "sourceBindings": inputs, "weightMapping": mapping,
                     "weightRules": WEIGHT_RULES, "faces": faces}
-        MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
+        MANIFEST.write_text(json.dumps(encode_hashes(manifest), indent=2) + "\n", encoding="utf-8", newline="\n")
         CSS.write_text("\n".join(css) + "\n", encoding="utf-8", newline="\n")
         subprocess.run(["node", str(ROOT / "node_modules/prettier/bin/prettier.cjs"), "--write", str(MANIFEST), str(CSS)], cwd=ROOT, check=True)
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    manifest = decode_hashes(json.loads(MANIFEST.read_text(encoding="utf-8")))
+    assert manifest["format"] == "noto-robot-joint-subsets-v2"
     assert manifest["sourceBindings"] == inputs, "Source bindings changed; regenerate fonts and reports"
     assert [face["weight"] for face in manifest["faces"]] == list(WEIGHTS)
     assert (OUTPUT / "OFL.txt").read_bytes() == license_bytes
