@@ -1,0 +1,11 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import PinFinCooler from './PinFinCooler.astro';
+interface Props {
+  locale: 'zh' | 'en';
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+---
+
+<PinFinCooler locale={locale} parts={entry.data.parts ?? []} />

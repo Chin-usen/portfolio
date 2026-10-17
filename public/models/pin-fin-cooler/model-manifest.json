@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "modelKind": "parametric-pin-fin-cold-plate-schematic",
+  "descriptionEn": "Original generic pin-fin cold plate at the default slider values; illustrative simplified geometry, no vendor replication or manufacturing dimensions",
+  "runtime": "The page rebuilds the same geometry from geometry.ts as the sliders change (instanced pins); this GLB is the reproducible default-parameter export used for the static preview",
+  "units": "m",
+  "sourceUnits": "mm",
+  "upAxis": "Y",
+  "coordinateTransform": "mm scaled by 0.001; +X along the flow, +Y normal to the base, +Z across",
+  "parameters": {
+    "flow": 8,
+    "tIn": 40,
+    "heat": 400,
+    "diameter": 2,
+    "pitchT": 2,
+    "pitchL": 2,
+    "height": 8,
+    "width": 50,
+    "length": 80,
+    "arrangement": "staggered",
+    "coolant": "water",
+    "material": "copper"
+  },
+  "parts": [
+    { "id": "base-plate", "name": "base-plate", "nodeName": "base-plate" },
+    { "id": "pin-array", "name": "pin-array", "nodeName": "pin-array" },
+    { "id": "cover", "name": "cover", "nodeName": "cover" },
+    { "id": "inlet-manifold", "name": "inlet-manifold", "nodeName": "inlet-manifold" },
+    { "id": "outlet-manifold", "name": "outlet-manifold", "nodeName": "outlet-manifold" }
+  ],
+  "metrics": { "pinCount": 240 },
+  "reproducibility": {
+    "deterministicScope": "Exact pinned Node and dependency versions; cross-runtime floating-point serialization is not claimed",
+    "geometrySha256": "2fcfb251d662a9f3e17528b45520a75483ae019b0c38c007388bde33fd954df4",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      "src/components/lab/pin-fin-cooler/parameters.ts": "5847192e9376aec50899764773754914b60fdcc7f26f40877f04249303b1e1ce",
+      "src/components/lab/pin-fin-cooler/layout.ts": "55865d1bdb0781f2dfa78f71a4df2e07e84f226bea656c41764e00b890c93b14",
+      "src/components/lab/pin-fin-cooler/geometry.ts": "ff91f3d671f1ca1d231792fd4d834e57283ba6ad2b9f65a213b1d675a8d5b86b",
+      "src/components/lab/pin-fin-cooler/model/build.mjs": "36d0744273a5f7285e275b3c709e0b3e3a3af457fb2b495135b2311402e9f007",
+      "src/components/lab/pin-fin-cooler/model/render.mjs": "4c0aba984726e7fa8a98f95061151a15cfb8097c670d156a06553df5bf052dd3",
+      "src/components/lab/pin-fin-cooler/model/generate.mjs": "af8b5ca82b8ebd9303a00dc598083abcb711b18340023ff877877c7e15f4077b",
+      "src/components/lab/pin-fin-cooler/model/verify.mjs": "7c74ef614ed6ceedaa93a682fdd7966b44f857c1ab0baf1f408d840ac1339854",
+      ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921"
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/pin-fin-cooler/pin-fin-cooler.glb",
+      "bytes": 185416,
+      "sha256": "b666444feb3cfb9be689dd869557a200d9acae42e126539e78a5d5fa97db6165",
+      "compression": "EXT_meshopt_compression; 16-bit positions / 10-bit normals"
+    },
+    "previewWebp": {
+      "path": "/models/pin-fin-cooler/pin-fin-cooler-preview.webp",
+      "bytes": 68270,
+      "sha256": "4fbae949acd66d96df83c96d7f9d3faa4b4bc6d650b59553dda2993b232ac3fe",
+      "width": 1600,
+      "height": 1000
+    },
+    "previewWebp800": {
+      "path": "/models/pin-fin-cooler/pin-fin-cooler-preview-800.webp",
+      "bytes": 32326,
+      "sha256": "ba0503a2b77944111f84cb0071a29ccde4187c231dc5a04249db431355574e67",
+      "width": 800,
+      "height": 500
+    }
+  },
+  "validation": {
+    "namedIndependentMeshes": 5,
+    "totalTriangles": 19464,
+    "finiteGeometry": true,
+    "compressedNodeMetadataPreserved": true
+  },
+  "toolchain": {
+    "node": "22.23.3",
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium"
+  }
+}

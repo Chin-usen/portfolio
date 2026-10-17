@@ -1,0 +1,12 @@
+{
+  "contractVersion": 1,
+  "slug": "pin-fin-cooler",
+  "code": "S3",
+  "template": "simulation",
+  "bodyClass": "thermal-page pin-fin-cooler-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": true,
+    "preload": { "zh": [], "en": [] }
+  }
+}
