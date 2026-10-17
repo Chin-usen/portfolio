@@ -112,6 +112,26 @@
       "5a614e23",
       "f3beb46d"
     ],
+    "src/components/lab/thermal-stack/Page.astro": [
+      "b99eed73",
+      "accc5700",
+      "7ac31b81",
+      "6c32515b",
+      "f4528e00",
+      "4c22ad10",
+      "02cc50f1",
+      "d5da44f1"
+    ],
+    "src/components/lab/thermal-stack/ThermalStack.astro": [
+      "5c4011fe",
+      "b333a11a",
+      "798eef4a",
+      "c90b5f8d",
+      "febfeed2",
+      "a7405b77",
+      "a98f4ca5",
+      "7203eb84"
+    ],
     "src/components/lab/thermal-stack/client.ts": [
       "aca50bd0",
       "43623a9a",
@@ -172,16 +192,6 @@
       "aec31a9f",
       "d5e15871"
     ],
-    "src/components/lab/thermal-stack/Page.astro": [
-      "b99eed73",
-      "accc5700",
-      "7ac31b81",
-      "6c32515b",
-      "f4528e00",
-      "4c22ad10",
-      "02cc50f1",
-      "d5da44f1"
-    ],
     "src/components/lab/thermal-stack/page.json": [
       "cbe40168",
       "08d36c45",
@@ -201,16 +211,6 @@
       "d1ac449b",
       "493f8b38",
       "b646995e"
-    ],
-    "src/components/lab/thermal-stack/ThermalStack.astro": [
-      "5c4011fe",
-      "b333a11a",
-      "798eef4a",
-      "c90b5f8d",
-      "febfeed2",
-      "a7405b77",
-      "a98f4ca5",
-      "7203eb84"
     ],
     "src/components/lab/thermal-stack/types.ts": [
       "ce761fa4",
@@ -252,25 +252,15 @@
       "72b65f85",
       "5fcd45ea"
     ],
-    "src/components/lab/_shared/disassembly/client.ts": [
-      "a0a9a7d8",
-      "7bd22f0f",
-      "49b7d80d",
-      "79ee0eea",
-      "5035ed84",
-      "d4bda880",
-      "676d9234",
-      "79bdc6d2"
-    ],
     "src/components/lab/_shared/disassembly/DisassemblyPage.astro": [
-      "5f6b1587",
-      "558b766d",
-      "a14c73bd",
-      "64e4f827",
-      "600f365a",
-      "e282d205",
-      "94cf508a",
-      "125296a4"
+      "f2447cac",
+      "f06d0ea9",
+      "bda700f9",
+      "628eac1a",
+      "8511364b",
+      "e0f3e7f1",
+      "60bccbe9",
+      "ae4babce"
     ],
     "src/components/lab/_shared/disassembly/PartTags.astro": [
       "f32aecb7",
@@ -293,24 +283,34 @@
       "8d91e6fb"
     ],
     "src/components/lab/_shared/disassembly/StageCard.astro": [
-      "df373186",
-      "257570f1",
-      "5861e9e5",
-      "3705eb74",
-      "6bfc013a",
-      "7853ade1",
-      "8abb00cf",
-      "084f3192"
+      "61bf7be6",
+      "9407f8c3",
+      "c6d8f7b0",
+      "40a1ccdf",
+      "b3ebedb6",
+      "2131619d",
+      "7ef0a589",
+      "8b881817"
+    ],
+    "src/components/lab/_shared/disassembly/client.ts": [
+      "24f7b675",
+      "0132bc33",
+      "18dc052d",
+      "b8d79753",
+      "2a11de18",
+      "a37b4770",
+      "ae816d5d",
+      "7d5d271c"
     ],
     "src/components/lab/_shared/disassembly/types.ts": [
-      "ded2fae6",
-      "2768d539",
-      "148294fc",
-      "cf831213",
-      "29c23a05",
-      "5567c8fd",
-      "4126387d",
-      "a2b55047"
+      "f213db08",
+      "bb4e47f0",
+      "ceaf735b",
+      "b12358a7",
+      "4f1376ad",
+      "f538db76",
+      "aada2dd2",
+      "ce245363"
     ],
     "src/components/lab/_shared/format-number.ts": [
       "6a9c70b4",
@@ -410,8 +410,8 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-thermal-400-normal.woff2",
-      "bytes": 51464,
-      "sha256": "d808894e4c5d9a1fbd0aee636b27a5418bb7ba36942cedd2fa22a75c7ce9f292",
+      "bytes": 52520,
+      "sha256": "a92791f4dfd9f5cb616823cca60a6ae81452d5995bd4f1adda15f17c2cda6610",
       "codepoints": [
         "U+00A9",
         "U+00B0",
@@ -419,6 +419,8 @@
         "U+00B7",
         "U+00D7",
         "U+2013",
+        "U+201C",
+        "U+201D",
         "U+2039",
         "U+203A",
         "U+2212",
@@ -493,6 +495,7 @@
         "U+5305",
         "U+5347",
         "U+5360",
+        "U+5373",
         "U+5374",
         "U+5386",
         "U+539A",
@@ -603,6 +606,7 @@
         "U+65CB",
         "U+65E0",
         "U+65F6",
+        "U+660E",
         "U+662F",
         "U+663E",
         "U+6682",
@@ -723,6 +727,7 @@
         "U+8BE6",
         "U+8BED",
         "U+8BEF",
+        "U+8BF4",
         "U+8BF7",
         "U+8BFB",
         "U+8C03",
@@ -763,7 +768,9 @@
         "U+9676",
         "U+96C6",
         "U+96EA",
+        "U+96F6",
         "U+9700",
+        "U+9759",
         "U+975E",
         "U+9762",
         "U+9875",

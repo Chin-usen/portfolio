@@ -121,6 +121,30 @@
   height: 100%;
   touch-action: pan-y;
 }
+.l1-load3d {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  z-index: 2;
+  transform: translateX(-50%);
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--thermal-card);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+  color: var(--l1-blue);
+  font: inherit;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+.l1-load3d[hidden] {
+  display: none;
+}
+.l1-load3d:focus-visible {
+  outline: 2px solid var(--l1-blue);
+  outline-offset: 2px;
+}
 .l1-leaders {
   position: absolute;
   inset: 0;

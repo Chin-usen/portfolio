@@ -680,6 +680,8 @@ test('harmonic synthesized touch rotates, cancels cleanly and updates native sli
     await capableDevice(page);
     await page.goto('http://127.0.0.1:4322' + route);
     const root = page.locator(roots);
+    // Touch devices wait for an explicit request before loading WebGL.
+    await root.locator('[data-l1-load]').tap();
     await expect(root).toHaveAttribute('data-renderer', 'webgl', { timeout: 30_000 });
     const canvas = root.locator('canvas');
     await canvas.scrollIntoViewIfNeeded();

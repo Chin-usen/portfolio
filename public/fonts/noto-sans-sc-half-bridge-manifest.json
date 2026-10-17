@@ -34,24 +34,24 @@
       "293ee1c8"
     ],
     "src/components/lab/_shared/disassembly/DisassemblyPage.astro": [
-      "5f6b1587",
-      "558b766d",
-      "a14c73bd",
-      "64e4f827",
-      "600f365a",
-      "e282d205",
-      "94cf508a",
-      "125296a4"
+      "f2447cac",
+      "f06d0ea9",
+      "bda700f9",
+      "628eac1a",
+      "8511364b",
+      "e0f3e7f1",
+      "60bccbe9",
+      "ae4babce"
     ],
     "src/components/lab/_shared/disassembly/StageCard.astro": [
-      "df373186",
-      "257570f1",
-      "5861e9e5",
-      "3705eb74",
-      "6bfc013a",
-      "7853ade1",
-      "8abb00cf",
-      "084f3192"
+      "61bf7be6",
+      "9407f8c3",
+      "c6d8f7b0",
+      "40a1ccdf",
+      "b3ebedb6",
+      "2131619d",
+      "7ef0a589",
+      "8b881817"
     ],
     "src/components/lab/_shared/disassembly/SelectedPartCard.astro": [
       "65349c1f",
@@ -214,14 +214,14 @@
       "e1ec58e1"
     ],
     "src/components/lab/_shared/disassembly/disassembly.css": [
-      "81eafb53",
-      "5755a078",
-      "460e8b14",
-      "ab624443",
-      "a0a23aa4",
-      "dee96d82",
-      "1ef6b70e",
-      "ed594b76"
+      "ff7e9774",
+      "6ec2953c",
+      "26ae86ff",
+      "2a70ae7f",
+      "cddd5fee",
+      "855cab70",
+      "ce25c028",
+      "c35d7523"
     ],
     "src/components/lab/half-bridge/half-bridge.css": [
       "e5c3a88b",
@@ -293,6 +293,16 @@
       "462c3788",
       "365afc4b"
     ],
+    "src/components/lab/half-bridge/Page.astro": [
+      "75fd0bd8",
+      "a567c6a3",
+      "f99f36d2",
+      "7390712d",
+      "166dcf2d",
+      "33190567",
+      "0080bc67",
+      "f81ad73a"
+    ],
     "src/components/lab/half-bridge/client.ts": [
       "6dc8162b",
       "3734f9a8",
@@ -312,16 +322,6 @@
       "e66dad07",
       "9dfea770",
       "fc719202"
-    ],
-    "src/components/lab/half-bridge/Page.astro": [
-      "75fd0bd8",
-      "a567c6a3",
-      "f99f36d2",
-      "7390712d",
-      "166dcf2d",
-      "33190567",
-      "0080bc67",
-      "f81ad73a"
     ],
     "src/components/lab/half-bridge/page.json": [
       "000fe62c",
@@ -354,24 +354,24 @@
       "9ec15a04"
     ],
     "src/components/lab/_shared/disassembly/client.ts": [
-      "a0a9a7d8",
-      "7bd22f0f",
-      "49b7d80d",
-      "79ee0eea",
-      "5035ed84",
-      "d4bda880",
-      "676d9234",
-      "79bdc6d2"
+      "24f7b675",
+      "0132bc33",
+      "18dc052d",
+      "b8d79753",
+      "2a11de18",
+      "a37b4770",
+      "ae816d5d",
+      "7d5d271c"
     ],
     "src/components/lab/_shared/disassembly/types.ts": [
-      "ded2fae6",
-      "2768d539",
-      "148294fc",
-      "cf831213",
-      "29c23a05",
-      "5567c8fd",
-      "4126387d",
-      "a2b55047"
+      "f213db08",
+      "bb4e47f0",
+      "ceaf735b",
+      "b12358a7",
+      "4f1376ad",
+      "f538db76",
+      "aada2dd2",
+      "ce245363"
     ],
     "src/components/lab/_shared/format-number.ts": [
       "6a9c70b4",
@@ -457,13 +457,15 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-half-bridge-400-normal.woff2",
-      "bytes": 59632,
-      "sha256": "14a8d4b64b6ddf049296b4bb75610e70c3fdc625afe654377ceedfbe028537a4",
+      "bytes": 60028,
+      "sha256": "30b7f4a28ca06464dc7560d3fc768b4bdf62d5bd700874cd4421b999fd504229",
       "codepoints": [
         "U+00A9",
         "U+00B7",
         "U+00D7",
         "U+2013",
+        "U+201C",
+        "U+201D",
         "U+2039",
         "U+203A",
         "U+2212",
@@ -532,12 +534,14 @@
         "U+5230",
         "U+5236",
         "U+529F",
+        "U+52A0",
         "U+52A8",
         "U+52B3",
         "U+52BF",
         "U+5305",
         "U+5316",
         "U+534A",
+        "U+5373",
         "U+5374",
         "U+5386",
         "U+538B",

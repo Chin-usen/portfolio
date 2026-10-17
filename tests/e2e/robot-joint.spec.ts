@@ -693,6 +693,8 @@ test('robot joint synthesized touch rotates, cancels cleanly and updates native 
     await capableDevice(page);
     await page.goto(String(testInfo.project.use.baseURL) + route);
     const root = page.locator(roots);
+    // Touch devices wait for an explicit request before loading WebGL.
+    await root.locator('[data-l1-load]').tap();
     await expect(root).toHaveAttribute('data-renderer', 'webgl', { timeout: 30_000 });
     const canvas = root.locator('canvas');
     await canvas.scrollIntoViewIfNeeded();

@@ -25,7 +25,7 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/DisassemblyPage.astro",
-      "sha256": "5f6b1587558b766da14c73bd64e4f827600f365ae282d20594cf508a125296a4"
+      "sha256": "f2447cacf06d0ea9bda700f9628eac1a8511364be0f3e7f160bccbe9ae4babce"
     },
     {
       "path": "src/components/lab/_shared/disassembly/PartTags.astro",
@@ -37,19 +37,19 @@
     },
     {
       "path": "src/components/lab/_shared/disassembly/StageCard.astro",
-      "sha256": "df373186257570f15861e9e53705eb746bfc013a7853ade18abb00cf084f3192"
+      "sha256": "61bf7be69407f8c3c6d8f7b040a1ccdfb3ebedb62131619d7ef0a5898b881817"
     },
     {
       "path": "src/components/lab/_shared/disassembly/client.ts",
-      "sha256": "a0a9a7d87bd22f0f49b7d80d79ee0eea5035ed84d4bda880676d923479bdc6d2"
+      "sha256": "24f7b6750132bc3318dc052db8d797532a11de18a37b4770ae816d5d7d5d271c"
     },
     {
       "path": "src/components/lab/_shared/disassembly/disassembly.css",
-      "sha256": "81eafb535755a078460e8b14ab624443a0a23aa4dee96d821ef6b70eed594b76"
+      "sha256": "ff7e97746ec2953c26ae86ff2a70ae7fcddd5fee855cab70ce25c028c35d7523"
     },
     {
       "path": "src/components/lab/_shared/disassembly/types.ts",
-      "sha256": "ded2fae62768d539148294fccf83121329c23a055567c8fd4126387da2b55047"
+      "sha256": "f213db08bb4e47f0ceaf735bb12358a74f1376adf538db76aada2dd2ce245363"
     },
     {
       "path": "src/components/lab/_shared/format-number.ts",
@@ -237,14 +237,16 @@
       "source": "files/noto-sans-sc-chinese-simplified-400-normal.woff2",
       "sourceSha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
       "file": "noto-sans-sc-harmonic-drive-400-normal.woff2",
-      "bytes": 55692,
-      "sha256": "37c7a393c3232cc2c1b7fd0dae19f6dbbfe38d9c02fe5d35c95b0c1acb0055d5",
+      "bytes": 56060,
+      "sha256": "56204d9b97c520eff7abf255f8ebe79cb7ca898ce5f985f71f5f32a4eb6d7963",
       "codepoints": [
         "U+00A9",
         "U+00B0",
         "U+00B7",
         "U+00D7",
         "U+2013",
+        "U+201C",
+        "U+201D",
         "U+2039",
         "U+203A",
         "U+2212",
@@ -324,6 +326,7 @@
         "U+5316",
         "U+533A",
         "U+534A",
+        "U+5373",
         "U+5382",
         "U+5386",
         "U+538B",

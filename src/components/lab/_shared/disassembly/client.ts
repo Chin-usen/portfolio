@@ -65,6 +65,7 @@ export function createDisassemblyController<
   const container = query<HTMLElement>('[data-l1-canvas]');
   const stage = query<HTMLElement>('[data-l1-stage]');
   const preview = query<HTMLImageElement>('[data-l1-preview]');
+  const loadButton = query<HTMLButtonElement>('[data-l1-load]');
   if (!container || !stage) return null;
   const { parts, modes, copy } = options;
   if (
@@ -97,6 +98,11 @@ export function createDisassemblyController<
   let cancelEnhancement: (() => void) | null = null;
   let observer: IntersectionObserver | null = null;
   let observerConnected = false;
+  // Touch devices keep the decoded poster until the visitor asks for WebGL: no
+  // automatic GLB download or main-thread scene build on phones and tablets.
+  const manualLoad = Boolean(loadButton) && window.matchMedia('(pointer: coarse)').matches;
+  let awaitingTap = false;
+  const loadingStatus = query<HTMLElement>('[data-l1-status]')?.textContent ?? '';
   const setText = (selector: string, text: string) => {
     const element = query<HTMLElement>(selector);
     if (element) element.textContent = text;
@@ -193,6 +199,8 @@ export function createDisassemblyController<
     viewer?.dispose();
     root.dataset.renderer = 'fallback';
     if (preview) preview.hidden = false;
+    if (loadButton) loadButton.hidden = true;
+    awaitingTap = false;
     pendingLoad = false;
     setText(
       '[data-l1-status]',
@@ -208,6 +216,12 @@ export function createDisassemblyController<
     }
     requested = true;
     pendingLoad = true;
+    if (awaitingTap) {
+      awaitingTap = false;
+      if (loadButton) loadButton.hidden = true;
+      delete root.dataset.load;
+      setText('[data-l1-status]', loadingStatus);
+    }
     const epoch = ++loadEpoch;
     cancelSchedule();
     try {
@@ -295,8 +309,16 @@ export function createDisassemblyController<
   query<HTMLButtonElement>('[data-l1-reset]')?.addEventListener('click', () => viewer?.reset(), {
     signal,
   });
-  container.addEventListener('pointerdown', () => void loadViewer(), { signal });
+  // While waiting for a tap, touching the stage to scroll must not start WebGL.
+  container.addEventListener(
+    'pointerdown',
+    () => {
+      if (!awaitingTap) void loadViewer();
+    },
+    { signal },
+  );
   container.addEventListener('focusin', () => void loadViewer(), { signal });
+  loadButton?.addEventListener('click', () => void loadViewer(), { signal });
   reduced.addEventListener(
     'change',
     () => {
@@ -355,7 +377,12 @@ export function createDisassemblyController<
   select(selected);
   modePresentation();
   if (staticPreferred()) fallback();
-  else if ('IntersectionObserver' in window) {
+  else if (manualLoad && loadButton) {
+    awaitingTap = true;
+    root.dataset.load = 'manual';
+    loadButton.hidden = false;
+    setText('[data-l1-status]', loadButton.dataset.status ?? loadingStatus);
+  } else if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) schedule();

@@ -31,6 +31,9 @@ export type DisassemblyCopy = {
   material: string;
   noJs: string;
   allParts: string;
+  /** Shared labels supplied by DisassemblyPage for touch-device on-demand loading. */
+  load3d?: string;
+  manualLoad?: string;
 };
 export type DisassemblyDefinition = {
   copy: DisassemblyCopy;

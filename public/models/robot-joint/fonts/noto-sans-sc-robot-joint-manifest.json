@@ -54,14 +54,14 @@
     {
       "path": "src/components/lab/_shared/disassembly/DisassemblyPage.astro",
       "sha256": [
-        "5f6b1587",
-        "558b766d",
-        "a14c73bd",
-        "64e4f827",
-        "600f365a",
-        "e282d205",
-        "94cf508a",
-        "125296a4"
+        "f2447cac",
+        "f06d0ea9",
+        "bda700f9",
+        "628eac1a",
+        "8511364b",
+        "e0f3e7f1",
+        "60bccbe9",
+        "ae4babce"
       ]
     },
     {
@@ -93,53 +93,53 @@
     {
       "path": "src/components/lab/_shared/disassembly/StageCard.astro",
       "sha256": [
-        "df373186",
-        "257570f1",
-        "5861e9e5",
-        "3705eb74",
-        "6bfc013a",
-        "7853ade1",
-        "8abb00cf",
-        "084f3192"
+        "61bf7be6",
+        "9407f8c3",
+        "c6d8f7b0",
+        "40a1ccdf",
+        "b3ebedb6",
+        "2131619d",
+        "7ef0a589",
+        "8b881817"
       ]
     },
     {
       "path": "src/components/lab/_shared/disassembly/client.ts",
       "sha256": [
-        "a0a9a7d8",
-        "7bd22f0f",
-        "49b7d80d",
-        "79ee0eea",
-        "5035ed84",
-        "d4bda880",
-        "676d9234",
-        "79bdc6d2"
+        "24f7b675",
+        "0132bc33",
+        "18dc052d",
+        "b8d79753",
+        "2a11de18",
+        "a37b4770",
+        "ae816d5d",
+        "7d5d271c"
       ]
     },
     {
       "path": "src/components/lab/_shared/disassembly/disassembly.css",
       "sha256": [
-        "81eafb53",
-        "5755a078",
-        "460e8b14",
-        "ab624443",
-        "a0a23aa4",
-        "dee96d82",
-        "1ef6b70e",
-        "ed594b76"
+        "ff7e9774",
+        "6ec2953c",
+        "26ae86ff",
+        "2a70ae7f",
+        "cddd5fee",
+        "855cab70",
+        "ce25c028",
+        "c35d7523"
       ]
     },
     {
       "path": "src/components/lab/_shared/disassembly/types.ts",
       "sha256": [
-        "ded2fae6",
-        "2768d539",
-        "148294fc",
-        "cf831213",
-        "29c23a05",
-        "5567c8fd",
-        "4126387d",
-        "a2b55047"
+        "f213db08",
+        "bb4e47f0",
+        "ceaf735b",
+        "b12358a7",
+        "4f1376ad",
+        "f538db76",
+        "aada2dd2",
+        "ce245363"
       ]
     },
     {
@@ -597,20 +597,22 @@
         "0f9c4c78"
       ],
       "file": "noto-sans-sc-robot-joint-400-normal.woff2",
-      "bytes": 67912,
+      "bytes": 68452,
       "sha256": [
-        "9e9fcf79",
-        "6edcee5d",
-        "0732ff9f",
-        "a50428bc",
-        "c2a1f6e4",
-        "a789ccb1",
-        "c995f265",
-        "d78f0ded"
+        "a197f491",
+        "6a3fb47a",
+        "2e7a79da",
+        "464b5047",
+        "12c89fc0",
+        "6fb76e83",
+        "7a38cc7a",
+        "ac90d7c7"
       ],
       "codepoints": [
         "U+00A9",
         "U+00B7",
+        "U+201C",
+        "U+201D",
         "U+2039",
         "U+203A",
         "U+2212",
@@ -695,6 +697,7 @@
         "U+5341",
         "U+534A",
         "U+5355",
+        "U+5373",
         "U+5382",
         "U+5386",
         "U+539A",
@@ -1066,6 +1069,7 @@
         "U+9669",
         "U+9690",
         "U+96C6",
+        "U+96F6",
         "U+9700",
         "U+9759",
         "U+9762",
