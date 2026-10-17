@@ -58,8 +58,8 @@
       "src/components/lab/busbar-joule-heating/viewer-shared.ts": "0de6d5683a26c81d652972990b30ddc325fd647dfd279a6654d8ec531533b843",
       "src/components/lab/busbar-joule-heating/model/sources.mjs": "682c3859288eb5b9cc63f9aa503142db2680fbecb19845c4340093b2439bda9d",
       "src/components/lab/busbar-joule-heating/model/build.mjs": "09c7c1b77f0869846aee3745cbe54a723a0f2725f725562b26b4a378c4556747",
-      "src/components/lab/busbar-joule-heating/model/render.mjs": "853d773c1a216b007aeaf64cba262a797ec97760b038a6d40ccdbff198ccc17c",
-      "src/components/lab/busbar-joule-heating/model/generate.mjs": "a62a79583c2156887e38fd389a5899deb90012e7729b8a9ccabd2c428dd87121",
+      "src/components/lab/busbar-joule-heating/model/render.mjs": "c1df414199b9345ebafa880b4f2f2ff839af2eaeacd246880eff9e1b00a202a9",
+      "src/components/lab/busbar-joule-heating/model/generate.mjs": "8a6160c40d3d704116b35d4ef0f86624899c867b018ff667e8b9221b9629edf8",
       "src/components/lab/busbar-joule-heating/model/verify.mjs": "f48f3a0a307f59c55ccc971c95ca8da71214f25f4123e255455edd771fc81919",
       "src/components/lab/busbar-joule-heating/model/export-geometry.mjs": "fb6d211cc3fe0f4e4e37619a1dd213f86d5dcb685a6572a3420d87a46843391e",
       "src/components/lab/busbar-joule-heating/model/fem/fem.py": "739077c621b2255c4ead6e3d8938ca767bafd6610f80908ad7da646e6ccf1c31",
@@ -208,6 +208,14 @@
       "width": 800,
       "height": 500,
       "visiblePixels": 124690
+    },
+    "posterWebp480": {
+      "path": "/models/busbar-joule-heating/busbar-default-480.webp",
+      "bytes": 13156,
+      "sha256": "0087543d79bfa393e424c3658e1a82f0c639c360a9dc70277ea2ac0b20f4a5fe",
+      "width": 480,
+      "height": 300,
+      "visiblePixels": 45139
     }
   },
   "toolchain": {

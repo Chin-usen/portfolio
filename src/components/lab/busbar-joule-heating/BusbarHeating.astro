@@ -154,11 +154,11 @@ const posterBase = '/models/busbar-joule-heating/busbar-default';
         class="busbar-poster"
         data-busbar-poster
         src={`${posterBase}-800.webp`}
-        srcset={`${posterBase}-800.webp 800w, ${posterBase}-1600.webp 1600w`}
-        sizes="(max-width: 56rem) 100vw, 60vw"
+        srcset={`${posterBase}-480.webp 480w, ${posterBase}-800.webp 800w, ${posterBase}-1600.webp 1600w`}
+        sizes="(max-width: 37.5rem) 270px, (max-width: 56rem) 80vw, 680px"
         width="1600"
         height="1000"
-        alt={text.stageLabel}
+        alt={text.posterAlt}
         fetchpriority="high"
         decoding="async"
       />
@@ -320,207 +320,6 @@ const posterBase = '/models/busbar-joule-heating/busbar-default';
         ))}
       </div>
     </SimulationCard>
-
-    <SimulationCard
-      class="busbar-card busbar-topology-card"
-      aria-labelledby="busbar-topology-title"
-    >
-      <div class="thermal-section-caption">
-        <h2 id="busbar-topology-title">{text.topology}</h2>
-        <p class="busbar-caption-note">{text.topologyHint}</p>
-      </div>
-      <div class="busbar-topology-layout">
-        <svg
-          class="busbar-topology"
-          viewBox="0 0 330 270"
-          role="group"
-          aria-label={text.topologyLabel}
-        >
-          <defs>
-            <marker
-              id={`busbar-arrow-${locale}`}
-              viewBox="0 0 10 10"
-              refX="8"
-              refY="5"
-              markerWidth="5"
-              markerHeight="5"
-              orient="auto-start-reverse"
-            >
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
-            </marker>
-          </defs>
-          <path
-            class="busbar-path busbar-path-sh"
-            d="M58 40 H180 V136 H284"
-            marker-end={`url(#busbar-arrow-${locale})`}
-          ></path>
-          <path
-            class="busbar-path busbar-path-sl"
-            d="M284 136 H180 V232 H58"
-            marker-end={`url(#busbar-arrow-${locale})`}
-          ></path>
-          <g
-            class="busbar-topology-select"
-            role="button"
-            tabindex="0"
-            data-select-conductor="p-layer"
-            data-conductor="p-layer"
-            aria-pressed="false"
-            aria-label={partOf('p-layer').name}
-          >
-            <path class="busbar-hit" d="M58 40 H190"></path>
-            <path class="busbar-rail" d="M58 40 H190"></path>
-            <circle cx="58" cy="40" r="2.5"></circle>
-            <text x="20" y="44">
-              DC+
-            </text>
-            <text x="100" y="30">
-              {partOf('p-layer').name}
-            </text>
-          </g>
-          <g
-            class="busbar-topology-select"
-            role="button"
-            tabindex="0"
-            data-select-conductor="n-layer"
-            data-conductor="n-layer"
-            aria-pressed="false"
-            aria-label={partOf('n-layer').name}
-          >
-            <path class="busbar-hit" d="M58 232 H190"></path>
-            <path class="busbar-rail" d="M58 232 H190"></path>
-            <circle cx="58" cy="232" r="2.5"></circle>
-            <text x="20" y="236">
-              DC−
-            </text>
-            <text x="100" y="254">
-              {partOf('n-layer').name}
-            </text>
-          </g>
-          <g
-            class="busbar-topology-select"
-            role="button"
-            tabindex="0"
-            data-select-conductor="ac-link"
-            data-conductor="ac-link"
-            aria-pressed="true"
-            aria-label={partOf('ac-link').name}
-          >
-            <path class="busbar-hit" d="M190 136 H286"></path>
-            <path class="busbar-rail" d="M190 136 H286"></path>
-            <circle cx="190" cy="136" r="2.5"></circle>
-            <circle cx="286" cy="136" r="2.5"></circle>
-            <text x="294" y="140">
-              AC
-            </text>
-            <text x="214" y="126">
-              {partOf('ac-link').short}
-            </text>
-          </g>
-          <g
-            class="busbar-switch"
-            role="button"
-            tabindex="0"
-            data-state="sh"
-            aria-pressed="true"
-            aria-label={text.stateSh}
-          >
-            <rect class="busbar-hit" x="157" y="52" width="70" height="65"></rect>
-            <path d="M190 40 V65 H181 V78 M181 84 V98 H190 V136 M174 64 V99 M181 81 H190 M190 65 H206 V98 H190 M200 74 H212 M200 88 L206 78 L212 88 Z"></path>
-            <text x="224" y="84">
-              S
-              <tspan baseline-shift="sub" font-size="10">
-                H
-              </tspan>
-            </text>
-          </g>
-          <g
-            class="busbar-switch"
-            role="button"
-            tabindex="0"
-            data-state="sl"
-            aria-pressed="false"
-            aria-label={text.stateSl}
-          >
-            <rect class="busbar-hit" x="157" y="156" width="70" height="65"></rect>
-            <path d="M190 136 V167 H181 V180 M181 186 V200 H190 V232 M174 166 V201 M181 183 H190 M190 167 H206 V200 H190 M200 176 H212 M200 190 L206 180 L212 190 Z"></path>
-            <text x="224" y="186">
-              S
-              <tspan baseline-shift="sub" font-size="10">
-                L
-              </tspan>
-            </text>
-          </g>
-        </svg>
-        <div class="busbar-state-panel">
-          <div class="busbar-segmented" role="group" aria-label={text.stateLabel}>
-            <button type="button" data-state="sh" aria-pressed="true">
-              {text.stateSh}
-            </button>
-            <button type="button" data-state="sl" aria-pressed="false">
-              {text.stateSl}
-            </button>
-          </div>
-          <p class="busbar-path-text" data-path-text="sh">
-            {text.pathSh}
-          </p>
-          <p class="busbar-path-text" data-path-text="sl">
-            {text.pathSl}
-          </p>
-          <p class="busbar-muted">{text.noShootThrough}</p>
-          <p class="busbar-muted">
-            I / (b·t) = <span data-value="strap-j">{format(result.strapCurrentDensity, 1)}</span>{' '}
-            A/mm²
-          </p>
-        </div>
-      </div>
-    </SimulationCard>
-
-    <SimulationCard
-      class="busbar-card busbar-boundary-card"
-      aria-labelledby="busbar-boundary-title"
-    >
-      <div class="thermal-section-caption">
-        <h2 id="busbar-boundary-title">{text.boundaryTitle}</h2>
-      </div>
-      <ul class="busbar-boundaries">
-        {text.boundaries.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
-      <div class="busbar-formulas" aria-label={text.formulaTitle} role="group">
-        {text.formulas.map((item) => (
-          <code>{item}</code>
-        ))}
-      </div>
-      <p class="busbar-muted">{text.formulaNote}</p>
-    </SimulationCard>
-
-    <SimulationCard class="busbar-card busbar-parts-card" aria-labelledby="busbar-parts-title">
-      <div class="thermal-section-caption">
-        <h2 id="busbar-parts-title">{text.descriptionHeading}</h2>
-      </div>
-      <div class="busbar-parts">
-        {parts.map((part) => (
-          <article class="busbar-part">
-            <h3>
-              {part.name}
-              {part.secondaryName && (
-                <span lang={locale === 'zh' ? 'en' : 'zh-CN'}>{part.secondaryName}</span>
-              )}
-            </h3>
-            <dl>
-              <dt>{text.role}</dt>
-              <dd>{part.role}</dd>
-              <dt>{text.features}</dt>
-              <dd>{part.features}</dd>
-              <dt>{text.material}</dt>
-              <dd>{part.material}</dd>
-            </dl>
-          </article>
-        ))}
-      </div>
-    </SimulationCard>
   </Fragment>
 
   <SimulationCard
@@ -638,20 +437,224 @@ const posterBase = '/models/busbar-joule-heating/busbar-default';
     <p class="sr-only" data-result-live aria-live="polite" aria-atomic="true"></p>
   </SimulationCard>
 
-  <footer slot="notes" class="thermal-model-notes">
-    <div>
-      <p class="thermal-note-label">
-        <span class="thermal-model-dot" aria-hidden="true"></span>
-        <span>{text.modelLabel}</span>
-      </p>
-      <p>{text.modelDescription}</p>
-      <p>{text.limitDisclosure}</p>
+  <Fragment slot="notes">
+    <div class="busbar-reference">
+      <SimulationCard
+        class="busbar-card busbar-topology-card"
+        aria-labelledby="busbar-topology-title"
+      >
+        <div class="thermal-section-caption">
+          <h2 id="busbar-topology-title">{text.topology}</h2>
+          <p class="busbar-caption-note">{text.topologyHint}</p>
+        </div>
+        <div class="busbar-topology-layout">
+          <svg
+            class="busbar-topology"
+            viewBox="0 0 330 270"
+            role="group"
+            aria-label={text.topologyLabel}
+          >
+            <defs>
+              <marker
+                id={`busbar-arrow-${locale}`}
+                viewBox="0 0 10 10"
+                refX="8"
+                refY="5"
+                markerWidth="5"
+                markerHeight="5"
+                orient="auto-start-reverse"
+              >
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+              </marker>
+            </defs>
+            <path
+              class="busbar-path busbar-path-sh"
+              d="M58 40 H180 V136 H284"
+              marker-end={`url(#busbar-arrow-${locale})`}
+            ></path>
+            <path
+              class="busbar-path busbar-path-sl"
+              d="M284 136 H180 V232 H58"
+              marker-end={`url(#busbar-arrow-${locale})`}
+            ></path>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="p-layer"
+              data-conductor="p-layer"
+              aria-pressed="false"
+              aria-label={partOf('p-layer').name}
+            >
+              <path class="busbar-hit" d="M58 40 H190"></path>
+              <path class="busbar-rail" d="M58 40 H190"></path>
+              <circle cx="58" cy="40" r="2.5"></circle>
+              <text x="20" y="44">
+                DC+
+              </text>
+              <text x="100" y="30">
+                {partOf('p-layer').name}
+              </text>
+            </g>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="n-layer"
+              data-conductor="n-layer"
+              aria-pressed="false"
+              aria-label={partOf('n-layer').name}
+            >
+              <path class="busbar-hit" d="M58 232 H190"></path>
+              <path class="busbar-rail" d="M58 232 H190"></path>
+              <circle cx="58" cy="232" r="2.5"></circle>
+              <text x="20" y="236">
+                DC−
+              </text>
+              <text x="100" y="254">
+                {partOf('n-layer').name}
+              </text>
+            </g>
+            <g
+              class="busbar-topology-select"
+              role="button"
+              tabindex="0"
+              data-select-conductor="ac-link"
+              data-conductor="ac-link"
+              aria-pressed="true"
+              aria-label={partOf('ac-link').name}
+            >
+              <path class="busbar-hit" d="M190 136 H286"></path>
+              <path class="busbar-rail" d="M190 136 H286"></path>
+              <circle cx="190" cy="136" r="2.5"></circle>
+              <circle cx="286" cy="136" r="2.5"></circle>
+              <text x="294" y="140">
+                AC
+              </text>
+              <text x="214" y="126">
+                {partOf('ac-link').short}
+              </text>
+            </g>
+            <g
+              class="busbar-switch"
+              role="button"
+              tabindex="0"
+              data-state="sh"
+              aria-pressed="true"
+              aria-label={text.stateSh}
+            >
+              <rect class="busbar-hit" x="157" y="52" width="70" height="65"></rect>
+              <path d="M190 40 V65 H181 V78 M181 84 V98 H190 V136 M174 64 V99 M181 81 H190 M190 65 H206 V98 H190 M200 74 H212 M200 88 L206 78 L212 88 Z"></path>
+              <text x="224" y="84">
+                S
+                <tspan baseline-shift="sub" font-size="10">
+                  H
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="busbar-switch"
+              role="button"
+              tabindex="0"
+              data-state="sl"
+              aria-pressed="false"
+              aria-label={text.stateSl}
+            >
+              <rect class="busbar-hit" x="157" y="156" width="70" height="65"></rect>
+              <path d="M190 136 V167 H181 V180 M181 186 V200 H190 V232 M174 166 V201 M181 183 H190 M190 167 H206 V200 H190 M200 176 H212 M200 190 L206 180 L212 190 Z"></path>
+              <text x="224" y="186">
+                S
+                <tspan baseline-shift="sub" font-size="10">
+                  L
+                </tspan>
+              </text>
+            </g>
+          </svg>
+          <div class="busbar-state-panel">
+            <div class="busbar-segmented" role="group" aria-label={text.stateLabel}>
+              <button type="button" data-state="sh" aria-pressed="true">
+                {text.stateSh}
+              </button>
+              <button type="button" data-state="sl" aria-pressed="false">
+                {text.stateSl}
+              </button>
+            </div>
+            <p class="busbar-path-text" data-path-text="sh">
+              {text.pathSh}
+            </p>
+            <p class="busbar-path-text" data-path-text="sl">
+              {text.pathSl}
+            </p>
+            <p class="busbar-muted">{text.noShootThrough}</p>
+            <p class="busbar-muted">
+              I / (b·t) = <span data-value="strap-j">{format(result.strapCurrentDensity, 1)}</span>{' '}
+              A/mm²
+            </p>
+          </div>
+        </div>
+      </SimulationCard>
+
+      <SimulationCard
+        class="busbar-card busbar-boundary-card"
+        aria-labelledby="busbar-boundary-title"
+      >
+        <div class="thermal-section-caption">
+          <h2 id="busbar-boundary-title">{text.boundaryTitle}</h2>
+        </div>
+        <ul class="busbar-boundaries">
+          {text.boundaries.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <div class="busbar-formulas" aria-label={text.formulaTitle} role="group">
+          {text.formulas.map((item) => (
+            <code>{item}</code>
+          ))}
+        </div>
+        <p class="busbar-muted">{text.formulaNote}</p>
+      </SimulationCard>
+
+      <SimulationCard class="busbar-card busbar-parts-card" aria-labelledby="busbar-parts-title">
+        <div class="thermal-section-caption">
+          <h2 id="busbar-parts-title">{text.descriptionHeading}</h2>
+        </div>
+        <div class="busbar-parts">
+          {parts.map((part) => (
+            <article class="busbar-part">
+              <h3>
+                {part.name}
+                {part.secondaryName && (
+                  <span lang={locale === 'zh' ? 'en' : 'zh-CN'}>{part.secondaryName}</span>
+                )}
+              </h3>
+              <dl>
+                <dt>{text.role}</dt>
+                <dd>{part.role}</dd>
+                <dt>{text.features}</dt>
+                <dd>{part.features}</dd>
+                <dt>{text.material}</dt>
+                <dd>{part.material}</dd>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </SimulationCard>
     </div>
-    <div>
-      <p class="thermal-note-label">{text.validationLabel}</p>
-      <p data-validation>{validationText}</p>
-    </div>
-  </footer>
+    <footer class="thermal-model-notes">
+      <div>
+        <p class="thermal-note-label">
+          <span class="thermal-model-dot" aria-hidden="true"></span>
+          <span>{text.modelLabel}</span>
+        </p>
+        <p>{text.modelDescription}</p>
+        <p>{text.limitDisclosure}</p>
+      </div>
+      <div>
+        <p class="thermal-note-label">{text.validationLabel}</p>
+        <p data-validation>{validationText}</p>
+      </div>
+    </footer>
+  </Fragment>
 </SimulationShell>
 
 <script>

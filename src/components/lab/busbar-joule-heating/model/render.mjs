@@ -35,7 +35,10 @@ function render() {
   const small = document.createElement('canvas'); small.width = ${WIDTH / 2}; small.height = ${HEIGHT / 2};
   const context = small.getContext('2d'); context.imageSmoothingEnabled = true; context.imageSmoothingQuality = 'high';
   context.drawImage(renderer.domElement, 0, 0, small.width, small.height);
-  return { webp: renderer.domElement.toDataURL('image/webp', 0.9), small: small.toDataURL('image/webp', 0.9), png: renderer.domElement.toDataURL('image/png'), meshes };
+  const phone = document.createElement('canvas'); phone.width = 480; phone.height = 300;
+  const phoneContext = phone.getContext('2d'); phoneContext.imageSmoothingEnabled = true; phoneContext.imageSmoothingQuality = 'high';
+  phoneContext.drawImage(renderer.domElement, 0, 0, phone.width, phone.height);
+  return { webp: renderer.domElement.toDataURL('image/webp', 0.9), small: small.toDataURL('image/webp', 0.9), phone: phone.toDataURL('image/webp', 0.85), png: renderer.domElement.toDataURL('image/png'), meshes };
 }
 window.modelRender = render; window.modelReady = true;
 </script>`;
@@ -87,11 +90,12 @@ export async function renderPoster({ root, glb, outputs, evidence }) {
     const first = await page.evaluate(() => window.modelRender());
     const second = await page.evaluate(() => window.modelRender());
     if (failures.length) throw new Error(failures.join('\n'));
-    if (first.webp !== second.webp || first.small !== second.small)
+    if (first.webp !== second.webp || first.small !== second.small || first.phone !== second.phone)
       throw new Error('Same-session repeated WebP rendering differs');
     const large = Buffer.from(first.webp.split(',')[1], 'base64');
     const small = Buffer.from(first.small.split(',')[1], 'base64');
-    for (const image of [large, small])
+    const phone = Buffer.from(first.phone.split(',')[1], 'base64');
+    for (const image of [large, small, phone])
       if (image.subarray(0, 4).toString() !== 'RIFF' || image.subarray(8, 12).toString() !== 'WEBP')
         throw new Error('Browser did not encode a WebP');
     const decode = (uri) =>
@@ -111,6 +115,9 @@ export async function renderPoster({ root, glb, outputs, evidence }) {
       }, uri);
     const largeInfo = await decode(first.webp);
     const smallInfo = await decode(first.small);
+    const phoneInfo = await decode(first.phone);
+    if (phoneInfo.width !== 480 || phoneInfo.height !== 300 || phoneInfo.visiblePixels < 9_000)
+      throw new Error('Empty or invalid phone poster');
     if (
       largeInfo.width !== WIDTH ||
       largeInfo.height !== HEIGHT ||
@@ -121,6 +128,7 @@ export async function renderPoster({ root, glb, outputs, evidence }) {
       throw new Error('Empty or invalid responsive poster');
     await writeFile(outputs.large, large);
     await writeFile(outputs.small, small);
+    await writeFile(outputs.phone, phone);
     if (evidence)
       await writeFile(
         path.join(evidence, 'busbar-default.png'),
@@ -131,6 +139,7 @@ export async function renderPoster({ root, glb, outputs, evidence }) {
     return {
       large: { path: rel(outputs.large), bytes: large.length, sha256: sha(large), ...largeInfo },
       small: { path: rel(outputs.small), bytes: small.length, sha256: sha(small), ...smallInfo },
+      phone: { path: rel(outputs.phone), bytes: phone.length, sha256: sha(phone), ...phoneInfo },
       meshCount: first.meshes,
       repeatedWebpEqual: true,
       browserVersion: browser.version(),

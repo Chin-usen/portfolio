@@ -34,6 +34,7 @@ const rendering = await renderPoster({
   outputs: {
     large: path.join(publicDir, 'busbar-default-1600.webp'),
     small: path.join(publicDir, 'busbar-default-800.webp'),
+    phone: path.join(publicDir, 'busbar-default-480.webp'),
   },
   evidence,
 });
@@ -92,6 +93,7 @@ const manifest = {
     },
     posterWebp: { ...rendering.large },
     posterWebp800: { ...rendering.small },
+    posterWebp480: { ...rendering.phone },
   },
   toolchain: {
     node: process.versions.node,

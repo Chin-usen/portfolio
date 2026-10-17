@@ -14,6 +14,7 @@ export const busbarCopy = {
     loading: '正在准备交互模型',
     load3d: '加载 3D 模型',
     loadPlan: '显示二维场分布',
+    posterAlt: '默认工况下 P 层、AC 连接片与 N 层的温度场静态预览',
     manualLoad: '点按“加载 3D 模型”可旋转查看；参数计算与平面场图无需加载即可使用。',
     posterNote: '静态图为默认工况；当前参数的场分布见二维平面图或 3D 模型。',
     noScript: '交互需要 JavaScript。当前显示默认工况的代理模型结果。',
@@ -121,6 +122,8 @@ export const busbarCopy = {
     loading: 'Preparing the interactive model',
     load3d: 'Load 3D model',
     loadPlan: 'Show 2D field view',
+    posterAlt:
+      'Static preview of the default-case temperature field in the P layer, AC link and N layer',
     manualLoad:
       'Tap “Load 3D model” to rotate the model. Calculations and the plan-view field work without it.',
     posterNote:
