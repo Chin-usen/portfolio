@@ -152,7 +152,7 @@ for (const prefix of locales) {
     }
   });
 
-  test(`${prefix || 'zh'} Lab retains every available experiment and distinguishes all three planned previews`, async ({
+  test(`${prefix || 'zh'} Lab retains every available experiment and distinguishes the two remaining planned previews`, async ({
     page,
     request,
   }) => {
@@ -164,12 +164,16 @@ for (const prefix of locales) {
       .evaluateAll((links) => links.map((link) => link.getAttribute('href')!).sort());
     expect(hrefs).toEqual([
       `${prefix}/lab/chip-junction-temperature/`,
+      `${prefix}/lab/half-bridge-module/`,
       `${prefix}/lab/sample-simulation/`,
-      `${prefix}/lab/sample-teardown/`,
     ]);
     for (const href of hrefs) expect((await request.get(href)).status()).toBe(200);
     const planned = page.locator('.lab-planned .lab-planned-card');
-    await expect(planned).toHaveCount(3);
+    await expect(planned).toHaveCount(2);
+    expect(await planned.locator('.lab-card-label').allTextContents()).toEqual([
+      expect.stringMatching(/^L3/),
+      expect.stringMatching(/^S3/),
+    ]);
     await expect(planned.locator('a, button')).toHaveCount(0);
     for (const card of await planned.all()) {
       await expect(card.locator('h3')).not.toBeEmpty();
@@ -178,7 +182,7 @@ for (const prefix of locales) {
         /Not implemented|\u5c1a\u672a\u5b9e\u73b0/,
       );
     }
-    expect(new Set(await planned.locator('h3').allTextContents()).size).toBe(3);
+    expect(new Set(await planned.locator('h3').allTextContents()).size).toBe(2);
   });
 
   test(`${prefix || 'zh'} legacy Contact resolves to the accessible About contact section`, async ({

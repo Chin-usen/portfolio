@@ -1,0 +1,285 @@
+---
+import { getCollection } from 'astro:content';
+import { localePath } from '../../../i18n/utils';
+import { bridgeCopy } from './copy';
+import { DEFAULT_INDUCTANCE, INDUCTANCE_LIMITS } from './inductance';
+import type { BridgeLocale, PartContent } from './types';
+import './half-bridge-fonts.css';
+import './half-bridge.css';
+import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
+interface Props {
+  locale: BridgeLocale;
+}
+const { locale } = Astro.props;
+const copy = bridgeCopy[locale];
+const parts: PartContent[] = (await getCollection('halfBridgeParts'))
+  .map((entry) => entry.data)
+  .sort((a, b) => a.order - b.order);
+const local = (part: PartContent, key: 'name' | 'short' | 'role' | 'features' | 'material') =>
+  part[`${key}${locale === 'zh' ? 'Zh' : 'En'}`];
+const controls = [
+  { key: 'd', label: copy.gap },
+  { key: 'w', label: copy.width },
+  { key: 'l', label: copy.length },
+] as const;
+const partViews = parts.map((part) => ({
+  id: part.partId,
+  name: local(part, 'name'),
+  short: local(part, 'short'),
+  secondaryName: locale === 'zh' ? part.nameEn : part.nameZh,
+  role: local(part, 'role'),
+  features: local(part, 'features'),
+  material: local(part, 'material'),
+}));
+const modes = (['assembled', 'exploded', 'commutation'] as const).map((id) => ({
+  id,
+  label: copy[id],
+  caption: copy[`${id}Caption`],
+  showLabels: id === 'exploded',
+}));
+const poster = {
+  src: '/images/l1/half-bridge-exploded.webp',
+  srcset:
+    '/images/l1/half-bridge-exploded-640.webp 640w, /images/l1/half-bridge-exploded.webp 1600w',
+  sizes:
+    '(max-width: 652px) calc(100vw - 64px), (max-width: 800px) 588px, (max-width: 844px) calc(100vw - 404px), (max-width: 1100px) calc(61.5385vw - 79.3846px), (max-width: 1344px) calc(67.9487vw - 86.2051px), 827px',
+  width: 1600,
+  height: 1400,
+  alt: copy.staticAlt,
+};
+---
+
+<DisassemblyPage
+  locale={locale}
+  copy={copy}
+  parts={partViews}
+  modes={modes}
+  defaultPartId="busbar"
+  defaultMode="exploded"
+  idPrefix="l1"
+  poster={poster}
+  backHref={localePath(locale, '/lab/')}
+  rootClass="half-bridge"
+  rootAttributes={{ 'data-half-bridge': true, 'data-playing': 'false' }}
+  serializedParts={parts}
+>
+  <Fragment slot="stage-overlay">
+    <div class="l1-flux-note" data-l1-flux hidden>
+      <span class="l1-current-dot" aria-hidden="true"></span>
+      {copy.flux}
+    </div>
+  </Fragment>
+  <Fragment slot="after-stage">
+    <p class="l1-flow-path" data-l1-flow hidden>
+      <strong>{copy.loop}</strong> Cdc+ → P → SH → AC →{' '}
+      {locale === 'zh' ? 'SL 体二极管' : 'SL body diode'} → N → Cdc−
+    </p>
+  </Fragment>
+  <Fragment slot="status-action">
+    <button type="button" data-l1-motion aria-pressed="false" hidden>
+      {copy.loopToggle}
+    </button>
+  </Fragment>
+  <Fragment slot="scale-note">
+    <p class="l1-scale-note">{copy.gapNote}</p>
+  </Fragment>
+  <Fragment slot="addons">
+    <section class="l1-card l1-topology-card" aria-labelledby="l1-topology-title">
+      <h2 id="l1-topology-title" class="l1-small-label">
+        {copy.topology}
+        <span> · {copy.topologyHint}</span>
+      </h2>
+      <svg
+        data-l1-topology
+        class="l1-topology"
+        viewBox="0 0 320 270"
+        aria-label={copy.topologyLabel}
+        role="group"
+      >
+        <defs>
+          <marker
+            id="l1-arrow"
+            viewBox="0 0 10 10"
+            refX="8"
+            refY="5"
+            markerWidth="5"
+            markerHeight="5"
+            orient="auto-start-reverse"
+          >
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+          </marker>
+        </defs>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="busbar"
+          aria-pressed="true"
+          aria-label={copy.dc}
+        >
+          <path class="l1-circuit-hit" d="M58 40 H190 M58 232 H190" />
+          <path class="l1-rail" d="M58 40 H190 M58 232 H190" />
+          <text x="60" y="24">
+            DC+ (P)
+          </text>
+          <text x="60" y="253">
+            DC− (N)
+          </text>
+        </g>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="dc-terminal"
+          aria-pressed="false"
+          aria-label={copy.externalCap}
+        >
+          <path class="l1-circuit-hit" d="M58 40 V126 M58 147 V232" />
+          <path d="M58 40 V126 M58 147 V232 M43 126 H73 M43 147 H73" />
+          <text x="14" y="140" class="l1-cap-label">
+            C
+            <tspan baseline-shift="sub" font-size="8">
+              DC
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="mosfet"
+          aria-pressed="false"
+          aria-label={copy.highSwitch}
+        >
+          <rect class="l1-circuit-hit" x="157" y="52" width="70" height="65" />
+          <path d="M190 40 V65 H181 V78 M181 84 V98 H190 V136 M174 64 V99 M181 81 H190 M190 65 H206 V98 H190 M200 74 H212 M200 88 L206 78 L212 88 Z" />
+          <text x="224" y="84">
+            S
+            <tspan baseline-shift="sub" font-size="10">
+              H
+            </tspan>{' '}
+            ×4
+          </text>
+        </g>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="mosfet"
+          aria-pressed="false"
+          aria-label={copy.lowSwitch}
+        >
+          <rect class="l1-circuit-hit" x="157" y="156" width="70" height="65" />
+          <path d="M190 136 V167 H181 V180 M181 186 V200 H190 V232 M174 166 V201 M181 183 H190 M190 167 H206 V200 H190 M200 176 H212 M200 190 L206 180 L212 190 Z" />
+          <text x="224" y="186">
+            S
+            <tspan baseline-shift="sub" font-size="10">
+              L
+            </tspan>{' '}
+            ×4
+          </text>
+        </g>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="gate-wire"
+          aria-pressed="false"
+          aria-label={copy.gate}
+        >
+          <path class="l1-circuit-hit" d="M146 82 H174 M146 184 H174" />
+          <path d="M146 82 H174 M146 184 H174" />
+          <text x="132" y="85">
+            G
+          </text>
+          <text x="132" y="187">
+            G
+          </text>
+        </g>
+        <g
+          class="l1-circuit-select"
+          role="button"
+          tabindex="0"
+          data-l1-select="ac-terminal"
+          aria-pressed="false"
+          aria-label={copy.ac}
+        >
+          <path class="l1-circuit-hit" d="M190 136 H286" />
+          <path d="M190 136 H286" />
+          <circle cx="190" cy="136" r="2.5" />
+          <circle cx="286" cy="136" r="2.5" />
+          <text x="292" y="140">
+            AC
+          </text>
+        </g>
+        <path
+          class="l1-topology-loop"
+          d="M80 51 H190 V64 M190 101 V136 H206 V166 M206 202 V221 H80 V51"
+          fill="none"
+          marker-end="url(#l1-arrow)"
+        />
+      </svg>
+      <p class="l1-loop-label" data-l1-loop-label hidden>
+        {copy.loop}
+      </p>
+      <p class="l1-loop-description" data-l1-loop-explanation hidden>
+        {copy.loopExplanation}
+      </p>
+    </section>
+    <section class="l1-card l1-inductance-card" aria-labelledby="l1-inductance-title">
+      <div class="l1-meter-heading">
+        <h2 id="l1-inductance-title" class="l1-small-label">
+          {copy.inductance}
+          <span> · {copy.approximation}</span>
+        </h2>
+        <span class="l1-equation">{copy.equation}</span>
+      </div>
+      <p class="l1-reading">
+        <output data-l1-inductance>1.57</output>
+        <span>nH</span>
+      </p>
+      <div class="l1-parameters">
+        {controls.map(({ key, label }) => (
+          <div class="l1-parameter">
+            <label for={`l1-${key}`}>
+              {label}
+              <span>
+                <output for={`l1-${key}`} data-l1-output={key}>
+                  {key === 'd' ? DEFAULT_INDUCTANCE[key].toFixed(2) : DEFAULT_INDUCTANCE[key]}
+                </output>{' '}
+                mm
+              </span>
+            </label>
+            <input
+              id={`l1-${key}`}
+              data-l1-param={key}
+              type="range"
+              min={INDUCTANCE_LIMITS[key].min}
+              max={INDUCTANCE_LIMITS[key].max}
+              step={INDUCTANCE_LIMITS[key].step}
+              value={DEFAULT_INDUCTANCE[key]}
+              aria-describedby="l1-approximation-limit"
+            />
+          </div>
+        ))}
+        <p id="l1-approximation-limit" class="l1-limit">
+          {copy.limits}
+        </p>
+      </div>
+      <span class="sr-only" role="status" aria-live="polite" data-l1-result-live></span>
+    </section>
+  </Fragment>
+  <Fragment slot="notes">
+    <p>{copy.modelNote}</p>
+    <p>
+      {copy.references}:{' '}
+      <a href="https://www.infineon.com/dgdl/Infineon-CoolSiC_MOSFET_1200V-SiC_trench_power_device-ApplicationNotes-v01_01-EN.pdf?fileId=5546d462617643590161c27fbcda0aae">
+        {copy.referenceName} (PDF)
+      </a>
+    </p>
+  </Fragment>
+</DisassemblyPage>
+<script>
+  import { initializeHalfBridges } from './client';
+  initializeHalfBridges();
+</script>

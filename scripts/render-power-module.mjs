@@ -81,11 +81,11 @@ try {
     `# Generic power-module hero\n\n` +
     `Original, self-initiated geometric illustration authored for this repository. ` +
     `It contains one aluminum-gray baseplate, one dark rectangular housing, and exactly three copper-colored upright terminals. ` +
-    `All dimensions are arbitrary scene units; this is not an engineering specification, CAD model, employer design, or commercial product replica.\n\n` +
+    `All dimensions are arbitrary scene units; this is not an engineering specification, validated engineering model, employer design, or commercial product replica.\n\n` +
     `## Source and licensing\n\n` +
     `- Scene source: scripts/power-module-scene.mjs. Native Three.js BoxGeometry, with small procedurally generated edge radii.\n` +
     `- Renderer: scripts/render-power-module.mjs. Headless Chromium runs at build/authoring time only.\n` +
-    `- All geometry, studio-light panels, shadow, and materials were authored in source; no external images, HDR maps, CAD, downloaded models, or other asset files are used.\n` +
+    `- All geometry, studio-light panels, shadow, and materials were authored in source; no external images, HDR maps, manufacturer geometry, downloaded models, or other asset files are used.\n` +
     `- Three.js 0.186.1 is MIT-licensed (node_modules/three/LICENSE). Playwright is Apache-2.0-licensed (node_modules/playwright-core/LICENSE). The newly authored scene, scripts, and generated images are dedicated under CC0-1.0; this dedication does not alter dependency licenses or grant rights over unrelated repository content.\n` +
     `- Visual composition follows docs/design/D1-desktop.html and D1-mobile.html plus their supplied JPG references. The simplified generic geometry was newly built, rather than extracted from a model.\n` +
     `- Before public publication, retain the repository content-policy review of generic power-module imagery; this illustration makes no claim about professional work.\n\n` +

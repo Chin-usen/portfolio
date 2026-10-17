@@ -1,0 +1,14 @@
+{
+  "partId": "solder",
+  "nameZh": "焊层",
+  "nameEn": "Solder layers",
+  "shortZh": "焊层",
+  "shortEn": "Solder layers",
+  "roleZh": "连接芯片与衬板、衬板与底板，并提供导热路径。",
+  "roleEn": "Joins dies to substrates and substrates to the baseplate, providing thermal paths.",
+  "featuresZh": "模型分离薄层以便观察；空洞、界面与疲劳影响不能从此几何中推断。",
+  "featuresEn": "Thin layers are separated for visibility. Voids, interfaces and fatigue cannot be inferred from this geometry.",
+  "materialZh": "示例为无铅焊料；银烧结是可选的不同连接工艺。",
+  "materialEn": "Lead-free solder in this example; silver sintering is a distinct alternative joining process.",
+  "order": 8
+}

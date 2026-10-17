@@ -1,0 +1,9 @@
+---
+import ThermalStack from './ThermalStack.astro';
+interface Props {
+  locale: 'zh' | 'en';
+}
+const { locale } = Astro.props;
+---
+
+<ThermalStack locale={locale} />

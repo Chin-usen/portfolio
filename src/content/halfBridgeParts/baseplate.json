@@ -1,0 +1,14 @@
+{
+  "partId": "baseplate",
+  "nameZh": "铜底板",
+  "nameEn": "Copper baseplate",
+  "shortZh": "铜底板",
+  "shortEn": "Baseplate",
+  "roleZh": "承载组件、扩散热量，并连接外部冷却界面。",
+  "roleEn": "Supports the assembly, spreads heat and interfaces to external cooling.",
+  "featuresZh": "厚度与平面度影响热阻和装配；该模型不包含冷却液或流道仿真。",
+  "featuresEn": "Thickness and flatness affect thermal resistance and assembly. This model contains no coolant or flow simulation.",
+  "materialZh": "铜；亦有其他复合底板方案。",
+  "materialEn": "Copper; composite baseplate alternatives also exist.",
+  "order": 9
+}

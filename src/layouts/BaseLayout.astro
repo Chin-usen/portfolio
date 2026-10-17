@@ -13,6 +13,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { localePath, stripLocale } from '../i18n/utils';
 import { getUi } from '../i18n/dictionaries';
+import type { LabFontPolicy } from '../lib/lab-page-contract';
 type Locale = 'zh' | 'en';
 interface Props {
   title: string;
@@ -20,8 +21,9 @@ interface Props {
   locale: Locale;
   noindex?: boolean;
   bodyClass?: string;
+  labFonts?: LabFontPolicy;
 }
-const { title, description, locale, noindex = false, bodyClass } = Astro.props;
+const { title, description, locale, noindex = false, bodyClass, labFonts } = Astro.props;
 const ui = getUi(locale);
 const base = Astro.site ?? new URL(Astro.url.origin);
 const canonical = new URL(Astro.url.pathname, base).href;
@@ -70,7 +72,7 @@ const pageTransition: TransitionDirectionalAnimations = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
     {locale === 'zh' &&
-      unlocalizedPath !== '/lab/chip-junction-temperature/' &&
+      labFonts?.commonNoto !== false &&
       [400, 600, 700].map((weight) => (
         <link
           rel="preload"
@@ -81,20 +83,12 @@ const pageTransition: TransitionDirectionalAnimations = {
         />
       ))}
     <link rel="preload" as="font" type="font/woff2" crossorigin href={geistLatinUrl} />
-    {unlocalizedPath === '/lab/chip-junction-temperature/' && (
+    {labFonts?.mono && (
       <link rel="preload" as="font" type="font/woff2" crossorigin href={geistMonoLatinUrl} />
     )}
-    {locale === 'zh' &&
-      unlocalizedPath === '/lab/chip-junction-temperature/' &&
-      [400, 500, 600, 700].map((weight) => (
-        <link
-          rel="preload"
-          as="font"
-          type="font/woff2"
-          crossorigin
-          href={`/fonts/noto-sans-sc-thermal-${weight}-normal.woff2`}
-        />
-      ))}
+    {(labFonts?.preload?.[locale] ?? []).map((href) => (
+      <link rel="preload" as="font" type="font/woff2" crossorigin href={href} />
+    ))}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body class={bodyClass}>

@@ -40,6 +40,8 @@ jobs:
         run: pnpm test:unit
       - name: Install Chromium
         run: pnpm exec playwright install --with-deps chromium
+      - name: Verify schematic-model assets and reproducibility
+        run: pnpm model:lab:verify --all
       - name: Browser tests against static build
         run: pnpm test:e2e
       - name: Production build

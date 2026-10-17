@@ -1,0 +1,33 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+interface Props {
+  locale: 'zh' | 'en';
+  labelledBy: string;
+  class?: string;
+  workspaceClass?: string;
+  visualClass?: string;
+  rootAttributes?: HTMLAttributes<'section'>;
+}
+const {
+  locale,
+  labelledBy,
+  class: className = 'thermal-lab',
+  workspaceClass = 'thermal-workspace',
+  visualClass = 'thermal-visual-column',
+  rootAttributes = {},
+} = Astro.props;
+---
+
+<section class={className} {...rootAttributes} data-locale={locale} aria-labelledby={labelledBy}>
+  <slot name="heading" />
+  <slot name="summary" />
+  <slot name="before-workspace" />
+  <div class={workspaceClass}>
+    <div class={visualClass}>
+      <slot name="scene" />
+      <slot name="supporting" />
+    </div>
+    <slot name="parameters" />
+  </div>
+  <slot name="notes" />
+</section>

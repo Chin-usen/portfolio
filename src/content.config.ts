@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { labPartSchema } from './lib/lab-page-contract';
 
 const text = z.string().trim().min(1);
 const locale = z.enum(['zh', 'en']);
@@ -34,6 +35,7 @@ const lab = defineCollection({
     summary: text,
     basis: text,
     status: text,
+    parts: z.array(labPartSchema).min(1).optional(),
     order: z.number().int().nonnegative(),
   }),
 });
@@ -127,4 +129,33 @@ const home = defineCollection({
   }),
 });
 
-export const collections = { work, lab, profile, home };
+const halfBridgeParts = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/halfBridgeParts' }),
+  schema: z.object({
+    partId: z.enum([
+      'housing',
+      'dc-terminal',
+      'ac-terminal',
+      'busbar',
+      'signal-pin',
+      'gate-wire',
+      'mosfet',
+      'amb',
+      'solder',
+      'baseplate',
+    ]),
+    nameZh: text,
+    nameEn: text,
+    shortZh: text,
+    shortEn: text,
+    roleZh: text,
+    roleEn: text,
+    featuresZh: text,
+    featuresEn: text,
+    materialZh: text,
+    materialEn: text,
+    order: z.number().int().nonnegative(),
+  }),
+});
+
+export const collections = { work, lab, profile, home, halfBridgeParts };

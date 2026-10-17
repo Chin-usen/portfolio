@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.4.0 - 2026-10-16
+
+### Added
+
+- Replace the L1 sample teardown with a bilingual generic SiC half-bridge lesson: four parallel MOSFETs per arm, laminated P/N busbars, an AC interconnect, gate wires and independent Content Collection part descriptions.
+- Build the parametric schematic model from TypeScript and one parameter file, with simplified geometry, independently named parts and the specified P/AC/N electrical connections. Repository Node scripts generate compressed glTF and the exploded WebP from the same source; generated assets and their hashes are checked in.
+- Add assembled, exploded and transient commutation presentations, linked model/tag/topology selection, and a dimensionally explicit parallel-plate inductance calculator.
+- Add regression coverage for actual picking, displayed busbar spacing, orbit/zoom/reset, formula boundaries, static preferences and ten client-route WebGL lifecycles.
+
+- Extract reusable disassembly and simulation templates, page-local discovery/content/font contracts and resource ownership for independent follow-on page patches.
+- Discover page-owned model verification hooks and mobile performance routes without central per-page edits.
+
+### Fixed
+
+- Enlarge and center the tall-mobile Home visual, equalize footer link spacing and balance menu contact separators while retaining enlarged-text reflow.
+- Regenerate licensed Chinese font subsets for the current bilingual content, preserving original glyph outlines, metrics, weights and notices.
+- Keep the lower-arm source collector in contact while exaggerating the displayed P/N layer gap; preserve the actual nominal model assets.
+- Limit Chinese L1 font downloads to four route-specific original-font subsets after the initial LCP failure; preserve existing font files, glyph outlines, metrics, weights and the English family stack. Failed measurements and diagnostic collections remain separate from final acceptance.
+
+- Select a smaller 640px prerender at mobile widths while preserving the original full-size WebP and GLB bytes; retain all fixed diagnostic samples.
+
+### Validation status
+
+Generated-asset reproducibility, 99 unit tests, 118 browser tests, the 24-page build and final source checks passed. All 60 fresh mobile Lighthouse measurements passed 66 assertions across 20 routes; Chinese/English L1 LCP medians were 2256.863/1955.714 ms. Independent final template reviews, original before/after reports, limitations and nonblocking recommendations are supplied in the separate v5 evidence tree. Its integrity and release manifests identify the exact tested source and results.
+
+### Preserved
+
+- Continue main v4 commit `f911b27c344a5b58d62d052c1a3378df8a082757`. Design documents, P2 and historical reports retain their baseline bytes. No push or deployment is performed.
+
 ## 1.3.0 - 2026-10-16
 
 ### Changed

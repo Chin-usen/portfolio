@@ -1,6 +1,6 @@
-# Sample Engineer portfolio - 1.3.0
+# Sample Engineer portfolio - 1.4.0
 
-The main v4 release follows the supplied N1 navigation and page structure. Home is a viewport-height hero with a static responsive module image. Work contains the black metrics band and three linked placeholder cases; Lab has its full list; About ends with Contact. Chinese and English routes share the same behavior. Career text, identity, figures and contact details remain fictional placeholders.
+The main v5 release follows the supplied N1 navigation and page structure. Home is a viewport-height hero with a static responsive module image. Work contains the black metrics band and three linked placeholder cases; Lab includes the interactive SiC half-bridge lesson and its full list; About ends with Contact. Chinese and English routes share the same behavior. Career text, identity, figures and contact details remain fictional placeholders.
 
 The 52 px sticky header selects the current parent section. Below 768 px its native dialog provides a fullscreen menu, keyboard containment, Escape, scroll lock and focus return. Astro ClientRouter updates page titles and moves focus to the destination heading; the transition respects reduced motion. Legacy `/contact/` and `/en/contact/` redirect to the localized About contact section. With static output these routes use generated redirect HTML; hosts may additionally map permanent HTTP redirects.
 
@@ -8,9 +8,10 @@ The 52 px sticky header selects the current parent section. Below 768 px its nat
 - `docs/`: 14 immutable upstream documents, byte-identical to approved v3. Original provenance is in `reports/v3/design-source-manifest.json`.
 - `thermal-p2/`: all 67 tracked files of the independent P2 2.0.0 package remain unchanged. Frontend changes do not expand the numerical model's validity.
 - `scripts/power-module-scene.mjs`: reproducible native Three.js illustration source. Home uses existing light/dark WebP assets and requires no WebGL.
-- `scripts/subset-thermal-fonts.py`: optional reproducible S1 Chinese font generation and exact-outline/provenance checking. The four checked-in fonts total 103,192 bytes; normal Node-only builds use the checked-in assets. Shared-page Chinese subsets are regenerated from current v4 copy; early preloads reduce heading font discovery delay while retaining original licensed coverage and fallback.
+- `scripts/subset-thermal-fonts.py`: optional reproducible S1 Chinese font generation and exact-outline/provenance checking. The four checked-in fonts total 103,192 bytes; normal Node-only builds use the checked-in assets. Shared-page Chinese subsets are regenerated from current v5 copy; early preloads reduce heading font discovery delay while retaining original licensed coverage and fallback.
 - `CHANGELOG.md`: changes, including the explicitly authorized dark background token exception. No immutable design document is edited.
-- `RELEASE-v4.md`: current validation and delivery guide. New generated v4 evidence accompanies the delivery outside the tracked source tree; `reports/v3/`, `reports/v2/` and older release files are historical evidence only.
+- `RELEASE-v5.md`: current validation and delivery guide. New v5 evidence accompanies the delivery outside the tracked source tree; older release files and tracked reports describe earlier deliveries.
+- `model/l1-half-bridge/`: TypeScript parametric schematic geometry and one parameter file. Geometry is simplified for the bilingual L1 lesson. `pnpm model:l1` generates the compressed scene and exploded image; `pnpm model:l1:verify` checks reproducibility and recorded asset hashes.
 
 No animation library is added. Three.js and Lenis remain lazy where used. S1 releases contexts, renderer resources, animation work and registered handlers on route departure; the browser regression records ten same-document round trips, renderer counters and heap samples where supported. These are bounded diagnostic measurements, not a proof about every browser's garbage collector.
 
@@ -70,7 +71,7 @@ Markdown 正文是集合条目的原生 body，通过 Astro `render()` 渲染，
 
 ## 路由与语言
 
-中文：`/`, `/work/`, `/work/sample-case/`, `/work/career-case-b/`, `/work/career-case-c/`, `/lab/`, `/lab/sample-teardown/`, `/lab/sample-simulation/`, `/lab/chip-junction-temperature/`, `/about/`, `/contact/`, `/404/`。
+中文：`/`, `/work/`, `/work/sample-case/`, `/work/career-case-b/`, `/work/career-case-c/`, `/lab/`, `/lab/half-bridge-module/`, `/lab/sample-simulation/`, `/lab/chip-junction-temperature/`, `/about/`, `/contact/`, `/404/`。
 
 英文：上述路径增加 `/en/` 前缀，首页为 `/en/`。规范 URL 采用尾斜杠。语言切换保留页面种类与 slug；每页生成 `zh`、`en`、`x-default` 的 hreflang。404 模板保留双语，但真正不存在的 URL 应返回 **404**，不能为了“每个路由 200”而返回成功码；冒烟测试分别检查正常路由与错误语义。
 
@@ -107,7 +108,7 @@ Three.js and Lenis are installed for on-demand demonstrations and the S1 viewer.
 
 ## 已知限制与假设
 
-- The site uses fictional content and a generic geometric module illustration. It does not include a real career history, proprietary CAD, contact backend or CMS.
+- The site uses fictional content and a generic geometric module illustration. It does not include a real career history, proprietary product geometry, contact backend or CMS.
 - “profile 单个 YAML”按“每语言单个文件”实现，以满足中英内容分文件；两种语言共两个 YAML。
 - 内容一对一翻译使用相同 slug；不做自动翻译或不同语言 slug 映射。
 - 静态国际化 404 的最终回退由托管平台决定；部署后需要再次验证中文和英文未知路径。

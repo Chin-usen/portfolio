@@ -1,0 +1,14 @@
+{
+  "partId": "busbar",
+  "nameZh": "叠层母排",
+  "nameEn": "Laminated busbar",
+  "shortZh": "叠层母排",
+  "shortEn": "Laminated busbar",
+  "roleZh": "连接直流端子与上下桥臂芯片，承载主功率电流；P、N 两层构成换流回路。",
+  "roleEn": "Connects the DC terminals and switch groups, carrying main power current. P and N form the commutation return path.",
+  "featuresZh": "P、N 层面对面叠放，电流方向相反，磁场相互抵消。间距越小、重叠越宽，平行板近似电感越低。",
+  "featuresEn": "Opposing currents in closely stacked P/N plates cancel part of their magnetic fields. A smaller gap and wider overlap reduce the parallel-plate estimate.",
+  "materialZh": "无氧铜 C1020（可镀镍或镀锡）；层间绝缘为 PI 或 PEN 薄膜，边缘需绝缘设计。",
+  "materialEn": "Oxygen-free copper C1020, optionally nickel or tin plated; PI or PEN dielectric film with separately designed edge insulation.",
+  "order": 3
+}

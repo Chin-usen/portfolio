@@ -1,6 +1,6 @@
 ﻿/**
  * Original generic power-module illustration, authored for this repository.
- * Native Three.js geometry only; no product CAD, images, or texture downloads.
+ * Native Three.js geometry only; no manufacturer geometry, images, or texture downloads.
  * Arbitrary scene units are illustrative and do not describe an actual device.
  */
 import * as THREE from 'three';

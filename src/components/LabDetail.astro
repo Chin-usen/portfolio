@@ -2,7 +2,7 @@
 import { render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DemoPanel from './DemoPanel.astro';
-import ThermalStack from './lab/thermal-stack/ThermalStack.astro';
+import { getLabPage } from '../lib/lab-pages';
 import { getUi } from '../i18n/dictionaries';
 import { localePath } from '../i18n/utils';
 interface Props {
@@ -13,16 +13,19 @@ const { locale, entry } = Astro.props;
 const ui = getUi(locale);
 const { title, summary, basis, status, kind } = entry.data;
 const { Content } = await render(entry);
+const page = getLabPage(entry.data.translationKey);
+const Page = page?.component;
 ---
 
 <BaseLayout
   locale={locale}
   title={title}
   description={summary}
-  bodyClass={entry.data.translationKey === 'chip-junction-temperature' ? 'thermal-page' : undefined}
+  bodyClass={page?.descriptor.bodyClass}
+  labFonts={page?.descriptor.fonts}
 >
-  {entry.data.translationKey === 'chip-junction-temperature' ? (
-    <ThermalStack locale={locale} />
+  {Page ? (
+    <Page locale={locale} entry={entry} />
   ) : (
     <>
       <a href={localePath(locale, '/lab/')}>{ui.lab.back}</a>

@@ -492,6 +492,8 @@ a:hover {
 }
 .footer-links a,
 .footer-links span {
+  /* Symmetric inset keeps visible text gaps equal while retaining 44px targets. */
+  padding-inline: 10px;
   display: inline-flex;
   align-items: center;
   min-height: 44px;

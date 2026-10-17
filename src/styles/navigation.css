@@ -179,6 +179,10 @@
   color: var(--thermal-secondary);
   font-weight: 400;
 }
+.n1-menu-contact a {
+  /* Equal text-to-dot space, including short labels with a 44px hit area. */
+  padding-inline: 8px;
+}
 .n1-menu-footer span {
   padding-inline: 2px;
 }

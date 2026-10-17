@@ -1,0 +1,14 @@
+{
+  "partId": "signal-pin",
+  "nameZh": "信号针",
+  "nameEn": "Signal pins",
+  "shortZh": "信号针",
+  "shortEn": "Signal pins",
+  "roleZh": "引出栅极 G 与 Kelvin 源极信号，连接外部栅极驱动器。",
+  "roleEn": "Routes gate G and Kelvin-source signals to an external gate driver.",
+  "featuresZh": "Kelvin 回路与主功率回路分开，减少共源电感对驱动电压的影响。",
+  "featuresEn": "A separate Kelvin return reduces the effect of common-source inductance on gate voltage.",
+  "materialZh": "铜合金针，常见镀锡或镀镍表面。",
+  "materialEn": "Copper-alloy pins, commonly tin or nickel plated.",
+  "order": 4
+}

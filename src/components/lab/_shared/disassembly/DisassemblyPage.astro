@@ -1,0 +1,88 @@
+---
+import StageCard from './StageCard.astro';
+import SelectedPartCard from './SelectedPartCard.astro';
+import type { DisassemblyDefinition } from './types';
+// Preserve the established selector vocabulary and cascade for existing pages.
+import './disassembly.css';
+interface Props extends DisassemblyDefinition {
+  locale: 'zh' | 'en';
+  backHref: string;
+  rootClass?: string;
+  rootAttributes?: Record<string, string | boolean>;
+  serializedParts?: unknown;
+}
+const {
+  locale,
+  backHref,
+  rootClass = 'disassembly',
+  rootAttributes = {},
+  serializedParts,
+  ...definition
+} = Astro.props;
+const { parts, copy, defaultPartId, defaultMode, idPrefix } = definition;
+const initial = parts.find((part) => part.id === defaultPartId);
+if (!initial) throw new Error(`Unknown default disassembly part: ${defaultPartId}`);
+if (!definition.modes.some((mode) => mode.id === defaultMode))
+  throw new Error(`Unknown default disassembly mode: ${defaultMode}`);
+---
+
+<article
+  class={rootClass}
+  {...rootAttributes}
+  data-disassembly
+  data-locale={locale}
+  data-mode={defaultMode}
+  data-selected={defaultPartId}
+  data-renderer="loading"
+>
+  <header class="l1-heading">
+    <div>
+      <p class="l1-kicker">{copy.kicker}</p>
+      <h1>{copy.title}</h1>
+      <p class="l1-subtitle">{copy.subtitle}</p>
+    </div>
+    <a class="l1-back" href={backHref}>
+      <span aria-hidden="true">‹ </span>
+      {copy.back}
+    </a>
+  </header>
+
+  <div class="l1-layout">
+    <StageCard {...definition}>
+      <slot name="toolbar" slot="toolbar" />
+      <slot name="stage-overlay" slot="overlay" />
+      <slot name="after-stage" slot="after-stage" />
+      <slot name="status-action" slot="status-action" />
+      <slot name="scale-note" slot="scale-note" />
+    </StageCard>
+    <aside class="l1-sidebar" aria-label={copy.selected}>
+      <SelectedPartCard initial={initial} copy={copy} idPrefix={idPrefix} />
+      <slot name="addons" />
+    </aside>
+  </div>
+  <footer class="l1-notes">
+    <slot name="notes" />
+  </footer>
+  <noscript>
+    <p>{copy.noJs}</p>
+    <h2>{copy.allParts}</h2>
+    {parts.map((part) => (
+      <section>
+        <h3>{part.name}</h3>
+        <dl>
+          <dt>{copy.role}</dt>
+          <dd>{part.role}</dd>
+          <dt>{copy.features}</dt>
+          <dd>{part.features}</dd>
+          <dt>{copy.material}</dt>
+          <dd>{part.material}</dd>
+        </dl>
+      </section>
+    ))}
+  </noscript>
+  <script
+    type="application/json"
+    data-l1-content
+    set:html={JSON.stringify(serializedParts ?? parts).replace(/</g, '\\u003c')}
+  ></script>
+</article>

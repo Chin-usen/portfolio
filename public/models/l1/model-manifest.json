@@ -1,0 +1,1246 @@
+{
+  "version": 1,
+  "modelVersion": "1.0.0",
+  "modelKind": "parameterized-schematic-mesh",
+  "descriptionZh": "参数化示意模型（几何已简化）",
+  "descriptionEn": "Parameterized schematic model (simplified geometry)",
+  "units": "m",
+  "upAxis": "Y",
+  "sourceUnits": "mm",
+  "coordinateTransform": "(x,y,z) mm -> (x,z,-y)/1000 metres",
+  "defaultPartId": "busbar",
+  "parts": [
+    {
+      "name": "baseplate-copper",
+      "partId": "baseplate",
+      "material": "copper",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 0,
+      "boundsMm": [
+        [-60, -31, 0],
+        [60, 31, 3]
+      ]
+    },
+    {
+      "name": "amb-solder-sh",
+      "partId": "solder",
+      "material": "solder",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [-52, -23, 3],
+        [-4, 23, 3.1500000953674316]
+      ]
+    },
+    {
+      "name": "amb-bottom-copper-sh",
+      "partId": "amb",
+      "material": "copper",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-52, -23, 3.1500000953674316],
+        [-4, 23, 3.4700000286102295]
+      ]
+    },
+    {
+      "name": "amb-ceramic-sh",
+      "partId": "amb",
+      "material": "ceramic",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-53, -24, 3.4700000286102295],
+        [-3, 24, 4.099999904632568]
+      ]
+    },
+    {
+      "name": "amb-drain-sh",
+      "partId": "amb",
+      "material": "copper",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-38, -22, 4.099999904632568],
+        [-16, 22, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "amb-gate-sh",
+      "partId": "amb",
+      "material": "copper",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-46.75, -23, 4.099999904632568],
+        [-45.25, 23, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "signal-gate-sh",
+      "partId": "signal-pin",
+      "material": "nickel",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-46.5, -22.5, 4.400000095367432],
+        [-45.5, -21.5, 23.899999618530273]
+      ]
+    },
+    {
+      "name": "amb-kelvin-sh",
+      "partId": "amb",
+      "material": "copper",
+      "net": "kelvin-h",
+      "circuitNode": "kelvin-h",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-41.75, -23, 4.099999904632568],
+        [-40.25, 23, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "signal-kelvin-sh",
+      "partId": "signal-pin",
+      "material": "nickel",
+      "net": "kelvin-h",
+      "circuitNode": "ac",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [-41.5, -22.5, 4.400000095367432],
+        [-40.5, -21.5, 23.899999618530273]
+      ]
+    },
+    {
+      "name": "die-attach-sh-1",
+      "partId": "solder",
+      "material": "solder",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [-30, -19, 4.400000095367432],
+        [-26, -14, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sh-1",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-30, -19, 4.480000019073486],
+        [-26, -14, 4.730000019073486]
+      ],
+      "arm": "sh",
+      "drainNet": "p",
+      "sourceNet": "ac",
+      "gateNet": "gate-h",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sh-1",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "ac",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-28.799999237060547, -18.700000762939453, 4.730000019073486],
+        [-26.200000762939453, -14.300000190734863, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sh-1",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-29.799999237060547, -18.649999618530273, 4.730000019073486],
+        [-28.899999618530273, -17.649999618530273, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sh-1",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-28.399999618530273, -18.299999237060547, 4.800000190734863],
+        [-26.299999237060547, -14.699999809265137, 8]
+      ],
+      "arm": "sh"
+    },
+    {
+      "name": "gate-wire-sh-1",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-46.05434799194336, -18.299999237060547, 4.260192394256592],
+        [-29.301626205444336, -18, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sh-1",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-h",
+      "circuitNode": "ac",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-41.054786682128906, -14.699999809265137, 4.2603631019592285],
+        [-28.553272247314453, -14.399999618530273, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sh-2",
+      "partId": "solder",
+      "material": "solder",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [-30, -8, 4.400000095367432],
+        [-26, -3, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sh-2",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-30, -8, 4.480000019073486],
+        [-26, -3, 4.730000019073486]
+      ],
+      "arm": "sh",
+      "drainNet": "p",
+      "sourceNet": "ac",
+      "gateNet": "gate-h",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sh-2",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "ac",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-28.799999237060547, -7.699999809265137, 4.730000019073486],
+        [-26.200000762939453, -3.299999952316284, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sh-2",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-29.799999237060547, -7.650000095367432, 4.730000019073486],
+        [-28.899999618530273, -6.650000095367432, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sh-2",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-28.399999618530273, -7.300000190734863, 4.800000190734863],
+        [-26.299999237060547, -3.700000047683716, 8]
+      ],
+      "arm": "sh"
+    },
+    {
+      "name": "gate-wire-sh-2",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-46.05434799194336, -7.300000190734863, 4.260192394256592],
+        [-29.301626205444336, -7, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sh-2",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-h",
+      "circuitNode": "ac",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-41.054786682128906, -3.700000047683716, 4.2603631019592285],
+        [-28.553272247314453, -3.4000000953674316, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sh-3",
+      "partId": "solder",
+      "material": "solder",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [-30, 3, 4.400000095367432],
+        [-26, 8, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sh-3",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-30, 3, 4.480000019073486],
+        [-26, 8, 4.730000019073486]
+      ],
+      "arm": "sh",
+      "drainNet": "p",
+      "sourceNet": "ac",
+      "gateNet": "gate-h",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sh-3",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "ac",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-28.799999237060547, 3.299999952316284, 4.730000019073486],
+        [-26.200000762939453, 7.699999809265137, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sh-3",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-29.799999237060547, 3.3499999046325684, 4.730000019073486],
+        [-28.899999618530273, 4.349999904632568, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sh-3",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-28.399999618530273, 3.700000047683716, 4.800000190734863],
+        [-26.299999237060547, 7.300000190734863, 8]
+      ],
+      "arm": "sh"
+    },
+    {
+      "name": "gate-wire-sh-3",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-46.05434799194336, 3.700000047683716, 4.260192394256592],
+        [-29.301626205444336, 4, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sh-3",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-h",
+      "circuitNode": "ac",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-41.054786682128906, 7.300000190734863, 4.2603631019592285],
+        [-28.553272247314453, 7.599999904632568, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sh-4",
+      "partId": "solder",
+      "material": "solder",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [-30, 14, 4.400000095367432],
+        [-26, 19, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sh-4",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-30, 14, 4.480000019073486],
+        [-26, 19, 4.730000019073486]
+      ],
+      "arm": "sh",
+      "drainNet": "p",
+      "sourceNet": "ac",
+      "gateNet": "gate-h",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sh-4",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "ac",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-28.799999237060547, 14.300000190734863, 4.730000019073486],
+        [-26.200000762939453, 18.700000762939453, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sh-4",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "sh",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [-29.799999237060547, 14.350000381469727, 4.730000019073486],
+        [-28.899999618530273, 15.350000381469727, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sh-4",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-28.399999618530273, 14.699999809265137, 4.800000190734863],
+        [-26.299999237060547, 18.299999237060547, 8]
+      ],
+      "arm": "sh"
+    },
+    {
+      "name": "gate-wire-sh-4",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-h",
+      "circuitNode": "gate-h",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-46.05434799194336, 14.699999809265137, 4.260192394256592],
+        [-29.301626205444336, 15, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sh-4",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-h",
+      "circuitNode": "ac",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [-41.054786682128906, 18.299999237060547, 4.2603631019592285],
+        [-28.553272247314453, 18.600000381469727, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "amb-solder-sl",
+      "partId": "solder",
+      "material": "solder",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [4, -23, 3],
+        [52, 23, 3.1500000953674316]
+      ]
+    },
+    {
+      "name": "amb-bottom-copper-sl",
+      "partId": "amb",
+      "material": "copper",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [4, -23, 3.1500000953674316],
+        [52, 23, 3.4700000286102295]
+      ]
+    },
+    {
+      "name": "amb-ceramic-sl",
+      "partId": "amb",
+      "material": "ceramic",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [3, -24, 3.4700000286102295],
+        [53, 24, 4.099999904632568]
+      ]
+    },
+    {
+      "name": "amb-drain-sl",
+      "partId": "amb",
+      "material": "copper",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [18, -22, 4.099999904632568],
+        [40, 22, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "amb-gate-sl",
+      "partId": "amb",
+      "material": "copper",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [9.25, -23, 4.099999904632568],
+        [10.75, 23, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "signal-gate-sl",
+      "partId": "signal-pin",
+      "material": "nickel",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [9.5, -22.5, 4.400000095367432],
+        [10.5, -21.5, 23.899999618530273]
+      ]
+    },
+    {
+      "name": "amb-kelvin-sl",
+      "partId": "amb",
+      "material": "copper",
+      "net": "kelvin-l",
+      "circuitNode": "kelvin-l",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [14.25, -23, 4.099999904632568],
+        [15.75, 23, 4.400000095367432]
+      ]
+    },
+    {
+      "name": "signal-kelvin-sl",
+      "partId": "signal-pin",
+      "material": "nickel",
+      "net": "kelvin-l",
+      "circuitNode": "n",
+      "explodeZmm": 10,
+      "boundsMm": [
+        [14.5, -22.5, 4.400000095367432],
+        [15.5, -21.5, 23.899999618530273]
+      ]
+    },
+    {
+      "name": "die-attach-sl-1",
+      "partId": "solder",
+      "material": "solder",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [26, -19, 4.400000095367432],
+        [30, -14, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sl-1",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26, -19, 4.480000019073486],
+        [30, -14, 4.730000019073486]
+      ],
+      "arm": "sl",
+      "drainNet": "ac",
+      "sourceNet": "n",
+      "gateNet": "gate-l",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sl-1",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "n",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [27.200000762939453, -18.700000762939453, 4.730000019073486],
+        [29.799999237060547, -14.300000190734863, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sl-1",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26.200000762939453, -18.649999618530273, 4.730000019073486],
+        [27.100000381469727, -17.649999618530273, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sl-1",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [27.600000381469727, -18.299999237060547, 4.800000190734863],
+        [29.700000762939453, -14.699999809265137, 10.5]
+      ],
+      "arm": "sl"
+    },
+    {
+      "name": "gate-wire-sl-1",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [9.945651054382324, -18.299999237060547, 4.260192394256592],
+        [26.698373794555664, -18, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sl-1",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-l",
+      "circuitNode": "n",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [14.94521427154541, -14.699999809265137, 4.2603631019592285],
+        [27.446727752685547, -14.399999618530273, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sl-2",
+      "partId": "solder",
+      "material": "solder",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [26, -8, 4.400000095367432],
+        [30, -3, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sl-2",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26, -8, 4.480000019073486],
+        [30, -3, 4.730000019073486]
+      ],
+      "arm": "sl",
+      "drainNet": "ac",
+      "sourceNet": "n",
+      "gateNet": "gate-l",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sl-2",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "n",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [27.200000762939453, -7.699999809265137, 4.730000019073486],
+        [29.799999237060547, -3.299999952316284, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sl-2",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26.200000762939453, -7.650000095367432, 4.730000019073486],
+        [27.100000381469727, -6.650000095367432, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sl-2",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [27.600000381469727, -7.300000190734863, 4.800000190734863],
+        [29.700000762939453, -3.700000047683716, 10.5]
+      ],
+      "arm": "sl"
+    },
+    {
+      "name": "gate-wire-sl-2",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [9.945651054382324, -7.300000190734863, 4.260192394256592],
+        [26.698373794555664, -7, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sl-2",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-l",
+      "circuitNode": "n",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [14.94521427154541, -3.700000047683716, 4.2603631019592285],
+        [27.446727752685547, -3.4000000953674316, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sl-3",
+      "partId": "solder",
+      "material": "solder",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [26, 3, 4.400000095367432],
+        [30, 8, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sl-3",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26, 3, 4.480000019073486],
+        [30, 8, 4.730000019073486]
+      ],
+      "arm": "sl",
+      "drainNet": "ac",
+      "sourceNet": "n",
+      "gateNet": "gate-l",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sl-3",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "n",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [27.200000762939453, 3.299999952316284, 4.730000019073486],
+        [29.799999237060547, 7.699999809265137, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sl-3",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26.200000762939453, 3.3499999046325684, 4.730000019073486],
+        [27.100000381469727, 4.349999904632568, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sl-3",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [27.600000381469727, 3.700000047683716, 4.800000190734863],
+        [29.700000762939453, 7.300000190734863, 10.5]
+      ],
+      "arm": "sl"
+    },
+    {
+      "name": "gate-wire-sl-3",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [9.945651054382324, 3.700000047683716, 4.260192394256592],
+        [26.698373794555664, 4, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sl-3",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-l",
+      "circuitNode": "n",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [14.94521427154541, 7.300000190734863, 4.2603631019592285],
+        [27.446727752685547, 7.599999904632568, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "die-attach-sl-4",
+      "partId": "solder",
+      "material": "solder",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 5,
+      "boundsMm": [
+        [26, 14, 4.400000095367432],
+        [30, 19, 4.480000019073486]
+      ]
+    },
+    {
+      "name": "mosfet-sl-4",
+      "partId": "mosfet",
+      "material": "silicon",
+      "net": null,
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26, 14, 4.480000019073486],
+        [30, 19, 4.730000019073486]
+      ],
+      "arm": "sl",
+      "drainNet": "ac",
+      "sourceNet": "n",
+      "gateNet": "gate-l",
+      "integratedBodyDiode": true
+    },
+    {
+      "name": "source-pad-sl-4",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "n",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [27.200000762939453, 14.300000190734863, 4.730000019073486],
+        [29.799999237060547, 18.700000762939453, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "gate-pad-sl-4",
+      "partId": "mosfet",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "sl",
+      "explodeZmm": 14,
+      "boundsMm": [
+        [26.200000762939453, 14.350000381469727, 4.730000019073486],
+        [27.100000381469727, 15.350000381469727, 4.800000190734863]
+      ]
+    },
+    {
+      "name": "source-clip-sl-4",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [27.600000381469727, 14.699999809265137, 4.800000190734863],
+        [29.700000762939453, 18.299999237060547, 10.5]
+      ],
+      "arm": "sl"
+    },
+    {
+      "name": "gate-wire-sl-4",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "gate-l",
+      "circuitNode": "gate-l",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [9.945651054382324, 14.699999809265137, 4.260192394256592],
+        [26.698373794555664, 15, 6.741068363189697]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "kelvin-wire-sl-4",
+      "partId": "gate-wire",
+      "material": "aluminium",
+      "net": "kelvin-l",
+      "circuitNode": "n",
+      "explodeZmm": 16,
+      "boundsMm": [
+        [14.94521427154541, 18.299999237060547, 4.2603631019592285],
+        [27.446727752685547, 18.600000381469727, 6.217843532562256]
+      ],
+      "radiusMm": 0.15
+    },
+    {
+      "name": "ac-source-drain-strap",
+      "partId": "ac-terminal",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 22,
+      "boundsMm": [
+        [-29.450000762939453, -20, 4.400000095367432],
+        [30.100000381469727, 22.5, 8.800000190734863]
+      ]
+    },
+    {
+      "name": "n-source-collector",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [26.549999237060547, -20, 10.5],
+        [52.75, 20, 15.100000381469727]
+      ],
+      "gapMotion": 1
+    },
+    {
+      "name": "p-drain-feed",
+      "partId": "busbar",
+      "material": "nickel",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-31.5, -25, 4.400000095367432],
+        [-28.5, -18, 13.800000190734863]
+      ]
+    },
+    {
+      "name": "busbar-p",
+      "partId": "busbar",
+      "material": "copper",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-50, -20, 13],
+        [50, 20, 13.800000190734863]
+      ],
+      "gapMotion": 0
+    },
+    {
+      "name": "busbar-insulation",
+      "partId": "busbar",
+      "material": "polyimide",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-50.5, -20.5, 13.800000190734863],
+        [50.5, 20.5, 14.300000190734863]
+      ],
+      "gapMotion": 0.5,
+      "gapScale": true
+    },
+    {
+      "name": "busbar-n",
+      "partId": "busbar",
+      "material": "copper",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-50, -20, 14.300000190734863],
+        [50, 20, 15.100000381469727]
+      ],
+      "gapMotion": 1
+    },
+    {
+      "name": "dc-terminal-p",
+      "partId": "dc-terminal",
+      "material": "nickel",
+      "net": "p",
+      "circuitNode": "p",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [-31, -29.5, 13],
+        [-19, -18.5, 24]
+      ],
+      "gapMotion": 0
+    },
+    {
+      "name": "dc-terminal-n",
+      "partId": "dc-terminal",
+      "material": "nickel",
+      "net": "n",
+      "circuitNode": "n",
+      "explodeZmm": 32,
+      "boundsMm": [
+        [19, -29.5, 14.300000190734863],
+        [31, -18.5, 25.299999237060547]
+      ],
+      "gapMotion": 1
+    },
+    {
+      "name": "ac-terminal-out",
+      "partId": "ac-terminal",
+      "material": "nickel",
+      "net": "ac",
+      "circuitNode": "ac",
+      "explodeZmm": 22,
+      "boundsMm": [
+        [-6, 20.5, 8],
+        [6, 29.5, 19]
+      ],
+      "gapMotion": 0
+    },
+    {
+      "name": "housing-pps-frame",
+      "partId": "housing",
+      "material": "pps",
+      "net": null,
+      "circuitNode": "none",
+      "explodeZmm": 55,
+      "boundsMm": [
+        [-60, -31, 3],
+        [60, 31, 22]
+      ]
+    }
+  ],
+  "groups": {
+    "baseplate": { "explodeZmm": 0, "nodeNames": ["baseplate-copper"] },
+    "solder": {
+      "explodeZmm": 5,
+      "nodeNames": [
+        "amb-solder-sh",
+        "die-attach-sh-1",
+        "die-attach-sh-2",
+        "die-attach-sh-3",
+        "die-attach-sh-4",
+        "amb-solder-sl",
+        "die-attach-sl-1",
+        "die-attach-sl-2",
+        "die-attach-sl-3",
+        "die-attach-sl-4"
+      ]
+    },
+    "amb": {
+      "explodeZmm": 10,
+      "nodeNames": [
+        "amb-bottom-copper-sh",
+        "amb-ceramic-sh",
+        "amb-drain-sh",
+        "amb-gate-sh",
+        "amb-kelvin-sh",
+        "amb-bottom-copper-sl",
+        "amb-ceramic-sl",
+        "amb-drain-sl",
+        "amb-gate-sl",
+        "amb-kelvin-sl"
+      ]
+    },
+    "mosfet": {
+      "explodeZmm": 14,
+      "nodeNames": [
+        "mosfet-sh-1",
+        "source-pad-sh-1",
+        "gate-pad-sh-1",
+        "mosfet-sh-2",
+        "source-pad-sh-2",
+        "gate-pad-sh-2",
+        "mosfet-sh-3",
+        "source-pad-sh-3",
+        "gate-pad-sh-3",
+        "mosfet-sh-4",
+        "source-pad-sh-4",
+        "gate-pad-sh-4",
+        "mosfet-sl-1",
+        "source-pad-sl-1",
+        "gate-pad-sl-1",
+        "mosfet-sl-2",
+        "source-pad-sl-2",
+        "gate-pad-sl-2",
+        "mosfet-sl-3",
+        "source-pad-sl-3",
+        "gate-pad-sl-3",
+        "mosfet-sl-4",
+        "source-pad-sl-4",
+        "gate-pad-sl-4"
+      ]
+    },
+    "gate-wire": {
+      "explodeZmm": 16,
+      "nodeNames": [
+        "gate-wire-sh-1",
+        "kelvin-wire-sh-1",
+        "gate-wire-sh-2",
+        "kelvin-wire-sh-2",
+        "gate-wire-sh-3",
+        "kelvin-wire-sh-3",
+        "gate-wire-sh-4",
+        "kelvin-wire-sh-4",
+        "gate-wire-sl-1",
+        "kelvin-wire-sl-1",
+        "gate-wire-sl-2",
+        "kelvin-wire-sl-2",
+        "gate-wire-sl-3",
+        "kelvin-wire-sl-3",
+        "gate-wire-sl-4",
+        "kelvin-wire-sl-4"
+      ]
+    },
+    "signal-pin": {
+      "explodeZmm": 10,
+      "nodeNames": ["signal-gate-sh", "signal-kelvin-sh", "signal-gate-sl", "signal-kelvin-sl"]
+    },
+    "busbar": {
+      "explodeZmm": 32,
+      "nodeNames": [
+        "source-clip-sh-1",
+        "source-clip-sh-2",
+        "source-clip-sh-3",
+        "source-clip-sh-4",
+        "source-clip-sl-1",
+        "source-clip-sl-2",
+        "source-clip-sl-3",
+        "source-clip-sl-4",
+        "n-source-collector",
+        "p-drain-feed",
+        "busbar-p",
+        "busbar-insulation",
+        "busbar-n"
+      ]
+    },
+    "dc-terminal": { "explodeZmm": 32, "nodeNames": ["dc-terminal-p", "dc-terminal-n"] },
+    "ac-terminal": { "explodeZmm": 22, "nodeNames": ["ac-source-drain-strap", "ac-terminal-out"] },
+    "housing": { "explodeZmm": 55, "nodeNames": ["housing-pps-frame"] }
+  },
+  "parameters": {
+    "busbarGapMm": 0.5,
+    "busbarGapMinMm": 0.1,
+    "busbarGapMaxMm": 2,
+    "overlapWidthMm": 40,
+    "busbarLengthMm": 100
+  },
+  "controlRanges": { "gapMm": [0.1, 2], "overlapWidthMm": [10, 60], "lengthMm": [40, 140] },
+  "constraints": {
+    "qualifiedInsulation": false,
+    "description": "Educational polygonal geometry. Gap motion is schematic; geometric validation establishes nominal routing contacts only, not device performance or manufacturing suitability."
+  },
+  "topology": {
+    "sh": { "drain": "p", "source": "ac", "parallelDies": 4, "integratedBodyDiode": true },
+    "sl": { "drain": "ac", "source": "n", "parallelDies": 4, "integratedBodyDiode": true }
+  },
+  "reproducibility": {
+    "geometrySha256": "0c2387e3375001c604af17fa4174ed42fb610d231de7043a78577e225b79b461",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      "model/l1-half-bridge/model.ts": "fc76eb7feb6d4f2a0ede07430c7ce1fdf898d278b296c3e2779f84f102cac1e0",
+      "model/l1-half-bridge/validate.ts": "cd4c62b870a8edfc7025e793d11ef0247dc9a583cd33f01461c8b53d82fe861a",
+      "model/l1-half-bridge/params.json": "8e687aa05e34d5ad8929ff5c520ffc4c743fbe19373a7ad05a62322e683f5585",
+      "scripts/l1-build.mjs": "378a5ad13a5710655d20a2155874eda16c4b18b436bf31eb8cc61a4ff6be5270",
+      "scripts/l1-generate.mjs": "d584f92f076dd4ff7242ff4edfd5ff5ee69f0f31c704020d2b19a9c90e4e1e23",
+      "scripts/l1-render.mjs": "e112394edcab86be0b8a9c930eb3ea332d7e5735fa9bdf086d9095748d25aa6a",
+      "scripts/l1-verify.mjs": "606342fa0c81ff7e18512a0cfde4e079b96200d14c2955ffa8f26b64e547f0b7"
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/l1/half-bridge.glb",
+      "bytes": 87484,
+      "sha256": "0e30cddc5f7a1a0a31d0f51b0ce0a68dc61e5702248589c89e5d08839690fc7e",
+      "compression": "EXT_meshopt_compression, 16-bit position / 10-bit normal quantization"
+    },
+    "explodedWebp": {
+      "path": "/images/l1/half-bridge-exploded.webp",
+      "bytes": 99344,
+      "sha256": "d1c299ae2b2cc6dff43184387cb39eea1ed4deedf1c8d52e23e928a50796c08a"
+    },
+    "explodedWebp640": {
+      "path": "/images/l1/half-bridge-exploded-640.webp",
+      "bytes": 44986,
+      "sha256": "905f4338b0e2dcfafc59f6a368f23df84124d240c06b619f758453c4d0520472",
+      "width": 640,
+      "height": 560
+    }
+  },
+  "toolchain": {
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium"
+  }
+}
