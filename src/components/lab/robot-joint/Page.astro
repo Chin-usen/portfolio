@@ -1,0 +1,236 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { localePath } from '../../../i18n/utils';
+import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
+import { robotJointCopy, robotJointModes, type RobotJointLocale } from './copy';
+import {
+  ROBOT_JOINT_FLOW_NODES,
+  ROBOT_JOINT_FLOW_EDGES,
+  flowNodesForPart,
+  flowEdgesForPart,
+} from './flow';
+import robotJointStyles from './robot-joint.css?raw';
+import robotJointFonts from './robot-joint-fonts.css?raw';
+interface Props {
+  locale: RobotJointLocale;
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const copy = robotJointCopy[locale];
+const parts = [...(entry.data.parts ?? [])].sort((a, b) => a.order - b.order);
+const initial = parts.find((part) => part.id === 'motor-stator')!;
+const nodeLabels = {
+  'dc-bus': copy.dcBus,
+  driver: copy.driver,
+  motor: copy.motor,
+  reducer: copy.reducer,
+  output: copy.output,
+  'motor-feedback': copy.motorFeedback,
+  'output-feedback': copy.outputFeedback,
+  brake: copy.brake,
+};
+const initialNodes = flowNodesForPart('motor-stator');
+const initialEdges = flowEdgesForPart('motor-stator');
+const poster = {
+  src: '/models/robot-joint/robot-joint-exploded.webp',
+  srcset:
+    '/models/robot-joint/robot-joint-exploded-640.webp 640w, /models/robot-joint/robot-joint-exploded.webp 1600w',
+  sizes:
+    '(max-width: 652px) calc(100vw - 64px), (max-width: 800px) 588px, (max-width: 1100px) 58vw, 64vw',
+  width: 1600,
+  height: 1400,
+  alt: copy.staticAlt,
+};
+---
+
+<style is:inline set:html={robotJointStyles + '\n' + robotJointFonts} />
+<DisassemblyPage
+  locale={locale}
+  copy={copy}
+  parts={parts}
+  modes={robotJointModes(locale)}
+  defaultPartId="motor-stator"
+  defaultMode="whole"
+  idPrefix="rj"
+  poster={poster}
+  backHref={localePath(locale, '/lab/')}
+  rootClass="disassembly robot-joint"
+  rootAttributes={{ 'data-robot-joint': true, 'data-separation': '1' }}
+>
+  <Fragment slot="after-stage">
+    <div class="rj-stage-selection" aria-live="polite" aria-atomic="true">
+      <p>
+        <span>{copy.selected}</span> <strong data-rj-stage-name>{initial.name}</strong>
+      </p>
+      <p data-rj-stage-role>{initial.role}</p>
+    </div>
+    <p class="rj-static-note">{copy.staticMode}</p>
+    <div class="rj-separation-control">
+      <label for="rj-separation">
+        {copy.separation}
+        <output for="rj-separation" data-rj-separation-output>
+          100%
+        </output>
+      </label>
+      <input
+        id="rj-separation"
+        data-rj-separation
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="100"
+        aria-describedby="rj-separation-note"
+      />
+      <div class="rj-endpoints">
+        <span>{copy.assembled}</span>
+        <span>{copy.exploded}</span>
+      </div>
+      <p id="rj-separation-note" class="rj-note">
+        {copy.separationNote}
+      </p>
+    </div>
+    <details class="rj-keyboard-help">
+      <summary>{copy.keyboardTitle}</summary>
+      <p>{copy.keyboard}</p>
+    </details>
+    <div class="rj-static-stack" data-rj-static-stack>
+      <p>{copy.staticSeparation}</p>
+      <svg viewBox="0 0 360 116" role="img" aria-labelledby="rj-static-description">
+        <title id="rj-static-description">{copy.staticSeparationAlt}</title>
+        <line class="rj-stack-axis" x1="12" x2="348" y1="58" y2="58" />
+        {parts.map((part, index) => (
+          <g
+            data-rj-static-layer={part.id}
+            data-selected={part.id === 'motor-stator' ? 'true' : 'false'}
+            transform={`translate(${180 + (index - 6.5) * 23} 0)`}
+          >
+            <rect
+              x="-5"
+              y={18 + (index % 3) * 6}
+              width="10"
+              height={80 - (index % 3) * 12}
+              rx="3"
+            />
+          </g>
+        ))}
+      </svg>
+      <p class="rj-static-selection" data-rj-static-part-name>
+        {copy.selected}: {initial.name}
+      </p>
+    </div>
+  </Fragment>
+  <Fragment slot="addons">
+    <section class="rj-flow" aria-labelledby="rj-flow-title" data-rj-flow>
+      <h2 id="rj-flow-title">{copy.flowTitle}</h2>
+      <p class="rj-flow-intro">{copy.flowIntro}</p>
+      <svg
+        class="rj-flow-diagram"
+        width="100%"
+        height="420"
+        role="group"
+        aria-labelledby="rj-flow-description"
+      >
+        <title id="rj-flow-description">{copy.flowAlt}</title>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 320 420"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            {(['power', 'mechanical', 'feedback', 'control'] as const).map((kind) => (
+              <marker
+                id={`rj-arrow-${kind}`}
+                viewBox="0 0 10 10"
+                refX="8"
+                refY="5"
+                markerWidth="7"
+                markerHeight="7"
+                orient="auto"
+                markerUnits="userSpaceOnUse"
+              >
+                <path d="M 0 0 L 10 5 L 0 10 Z" class={`rj-arrow rj-${kind}`} />
+              </marker>
+            ))}
+          </defs>
+          {ROBOT_JOINT_FLOW_EDGES.map((edge) => (
+            <path
+              class={`rj-flow-edge rj-${edge.kind}`}
+              data-rj-flow-edge={edge.id}
+              data-kind={edge.kind}
+              data-from={edge.from}
+              data-to={edge.to}
+              data-selected={String(initialEdges.includes(edge.id))}
+              d={edge.path}
+              marker-end={`url(#rj-arrow-${edge.kind})`}
+            />
+          ))}
+        </svg>
+        {ROBOT_JOINT_FLOW_NODES.map((node) => (
+          <foreignObject
+            x={node.x}
+            y={`${(node.y / 420) * 100}%`}
+            width={node.width}
+            height="12.857142857%"
+          >
+            <button
+              type="button"
+              class="rj-flow-node"
+              data-rj-flow-node={node.id}
+              data-rj-flow-part={node.partId}
+              data-external={String(node.external)}
+              data-selected={String(initialNodes.includes(node.id))}
+              aria-pressed={initialNodes.includes(node.id)}
+              aria-describedby="rj-flow-context"
+            >
+              <span>{nodeLabels[node.id]}</span>
+              {node.external && <span class="rj-external-label">{copy.external}</span>}
+            </button>
+          </foreignObject>
+        ))}
+      </svg>
+      <div class="rj-flow-selection" aria-live="polite" aria-atomic="true">
+        <p class="rj-flow-selected">
+          <span>{copy.selected}</span>
+          <strong data-rj-flow-selected>{initial.name}</strong>
+        </p>
+        <p id="rj-flow-context" data-rj-flow-context data-state="mapped">
+          {copy.contextMotor}
+        </p>
+      </div>
+      <ul class="rj-flow-legend" aria-label={copy.flowTitle}>
+        {(['power', 'mechanical', 'feedback', 'control'] as const).map((kind) => (
+          <li data-rj-flow-legend={kind}>
+            <svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true">
+              <path d="M 1 6 H 27" class={`rj-flow-edge rj-${kind}`} />
+            </svg>
+            <span>{copy[kind]}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="rj-note">{copy.flowPowerNote}</p>
+    </section>
+  </Fragment>
+  <Fragment slot="scale-note">
+    <p class="rj-model-label">{copy.modelScope}</p>
+  </Fragment>
+  <Fragment slot="notes">
+    <details class="rj-assumptions">
+      <summary>{copy.assumptions}</summary>
+      <div>
+        <p>{copy.geometryNote}</p>
+        <p>{copy.hollowNote}</p>
+        <p>{copy.brakeNote}</p>
+        <p>{copy.limitsNote}</p>
+      </div>
+    </details>
+    <p class="rj-provenance">{copy.provenance}</p>
+  </Fragment>
+</DisassemblyPage>
+<script>
+  import { initializeRobotJoints } from './client';
+  initializeRobotJoints();
+</script>

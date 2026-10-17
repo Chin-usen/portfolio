@@ -1,0 +1,12 @@
+{
+  "contractVersion": 1,
+  "slug": "robot-joint",
+  "code": "L5",
+  "template": "disassembly",
+  "bodyClass": "disassembly-page robot-joint-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": false,
+    "preload": { "zh": [], "en": [] }
+  }
+}
