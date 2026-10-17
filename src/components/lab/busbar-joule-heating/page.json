@@ -1,0 +1,12 @@
+{
+  "contractVersion": 1,
+  "slug": "busbar-joule-heating",
+  "code": "S2",
+  "template": "simulation",
+  "bodyClass": "thermal-page busbar-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": true,
+    "preload": { "zh": [], "en": [] }
+  }
+}

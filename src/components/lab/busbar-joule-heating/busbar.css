@@ -1,0 +1,294 @@
+/* S2 additions on top of the shared S1 simulation styles (thermal.css). */
+.busbar-lab {
+  --busbar-current-0: #101a2e;
+  --busbar-current-1: #1d3f73;
+  --busbar-current-2: #2f6fb8;
+  --busbar-current-3: #6fb0e6;
+  --busbar-current-4: #e3f4ff;
+  --busbar-select: #0066cc;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .busbar-lab {
+    --busbar-select: #2997ff;
+  }
+}
+:root[data-theme='dark'] .busbar-lab {
+  --busbar-select: #2997ff;
+}
+
+.busbar-canvas {
+  display: grid;
+  place-items: center;
+}
+.busbar-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.busbar-load3d {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  z-index: 2;
+  transform: translateX(-50%);
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--thermal-card);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+  color: var(--busbar-select) !important;
+  font-size: 0.9375rem;
+}
+.busbar-poster-note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  z-index: 2;
+  color: var(--thermal-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.busbar-lab[data-load='manual'] .busbar-poster-note {
+  bottom: auto;
+}
+
+.busbar-field-switch,
+.busbar-segmented {
+  display: flex;
+  gap: 0.125rem;
+  padding: 0.25rem;
+  margin-bottom: 0.6rem;
+  border-radius: 28px;
+  background: var(--thermal-soft);
+}
+.busbar-field-switch button,
+.busbar-segmented button {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.4rem 0.75rem;
+  border: 0;
+  border-radius: 24px;
+  background: transparent;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+.busbar-field-switch button[aria-pressed='true'],
+.busbar-segmented button[aria-pressed='true'] {
+  background: var(--thermal-card);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+  font-weight: 600;
+}
+.busbar-scale {
+  pointer-events: auto;
+}
+.busbar-lab[data-field='current'] .busbar-palette {
+  background: linear-gradient(
+    90deg,
+    var(--busbar-current-0),
+    var(--busbar-current-1),
+    var(--busbar-current-2),
+    var(--busbar-current-3),
+    var(--busbar-current-4)
+  );
+}
+.busbar-field-status {
+  color: var(--thermal-secondary);
+}
+
+.busbar-conductor-card[data-active='false'] h2 {
+  color: var(--thermal-secondary);
+}
+.busbar-card-role {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  margin: -0.35rem 0 0.7rem !important;
+}
+
+.busbar-card {
+  padding: 1.75rem 0.125rem 0;
+}
+.busbar-caption-note {
+  font-family: var(--thermal-font) !important;
+  white-space: normal !important;
+}
+.busbar-muted {
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.busbar-topology-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+.busbar-topology {
+  width: 100%;
+  max-width: 330px;
+  overflow: visible;
+  color: var(--thermal-secondary);
+}
+.busbar-topology path {
+  stroke: currentColor;
+  stroke-width: 1.4;
+  fill: none;
+}
+.busbar-topology text {
+  fill: currentColor;
+  stroke: none;
+  font-size: 12px;
+  font-family: var(--thermal-font);
+}
+.busbar-topology circle {
+  fill: currentColor;
+}
+.busbar-topology .busbar-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 20;
+  pointer-events: all;
+}
+.busbar-topology-select,
+.busbar-switch {
+  cursor: pointer;
+}
+.busbar-topology-select:focus-visible,
+.busbar-switch:focus-visible {
+  outline: 2px solid var(--busbar-select);
+  outline-offset: 4px;
+}
+.busbar-lab[data-state='sh'] [data-conductor='p-layer'],
+.busbar-lab[data-state='sh'] [data-conductor='ac-link'],
+.busbar-lab[data-state='sl'] [data-conductor='ac-link'],
+.busbar-lab[data-state='sl'] [data-conductor='n-layer'],
+.busbar-switch[aria-pressed='true'] {
+  color: var(--thermal-text);
+}
+.busbar-topology-select[aria-pressed='true'] .busbar-rail {
+  stroke-width: 3;
+}
+.busbar-topology-select[aria-pressed='true'] {
+  color: var(--busbar-select) !important;
+}
+.busbar-topology-select:hover,
+.busbar-switch:hover {
+  color: var(--busbar-select);
+}
+.busbar-path {
+  color: var(--thermal-accent);
+  stroke-dasharray: 5 5;
+  opacity: 0;
+  transition: opacity 200ms var(--thermal-ease);
+}
+.busbar-topology .busbar-path {
+  stroke-width: 1.6;
+  transform: translate(-6px, 6px);
+}
+.busbar-lab[data-state='sh'] .busbar-path-sh,
+.busbar-lab[data-state='sl'] .busbar-path-sl {
+  opacity: 1;
+}
+.busbar-state-panel {
+  display: grid;
+  gap: 0.5rem;
+}
+.busbar-state-panel .busbar-segmented {
+  margin: 0;
+}
+.busbar-path-text {
+  font-family: var(--thermal-mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.busbar-lab[data-state='sh'] [data-path-text='sl'],
+.busbar-lab[data-state='sl'] [data-path-text='sh'] {
+  display: none;
+}
+
+.busbar-boundaries {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+.busbar-formulas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 0.5rem;
+}
+.busbar-formulas code {
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  background: var(--thermal-soft);
+  font-family: var(--thermal-mono);
+  font-size: 0.8125rem;
+}
+
+.busbar-parts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.busbar-part h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.busbar-part h3 span {
+  margin-left: 0.4rem;
+  color: var(--thermal-secondary);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.busbar-part dl {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+.busbar-part dt {
+  color: var(--thermal-secondary);
+  margin-top: 0.35rem;
+}
+.busbar-part dd {
+  margin: 0;
+}
+
+@media (max-width: 56rem) {
+  .busbar-topology-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .busbar-topology {
+    justify-self: center;
+  }
+  .busbar-parts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 37.5rem) {
+  .busbar-loss-legend {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .busbar-path {
+    transition: none;
+  }
+}
+@media print {
+  .busbar-load3d,
+  .busbar-field-switch {
+    display: none;
+  }
+}

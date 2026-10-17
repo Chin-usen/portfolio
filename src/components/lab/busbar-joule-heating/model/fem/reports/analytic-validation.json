@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "criterion": "relative error < 2 %",
+  "worst_relative_error": 0.003130572184172304,
+  "assumptions": "Constant sigma and k; insulated lateral surfaces (resistance); 1-D fin uses all four lateral faces with beta = h/k and both ends at Theta = 0.",
+  "cases": [
+    {
+      "check": "straight-bar-resistance",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "mesh": {
+        "h_max_mm": 1.0,
+        "n_thin": 2,
+        "nodes": 615
+      },
+      "fem_mOhm": 0.21551724137925668,
+      "analytic_mOhm": 0.21551724137931036,
+      "relative_error": 2.4914532242847893e-13,
+      "joule_identity_error": 2.486888733138007e-13
+    },
+    {
+      "check": "straight-bar-resistance",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 1155
+      },
+      "fem_mOhm": 0.21551724137929174,
+      "analytic_mOhm": 0.21551724137931036,
+      "relative_error": 8.640223952971481e-14,
+      "joule_identity_error": 8.639736061993118e-14
+    },
+    {
+      "check": "straight-bar-resistance",
+      "geometry_mm": [60.0, 3.0, 3.0],
+      "mesh": {
+        "h_max_mm": 1.0,
+        "n_thin": 2,
+        "nodes": 976
+      },
+      "fem_mOhm": 0.11494252873562533,
+      "analytic_mOhm": 0.11494252873563218,
+      "relative_error": 5.96609350464461e-14,
+      "joule_identity_error": 5.945041912461827e-14
+    },
+    {
+      "check": "straight-bar-resistance",
+      "geometry_mm": [60.0, 3.0, 3.0],
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 2025
+      },
+      "fem_mOhm": 0.1149425287356039,
+      "analytic_mOhm": 0.11494252873563218,
+      "relative_error": 2.460718803200257e-13,
+      "joule_identity_error": 2.4593319279206807e-13
+    },
+    {
+      "check": "1d-conduction-joule-rise",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "beta_per_m": 0.0,
+      "mL_over_2": null,
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 1155
+      },
+      "fem_theta_max": 0.12499999999999517,
+      "analytic_theta_max": 0.125,
+      "relative_error": 3.863576125695545e-14,
+      "example_copper_200A": {
+        "h_W_m2K": 0.0,
+        "fem_rise_K": 34.44968692123798,
+        "analytic_rise_K": 34.44968692123931
+      }
+    },
+    {
+      "check": "1d-conduction-joule-rise",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "beta_per_m": 0.1,
+      "mL_over_2": 0.3464101615137755,
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 1155
+      },
+      "fem_theta_max": 0.11904788158354458,
+      "analytic_theta_max": 0.1190408489699412,
+      "relative_error": 5.9077313915631354e-5,
+      "example_copper_200A": {
+        "h_W_m2K": 39.1,
+        "fem_rise_K": 32.80929799351906,
+        "analytic_rise_K": 32.80735982282406
+      }
+    },
+    {
+      "check": "1d-conduction-joule-rise",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "beta_per_m": 1.0,
+      "mL_over_2": 1.0954451150103324,
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 1155
+      },
+      "fem_theta_max": 0.08306675660000233,
+      "analytic_theta_max": 0.08301644104108674,
+      "relative_error": 0.0006060914956675541,
+      "example_copper_200A": {
+        "h_W_m2K": 391.0,
+        "fem_rise_K": 22.892990067462957,
+        "analytic_rise_K": 22.87912322544768
+      }
+    },
+    {
+      "check": "1d-conduction-joule-rise",
+      "geometry_mm": [40.0, 4.0, 0.8],
+      "beta_per_m": 5.0,
+      "mL_over_2": 2.449489742783178,
+      "mesh": {
+        "h_max_mm": 0.75,
+        "n_thin": 2,
+        "nodes": 1155
+      },
+      "fem_theta_max": 0.034633182086366995,
+      "analytic_theta_max": 0.034525098772494024,
+      "relative_error": 0.003130572184172304,
+      "example_copper_200A": {
+        "h_W_m2K": 1955.0,
+        "fem_rise_K": 9.544818239692933,
+        "analytic_rise_K": 9.515030749098262
+      }
+    }
+  ]
+}
