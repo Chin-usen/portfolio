@@ -235,3 +235,62 @@ for (const prefix of ['', '/en'])
     expect(sheets).toBe(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   });
+
+test('every Chinese glyph rendered above 400 is in its page emphasis face', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(route);
+    const manifest = await (
+      await page.request.get(
+        '/models/pin-fin-cooler/fonts/noto-sans-sc-pin-fin-cooler-manifest.json',
+      )
+    ).json();
+    const coverage = Object.fromEntries(
+      (manifest.faces as { weight: number; codepoints: string[] }[]).map((face) => [
+        face.weight,
+        face.codepoints.map((code) => parseInt(code.slice(2), 16)),
+      ]),
+    );
+    const lab = page.locator(root);
+    // Reach the dynamic emphasis states: an 'outside' pill and every selected part name.
+    await lab.locator('[data-tab="footprint"]').click();
+    await lab.locator('[data-param="length"]').fill('20');
+    await lab.locator('[data-tab="pins"]').click();
+    await lab.locator('[data-param="diameter"]').fill('3');
+    await lab.locator('[data-param="pitchL"]').fill('3');
+    await expect(lab).toHaveAttribute('data-status', 'out');
+    const ids = await lab
+      .locator('[data-select-part]')
+      .evaluateAll((buttons) => buttons.map((button) => button.getAttribute('data-select-part')!));
+    const missing = new Set<string>();
+    for (const id of ids) {
+      await lab.locator(`[data-select-part="${id}"]`).click();
+      for (const tab of ['flow', 'pins', 'footprint']) {
+        await lab.locator(`[data-tab="${tab}"]`).click();
+        const used: [number, string][] = await page.evaluate(() => {
+          const result: [number, string][] = [];
+          const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+          for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+            const element = node.parentElement;
+            if (!element || !/[\u3000-\u9fff\uff00-\uffef]/.test(node.textContent ?? '')) continue;
+            if (element.closest('[hidden], script, style, noscript')) continue;
+            const weight = Number(getComputedStyle(element).fontWeight);
+            if (weight > 400) result.push([weight, node.textContent ?? '']);
+          }
+          return result;
+        });
+        for (const [weight, text] of used) {
+          const face = weight >= 650 ? 700 : weight >= 550 ? 600 : 500;
+          for (const character of text)
+            if (
+              /[\u3000-\u9fff\uff00-\uffef]/.test(character) &&
+              !coverage[face]!.includes(character.codePointAt(0)!)
+            )
+              missing.add(`${face}:${character}`);
+        }
+      }
+    }
+    expect([...missing]).toEqual([]);
+  }
+});

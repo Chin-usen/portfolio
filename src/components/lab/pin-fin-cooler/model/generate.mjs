@@ -28,6 +28,7 @@ const rendering = await renderModel({
   root,
   output: path.join(output, 'pin-fin-cooler-preview.webp'),
   responsiveOutput: path.join(output, 'pin-fin-cooler-preview-800.webp'),
+  smallOutput: path.join(output, 'pin-fin-cooler-preview-480.webp'),
   evidence,
 });
 const SOURCE_NAMES = [
@@ -76,6 +77,7 @@ const manifest = {
     },
     previewWebp: { ...rendering.asset, width: 1600, height: 1000 },
     previewWebp800: rendering.responsive.asset,
+    previewWebp480: rendering.small.asset,
   },
   validation: {
     namedIndependentMeshes: first.nodeCount,

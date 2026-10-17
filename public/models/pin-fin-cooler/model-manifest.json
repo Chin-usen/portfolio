@@ -39,8 +39,8 @@
       "src/components/lab/pin-fin-cooler/layout.ts": "55865d1bdb0781f2dfa78f71a4df2e07e84f226bea656c41764e00b890c93b14",
       "src/components/lab/pin-fin-cooler/geometry.ts": "ff91f3d671f1ca1d231792fd4d834e57283ba6ad2b9f65a213b1d675a8d5b86b",
       "src/components/lab/pin-fin-cooler/model/build.mjs": "36d0744273a5f7285e275b3c709e0b3e3a3af457fb2b495135b2311402e9f007",
-      "src/components/lab/pin-fin-cooler/model/render.mjs": "4c0aba984726e7fa8a98f95061151a15cfb8097c670d156a06553df5bf052dd3",
-      "src/components/lab/pin-fin-cooler/model/generate.mjs": "af8b5ca82b8ebd9303a00dc598083abcb711b18340023ff877877c7e15f4077b",
+      "src/components/lab/pin-fin-cooler/model/render.mjs": "e1710e4c82099b0b792b64b9e97e1b2ca07975215212628f9a2a48081d48f30e",
+      "src/components/lab/pin-fin-cooler/model/generate.mjs": "638d3a4244503fc9f56d12541d14ebb757b607c69668ccb2469a1e7adc23bb51",
       "src/components/lab/pin-fin-cooler/model/verify.mjs": "7c74ef614ed6ceedaa93a682fdd7966b44f857c1ab0baf1f408d840ac1339854",
       ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921"
     }
@@ -65,6 +65,13 @@
       "sha256": "ba0503a2b77944111f84cb0071a29ccde4187c231dc5a04249db431355574e67",
       "width": 800,
       "height": 500
+    },
+    "previewWebp480": {
+      "path": "/models/pin-fin-cooler/pin-fin-cooler-preview-480.webp",
+      "bytes": 17952,
+      "sha256": "28ebf4ced0c184d0907a23503c91dcedd1be6286667d602510fa582c59d204f3",
+      "width": 480,
+      "height": 300
     }
   },
   "validation": {

@@ -35,12 +35,15 @@ renderer.render(scene,camera);
 const responsive=document.createElement('canvas');responsive.width=800;responsive.height=500;
 const context=responsive.getContext('2d');context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high';
 context.drawImage(renderer.domElement,0,0,800,500);
-return {responsiveWebp:responsive.toDataURL('image/webp',.93),webp:renderer.domElement.toDataURL('image/webp',.93),png:renderer.domElement.toDataURL('image/png'),meshCount:owned.length,webgl:renderer.getContext().getParameter(renderer.getContext().VERSION),bounds:bounds.min.toArray().concat(bounds.max.toArray())};
+const small=document.createElement('canvas');small.width=480;small.height=300;
+const smallContext=small.getContext('2d');smallContext.imageSmoothingEnabled=true;smallContext.imageSmoothingQuality='high';
+smallContext.drawImage(renderer.domElement,0,0,480,300);
+return {smallWebp:small.toDataURL('image/webp',.9),responsiveWebp:responsive.toDataURL('image/webp',.93),webp:renderer.domElement.toDataURL('image/webp',.93),png:renderer.domElement.toDataURL('image/png'),meshCount:owned.length,webgl:renderer.getContext().getParameter(renderer.getContext().VERSION),bounds:bounds.min.toArray().concat(bounds.max.toArray())};
 }
 window.modelRender=render;window.modelReady=true;
 </script>`;
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
-export async function renderModel({ root, output, responsiveOutput, evidence }) {
+export async function renderModel({ root, output, responsiveOutput, smallOutput, evidence }) {
   const threeRoot = fileURLToPath(new URL('../', import.meta.resolve('three')));
   const packageRoot = threeRoot;
   const server = createServer(async (request, response) => {
@@ -91,6 +94,8 @@ export async function renderModel({ root, output, responsiveOutput, evidence }) 
     const second = await page.evaluate(() => window.modelRender('default'));
     if (failures.length) throw new Error(failures.join('\n'));
     if (first.webp !== second.webp) throw new Error('Same-session repeated WebP rendering differs');
+    if (first.smallWebp !== second.smallWebp)
+      throw new Error('Same-session repeated small WebP rendering differs');
     if (first.responsiveWebp !== second.responsiveWebp)
       throw new Error('Same-session repeated responsive WebP rendering differs');
     const image = Buffer.from(first.webp.split(',')[1], 'base64');
@@ -119,6 +124,15 @@ export async function renderModel({ root, output, responsiveOutput, evidence }) 
       }, uri);
     const decoded = await decodeImage(first.webp);
     const responsiveDecoded = await decodeImage(first.responsiveWebp);
+    const smallImage = Buffer.from(first.smallWebp.split(',')[1], 'base64');
+    const smallDecoded = await decodeImage(first.smallWebp);
+    if (
+      smallImage.subarray(8, 12).toString() !== 'WEBP' ||
+      smallDecoded.width !== 480 ||
+      smallDecoded.height !== 300 ||
+      smallDecoded.visiblePixels < 6_000
+    )
+      throw new Error('Empty or invalid small WebP');
     if (decoded.width !== 1600 || decoded.height !== 1000 || decoded.visiblePixels < 100_000)
       throw new Error('Empty or invalid WebP');
     if (
@@ -129,6 +143,7 @@ export async function renderModel({ root, output, responsiveOutput, evidence }) 
       throw new Error('Empty or invalid responsive WebP');
     await writeFile(output, image);
     await writeFile(responsiveOutput, responsiveImage);
+    await writeFile(smallOutput, smallImage);
     if (evidence) {
       await writeFile(
         path.join(evidence, 'pin-fin-cooler-preview.png'),
@@ -147,6 +162,16 @@ export async function renderModel({ root, output, responsiveOutput, evidence }) 
         sha256: sha(image),
       },
       ...decoded,
+      small: {
+        asset: {
+          path: '/models/pin-fin-cooler/pin-fin-cooler-preview-480.webp',
+          bytes: smallImage.length,
+          sha256: sha(smallImage),
+          width: 480,
+          height: 300,
+        },
+        ...smallDecoded,
+      },
       responsive: {
         asset: {
           path: '/models/pin-fin-cooler/pin-fin-cooler-preview-800.webp',

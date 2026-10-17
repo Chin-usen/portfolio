@@ -59,17 +59,96 @@ def decode_hashes(value, key=""):
     return value
 
 
+WEIGHT_RULES = {
+    400: "All page text in both locales: Content Collection entries, component and runtime copy, shared simulation shell, header/footer.",
+    500: "Shared desktop navigation labels (.n1-nav-list a).",
+    600: "Eyebrow, card/section headings, parameter tabs, validity group headings, 'outside' status pill, streamline badge, note labels, selected part names, site name and active navigation.",
+    700: "Page title (h1) and shared mobile-menu / [aria-current] navigation labels.",
+}
+# CSS declarations reviewed against the copy below. Any change to these weight lists fails the
+# generator until the CSS-to-copy map is reviewed again.
+EXPECTED_DECLARATIONS = {
+    "src/components/lab/thermal-stack/thermal.css": [600, 700, 600, 500, 600, 600, 500, 600, 600, 600, 600, 600, 600],
+    "src/components/lab/pin-fin-cooler/pin-fin.css": [600, 600, 400, 600, 600, 600, 400, 600, 400, 600],
+    "src/styles/navigation.css": [600, 500, 600, 700, 400],
+}
+# Selectors whose Chinese text is rendered above 400 on this page, with the copy that feeds them.
+VERIFIED_SELECTORS = [
+    ("src/components/lab/thermal-stack/thermal.css", ".thermal-eyebrow", 600),
+    ("src/components/lab/thermal-stack/thermal.css", ".thermal-heading h1", 700),
+    ("src/components/lab/thermal-stack/thermal.css", ".thermal-parameter-heading h2", 600),
+    ("src/components/lab/thermal-stack/thermal.css", ".thermal-tabs > button[aria-selected='true']", 600),
+    ("src/components/lab/thermal-stack/thermal.css", ".thermal-note-label", 600),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-part-card h2", 600),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-part-card h2 small", 400),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-card-title", 600),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-badge", 600),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-validity-group h3", 600),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-validity th", 400),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-table-details :is(th, td)", 400),
+    ("src/components/lab/pin-fin-cooler/pin-fin.css", ".pf-validity tr[data-status='out'] .pf-pill", 600),
+    ("src/styles/navigation.css", ".n1-header .site-name", 600),
+    ("src/styles/navigation.css", ".n1-nav-list a", 500),
+    ("src/styles/navigation.css", ".n1-nav-list a[aria-current='page']", 600),
+    ("src/styles/navigation.css", ".n1-menu-contact a", 400),
+]
+COPY_KEYS = {
+    600: ("eyebrow", "parameterTitle", "streamTitle", "sweepTitle", "detailsTitle", "validityTitle",
+          "streamBadge", "methodTitle", "formulasTitle", "assumptionsTitle", "referencesTitle"),
+    700: ("title",),
+}
+COPY_DICTS_600 = ("tabs", "correlations")
+
+
 def coverage_inputs():
     inputs = {}
     script = (ROOT / "src/components/lab" / SLUG / "model/subset-fonts.py")
     inputs[script.relative_to(ROOT).as_posix()] = base.digest(script.read_bytes())
     text = lab_inputs.component_text(SLUG, inputs)
-    # The page also inlines the S1 surface stylesheet; bind it so weight-relevant edits rebind.
-    lab_inputs.read("src/components/lab/thermal-stack/thermal.css", inputs)
-    codes = {ord(character) for character in text if ord(character) > 127}
-    codes |= {mirror for code in tuple(codes) if (mirror := mirrored(code)) is not None}
+    sources_css = {}
+    for relative in EXPECTED_DECLARATIONS:
+        sources_css[relative] = lab_inputs.read(relative, inputs)
+    for relative, expected in EXPECTED_DECLARATIONS.items():
+        found = [int(value) for value in re.findall(r"font-weight:\s*(\d+)\s*;", sources_css[relative])]
+        assert found == expected, f"Weight declarations changed in {relative}: {found}; review the pin-fin weight map"
+    for relative, selector, weight in VERIFIED_SELECTORS:
+        blocks = re.findall(re.escape(selector) + r"\s*\{([^}]*)\}", sources_css[relative])
+        declared = [int(found[1]) for block in blocks if (found := re.search(r"font-weight:\s*(\d+)\s*;", block))]
+        assert declared and declared[-1] == weight, selector
+    copy = json.loads(subprocess.run(
+        ["node", "--experimental-strip-types", "-e",
+         "import('./src/components/lab/pin-fin-cooler/copy.ts').then((m) => process.stdout.write(JSON.stringify(m.pinFinCopy)))"],
+        cwd=ROOT, check=True, capture_output=True, text=True).stdout)
+    dictionary = lab_inputs.read("src/i18n/dictionaries.ts", inputs)
+    nav = "".join(re.findall(r"about:\s*'([^']*)'", dictionary)[:2])
+    site, active = "", ""
+    for locale in ("zh", "en"):
+        home = json.loads(lab_inputs.read(f"src/content/home/{locale}.json", inputs))
+        nav += home["navWork"] + home["navLab"]
+        active += home["navLab"]
+        site += home["name"]
+    part_names = ""
+    for locale in ("zh", "en"):
+        document = lab_inputs.read(f"src/content/lab/{locale}/{SLUG}.md", inputs)
+        names = re.findall(r"^    name: '([^']*)'\s*$", document, re.M)
+        assert len(names) == 5, f"Review {locale} part names"
+        part_names += "".join(names)
+    sources = {400: text, 500: nav, 600: site + active + part_names, 700: nav}
+    for locale in ("zh", "en"):
+        for weight, keys in COPY_KEYS.items():
+            sources[weight] += "".join(copy[locale][key] for key in keys)
+        for key in COPY_DICTS_600:
+            sources[600] += "".join(copy[locale][key].values())
+        sources[600] += copy[locale]["statusNames"]["out"]
+    for weight in (500, 600, 700):
+        assert {c for c in sources[weight] if ord(c) > 127} <= set(text), "Emphasis copy must also be bound page text"
+    requested = {}
+    for weight, source in sources.items():
+        codes = {ord(character) for character in source if ord(character) > 127}
+        codes |= {mirror for code in tuple(codes) if (mirror := mirrored(code)) is not None}
+        requested[weight] = codes
     bindings = [{"path": path, "sha256": checksum} for path, checksum in sorted(inputs.items())]
-    return {weight: set(codes) for weight in WEIGHTS}, bindings
+    return requested, bindings
 
 
 def css_unicode_range(codepoints):
@@ -147,7 +226,9 @@ def main():
                     "package": "@fontsource/noto-sans-sc", "packageVersion": package["version"],
                     "license": {"spdx": "OFL-1.1", "file": "OFL.txt", "source": "node_modules/@fontsource/noto-sans-sc/LICENSE", "sha256": base.digest(license_bytes)},
                     "tools": {"fonttools": base.FONTTOOLS_VERSION, "brotli": base.BROTLI_VERSION},
-                    "coverageRule": "Every weight covers all pin-fin page text in both locales, the five-part collection, runtime copy and the shared shell. Latin remains Geist; symbols outside the original master use existing fallbacks.",
+                    "coverageRule": "400 covers all pin-fin page text in both locales, the five-part collection, runtime copy and the shared shell; 500/600/700 cover only the CSS-mapped emphasis copy. Latin remains Geist; symbols outside the original master use existing fallbacks.",
+                    "weightRules": WEIGHT_RULES,
+                    "verifiedSelectors": [{"source": source, "selector": selector, "weight": weight} for source, selector, weight in VERIFIED_SELECTORS],
                     "sourceBindings": inputs, "faces": faces}
         MANIFEST.write_text(json.dumps(encode_hashes(manifest), indent=2) + "\n", encoding="utf-8", newline="\n")
         CSS.write_text("\n".join(css) + "\n", encoding="utf-8", newline="\n")

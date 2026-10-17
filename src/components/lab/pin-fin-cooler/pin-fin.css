@@ -474,7 +474,7 @@
   text-align: left;
   vertical-align: baseline;
 }
-.pf-validity tbody th {
+.pf-validity th {
   font-weight: 400;
 }
 .pf-validity td:nth-child(2),

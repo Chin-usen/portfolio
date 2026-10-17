@@ -51,7 +51,7 @@ const backHref = locale === 'zh' ? '/lab/' : '/en/lab/';
 const poster = {
   src: '/models/pin-fin-cooler/pin-fin-cooler-preview-800.webp',
   srcset:
-    '/models/pin-fin-cooler/pin-fin-cooler-preview-800.webp 800w, /models/pin-fin-cooler/pin-fin-cooler-preview.webp 1600w',
+    '/models/pin-fin-cooler/pin-fin-cooler-preview-480.webp 480w, /models/pin-fin-cooler/pin-fin-cooler-preview-800.webp 800w, /models/pin-fin-cooler/pin-fin-cooler-preview.webp 1600w',
 };
 const correlationOrder = ['zukauskas', 'gaddis', 'fin', 'properties', 'geometry'] as const;
 const detailKeys = Object.keys(text.details) as (keyof typeof text.details)[];
@@ -162,7 +162,7 @@ const detailKeys = Object.keys(text.details) as (keyof typeof text.details)[];
         data-pf-preview
         src={poster.src}
         srcset={poster.srcset}
-        sizes="(max-width: 56rem) 100vw, 60vw"
+        sizes="(max-width: 37.5rem) calc(100vw - 64px), (max-width: 56rem) calc(100vw - 80px), 52vw"
         width="1600"
         height="1000"
         alt={text.previewAlt}
