@@ -1,0 +1,18 @@
+{
+  "contractVersion": 1,
+  "slug": "pin-fin-cooler",
+  "code": "S3",
+  "template": "simulation",
+  "bodyClass": "thermal-page pin-fin-cooler-page",
+  "fonts": {
+    "commonNoto": false,
+    "mono": true,
+    "preload": {
+      "zh": [
+        "/models/pin-fin-cooler/fonts/noto-sans-sc-pin-fin-cooler-400-normal.woff2",
+        "/models/pin-fin-cooler/fonts/noto-sans-sc-pin-fin-cooler-600-normal.woff2"
+      ],
+      "en": []
+    }
+  }
+}

@@ -1,0 +1,657 @@
+---
+import thermalStyles from '../thermal-stack/thermal.css?inline';
+import pinFinStyles from './pin-fin.css?inline';
+import pinFinFontStyles from './pin-fin-cooler-fonts.css?inline';
+import SimulationShell from '../_shared/simulation/SimulationShell.astro';
+import SimulationCard from '../_shared/simulation/SimulationCard.astro';
+import type { LabPart } from '../../../lib/lab-page-contract';
+import { pinFinCopy, FORMULAS, type PinFinLocale } from './copy';
+import {
+  ARRANGEMENTS,
+  COOLANTS,
+  DEFAULT_PARAMS,
+  GROUPS,
+  PARAMETER_DEFINITIONS,
+  PIN_MATERIALS,
+  type GroupId,
+} from './parameters';
+import { evaluate, type PinFinResult } from './evaluator';
+import { sweep } from './sweep';
+import { chartModel, CHART } from './chart';
+import { streamlineSketch } from './streamlines';
+import { details, formatCheckValue, formatRange, headline } from './format';
+
+interface Props {
+  locale: PinFinLocale;
+  parts: LabPart[];
+}
+const { locale, parts: unsortedParts } = Astro.props;
+const text = pinFinCopy[locale];
+const parts = [...unsortedParts].sort((a, b) => a.order - b.order);
+const selectedPart = parts.find((part) => part.id === 'pin-array') ?? parts[0];
+const evaluated = evaluate({ ...DEFAULT_PARAMS });
+if (!evaluated.ok) throw new Error('Default pin-fin parameters must evaluate');
+const result: PinFinResult = evaluated;
+const values = headline(result);
+const detailValues = details(result);
+const chart = chartModel(sweep({ ...DEFAULT_PARAMS }, 'flow'));
+const sketch = streamlineSketch({ ...DEFAULT_PARAMS });
+const definitionsByGroup = (group: GroupId) =>
+  PARAMETER_DEFINITIONS.filter((entry) => entry.group === group);
+const fill = (value: number, min: number, max: number) =>
+  `--range-fill:${(((value - min) / (max - min)) * 100).toFixed(2)}%`;
+const statusText =
+  result.outCount > 0
+    ? `${result.outCount} ${text.statusOut}`
+    : result.cautionCount > 0
+      ? `${result.cautionCount} ${text.statusCaution}`
+      : text.statusAllOk;
+const statusKind = result.outCount > 0 ? 'out' : result.cautionCount > 0 ? 'caution' : 'ok';
+const backHref = locale === 'zh' ? '/lab/' : '/en/lab/';
+const poster = {
+  src: '/models/pin-fin-cooler/pin-fin-cooler-preview-800.webp',
+  srcset:
+    '/models/pin-fin-cooler/pin-fin-cooler-preview-480.webp 480w, /models/pin-fin-cooler/pin-fin-cooler-preview-800.webp 800w, /models/pin-fin-cooler/pin-fin-cooler-preview.webp 1600w',
+};
+const correlationOrder = ['zukauskas', 'gaddis', 'fin', 'properties', 'geometry'] as const;
+const detailKeys = Object.keys(text.details) as (keyof typeof text.details)[];
+---
+
+<style
+  is:inline
+  data-critical-lab="pin-fin-cooler"
+  set:html={thermalStyles + '\n' + pinFinStyles + '\n' + pinFinFontStyles}
+/>
+
+<SimulationShell
+  locale={locale}
+  labelledBy="pf-title"
+  class="thermal-lab pf-lab"
+  rootAttributes={{
+    'data-pin-fin-lab': true,
+    'data-status': statusKind,
+    'data-text-loading': text.loading,
+    'data-text-manual': text.manualLoad,
+    'data-text-stage': text.stageLabel,
+  }}
+>
+  <header slot="heading" class="thermal-heading">
+    <div>
+      <p class="thermal-eyebrow">{text.eyebrow}</p>
+      <h1 id="pf-title">{text.title}</h1>
+      <p class="thermal-subtitle">{text.subtitle}</p>
+    </div>
+    <a class="thermal-back-link" href={backHref}>
+      <span aria-hidden="true">‹</span>
+      {text.back}
+    </a>
+  </header>
+
+  <div slot="summary" class="thermal-metrics pf-metrics">
+    <p class="thermal-metric-label">
+      {text.rthLabel}{' '}
+      <span>
+        R<sub>th</sub>
+      </span>
+    </p>
+    <p class="thermal-temperature">
+      <output data-value="rth">{values.rth}</output>
+      <span>K/W</span>
+    </p>
+    <p class="thermal-node-label">{text.rthDefinition}</p>
+    <dl class="thermal-secondary-metrics pf-secondary">
+      <div>
+        <dt>
+          {text.dpLabel} <abbr title={text.dpLabel}>Δp</abbr>
+        </dt>
+        <dd>
+          <output data-value="dp">{values.dp}</output>
+          <span>kPa</span>
+        </dd>
+      </div>
+      <div>
+        <dt>
+          {text.hLabel} <abbr title={text.hLabel}>h̄</abbr>
+        </dt>
+        <dd>
+          <output data-value="h">{values.h}</output>
+          <span>W/(m²·K)</span>
+        </dd>
+      </div>
+      <div>
+        <dt>{text.reLabel}</dt>
+        <dd>
+          <output data-value="re">{values.re}</output>
+        </dd>
+      </div>
+      <div>
+        <dt>{text.regimeLabel}</dt>
+        <dd class="pf-regime">
+          <output data-value="regime">{text.regimes[result.regime]}</output>
+        </dd>
+      </div>
+    </dl>
+    <p class="pf-status" data-status-line data-kind={statusKind}>
+      <span class="pf-status-icon" aria-hidden="true" data-status-icon>
+        {statusKind === 'ok' ? '✓' : '!'}
+      </span>
+      <span data-status-text>{statusText}</span>
+      <a href="#pf-validity">{text.statusLink}</a>
+    </p>
+  </div>
+
+  <a slot="before-workspace" class="thermal-parameter-jump" href="#pf-parameters">
+    {text.parameterTitle}
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M8 2v11M3 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+    </svg>
+  </a>
+
+  <SimulationCard as="div" slot="scene" class="thermal-stage pf-stage" data-stage>
+    <div class="thermal-view-actions" role="group" aria-label={text.stageLabel}>
+      <button type="button" data-cover aria-pressed="true">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M3 7h14v3H3zM3 10v5h14v-5"></path>
+        </svg>
+        <span>{text.coverToggle}</span>
+      </button>
+      <button type="button" data-reset-view>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 6a7 7 0 1 1-1 7M4 2v4h4"></path>
+        </svg>
+        <span>{text.resetView}</span>
+      </button>
+    </div>
+    <div class="pf-canvas" data-pf-canvas data-renderer="static">
+      <img
+        class="pf-preview"
+        data-pf-preview
+        src={poster.src}
+        srcset={poster.srcset}
+        sizes="(max-width: 37.5rem) calc(100vw - 64px), (max-width: 56rem) calc(100vw - 80px), 52vw"
+        width="1600"
+        height="1000"
+        alt={text.previewAlt}
+        fetchpriority="high"
+        decoding="async"
+      />
+      <span class="pf-model-note">{text.modelNote}</span>
+      <button class="pf-load3d" type="button" data-pf-load hidden>
+        {text.load3d}
+      </button>
+    </div>
+    <p class="pf-load-status" data-load-status role="status">
+      {text.loading}
+    </p>
+    <div class="pf-parts" role="group" aria-label={text.partsLabel}>
+      {parts.map((part) => (
+        <button
+          type="button"
+          data-select-part={part.id}
+          aria-pressed={part.id === selectedPart?.id ? 'true' : 'false'}
+          aria-controls="pf-part-card"
+        >
+          {part.short}
+        </button>
+      ))}
+    </div>
+    <SimulationCard
+      as="aside"
+      id="pf-part-card"
+      class="pf-part-card"
+      aria-labelledby="pf-part-name"
+    >
+      <p class="thermal-card-overline">{text.partOverline}</p>
+      <h2 id="pf-part-name">
+        <span data-part-name>{selectedPart?.name}</span>
+        <small data-part-secondary>{selectedPart?.secondaryName}</small>
+      </h2>
+      <dl>
+        <div>
+          <dt>{text.partFields.role}</dt>
+          <dd data-part-role>{selectedPart?.role}</dd>
+        </div>
+        <div>
+          <dt>{text.partFields.features}</dt>
+          <dd data-part-features>{selectedPart?.features}</dd>
+        </div>
+        <div>
+          <dt>{text.partFields.material}</dt>
+          <dd data-part-material>{selectedPart?.material}</dd>
+        </div>
+      </dl>
+    </SimulationCard>
+    <p class="thermal-interaction-hint" data-interaction-hint>
+      {text.interaction}
+    </p>
+    <script type="application/json" data-pf-parts set:html={JSON.stringify(parts)} />
+  </SimulationCard>
+
+  <Fragment slot="supporting">
+    <p class="thermal-fallback-note" data-fallback-note hidden role="status">
+      {text.fallback}
+    </p>
+    <noscript>
+      <p class="thermal-notice">{text.noScript}</p>
+    </noscript>
+
+    <SimulationCard class="pf-card pf-stream" aria-labelledby="pf-stream-title">
+      <div class="pf-card-heading">
+        <h2 id="pf-stream-title">{text.streamTitle}</h2>
+        <span class="pf-badge">{text.streamBadge}</span>
+      </div>
+      <figure class="pf-stream-figure">
+        <svg
+          class="pf-stream-svg"
+          data-stream
+          viewBox={sketch.viewBox}
+          role="img"
+          aria-label={text.streamLabel}
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <rect
+            class="pf-stream-channel"
+            data-stream-channel
+            x="0"
+            y="0"
+            width={sketch.length}
+            height={sketch.width}
+          ></rect>
+          <!-- Streamlines are drawn by the client at idle; the server sends the pin field only. -->
+          <g class="pf-stream-lines" data-stream-lines></g>
+          <path class="pf-stream-pins" data-stream-pins d={sketch.pins}></path>
+        </svg>
+        <figcaption>
+          <span class="pf-flow-arrow" aria-hidden="true">
+            →
+          </span>
+          {text.flowDirection} · {text.streamCaption}
+        </figcaption>
+      </figure>
+    </SimulationCard>
+
+    <SimulationCard class="pf-card pf-tradeoff" aria-labelledby="pf-sweep-title">
+      <div class="pf-card-heading">
+        <h2 id="pf-sweep-title">{text.sweepTitle}</h2>
+        <label class="pf-sweep-select">
+          <span>{text.sweepLabel}</span>
+          <select data-sweep-key>
+            {PARAMETER_DEFINITIONS.map((entry) => (
+              <option value={entry.key} selected={entry.key === 'flow'}>
+                {text.parameterLabels[entry.key]}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <p class="pf-card-note">{text.sweepDescription}</p>
+      <div class="pf-chart" data-chart>
+        <svg
+          viewBox={`0 0 ${CHART.width} ${CHART.height}`}
+          role="img"
+          aria-label={text.chartLabel}
+          data-chart-svg
+        >
+          <g class="pf-grid" data-chart-grid>
+            {chart.yTicks.map((tick) => (
+              <g>
+                <line
+                  x1={CHART.left}
+                  x2={CHART.width - CHART.right}
+                  y1={tick.position}
+                  y2={tick.position}
+                />
+                <text x={CHART.left - 8} y={tick.position} dy="0.32em" text-anchor="end">
+                  {tick.label}
+                </text>
+              </g>
+            ))}
+            {chart.xTicks.map((tick) => (
+              <g>
+                <line
+                  x1={tick.position}
+                  x2={tick.position}
+                  y1={CHART.top}
+                  y2={CHART.height - CHART.bottom}
+                />
+                <text x={tick.position} y={CHART.height - CHART.bottom + 18} text-anchor="middle">
+                  {tick.label}
+                </text>
+              </g>
+            ))}
+          </g>
+          <text
+            class="pf-axis-title"
+            x={CHART.width - CHART.right}
+            y={CHART.height - 8}
+            text-anchor="end"
+          >
+            {text.axisDp}
+          </text>
+          <text class="pf-axis-title" x={CHART.left - 52} y={14}>
+            {text.axisRth}
+          </text>
+          <path class="pf-chart-line" data-chart-line d={chart.path}></path>
+          <g data-chart-marks>
+            {chart.marks.map((mark) => (
+              <circle
+                class:list={['pf-chart-mark', { out: mark.out }]}
+                cx={mark.x}
+                cy={mark.y}
+                r="4"
+              />
+            ))}
+          </g>
+          {chart.current && (
+            <circle
+              class="pf-chart-current"
+              data-chart-current
+              cx={chart.current.x}
+              cy={chart.current.y}
+              r="7"
+            />
+          )}
+          <circle class="pf-chart-hover" data-chart-hover r="6" cx="-20" cy="-20"></circle>
+        </svg>
+        <p class="pf-chart-readout" data-chart-readout>
+          {`${text.currentPoint}: ${text.parameterLabels.flow} ${DEFAULT_PARAMS.flow.toFixed(1)} L/min · Rth ${result.rth.toPrecision(3)} K/W · Δp ${result.pressureDropKpa.toPrecision(3)} kPa`}
+        </p>
+      </div>
+      <details class="pf-table-details">
+        <summary>{text.tableToggle}</summary>
+        <table data-chart-table>
+          <thead>
+            <tr>
+              <th scope="col" data-chart-table-key>
+                {text.parameterLabels.flow} (L/min)
+              </th>
+              <th scope="col">
+                R<sub>th</sub> (K/W)
+              </th>
+              <th scope="col">Δp (kPa)</th>
+            </tr>
+          </thead>
+          <tbody data-chart-table-body>
+            {chart.marks.map((mark) => (
+              <tr class:list={{ out: mark.out }}>
+                <td>{Number(mark.value.toFixed(3))}</td>
+                <td>{mark.rth.toPrecision(3)}</td>
+                <td>{mark.dpKpa.toPrecision(3)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
+    </SimulationCard>
+
+    <SimulationCard class="pf-card pf-details" aria-labelledby="pf-details-title">
+      <h2 id="pf-details-title" class="pf-card-title">
+        {text.detailsTitle}
+      </h2>
+      <dl class="pf-detail-list">
+        {detailKeys.map((key) => (
+          <div>
+            <dt>{text.details[key]}</dt>
+            <dd data-detail={key}>{detailValues[key]}</dd>
+          </div>
+        ))}
+        <div>
+          <dt>{text.pumpingLabel}</dt>
+          <dd data-detail="pumping">{values.pumping} W</dd>
+        </div>
+        <div>
+          <dt>{text.tBaseLabel} @ Q</dt>
+          <dd data-detail="tBase">{values.tBase} °C</dd>
+        </div>
+      </dl>
+    </SimulationCard>
+  </Fragment>
+
+  <SimulationCard
+    slot="parameters"
+    id="pf-parameters"
+    class="thermal-parameters pf-parameters"
+    aria-label={text.parameterTitle}
+    tabindex="-1"
+  >
+    <div class="thermal-parameter-heading">
+      <h2>{text.parameterTitle}</h2>
+      <button type="button" class="thermal-text-button" data-reset-params>
+        {text.resetParameters}
+      </button>
+    </div>
+    <div class="thermal-tabs" role="tablist" aria-label={text.parameterTabs}>
+      {GROUPS.map((group, index) => (
+        <button
+          type="button"
+          role="tab"
+          id={`pf-tab-${group}`}
+          data-tab={group}
+          aria-selected={index === 0 ? 'true' : 'false'}
+          aria-controls={`pf-panel-${group}`}
+          tabindex={index === 0 ? 0 : -1}
+        >
+          {text.tabs[group]}
+        </button>
+      ))}
+    </div>
+    <div class="thermal-control-summary" data-control-summary aria-hidden="true">
+      <p>
+        R<sub>th</sub>{' '}
+        <strong>
+          <span data-control-rth>{values.rth}</span> K/W
+        </strong>{' '}
+        · Δp{' '}
+        <strong>
+          <span data-control-dp>{values.dp}</span> kPa
+        </strong>
+      </p>
+      <small data-control-status data-kind={statusKind}>
+        {statusText}
+      </small>
+    </div>
+    {GROUPS.map((group, index) => (
+      <div
+        class="thermal-tab-panel"
+        role="tabpanel"
+        id={`pf-panel-${group}`}
+        aria-labelledby={`pf-tab-${group}`}
+        data-panel={group}
+        tabindex="0"
+        hidden={index !== 0}
+      >
+        <div class="thermal-panel-intro">
+          <p>{text.tabNotes[group]}</p>
+          {group === 'flow' && (
+            <div class="pf-choice">
+              <span id="pf-coolant-label">{text.coolantLabel}</span>
+              <div class="thermal-material-pills" role="group" aria-labelledby="pf-coolant-label">
+                {COOLANTS.map((id) => (
+                  <button
+                    type="button"
+                    data-choice="coolant"
+                    data-value={id}
+                    aria-pressed={DEFAULT_PARAMS.coolant === id ? 'true' : 'false'}
+                  >
+                    {text.coolants[id]}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          {group === 'pins' && (
+            <>
+              <div class="pf-choice">
+                <span id="pf-arrangement-label">{text.arrangementLabel}</span>
+                <div
+                  class="thermal-material-pills"
+                  role="group"
+                  aria-labelledby="pf-arrangement-label"
+                >
+                  {ARRANGEMENTS.map((id) => (
+                    <button
+                      type="button"
+                      data-choice="arrangement"
+                      data-value={id}
+                      aria-pressed={DEFAULT_PARAMS.arrangement === id ? 'true' : 'false'}
+                    >
+                      {text.arrangements[id]}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div class="pf-choice">
+                <span id="pf-material-label">{text.materialLabel} · W/(m·K)</span>
+                <div
+                  class="thermal-material-pills"
+                  role="group"
+                  aria-labelledby="pf-material-label"
+                >
+                  {PIN_MATERIALS.map((id) => (
+                    <button
+                      type="button"
+                      data-choice="material"
+                      data-value={id}
+                      aria-pressed={DEFAULT_PARAMS.material === id ? 'true' : 'false'}
+                    >
+                      {text.materials[id]}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+        <div class="thermal-control-grid">
+          {definitionsByGroup(group).map((definition) => (
+            <div class="thermal-control">
+              <div class="thermal-control-top">
+                <label for={`pf-param-${definition.key}`}>
+                  {text.parameterLabels[definition.key]}
+                </label>
+                <output for={`pf-param-${definition.key}`} data-param-output={definition.key}>
+                  {DEFAULT_PARAMS[definition.key].toFixed(definition.digits)}
+                </output>
+              </div>
+              <input
+                type="range"
+                id={`pf-param-${definition.key}`}
+                data-param={definition.key}
+                min={definition.min}
+                max={definition.max}
+                step={definition.step}
+                value={DEFAULT_PARAMS[definition.key]}
+                style={fill(DEFAULT_PARAMS[definition.key], definition.min, definition.max)}
+                aria-describedby={`pf-unit-${definition.key}`}
+              />
+              <div class="thermal-range-labels">
+                <span>{definition.min}</span>
+                <span id={`pf-unit-${definition.key}`}>{definition.unit}</span>
+                <span>{definition.max}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+    <p class="thermal-input-error" data-input-error hidden role="alert">
+      {text.inputError}
+    </p>
+    <p class="thermal-input-error" data-no-pins hidden role="alert">
+      {text.noPins}
+    </p>
+    <p class="sr-only" data-result-live aria-live="polite" aria-atomic="true"></p>
+  </SimulationCard>
+
+  <Fragment slot="notes">
+    <SimulationCard
+      id="pf-validity"
+      class="pf-card pf-validity"
+      aria-labelledby="pf-validity-title"
+    >
+      <h2 id="pf-validity-title" class="pf-card-title">
+        {text.validityTitle}
+      </h2>
+      <p class="pf-card-note">{text.validityIntro}</p>
+      <div class="pf-validity-groups">
+        {correlationOrder.map((correlation) => (
+          <section class="pf-validity-group" aria-labelledby={`pf-validity-${correlation}`}>
+            <h3 id={`pf-validity-${correlation}`}>{text.correlations[correlation]}</h3>
+            <table>
+              <thead class="sr-only">
+                <tr>
+                  <th scope="col">{text.validityColumns.item}</th>
+                  <th scope="col">{text.validityColumns.value}</th>
+                  <th scope="col">{text.validityColumns.range}</th>
+                  <th scope="col">{text.validityColumns.status}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {result.checks
+                  .filter((entry) => entry.correlation === correlation)
+                  .map((entry) => (
+                    <tr data-check={entry.id} data-status={entry.status}>
+                      <th scope="row">{text.validity[entry.id].label}</th>
+                      <td data-check-value>{formatCheckValue(entry)}</td>
+                      <td data-check-range>{formatRange(entry)}</td>
+                      <td>
+                        <span class="pf-pill" data-check-status>
+                          {text.statusNames[entry.status]}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+            <ul class="pf-validity-explain" data-explain-list={correlation}>
+              {result.checks
+                .filter((entry) => entry.correlation === correlation && entry.status !== 'ok')
+                .map((entry) => (
+                  <li data-status={entry.status}>{text.validity[entry.id].explain}</li>
+                ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </SimulationCard>
+    <footer class="thermal-model-notes pf-notes">
+      <div>
+        <p class="thermal-note-label">
+          <span class="thermal-model-dot" aria-hidden="true"></span>
+          {text.methodTitle}
+        </p>
+        {text.method.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+        <p class="thermal-note-label pf-note-gap">{text.formulasTitle}</p>
+        <ul class="pf-formulas">
+          {FORMULAS.map((formula) => (
+            <li>
+              <code>{formula}</code>
+            </li>
+          ))}
+        </ul>
+        <p class="pf-note-gap">{text.propertiesNote}</p>
+      </div>
+      <div>
+        <p class="thermal-note-label">{text.assumptionsTitle}</p>
+        <ul class="pf-list">
+          {text.assumptions.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <p class="thermal-note-label pf-note-gap">{text.referencesTitle}</p>
+        <ol class="pf-list">
+          {text.references.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ol>
+      </div>
+    </footer>
+  </Fragment>
+</SimulationShell>
+
+<script>
+  import { initializePinFinPages } from './client';
+  initializePinFinPages();
+</script>
