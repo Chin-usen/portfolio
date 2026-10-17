@@ -1,0 +1,323 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { localePath } from '../../../i18n/utils';
+import DisassemblyPage from '../_shared/disassembly/DisassemblyPage.astro';
+import { harmonicCopy, harmonicModes, type HarmonicLocale } from './copy';
+import { HARMONIC_DEFAULT_PARAMETERS } from './params';
+import { createHarmonicModel } from './math';
+import harmonicStyles from './harmonic-drive.css?raw';
+import harmonicFonts from './harmonic-drive-fonts.css?raw';
+interface Props {
+  locale: HarmonicLocale;
+  entry: CollectionEntry<'lab'>;
+}
+const { locale, entry } = Astro.props;
+const copy = harmonicCopy[locale];
+const parts = [...(entry.data.parts ?? [])].sort((a, b) => a.order - b.order);
+const model = createHarmonicModel(HARMONIC_DEFAULT_PARAMETERS);
+const poster = {
+  src: '/models/harmonic-drive/harmonic-drive-exploded.webp',
+  srcset:
+    '/models/harmonic-drive/harmonic-drive-exploded-640.webp 640w, /models/harmonic-drive/harmonic-drive-exploded.webp 1600w',
+  sizes:
+    '(max-width: 652px) calc(100vw - 64px), (max-width: 800px) 588px, (max-width: 1100px) 58vw, 64vw',
+  width: 1600,
+  height: 1400,
+  alt: copy.staticAlt,
+};
+---
+
+<style is:inline set:html={harmonicStyles + '\n' + harmonicFonts} />
+
+<DisassemblyPage
+  locale={locale}
+  copy={copy}
+  parts={parts}
+  modes={harmonicModes(locale)}
+  defaultPartId="flexspline"
+  defaultMode="whole"
+  idPrefix="hd"
+  poster={poster}
+  backHref={localePath(locale, '/lab/')}
+  rootClass="disassembly harmonic-drive"
+  rootAttributes={{ 'data-harmonic-drive': true, 'data-playing': 'false' }}
+>
+  <Fragment slot="after-stage">
+    <details class="hd-keyboard-help">
+      <summary>{copy.keyboardTitle}</summary>
+      <p>{copy.keyboard}</p>
+    </details>
+    <div class="hd-view-controls">
+      <div class="hd-explode-control">
+        <label for="hd-explode">
+          {copy.explode}
+          <output for="hd-explode" data-hd-explode-output>
+            100%
+          </output>
+        </label>
+        <input
+          id="hd-explode"
+          data-hd-explode
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="100"
+          aria-describedby="hd-stage-note"
+        />
+        <div class="hd-endpoints">
+          <span>{copy.assembled}</span>
+          <span>{copy.exploded}</span>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="hd-play"
+        data-hd-play
+        aria-pressed="false"
+        aria-describedby="hd-slow-note"
+      >
+        {copy.play}
+      </button>
+    </div>
+    <p id="hd-stage-note" class="hd-stage-note">
+      {copy.stageNote}
+    </p>
+    <section class="hd-phase-diagram" aria-labelledby="hd-diagram-title">
+      <svg
+        class="hd-diagram"
+        viewBox="0 0 180 180"
+        role="img"
+        aria-labelledby="hd-diagram-description"
+      >
+        <title id="hd-diagram-description">{copy.diagramAlt}</title>
+        <circle class="hd-diagram-fixed" cx="90" cy="90" r="64" />
+        <g data-hd-diagram-wave-group transform="rotate(0 90 90)">
+          <ellipse class="hd-diagram-flex" data-hd-diagram-flex cx="90" cy="90" rx="59" ry="49" />
+          <ellipse class="hd-diagram-wave" data-hd-diagram-wave cx="90" cy="90" rx="48" ry="38" />
+          <line class="hd-diagram-axis" x1="24" y1="90" x2="156" y2="90" />
+          <circle data-hd-engagement class="hd-diagram-zone" cx="149" cy="90" r="7" />
+          <circle data-hd-engagement class="hd-diagram-zone" cx="31" cy="90" r="7" />
+        </g>
+        <g data-hd-diagram-output transform="rotate(0 90 90)">
+          <line class="hd-diagram-output" x1="90" y1="90" x2="90" y2="62" />
+          <path class="hd-diagram-output" d="M 86 68 L 90 62 L 94 68" />
+        </g>
+        <circle class="hd-diagram-centre" cx="90" cy="90" r="4" />
+      </svg>
+      <div>
+        <h2 id="hd-diagram-title">{copy.diagram}</h2>
+        <p class="hd-legend">
+          <span class="hd-legend-zone" aria-hidden="true"></span>
+          {copy.engagement}
+        </p>
+        <p class="hd-legend">
+          <span class="hd-legend-output" aria-hidden="true"></span>
+          {copy.outputMarker}
+        </p>
+        <p class="hd-fineprint">{copy.diagramNote}</p>
+        <p class="hd-diagram-angle">
+          {copy.outputPhase}: <output data-hd-output-phase>0.00°</output>
+        </p>
+      </div>
+      <div class="hd-phase">
+        <label for="hd-phase">
+          {copy.phase}
+          <output data-hd-phase-output>0°</output>
+        </label>
+        <input
+          id="hd-phase"
+          data-hd-phase
+          type="range"
+          min="0"
+          max="360"
+          step="1"
+          value="0"
+          aria-describedby="hd-diagram-title"
+        />
+      </div>
+    </section>
+    <div class="hd-static-stack">
+      <p class="hd-static-stack-title">{copy.staticSeparation}</p>
+      <svg
+        data-hd-static-explode
+        viewBox="0 0 360 128"
+        role="img"
+        aria-labelledby="hd-static-stack-description"
+      >
+        <title id="hd-static-stack-description">{copy.staticSeparationAlt}</title>
+        <line class="hd-stack-axis" x1="16" x2="344" y1="58" y2="58" />
+        {parts.map((part, index) => (
+          <g
+            data-hd-static-layer={part.id}
+            data-selected={part.id === 'flexspline' ? 'true' : 'false'}
+            transform={`translate(${28 + index * 38} 0)`}
+          >
+            <rect
+              x="-5"
+              y={part.id === 'input-shaft' ? 46 : 18 + (index % 3) * 5}
+              width="10"
+              height={part.id === 'input-shaft' ? 24 : 80 - (index % 3) * 10}
+              rx="3"
+            />
+          </g>
+        ))}
+      </svg>
+      <p class="hd-static-stack-selection" data-hd-static-part-name>
+        {copy.selected}: {parts.find((part) => part.id === 'flexspline')?.name}
+      </p>
+    </div>
+  </Fragment>
+  <Fragment slot="scale-note">
+    <p class="hd-model-label">{copy.modelScope}</p>
+  </Fragment>
+  <Fragment slot="addons">
+    <section class="l1-card hd-ratio-card" aria-labelledby="hd-ratio-title">
+      <h2 class="l1-small-label" id="hd-ratio-title">
+        {copy.calculation}
+      </h2>
+      <p class="hd-ratio">
+        <output data-hd-ratio>{model.metrics.ratio}</output>
+        <span>: 1</span>
+      </p>
+      <p class="hd-equation">i = −zf / (zc − zf)</p>
+      <form data-hd-teeth-form novalidate>
+        <div class="hd-tooth-field">
+          <label for="hd-teeth">{copy.flexTeeth}</label>
+          <input
+            id="hd-teeth"
+            data-hd-teeth="flexTeeth"
+            type="number"
+            min="80"
+            max="240"
+            step="2"
+            value={HARMONIC_DEFAULT_PARAMETERS.flexTeeth}
+            required
+            aria-describedby="hd-tooth-range hd-parameter-status"
+          />
+          <span id="hd-tooth-range" class="hd-range">
+            {copy.toothRange}
+          </span>
+        </div>
+        <dl class="hd-results">
+          <div>
+            <dt>{copy.circularTeeth}</dt>
+            <dd>
+              <output data-hd-circular-teeth>{HARMONIC_DEFAULT_PARAMETERS.circularTeeth}</output>
+            </dd>
+          </div>
+          <div>
+            <dt>{copy.fixedModule}</dt>
+            <dd>0.5 mm</dd>
+          </div>
+        </dl>
+        <button type="button" class="hd-defaults" data-hd-defaults>
+          {copy.defaults}
+        </button>
+        <p id="hd-parameter-status" class="hd-form-status" data-hd-parameter-status role="status">
+          {copy.pending}
+        </p>
+      </form>
+      <dl class="hd-results hd-deformation-results">
+        <div>
+          <dt>{copy.deformation}</dt>
+          <dd>
+            <output data-hd-deformation>{model.metrics.nominalDeformationMm.toFixed(2)}</output> mm
+          </dd>
+        </div>
+        <div>
+          <dt>{copy.displayedDeformation}</dt>
+          <dd>
+            <output data-hd-display-deformation>
+              {model.metrics.displayDeformationMm.toFixed(2)}
+            </output>{' '}
+            mm
+          </dd>
+        </div>
+      </dl>
+      <p class="hd-fineprint">{copy.deformationNote}</p>
+    </section>
+    <section class="l1-card hd-motion-card" aria-labelledby="hd-motion-title">
+      <h2 class="l1-small-label" id="hd-motion-title">
+        {copy.motion}
+      </h2>
+      <div class="hd-speed-heading">
+        <label for="hd-rpm-number">{copy.speed}</label>
+        <div>
+          <input
+            id="hd-rpm-number"
+            data-hd-rpm-number
+            aria-describedby="hd-speed-status hd-slow-note"
+            type="number"
+            min="0"
+            max="3000"
+            step="1"
+            value="1200"
+          />
+          <span>rpm</span>
+        </div>
+      </div>
+      <input
+        data-hd-rpm
+        type="range"
+        min="0"
+        max="3000"
+        step="1"
+        value="1200"
+        aria-label={copy.speed}
+        aria-describedby="hd-slow-note"
+      />
+      <div class="hd-endpoints">
+        <span>0</span>
+        <span>3000 rpm</span>
+      </div>
+      <p id="hd-speed-status" class="hd-form-status" data-hd-speed-status role="status" hidden></p>
+      <dl class="hd-results">
+        <div>
+          <dt>{copy.outputSpeed}</dt>
+          <dd>
+            <output data-hd-output-rpm>{(1200 / model.metrics.ratio).toFixed(2)}</output> rpm
+          </dd>
+        </div>
+        <div>
+          <dt>{copy.displayedSpeed}</dt>
+          <dd>
+            <output data-hd-displayed-rpm>20.00</output> rpm
+          </dd>
+        </div>
+        <div>
+          <dt>{copy.playback}</dt>
+          <dd>× 1/60</dd>
+        </div>
+      </dl>
+      <p id="hd-slow-note" class="hd-fineprint">
+        {copy.slowNote}
+      </p>
+
+      <span class="sr-only" aria-live="polite" data-hd-result-live></span>
+    </section>
+  </Fragment>
+  <Fragment slot="notes">
+    <details class="hd-assumptions">
+      <summary>{copy.assumptions}</summary>
+      <div class="hd-assumption-content">
+        <p>{copy.ratioText}</p>
+        <p>{copy.deformationText}</p>
+        <p>{copy.geometryText}</p>
+        <p>{copy.clearanceText}</p>
+        <p>{copy.limitsText}</p>
+        <p class="hd-reference-links">
+          {copy.sources}:{' '}
+          <a href="https://legacy.harmonicdrive.net/reference/operatingprinciples/">
+            {copy.principleSource}
+          </a>
+        </p>
+      </div>
+    </details>
+    <p class="hd-provenance">{copy.provenance}</p>
+  </Fragment>
+</DisassemblyPage>
+<script>
+  import { initializeHarmonicDrives } from './client';
+  initializeHarmonicDrives();
+</script>

@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "modelKind": "parameterized-kinematic-schematic",
+  "descriptionEn": "Generic cup-type strain-wave teaching model; no vendor replication or manufacturing dimensions",
+  "units": "m",
+  "sourceUnits": "mm",
+  "upAxis": "Y",
+  "coordinateTransform": "(x,y,z) mm -> (x,z,-y)/1000 metres via root transform",
+  "parameters": { "flexTeeth": 200, "circularTeeth": 202, "moduleMm": 0.5, "deformationScale": 4 },
+  "layout": {
+    "scale": 1,
+    "cupBaseZmm": -22,
+    "cupMouthZmm": 10,
+    "flexRootRadiusMm": 49.7,
+    "flexInnerRadiusMm": 49,
+    "circularDisplayPitchRadiusMm": 52.8,
+    "housingInnerRadiusMm": 56.3,
+    "housingOuterRadiusMm": 59.3,
+    "shaftRadiusMm": 6
+  },
+  "metrics": {
+    "ratio": -100,
+    "toothDifference": 2,
+    "flexPitchRadiusMm": 50,
+    "circularPitchRadiusMm": 50.5,
+    "nominalDeformationMm": 0.5,
+    "displayDeformationMm": 2,
+    "circularDisplayOffsetMm": 2.3,
+    "schematicToothClearanceMm": 0.2
+  },
+  "parts": [
+    {
+      "id": "input-shaft",
+      "name": "input-shaft",
+      "partId": "input-shaft",
+      "role": "Input shaft keyed to elliptical wave cam",
+      "explodeZmm": 96,
+      "restPositionMm": [0, 0, 28],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 28,
+      "schematic": true
+    },
+    {
+      "id": "wave-generator-elliptical-cam",
+      "name": "wave-generator-elliptical-cam",
+      "partId": "wave-generator",
+      "role": "Elliptical input cam; shown with amplified eccentricity",
+      "explodeZmm": 69,
+      "restPositionMm": [0, 0, 6],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 6,
+      "schematic": true
+    },
+    {
+      "id": "flexible-bearing-thin-races",
+      "name": "flexible-bearing-thin-races",
+      "partId": "flexible-bearing",
+      "role": "Thin-wall elliptical bearing envelope; individual rolling and race slip not simulated",
+      "explodeZmm": 43,
+      "restPositionMm": [0, 0, 6],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 6,
+      "schematic": true
+    },
+    {
+      "id": "flexspline-cup-external-teeth",
+      "name": "flexspline-cup-external-teeth",
+      "partId": "flexspline",
+      "role": "200 schematic external teeth; cup material follows the opposite slow output",
+      "explodeZmm": 3,
+      "restPositionMm": [0, 0, 0],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 0,
+      "schematic": true,
+      "diagnosticToothTipIndex": 9241
+    },
+    {
+      "id": "circular-spline-internal-teeth",
+      "name": "circular-spline-internal-teeth",
+      "partId": "circular-spline",
+      "role": "202 stationary internal teeth; ring offset outward for schematic display clearance",
+      "explodeZmm": 23,
+      "restPositionMm": [0, 0, 6],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 6,
+      "schematic": true,
+      "radialDisplayOffsetMm": 2.3
+    },
+    {
+      "id": "engagement-zone-1",
+      "name": "engagement-zone-1",
+      "partId": "circular-spline",
+      "role": "Long-axis engagement direction only; not a solved contact patch",
+      "explodeZmm": 23,
+      "restPositionMm": [0, 0, 11.6],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 11.6,
+      "schematic": true
+    },
+    {
+      "id": "engagement-zone-2",
+      "name": "engagement-zone-2",
+      "partId": "circular-spline",
+      "role": "Long-axis engagement direction only; not a solved contact patch",
+      "explodeZmm": 23,
+      "restPositionMm": [0, 0, 11.6],
+      "restRotationRad": [0, 0, 3.141592653589793],
+      "restZmm": 11.6,
+      "schematic": true
+    },
+    {
+      "id": "cross-roller-bearing",
+      "name": "cross-roller-bearing",
+      "partId": "cross-roller-bearing",
+      "role": "Output support with alternating crossed rollers; load and roller spin not solved",
+      "explodeZmm": -28,
+      "restPositionMm": [0, 0, -27],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": -27,
+      "schematic": true
+    },
+    {
+      "id": "output-flange",
+      "name": "output-flange",
+      "partId": "output-flange",
+      "role": "Flange rigidly coupled to the closed cup end; opposite slow output",
+      "explodeZmm": -55,
+      "restPositionMm": [0, 0, -25.5],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": -25.5,
+      "schematic": true
+    },
+    {
+      "id": "housing-service-cutaway",
+      "name": "housing-service-cutaway",
+      "partId": "housing",
+      "role": "Fixed enclosure; a deliberate 110 degree service cutaway exposes the mechanism",
+      "explodeZmm": -6,
+      "restPositionMm": [0, 0, -4],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": -4,
+      "schematic": true
+    },
+    {
+      "id": "input-endcap",
+      "name": "input-endcap",
+      "partId": "endcap",
+      "role": "Stationary input closure with central shaft clearance",
+      "explodeZmm": 123,
+      "restPositionMm": [0, 0, 23],
+      "restRotationRad": [0, 0, 0],
+      "restZmm": 23,
+      "schematic": true
+    }
+  ],
+  "groups": {
+    "input-shaft": { "nodeNames": ["input-shaft"] },
+    "wave-generator": { "nodeNames": ["wave-generator-elliptical-cam"] },
+    "flexible-bearing": { "nodeNames": ["flexible-bearing-thin-races"] },
+    "flexspline": { "nodeNames": ["flexspline-cup-external-teeth"] },
+    "circular-spline": {
+      "nodeNames": ["circular-spline-internal-teeth", "engagement-zone-1", "engagement-zone-2"]
+    },
+    "cross-roller-bearing": { "nodeNames": ["cross-roller-bearing"] },
+    "output-flange": { "nodeNames": ["output-flange"] },
+    "housing": { "nodeNames": ["housing-service-cutaway"] },
+    "endcap": { "nodeNames": ["input-endcap"] }
+  },
+  "kinematics": {
+    "inputToOutputRatio": -100,
+    "boundaryCondition": "Circular spline fixed; elliptical wave generator input; cup flexspline output",
+    "outputAngle": "inputAngle / ratio",
+    "ratioFormula": "-flexTeeth / (circularTeeth-flexTeeth)",
+    "nominalDeformationFormulaMm": "moduleMm * (circularTeeth-flexTeeth) / 2",
+    "radialDeformation": "nominalDeformationMm * cos(2*(spatialAzimuth-inputAngle))",
+    "materialToothAngle": "2*pi*toothIndex/flexTeeth + outputAngle",
+    "displayDeformationScale": 4,
+    "engagementDirectionsRad": [0, 3.141592653589793]
+  },
+  "constraints": {
+    "manufacturingQualified": false,
+    "conjugateToothProfile": false,
+    "elasticStrainSolved": false,
+    "bearingSpinSolved": false,
+    "contactLoadSolved": false,
+    "flexProfile": "Schematic trapezoid teeth; cosine radial wave with cup-base-to-mouth taper",
+    "waveCam": "True ellipse with displayed semiaxes plus/minus amplified deformation",
+    "bearingScope": "Thin races and rolling elements visualize the rotating envelope, not individual race/ball kinematics",
+    "displayClearance": "Circular spline is radially offset by (displayAmplitude-nominalAmplitude)+1.6*module to leave at least 0.4*module clearance; amber sectors indicate major-axis engagement regions, not literal solved contact",
+    "crossRollerScope": "Alternating roller axes; support geometry only, no race/roller spin or load prediction"
+  },
+  "reproducibility": {
+    "deterministicScope": "Exact pinned Node and dependency versions; cross-runtime floating-point color serialization is not claimed",
+    "geometrySha256": "a25723d4b591712b3c97ef00e4578f72c3a5fdd22f2379b6847cb131dfb8de23",
+    "repeatedGeometryEqual": true,
+    "repeatedGlbEqual": true,
+    "sourceSha256": {
+      "src/components/lab/harmonic-drive/math.ts": "3e98e6793b01de4934d365bc8a92e8f5dec6fab7b39fd33c0b32cc57b48ee7cc",
+      "src/components/lab/harmonic-drive/params.ts": "d065ed1cae8849b638d50addd1b64002856986f7bcd654c8413a2f94f040e328",
+      "src/components/lab/harmonic-drive/params.json": "b07f4683a6aabd47c60bdd36598e0e3f203b75822267e4be49becd895f21345e",
+      "src/components/lab/harmonic-drive/geometry.ts": "6dd4ccddd11c118acda3d4c50a25ad41fb0c17d0ba22ae1255a921dd5811c0a5",
+      "src/components/lab/harmonic-drive/model/build.mjs": "3e23e5d465074494c16bb0b4bedf163e76e84679c2afd20fb6df0159be110c09",
+      "src/components/lab/harmonic-drive/model/render.mjs": "016ace834e1b64d6ef36321e835215ec75bc63617954fd1811b2255211e44607",
+      "src/components/lab/harmonic-drive/model/generate.mjs": "6505e53c9caaacd3222bd873205d0a33a0f89c913fa2d606dd90e27c9d2152a9",
+      "src/components/lab/harmonic-drive/model/verify.mjs": "8ffc134f538c4ad0844ed8cbafd1a1c3e9068128052dd7f5ccf0a46930e0c55c",
+      ".node-version": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921"
+    }
+  },
+  "assets": {
+    "glb": {
+      "path": "/models/harmonic-drive/harmonic-drive.glb",
+      "bytes": 255608,
+      "sha256": "f1e27f100feb74c0e1132bf6add55e2016b3338936bcd87f15a64e04c154d764",
+      "compression": "EXT_meshopt_compression; 16-bit positions / 10-bit normals"
+    },
+    "explodedWebp": {
+      "path": "/models/harmonic-drive/harmonic-drive-exploded.webp",
+      "bytes": 42534,
+      "sha256": "2dfc7470ca912de90e95c9f42ecb1868c57952514ac1ce6fe0ab6462797eba15",
+      "width": 1600,
+      "height": 1400
+    },
+    "explodedWebp640": {
+      "path": "/models/harmonic-drive/harmonic-drive-exploded-640.webp",
+      "bytes": 17690,
+      "sha256": "9ad4989adf4ae9ff4a8adb8029d719565abb67c49df5364cf5599148efad3c9e",
+      "width": 640,
+      "height": 560
+    }
+  },
+  "validation": {
+    "namedIndependentMeshes": 11,
+    "totalTriangles": 26916,
+    "finiteGeometry": true,
+    "compressedNodeMetadataPreserved": true
+  },
+  "toolchain": {
+    "node": "22.23.3",
+    "three": "0.186.1",
+    "gltfTransform": "4.2.1",
+    "meshoptimizer": "0.23.0",
+    "renderer": "Three.js + Playwright Chromium"
+  }
+}
